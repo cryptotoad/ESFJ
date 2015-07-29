@@ -8,150 +8,7 @@ import marshal
 import parsexml
 import httpclient
 import random
-
-type
-  Profile = object
-    name: string
-    upvotes: int
-    downvotes: int
-    rank: string
-    
-
-var db = open(connection="ESFJ.db", user="postgres", password="", 
-              database="nimforum")
-              
-db.exec(sql"""
-create table if not exists quotes(
-  id integer primary key,
-  content varchar(1024) not null);
-""", [])
-
-db.exec(sql"""
-create table if not exists users(
-  id integer primary key,
-  name varchar(20) not null,
-  upvotes integer not null,
-  downvotes integer not null,
-  rank integer not null,
-  pass varchar(30) not null);
-""", [])
-
-
-
-proc version(): string =
-    result = "v1.0.0"
-
-proc about(): string =
-    result = "ESFJ - By Cryptotoad (" & version() & ")"
-
-
-proc chansplit(raw: string): seq[string] =
-    result = @[]
-
-    for channel in split(raw, ","):
-        add(result, "#" & channel)
-
-    
-proc getNick(raw: string): string =
-    result = raw[1 .. (find(raw, '!') - 1)]
-
-var server: string = "irc.freenode.net"
-var loggedIn: seq[string] = @[""]
-var port: Port = 6667.Port
-var username: string = "FoxMcCloud"
-var nick: string = "ESFJ"
-var channels: seq[string] = @["#reddit-intp"]
-var log: File
-var islogging: bool = false
-var outputting: bool = true
-var profiles: seq[Profile]
-
-var sock: Socket = socket()
-var buffer: string = ""
-
-connect(sock, server, port)
-
-send(sock, "NICK " & nick & "\r\n")
-send(sock, "USER " & nick & " " & nick & " " & nick & " :ESFJ IRC\r\n")
-send(sock, "MODE " & nick & " +i\r\n")
-
-
-#Begin user system code
-
-proc isLoggedIn(name: string): bool =
-  for i in countup(0, loggedIn.high):
-    if cmpIgnoreCase(loggedIn[i], name) == 0:
-      result = true
-      return
-  result = false
-  
-proc checkUser(name: string): bool =
-  try:
-    let res = db.getValue(sql"select id from users where upper(name) = ?", toUpper(name))
-    if res != "":
-      let row = parseInt(res)
-      if row > 0:
-        result = true
-      else:
-        result = false
-  except:
-    result = false
-    
-proc getQuote(id: int): string =
-  let row = db.getRow(sql"select id, content from quotes where id = ?", id)
-  if row[0] == "": #id does not exist
-    return ""
-  return "Quote #" & row[0] & " : " & row[1]
-
-proc addQuote(content: string): int = #add a quote to the database, return the row ID
-  result = tryInsertID(db, sql"insert into quotes(id, content) values (null, ?)", content).int
-
-proc addUser(name: string, pass: string): int =
-  if not checkUser(name):
-    result = tryInsertID(db, sql"insert into users(id, name, upvotes, downvotes, rank, pass) values (null, ?, 0, 0, 0, ?)", name, pass).int
-  else:
-    return -1
-
-proc getQuoteCount(): int =
-  result = parseInt(db.getValue(sql"select count(*) from quotes"))
-
-
-
-proc loginUser(name: string, pass: string): bool =
-  let row = parseInt(db.getValue(sql"select id from users where upper(name) = ? and pass = ?", toUpper(name), pass))
-  if row > 0:
-    result = true
-  else:
-    result = false
-
-proc upvote(name: string): int =
-  db.exec(sql"""
-  update users set upvotes = upvotes + 1 where upper(name) = ?;
-  """,  toUpper(name))
-  let totalVotes = db.getValue(sql"select upvotes - downvotes from users where upper(name) = ?", toUpper(name))
-  if totalVotes == "":
-    result = -1
-  else:
-    result = parseInt(totalVotes)
-
-
-proc downvote(name: string): int =
-  db.exec(sql"""
-  update users set downvotes = downvotes + 1 where upper(name) = ?;
-  """,  toUpper(name))
-  let totalVotes = db.getValue(sql"select upvotes - downvotes from users where upper(name) = ?",  toUpper(name))
-  if totalVotes == "":
-    result = -1
-  else:
-    result = parseInt(totalVotes)
-
-proc karma(name: string): int =
-  try:
-    result = parseInt(db.getValue(sql"select upvotes - downvotes from users where upper(name) = ?",  toUpper(name)))
-  except:
-    result = -1
-#End user system code
-
+include UserSystem
 
 while true:
     readLine(sock, buffer)
@@ -189,8 +46,11 @@ while true:
     elif ircmsg[1] == "PRIVMSG":
         var nick: string = getNick(ircmsg[0])
         
-
+        #!v
+        if ircmsg[3] == ":!v":
+          send(sock, "PRIVMSG " & ircmsg[2] & " :" & about() & "\r\n")
           
+        #!roll
         if ircmsg[3] == ":!roll":
           if ircmsg.high < 4:
             send(sock, "PRIVMSG " & ircmsg[2] & "Please enter a formula (1d20) " & "\r\n")
@@ -208,23 +68,27 @@ while true:
                 send(sock, "PRIVMSG " & ircmsg[2] & " :" & nick & " rolled a " & $diceResult & "! \r\n")
             except:
               send(sock, "PRIVMSG " & ircmsg[2] & " : Please use smaller / positive / whole) numbers! \r\n")
-
+              
+        #!upvote
         if ircmsg[3] == ":!upvote":
           if ircmsg.high >= 4 and isLoggedIn(nick) and toUpper(ircmsg[4]) != toUpper(nick):
             send(sock, "PRIVMSG " & ircmsg[2] & " :You have upvoted " & ircmsg[4] & " Bringing them to " & $upvote(ircmsg[4]) & " upvotes.\r\n")
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :You cannot upvote unless you are logged in, you cannot upvote yourself, and you must specify a recipient!\r\n")
-
+            
+        #!downvote
         if ircmsg[3] == ":!downvote":
           if ircmsg.high >= 4 and isLoggedIn(nick) and toUpper(ircmsg[4]) != toUpper(nick):
             send(sock, "PRIVMSG " & ircmsg[2] & " :You have downvoted " & ircmsg[4] & " Bringing them to " & $downvote(ircmsg[4]) & " downvotes.\r\n")
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :You cannot downvote unless you are logged in, you cannot downvote yourself, and you must specify a recipient!\r\n")
 
+        #!karma
         if ircmsg[3] == ":!karma":
           if ircmsg.high >= 4 and isLoggedIn(nick):
             send(sock, "PRIVMSG " & ircmsg[2] & " :" & ircmsg[4] & " has a total of " & $karma(ircmsg[4]) & " karma.\r\n")
-          
+
+        #!login     
         if ircmsg[3] == ":!login":
           if ircmsg.high < 4:
             send(sock, "PRIVMSG " & nick & " : Please enter a password! \r\n")
@@ -234,7 +98,7 @@ while true:
               send(sock, "PRIVMSG " & nick & " : You have logged in successfully! \r\n")
             else:
               send(sock, "PRIVMSG " & nick & " : Invalid password! \r\n")
-          
+        #!register          
         if ircmsg[3] == ":!register":
           if ircmsg.high == 4:
             if adduser(nick, ircmsg[4]) > 0:
@@ -247,11 +111,13 @@ while true:
               send(sock, "PRIVMSG " & nick & " : Your randomly generated pass is " & $pass & " \r\n")
             else:
               send(sock, "PRIVMSG " & nick & " : Username is taken. \r\n")     
-        
+
+        #!help        
         if ircmsg[3] == ":!help":
           send(sock, "PRIVMSG " & ircmsg[2] & " :!quote # - Retrieve quote / !addquote <quote> - adds a quote to database\r\n")
           send(sock, "PRIVMSG " & ircmsg[2] & " :!roll <1d20> - Dice roller / !help - this menu\r\n")
 
+        #!quote
         if ircmsg[3] == ":!quote":
           if(ircmsg.high >= 4):
             try:
@@ -261,6 +127,7 @@ while true:
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :" & getQuote(randomInt(1, getQuoteCount() + 1)) & "\r\n")
 
+        #!addquote
         if ircmsg[3] == ":!addquote":
           if(ircmsg.high >= 4):
             let id = addQuote(join(ircmsg[4 .. ircmsg.high], " "))
@@ -268,7 +135,7 @@ while true:
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :Please enter a quote.\r\n")
 
-
+        #!rawsql
         if ircmsg[3] == ":!rawsql":
           if(ircmsg.high >= 4) and isLoggedIn("Cryptotoad") and toLower(nick) == "cryptotoad":
             send(sock, "PRIVMSG " & ircmsg[2] & " :Result: " & $db.tryExec(sql(join(ircmsg[4 .. ircmsg.high], " "))) & "\r\n")
@@ -280,7 +147,8 @@ while true:
 
         #if contains(join(ircmsg[3 .. ircmsg.high], " "), " sad "):
           #send(sock, "PRIVMSG " & ircmsg[2] & " :Cheer up! ESFJ loves you!\r\n")
-          
+
+        #link detection         
         if startsWith(ircmsg[3],  ":http") or startsWith(ircmsg[3],  ":https"):
           var linkTitle: string
           try:
@@ -297,13 +165,11 @@ while true:
             linkTitle = "N/A"
             echo "err!"
 
-          
+        #text buzzwords          
         if contains(join(ircmsg[3 .. ircmsg.high], " "), "meme") or contains(join(ircmsg[3 .. ircmsg.high], " "), "newfag") or contains(join(ircmsg[3 .. ircmsg.high], " "), "triforce"):
           send(sock, "PRIVMSG " & ircmsg[2] & " : ▲\r\n")
           send(sock, "PRIVMSG " & ircmsg[2] & " :▲ ▲\r\n")
 
-        if ircmsg[3] == ":!v":
-          send(sock, "PRIVMSG " & ircmsg[2] & " :" & about() & "\r\n")
           
         
 
