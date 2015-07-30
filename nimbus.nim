@@ -43,13 +43,45 @@ while true:
     if ircmsg[0] == "PING":
         send(sock, "PONG " & ircmsg[1] & "\r\n")
 
+    elif ircmsg[1] == "QUIT":
+        send(sock, "PONG " & ircmsg[1] & "\r\n")
+
     elif ircmsg[1] == "PRIVMSG":
         var nick: string = getNick(ircmsg[0])
+
         
         #!v
         if ircmsg[3] == ":!v":
           send(sock, "PRIVMSG " & ircmsg[2] & " :" & about() & "\r\n")
-          
+
+        #!eval
+        if ircmsg[3] == ":!eval" and isLoggedIn("Cryptotoad") and toLower(nick) == "cryptotoad":
+          let filename = "eval.nim"
+          var outHandle = open(filename, fmWrite)
+          var result: string
+
+          outHandle.writeln("proc eval(): auto =")
+          for line in split(join(ircmsg[4 .. ircmsg.high], " "), ";"):
+              outHandle.writeln(" " & line)
+          outHandle.writeln("when compiles(echo eval()): echo eval()")
+          outHandle.writeln("else: eval()")
+          close(outHandle)
+
+          var resultInitial = execCmdEx("nim c --stackTrace:off --lineTrace:off --threads:off --checks:off --fieldChecks:off --rangeChecks:on --boundChecks:on --overflowChecks:on --assertions:on --floatChecks:off --nanChecks:on --infChecks:off --opt:none --warnings:off --hints:off --threadanalysis:off --verbosity:0 " & filename)
+
+          if resultInitial.output == "":
+              var resultSecond = execCmdEx("./" & filename[0 .. (filename.len - ".nim".len - 1)])
+
+              if resultSecond.output == "":
+                  result = "<no output>"
+
+              else:
+                  result = resultSecond.output
+
+          else:
+              result = resultInitial.output
+
+          send(sock, "PRIVMSG " & ircmsg[2] & " :" & nick & ": " & result & "\r\n")
         #!roll
         if ircmsg[3] == ":!roll":
           if ircmsg.high < 4:
@@ -72,14 +104,14 @@ while true:
         #!upvote
         if ircmsg[3] == ":!upvote":
           if ircmsg.high >= 4 and isLoggedIn(nick) and toUpper(ircmsg[4]) != toUpper(nick):
-            send(sock, "PRIVMSG " & ircmsg[2] & " :You have upvoted " & ircmsg[4] & " Bringing them to " & $upvote(ircmsg[4]) & " upvotes.\r\n")
+            send(sock, "PRIVMSG " & ircmsg[2] & " :You have upvoted " & ircmsg[4] & " Bringing them to " & $upvote(ircmsg[4]) & " karma.\r\n")
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :You cannot upvote unless you are logged in, you cannot upvote yourself, and you must specify a recipient!\r\n")
             
         #!downvote
         if ircmsg[3] == ":!downvote":
           if ircmsg.high >= 4 and isLoggedIn(nick) and toUpper(ircmsg[4]) != toUpper(nick):
-            send(sock, "PRIVMSG " & ircmsg[2] & " :You have downvoted " & ircmsg[4] & " Bringing them to " & $downvote(ircmsg[4]) & " downvotes.\r\n")
+            send(sock, "PRIVMSG " & ircmsg[2] & " :You have downvoted " & ircmsg[4] & " Bringing them to " & $downvote(ircmsg[4]) & " karma.\r\n")
           else:
             send(sock, "PRIVMSG " & ircmsg[2] & " :You cannot downvote unless you are logged in, you cannot downvote yourself, and you must specify a recipient!\r\n")
 

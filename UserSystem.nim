@@ -68,7 +68,8 @@ create table if not exists users(
   upvotes integer not null,
   downvotes integer not null,
   rank integer not null,
-  pass varchar(30) not null);
+  pass varchar(30) not null,
+  loot varchar(300));
 """, [])
 
 
@@ -78,7 +79,12 @@ send(sock, "NICK " & nick & "\r\n")
 send(sock, "USER " & nick & " " & nick & " " & nick & " :ESFJ IRC\r\n")
 send(sock, "MODE " & nick & " +i\r\n")
 
-
+proc intToItem(itemID: int): string =
+  case itemID
+  of 1:
+    result = "flaming"
+  else:
+    result = "none"
 
 proc isLoggedIn(name: string): bool =
   for i in countup(0, loggedIn.high):
@@ -110,7 +116,7 @@ proc addQuote(content: string): int = #add a quote to the database, return the r
 
 proc addUser(name: string, pass: string): int =
   if not checkUser(name):
-    result = tryInsertID(db, sql"insert into users(id, name, upvotes, downvotes, rank, pass) values (null, ?, 0, 0, 0, ?)", name, pass).int
+    result = tryInsertID(db, sql"insert into users(id, name, upvotes, downvotes, rank, pass, loot) values (null, ?, 0, 0, 0, ?, '')", name, pass).int
   else:
     return -1
 
