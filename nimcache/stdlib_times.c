@@ -10,15 +10,15 @@
 #include <time.h>
 
 #include <string.h>
-typedef struct Timeinterval108407 Timeinterval108407;
-typedef struct Timeinfo108405 Timeinfo108405;
+typedef struct Timeinterval106407 Timeinterval106407;
+typedef struct Timeinfo106405 Timeinfo106405;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct TY108548 TY108548;
-typedef struct Tfiletime105245 Tfiletime105245;
+typedef struct TY106548 TY106548;
+typedef struct Tfiletime103245 Tfiletime103245;
 typedef struct Slice88061 Slice88061;
 typedef struct Valueerror3449 Valueerror3449;
 typedef struct Exception Exception;
@@ -37,7 +37,7 @@ typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
-struct  Timeinterval108407  {
+struct  Timeinterval106407  {
 NI miliseconds;
 NI seconds;
 NI minutes;
@@ -69,7 +69,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  Timeinfo108405  {
+struct  Timeinfo106405  {
   TNimObject Sup;
 NI second;
 NI minute;
@@ -91,19 +91,19 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-typedef NU8 TY109054[7];
-struct TY108548 {
+typedef NU8 TY107054[7];
+struct TY106548 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 };
-typedef NI8 TY109073[7];
-struct  Tfiletime105245  {
+typedef NI8 TY107073[7];
+struct  Tfiletime103245  {
 NI32 dwlowdatetime;
 NI32 dwhighdatetime;
 };
-typedef N_STDCALL_PTR(void, TY106625) (Tfiletime105245* lpsystemtimeasfiletime);
-typedef NimStringDesc* TY110239[7];
-typedef NimStringDesc* TY110255[12];
+typedef N_STDCALL_PTR(void, TY104625) (Tfiletime103245* lpsystemtimeasfiletime);
+typedef NimStringDesc* TY108239[7];
+typedef NimStringDesc* TY108255[12];
 struct  Slice88061  {
 NI a;
 NI b;
@@ -222,64 +222,64 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-N_NIMCALL(time_t, fromseconds_108477)(NI64 since1970);
+N_NIMCALL(time_t, fromseconds_106477)(NI64 since1970);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
 N_NIMCALL(NIM_BOOL, ntLtTime)(time_t a, time_t b);
 N_NIMCALL(NIM_BOOL, ntLeTime)(time_t a, time_t b);
 N_NIMCALL(NIM_BOOL, ntEqTime)(time_t a, time_t b);
-N_NIMCALL(Timeinterval108407, initinterval_108614)(NI miliseconds, NI seconds, NI minutes, NI hours, NI days, NI months, NI years);
-N_NIMCALL(NIM_BOOL, isleapyear_108630)(NI year);
+N_NIMCALL(Timeinterval106407, initinterval_106614)(NI miliseconds, NI seconds, NI minutes, NI hours, NI days, NI months, NI years);
+N_NIMCALL(NIM_BOOL, isleapyear_106630)(NI year);
 static N_INLINE(NI, modInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
-N_NIMCALL(NI, getdaysinmonth_108645)(NU8 month, NI year);
-static N_INLINE(void, HEX2BHEX3D_108689)(NF* x, NF y);
-N_NIMCALL(NF, toseconds_108658)(Timeinfo108405* a, Timeinterval108407* interval);
+N_NIMCALL(NI, getdaysinmonth_106645)(NU8 month, NI year);
+static N_INLINE(void, HEX2BHEX3D_106689)(NF* x, NF y);
+N_NIMCALL(NF, toseconds_106658)(Timeinfo106405* a, Timeinterval106407* interval);
 N_NIMCALL(void, genericAssign)(void* dest, void* src, TNimType* mt);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NF, HEX2F_87999)(NI x, NI y);
-N_NIMCALL(void, HEX2B_108808)(Timeinfo108405* a, Timeinterval108407* interval, Timeinfo108405* Result);
+N_NIMCALL(void, HEX2B_106808)(Timeinfo106405* a, Timeinterval106407* interval, Timeinfo106405* Result);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
 N_NOINLINE(void, chckNil)(void* p);
 N_NIMCALL(void, genericReset)(void* dest, TNimType* mt);
-N_NIMCALL(void, HEX2D_108821)(Timeinfo108405* a, Timeinterval108407* interval, Timeinfo108405* Result);
-N_NIMCALL(void, tmtotimeinfo_109048)(struct tm* tm, NIM_BOOL local, Timeinfo108405* Result);
+N_NIMCALL(void, HEX2D_106821)(Timeinfo106405* a, Timeinterval106407* interval, Timeinfo106405* Result);
+N_NIMCALL(void, tmtotimeinfo_107048)(struct tm* tm, NIM_BOOL local, Timeinfo106405* Result);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(void, gettzname_108546)(TY108548* Result);
+N_NIMCALL(void, gettzname_106546)(TY106548* Result);
 N_NIMCALL(NimStringDesc*, cstrToNimstr)(NCSTRING str);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
-N_NIMCALL(NI, gettimezone_108604)(void);
+N_NIMCALL(NI, gettimezone_106604)(void);
 N_NIMCALL(void, genericShallowAssign)(void* dest, void* src, TNimType* mt);
-N_NIMCALL(struct tm, timeinfototm_109068)(Timeinfo108405* t);
+N_NIMCALL(struct tm, timeinfototm_107068)(Timeinfo106405* t);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NIMCALL(NI64, ntDiffTime)(time_t a, time_t b);
-N_NIMCALL(NI, getstartmilsecs_108609)(void);
+N_NIMCALL(NI, getstartmilsecs_106609)(void);
 static N_INLINE(NI, divInt)(NI a, NI b);
-N_NIMCALL(time_t, gettime_108448)(void);
-N_NIMCALL(void, getlocaltime_108453)(time_t t, Timeinfo108405* Result);
-N_NIMCALL(void, getgmtime_108459)(time_t t, Timeinfo108405* Result);
-N_NIMCALL(time_t, timeinfototime_108465)(Timeinfo108405* timeinfo);
-N_NIMCALL(NimStringDesc*, tostringtillnl_109637)(NCSTRING p);
+N_NIMCALL(time_t, gettime_106448)(void);
+N_NIMCALL(void, getlocaltime_106453)(time_t t, Timeinfo106405* Result);
+N_NIMCALL(void, getgmtime_106459)(time_t t, Timeinfo106405* Result);
+N_NIMCALL(time_t, timeinfototime_106465)(Timeinfo106405* timeinfo);
+N_NIMCALL(NimStringDesc*, tostringtillnl_107637)(NCSTRING p);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
-N_NIMCALL(NimStringDesc*, HEX24_108494)(Timeinfo108405* timeinfo);
-N_NIMCALL(NimStringDesc*, HEX24_108500)(time_t time);
-N_NIMCALL(NI64, unixtimetowintime_109680)(time_t t);
+N_NIMCALL(NimStringDesc*, HEX24_106494)(Timeinfo106405* timeinfo);
+N_NIMCALL(NimStringDesc*, HEX24_106500)(time_t time);
+N_NIMCALL(NI64, unixtimetowintime_107680)(time_t t);
 N_NIMCALL(NI64, mulInt64)(NI64 a, NI64 b);
 static N_INLINE(NI64, addInt64)(NI64 a, NI64 b);
-N_NIMCALL(time_t, wintimetounixtime_109688)(NI64 t);
+N_NIMCALL(time_t, wintimetounixtime_107688)(NI64 t);
 static N_INLINE(NI64, subInt64)(NI64 a, NI64 b);
 static N_INLINE(NI64, divInt64)(NI64 a, NI64 b);
 N_NIMCALL(NI64, chckRange64)(NI64 i, NI64 a, NI64 b);
-N_NIMCALL(time_t, fromseconds_108471)(NF since1970);
-N_NIMCALL(NF, toseconds_108488)(time_t time);
+N_NIMCALL(time_t, fromseconds_106471)(NF since1970);
+N_NIMCALL(NF, toseconds_106488)(time_t time);
 N_NIMCALL(NF, ntepochTime)(void);
-N_NIMCALL(NI64, rdfiletime_106604)(Tfiletime105245 f);
+N_NIMCALL(NI64, rdfiletime_104604)(Tfiletime103245 f);
 static N_INLINE(NI64, modInt64)(NI64 a, NI64 b);
 N_NIMCALL(NF, ntcpuTime)(void);
 N_NIMCALL(NimStringDesc*, ntgetDateStr)(void);
@@ -289,15 +289,15 @@ static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
 N_NIMCALL(NimStringDesc*, nsuIntToStr)(NI x, NI minchars);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, ntgetClockStr)(void);
-N_NIMCALL(NimStringDesc*, HEX24_110234)(NU8 day);
-N_NIMCALL(NimStringDesc*, HEX24_110250)(NU8 m);
-N_NIMCALL(void, formattoken_110266)(Timeinfo108405* info, NimStringDesc* token, NimStringDesc** buf);
+N_NIMCALL(NimStringDesc*, HEX24_108234)(NU8 day);
+N_NIMCALL(NimStringDesc*, HEX24_108250)(NU8 m);
+N_NIMCALL(void, formattoken_108266)(Timeinfo106405* info, NimStringDesc* token, NimStringDesc** buf);
 N_NIMCALL(NI, hashString)(NimStringDesc* s);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
 static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
-static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b);
+static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b);
 N_NIMCALL(NimStringDesc*, nsuRepeatChar)(NIM_CHAR c, NI count);
 N_NIMCALL(void, insert_89801)(NimStringDesc** x, NimStringDesc* item, NI i);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
@@ -306,8 +306,8 @@ static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f);
-N_NIMCALL(void, parsetoken_110460)(Timeinfo108405* info, NimStringDesc* token, NimStringDesc* value, NI* j);
+N_NIMCALL(NimStringDesc*, format_108392)(Timeinfo106405* info, NimStringDesc* f);
+N_NIMCALL(void, parsetoken_108460)(Timeinfo106405* info, NimStringDesc* token, NimStringDesc* value, NI* j);
 N_NIMCALL(NI, npuParseInt)(NimStringDesc* s, NI* number, NI start);
 N_NIMCALL(NI, nsuParseInt)(NimStringDesc* s);
 N_NIMCALL(NimStringDesc*, nsuToLowerStr)(NimStringDesc* s);
@@ -316,9 +316,9 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringDesc* a, NimStringDesc* b);
 N_NIMCALL(NimStringDesc*, nimCharToStr)(NIM_CHAR x);
 N_NIMCALL(NimStringDesc*, nsuToUpperStr)(NimStringDesc* s);
-N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timeinfo108405* Result);
-STRING_LITERAL(TMP177, "UTC", 3);
-NIM_CONST TY109054 weekdays_109053 = {((NU8) 6),
+N_NIMCALL(void, parse_109352)(NimStringDesc* value, NimStringDesc* layout, Timeinfo106405* Result);
+STRING_LITERAL(TMP175, "UTC", 3);
+NIM_CONST TY107054 weekdays_107053 = {((NU8) 6),
 ((NU8) 0),
 ((NU8) 1),
 ((NU8) 2),
@@ -326,7 +326,7 @@ NIM_CONST TY109054 weekdays_109053 = {((NU8) 6),
 ((NU8) 4),
 ((NU8) 5)}
 ;
-NIM_CONST TY109073 weekdays_109072 = {((NI8) 1),
+NIM_CONST TY107073 weekdays_107072 = {((NI8) 1),
 ((NI8) 2),
 ((NI8) 3),
 ((NI8) 4),
@@ -334,35 +334,37 @@ NIM_CONST TY109073 weekdays_109072 = {((NI8) 1),
 ((NI8) 6),
 ((NI8) 0)}
 ;
-STRING_LITERAL(TMP182, "", 0);
-STRING_LITERAL(TMP197, "Monday", 6);
-STRING_LITERAL(TMP198, "Tuesday", 7);
-STRING_LITERAL(TMP199, "Wednesday", 9);
-STRING_LITERAL(TMP200, "Thursday", 8);
-STRING_LITERAL(TMP201, "Friday", 6);
-STRING_LITERAL(TMP202, "Saturday", 8);
-STRING_LITERAL(TMP203, "Sunday", 6);
-NIM_CONST TY110239 lookup_110238 = {((NimStringDesc*) &TMP197),
+STRING_LITERAL(TMP180, "", 0);
+STRING_LITERAL(TMP195, "Monday", 6);
+STRING_LITERAL(TMP196, "Tuesday", 7);
+STRING_LITERAL(TMP197, "Wednesday", 9);
+STRING_LITERAL(TMP198, "Thursday", 8);
+STRING_LITERAL(TMP199, "Friday", 6);
+STRING_LITERAL(TMP200, "Saturday", 8);
+STRING_LITERAL(TMP201, "Sunday", 6);
+NIM_CONST TY108239 lookup_108238 = {((NimStringDesc*) &TMP195),
+((NimStringDesc*) &TMP196),
+((NimStringDesc*) &TMP197),
 ((NimStringDesc*) &TMP198),
 ((NimStringDesc*) &TMP199),
 ((NimStringDesc*) &TMP200),
-((NimStringDesc*) &TMP201),
-((NimStringDesc*) &TMP202),
-((NimStringDesc*) &TMP203)}
+((NimStringDesc*) &TMP201)}
 ;
-STRING_LITERAL(TMP204, "January", 7);
-STRING_LITERAL(TMP205, "February", 8);
-STRING_LITERAL(TMP206, "March", 5);
-STRING_LITERAL(TMP207, "April", 5);
-STRING_LITERAL(TMP208, "May", 3);
-STRING_LITERAL(TMP209, "June", 4);
-STRING_LITERAL(TMP210, "July", 4);
-STRING_LITERAL(TMP211, "August", 6);
-STRING_LITERAL(TMP212, "September", 9);
-STRING_LITERAL(TMP213, "October", 7);
-STRING_LITERAL(TMP214, "November", 8);
-STRING_LITERAL(TMP215, "December", 8);
-NIM_CONST TY110255 lookup_110254 = {((NimStringDesc*) &TMP204),
+STRING_LITERAL(TMP202, "January", 7);
+STRING_LITERAL(TMP203, "February", 8);
+STRING_LITERAL(TMP204, "March", 5);
+STRING_LITERAL(TMP205, "April", 5);
+STRING_LITERAL(TMP206, "May", 3);
+STRING_LITERAL(TMP207, "June", 4);
+STRING_LITERAL(TMP208, "July", 4);
+STRING_LITERAL(TMP209, "August", 6);
+STRING_LITERAL(TMP210, "September", 9);
+STRING_LITERAL(TMP211, "October", 7);
+STRING_LITERAL(TMP212, "November", 8);
+STRING_LITERAL(TMP213, "December", 8);
+NIM_CONST TY108255 lookup_108254 = {((NimStringDesc*) &TMP202),
+((NimStringDesc*) &TMP203),
+((NimStringDesc*) &TMP204),
 ((NimStringDesc*) &TMP205),
 ((NimStringDesc*) &TMP206),
 ((NimStringDesc*) &TMP207),
@@ -371,101 +373,99 @@ NIM_CONST TY110255 lookup_110254 = {((NimStringDesc*) &TMP204),
 ((NimStringDesc*) &TMP210),
 ((NimStringDesc*) &TMP211),
 ((NimStringDesc*) &TMP212),
-((NimStringDesc*) &TMP213),
-((NimStringDesc*) &TMP214),
-((NimStringDesc*) &TMP215)}
+((NimStringDesc*) &TMP213)}
 ;
-STRING_LITERAL(TMP216, "d", 1);
-STRING_LITERAL(TMP217, "dd", 2);
-STRING_LITERAL(TMP218, "ddd", 3);
-STRING_LITERAL(TMP219, "dddd", 4);
-STRING_LITERAL(TMP220, "h", 1);
-STRING_LITERAL(TMP221, "hh", 2);
-STRING_LITERAL(TMP222, "H", 1);
-STRING_LITERAL(TMP223, "HH", 2);
-STRING_LITERAL(TMP224, "m", 1);
-STRING_LITERAL(TMP225, "mm", 2);
-STRING_LITERAL(TMP226, "M", 1);
-STRING_LITERAL(TMP227, "MM", 2);
-STRING_LITERAL(TMP228, "MMM", 3);
-STRING_LITERAL(TMP229, "MMMM", 4);
-STRING_LITERAL(TMP230, "s", 1);
-STRING_LITERAL(TMP231, "ss", 2);
-STRING_LITERAL(TMP232, "t", 1);
-STRING_LITERAL(TMP233, "tt", 2);
-STRING_LITERAL(TMP234, "y", 1);
-STRING_LITERAL(TMP235, "yy", 2);
-STRING_LITERAL(TMP236, "yyy", 3);
-STRING_LITERAL(TMP237, "yyyy", 4);
-STRING_LITERAL(TMP238, "yyyyy", 5);
-STRING_LITERAL(TMP239, "z", 1);
-STRING_LITERAL(TMP240, "zz", 2);
-STRING_LITERAL(TMP241, "zzz", 3);
-STRING_LITERAL(TMP242, "ZZZ", 3);
-STRING_LITERAL(TMP243, "0", 1);
-STRING_LITERAL(TMP248, "PM", 2);
-STRING_LITERAL(TMP249, "AM", 2);
-STRING_LITERAL(TMP274, ":00", 3);
-STRING_LITERAL(TMP277, "Invalid format string: ", 23);
-STRING_LITERAL(TMP302, "sun", 3);
-STRING_LITERAL(TMP303, "mon", 3);
-STRING_LITERAL(TMP304, "tue", 3);
-STRING_LITERAL(TMP305, "wed", 3);
-STRING_LITERAL(TMP306, "thu", 3);
-STRING_LITERAL(TMP307, "fri", 3);
-STRING_LITERAL(TMP308, "sat", 3);
-STRING_LITERAL(TMP309, "invalid day of week ", 20);
-STRING_LITERAL(TMP316, "sunday", 6);
-STRING_LITERAL(TMP320, "monday", 6);
-STRING_LITERAL(TMP324, "tuesday", 7);
-STRING_LITERAL(TMP328, "wednesday", 9);
-STRING_LITERAL(TMP332, "thursday", 8);
-STRING_LITERAL(TMP336, "friday", 6);
-STRING_LITERAL(TMP340, "saturday", 8);
-STRING_LITERAL(TMP357, "jan", 3);
-STRING_LITERAL(TMP358, "feb", 3);
-STRING_LITERAL(TMP359, "mar", 3);
-STRING_LITERAL(TMP360, "apr", 3);
-STRING_LITERAL(TMP361, "may", 3);
-STRING_LITERAL(TMP362, "jun", 3);
-STRING_LITERAL(TMP363, "jul", 3);
-STRING_LITERAL(TMP364, "aug", 3);
-STRING_LITERAL(TMP365, "sep", 3);
-STRING_LITERAL(TMP366, "oct", 3);
-STRING_LITERAL(TMP367, "nov", 3);
-STRING_LITERAL(TMP368, "dec", 3);
-STRING_LITERAL(TMP369, "invalid month", 13);
-STRING_LITERAL(TMP373, "january", 7);
-STRING_LITERAL(TMP377, "february", 8);
-STRING_LITERAL(TMP381, "march", 5);
-STRING_LITERAL(TMP385, "april", 5);
-STRING_LITERAL(TMP392, "june", 4);
-STRING_LITERAL(TMP396, "july", 4);
-STRING_LITERAL(TMP400, "august", 6);
-STRING_LITERAL(TMP404, "september", 9);
-STRING_LITERAL(TMP408, "october", 7);
-STRING_LITERAL(TMP412, "november", 8);
-STRING_LITERAL(TMP416, "december", 8);
-STRING_LITERAL(TMP437, "Sign for timezone ", 18);
+STRING_LITERAL(TMP214, "d", 1);
+STRING_LITERAL(TMP215, "dd", 2);
+STRING_LITERAL(TMP216, "ddd", 3);
+STRING_LITERAL(TMP217, "dddd", 4);
+STRING_LITERAL(TMP218, "h", 1);
+STRING_LITERAL(TMP219, "hh", 2);
+STRING_LITERAL(TMP220, "H", 1);
+STRING_LITERAL(TMP221, "HH", 2);
+STRING_LITERAL(TMP222, "m", 1);
+STRING_LITERAL(TMP223, "mm", 2);
+STRING_LITERAL(TMP224, "M", 1);
+STRING_LITERAL(TMP225, "MM", 2);
+STRING_LITERAL(TMP226, "MMM", 3);
+STRING_LITERAL(TMP227, "MMMM", 4);
+STRING_LITERAL(TMP228, "s", 1);
+STRING_LITERAL(TMP229, "ss", 2);
+STRING_LITERAL(TMP230, "t", 1);
+STRING_LITERAL(TMP231, "tt", 2);
+STRING_LITERAL(TMP232, "y", 1);
+STRING_LITERAL(TMP233, "yy", 2);
+STRING_LITERAL(TMP234, "yyy", 3);
+STRING_LITERAL(TMP235, "yyyy", 4);
+STRING_LITERAL(TMP236, "yyyyy", 5);
+STRING_LITERAL(TMP237, "z", 1);
+STRING_LITERAL(TMP238, "zz", 2);
+STRING_LITERAL(TMP239, "zzz", 3);
+STRING_LITERAL(TMP240, "ZZZ", 3);
+STRING_LITERAL(TMP241, "0", 1);
+STRING_LITERAL(TMP246, "PM", 2);
+STRING_LITERAL(TMP247, "AM", 2);
+STRING_LITERAL(TMP272, ":00", 3);
+STRING_LITERAL(TMP275, "Invalid format string: ", 23);
+STRING_LITERAL(TMP300, "sun", 3);
+STRING_LITERAL(TMP301, "mon", 3);
+STRING_LITERAL(TMP302, "tue", 3);
+STRING_LITERAL(TMP303, "wed", 3);
+STRING_LITERAL(TMP304, "thu", 3);
+STRING_LITERAL(TMP305, "fri", 3);
+STRING_LITERAL(TMP306, "sat", 3);
+STRING_LITERAL(TMP307, "invalid day of week ", 20);
+STRING_LITERAL(TMP314, "sunday", 6);
+STRING_LITERAL(TMP318, "monday", 6);
+STRING_LITERAL(TMP322, "tuesday", 7);
+STRING_LITERAL(TMP326, "wednesday", 9);
+STRING_LITERAL(TMP330, "thursday", 8);
+STRING_LITERAL(TMP334, "friday", 6);
+STRING_LITERAL(TMP338, "saturday", 8);
+STRING_LITERAL(TMP355, "jan", 3);
+STRING_LITERAL(TMP356, "feb", 3);
+STRING_LITERAL(TMP357, "mar", 3);
+STRING_LITERAL(TMP358, "apr", 3);
+STRING_LITERAL(TMP359, "may", 3);
+STRING_LITERAL(TMP360, "jun", 3);
+STRING_LITERAL(TMP361, "jul", 3);
+STRING_LITERAL(TMP362, "aug", 3);
+STRING_LITERAL(TMP363, "sep", 3);
+STRING_LITERAL(TMP364, "oct", 3);
+STRING_LITERAL(TMP365, "nov", 3);
+STRING_LITERAL(TMP366, "dec", 3);
+STRING_LITERAL(TMP367, "invalid month", 13);
+STRING_LITERAL(TMP371, "january", 7);
+STRING_LITERAL(TMP375, "february", 8);
+STRING_LITERAL(TMP379, "march", 5);
+STRING_LITERAL(TMP383, "april", 5);
+STRING_LITERAL(TMP390, "june", 4);
+STRING_LITERAL(TMP394, "july", 4);
+STRING_LITERAL(TMP398, "august", 6);
+STRING_LITERAL(TMP402, "september", 9);
+STRING_LITERAL(TMP406, "october", 7);
+STRING_LITERAL(TMP410, "november", 8);
+STRING_LITERAL(TMP414, "december", 8);
+STRING_LITERAL(TMP435, "Sign for timezone ", 18);
 extern TFrame* frameptr_17042;
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI108405; /* TimeInfo */
+TNimType NTI106405; /* TimeInfo */
 extern TNimType NTI108; /* int */
-TNimType NTI108408; /* range 0..61(int) */
-TNimType NTI108410; /* range 0..59(int) */
-TNimType NTI108412; /* range 0..23(int) */
-TNimType NTI108415; /* range 1..31(int) */
-TNimType NTI105006; /* Month */
-TNimType NTI108418; /* range -10000..10000(int) */
-TNimType NTI105008; /* WeekDay */
-TNimType NTI108424; /* range 0..365(int) */
+TNimType NTI106408; /* range 0..61(int) */
+TNimType NTI106410; /* range 0..59(int) */
+TNimType NTI106412; /* range 0..23(int) */
+TNimType NTI106415; /* range 1..31(int) */
+TNimType NTI103006; /* Month */
+TNimType NTI106418; /* range -10000..10000(int) */
+TNimType NTI103008; /* WeekDay */
+TNimType NTI106424; /* range 0..365(int) */
 extern TNimType NTI138; /* bool */
 extern TNimType NTI149; /* string */
-extern TY106625 Dl_106624;
+extern TY104625 Dl_104624;
 extern TNimType NTI22801; /* ref ValueError */
 extern TNimType NTI3449; /* ValueError */
 extern Tgcheap48616 gch_48644;
-TNimType NTI108548; /* tuple[nonDST: string, DST: string] */
+TNimType NTI106548; /* tuple[nonDST: string, DST: string] */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -494,13 +494,13 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(time_t, fromseconds_108477)(NI64 since1970) {
+N_NIMCALL(time_t, fromseconds_106477)(NI64 since1970) {
 	time_t result;
 	nimfr("fromSeconds", "times.nim")
 	result = 0;
 	nimln(170, "times.nim");
 	nimln(172, "times.nim");
-	result = fromseconds_108471(((NF) (since1970)));
+	result = fromseconds_106471(((NF) (since1970)));
 	popFrame();
 	return result;
 }
@@ -544,8 +544,8 @@ N_NIMCALL(NIM_BOOL, ntEqTime)(time_t a, time_t b) {
 	return result;
 }
 
-N_NIMCALL(Timeinterval108407, initinterval_108614)(NI miliseconds, NI seconds, NI minutes, NI hours, NI days, NI months, NI years) {
-	Timeinterval108407 result;
+N_NIMCALL(Timeinterval106407, initinterval_106614)(NI miliseconds, NI seconds, NI minutes, NI hours, NI days, NI months, NI years) {
+	Timeinterval106407 result;
 	nimfr("initInterval", "times.nim")
 	memset((void*)(&result), 0, sizeof(result));
 	nimln(217, "times.nim");
@@ -580,15 +580,15 @@ static N_INLINE(NI, modInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, isleapyear_108630)(NI year) {
+N_NIMCALL(NIM_BOOL, isleapyear_106630)(NI year) {
 	NIM_BOOL result;
 	nimfr("isLeapYear", "times.nim")
 {	result = 0;
 	nimln(228, "times.nim");
 	{
-		NI TMP153;
-		TMP153 = modInt(year, ((NI) 400));
-		if (!(((NI) ((NI)(TMP153))) == ((NI) 0))) goto LA3;
+		NI TMP151;
+		TMP151 = modInt(year, ((NI) 400));
+		if (!(((NI) ((NI)(TMP151))) == ((NI) 0))) goto LA3;
 		nimln(229, "times.nim");
 		result = NIM_TRUE;
 		goto BeforeRet;
@@ -596,10 +596,10 @@ N_NIMCALL(NIM_BOOL, isleapyear_108630)(NI year) {
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP154;
+		NI TMP152;
 		nimln(230, "times.nim");
-		TMP154 = modInt(year, ((NI) 100));
-		if (!(((NI) ((NI)(TMP154))) == ((NI) 0))) goto LA6;
+		TMP152 = modInt(year, ((NI) 100));
+		if (!(((NI) ((NI)(TMP152))) == ((NI) 0))) goto LA6;
 		nimln(231, "times.nim");
 		result = NIM_FALSE;
 		goto BeforeRet;
@@ -607,10 +607,10 @@ N_NIMCALL(NIM_BOOL, isleapyear_108630)(NI year) {
 	goto LA1;
 	LA6: ;
 	{
-		NI TMP155;
+		NI TMP153;
 		nimln(232, "times.nim");
-		TMP155 = modInt(year, ((NI) 4));
-		if (!(((NI) ((NI)(TMP155))) == ((NI) 0))) goto LA9;
+		TMP153 = modInt(year, ((NI) 4));
+		if (!(((NI) ((NI)(TMP153))) == ((NI) 0))) goto LA9;
 		nimln(233, "times.nim");
 		result = NIM_TRUE;
 		goto BeforeRet;
@@ -628,7 +628,7 @@ N_NIMCALL(NIM_BOOL, isleapyear_108630)(NI year) {
 	return result;
 }
 
-N_NIMCALL(NI, getdaysinmonth_108645)(NU8 month, NI year) {
+N_NIMCALL(NI, getdaysinmonth_106645)(NU8 month, NI year) {
 	NI result;
 	nimfr("getDaysInMonth", "times.nim")
 	result = 0;
@@ -640,7 +640,7 @@ N_NIMCALL(NI, getdaysinmonth_108645)(NU8 month, NI year) {
 		{
 			NIM_BOOL LOC4;
 			LOC4 = 0;
-			LOC4 = isleapyear_108630(year);
+			LOC4 = isleapyear_106630(year);
 			if (!LOC4) goto LA5;
 			result = ((NI) 29);
 		}
@@ -672,7 +672,7 @@ N_NIMCALL(NI, getdaysinmonth_108645)(NU8 month, NI year) {
 	return result;
 }
 
-static N_INLINE(void, HEX2BHEX3D_108689)(NF* x, NF y) {
+static N_INLINE(void, HEX2BHEX3D_106689)(NF* x, NF y) {
 	nimfr("+=", "system.nim")
 	nimln(2992, "system.nim");
 	(*x) = ((NF)((*x)) + (NF)(y));
@@ -709,109 +709,109 @@ static N_INLINE(NF, HEX2F_87999)(NI x, NI y) {
 	return result;
 }
 
-N_NIMCALL(NF, toseconds_108658)(Timeinfo108405* a, Timeinterval108407* interval) {
+N_NIMCALL(NF, toseconds_106658)(Timeinfo106405* a, Timeinterval106407* interval) {
 	NF result;
-	Timeinfo108405 anew;
-	Timeinterval108407 newinterv;
-	NI TMP163;
-	NI TMP164;
+	Timeinfo106405 anew;
+	Timeinterval106407 newinterv;
+	NI TMP161;
+	NI TMP162;
 	NU8 curmonth;
+	NI TMP169;
+	NI TMP170;
 	NI TMP171;
 	NI TMP172;
 	NI TMP173;
 	NI TMP174;
-	NI TMP175;
-	NI TMP176;
 	NF LOC10;
 	nimfr("toSeconds", "times.nim")
 	result = 0;
 	memset((void*)(&anew), 0, sizeof(anew));
-	anew.Sup.m_type = (&NTI108405);
+	anew.Sup.m_type = (&NTI106405);
 	nimln(250, "times.nim");
-	genericAssign((void*)(&anew), (void*)a, (&NTI108405));
+	genericAssign((void*)(&anew), (void*)a, (&NTI106405));
 	nimln(251, "times.nim");
 	newinterv = (*interval);
 	nimln(252, "times.nim");
 	result = 0.0;
 	nimln(254, "times.nim");
-	TMP163 = mulInt((*interval).years, ((NI) 12));
-	TMP164 = addInt(newinterv.months, (NI)(TMP163));
-	newinterv.months = (NI)(TMP164);
+	TMP161 = mulInt((*interval).years, ((NI) 12));
+	TMP162 = addInt(newinterv.months, (NI)(TMP161));
+	newinterv.months = (NI)(TMP162);
 	nimln(255, "times.nim");
 	curmonth = anew.month;
 	{
-		NI mth_108685;
-		NI HEX3Atmp_108782;
-		NI res_108785;
-		mth_108685 = 0;
-		HEX3Atmp_108782 = 0;
+		NI mth_106685;
+		NI HEX3Atmp_106782;
+		NI res_106785;
+		mth_106685 = 0;
+		HEX3Atmp_106782 = 0;
 		nimln(256, "times.nim");
-		HEX3Atmp_108782 = newinterv.months;
+		HEX3Atmp_106782 = newinterv.months;
 		nimln(1598, "system.nim");
-		res_108785 = ((NI) 1);
+		res_106785 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI LOC4;
+				NI TMP163;
+				NI TMP164;
 				NI TMP165;
-				NI TMP166;
-				NI TMP167;
-				NI TMP170;
-				if (!(res_108785 <= HEX3Atmp_108782)) goto LA3;
+				NI TMP168;
+				if (!(res_106785 <= HEX3Atmp_106782)) goto LA3;
 				nimln(1600, "system.nim");
-				mth_108685 = res_108785;
+				mth_106685 = res_106785;
 				nimln(257, "times.nim");
 				LOC4 = 0;
-				LOC4 = getdaysinmonth_108645(curmonth, ((NI) (anew.year)));
-				TMP165 = mulInt(LOC4, ((NI) 24));
-				TMP166 = mulInt((NI)(TMP165), ((NI) 60));
-				TMP167 = mulInt((NI)(TMP166), ((NI) 60));
-				HEX2BHEX3D_108689((&result), ((NF) ((NI)(TMP167))));
+				LOC4 = getdaysinmonth_106645(curmonth, ((NI) (anew.year)));
+				TMP163 = mulInt(LOC4, ((NI) 24));
+				TMP164 = mulInt((NI)(TMP163), ((NI) 60));
+				TMP165 = mulInt((NI)(TMP164), ((NI) 60));
+				HEX2BHEX3D_106689((&result), ((NF) ((NI)(TMP165))));
 				nimln(258, "times.nim");
 				{
-					NI TMP168;
+					NI TMP166;
 					if (!(curmonth == ((NU8) 11))) goto LA7;
 					nimln(259, "times.nim");
 					curmonth = ((NU8) 0);
 					nimln(260, "times.nim");
-					TMP168 = addInt(anew.year, ((NI) 1));
-					if (TMP168 < -10000 || TMP168 > 10000) raiseOverflow();
-					anew.year = (NI)(TMP168);
+					TMP166 = addInt(anew.year, ((NI) 1));
+					if (TMP166 < -10000 || TMP166 > 10000) raiseOverflow();
+					anew.year = (NI)(TMP166);
 				}
 				goto LA5;
 				LA7: ;
 				{
-					NI TMP169;
+					NI TMP167;
 					nimln(262, "times.nim");
-					TMP169 = addInt(curmonth, ((NI) 1));
-					if (TMP169 < 0 || TMP169 > 11) raiseOverflow();
-					curmonth = (NU8)(TMP169);
+					TMP167 = addInt(curmonth, ((NI) 1));
+					if (TMP167 < 0 || TMP167 > 11) raiseOverflow();
+					curmonth = (NU8)(TMP167);
 				}
 				LA5: ;
 				nimln(1619, "system.nim");
-				TMP170 = addInt(res_108785, ((NI) 1));
-				res_108785 = (NI)(TMP170);
+				TMP168 = addInt(res_106785, ((NI) 1));
+				res_106785 = (NI)(TMP168);
 			} LA3: ;
 		}
 	}
 	nimln(263, "times.nim");
-	TMP171 = mulInt(newinterv.days, ((NI) 24));
-	TMP172 = mulInt((NI)(TMP171), ((NI) 60));
-	TMP173 = mulInt((NI)(TMP172), ((NI) 60));
-	HEX2BHEX3D_108689((&result), ((NF) ((NI)(TMP173))));
+	TMP169 = mulInt(newinterv.days, ((NI) 24));
+	TMP170 = mulInt((NI)(TMP169), ((NI) 60));
+	TMP171 = mulInt((NI)(TMP170), ((NI) 60));
+	HEX2BHEX3D_106689((&result), ((NF) ((NI)(TMP171))));
 	nimln(264, "times.nim");
-	TMP174 = mulInt(newinterv.hours, ((NI) 60));
-	TMP175 = mulInt((NI)(TMP174), ((NI) 60));
-	HEX2BHEX3D_108689((&result), ((NF) ((NI)(TMP175))));
+	TMP172 = mulInt(newinterv.hours, ((NI) 60));
+	TMP173 = mulInt((NI)(TMP172), ((NI) 60));
+	HEX2BHEX3D_106689((&result), ((NF) ((NI)(TMP173))));
 	nimln(265, "times.nim");
-	TMP176 = mulInt(newinterv.minutes, ((NI) 60));
-	HEX2BHEX3D_108689((&result), ((NF) ((NI)(TMP176))));
+	TMP174 = mulInt(newinterv.minutes, ((NI) 60));
+	HEX2BHEX3D_106689((&result), ((NF) ((NI)(TMP174))));
 	nimln(266, "times.nim");
-	HEX2BHEX3D_108689((&result), ((NF) (newinterv.seconds)));
+	HEX2BHEX3D_106689((&result), ((NF) (newinterv.seconds)));
 	nimln(267, "times.nim");
 	LOC10 = 0;
 	LOC10 = HEX2F_87999(newinterv.miliseconds, ((NI) 1000));
-	HEX2BHEX3D_108689((&result), LOC10);
+	HEX2BHEX3D_106689((&result), LOC10);
 	popFrame();
 	return result;
 }
@@ -852,28 +852,28 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(void, HEX2B_108808)(Timeinfo108405* a, Timeinterval108407* interval, Timeinfo108405* Result) {
+N_NIMCALL(void, HEX2B_106808)(Timeinfo106405* a, Timeinterval106407* interval, Timeinfo106405* Result) {
 	NF t;
 	time_t LOC1;
 	NF secs;
 	nimfr("+", "times.nim")
 	nimln(274, "times.nim");
 	LOC1 = 0;
-	LOC1 = timeinfototime_108465(a);
-	t = toseconds_108488(LOC1);
+	LOC1 = timeinfototime_106465(a);
+	t = toseconds_106488(LOC1);
 	nimln(275, "times.nim");
-	secs = toseconds_108658(a, interval);
+	secs = toseconds_106658(a, interval);
 	nimln(276, "times.nim");
 	{
 		time_t LOC6;
-		if (!eqStrings((*a).tzname, ((NimStringDesc*) &TMP177))) goto LA4;
+		if (!eqStrings((*a).tzname, ((NimStringDesc*) &TMP175))) goto LA4;
 		nimln(277, "times.nim");
 		LOC6 = 0;
-		LOC6 = fromseconds_108471(((NF)(t) + (NF)(secs)));
+		LOC6 = fromseconds_106471(((NF)(t) + (NF)(secs)));
 		chckNil((void*)Result);
-		genericReset((void*)Result, (&NTI108405));
-		(*Result).Sup.m_type = (&NTI108405);
-		getgmtime_108459(LOC6, Result);
+		genericReset((void*)Result, (&NTI106405));
+		(*Result).Sup.m_type = (&NTI106405);
+		getgmtime_106459(LOC6, Result);
 	}
 	goto LA2;
 	LA4: ;
@@ -881,38 +881,38 @@ N_NIMCALL(void, HEX2B_108808)(Timeinfo108405* a, Timeinterval108407* interval, T
 		time_t LOC8;
 		nimln(279, "times.nim");
 		LOC8 = 0;
-		LOC8 = fromseconds_108471(((NF)(t) + (NF)(secs)));
+		LOC8 = fromseconds_106471(((NF)(t) + (NF)(secs)));
 		chckNil((void*)Result);
-		genericReset((void*)Result, (&NTI108405));
-		(*Result).Sup.m_type = (&NTI108405);
-		getlocaltime_108453(LOC8, Result);
+		genericReset((void*)Result, (&NTI106405));
+		(*Result).Sup.m_type = (&NTI106405);
+		getlocaltime_106453(LOC8, Result);
 	}
 	LA2: ;
 	popFrame();
 }
 
-N_NIMCALL(void, HEX2D_108821)(Timeinfo108405* a, Timeinterval108407* interval, Timeinfo108405* Result) {
+N_NIMCALL(void, HEX2D_106821)(Timeinfo106405* a, Timeinterval106407* interval, Timeinfo106405* Result) {
 	NF t;
 	time_t LOC1;
 	NF secs;
 	nimfr("-", "times.nim")
 	nimln(286, "times.nim");
 	LOC1 = 0;
-	LOC1 = timeinfototime_108465(a);
-	t = toseconds_108488(LOC1);
+	LOC1 = timeinfototime_106465(a);
+	t = toseconds_106488(LOC1);
 	nimln(287, "times.nim");
-	secs = toseconds_108658(a, interval);
+	secs = toseconds_106658(a, interval);
 	nimln(288, "times.nim");
 	{
 		time_t LOC6;
-		if (!eqStrings((*a).tzname, ((NimStringDesc*) &TMP177))) goto LA4;
+		if (!eqStrings((*a).tzname, ((NimStringDesc*) &TMP175))) goto LA4;
 		nimln(289, "times.nim");
 		LOC6 = 0;
-		LOC6 = fromseconds_108471(((NF)(t) - (NF)(secs)));
+		LOC6 = fromseconds_106471(((NF)(t) - (NF)(secs)));
 		chckNil((void*)Result);
-		genericReset((void*)Result, (&NTI108405));
-		(*Result).Sup.m_type = (&NTI108405);
-		getgmtime_108459(LOC6, Result);
+		genericReset((void*)Result, (&NTI106405));
+		(*Result).Sup.m_type = (&NTI106405);
+		getgmtime_106459(LOC6, Result);
 	}
 	goto LA2;
 	LA4: ;
@@ -920,11 +920,11 @@ N_NIMCALL(void, HEX2D_108821)(Timeinfo108405* a, Timeinterval108407* interval, T
 		time_t LOC8;
 		nimln(291, "times.nim");
 		LOC8 = 0;
-		LOC8 = fromseconds_108471(((NF)(t) - (NF)(secs)));
+		LOC8 = fromseconds_106471(((NF)(t) - (NF)(secs)));
 		chckNil((void*)Result);
-		genericReset((void*)Result, (&NTI108405));
-		(*Result).Sup.m_type = (&NTI108405);
-		getlocaltime_108453(LOC8, Result);
+		genericReset((void*)Result, (&NTI106405));
+		(*Result).Sup.m_type = (&NTI106405);
+		getlocaltime_106453(LOC8, Result);
 	}
 	LA2: ;
 	popFrame();
@@ -954,7 +954,7 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, gettzname_108546)(TY108548* Result) {
+N_NIMCALL(void, gettzname_106546)(TY106548* Result) {
 	nimfr("getTzname", "times.nim")
 {	nimln(452, "times.nim");
 	unsureAsgnRef((void**) (&(*Result).Field0), cstrToNimstr(tzname[(((NI) 0))- 0]));
@@ -964,7 +964,7 @@ N_NIMCALL(void, gettzname_108546)(TY108548* Result) {
 	popFrame();
 }
 
-N_NIMCALL(NI, gettimezone_108604)(void) {
+N_NIMCALL(NI, gettimezone_106604)(void) {
 	NI result;
 	nimfr("getTimezone", "times.nim")
 {	result = 0;
@@ -976,26 +976,26 @@ N_NIMCALL(NI, gettimezone_108604)(void) {
 	return result;
 }
 
-N_NIMCALL(void, tmtotimeinfo_109048)(struct tm* tm, NIM_BOOL local, Timeinfo108405* Result) {
-	Timeinfo108405 LOC1;
-	NI TMP178;
+N_NIMCALL(void, tmtotimeinfo_107048)(struct tm* tm, NIM_BOOL local, Timeinfo106405* Result) {
+	Timeinfo106405 LOC1;
+	NI TMP176;
 	nimfr("tmToTimeInfo", "times.nim")
 	nimln(352, "times.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.Sup.m_type = (&NTI108405);
+	LOC1.Sup.m_type = (&NTI106405);
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.Sup.m_type = (&NTI108405);
+	LOC1.Sup.m_type = (&NTI106405);
 	LOC1.second = ((NI)chckRange(((NI) ((*tm).tm_sec)), ((NI) 0), ((NI) 61)));
 	LOC1.minute = ((NI)chckRange(((NI) ((*tm).tm_min)), ((NI) 0), ((NI) 59)));
 	LOC1.hour = ((NI)chckRange(((NI) ((*tm).tm_hour)), ((NI) 0), ((NI) 23)));
 	LOC1.monthday = ((NI)chckRange(((NI) ((*tm).tm_mday)), ((NI) 1), ((NI) 31)));
 	LOC1.month = ((NU8)chckRange((*tm).tm_mon, ((NU8) 0), ((NU8) 11)));
 	nimln(360, "times.nim");
-	TMP178 = addInt((*tm).tm_year, ((NI32) 1900));
-	if (TMP178 < (-2147483647 -1) || TMP178 > 2147483647) raiseOverflow();
-	LOC1.year = ((NI)chckRange((NI32)(TMP178), ((NI) -10000), ((NI) 10000)));
+	TMP176 = addInt((*tm).tm_year, ((NI32) 1900));
+	if (TMP176 < (-2147483647 -1) || TMP176 > 2147483647) raiseOverflow();
+	LOC1.year = ((NI)chckRange((NI32)(TMP176), ((NI) -10000), ((NI) 10000)));
 	if ((NU)(((NI) ((*tm).tm_wday))) > (NU)(6)) raiseIndexError();
-	LOC1.weekday = weekdays_109053[(((NI) ((*tm).tm_wday)))- 0];
+	LOC1.weekday = weekdays_107053[(((NI) ((*tm).tm_wday)))- 0];
 	LOC1.yearday = ((NI)chckRange(((NI) ((*tm).tm_yday)), ((NI) 0), ((NI) 365)));
 	nimln(363, "times.nim");
 	LOC1.isdst = (((NI32) 0) < (*tm).tm_isdst);
@@ -1004,20 +1004,20 @@ N_NIMCALL(void, tmtotimeinfo_109048)(struct tm* tm, NIM_BOOL local, Timeinfo1084
 		if (!local) goto LA4;
 		nimln(365, "times.nim");
 		{
-			TY108548 LOC10;
+			TY106548 LOC10;
 			if (!(((NI32) 0) < (*tm).tm_isdst)) goto LA8;
 			nimln(366, "times.nim");
 			memset((void*)(&LOC10), 0, sizeof(LOC10));
-			gettzname_108546((&LOC10));
+			gettzname_106546((&LOC10));
 			LOC1.tzname = copyString(LOC10.Field1);
 		}
 		goto LA6;
 		LA8: ;
 		{
-			TY108548 LOC12;
+			TY106548 LOC12;
 			nimln(368, "times.nim");
 			memset((void*)(&LOC12), 0, sizeof(LOC12));
-			gettzname_108546((&LOC12));
+			gettzname_106546((&LOC12));
 			LOC1.tzname = copyString(LOC12.Field0);
 		}
 		LA6: ;
@@ -1025,13 +1025,13 @@ N_NIMCALL(void, tmtotimeinfo_109048)(struct tm* tm, NIM_BOOL local, Timeinfo1084
 	goto LA2;
 	LA4: ;
 	{
-		LOC1.tzname = copyString(((NimStringDesc*) &TMP177));
+		LOC1.tzname = copyString(((NimStringDesc*) &TMP175));
 	}
 	LA2: ;
 	nimln(371, "times.nim");
 	{
 		if (!local) goto LA16;
-		LOC1.timezone = gettimezone_108604();
+		LOC1.timezone = gettimezone_106604();
 	}
 	goto LA14;
 	LA16: ;
@@ -1039,7 +1039,7 @@ N_NIMCALL(void, tmtotimeinfo_109048)(struct tm* tm, NIM_BOOL local, Timeinfo1084
 		LOC1.timezone = ((NI) 0);
 	}
 	LA14: ;
-	genericShallowAssign((void*)Result, (void*)(&LOC1), (&NTI108405));
+	genericShallowAssign((void*)Result, (void*)(&LOC1), (&NTI106405));
 	popFrame();
 }
 
@@ -1063,9 +1063,9 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(struct tm, timeinfototm_109068)(Timeinfo108405* t) {
+N_NIMCALL(struct tm, timeinfototm_107068)(Timeinfo106405* t) {
 	struct tm result;
-	NI TMP179;
+	NI TMP177;
 	NI LOC1;
 	nimfr("timeInfoToTM", "times.nim")
 	memset((void*)(&result), 0, sizeof(result));
@@ -1080,10 +1080,10 @@ N_NIMCALL(struct tm, timeinfototm_109068)(Timeinfo108405* t) {
 	nimln(381, "times.nim");
 	result.tm_mon = ((int) ((*t).month));
 	nimln(382, "times.nim");
-	TMP179 = subInt(((NI) ((*t).year)), ((NI) 1900));
-	result.tm_year = ((int) ((NI)(TMP179)));
+	TMP177 = subInt(((NI) ((*t).year)), ((NI) 1900));
+	result.tm_year = ((int) ((NI)(TMP177)));
 	nimln(383, "times.nim");
-	result.tm_wday = ((int) (weekdays_109072[((*t).weekday)- 0]));
+	result.tm_wday = ((int) (weekdays_107072[((*t).weekday)- 0]));
 	nimln(384, "times.nim");
 	result.tm_yday = ((int) ((*t).yearday));
 	nimln(385, "times.nim");
@@ -1143,24 +1143,24 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, getstartmilsecs_108609)(void) {
+N_NIMCALL(NI, getstartmilsecs_106609)(void) {
 	NI result;
 	NI LOC1;
-	NI TMP180;
-	NI TMP181;
+	NI TMP178;
+	NI TMP179;
 	nimfr("getStartMilsecs", "times.nim")
 	result = 0;
 	nimln(397, "times.nim");
 	LOC1 = 0;
 	LOC1 = clock();
-	TMP180 = divInt(CLOCKS_PER_SEC, ((NI) 1000));
-	TMP181 = divInt(LOC1, (NI)(TMP180));
-	result = (NI)(TMP181);
+	TMP178 = divInt(CLOCKS_PER_SEC, ((NI) 1000));
+	TMP179 = divInt(LOC1, (NI)(TMP178));
+	result = (NI)(TMP179);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(time_t, gettime_108448)(void) {
+N_NIMCALL(time_t, gettime_106448)(void) {
 	time_t result;
 	nimfr("getTime", "times.nim")
 {	result = 0;
@@ -1172,7 +1172,7 @@ N_NIMCALL(time_t, gettime_108448)(void) {
 	return result;
 }
 
-N_NIMCALL(void, getlocaltime_108453)(time_t t, Timeinfo108405* Result) {
+N_NIMCALL(void, getlocaltime_106453)(time_t t, Timeinfo106405* Result) {
 	time_t a;
 	struct tm* LOC1;
 	nimfr("getLocalTime", "times.nim")
@@ -1182,13 +1182,13 @@ N_NIMCALL(void, getlocaltime_108453)(time_t t, Timeinfo108405* Result) {
 	LOC1 = 0;
 	LOC1 = localtime((&a));
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI108405));
-	(*Result).Sup.m_type = (&NTI108405);
-	tmtotimeinfo_109048((&(*LOC1)), NIM_TRUE, Result);
+	genericReset((void*)Result, (&NTI106405));
+	(*Result).Sup.m_type = (&NTI106405);
+	tmtotimeinfo_107048((&(*LOC1)), NIM_TRUE, Result);
 	popFrame();
 }
 
-N_NIMCALL(void, getgmtime_108459)(time_t t, Timeinfo108405* Result) {
+N_NIMCALL(void, getgmtime_106459)(time_t t, Timeinfo106405* Result) {
 	time_t a;
 	struct tm* LOC1;
 	nimfr("getGMTime", "times.nim")
@@ -1198,24 +1198,24 @@ N_NIMCALL(void, getgmtime_108459)(time_t t, Timeinfo108405* Result) {
 	LOC1 = 0;
 	LOC1 = gmtime((&a));
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI108405));
-	(*Result).Sup.m_type = (&NTI108405);
-	tmtotimeinfo_109048((&(*LOC1)), NIM_FALSE, Result);
+	genericReset((void*)Result, (&NTI106405));
+	(*Result).Sup.m_type = (&NTI106405);
+	tmtotimeinfo_107048((&(*LOC1)), NIM_FALSE, Result);
 	popFrame();
 }
 
-N_NIMCALL(time_t, timeinfototime_108465)(Timeinfo108405* timeinfo) {
+N_NIMCALL(time_t, timeinfototime_106465)(Timeinfo106405* timeinfo) {
 	time_t result;
-	Timeinfo108405 ctimeinfo;
+	Timeinfo106405 ctimeinfo;
 	struct tm LOC1;
 	nimfr("timeInfoToTime", "times.nim")
 {	result = 0;
 	memset((void*)(&ctimeinfo), 0, sizeof(ctimeinfo));
-	ctimeinfo.Sup.m_type = (&NTI108405);
+	ctimeinfo.Sup.m_type = (&NTI106405);
 	nimln(418, "times.nim");
-	genericAssign((void*)(&ctimeinfo), (void*)timeinfo, (&NTI108405));
+	genericAssign((void*)(&ctimeinfo), (void*)timeinfo, (&NTI106405));
 	nimln(420, "times.nim");
-	LOC1 = timeinfototm_109068((&ctimeinfo));
+	LOC1 = timeinfototm_107068((&ctimeinfo));
 	result = mktime((&LOC1));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -1223,13 +1223,13 @@ N_NIMCALL(time_t, timeinfototime_108465)(Timeinfo108405* timeinfo) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, tostringtillnl_109637)(NCSTRING p) {
+N_NIMCALL(NimStringDesc*, tostringtillnl_107637)(NCSTRING p) {
 	NimStringDesc* result;
 	NI i;
 	nimfr("toStringTillNL", "times.nim")
 	result = 0;
 	nimln(423, "times.nim");
-	result = copyString(((NimStringDesc*) &TMP182));
+	result = copyString(((NimStringDesc*) &TMP180));
 	nimln(424, "times.nim");
 	i = ((NI) 0);
 	{
@@ -1237,7 +1237,7 @@ N_NIMCALL(NimStringDesc*, tostringtillnl_109637)(NCSTRING p) {
 		while (1) {
 			NIM_BOOL LOC3;
 			NIM_BOOL LOC4;
-			NI TMP183;
+			NI TMP181;
 			LOC3 = 0;
 			LOC4 = 0;
 			LOC4 = !(((NU8)(p[i]) == (NU8)(0)));
@@ -1252,30 +1252,30 @@ N_NIMCALL(NimStringDesc*, tostringtillnl_109637)(NCSTRING p) {
 			nimln(426, "times.nim");
 			result = addChar(result, p[i]);
 			nimln(427, "times.nim");
-			TMP183 = addInt(i, ((NI) 1));
-			i = (NI)(TMP183);
+			TMP181 = addInt(i, ((NI) 1));
+			i = (NI)(TMP181);
 		} LA2: ;
 	}
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_108494)(Timeinfo108405* timeinfo) {
+N_NIMCALL(NimStringDesc*, HEX24_106494)(Timeinfo106405* timeinfo) {
 	NimStringDesc* result;
 	NCSTRING p;
 	struct tm LOC1;
 	nimfr("$", "times.nim")
 	result = 0;
 	nimln(431, "times.nim");
-	LOC1 = timeinfototm_109068(timeinfo);
+	LOC1 = timeinfototm_107068(timeinfo);
 	p = asctime((&LOC1));
 	nimln(432, "times.nim");
-	result = tostringtillnl_109637(p);
+	result = tostringtillnl_107637(p);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_108500)(time_t time) {
+N_NIMCALL(NimStringDesc*, HEX24_106500)(time_t time) {
 	NimStringDesc* result;
 	time_t a;
 	NCSTRING LOC1;
@@ -1286,7 +1286,7 @@ N_NIMCALL(NimStringDesc*, HEX24_108500)(time_t time) {
 	nimln(437, "times.nim");
 	LOC1 = 0;
 	LOC1 = ctime((&a));
-	result = tostringtillnl_109637(LOC1);
+	result = tostringtillnl_107637(LOC1);
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1313,16 +1313,16 @@ static N_INLINE(NI64, addInt64)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, unixtimetowintime_109680)(time_t t) {
+N_NIMCALL(NI64, unixtimetowintime_107680)(time_t t) {
 	NI64 result;
-	NI64 TMP184;
-	NI64 TMP185;
+	NI64 TMP182;
+	NI64 TMP183;
 	nimfr("unixTimeToWinTime", "times.nim")
 	result = 0;
 	nimln(445, "times.nim");
-	TMP184 = mulInt64(((NI64) (t)), IL64(10000000));
-	TMP185 = addInt64((NI64)(TMP184), IL64(116444736000000000));
-	result = (NI64)(TMP185);
+	TMP182 = mulInt64(((NI64) (t)), IL64(10000000));
+	TMP183 = addInt64((NI64)(TMP182), IL64(116444736000000000));
+	result = (NI64)(TMP183);
 	popFrame();
 	return result;
 }
@@ -1372,21 +1372,21 @@ static N_INLINE(NI64, divInt64)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(time_t, wintimetounixtime_109688)(NI64 t) {
+N_NIMCALL(time_t, wintimetounixtime_107688)(NI64 t) {
 	time_t result;
-	NI64 TMP186;
-	NI64 TMP187;
+	NI64 TMP184;
+	NI64 TMP185;
 	nimfr("winTimeToUnixTime", "times.nim")
 	result = 0;
 	nimln(449, "times.nim");
-	TMP186 = subInt64(t, IL64(116444736000000000));
-	TMP187 = divInt64((NI64)(TMP186), IL64(10000000));
-	result = ((time_t)chckRange64((NI64)(TMP187), ((time_t) (-2147483647 -1)), ((time_t) 2147483647)));
+	TMP184 = subInt64(t, IL64(116444736000000000));
+	TMP185 = divInt64((NI64)(TMP184), IL64(10000000));
+	result = ((time_t)chckRange64((NI64)(TMP185), ((time_t) (-2147483647 -1)), ((time_t) 2147483647)));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(time_t, fromseconds_108471)(NF since1970) {
+N_NIMCALL(time_t, fromseconds_106471)(NF since1970) {
 	time_t result;
 	nimfr("fromSeconds", "times.nim")
 	result = 0;
@@ -1396,7 +1396,7 @@ N_NIMCALL(time_t, fromseconds_108471)(NF since1970) {
 	return result;
 }
 
-N_NIMCALL(NF, toseconds_108488)(time_t time) {
+N_NIMCALL(NF, toseconds_106488)(time_t time) {
 	NF result;
 	nimfr("toSeconds", "times.nim")
 	result = 0;
@@ -1422,30 +1422,30 @@ static N_INLINE(NI64, modInt64)(NI64 a, NI64 b) {
 
 N_NIMCALL(NF, ntepochTime)(void) {
 	NF result;
-	Tfiletime105245 f;
+	Tfiletime103245 f;
 	NI64 i64;
 	NI64 LOC1;
-	NI64 TMP191;
+	NI64 TMP189;
 	NI64 secs;
-	NI64 TMP192;
+	NI64 TMP190;
 	NI64 subsecs;
-	NI64 TMP193;
+	NI64 TMP191;
 	nimfr("epochTime", "times.nim")
 	result = 0;
 	memset((void*)(&f), 0, sizeof(f));
 	nimln(469, "times.nim");
-	Dl_106624((&f));
+	Dl_104624((&f));
 	nimln(470, "times.nim");
 	LOC1 = 0;
-	LOC1 = rdfiletime_106604(f);
-	TMP191 = subInt64(LOC1, IL64(116444736000000000));
-	i64 = (NI64)(TMP191);
+	LOC1 = rdfiletime_104604(f);
+	TMP189 = subInt64(LOC1, IL64(116444736000000000));
+	i64 = (NI64)(TMP189);
 	nimln(471, "times.nim");
-	TMP192 = divInt64(i64, IL64(10000000));
-	secs = (NI64)(TMP192);
+	TMP190 = divInt64(i64, IL64(10000000));
+	secs = (NI64)(TMP190);
 	nimln(472, "times.nim");
-	TMP193 = modInt64(i64, IL64(10000000));
-	subsecs = (NI64)(TMP193);
+	TMP191 = modInt64(i64, IL64(10000000));
+	subsecs = (NI64)(TMP191);
 	nimln(473, "times.nim");
 	result = ((NF)(((double) (((NI) (secs))))) + (NF)(((NF)(((double) (((NI) (subsecs))))) * (NF)(9.9999999999999995e-008))));
 	popFrame();
@@ -1478,33 +1478,33 @@ static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c) {
 
 N_NIMCALL(NimStringDesc*, ntgetDateStr)(void) {
 	NimStringDesc* result;
-	Timeinfo108405 ti;
+	Timeinfo106405 ti;
 	time_t LOC1;
 	NimStringDesc* LOC2;
 	NimStringDesc* LOC3;
-	NI TMP196;
+	NI TMP194;
 	NimStringDesc* LOC4;
 	NimStringDesc* LOC5;
 	nimfr("getDateStr", "times.nim")
 	result = 0;
 	memset((void*)(&ti), 0, sizeof(ti));
-	ti.Sup.m_type = (&NTI108405);
+	ti.Sup.m_type = (&NTI106405);
 	nimln(548, "times.nim");
 	LOC1 = 0;
-	LOC1 = gettime_108448();
+	LOC1 = gettime_106448();
 	chckNil((void*)(&ti));
 	memset((void*)(&ti), 0, sizeof(ti));
-	ti.Sup.m_type = (&NTI108405);
-	getlocaltime_108453(LOC1, (&ti));
+	ti.Sup.m_type = (&NTI106405);
+	getlocaltime_106453(LOC1, (&ti));
 	nimln(549, "times.nim");
 	nimln(550, "times.nim");
 	LOC2 = 0;
 	nimln(549, "times.nim");
 	LOC3 = 0;
 	LOC3 = nimIntToStr(((NI) (ti.year)));
-	TMP196 = addInt(((NI) (ti.month)), ((NI) 1));
+	TMP194 = addInt(((NI) (ti.month)), ((NI) 1));
 	LOC4 = 0;
-	LOC4 = nsuIntToStr(((NI) ((NI)(TMP196))), ((NI) 2));
+	LOC4 = nsuIntToStr(((NI) ((NI)(TMP194))), ((NI) 2));
 	nimln(550, "times.nim");
 	LOC5 = 0;
 	LOC5 = nsuIntToStr(((NI) (ti.monthday)), ((NI) 2));
@@ -1521,7 +1521,7 @@ appendString(LOC2, LOC5);
 
 N_NIMCALL(NimStringDesc*, ntgetClockStr)(void) {
 	NimStringDesc* result;
-	Timeinfo108405 ti;
+	Timeinfo106405 ti;
 	time_t LOC1;
 	NimStringDesc* LOC2;
 	NimStringDesc* LOC3;
@@ -1530,14 +1530,14 @@ N_NIMCALL(NimStringDesc*, ntgetClockStr)(void) {
 	nimfr("getClockStr", "times.nim")
 	result = 0;
 	memset((void*)(&ti), 0, sizeof(ti));
-	ti.Sup.m_type = (&NTI108405);
+	ti.Sup.m_type = (&NTI106405);
 	nimln(554, "times.nim");
 	LOC1 = 0;
-	LOC1 = gettime_108448();
+	LOC1 = gettime_106448();
 	chckNil((void*)(&ti));
 	memset((void*)(&ti), 0, sizeof(ti));
-	ti.Sup.m_type = (&NTI108405);
-	getlocaltime_108453(LOC1, (&ti));
+	ti.Sup.m_type = (&NTI106405);
+	getlocaltime_106453(LOC1, (&ti));
 	nimln(555, "times.nim");
 	nimln(556, "times.nim");
 	LOC2 = 0;
@@ -1560,24 +1560,24 @@ appendString(LOC2, LOC5);
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_110234)(NU8 day) {
+N_NIMCALL(NimStringDesc*, HEX24_108234)(NU8 day) {
 	NimStringDesc* result;
 	nimfr("$", "times.nim")
 {	result = 0;
 	nimln(562, "times.nim");
-	result = copyString(lookup_110238[(day)- 0]);
+	result = copyString(lookup_108238[(day)- 0]);
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_110250)(NU8 m) {
+N_NIMCALL(NimStringDesc*, HEX24_108250)(NU8 m) {
 	NimStringDesc* result;
 	nimfr("$", "times.nim")
 {	result = 0;
 	nimln(569, "times.nim");
-	result = copyString(lookup_110254[(m)- 0]);
+	result = copyString(lookup_108254[(m)- 0]);
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1594,7 +1594,7 @@ static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x
 	return result;
 }
 
-static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b) {
+static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b) {
 	Slice88061 result;
 	nimfr("..", "system.nim")
 	memset((void*)(&result), 0, sizeof(result));
@@ -1658,75 +1658,75 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, formattoken_110266)(Timeinfo108405* info, NimStringDesc* token, NimStringDesc** buf) {
+N_NIMCALL(void, formattoken_108266)(Timeinfo106405* info, NimStringDesc* token, NimStringDesc** buf) {
 	nimfr("formatToken", "times.nim")
 	nimln(577, "times.nim");
 	switch (hashString(token) & 31) {
 	case 0: 
-if (eqStrings(token, ((NimStringDesc*) &TMP182))) goto LA28;
+if (eqStrings(token, ((NimStringDesc*) &TMP180))) goto LA28;
 break;
 	case 1: 
-if (eqStrings(token, ((NimStringDesc*) &TMP225))) goto LA10;
+if (eqStrings(token, ((NimStringDesc*) &TMP223))) goto LA10;
 break;
 	case 5: 
-if (eqStrings(token, ((NimStringDesc*) &TMP216))) goto LA1;
+if (eqStrings(token, ((NimStringDesc*) &TMP214))) goto LA1;
 break;
 	case 6: 
-if (eqStrings(token, ((NimStringDesc*) &TMP233))) goto LA18;
+if (eqStrings(token, ((NimStringDesc*) &TMP231))) goto LA18;
 break;
 	case 7: 
-if (eqStrings(token, ((NimStringDesc*) &TMP242))) goto LA27;
+if (eqStrings(token, ((NimStringDesc*) &TMP240))) goto LA27;
 break;
 	case 8: 
-if (eqStrings(token, ((NimStringDesc*) &TMP234))) goto LA19;
+if (eqStrings(token, ((NimStringDesc*) &TMP232))) goto LA19;
 break;
 	case 10: 
-if (eqStrings(token, ((NimStringDesc*) &TMP220))) goto LA5;
-if (eqStrings(token, ((NimStringDesc*) &TMP226))) goto LA11;
-if (eqStrings(token, ((NimStringDesc*) &TMP227))) goto LA12;
-if (eqStrings(token, ((NimStringDesc*) &TMP231))) goto LA16;
-if (eqStrings(token, ((NimStringDesc*) &TMP235))) goto LA20;
+if (eqStrings(token, ((NimStringDesc*) &TMP218))) goto LA5;
+if (eqStrings(token, ((NimStringDesc*) &TMP224))) goto LA11;
+if (eqStrings(token, ((NimStringDesc*) &TMP225))) goto LA12;
+if (eqStrings(token, ((NimStringDesc*) &TMP229))) goto LA16;
+if (eqStrings(token, ((NimStringDesc*) &TMP233))) goto LA20;
 break;
 	case 12: 
-if (eqStrings(token, ((NimStringDesc*) &TMP228))) goto LA13;
+if (eqStrings(token, ((NimStringDesc*) &TMP226))) goto LA13;
 break;
 	case 14: 
-if (eqStrings(token, ((NimStringDesc*) &TMP241))) goto LA26;
+if (eqStrings(token, ((NimStringDesc*) &TMP239))) goto LA26;
 break;
 	case 15: 
-if (eqStrings(token, ((NimStringDesc*) &TMP219))) goto LA4;
-if (eqStrings(token, ((NimStringDesc*) &TMP232))) goto LA17;
+if (eqStrings(token, ((NimStringDesc*) &TMP217))) goto LA4;
+if (eqStrings(token, ((NimStringDesc*) &TMP230))) goto LA17;
 break;
 	case 20: 
-if (eqStrings(token, ((NimStringDesc*) &TMP238))) goto LA23;
+if (eqStrings(token, ((NimStringDesc*) &TMP236))) goto LA23;
 break;
 	case 21: 
-if (eqStrings(token, ((NimStringDesc*) &TMP217))) goto LA2;
-if (eqStrings(token, ((NimStringDesc*) &TMP224))) goto LA9;
+if (eqStrings(token, ((NimStringDesc*) &TMP215))) goto LA2;
+if (eqStrings(token, ((NimStringDesc*) &TMP222))) goto LA9;
 break;
 	case 22: 
-if (eqStrings(token, ((NimStringDesc*) &TMP230))) goto LA15;
-if (eqStrings(token, ((NimStringDesc*) &TMP240))) goto LA25;
+if (eqStrings(token, ((NimStringDesc*) &TMP228))) goto LA15;
+if (eqStrings(token, ((NimStringDesc*) &TMP238))) goto LA25;
 break;
 	case 24: 
-if (eqStrings(token, ((NimStringDesc*) &TMP222))) goto LA7;
+if (eqStrings(token, ((NimStringDesc*) &TMP220))) goto LA7;
 break;
 	case 25: 
-if (eqStrings(token, ((NimStringDesc*) &TMP223))) goto LA8;
+if (eqStrings(token, ((NimStringDesc*) &TMP221))) goto LA8;
 break;
 	case 28: 
-if (eqStrings(token, ((NimStringDesc*) &TMP229))) goto LA14;
+if (eqStrings(token, ((NimStringDesc*) &TMP227))) goto LA14;
 break;
 	case 29: 
-if (eqStrings(token, ((NimStringDesc*) &TMP236))) goto LA21;
+if (eqStrings(token, ((NimStringDesc*) &TMP234))) goto LA21;
 break;
 	case 30: 
-if (eqStrings(token, ((NimStringDesc*) &TMP239))) goto LA24;
+if (eqStrings(token, ((NimStringDesc*) &TMP237))) goto LA24;
 break;
 	case 31: 
-if (eqStrings(token, ((NimStringDesc*) &TMP218))) goto LA3;
-if (eqStrings(token, ((NimStringDesc*) &TMP221))) goto LA6;
-if (eqStrings(token, ((NimStringDesc*) &TMP237))) goto LA22;
+if (eqStrings(token, ((NimStringDesc*) &TMP216))) goto LA3;
+if (eqStrings(token, ((NimStringDesc*) &TMP219))) goto LA6;
+if (eqStrings(token, ((NimStringDesc*) &TMP235))) goto LA22;
 break;
 	}
 	goto LA29;
@@ -1748,7 +1748,7 @@ appendString((*buf), LOC32);
 			if (!(((NI) ((*info).monthday)) < ((NI) 10))) goto LA36;
 			nimln(582, "times.nim");
 			(*buf) = resizeString((*buf), 1);
-appendString((*buf), ((NimStringDesc*) &TMP243));
+appendString((*buf), ((NimStringDesc*) &TMP241));
 		}
 		LA36: ;
 		nimln(583, "times.nim");
@@ -1765,8 +1765,8 @@ appendString((*buf), LOC38);
 		NimStringDesc* LOC42;
 		nimln(585, "times.nim");
 		LOC40 = 0;
-		LOC40 = HEX24_110234((*info).weekday);
-		LOC41 = HEX2EHEX2E_110273(((NI) 0), ((NI) 2));
+		LOC40 = HEX24_108234((*info).weekday);
+		LOC41 = HEX2EHEX2E_108273(((NI) 0), ((NI) 2));
 		LOC42 = 0;
 		LOC42 = HEX5BHEX5D_88054(LOC40, LOC41);
 		(*buf) = resizeString((*buf), LOC42->Sup.len + 0);
@@ -1778,7 +1778,7 @@ appendString((*buf), LOC42);
 		NimStringDesc* LOC44;
 		nimln(587, "times.nim");
 		LOC44 = 0;
-		LOC44 = HEX24_110234((*info).weekday);
+		LOC44 = HEX24_108234((*info).weekday);
 		(*buf) = resizeString((*buf), LOC44->Sup.len + 0);
 appendString((*buf), LOC44);
 	}
@@ -1790,10 +1790,10 @@ appendString((*buf), LOC44);
 		nimln(589, "times.nim");
 		LOC46 = 0;
 		{
-			NI TMP244;
+			NI TMP242;
 			if (!(((NI) 12) < ((NI) ((*info).hour)))) goto LA49;
-			TMP244 = subInt(((NI) ((*info).hour)), ((NI) 12));
-			LOC46 = ((NI) ((NI)(TMP244)));
+			TMP242 = subInt(((NI) ((*info).hour)), ((NI) 12));
+			LOC46 = ((NI) ((NI)(TMP242)));
 		}
 		goto LA47;
 		LA49: ;
@@ -1813,10 +1813,10 @@ appendString((*buf), LOC52);
 		NimStringDesc* LOC63;
 		nimln(591, "times.nim");
 		{
-			NI TMP245;
+			NI TMP243;
 			if (!(((NI) 12) < ((NI) ((*info).hour)))) goto LA56;
-			TMP245 = subInt(((NI) ((*info).hour)), ((NI) 12));
-			amerhour = ((NI) ((NI)(TMP245)));
+			TMP243 = subInt(((NI) ((*info).hour)), ((NI) 12));
+			amerhour = ((NI) ((NI)(TMP243)));
 		}
 		goto LA54;
 		LA56: ;
@@ -1894,19 +1894,19 @@ appendString((*buf), LOC79);
 	goto LA30;
 	LA11: ;
 	{
-		NI TMP246;
+		NI TMP244;
 		NimStringDesc* LOC81;
 		nimln(608, "times.nim");
-		TMP246 = addInt(((NI) ((*info).month)), ((NI) 1));
+		TMP244 = addInt(((NI) ((*info).month)), ((NI) 1));
 		LOC81 = 0;
-		LOC81 = nimIntToStr((NI)(TMP246));
+		LOC81 = nimIntToStr((NI)(TMP244));
 		(*buf) = resizeString((*buf), LOC81->Sup.len + 0);
 appendString((*buf), LOC81);
 	}
 	goto LA30;
 	LA12: ;
 	{
-		NI TMP247;
+		NI TMP245;
 		NimStringDesc* LOC87;
 		nimln(610, "times.nim");
 		{
@@ -1916,9 +1916,9 @@ appendString((*buf), LOC81);
 		}
 		LA85: ;
 		nimln(612, "times.nim");
-		TMP247 = addInt(((NI) ((*info).month)), ((NI) 1));
+		TMP245 = addInt(((NI) ((*info).month)), ((NI) 1));
 		LOC87 = 0;
-		LOC87 = nimIntToStr((NI)(TMP247));
+		LOC87 = nimIntToStr((NI)(TMP245));
 		(*buf) = resizeString((*buf), LOC87->Sup.len + 0);
 appendString((*buf), LOC87);
 	}
@@ -1930,8 +1930,8 @@ appendString((*buf), LOC87);
 		NimStringDesc* LOC91;
 		nimln(614, "times.nim");
 		LOC89 = 0;
-		LOC89 = HEX24_110250((*info).month);
-		LOC90 = HEX2EHEX2E_110273(((NI) 0), ((NI) 2));
+		LOC89 = HEX24_108250((*info).month);
+		LOC90 = HEX2EHEX2E_108273(((NI) 0), ((NI) 2));
 		LOC91 = 0;
 		LOC91 = HEX5BHEX5D_88054(LOC89, LOC90);
 		(*buf) = resizeString((*buf), LOC91->Sup.len + 0);
@@ -1943,7 +1943,7 @@ appendString((*buf), LOC91);
 		NimStringDesc* LOC93;
 		nimln(616, "times.nim");
 		LOC93 = 0;
-		LOC93 = HEX24_110250((*info).month);
+		LOC93 = HEX24_108250((*info).month);
 		(*buf) = resizeString((*buf), LOC93->Sup.len + 0);
 appendString((*buf), LOC93);
 	}
@@ -1999,14 +1999,14 @@ appendString((*buf), LOC101);
 			if (!(((NI) 12) <= ((NI) ((*info).hour)))) goto LA111;
 			nimln(629, "times.nim");
 			(*buf) = resizeString((*buf), 2);
-appendString((*buf), ((NimStringDesc*) &TMP248));
+appendString((*buf), ((NimStringDesc*) &TMP246));
 		}
 		goto LA109;
 		LA111: ;
 		{
 			nimln(630, "times.nim");
 			(*buf) = resizeString((*buf), 2);
-appendString((*buf), ((NimStringDesc*) &TMP249));
+appendString((*buf), ((NimStringDesc*) &TMP247));
 		}
 		LA109: ;
 	}
@@ -2015,17 +2015,17 @@ appendString((*buf), ((NimStringDesc*) &TMP249));
 	{
 		NI fr;
 		NimStringDesc* LOC115;
-		NI TMP250;
+		NI TMP248;
 		NimStringDesc* LOC120;
 		NimStringDesc* LOC121;
-		NI TMP251;
+		NI TMP249;
 		Slice88061 LOC122;
 		NimStringDesc* LOC123;
 		nimln(632, "times.nim");
 		LOC115 = 0;
 		LOC115 = nimIntToStr(((NI) ((*info).year)));
-		TMP250 = subInt((LOC115 ? LOC115->Sup.len : 0), ((NI) 1));
-		fr = (NI)(TMP250);
+		TMP248 = subInt((LOC115 ? LOC115->Sup.len : 0), ((NI) 1));
+		fr = (NI)(TMP248);
 		nimln(633, "times.nim");
 		{
 			if (!(fr < ((NI) 0))) goto LA118;
@@ -2037,8 +2037,8 @@ appendString((*buf), ((NimStringDesc*) &TMP249));
 		LOC120 = nimIntToStr(((NI) ((*info).year)));
 		LOC121 = 0;
 		LOC121 = nimIntToStr(((NI) ((*info).year)));
-		TMP251 = subInt((LOC121 ? LOC121->Sup.len : 0), ((NI) 1));
-		LOC122 = HEX2EHEX2E_110273(fr, (NI)(TMP251));
+		TMP249 = subInt((LOC121 ? LOC121->Sup.len : 0), ((NI) 1));
+		LOC122 = HEX2EHEX2E_108273(fr, (NI)(TMP249));
 		LOC123 = 0;
 		LOC123 = HEX5BHEX5D_88054(LOC120, LOC122);
 		(*buf) = resizeString((*buf), LOC123->Sup.len + 0);
@@ -2049,17 +2049,17 @@ appendString((*buf), LOC123);
 	{
 		NI fr;
 		NimStringDesc* LOC125;
-		NI TMP252;
+		NI TMP250;
 		NimStringDesc* fyear;
 		NimStringDesc* LOC130;
 		NimStringDesc* LOC131;
-		NI TMP253;
+		NI TMP251;
 		Slice88061 LOC132;
 		nimln(636, "times.nim");
 		LOC125 = 0;
 		LOC125 = nimIntToStr(((NI) ((*info).year)));
-		TMP252 = subInt((LOC125 ? LOC125->Sup.len : 0), ((NI) 2));
-		fr = (NI)(TMP252);
+		TMP250 = subInt((LOC125 ? LOC125->Sup.len : 0), ((NI) 2));
+		fr = (NI)(TMP250);
 		nimln(637, "times.nim");
 		{
 			if (!(fr < ((NI) 0))) goto LA128;
@@ -2071,19 +2071,19 @@ appendString((*buf), LOC123);
 		LOC130 = nimIntToStr(((NI) ((*info).year)));
 		LOC131 = 0;
 		LOC131 = nimIntToStr(((NI) ((*info).year)));
-		TMP253 = subInt((LOC131 ? LOC131->Sup.len : 0), ((NI) 1));
-		LOC132 = HEX2EHEX2E_110273(fr, (NI)(TMP253));
+		TMP251 = subInt((LOC131 ? LOC131->Sup.len : 0), ((NI) 1));
+		LOC132 = HEX2EHEX2E_108273(fr, (NI)(TMP251));
 		fyear = HEX5BHEX5D_88054(LOC130, LOC132);
 		nimln(639, "times.nim");
 		{
 			NimStringDesc* LOC137;
-			NI TMP256;
+			NI TMP254;
 			NimStringDesc* LOC138;
 			if (!!(((fyear ? fyear->Sup.len : 0) == ((NI) 2)))) goto LA135;
 			LOC137 = 0;
-			TMP256 = subInt(((NI) 2), (fyear ? fyear->Sup.len : 0));
+			TMP254 = subInt(((NI) 2), (fyear ? fyear->Sup.len : 0));
 			LOC138 = 0;
-			LOC138 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP256), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			LOC138 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP254), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			LOC137 = rawNewString(LOC138->Sup.len + fyear->Sup.len + 0);
 appendString(LOC137, LOC138);
 appendString(LOC137, fyear);
@@ -2099,17 +2099,17 @@ appendString((*buf), fyear);
 	{
 		NI fr;
 		NimStringDesc* LOC140;
-		NI TMP257;
+		NI TMP255;
 		NimStringDesc* fyear;
 		NimStringDesc* LOC145;
 		NimStringDesc* LOC146;
-		NI TMP258;
+		NI TMP256;
 		Slice88061 LOC147;
 		nimln(642, "times.nim");
 		LOC140 = 0;
 		LOC140 = nimIntToStr(((NI) ((*info).year)));
-		TMP257 = subInt((LOC140 ? LOC140->Sup.len : 0), ((NI) 3));
-		fr = (NI)(TMP257);
+		TMP255 = subInt((LOC140 ? LOC140->Sup.len : 0), ((NI) 3));
+		fr = (NI)(TMP255);
 		nimln(643, "times.nim");
 		{
 			if (!(fr < ((NI) 0))) goto LA143;
@@ -2121,19 +2121,19 @@ appendString((*buf), fyear);
 		LOC145 = nimIntToStr(((NI) ((*info).year)));
 		LOC146 = 0;
 		LOC146 = nimIntToStr(((NI) ((*info).year)));
-		TMP258 = subInt((LOC146 ? LOC146->Sup.len : 0), ((NI) 1));
-		LOC147 = HEX2EHEX2E_110273(fr, (NI)(TMP258));
+		TMP256 = subInt((LOC146 ? LOC146->Sup.len : 0), ((NI) 1));
+		LOC147 = HEX2EHEX2E_108273(fr, (NI)(TMP256));
 		fyear = HEX5BHEX5D_88054(LOC145, LOC147);
 		nimln(645, "times.nim");
 		{
 			NimStringDesc* LOC152;
-			NI TMP259;
+			NI TMP257;
 			NimStringDesc* LOC153;
 			if (!!(((fyear ? fyear->Sup.len : 0) == ((NI) 3)))) goto LA150;
 			LOC152 = 0;
-			TMP259 = subInt(((NI) 3), (fyear ? fyear->Sup.len : 0));
+			TMP257 = subInt(((NI) 3), (fyear ? fyear->Sup.len : 0));
 			LOC153 = 0;
-			LOC153 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP259), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			LOC153 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP257), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			LOC152 = rawNewString(LOC153->Sup.len + fyear->Sup.len + 0);
 appendString(LOC152, LOC153);
 appendString(LOC152, fyear);
@@ -2149,17 +2149,17 @@ appendString((*buf), fyear);
 	{
 		NI fr;
 		NimStringDesc* LOC155;
-		NI TMP260;
+		NI TMP258;
 		NimStringDesc* fyear;
 		NimStringDesc* LOC160;
 		NimStringDesc* LOC161;
-		NI TMP261;
+		NI TMP259;
 		Slice88061 LOC162;
 		nimln(648, "times.nim");
 		LOC155 = 0;
 		LOC155 = nimIntToStr(((NI) ((*info).year)));
-		TMP260 = subInt((LOC155 ? LOC155->Sup.len : 0), ((NI) 4));
-		fr = (NI)(TMP260);
+		TMP258 = subInt((LOC155 ? LOC155->Sup.len : 0), ((NI) 4));
+		fr = (NI)(TMP258);
 		nimln(649, "times.nim");
 		{
 			if (!(fr < ((NI) 0))) goto LA158;
@@ -2171,19 +2171,19 @@ appendString((*buf), fyear);
 		LOC160 = nimIntToStr(((NI) ((*info).year)));
 		LOC161 = 0;
 		LOC161 = nimIntToStr(((NI) ((*info).year)));
-		TMP261 = subInt((LOC161 ? LOC161->Sup.len : 0), ((NI) 1));
-		LOC162 = HEX2EHEX2E_110273(fr, (NI)(TMP261));
+		TMP259 = subInt((LOC161 ? LOC161->Sup.len : 0), ((NI) 1));
+		LOC162 = HEX2EHEX2E_108273(fr, (NI)(TMP259));
 		fyear = HEX5BHEX5D_88054(LOC160, LOC162);
 		nimln(651, "times.nim");
 		{
 			NimStringDesc* LOC167;
-			NI TMP262;
+			NI TMP260;
 			NimStringDesc* LOC168;
 			if (!!(((fyear ? fyear->Sup.len : 0) == ((NI) 4)))) goto LA165;
 			LOC167 = 0;
-			TMP262 = subInt(((NI) 4), (fyear ? fyear->Sup.len : 0));
+			TMP260 = subInt(((NI) 4), (fyear ? fyear->Sup.len : 0));
 			LOC168 = 0;
-			LOC168 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP262), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			LOC168 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP260), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			LOC167 = rawNewString(LOC168->Sup.len + fyear->Sup.len + 0);
 appendString(LOC167, LOC168);
 appendString(LOC167, fyear);
@@ -2199,17 +2199,17 @@ appendString((*buf), fyear);
 	{
 		NI fr;
 		NimStringDesc* LOC170;
-		NI TMP263;
+		NI TMP261;
 		NimStringDesc* fyear;
 		NimStringDesc* LOC175;
 		NimStringDesc* LOC176;
-		NI TMP264;
+		NI TMP262;
 		Slice88061 LOC177;
 		nimln(654, "times.nim");
 		LOC170 = 0;
 		LOC170 = nimIntToStr(((NI) ((*info).year)));
-		TMP263 = subInt((LOC170 ? LOC170->Sup.len : 0), ((NI) 5));
-		fr = (NI)(TMP263);
+		TMP261 = subInt((LOC170 ? LOC170->Sup.len : 0), ((NI) 5));
+		fr = (NI)(TMP261);
 		nimln(655, "times.nim");
 		{
 			if (!(fr < ((NI) 0))) goto LA173;
@@ -2221,19 +2221,19 @@ appendString((*buf), fyear);
 		LOC175 = nimIntToStr(((NI) ((*info).year)));
 		LOC176 = 0;
 		LOC176 = nimIntToStr(((NI) ((*info).year)));
-		TMP264 = subInt((LOC176 ? LOC176->Sup.len : 0), ((NI) 1));
-		LOC177 = HEX2EHEX2E_110273(fr, (NI)(TMP264));
+		TMP262 = subInt((LOC176 ? LOC176->Sup.len : 0), ((NI) 1));
+		LOC177 = HEX2EHEX2E_108273(fr, (NI)(TMP262));
 		fyear = HEX5BHEX5D_88054(LOC175, LOC177);
 		nimln(657, "times.nim");
 		{
 			NimStringDesc* LOC182;
-			NI TMP265;
+			NI TMP263;
 			NimStringDesc* LOC183;
 			if (!!(((fyear ? fyear->Sup.len : 0) == ((NI) 5)))) goto LA180;
 			LOC182 = 0;
-			TMP265 = subInt(((NI) 5), (fyear ? fyear->Sup.len : 0));
+			TMP263 = subInt(((NI) 5), (fyear ? fyear->Sup.len : 0));
 			LOC183 = 0;
-			LOC183 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP265), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			LOC183 = nsuRepeatChar(48, ((NI)chckRange((NI)(TMP263), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			LOC182 = rawNewString(LOC183->Sup.len + fyear->Sup.len + 0);
 appendString(LOC182, LOC183);
 appendString(LOC182, fyear);
@@ -2248,13 +2248,13 @@ appendString((*buf), fyear);
 	LA24: ;
 	{
 		NI hrs;
-		NI TMP266;
-		NI TMP267;
+		NI TMP264;
+		NI TMP265;
 		NimStringDesc* LOC185;
 		nimln(660, "times.nim");
-		TMP266 = divInt((*info).timezone, ((NI) 60));
-		TMP267 = divInt((NI)(TMP266), ((NI) 60));
-		hrs = (NI)(TMP267);
+		TMP264 = divInt((*info).timezone, ((NI) 60));
+		TMP265 = divInt((NI)(TMP264), ((NI) 60));
+		hrs = (NI)(TMP265);
 		nimln(661, "times.nim");
 		LOC185 = 0;
 		LOC185 = nimIntToStr(hrs);
@@ -2265,13 +2265,13 @@ appendString((*buf), LOC185);
 	LA25: ;
 	{
 		NI hrs;
-		NI TMP268;
-		NI TMP269;
+		NI TMP266;
+		NI TMP267;
 		NimStringDesc* LOC187;
 		nimln(663, "times.nim");
-		TMP268 = divInt((*info).timezone, ((NI) 60));
-		TMP269 = divInt((NI)(TMP268), ((NI) 60));
-		hrs = (NI)(TMP269);
+		TMP266 = divInt((*info).timezone, ((NI) 60));
+		TMP267 = divInt((NI)(TMP266), ((NI) 60));
+		hrs = (NI)(TMP267);
 		nimln(665, "times.nim");
 		LOC187 = 0;
 		LOC187 = nimIntToStr(hrs);
@@ -2282,8 +2282,8 @@ appendString((*buf), LOC187);
 			NI atindex;
 			NimStringDesc* LOC192;
 			NI LOC193;
-			NI TMP270;
-			NI TMP271;
+			NI TMP268;
+			NI TMP269;
 			if (hrs == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
 			if (!((hrs > 0? (hrs) : -(hrs)) < ((NI) 10))) goto LA190;
 			nimln(667, "times.nim");
@@ -2300,11 +2300,11 @@ appendString((*buf), LOC187);
 				LOC193 = ((NI) 0);
 			}
 			LA194: ;
-			TMP270 = subInt((LOC192 ? LOC192->Sup.len : 0), LOC193);
-			TMP271 = subInt(((*buf) ? (*buf)->Sup.len : 0), (NI)(TMP270));
-			atindex = (NI)(TMP271);
+			TMP268 = subInt((LOC192 ? LOC192->Sup.len : 0), LOC193);
+			TMP269 = subInt(((*buf) ? (*buf)->Sup.len : 0), (NI)(TMP268));
+			atindex = (NI)(TMP269);
 			nimln(668, "times.nim");
-			insert_89801(buf, ((NimStringDesc*) &TMP243), ((NI)chckRange(atindex, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			insert_89801(buf, ((NimStringDesc*) &TMP241), ((NI)chckRange(atindex, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		}
 		LA190: ;
 	}
@@ -2312,21 +2312,21 @@ appendString((*buf), LOC187);
 	LA26: ;
 	{
 		NI hrs;
-		NI TMP272;
-		NI TMP273;
+		NI TMP270;
+		NI TMP271;
 		NimStringDesc* LOC200;
 		NimStringDesc* LOC201;
 		nimln(670, "times.nim");
-		TMP272 = divInt((*info).timezone, ((NI) 60));
-		TMP273 = divInt((NI)(TMP272), ((NI) 60));
-		hrs = (NI)(TMP273);
+		TMP270 = divInt((*info).timezone, ((NI) 60));
+		TMP271 = divInt((NI)(TMP270), ((NI) 60));
+		hrs = (NI)(TMP271);
 		nimln(672, "times.nim");
 		LOC200 = 0;
 		LOC201 = 0;
 		LOC201 = nimIntToStr(hrs);
 		LOC200 = rawNewString(LOC201->Sup.len + 3);
 appendString(LOC200, LOC201);
-appendString(LOC200, ((NimStringDesc*) &TMP274));
+appendString(LOC200, ((NimStringDesc*) &TMP272));
 		(*buf) = resizeString((*buf), LOC200->Sup.len + 0);
 appendString((*buf), LOC200);
 		nimln(673, "times.nim");
@@ -2335,8 +2335,8 @@ appendString((*buf), LOC200);
 			NimStringDesc* LOC206;
 			NimStringDesc* LOC207;
 			NI LOC208;
-			NI TMP275;
-			NI TMP276;
+			NI TMP273;
+			NI TMP274;
 			if (hrs == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
 			if (!((hrs > 0? (hrs) : -(hrs)) < ((NI) 10))) goto LA204;
 			nimln(674, "times.nim");
@@ -2345,7 +2345,7 @@ appendString((*buf), LOC200);
 			LOC207 = nimIntToStr(hrs);
 			LOC206 = rawNewString(LOC207->Sup.len + 3);
 appendString(LOC206, LOC207);
-appendString(LOC206, ((NimStringDesc*) &TMP274));
+appendString(LOC206, ((NimStringDesc*) &TMP272));
 			LOC208 = 0;
 			{
 				if (!(hrs < ((NI) 0))) goto LA211;
@@ -2357,11 +2357,11 @@ appendString(LOC206, ((NimStringDesc*) &TMP274));
 				LOC208 = ((NI) 0);
 			}
 			LA209: ;
-			TMP275 = subInt((LOC206 ? LOC206->Sup.len : 0), LOC208);
-			TMP276 = subInt(((*buf) ? (*buf)->Sup.len : 0), (NI)(TMP275));
-			atindex = (NI)(TMP276);
+			TMP273 = subInt((LOC206 ? LOC206->Sup.len : 0), LOC208);
+			TMP274 = subInt(((*buf) ? (*buf)->Sup.len : 0), (NI)(TMP273));
+			atindex = (NI)(TMP274);
 			nimln(675, "times.nim");
-			insert_89801(buf, ((NimStringDesc*) &TMP243), ((NI)chckRange(atindex, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			insert_89801(buf, ((NimStringDesc*) &TMP241), ((NI)chckRange(atindex, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		}
 		LA204: ;
 	}
@@ -2379,41 +2379,41 @@ appendString((*buf), (*info).tzname);
 	goto LA30;
 	LA29: ;
 	{
-		Valueerror3449* e_110373;
+		Valueerror3449* e_108373;
 		NimStringDesc* LOC217;
-		e_110373 = 0;
+		e_108373 = 0;
 		nimln(2265, "system.nim");
-		e_110373 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_110373).Sup.Sup.m_type = (&NTI3449);
+		e_108373 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_108373).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		nimln(681, "times.nim");
 		LOC217 = 0;
 		LOC217 = rawNewString(token->Sup.len + 23);
-appendString(LOC217, ((NimStringDesc*) &TMP277));
+appendString(LOC217, ((NimStringDesc*) &TMP275));
 appendString(LOC217, token);
-		asgnRefNoCycle((void**) (&(*e_110373).Sup.message), LOC217);
-		raiseException((Exception*)e_110373, "ValueError");
+		asgnRefNoCycle((void**) (&(*e_108373).Sup.message), LOC217);
+		raiseException((Exception*)e_108373, "ValueError");
 	}
 	LA30: ;
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f) {
+N_NIMCALL(NimStringDesc*, format_108392)(Timeinfo106405* info, NimStringDesc* f) {
 	NimStringDesc* result;
 	NI i;
 	NimStringDesc* currentf;
 	nimfr("format", "times.nim")
 	result = 0;
 	nimln(724, "times.nim");
-	result = copyString(((NimStringDesc*) &TMP182));
+	result = copyString(((NimStringDesc*) &TMP180));
 	nimln(725, "times.nim");
 	i = ((NI) 0);
 	nimln(726, "times.nim");
-	currentf = copyString(((NimStringDesc*) &TMP182));
+	currentf = copyString(((NimStringDesc*) &TMP180));
 	{
 		nimln(727, "times.nim");
 		while (1) {
-			NI TMP282;
+			NI TMP280;
 			nimln(728, "times.nim");
 			if ((NU)(i) > (NU)(f->Sup.len)) raiseIndexError();
 			switch (((NU8)(f->data[i]))) {
@@ -2430,9 +2430,9 @@ N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f)
 			case 44:
 			{
 				nimln(730, "times.nim");
-				formattoken_110266(info, currentf, (&result));
+				formattoken_108266(info, currentf, (&result));
 				nimln(732, "times.nim");
-				currentf = copyString(((NimStringDesc*) &TMP182));
+				currentf = copyString(((NimStringDesc*) &TMP180));
 				nimln(733, "times.nim");
 				{
 					if ((NU)(i) > (NU)(f->Sup.len)) raiseIndexError();
@@ -2442,32 +2442,32 @@ N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f)
 				LA6: ;
 				nimln(735, "times.nim");
 				{
-					NI TMP278;
+					NI TMP276;
 					if ((NU)(i) > (NU)(f->Sup.len)) raiseIndexError();
 					if (!((NU8)(f->data[i]) == (NU8)(39))) goto LA10;
 					nimln(736, "times.nim");
-					TMP278 = addInt(i, ((NI) 1));
-					i = (NI)(TMP278);
+					TMP276 = addInt(i, ((NI) 1));
+					i = (NI)(TMP276);
 					{
 						nimln(737, "times.nim");
 						while (1) {
 							NIM_BOOL LOC14;
-							NI TMP279;
-							NI TMP280;
+							NI TMP277;
+							NI TMP278;
 							LOC14 = 0;
 							if ((NU)(i) > (NU)(f->Sup.len)) raiseIndexError();
 							LOC14 = !(((NU8)(f->data[i]) == (NU8)(39)));
 							if (!(LOC14)) goto LA15;
-							TMP279 = subInt((f ? f->Sup.len : 0), ((NI) 1));
-							LOC14 = (i < (NI)(TMP279));
+							TMP277 = subInt((f ? f->Sup.len : 0), ((NI) 1));
+							LOC14 = (i < (NI)(TMP277));
 							LA15: ;
 							if (!LOC14) goto LA13;
 							nimln(738, "times.nim");
 							if ((NU)(i) > (NU)(f->Sup.len)) raiseIndexError();
 							result = addChar(result, f->data[i]);
 							nimln(739, "times.nim");
-							TMP280 = addInt(i, ((NI) 1));
-							i = (NI)(TMP280);
+							TMP278 = addInt(i, ((NI) 1));
+							i = (NI)(TMP278);
 						} LA13: ;
 					}
 				}
@@ -2501,22 +2501,22 @@ N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f)
 				goto LA18;
 				LA22: ;
 				{
-					NI TMP281;
+					NI TMP279;
 					nimln(747, "times.nim");
-					formattoken_110266(info, currentf, (&result));
+					formattoken_108266(info, currentf, (&result));
 					nimln(748, "times.nim");
-					TMP281 = subInt(i, ((NI) 1));
-					i = (NI)(TMP281);
+					TMP279 = subInt(i, ((NI) 1));
+					i = (NI)(TMP279);
 					nimln(749, "times.nim");
-					currentf = copyString(((NimStringDesc*) &TMP182));
+					currentf = copyString(((NimStringDesc*) &TMP180));
 				}
 				LA18: ;
 			}
 			break;
 			}
 			nimln(751, "times.nim");
-			TMP282 = addInt(i, ((NI) 1));
-			i = (NI)(TMP282);
+			TMP280 = addInt(i, ((NI) 1));
+			i = (NI)(TMP280);
 		}
 	} LA1: ;
 	popFrame();
@@ -2541,129 +2541,129 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsetoken_110460)(Timeinfo108405* info, NimStringDesc* token, NimStringDesc* value, NI* j) {
+N_NIMCALL(void, parsetoken_108460)(Timeinfo106405* info, NimStringDesc* token, NimStringDesc* value, NI* j) {
 	NI sv;
 	nimfr("parseToken", "times.nim")
 	sv = 0;
 	nimln(758, "times.nim");
 	switch (hashString(token) & 31) {
 	case 1: 
-if (eqStrings(token, ((NimStringDesc*) &TMP225))) goto LA8;
+if (eqStrings(token, ((NimStringDesc*) &TMP223))) goto LA8;
 break;
 	case 5: 
-if (eqStrings(token, ((NimStringDesc*) &TMP216))) goto LA1;
+if (eqStrings(token, ((NimStringDesc*) &TMP214))) goto LA1;
 break;
 	case 6: 
-if (eqStrings(token, ((NimStringDesc*) &TMP233))) goto LA16;
+if (eqStrings(token, ((NimStringDesc*) &TMP231))) goto LA16;
 break;
 	case 7: 
-if (eqStrings(token, ((NimStringDesc*) &TMP242))) goto LA22;
+if (eqStrings(token, ((NimStringDesc*) &TMP240))) goto LA22;
 break;
 	case 10: 
-if (eqStrings(token, ((NimStringDesc*) &TMP220))) goto LA5;
-if (eqStrings(token, ((NimStringDesc*) &TMP226))) goto LA9;
-if (eqStrings(token, ((NimStringDesc*) &TMP227))) goto LA10;
-if (eqStrings(token, ((NimStringDesc*) &TMP231))) goto LA14;
-if (eqStrings(token, ((NimStringDesc*) &TMP235))) goto LA17;
+if (eqStrings(token, ((NimStringDesc*) &TMP218))) goto LA5;
+if (eqStrings(token, ((NimStringDesc*) &TMP224))) goto LA9;
+if (eqStrings(token, ((NimStringDesc*) &TMP225))) goto LA10;
+if (eqStrings(token, ((NimStringDesc*) &TMP229))) goto LA14;
+if (eqStrings(token, ((NimStringDesc*) &TMP233))) goto LA17;
 break;
 	case 12: 
-if (eqStrings(token, ((NimStringDesc*) &TMP228))) goto LA11;
+if (eqStrings(token, ((NimStringDesc*) &TMP226))) goto LA11;
 break;
 	case 14: 
-if (eqStrings(token, ((NimStringDesc*) &TMP241))) goto LA21;
+if (eqStrings(token, ((NimStringDesc*) &TMP239))) goto LA21;
 break;
 	case 15: 
-if (eqStrings(token, ((NimStringDesc*) &TMP219))) goto LA4;
-if (eqStrings(token, ((NimStringDesc*) &TMP232))) goto LA15;
+if (eqStrings(token, ((NimStringDesc*) &TMP217))) goto LA4;
+if (eqStrings(token, ((NimStringDesc*) &TMP230))) goto LA15;
 break;
 	case 21: 
-if (eqStrings(token, ((NimStringDesc*) &TMP217))) goto LA2;
-if (eqStrings(token, ((NimStringDesc*) &TMP224))) goto LA7;
+if (eqStrings(token, ((NimStringDesc*) &TMP215))) goto LA2;
+if (eqStrings(token, ((NimStringDesc*) &TMP222))) goto LA7;
 break;
 	case 22: 
-if (eqStrings(token, ((NimStringDesc*) &TMP230))) goto LA13;
-if (eqStrings(token, ((NimStringDesc*) &TMP240))) goto LA20;
+if (eqStrings(token, ((NimStringDesc*) &TMP228))) goto LA13;
+if (eqStrings(token, ((NimStringDesc*) &TMP238))) goto LA20;
 break;
 	case 24: 
-if (eqStrings(token, ((NimStringDesc*) &TMP222))) goto LA5;
+if (eqStrings(token, ((NimStringDesc*) &TMP220))) goto LA5;
 break;
 	case 25: 
-if (eqStrings(token, ((NimStringDesc*) &TMP223))) goto LA6;
+if (eqStrings(token, ((NimStringDesc*) &TMP221))) goto LA6;
 break;
 	case 28: 
-if (eqStrings(token, ((NimStringDesc*) &TMP229))) goto LA12;
+if (eqStrings(token, ((NimStringDesc*) &TMP227))) goto LA12;
 break;
 	case 30: 
-if (eqStrings(token, ((NimStringDesc*) &TMP239))) goto LA19;
+if (eqStrings(token, ((NimStringDesc*) &TMP237))) goto LA19;
 break;
 	case 31: 
-if (eqStrings(token, ((NimStringDesc*) &TMP218))) goto LA3;
-if (eqStrings(token, ((NimStringDesc*) &TMP221))) goto LA6;
-if (eqStrings(token, ((NimStringDesc*) &TMP237))) goto LA18;
+if (eqStrings(token, ((NimStringDesc*) &TMP216))) goto LA3;
+if (eqStrings(token, ((NimStringDesc*) &TMP219))) goto LA6;
+if (eqStrings(token, ((NimStringDesc*) &TMP235))) goto LA18;
 break;
 	}
 	goto LA23;
 	LA1: ;
 	{
 		NI pd;
-		NI TMP293;
+		NI TMP291;
 		Slice88061 LOC26;
 		NimStringDesc* LOC27;
-		NI TMP294;
+		NI TMP292;
 		nimln(760, "times.nim");
-		TMP293 = addInt((*j), ((NI) 1));
-		LOC26 = HEX2EHEX2E_110273((*j), (NI)(TMP293));
+		TMP291 = addInt((*j), ((NI) 1));
+		LOC26 = HEX2EHEX2E_108273((*j), (NI)(TMP291));
 		LOC27 = 0;
 		LOC27 = HEX5BHEX5D_88054(value, LOC26);
 		pd = npuParseInt(LOC27, (&sv), ((NI) 0));
 		nimln(761, "times.nim");
 		(*info).monthday = ((NI)chckRange(sv, ((NI) 1), ((NI) 31)));
 		nimln(762, "times.nim");
-		TMP294 = addInt((*j), pd);
-		(*j) = (NI)(TMP294);
+		TMP292 = addInt((*j), pd);
+		(*j) = (NI)(TMP292);
 	}
 	goto LA24;
 	LA2: ;
 	{
-		NI TMP296;
+		NI TMP294;
 		Slice88061 LOC29;
 		NimStringDesc* LOC30;
 		NI LOC31;
-		NI TMP297;
+		NI TMP295;
 		nimln(764, "times.nim");
-		TMP296 = addInt((*j), ((NI) 1));
-		LOC29 = HEX2EHEX2E_110273((*j), (NI)(TMP296));
+		TMP294 = addInt((*j), ((NI) 1));
+		LOC29 = HEX2EHEX2E_108273((*j), (NI)(TMP294));
 		LOC30 = 0;
 		LOC30 = HEX5BHEX5D_88054(value, LOC29);
 		LOC31 = 0;
 		LOC31 = nsuParseInt(LOC30);
 		(*info).monthday = ((NI)chckRange(LOC31, ((NI) 1), ((NI) 31)));
 		nimln(765, "times.nim");
-		TMP297 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP297);
+		TMP295 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP295);
 	}
 	goto LA24;
 	LA3: ;
 	{
-		NI TMP301;
+		NI TMP299;
 		Slice88061 LOC33;
 		NimStringDesc* LOC34;
 		NimStringDesc* LOC35;
-		NI TMP310;
+		NI TMP308;
 		nimln(767, "times.nim");
-		TMP301 = addInt((*j), ((NI) 2));
-		LOC33 = HEX2EHEX2E_110273((*j), (NI)(TMP301));
+		TMP299 = addInt((*j), ((NI) 2));
+		LOC33 = HEX2EHEX2E_108273((*j), (NI)(TMP299));
 		LOC34 = 0;
 		LOC34 = HEX5BHEX5D_88054(value, LOC33);
 		LOC35 = 0;
 		LOC35 = nsuToLowerStr(LOC34);
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP302))) goto LA36;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP303))) goto LA37;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP304))) goto LA38;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP305))) goto LA39;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP306))) goto LA40;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP307))) goto LA41;
-		if (eqStrings(LOC35, ((NimStringDesc*) &TMP308))) goto LA42;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP300))) goto LA36;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP301))) goto LA37;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP302))) goto LA38;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP303))) goto LA39;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP304))) goto LA40;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP305))) goto LA41;
+		if (eqStrings(LOC35, ((NimStringDesc*) &TMP306))) goto LA42;
 		goto LA43;
 		LA36: ;
 		{
@@ -2709,23 +2709,23 @@ break;
 		goto LA44;
 		LA43: ;
 		{
-			Valueerror3449* e_110521;
+			Valueerror3449* e_108521;
 			NimStringDesc* LOC53;
-			e_110521 = 0;
+			e_108521 = 0;
 			nimln(2265, "system.nim");
-			e_110521 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_110521).Sup.Sup.m_type = (&NTI3449);
+			e_108521 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_108521).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			LOC53 = 0;
-			LOC53 = (*e_110521).Sup.message; (*e_110521).Sup.message = copyStringRC1(((NimStringDesc*) &TMP309));
+			LOC53 = (*e_108521).Sup.message; (*e_108521).Sup.message = copyStringRC1(((NimStringDesc*) &TMP307));
 			if (LOC53) nimGCunrefNoCycle(LOC53);
 			nimln(783, "times.nim");
-			raiseException((Exception*)e_110521, "ValueError");
+			raiseException((Exception*)e_108521, "ValueError");
 		}
 		LA44: ;
 		nimln(784, "times.nim");
-		TMP310 = addInt((*j), ((NI) 3));
-		(*j) = (NI)(TMP310);
+		TMP308 = addInt((*j), ((NI) 3));
+		(*j) = (NI)(TMP308);
 	}
 	goto LA24;
 	LA4: ;
@@ -2733,226 +2733,226 @@ break;
 		nimln(786, "times.nim");
 		{
 			NIM_BOOL LOC57;
-			NI TMP311;
-			NI TMP315;
+			NI TMP309;
+			NI TMP313;
 			Slice88061 LOC59;
 			NimStringDesc* LOC60;
 			NI LOC61;
-			NI TMP317;
+			NI TMP315;
 			LOC57 = 0;
-			TMP311 = addInt((*j), ((NI) 6));
-			LOC57 = ((NI)(TMP311) <= (value ? value->Sup.len : 0));
+			TMP309 = addInt((*j), ((NI) 6));
+			LOC57 = ((NI)(TMP309) <= (value ? value->Sup.len : 0));
 			if (!(LOC57)) goto LA58;
-			TMP315 = addInt((*j), ((NI) 5));
-			LOC59 = HEX2EHEX2E_110273((*j), (NI)(TMP315));
+			TMP313 = addInt((*j), ((NI) 5));
+			LOC59 = HEX2EHEX2E_108273((*j), (NI)(TMP313));
 			LOC60 = 0;
 			LOC60 = HEX5BHEX5D_88054(value, LOC59);
 			LOC61 = 0;
-			LOC61 = nsuCmpIgnoreCase(LOC60, ((NimStringDesc*) &TMP316));
+			LOC61 = nsuCmpIgnoreCase(LOC60, ((NimStringDesc*) &TMP314));
 			LOC57 = (LOC61 == ((NI) 0));
 			LA58: ;
 			if (!LOC57) goto LA62;
 			nimln(787, "times.nim");
 			(*info).weekday = ((NU8) 6);
 			nimln(788, "times.nim");
-			TMP317 = addInt((*j), ((NI) 6));
-			(*j) = (NI)(TMP317);
+			TMP315 = addInt((*j), ((NI) 6));
+			(*j) = (NI)(TMP315);
 		}
 		goto LA55;
 		LA62: ;
 		{
 			NIM_BOOL LOC65;
-			NI TMP318;
-			NI TMP319;
+			NI TMP316;
+			NI TMP317;
 			Slice88061 LOC67;
 			NimStringDesc* LOC68;
 			NI LOC69;
-			NI TMP321;
+			NI TMP319;
 			nimln(789, "times.nim");
 			LOC65 = 0;
-			TMP318 = addInt((*j), ((NI) 6));
-			LOC65 = ((NI)(TMP318) <= (value ? value->Sup.len : 0));
+			TMP316 = addInt((*j), ((NI) 6));
+			LOC65 = ((NI)(TMP316) <= (value ? value->Sup.len : 0));
 			if (!(LOC65)) goto LA66;
-			TMP319 = addInt((*j), ((NI) 5));
-			LOC67 = HEX2EHEX2E_110273((*j), (NI)(TMP319));
+			TMP317 = addInt((*j), ((NI) 5));
+			LOC67 = HEX2EHEX2E_108273((*j), (NI)(TMP317));
 			LOC68 = 0;
 			LOC68 = HEX5BHEX5D_88054(value, LOC67);
 			LOC69 = 0;
-			LOC69 = nsuCmpIgnoreCase(LOC68, ((NimStringDesc*) &TMP320));
+			LOC69 = nsuCmpIgnoreCase(LOC68, ((NimStringDesc*) &TMP318));
 			LOC65 = (LOC69 == ((NI) 0));
 			LA66: ;
 			if (!LOC65) goto LA70;
 			nimln(790, "times.nim");
 			(*info).weekday = ((NU8) 0);
 			nimln(791, "times.nim");
-			TMP321 = addInt((*j), ((NI) 6));
-			(*j) = (NI)(TMP321);
+			TMP319 = addInt((*j), ((NI) 6));
+			(*j) = (NI)(TMP319);
 		}
 		goto LA55;
 		LA70: ;
 		{
 			NIM_BOOL LOC73;
-			NI TMP322;
-			NI TMP323;
+			NI TMP320;
+			NI TMP321;
 			Slice88061 LOC75;
 			NimStringDesc* LOC76;
 			NI LOC77;
-			NI TMP325;
+			NI TMP323;
 			nimln(792, "times.nim");
 			LOC73 = 0;
-			TMP322 = addInt((*j), ((NI) 7));
-			LOC73 = ((NI)(TMP322) <= (value ? value->Sup.len : 0));
+			TMP320 = addInt((*j), ((NI) 7));
+			LOC73 = ((NI)(TMP320) <= (value ? value->Sup.len : 0));
 			if (!(LOC73)) goto LA74;
-			TMP323 = addInt((*j), ((NI) 6));
-			LOC75 = HEX2EHEX2E_110273((*j), (NI)(TMP323));
+			TMP321 = addInt((*j), ((NI) 6));
+			LOC75 = HEX2EHEX2E_108273((*j), (NI)(TMP321));
 			LOC76 = 0;
 			LOC76 = HEX5BHEX5D_88054(value, LOC75);
 			LOC77 = 0;
-			LOC77 = nsuCmpIgnoreCase(LOC76, ((NimStringDesc*) &TMP324));
+			LOC77 = nsuCmpIgnoreCase(LOC76, ((NimStringDesc*) &TMP322));
 			LOC73 = (LOC77 == ((NI) 0));
 			LA74: ;
 			if (!LOC73) goto LA78;
 			nimln(793, "times.nim");
 			(*info).weekday = ((NU8) 1);
 			nimln(794, "times.nim");
-			TMP325 = addInt((*j), ((NI) 7));
-			(*j) = (NI)(TMP325);
+			TMP323 = addInt((*j), ((NI) 7));
+			(*j) = (NI)(TMP323);
 		}
 		goto LA55;
 		LA78: ;
 		{
 			NIM_BOOL LOC81;
-			NI TMP326;
-			NI TMP327;
+			NI TMP324;
+			NI TMP325;
 			Slice88061 LOC83;
 			NimStringDesc* LOC84;
 			NI LOC85;
-			NI TMP329;
+			NI TMP327;
 			nimln(795, "times.nim");
 			LOC81 = 0;
-			TMP326 = addInt((*j), ((NI) 9));
-			LOC81 = ((NI)(TMP326) <= (value ? value->Sup.len : 0));
+			TMP324 = addInt((*j), ((NI) 9));
+			LOC81 = ((NI)(TMP324) <= (value ? value->Sup.len : 0));
 			if (!(LOC81)) goto LA82;
-			TMP327 = addInt((*j), ((NI) 8));
-			LOC83 = HEX2EHEX2E_110273((*j), (NI)(TMP327));
+			TMP325 = addInt((*j), ((NI) 8));
+			LOC83 = HEX2EHEX2E_108273((*j), (NI)(TMP325));
 			LOC84 = 0;
 			LOC84 = HEX5BHEX5D_88054(value, LOC83);
 			LOC85 = 0;
-			LOC85 = nsuCmpIgnoreCase(LOC84, ((NimStringDesc*) &TMP328));
+			LOC85 = nsuCmpIgnoreCase(LOC84, ((NimStringDesc*) &TMP326));
 			LOC81 = (LOC85 == ((NI) 0));
 			LA82: ;
 			if (!LOC81) goto LA86;
 			nimln(796, "times.nim");
 			(*info).weekday = ((NU8) 2);
 			nimln(797, "times.nim");
-			TMP329 = addInt((*j), ((NI) 9));
-			(*j) = (NI)(TMP329);
+			TMP327 = addInt((*j), ((NI) 9));
+			(*j) = (NI)(TMP327);
 		}
 		goto LA55;
 		LA86: ;
 		{
 			NIM_BOOL LOC89;
-			NI TMP330;
-			NI TMP331;
+			NI TMP328;
+			NI TMP329;
 			Slice88061 LOC91;
 			NimStringDesc* LOC92;
 			NI LOC93;
-			NI TMP333;
+			NI TMP331;
 			nimln(798, "times.nim");
 			LOC89 = 0;
-			TMP330 = addInt((*j), ((NI) 8));
-			LOC89 = ((NI)(TMP330) <= (value ? value->Sup.len : 0));
+			TMP328 = addInt((*j), ((NI) 8));
+			LOC89 = ((NI)(TMP328) <= (value ? value->Sup.len : 0));
 			if (!(LOC89)) goto LA90;
-			TMP331 = addInt((*j), ((NI) 7));
-			LOC91 = HEX2EHEX2E_110273((*j), (NI)(TMP331));
+			TMP329 = addInt((*j), ((NI) 7));
+			LOC91 = HEX2EHEX2E_108273((*j), (NI)(TMP329));
 			LOC92 = 0;
 			LOC92 = HEX5BHEX5D_88054(value, LOC91);
 			LOC93 = 0;
-			LOC93 = nsuCmpIgnoreCase(LOC92, ((NimStringDesc*) &TMP332));
+			LOC93 = nsuCmpIgnoreCase(LOC92, ((NimStringDesc*) &TMP330));
 			LOC89 = (LOC93 == ((NI) 0));
 			LA90: ;
 			if (!LOC89) goto LA94;
 			nimln(799, "times.nim");
 			(*info).weekday = ((NU8) 3);
 			nimln(800, "times.nim");
-			TMP333 = addInt((*j), ((NI) 8));
-			(*j) = (NI)(TMP333);
+			TMP331 = addInt((*j), ((NI) 8));
+			(*j) = (NI)(TMP331);
 		}
 		goto LA55;
 		LA94: ;
 		{
 			NIM_BOOL LOC97;
-			NI TMP334;
-			NI TMP335;
+			NI TMP332;
+			NI TMP333;
 			Slice88061 LOC99;
 			NimStringDesc* LOC100;
 			NI LOC101;
-			NI TMP337;
+			NI TMP335;
 			nimln(801, "times.nim");
 			LOC97 = 0;
-			TMP334 = addInt((*j), ((NI) 6));
-			LOC97 = ((NI)(TMP334) <= (value ? value->Sup.len : 0));
+			TMP332 = addInt((*j), ((NI) 6));
+			LOC97 = ((NI)(TMP332) <= (value ? value->Sup.len : 0));
 			if (!(LOC97)) goto LA98;
-			TMP335 = addInt((*j), ((NI) 5));
-			LOC99 = HEX2EHEX2E_110273((*j), (NI)(TMP335));
+			TMP333 = addInt((*j), ((NI) 5));
+			LOC99 = HEX2EHEX2E_108273((*j), (NI)(TMP333));
 			LOC100 = 0;
 			LOC100 = HEX5BHEX5D_88054(value, LOC99);
 			LOC101 = 0;
-			LOC101 = nsuCmpIgnoreCase(LOC100, ((NimStringDesc*) &TMP336));
+			LOC101 = nsuCmpIgnoreCase(LOC100, ((NimStringDesc*) &TMP334));
 			LOC97 = (LOC101 == ((NI) 0));
 			LA98: ;
 			if (!LOC97) goto LA102;
 			nimln(802, "times.nim");
 			(*info).weekday = ((NU8) 4);
 			nimln(803, "times.nim");
-			TMP337 = addInt((*j), ((NI) 6));
-			(*j) = (NI)(TMP337);
+			TMP335 = addInt((*j), ((NI) 6));
+			(*j) = (NI)(TMP335);
 		}
 		goto LA55;
 		LA102: ;
 		{
 			NIM_BOOL LOC105;
-			NI TMP338;
-			NI TMP339;
+			NI TMP336;
+			NI TMP337;
 			Slice88061 LOC107;
 			NimStringDesc* LOC108;
 			NI LOC109;
-			NI TMP341;
+			NI TMP339;
 			nimln(804, "times.nim");
 			LOC105 = 0;
-			TMP338 = addInt((*j), ((NI) 8));
-			LOC105 = ((NI)(TMP338) <= (value ? value->Sup.len : 0));
+			TMP336 = addInt((*j), ((NI) 8));
+			LOC105 = ((NI)(TMP336) <= (value ? value->Sup.len : 0));
 			if (!(LOC105)) goto LA106;
-			TMP339 = addInt((*j), ((NI) 7));
-			LOC107 = HEX2EHEX2E_110273((*j), (NI)(TMP339));
+			TMP337 = addInt((*j), ((NI) 7));
+			LOC107 = HEX2EHEX2E_108273((*j), (NI)(TMP337));
 			LOC108 = 0;
 			LOC108 = HEX5BHEX5D_88054(value, LOC107);
 			LOC109 = 0;
-			LOC109 = nsuCmpIgnoreCase(LOC108, ((NimStringDesc*) &TMP340));
+			LOC109 = nsuCmpIgnoreCase(LOC108, ((NimStringDesc*) &TMP338));
 			LOC105 = (LOC109 == ((NI) 0));
 			LA106: ;
 			if (!LOC105) goto LA110;
 			nimln(805, "times.nim");
 			(*info).weekday = ((NU8) 5);
 			nimln(806, "times.nim");
-			TMP341 = addInt((*j), ((NI) 8));
-			(*j) = (NI)(TMP341);
+			TMP339 = addInt((*j), ((NI) 8));
+			(*j) = (NI)(TMP339);
 		}
 		goto LA55;
 		LA110: ;
 		{
-			Valueerror3449* e_110675;
+			Valueerror3449* e_108675;
 			NimStringDesc* LOC113;
-			e_110675 = 0;
+			e_108675 = 0;
 			nimln(2265, "system.nim");
-			e_110675 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_110675).Sup.Sup.m_type = (&NTI3449);
+			e_108675 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_108675).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			LOC113 = 0;
-			LOC113 = (*e_110675).Sup.message; (*e_110675).Sup.message = copyStringRC1(((NimStringDesc*) &TMP309));
+			LOC113 = (*e_108675).Sup.message; (*e_108675).Sup.message = copyStringRC1(((NimStringDesc*) &TMP307));
 			if (LOC113) nimGCunrefNoCycle(LOC113);
 			nimln(808, "times.nim");
-			raiseException((Exception*)e_110675, "ValueError");
+			raiseException((Exception*)e_108675, "ValueError");
 		}
 		LA55: ;
 	}
@@ -2960,171 +2960,171 @@ break;
 	LA5: ;
 	{
 		NI pd;
-		NI TMP342;
+		NI TMP340;
 		Slice88061 LOC115;
 		NimStringDesc* LOC116;
-		NI TMP343;
+		NI TMP341;
 		nimln(810, "times.nim");
-		TMP342 = addInt((*j), ((NI) 1));
-		LOC115 = HEX2EHEX2E_110273((*j), (NI)(TMP342));
+		TMP340 = addInt((*j), ((NI) 1));
+		LOC115 = HEX2EHEX2E_108273((*j), (NI)(TMP340));
 		LOC116 = 0;
 		LOC116 = HEX5BHEX5D_88054(value, LOC115);
 		pd = npuParseInt(LOC116, (&sv), ((NI) 0));
 		nimln(811, "times.nim");
 		(*info).hour = ((NI)chckRange(sv, ((NI) 0), ((NI) 23)));
 		nimln(812, "times.nim");
-		TMP343 = addInt((*j), pd);
-		(*j) = (NI)(TMP343);
+		TMP341 = addInt((*j), pd);
+		(*j) = (NI)(TMP341);
 	}
 	goto LA24;
 	LA6: ;
 	{
-		NI TMP344;
+		NI TMP342;
 		Slice88061 LOC118;
 		NimStringDesc* LOC119;
 		NI LOC120;
-		NI TMP345;
+		NI TMP343;
 		nimln(814, "times.nim");
-		TMP344 = addInt((*j), ((NI) 1));
-		LOC118 = HEX2EHEX2E_110273((*j), (NI)(TMP344));
+		TMP342 = addInt((*j), ((NI) 1));
+		LOC118 = HEX2EHEX2E_108273((*j), (NI)(TMP342));
 		LOC119 = 0;
 		LOC119 = HEX5BHEX5D_88054(value, LOC118);
 		LOC120 = 0;
 		LOC120 = nsuParseInt(LOC119);
 		(*info).hour = ((NI)chckRange(LOC120, ((NI) 0), ((NI) 23)));
 		nimln(815, "times.nim");
-		TMP345 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP345);
+		TMP343 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP343);
 	}
 	goto LA24;
 	LA7: ;
 	{
 		NI pd;
-		NI TMP346;
+		NI TMP344;
 		Slice88061 LOC122;
 		NimStringDesc* LOC123;
-		NI TMP347;
+		NI TMP345;
 		nimln(817, "times.nim");
-		TMP346 = addInt((*j), ((NI) 1));
-		LOC122 = HEX2EHEX2E_110273((*j), (NI)(TMP346));
+		TMP344 = addInt((*j), ((NI) 1));
+		LOC122 = HEX2EHEX2E_108273((*j), (NI)(TMP344));
 		LOC123 = 0;
 		LOC123 = HEX5BHEX5D_88054(value, LOC122);
 		pd = npuParseInt(LOC123, (&sv), ((NI) 0));
 		nimln(818, "times.nim");
 		(*info).minute = ((NI)chckRange(sv, ((NI) 0), ((NI) 59)));
 		nimln(819, "times.nim");
-		TMP347 = addInt((*j), pd);
-		(*j) = (NI)(TMP347);
+		TMP345 = addInt((*j), pd);
+		(*j) = (NI)(TMP345);
 	}
 	goto LA24;
 	LA8: ;
 	{
-		NI TMP348;
+		NI TMP346;
 		Slice88061 LOC125;
 		NimStringDesc* LOC126;
 		NI LOC127;
-		NI TMP349;
+		NI TMP347;
 		nimln(821, "times.nim");
-		TMP348 = addInt((*j), ((NI) 1));
-		LOC125 = HEX2EHEX2E_110273((*j), (NI)(TMP348));
+		TMP346 = addInt((*j), ((NI) 1));
+		LOC125 = HEX2EHEX2E_108273((*j), (NI)(TMP346));
 		LOC126 = 0;
 		LOC126 = HEX5BHEX5D_88054(value, LOC125);
 		LOC127 = 0;
 		LOC127 = nsuParseInt(LOC126);
 		(*info).minute = ((NI)chckRange(LOC127, ((NI) 0), ((NI) 59)));
 		nimln(822, "times.nim");
-		TMP349 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP349);
+		TMP347 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP347);
 	}
 	goto LA24;
 	LA9: ;
 	{
 		NI pd;
-		NI TMP350;
+		NI TMP348;
 		Slice88061 LOC129;
 		NimStringDesc* LOC130;
-		NI TMP351;
-		NI TMP352;
+		NI TMP349;
+		NI TMP350;
 		nimln(824, "times.nim");
-		TMP350 = addInt((*j), ((NI) 1));
-		LOC129 = HEX2EHEX2E_110273((*j), (NI)(TMP350));
+		TMP348 = addInt((*j), ((NI) 1));
+		LOC129 = HEX2EHEX2E_108273((*j), (NI)(TMP348));
 		LOC130 = 0;
 		LOC130 = HEX5BHEX5D_88054(value, LOC129);
 		pd = npuParseInt(LOC130, (&sv), ((NI) 0));
 		nimln(825, "times.nim");
-		TMP351 = subInt(sv, ((NI) 1));
-		(*info).month = ((NU8)chckRange((NI)(TMP351), ((NU8) 0), ((NU8) 11)));
+		TMP349 = subInt(sv, ((NI) 1));
+		(*info).month = ((NU8)chckRange((NI)(TMP349), ((NU8) 0), ((NU8) 11)));
 		nimln(826, "times.nim");
 		(*info).monthday = ((NI)chckRange(sv, ((NI) 1), ((NI) 31)));
 		nimln(827, "times.nim");
-		TMP352 = addInt((*j), pd);
-		(*j) = (NI)(TMP352);
+		TMP350 = addInt((*j), pd);
+		(*j) = (NI)(TMP350);
 	}
 	goto LA24;
 	LA10: ;
 	{
 		NI month;
-		NI TMP353;
+		NI TMP351;
 		Slice88061 LOC132;
 		NimStringDesc* LOC133;
-		NI TMP354;
-		NI TMP355;
+		NI TMP352;
+		NI TMP353;
 		nimln(829, "times.nim");
-		TMP353 = addInt((*j), ((NI) 1));
-		LOC132 = HEX2EHEX2E_110273((*j), (NI)(TMP353));
+		TMP351 = addInt((*j), ((NI) 1));
+		LOC132 = HEX2EHEX2E_108273((*j), (NI)(TMP351));
 		LOC133 = 0;
 		LOC133 = HEX5BHEX5D_88054(value, LOC132);
 		month = nsuParseInt(LOC133);
 		nimln(830, "times.nim");
-		TMP354 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP354);
+		TMP352 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP352);
 		nimln(831, "times.nim");
-		TMP355 = subInt(month, ((NI) 1));
-		(*info).month = ((NU8)chckRange((NI)(TMP355), ((NU8) 0), ((NU8) 11)));
+		TMP353 = subInt(month, ((NI) 1));
+		(*info).month = ((NU8)chckRange((NI)(TMP353), ((NU8) 0), ((NU8) 11)));
 	}
 	goto LA24;
 	LA11: ;
 	{
-		NI TMP356;
+		NI TMP354;
 		Slice88061 LOC135;
 		NimStringDesc* LOC136;
 		NimStringDesc* LOC137;
-		NI TMP370;
+		NI TMP368;
 		nimln(833, "times.nim");
-		TMP356 = addInt((*j), ((NI) 2));
-		LOC135 = HEX2EHEX2E_110273((*j), (NI)(TMP356));
+		TMP354 = addInt((*j), ((NI) 2));
+		LOC135 = HEX2EHEX2E_108273((*j), (NI)(TMP354));
 		LOC136 = 0;
 		LOC136 = HEX5BHEX5D_88054(value, LOC135);
 		LOC137 = 0;
 		LOC137 = nsuToLowerStr(LOC136);
 		switch (hashString(LOC137) & 15) {
 		case 0: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP358))) goto LA139;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP356))) goto LA139;
 break;
 		case 3: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP359))) goto LA140;
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP361))) goto LA142;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP357))) goto LA140;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP359))) goto LA142;
 break;
 		case 5: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP368))) goto LA149;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP366))) goto LA149;
 break;
 		case 8: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP357))) goto LA138;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP355))) goto LA138;
 break;
 		case 9: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP364))) goto LA145;
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP365))) goto LA146;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP362))) goto LA145;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP363))) goto LA146;
 break;
 		case 11: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP362))) goto LA143;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP360))) goto LA143;
 break;
 		case 14: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP360))) goto LA141;
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP367))) goto LA148;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP358))) goto LA141;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP365))) goto LA148;
 break;
 		case 15: 
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP363))) goto LA144;
-if (eqStrings(LOC137, ((NimStringDesc*) &TMP366))) goto LA147;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP361))) goto LA144;
+if (eqStrings(LOC137, ((NimStringDesc*) &TMP364))) goto LA147;
 break;
 		}
 		goto LA150;
@@ -3202,23 +3202,23 @@ break;
 		goto LA151;
 		LA150: ;
 		{
-			Valueerror3449* e_110818;
+			Valueerror3449* e_108818;
 			NimStringDesc* LOC165;
-			e_110818 = 0;
+			e_108818 = 0;
 			nimln(2265, "system.nim");
-			e_110818 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_110818).Sup.Sup.m_type = (&NTI3449);
+			e_108818 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_108818).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			LOC165 = 0;
-			LOC165 = (*e_110818).Sup.message; (*e_110818).Sup.message = copyStringRC1(((NimStringDesc*) &TMP369));
+			LOC165 = (*e_108818).Sup.message; (*e_108818).Sup.message = copyStringRC1(((NimStringDesc*) &TMP367));
 			if (LOC165) nimGCunrefNoCycle(LOC165);
 			nimln(859, "times.nim");
-			raiseException((Exception*)e_110818, "ValueError");
+			raiseException((Exception*)e_108818, "ValueError");
 		}
 		LA151: ;
 		nimln(860, "times.nim");
-		TMP370 = addInt((*j), ((NI) 3));
-		(*j) = (NI)(TMP370);
+		TMP368 = addInt((*j), ((NI) 3));
+		(*j) = (NI)(TMP368);
 	}
 	goto LA24;
 	LA12: ;
@@ -3226,376 +3226,376 @@ break;
 		nimln(862, "times.nim");
 		{
 			NIM_BOOL LOC169;
-			NI TMP371;
-			NI TMP372;
+			NI TMP369;
+			NI TMP370;
 			Slice88061 LOC171;
 			NimStringDesc* LOC172;
 			NI LOC173;
-			NI TMP374;
+			NI TMP372;
 			LOC169 = 0;
-			TMP371 = addInt((*j), ((NI) 7));
-			LOC169 = ((NI)(TMP371) <= (value ? value->Sup.len : 0));
+			TMP369 = addInt((*j), ((NI) 7));
+			LOC169 = ((NI)(TMP369) <= (value ? value->Sup.len : 0));
 			if (!(LOC169)) goto LA170;
-			TMP372 = addInt((*j), ((NI) 6));
-			LOC171 = HEX2EHEX2E_110273((*j), (NI)(TMP372));
+			TMP370 = addInt((*j), ((NI) 6));
+			LOC171 = HEX2EHEX2E_108273((*j), (NI)(TMP370));
 			LOC172 = 0;
 			LOC172 = HEX5BHEX5D_88054(value, LOC171);
 			LOC173 = 0;
-			LOC173 = nsuCmpIgnoreCase(LOC172, ((NimStringDesc*) &TMP373));
+			LOC173 = nsuCmpIgnoreCase(LOC172, ((NimStringDesc*) &TMP371));
 			LOC169 = (LOC173 == ((NI) 0));
 			LA170: ;
 			if (!LOC169) goto LA174;
 			nimln(863, "times.nim");
 			(*info).month = ((NU8) 0);
 			nimln(864, "times.nim");
-			TMP374 = addInt((*j), ((NI) 7));
-			(*j) = (NI)(TMP374);
+			TMP372 = addInt((*j), ((NI) 7));
+			(*j) = (NI)(TMP372);
 		}
 		goto LA167;
 		LA174: ;
 		{
 			NIM_BOOL LOC177;
-			NI TMP375;
-			NI TMP376;
+			NI TMP373;
+			NI TMP374;
 			Slice88061 LOC179;
 			NimStringDesc* LOC180;
 			NI LOC181;
-			NI TMP378;
+			NI TMP376;
 			nimln(865, "times.nim");
 			LOC177 = 0;
-			TMP375 = addInt((*j), ((NI) 8));
-			LOC177 = ((NI)(TMP375) <= (value ? value->Sup.len : 0));
+			TMP373 = addInt((*j), ((NI) 8));
+			LOC177 = ((NI)(TMP373) <= (value ? value->Sup.len : 0));
 			if (!(LOC177)) goto LA178;
-			TMP376 = addInt((*j), ((NI) 7));
-			LOC179 = HEX2EHEX2E_110273((*j), (NI)(TMP376));
+			TMP374 = addInt((*j), ((NI) 7));
+			LOC179 = HEX2EHEX2E_108273((*j), (NI)(TMP374));
 			LOC180 = 0;
 			LOC180 = HEX5BHEX5D_88054(value, LOC179);
 			LOC181 = 0;
-			LOC181 = nsuCmpIgnoreCase(LOC180, ((NimStringDesc*) &TMP377));
+			LOC181 = nsuCmpIgnoreCase(LOC180, ((NimStringDesc*) &TMP375));
 			LOC177 = (LOC181 == ((NI) 0));
 			LA178: ;
 			if (!LOC177) goto LA182;
 			nimln(866, "times.nim");
 			(*info).month = ((NU8) 1);
 			nimln(867, "times.nim");
-			TMP378 = addInt((*j), ((NI) 8));
-			(*j) = (NI)(TMP378);
+			TMP376 = addInt((*j), ((NI) 8));
+			(*j) = (NI)(TMP376);
 		}
 		goto LA167;
 		LA182: ;
 		{
 			NIM_BOOL LOC185;
-			NI TMP379;
-			NI TMP380;
+			NI TMP377;
+			NI TMP378;
 			Slice88061 LOC187;
 			NimStringDesc* LOC188;
 			NI LOC189;
-			NI TMP382;
+			NI TMP380;
 			nimln(868, "times.nim");
 			LOC185 = 0;
-			TMP379 = addInt((*j), ((NI) 5));
-			LOC185 = ((NI)(TMP379) <= (value ? value->Sup.len : 0));
+			TMP377 = addInt((*j), ((NI) 5));
+			LOC185 = ((NI)(TMP377) <= (value ? value->Sup.len : 0));
 			if (!(LOC185)) goto LA186;
-			TMP380 = addInt((*j), ((NI) 4));
-			LOC187 = HEX2EHEX2E_110273((*j), (NI)(TMP380));
+			TMP378 = addInt((*j), ((NI) 4));
+			LOC187 = HEX2EHEX2E_108273((*j), (NI)(TMP378));
 			LOC188 = 0;
 			LOC188 = HEX5BHEX5D_88054(value, LOC187);
 			LOC189 = 0;
-			LOC189 = nsuCmpIgnoreCase(LOC188, ((NimStringDesc*) &TMP381));
+			LOC189 = nsuCmpIgnoreCase(LOC188, ((NimStringDesc*) &TMP379));
 			LOC185 = (LOC189 == ((NI) 0));
 			LA186: ;
 			if (!LOC185) goto LA190;
 			nimln(869, "times.nim");
 			(*info).month = ((NU8) 2);
 			nimln(870, "times.nim");
-			TMP382 = addInt((*j), ((NI) 5));
-			(*j) = (NI)(TMP382);
+			TMP380 = addInt((*j), ((NI) 5));
+			(*j) = (NI)(TMP380);
 		}
 		goto LA167;
 		LA190: ;
 		{
 			NIM_BOOL LOC193;
-			NI TMP383;
-			NI TMP384;
+			NI TMP381;
+			NI TMP382;
 			Slice88061 LOC195;
 			NimStringDesc* LOC196;
 			NI LOC197;
-			NI TMP386;
+			NI TMP384;
 			nimln(871, "times.nim");
 			LOC193 = 0;
-			TMP383 = addInt((*j), ((NI) 5));
-			LOC193 = ((NI)(TMP383) <= (value ? value->Sup.len : 0));
+			TMP381 = addInt((*j), ((NI) 5));
+			LOC193 = ((NI)(TMP381) <= (value ? value->Sup.len : 0));
 			if (!(LOC193)) goto LA194;
-			TMP384 = addInt((*j), ((NI) 4));
-			LOC195 = HEX2EHEX2E_110273((*j), (NI)(TMP384));
+			TMP382 = addInt((*j), ((NI) 4));
+			LOC195 = HEX2EHEX2E_108273((*j), (NI)(TMP382));
 			LOC196 = 0;
 			LOC196 = HEX5BHEX5D_88054(value, LOC195);
 			LOC197 = 0;
-			LOC197 = nsuCmpIgnoreCase(LOC196, ((NimStringDesc*) &TMP385));
+			LOC197 = nsuCmpIgnoreCase(LOC196, ((NimStringDesc*) &TMP383));
 			LOC193 = (LOC197 == ((NI) 0));
 			LA194: ;
 			if (!LOC193) goto LA198;
 			nimln(872, "times.nim");
 			(*info).month = ((NU8) 3);
 			nimln(873, "times.nim");
-			TMP386 = addInt((*j), ((NI) 5));
-			(*j) = (NI)(TMP386);
+			TMP384 = addInt((*j), ((NI) 5));
+			(*j) = (NI)(TMP384);
 		}
 		goto LA167;
 		LA198: ;
 		{
 			NIM_BOOL LOC201;
-			NI TMP387;
-			NI TMP388;
+			NI TMP385;
+			NI TMP386;
 			Slice88061 LOC203;
 			NimStringDesc* LOC204;
 			NI LOC205;
-			NI TMP389;
+			NI TMP387;
 			nimln(874, "times.nim");
 			LOC201 = 0;
-			TMP387 = addInt((*j), ((NI) 3));
-			LOC201 = ((NI)(TMP387) <= (value ? value->Sup.len : 0));
+			TMP385 = addInt((*j), ((NI) 3));
+			LOC201 = ((NI)(TMP385) <= (value ? value->Sup.len : 0));
 			if (!(LOC201)) goto LA202;
-			TMP388 = addInt((*j), ((NI) 2));
-			LOC203 = HEX2EHEX2E_110273((*j), (NI)(TMP388));
+			TMP386 = addInt((*j), ((NI) 2));
+			LOC203 = HEX2EHEX2E_108273((*j), (NI)(TMP386));
 			LOC204 = 0;
 			LOC204 = HEX5BHEX5D_88054(value, LOC203);
 			LOC205 = 0;
-			LOC205 = nsuCmpIgnoreCase(LOC204, ((NimStringDesc*) &TMP361));
+			LOC205 = nsuCmpIgnoreCase(LOC204, ((NimStringDesc*) &TMP359));
 			LOC201 = (LOC205 == ((NI) 0));
 			LA202: ;
 			if (!LOC201) goto LA206;
 			nimln(875, "times.nim");
 			(*info).month = ((NU8) 4);
 			nimln(876, "times.nim");
-			TMP389 = addInt((*j), ((NI) 3));
-			(*j) = (NI)(TMP389);
+			TMP387 = addInt((*j), ((NI) 3));
+			(*j) = (NI)(TMP387);
 		}
 		goto LA167;
 		LA206: ;
 		{
 			NIM_BOOL LOC209;
-			NI TMP390;
-			NI TMP391;
+			NI TMP388;
+			NI TMP389;
 			Slice88061 LOC211;
 			NimStringDesc* LOC212;
 			NI LOC213;
-			NI TMP393;
+			NI TMP391;
 			nimln(877, "times.nim");
 			LOC209 = 0;
-			TMP390 = addInt((*j), ((NI) 4));
-			LOC209 = ((NI)(TMP390) <= (value ? value->Sup.len : 0));
+			TMP388 = addInt((*j), ((NI) 4));
+			LOC209 = ((NI)(TMP388) <= (value ? value->Sup.len : 0));
 			if (!(LOC209)) goto LA210;
-			TMP391 = addInt((*j), ((NI) 3));
-			LOC211 = HEX2EHEX2E_110273((*j), (NI)(TMP391));
+			TMP389 = addInt((*j), ((NI) 3));
+			LOC211 = HEX2EHEX2E_108273((*j), (NI)(TMP389));
 			LOC212 = 0;
 			LOC212 = HEX5BHEX5D_88054(value, LOC211);
 			LOC213 = 0;
-			LOC213 = nsuCmpIgnoreCase(LOC212, ((NimStringDesc*) &TMP392));
+			LOC213 = nsuCmpIgnoreCase(LOC212, ((NimStringDesc*) &TMP390));
 			LOC209 = (LOC213 == ((NI) 0));
 			LA210: ;
 			if (!LOC209) goto LA214;
 			nimln(878, "times.nim");
 			(*info).month = ((NU8) 5);
 			nimln(879, "times.nim");
-			TMP393 = addInt((*j), ((NI) 4));
-			(*j) = (NI)(TMP393);
+			TMP391 = addInt((*j), ((NI) 4));
+			(*j) = (NI)(TMP391);
 		}
 		goto LA167;
 		LA214: ;
 		{
 			NIM_BOOL LOC217;
-			NI TMP394;
-			NI TMP395;
+			NI TMP392;
+			NI TMP393;
 			Slice88061 LOC219;
 			NimStringDesc* LOC220;
 			NI LOC221;
-			NI TMP397;
+			NI TMP395;
 			nimln(880, "times.nim");
 			LOC217 = 0;
-			TMP394 = addInt((*j), ((NI) 4));
-			LOC217 = ((NI)(TMP394) <= (value ? value->Sup.len : 0));
+			TMP392 = addInt((*j), ((NI) 4));
+			LOC217 = ((NI)(TMP392) <= (value ? value->Sup.len : 0));
 			if (!(LOC217)) goto LA218;
-			TMP395 = addInt((*j), ((NI) 3));
-			LOC219 = HEX2EHEX2E_110273((*j), (NI)(TMP395));
+			TMP393 = addInt((*j), ((NI) 3));
+			LOC219 = HEX2EHEX2E_108273((*j), (NI)(TMP393));
 			LOC220 = 0;
 			LOC220 = HEX5BHEX5D_88054(value, LOC219);
 			LOC221 = 0;
-			LOC221 = nsuCmpIgnoreCase(LOC220, ((NimStringDesc*) &TMP396));
+			LOC221 = nsuCmpIgnoreCase(LOC220, ((NimStringDesc*) &TMP394));
 			LOC217 = (LOC221 == ((NI) 0));
 			LA218: ;
 			if (!LOC217) goto LA222;
 			nimln(881, "times.nim");
 			(*info).month = ((NU8) 6);
 			nimln(882, "times.nim");
-			TMP397 = addInt((*j), ((NI) 4));
-			(*j) = (NI)(TMP397);
+			TMP395 = addInt((*j), ((NI) 4));
+			(*j) = (NI)(TMP395);
 		}
 		goto LA167;
 		LA222: ;
 		{
 			NIM_BOOL LOC225;
-			NI TMP398;
-			NI TMP399;
+			NI TMP396;
+			NI TMP397;
 			Slice88061 LOC227;
 			NimStringDesc* LOC228;
 			NI LOC229;
-			NI TMP401;
+			NI TMP399;
 			nimln(883, "times.nim");
 			LOC225 = 0;
-			TMP398 = addInt((*j), ((NI) 6));
-			LOC225 = ((NI)(TMP398) <= (value ? value->Sup.len : 0));
+			TMP396 = addInt((*j), ((NI) 6));
+			LOC225 = ((NI)(TMP396) <= (value ? value->Sup.len : 0));
 			if (!(LOC225)) goto LA226;
-			TMP399 = addInt((*j), ((NI) 5));
-			LOC227 = HEX2EHEX2E_110273((*j), (NI)(TMP399));
+			TMP397 = addInt((*j), ((NI) 5));
+			LOC227 = HEX2EHEX2E_108273((*j), (NI)(TMP397));
 			LOC228 = 0;
 			LOC228 = HEX5BHEX5D_88054(value, LOC227);
 			LOC229 = 0;
-			LOC229 = nsuCmpIgnoreCase(LOC228, ((NimStringDesc*) &TMP400));
+			LOC229 = nsuCmpIgnoreCase(LOC228, ((NimStringDesc*) &TMP398));
 			LOC225 = (LOC229 == ((NI) 0));
 			LA226: ;
 			if (!LOC225) goto LA230;
 			nimln(884, "times.nim");
 			(*info).month = ((NU8) 7);
 			nimln(885, "times.nim");
-			TMP401 = addInt((*j), ((NI) 6));
-			(*j) = (NI)(TMP401);
+			TMP399 = addInt((*j), ((NI) 6));
+			(*j) = (NI)(TMP399);
 		}
 		goto LA167;
 		LA230: ;
 		{
 			NIM_BOOL LOC233;
-			NI TMP402;
-			NI TMP403;
+			NI TMP400;
+			NI TMP401;
 			Slice88061 LOC235;
 			NimStringDesc* LOC236;
 			NI LOC237;
-			NI TMP405;
+			NI TMP403;
 			nimln(886, "times.nim");
 			LOC233 = 0;
-			TMP402 = addInt((*j), ((NI) 9));
-			LOC233 = ((NI)(TMP402) <= (value ? value->Sup.len : 0));
+			TMP400 = addInt((*j), ((NI) 9));
+			LOC233 = ((NI)(TMP400) <= (value ? value->Sup.len : 0));
 			if (!(LOC233)) goto LA234;
-			TMP403 = addInt((*j), ((NI) 8));
-			LOC235 = HEX2EHEX2E_110273((*j), (NI)(TMP403));
+			TMP401 = addInt((*j), ((NI) 8));
+			LOC235 = HEX2EHEX2E_108273((*j), (NI)(TMP401));
 			LOC236 = 0;
 			LOC236 = HEX5BHEX5D_88054(value, LOC235);
 			LOC237 = 0;
-			LOC237 = nsuCmpIgnoreCase(LOC236, ((NimStringDesc*) &TMP404));
+			LOC237 = nsuCmpIgnoreCase(LOC236, ((NimStringDesc*) &TMP402));
 			LOC233 = (LOC237 == ((NI) 0));
 			LA234: ;
 			if (!LOC233) goto LA238;
 			nimln(887, "times.nim");
 			(*info).month = ((NU8) 8);
 			nimln(888, "times.nim");
-			TMP405 = addInt((*j), ((NI) 9));
-			(*j) = (NI)(TMP405);
+			TMP403 = addInt((*j), ((NI) 9));
+			(*j) = (NI)(TMP403);
 		}
 		goto LA167;
 		LA238: ;
 		{
 			NIM_BOOL LOC241;
-			NI TMP406;
-			NI TMP407;
+			NI TMP404;
+			NI TMP405;
 			Slice88061 LOC243;
 			NimStringDesc* LOC244;
 			NI LOC245;
-			NI TMP409;
+			NI TMP407;
 			nimln(889, "times.nim");
 			LOC241 = 0;
-			TMP406 = addInt((*j), ((NI) 7));
-			LOC241 = ((NI)(TMP406) <= (value ? value->Sup.len : 0));
+			TMP404 = addInt((*j), ((NI) 7));
+			LOC241 = ((NI)(TMP404) <= (value ? value->Sup.len : 0));
 			if (!(LOC241)) goto LA242;
-			TMP407 = addInt((*j), ((NI) 6));
-			LOC243 = HEX2EHEX2E_110273((*j), (NI)(TMP407));
+			TMP405 = addInt((*j), ((NI) 6));
+			LOC243 = HEX2EHEX2E_108273((*j), (NI)(TMP405));
 			LOC244 = 0;
 			LOC244 = HEX5BHEX5D_88054(value, LOC243);
 			LOC245 = 0;
-			LOC245 = nsuCmpIgnoreCase(LOC244, ((NimStringDesc*) &TMP408));
+			LOC245 = nsuCmpIgnoreCase(LOC244, ((NimStringDesc*) &TMP406));
 			LOC241 = (LOC245 == ((NI) 0));
 			LA242: ;
 			if (!LOC241) goto LA246;
 			nimln(890, "times.nim");
 			(*info).month = ((NU8) 9);
 			nimln(891, "times.nim");
-			TMP409 = addInt((*j), ((NI) 7));
-			(*j) = (NI)(TMP409);
+			TMP407 = addInt((*j), ((NI) 7));
+			(*j) = (NI)(TMP407);
 		}
 		goto LA167;
 		LA246: ;
 		{
 			NIM_BOOL LOC249;
-			NI TMP410;
-			NI TMP411;
+			NI TMP408;
+			NI TMP409;
 			Slice88061 LOC251;
 			NimStringDesc* LOC252;
 			NI LOC253;
-			NI TMP413;
+			NI TMP411;
 			nimln(892, "times.nim");
 			LOC249 = 0;
-			TMP410 = addInt((*j), ((NI) 8));
-			LOC249 = ((NI)(TMP410) <= (value ? value->Sup.len : 0));
+			TMP408 = addInt((*j), ((NI) 8));
+			LOC249 = ((NI)(TMP408) <= (value ? value->Sup.len : 0));
 			if (!(LOC249)) goto LA250;
-			TMP411 = addInt((*j), ((NI) 7));
-			LOC251 = HEX2EHEX2E_110273((*j), (NI)(TMP411));
+			TMP409 = addInt((*j), ((NI) 7));
+			LOC251 = HEX2EHEX2E_108273((*j), (NI)(TMP409));
 			LOC252 = 0;
 			LOC252 = HEX5BHEX5D_88054(value, LOC251);
 			LOC253 = 0;
-			LOC253 = nsuCmpIgnoreCase(LOC252, ((NimStringDesc*) &TMP412));
+			LOC253 = nsuCmpIgnoreCase(LOC252, ((NimStringDesc*) &TMP410));
 			LOC249 = (LOC253 == ((NI) 0));
 			LA250: ;
 			if (!LOC249) goto LA254;
 			nimln(893, "times.nim");
 			(*info).month = ((NU8) 10);
 			nimln(894, "times.nim");
-			TMP413 = addInt((*j), ((NI) 8));
-			(*j) = (NI)(TMP413);
+			TMP411 = addInt((*j), ((NI) 8));
+			(*j) = (NI)(TMP411);
 		}
 		goto LA167;
 		LA254: ;
 		{
 			NIM_BOOL LOC257;
-			NI TMP414;
-			NI TMP415;
+			NI TMP412;
+			NI TMP413;
 			Slice88061 LOC259;
 			NimStringDesc* LOC260;
 			NI LOC261;
-			NI TMP417;
+			NI TMP415;
 			nimln(895, "times.nim");
 			LOC257 = 0;
-			TMP414 = addInt((*j), ((NI) 8));
-			LOC257 = ((NI)(TMP414) <= (value ? value->Sup.len : 0));
+			TMP412 = addInt((*j), ((NI) 8));
+			LOC257 = ((NI)(TMP412) <= (value ? value->Sup.len : 0));
 			if (!(LOC257)) goto LA258;
-			TMP415 = addInt((*j), ((NI) 7));
-			LOC259 = HEX2EHEX2E_110273((*j), (NI)(TMP415));
+			TMP413 = addInt((*j), ((NI) 7));
+			LOC259 = HEX2EHEX2E_108273((*j), (NI)(TMP413));
 			LOC260 = 0;
 			LOC260 = HEX5BHEX5D_88054(value, LOC259);
 			LOC261 = 0;
-			LOC261 = nsuCmpIgnoreCase(LOC260, ((NimStringDesc*) &TMP416));
+			LOC261 = nsuCmpIgnoreCase(LOC260, ((NimStringDesc*) &TMP414));
 			LOC257 = (LOC261 == ((NI) 0));
 			LA258: ;
 			if (!LOC257) goto LA262;
 			nimln(896, "times.nim");
 			(*info).month = ((NU8) 11);
 			nimln(897, "times.nim");
-			TMP417 = addInt((*j), ((NI) 8));
-			(*j) = (NI)(TMP417);
+			TMP415 = addInt((*j), ((NI) 8));
+			(*j) = (NI)(TMP415);
 		}
 		goto LA167;
 		LA262: ;
 		{
-			Valueerror3449* e_111067;
+			Valueerror3449* e_109067;
 			NimStringDesc* LOC265;
-			e_111067 = 0;
+			e_109067 = 0;
 			nimln(2265, "system.nim");
-			e_111067 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_111067).Sup.Sup.m_type = (&NTI3449);
+			e_109067 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_109067).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			LOC265 = 0;
-			LOC265 = (*e_111067).Sup.message; (*e_111067).Sup.message = copyStringRC1(((NimStringDesc*) &TMP369));
+			LOC265 = (*e_109067).Sup.message; (*e_109067).Sup.message = copyStringRC1(((NimStringDesc*) &TMP367));
 			if (LOC265) nimGCunrefNoCycle(LOC265);
 			nimln(899, "times.nim");
-			raiseException((Exception*)e_111067, "ValueError");
+			raiseException((Exception*)e_109067, "ValueError");
 		}
 		LA167: ;
 	}
@@ -3603,51 +3603,51 @@ break;
 	LA13: ;
 	{
 		NI pd;
-		NI TMP418;
+		NI TMP416;
 		Slice88061 LOC267;
 		NimStringDesc* LOC268;
-		NI TMP419;
+		NI TMP417;
 		nimln(901, "times.nim");
-		TMP418 = addInt((*j), ((NI) 1));
-		LOC267 = HEX2EHEX2E_110273((*j), (NI)(TMP418));
+		TMP416 = addInt((*j), ((NI) 1));
+		LOC267 = HEX2EHEX2E_108273((*j), (NI)(TMP416));
 		LOC268 = 0;
 		LOC268 = HEX5BHEX5D_88054(value, LOC267);
 		pd = npuParseInt(LOC268, (&sv), ((NI) 0));
 		nimln(902, "times.nim");
 		(*info).second = ((NI)chckRange(sv, ((NI) 0), ((NI) 61)));
 		nimln(903, "times.nim");
-		TMP419 = addInt((*j), pd);
-		(*j) = (NI)(TMP419);
+		TMP417 = addInt((*j), pd);
+		(*j) = (NI)(TMP417);
 	}
 	goto LA24;
 	LA14: ;
 	{
-		NI TMP420;
+		NI TMP418;
 		Slice88061 LOC270;
 		NimStringDesc* LOC271;
 		NI LOC272;
-		NI TMP421;
+		NI TMP419;
 		nimln(905, "times.nim");
-		TMP420 = addInt((*j), ((NI) 1));
-		LOC270 = HEX2EHEX2E_110273((*j), (NI)(TMP420));
+		TMP418 = addInt((*j), ((NI) 1));
+		LOC270 = HEX2EHEX2E_108273((*j), (NI)(TMP418));
 		LOC271 = 0;
 		LOC271 = HEX5BHEX5D_88054(value, LOC270);
 		LOC272 = 0;
 		LOC272 = nsuParseInt(LOC271);
 		(*info).second = ((NI)chckRange(LOC272, ((NI) 0), ((NI) 61)));
 		nimln(906, "times.nim");
-		TMP421 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP421);
+		TMP419 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP419);
 	}
 	goto LA24;
 	LA15: ;
 	{
-		NI TMP423;
+		NI TMP421;
 		nimln(908, "times.nim");
 		{
 			NIM_BOOL LOC276;
 			NIM_BOOL LOC277;
-			NI TMP422;
+			NI TMP420;
 			LOC276 = 0;
 			LOC277 = 0;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
@@ -3661,34 +3661,34 @@ break;
 			LA279: ;
 			if (!LOC276) goto LA280;
 			nimln(909, "times.nim");
-			TMP422 = addInt((*info).hour, ((NI) 12));
-			if (TMP422 < 0 || TMP422 > 23) raiseOverflow();
-			(*info).hour = (NI)(TMP422);
+			TMP420 = addInt((*info).hour, ((NI) 12));
+			if (TMP420 < 0 || TMP420 > 23) raiseOverflow();
+			(*info).hour = (NI)(TMP420);
 		}
 		LA280: ;
 		nimln(910, "times.nim");
-		TMP423 = addInt((*j), ((NI) 1));
-		(*j) = (NI)(TMP423);
+		TMP421 = addInt((*j), ((NI) 1));
+		(*j) = (NI)(TMP421);
 	}
 	goto LA24;
 	LA16: ;
 	{
-		NI TMP426;
+		NI TMP424;
 		nimln(912, "times.nim");
 		{
 			NIM_BOOL LOC285;
 			NIM_BOOL LOC286;
-			NI TMP424;
+			NI TMP422;
 			Slice88061 LOC287;
 			NimStringDesc* LOC288;
-			NI TMP425;
+			NI TMP423;
 			LOC285 = 0;
 			LOC286 = 0;
-			TMP424 = addInt((*j), ((NI) 1));
-			LOC287 = HEX2EHEX2E_110273((*j), (NI)(TMP424));
+			TMP422 = addInt((*j), ((NI) 1));
+			LOC287 = HEX2EHEX2E_108273((*j), (NI)(TMP422));
 			LOC288 = 0;
 			LOC288 = HEX5BHEX5D_88054(value, LOC287);
-			LOC286 = eqStrings(LOC288, ((NimStringDesc*) &TMP248));
+			LOC286 = eqStrings(LOC288, ((NimStringDesc*) &TMP246));
 			if (!(LOC286)) goto LA289;
 			LOC286 = (((NI) 0) < ((NI) ((*info).hour)));
 			LA289: ;
@@ -3698,148 +3698,148 @@ break;
 			LA290: ;
 			if (!LOC285) goto LA291;
 			nimln(913, "times.nim");
-			TMP425 = addInt((*info).hour, ((NI) 12));
-			if (TMP425 < 0 || TMP425 > 23) raiseOverflow();
-			(*info).hour = (NI)(TMP425);
+			TMP423 = addInt((*info).hour, ((NI) 12));
+			if (TMP423 < 0 || TMP423 > 23) raiseOverflow();
+			(*info).hour = (NI)(TMP423);
 		}
 		LA291: ;
 		nimln(914, "times.nim");
-		TMP426 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP426);
+		TMP424 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP424);
 	}
 	goto LA24;
 	LA17: ;
 	{
 		NI year;
-		NI TMP427;
+		NI TMP425;
 		Slice88061 LOC294;
 		NimStringDesc* LOC295;
 		NI thiscen;
 		time_t LOC296;
-		Timeinfo108405 LOC297;
+		Timeinfo106405 LOC297;
+		NI TMP426;
+		NI TMP427;
 		NI TMP428;
 		NI TMP429;
-		NI TMP430;
-		NI TMP431;
 		nimln(917, "times.nim");
-		TMP427 = addInt((*j), ((NI) 1));
-		LOC294 = HEX2EHEX2E_110273((*j), (NI)(TMP427));
+		TMP425 = addInt((*j), ((NI) 1));
+		LOC294 = HEX2EHEX2E_108273((*j), (NI)(TMP425));
 		LOC295 = 0;
 		LOC295 = HEX5BHEX5D_88054(value, LOC294);
 		year = nsuParseInt(LOC295);
 		nimln(918, "times.nim");
 		LOC296 = 0;
-		LOC296 = gettime_108448();
+		LOC296 = gettime_106448();
 		memset((void*)(&LOC297), 0, sizeof(LOC297));
-		LOC297.Sup.m_type = (&NTI108405);
-		getlocaltime_108453(LOC296, (&LOC297));
-		TMP428 = divInt(((NI) (LOC297.year)), ((NI) 100));
-		thiscen = (NI)(TMP428);
+		LOC297.Sup.m_type = (&NTI106405);
+		getlocaltime_106453(LOC296, (&LOC297));
+		TMP426 = divInt(((NI) (LOC297.year)), ((NI) 100));
+		thiscen = (NI)(TMP426);
 		nimln(919, "times.nim");
-		TMP429 = mulInt(((NI) (thiscen)), ((NI) 100));
-		TMP430 = addInt(((NI) ((NI)(TMP429))), year);
-		(*info).year = ((NI)chckRange((NI)(TMP430), ((NI) -10000), ((NI) 10000)));
+		TMP427 = mulInt(((NI) (thiscen)), ((NI) 100));
+		TMP428 = addInt(((NI) ((NI)(TMP427))), year);
+		(*info).year = ((NI)chckRange((NI)(TMP428), ((NI) -10000), ((NI) 10000)));
 		nimln(920, "times.nim");
-		TMP431 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP431);
+		TMP429 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP429);
 	}
 	goto LA24;
 	LA18: ;
 	{
-		NI TMP432;
+		NI TMP430;
 		Slice88061 LOC299;
 		NimStringDesc* LOC300;
 		NI LOC301;
-		NI TMP433;
+		NI TMP431;
 		nimln(922, "times.nim");
-		TMP432 = addInt((*j), ((NI) 3));
-		LOC299 = HEX2EHEX2E_110273((*j), (NI)(TMP432));
+		TMP430 = addInt((*j), ((NI) 3));
+		LOC299 = HEX2EHEX2E_108273((*j), (NI)(TMP430));
 		LOC300 = 0;
 		LOC300 = HEX5BHEX5D_88054(value, LOC299);
 		LOC301 = 0;
 		LOC301 = nsuParseInt(LOC300);
 		(*info).year = ((NI)chckRange(LOC301, ((NI) -10000), ((NI) 10000)));
 		nimln(923, "times.nim");
-		TMP433 = addInt((*j), ((NI) 4));
-		(*j) = (NI)(TMP433);
+		TMP431 = addInt((*j), ((NI) 4));
+		(*j) = (NI)(TMP431);
 	}
 	goto LA24;
 	LA19: ;
 	{
-		NI TMP438;
+		NI TMP436;
 		nimln(925, "times.nim");
 		{
-			NI TMP434;
+			NI TMP432;
 			NimStringDesc* LOC307;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(43))) goto LA305;
 			nimln(926, "times.nim");
-			TMP434 = addInt((*j), ((NI) 1));
-			if ((NU)((NI)(TMP434)) > (NU)(value->Sup.len)) raiseIndexError();
+			TMP432 = addInt((*j), ((NI) 1));
+			if ((NU)((NI)(TMP432)) > (NU)(value->Sup.len)) raiseIndexError();
 			LOC307 = 0;
-			LOC307 = nimCharToStr(value->data[(NI)(TMP434)]);
+			LOC307 = nimCharToStr(value->data[(NI)(TMP432)]);
 			(*info).timezone = nsuParseInt(LOC307);
 		}
 		goto LA303;
 		LA305: ;
 		{
-			NI TMP435;
+			NI TMP433;
 			NimStringDesc* LOC311;
 			NI LOC312;
-			NI TMP436;
+			NI TMP434;
 			nimln(927, "times.nim");
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(45))) goto LA309;
 			nimln(928, "times.nim");
-			TMP435 = addInt((*j), ((NI) 1));
-			if ((NU)((NI)(TMP435)) > (NU)(value->Sup.len)) raiseIndexError();
+			TMP433 = addInt((*j), ((NI) 1));
+			if ((NU)((NI)(TMP433)) > (NU)(value->Sup.len)) raiseIndexError();
 			LOC311 = 0;
-			LOC311 = nimCharToStr(value->data[(NI)(TMP435)]);
+			LOC311 = nimCharToStr(value->data[(NI)(TMP433)]);
 			LOC312 = 0;
 			LOC312 = nsuParseInt(LOC311);
-			TMP436 = subInt(((NI) 0), LOC312);
-			(*info).timezone = (NI)(TMP436);
+			TMP434 = subInt(((NI) 0), LOC312);
+			(*info).timezone = (NI)(TMP434);
 		}
 		goto LA303;
 		LA309: ;
 		{
-			Valueerror3449* e_111209;
+			Valueerror3449* e_109209;
 			NimStringDesc* LOC314;
-			e_111209 = 0;
+			e_109209 = 0;
 			nimln(2265, "system.nim");
-			e_111209 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_111209).Sup.Sup.m_type = (&NTI3449);
+			e_109209 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_109209).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			nimln(930, "times.nim");
 			LOC314 = 0;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			LOC314 = rawNewString(19);
-appendString(LOC314, ((NimStringDesc*) &TMP437));
+appendString(LOC314, ((NimStringDesc*) &TMP435));
 appendChar(LOC314, value->data[(*j)]);
-			asgnRefNoCycle((void**) (&(*e_111209).Sup.message), LOC314);
-			raiseException((Exception*)e_111209, "ValueError");
+			asgnRefNoCycle((void**) (&(*e_109209).Sup.message), LOC314);
+			raiseException((Exception*)e_109209, "ValueError");
 		}
 		LA303: ;
 		nimln(931, "times.nim");
-		TMP438 = addInt((*j), ((NI) 2));
-		(*j) = (NI)(TMP438);
+		TMP436 = addInt((*j), ((NI) 2));
+		(*j) = (NI)(TMP436);
 	}
 	goto LA24;
 	LA20: ;
 	{
-		NI TMP444;
+		NI TMP442;
 		nimln(933, "times.nim");
 		{
-			NI TMP439;
-			NI TMP440;
+			NI TMP437;
+			NI TMP438;
 			Slice88061 LOC320;
 			NimStringDesc* LOC321;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(43))) goto LA318;
 			nimln(934, "times.nim");
-			TMP439 = addInt((*j), ((NI) 1));
-			TMP440 = addInt((*j), ((NI) 2));
-			LOC320 = HEX2EHEX2E_110273((NI)(TMP439), (NI)(TMP440));
+			TMP437 = addInt((*j), ((NI) 1));
+			TMP438 = addInt((*j), ((NI) 2));
+			LOC320 = HEX2EHEX2E_108273((NI)(TMP437), (NI)(TMP438));
 			LOC321 = 0;
 			LOC321 = HEX5BHEX5D_88054(value, LOC320);
 			(*info).timezone = nsuParseInt(LOC321);
@@ -3847,66 +3847,66 @@ appendChar(LOC314, value->data[(*j)]);
 		goto LA316;
 		LA318: ;
 		{
-			NI TMP441;
-			NI TMP442;
+			NI TMP439;
+			NI TMP440;
 			Slice88061 LOC325;
 			NimStringDesc* LOC326;
 			NI LOC327;
-			NI TMP443;
+			NI TMP441;
 			nimln(935, "times.nim");
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(45))) goto LA323;
 			nimln(936, "times.nim");
-			TMP441 = addInt((*j), ((NI) 1));
-			TMP442 = addInt((*j), ((NI) 2));
-			LOC325 = HEX2EHEX2E_110273((NI)(TMP441), (NI)(TMP442));
+			TMP439 = addInt((*j), ((NI) 1));
+			TMP440 = addInt((*j), ((NI) 2));
+			LOC325 = HEX2EHEX2E_108273((NI)(TMP439), (NI)(TMP440));
 			LOC326 = 0;
 			LOC326 = HEX5BHEX5D_88054(value, LOC325);
 			LOC327 = 0;
 			LOC327 = nsuParseInt(LOC326);
-			TMP443 = subInt(((NI) 0), LOC327);
-			(*info).timezone = (NI)(TMP443);
+			TMP441 = subInt(((NI) 0), LOC327);
+			(*info).timezone = (NI)(TMP441);
 		}
 		goto LA316;
 		LA323: ;
 		{
-			Valueerror3449* e_111250;
+			Valueerror3449* e_109250;
 			NimStringDesc* LOC329;
-			e_111250 = 0;
+			e_109250 = 0;
 			nimln(2265, "system.nim");
-			e_111250 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_111250).Sup.Sup.m_type = (&NTI3449);
+			e_109250 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_109250).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			nimln(938, "times.nim");
 			LOC329 = 0;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			LOC329 = rawNewString(19);
-appendString(LOC329, ((NimStringDesc*) &TMP437));
+appendString(LOC329, ((NimStringDesc*) &TMP435));
 appendChar(LOC329, value->data[(*j)]);
-			asgnRefNoCycle((void**) (&(*e_111250).Sup.message), LOC329);
-			raiseException((Exception*)e_111250, "ValueError");
+			asgnRefNoCycle((void**) (&(*e_109250).Sup.message), LOC329);
+			raiseException((Exception*)e_109250, "ValueError");
 		}
 		LA316: ;
 		nimln(939, "times.nim");
-		TMP444 = addInt((*j), ((NI) 3));
-		(*j) = (NI)(TMP444);
+		TMP442 = addInt((*j), ((NI) 3));
+		(*j) = (NI)(TMP442);
 	}
 	goto LA24;
 	LA21: ;
 	{
-		NI TMP450;
+		NI TMP448;
 		nimln(941, "times.nim");
 		{
-			NI TMP445;
-			NI TMP446;
+			NI TMP443;
+			NI TMP444;
 			Slice88061 LOC335;
 			NimStringDesc* LOC336;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(43))) goto LA333;
 			nimln(942, "times.nim");
-			TMP445 = addInt((*j), ((NI) 1));
-			TMP446 = addInt((*j), ((NI) 2));
-			LOC335 = HEX2EHEX2E_110273((NI)(TMP445), (NI)(TMP446));
+			TMP443 = addInt((*j), ((NI) 1));
+			TMP444 = addInt((*j), ((NI) 2));
+			LOC335 = HEX2EHEX2E_108273((NI)(TMP443), (NI)(TMP444));
 			LOC336 = 0;
 			LOC336 = HEX5BHEX5D_88054(value, LOC335);
 			(*info).timezone = nsuParseInt(LOC336);
@@ -3914,103 +3914,103 @@ appendChar(LOC329, value->data[(*j)]);
 		goto LA331;
 		LA333: ;
 		{
-			NI TMP447;
-			NI TMP448;
+			NI TMP445;
+			NI TMP446;
 			Slice88061 LOC340;
 			NimStringDesc* LOC341;
 			NI LOC342;
-			NI TMP449;
+			NI TMP447;
 			nimln(943, "times.nim");
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			if (!((NU8)(value->data[(*j)]) == (NU8)(45))) goto LA338;
 			nimln(944, "times.nim");
-			TMP447 = addInt((*j), ((NI) 1));
-			TMP448 = addInt((*j), ((NI) 2));
-			LOC340 = HEX2EHEX2E_110273((NI)(TMP447), (NI)(TMP448));
+			TMP445 = addInt((*j), ((NI) 1));
+			TMP446 = addInt((*j), ((NI) 2));
+			LOC340 = HEX2EHEX2E_108273((NI)(TMP445), (NI)(TMP446));
 			LOC341 = 0;
 			LOC341 = HEX5BHEX5D_88054(value, LOC340);
 			LOC342 = 0;
 			LOC342 = nsuParseInt(LOC341);
-			TMP449 = subInt(((NI) 0), LOC342);
-			(*info).timezone = (NI)(TMP449);
+			TMP447 = subInt(((NI) 0), LOC342);
+			(*info).timezone = (NI)(TMP447);
 		}
 		goto LA331;
 		LA338: ;
 		{
-			Valueerror3449* e_111291;
+			Valueerror3449* e_109291;
 			NimStringDesc* LOC344;
-			e_111291 = 0;
+			e_109291 = 0;
 			nimln(2265, "system.nim");
-			e_111291 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_111291).Sup.Sup.m_type = (&NTI3449);
+			e_109291 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_109291).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			nimln(946, "times.nim");
 			LOC344 = 0;
 			if ((NU)((*j)) > (NU)(value->Sup.len)) raiseIndexError();
 			LOC344 = rawNewString(19);
-appendString(LOC344, ((NimStringDesc*) &TMP437));
+appendString(LOC344, ((NimStringDesc*) &TMP435));
 appendChar(LOC344, value->data[(*j)]);
-			asgnRefNoCycle((void**) (&(*e_111291).Sup.message), LOC344);
-			raiseException((Exception*)e_111291, "ValueError");
+			asgnRefNoCycle((void**) (&(*e_109291).Sup.message), LOC344);
+			raiseException((Exception*)e_109291, "ValueError");
 		}
 		LA331: ;
 		nimln(947, "times.nim");
-		TMP450 = addInt((*j), ((NI) 6));
-		(*j) = (NI)(TMP450);
+		TMP448 = addInt((*j), ((NI) 6));
+		(*j) = (NI)(TMP448);
 	}
 	goto LA24;
 	LA22: ;
 	{
-		NI TMP454;
+		NI TMP452;
 		Slice88061 LOC346;
 		NimStringDesc* LOC347;
-		NI TMP455;
+		NI TMP453;
 		nimln(949, "times.nim");
-		TMP454 = addInt((*j), ((NI) 2));
-		LOC346 = HEX2EHEX2E_110273((*j), (NI)(TMP454));
+		TMP452 = addInt((*j), ((NI) 2));
+		LOC346 = HEX2EHEX2E_108273((*j), (NI)(TMP452));
 		LOC347 = 0;
 		LOC347 = HEX5BHEX5D_88054(value, LOC346);
 		unsureAsgnRef((void**) (&(*info).tzname), nsuToUpperStr(LOC347));
 		nimln(950, "times.nim");
-		TMP455 = addInt((*j), ((NI) 3));
-		(*j) = (NI)(TMP455);
+		TMP453 = addInt((*j), ((NI) 3));
+		(*j) = (NI)(TMP453);
 	}
 	goto LA24;
 	LA23: ;
 	{
-		NI TMP456;
+		NI TMP454;
 		nimln(953, "times.nim");
-		TMP456 = addInt((*j), (token ? token->Sup.len : 0));
-		(*j) = (NI)(TMP456);
+		TMP454 = addInt((*j), (token ? token->Sup.len : 0));
+		(*j) = (NI)(TMP454);
 	}
 	LA24: ;
 	popFrame();
 }
 
-N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timeinfo108405* Result) {
+N_NIMCALL(void, parse_109352)(NimStringDesc* value, NimStringDesc* layout, Timeinfo106405* Result) {
 	NI i;
 	NI j;
 	NimStringDesc* token;
-	Timeinfo108405 info;
+	Timeinfo106405 info;
 	time_t LOC1;
 	time_t LOC30;
-	Timeinfo108405 LOC31;
+	Timeinfo106405 LOC31;
 	nimfr("parse", "times.nim")
 {	nimln(993, "times.nim");
 	i = ((NI) 0);
 	nimln(994, "times.nim");
 	j = ((NI) 0);
 	nimln(995, "times.nim");
-	token = copyString(((NimStringDesc*) &TMP182));
+	token = copyString(((NimStringDesc*) &TMP180));
 	memset((void*)(&info), 0, sizeof(info));
-	info.Sup.m_type = (&NTI108405);
+	info.Sup.m_type = (&NTI106405);
 	nimln(997, "times.nim");
 	LOC1 = 0;
-	LOC1 = gettime_108448();
+	LOC1 = gettime_106448();
 	chckNil((void*)(&info));
 	memset((void*)(&info), 0, sizeof(info));
-	info.Sup.m_type = (&NTI108405);
-	getlocaltime_108453(LOC1, (&info));
+	info.Sup.m_type = (&NTI106405);
+	getlocaltime_106453(LOC1, (&info));
 	nimln(998, "times.nim");
 	info.hour = ((NI) 0);
 	nimln(999, "times.nim");
@@ -4039,11 +4039,11 @@ N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timei
 				{
 					if (!(((NI) 0) < (token ? token->Sup.len : 0))) goto LA7;
 					nimln(1005, "times.nim");
-					parsetoken_110460((&info), token, value, (&j));
+					parsetoken_108460((&info), token, value, (&j));
 				}
 				LA7: ;
 				nimln(1007, "times.nim");
-				token = copyString(((NimStringDesc*) &TMP182));
+				token = copyString(((NimStringDesc*) &TMP180));
 				nimln(1009, "times.nim");
 				{
 					if ((NU)(i) > (NU)(layout->Sup.len)) raiseIndexError();
@@ -4053,51 +4053,51 @@ N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timei
 				LA11: ;
 				nimln(1012, "times.nim");
 				{
-					NI TMP457;
-					NI TMP458;
+					NI TMP455;
+					NI TMP456;
 					if ((NU)(i) > (NU)(layout->Sup.len)) raiseIndexError();
 					if (!((NU8)(layout->data[i]) == (NU8)(39))) goto LA15;
 					nimln(1013, "times.nim");
-					TMP457 = addInt(i, ((NI) 1));
-					i = (NI)(TMP457);
+					TMP455 = addInt(i, ((NI) 1));
+					i = (NI)(TMP455);
 					nimln(1014, "times.nim");
-					TMP458 = addInt(j, ((NI) 1));
-					j = (NI)(TMP458);
+					TMP456 = addInt(j, ((NI) 1));
+					j = (NI)(TMP456);
 					{
 						nimln(1015, "times.nim");
 						while (1) {
 							NIM_BOOL LOC19;
+							NI TMP457;
+							NI TMP458;
 							NI TMP459;
-							NI TMP460;
-							NI TMP461;
 							LOC19 = 0;
 							if ((NU)(i) > (NU)(layout->Sup.len)) raiseIndexError();
 							LOC19 = !(((NU8)(layout->data[i]) == (NU8)(39)));
 							if (!(LOC19)) goto LA20;
-							TMP459 = subInt((layout ? layout->Sup.len : 0), ((NI) 1));
-							LOC19 = (i < (NI)(TMP459));
+							TMP457 = subInt((layout ? layout->Sup.len : 0), ((NI) 1));
+							LOC19 = (i < (NI)(TMP457));
 							LA20: ;
 							if (!LOC19) goto LA18;
 							nimln(1016, "times.nim");
-							TMP460 = addInt(i, ((NI) 1));
-							i = (NI)(TMP460);
+							TMP458 = addInt(i, ((NI) 1));
+							i = (NI)(TMP458);
 							nimln(1017, "times.nim");
-							TMP461 = addInt(j, ((NI) 1));
-							j = (NI)(TMP461);
+							TMP459 = addInt(j, ((NI) 1));
+							j = (NI)(TMP459);
 						} LA18: ;
 					}
 				}
 				goto LA13;
 				LA15: ;
 				{
-					NI TMP462;
-					NI TMP463;
+					NI TMP460;
+					NI TMP461;
 					nimln(1019, "times.nim");
-					TMP462 = addInt(i, ((NI) 1));
-					i = (NI)(TMP462);
+					TMP460 = addInt(i, ((NI) 1));
+					i = (NI)(TMP460);
 					nimln(1020, "times.nim");
-					TMP463 = addInt(j, ((NI) 1));
-					j = (NI)(TMP463);
+					TMP461 = addInt(j, ((NI) 1));
+					j = (NI)(TMP461);
 				}
 				LA13: ;
 			}
@@ -4107,7 +4107,7 @@ N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timei
 				nimln(1023, "times.nim");
 				{
 					NIM_BOOL LOC25;
-					NI TMP464;
+					NI TMP462;
 					LOC25 = 0;
 					LOC25 = ((token ? token->Sup.len : 0) < ((NI) 1));
 					if (LOC25) goto LA26;
@@ -4120,16 +4120,16 @@ N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timei
 					if ((NU)(i) > (NU)(layout->Sup.len)) raiseIndexError();
 					token = addChar(token, layout->data[i]);
 					nimln(1025, "times.nim");
-					TMP464 = addInt(i, ((NI) 1));
-					i = (NI)(TMP464);
+					TMP462 = addInt(i, ((NI) 1));
+					i = (NI)(TMP462);
 				}
 				goto LA23;
 				LA27: ;
 				{
 					nimln(1027, "times.nim");
-					parsetoken_110460((&info), token, value, (&j));
+					parsetoken_108460((&info), token, value, (&j));
 					nimln(1028, "times.nim");
-					token = copyString(((NimStringDesc*) &TMP182));
+					token = copyString(((NimStringDesc*) &TMP180));
 				}
 				LA23: ;
 			}
@@ -4139,13 +4139,13 @@ N_NIMCALL(void, parse_111352)(NimStringDesc* value, NimStringDesc* layout, Timei
 	} LA2: ;
 	nimln(1030, "times.nim");
 	LOC30 = 0;
-	LOC30 = timeinfototime_108465((&info));
+	LOC30 = timeinfototime_106465((&info));
 	memset((void*)(&LOC31), 0, sizeof(LOC31));
-	LOC31.Sup.m_type = (&NTI108405);
-	getlocaltime_108453(LOC30, (&LOC31));
+	LOC31.Sup.m_type = (&NTI106405);
+	getlocaltime_106453(LOC30, (&LOC31));
 	info.weekday = LOC31.weekday;
 	nimln(1031, "times.nim");
-	genericAssign((void*)Result, (void*)(&info), (&NTI108405));
+	genericAssign((void*)Result, (void*)(&info), (&NTI106405));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -4156,10 +4156,10 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_timesInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_timesDatInit)(void) {
-static TNimNode* TMP156[11];
-static TNimNode* TMP157[12];
-NI TMP159;
-static char* NIM_CONST TMP158[12] = {
+static TNimNode* TMP154[11];
+static TNimNode* TMP155[12];
+NI TMP157;
+static char* NIM_CONST TMP156[12] = {
 "mJan", 
 "mFeb", 
 "mMar", 
@@ -4172,9 +4172,9 @@ static char* NIM_CONST TMP158[12] = {
 "mOct", 
 "mNov", 
 "mDec"};
-static TNimNode* TMP160[7];
-NI TMP162;
-static char* NIM_CONST TMP161[7] = {
+static TNimNode* TMP158[7];
+NI TMP160;
+static char* NIM_CONST TMP159[7] = {
 "dMon", 
 "dTue", 
 "dWed", 
@@ -4182,131 +4182,131 @@ static char* NIM_CONST TMP161[7] = {
 "dFri", 
 "dSat", 
 "dSun"};
-static TNimNode* TMP559[2];
-static TNimNode TMP147[36];
-NTI108405.size = sizeof(Timeinfo108405);
-NTI108405.kind = 17;
-NTI108405.base = (&NTI3411);
-TMP156[0] = &TMP147[1];
-NTI108408.size = sizeof(NI);
-NTI108408.kind = 20;
-NTI108408.base = (&NTI108);
-NTI108408.flags = 3;
-TMP147[1].kind = 1;
-TMP147[1].offset = offsetof(Timeinfo108405, second);
-TMP147[1].typ = (&NTI108408);
-TMP147[1].name = "second";
-TMP156[1] = &TMP147[2];
-NTI108410.size = sizeof(NI);
-NTI108410.kind = 20;
-NTI108410.base = (&NTI108);
-NTI108410.flags = 3;
-TMP147[2].kind = 1;
-TMP147[2].offset = offsetof(Timeinfo108405, minute);
-TMP147[2].typ = (&NTI108410);
-TMP147[2].name = "minute";
-TMP156[2] = &TMP147[3];
-NTI108412.size = sizeof(NI);
-NTI108412.kind = 20;
-NTI108412.base = (&NTI108);
-NTI108412.flags = 3;
-TMP147[3].kind = 1;
-TMP147[3].offset = offsetof(Timeinfo108405, hour);
-TMP147[3].typ = (&NTI108412);
-TMP147[3].name = "hour";
-TMP156[3] = &TMP147[4];
-NTI108415.size = sizeof(NI);
-NTI108415.kind = 20;
-NTI108415.base = (&NTI108);
-NTI108415.flags = 3;
-TMP147[4].kind = 1;
-TMP147[4].offset = offsetof(Timeinfo108405, monthday);
-TMP147[4].typ = (&NTI108415);
-TMP147[4].name = "monthday";
-TMP156[4] = &TMP147[5];
-NTI105006.size = sizeof(NU8);
-NTI105006.kind = 14;
-NTI105006.base = 0;
-NTI105006.flags = 3;
-for (TMP159 = 0; TMP159 < 12; TMP159++) {
-TMP147[TMP159+6].kind = 1;
-TMP147[TMP159+6].offset = TMP159;
-TMP147[TMP159+6].name = TMP158[TMP159];
-TMP157[TMP159] = &TMP147[TMP159+6];
+static TNimNode* TMP678[2];
+static TNimNode TMP141[36];
+NTI106405.size = sizeof(Timeinfo106405);
+NTI106405.kind = 17;
+NTI106405.base = (&NTI3411);
+TMP154[0] = &TMP141[1];
+NTI106408.size = sizeof(NI);
+NTI106408.kind = 20;
+NTI106408.base = (&NTI108);
+NTI106408.flags = 3;
+TMP141[1].kind = 1;
+TMP141[1].offset = offsetof(Timeinfo106405, second);
+TMP141[1].typ = (&NTI106408);
+TMP141[1].name = "second";
+TMP154[1] = &TMP141[2];
+NTI106410.size = sizeof(NI);
+NTI106410.kind = 20;
+NTI106410.base = (&NTI108);
+NTI106410.flags = 3;
+TMP141[2].kind = 1;
+TMP141[2].offset = offsetof(Timeinfo106405, minute);
+TMP141[2].typ = (&NTI106410);
+TMP141[2].name = "minute";
+TMP154[2] = &TMP141[3];
+NTI106412.size = sizeof(NI);
+NTI106412.kind = 20;
+NTI106412.base = (&NTI108);
+NTI106412.flags = 3;
+TMP141[3].kind = 1;
+TMP141[3].offset = offsetof(Timeinfo106405, hour);
+TMP141[3].typ = (&NTI106412);
+TMP141[3].name = "hour";
+TMP154[3] = &TMP141[4];
+NTI106415.size = sizeof(NI);
+NTI106415.kind = 20;
+NTI106415.base = (&NTI108);
+NTI106415.flags = 3;
+TMP141[4].kind = 1;
+TMP141[4].offset = offsetof(Timeinfo106405, monthday);
+TMP141[4].typ = (&NTI106415);
+TMP141[4].name = "monthday";
+TMP154[4] = &TMP141[5];
+NTI103006.size = sizeof(NU8);
+NTI103006.kind = 14;
+NTI103006.base = 0;
+NTI103006.flags = 3;
+for (TMP157 = 0; TMP157 < 12; TMP157++) {
+TMP141[TMP157+6].kind = 1;
+TMP141[TMP157+6].offset = TMP157;
+TMP141[TMP157+6].name = TMP156[TMP157];
+TMP155[TMP157] = &TMP141[TMP157+6];
 }
-TMP147[18].len = 12; TMP147[18].kind = 2; TMP147[18].sons = &TMP157[0];
-NTI105006.node = &TMP147[18];
-TMP147[5].kind = 1;
-TMP147[5].offset = offsetof(Timeinfo108405, month);
-TMP147[5].typ = (&NTI105006);
-TMP147[5].name = "month";
-TMP156[5] = &TMP147[19];
-NTI108418.size = sizeof(NI);
-NTI108418.kind = 20;
-NTI108418.base = (&NTI108);
-NTI108418.flags = 3;
-TMP147[19].kind = 1;
-TMP147[19].offset = offsetof(Timeinfo108405, year);
-TMP147[19].typ = (&NTI108418);
-TMP147[19].name = "year";
-TMP156[6] = &TMP147[20];
-NTI105008.size = sizeof(NU8);
-NTI105008.kind = 14;
-NTI105008.base = 0;
-NTI105008.flags = 3;
-for (TMP162 = 0; TMP162 < 7; TMP162++) {
-TMP147[TMP162+21].kind = 1;
-TMP147[TMP162+21].offset = TMP162;
-TMP147[TMP162+21].name = TMP161[TMP162];
-TMP160[TMP162] = &TMP147[TMP162+21];
+TMP141[18].len = 12; TMP141[18].kind = 2; TMP141[18].sons = &TMP155[0];
+NTI103006.node = &TMP141[18];
+TMP141[5].kind = 1;
+TMP141[5].offset = offsetof(Timeinfo106405, month);
+TMP141[5].typ = (&NTI103006);
+TMP141[5].name = "month";
+TMP154[5] = &TMP141[19];
+NTI106418.size = sizeof(NI);
+NTI106418.kind = 20;
+NTI106418.base = (&NTI108);
+NTI106418.flags = 3;
+TMP141[19].kind = 1;
+TMP141[19].offset = offsetof(Timeinfo106405, year);
+TMP141[19].typ = (&NTI106418);
+TMP141[19].name = "year";
+TMP154[6] = &TMP141[20];
+NTI103008.size = sizeof(NU8);
+NTI103008.kind = 14;
+NTI103008.base = 0;
+NTI103008.flags = 3;
+for (TMP160 = 0; TMP160 < 7; TMP160++) {
+TMP141[TMP160+21].kind = 1;
+TMP141[TMP160+21].offset = TMP160;
+TMP141[TMP160+21].name = TMP159[TMP160];
+TMP158[TMP160] = &TMP141[TMP160+21];
 }
-TMP147[28].len = 7; TMP147[28].kind = 2; TMP147[28].sons = &TMP160[0];
-NTI105008.node = &TMP147[28];
-TMP147[20].kind = 1;
-TMP147[20].offset = offsetof(Timeinfo108405, weekday);
-TMP147[20].typ = (&NTI105008);
-TMP147[20].name = "weekday";
-TMP156[7] = &TMP147[29];
-NTI108424.size = sizeof(NI);
-NTI108424.kind = 20;
-NTI108424.base = (&NTI108);
-NTI108424.flags = 3;
-TMP147[29].kind = 1;
-TMP147[29].offset = offsetof(Timeinfo108405, yearday);
-TMP147[29].typ = (&NTI108424);
-TMP147[29].name = "yearday";
-TMP156[8] = &TMP147[30];
-TMP147[30].kind = 1;
-TMP147[30].offset = offsetof(Timeinfo108405, isdst);
-TMP147[30].typ = (&NTI138);
-TMP147[30].name = "isDST";
-TMP156[9] = &TMP147[31];
-TMP147[31].kind = 1;
-TMP147[31].offset = offsetof(Timeinfo108405, tzname);
-TMP147[31].typ = (&NTI149);
-TMP147[31].name = "tzname";
-TMP156[10] = &TMP147[32];
-TMP147[32].kind = 1;
-TMP147[32].offset = offsetof(Timeinfo108405, timezone);
-TMP147[32].typ = (&NTI108);
-TMP147[32].name = "timezone";
-TMP147[0].len = 11; TMP147[0].kind = 2; TMP147[0].sons = &TMP156[0];
-NTI108405.node = &TMP147[0];
-NTI108548.size = sizeof(TY108548);
-NTI108548.kind = 18;
-NTI108548.base = 0;
-NTI108548.flags = 2;
-TMP559[0] = &TMP147[34];
-TMP147[34].kind = 1;
-TMP147[34].offset = offsetof(TY108548, Field0);
-TMP147[34].typ = (&NTI149);
-TMP147[34].name = "Field0";
-TMP559[1] = &TMP147[35];
-TMP147[35].kind = 1;
-TMP147[35].offset = offsetof(TY108548, Field1);
-TMP147[35].typ = (&NTI149);
-TMP147[35].name = "Field1";
-TMP147[33].len = 2; TMP147[33].kind = 2; TMP147[33].sons = &TMP559[0];
-NTI108548.node = &TMP147[33];
+TMP141[28].len = 7; TMP141[28].kind = 2; TMP141[28].sons = &TMP158[0];
+NTI103008.node = &TMP141[28];
+TMP141[20].kind = 1;
+TMP141[20].offset = offsetof(Timeinfo106405, weekday);
+TMP141[20].typ = (&NTI103008);
+TMP141[20].name = "weekday";
+TMP154[7] = &TMP141[29];
+NTI106424.size = sizeof(NI);
+NTI106424.kind = 20;
+NTI106424.base = (&NTI108);
+NTI106424.flags = 3;
+TMP141[29].kind = 1;
+TMP141[29].offset = offsetof(Timeinfo106405, yearday);
+TMP141[29].typ = (&NTI106424);
+TMP141[29].name = "yearday";
+TMP154[8] = &TMP141[30];
+TMP141[30].kind = 1;
+TMP141[30].offset = offsetof(Timeinfo106405, isdst);
+TMP141[30].typ = (&NTI138);
+TMP141[30].name = "isDST";
+TMP154[9] = &TMP141[31];
+TMP141[31].kind = 1;
+TMP141[31].offset = offsetof(Timeinfo106405, tzname);
+TMP141[31].typ = (&NTI149);
+TMP141[31].name = "tzname";
+TMP154[10] = &TMP141[32];
+TMP141[32].kind = 1;
+TMP141[32].offset = offsetof(Timeinfo106405, timezone);
+TMP141[32].typ = (&NTI108);
+TMP141[32].name = "timezone";
+TMP141[0].len = 11; TMP141[0].kind = 2; TMP141[0].sons = &TMP154[0];
+NTI106405.node = &TMP141[0];
+NTI106548.size = sizeof(TY106548);
+NTI106548.kind = 18;
+NTI106548.base = 0;
+NTI106548.flags = 2;
+TMP678[0] = &TMP141[34];
+TMP141[34].kind = 1;
+TMP141[34].offset = offsetof(TY106548, Field0);
+TMP141[34].typ = (&NTI149);
+TMP141[34].name = "Field0";
+TMP678[1] = &TMP141[35];
+TMP141[35].kind = 1;
+TMP141[35].offset = offsetof(TY106548, Field1);
+TMP141[35].typ = (&NTI149);
+TMP141[35].name = "Field1";
+TMP141[33].len = 2; TMP141[33].kind = 2; TMP141[33].sons = &TMP678[0];
+NTI106548.node = &TMP141[33];
 }
 

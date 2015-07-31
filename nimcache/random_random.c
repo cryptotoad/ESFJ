@@ -8,7 +8,7 @@
 #include "nimbase.h"
 
 #include <setjmp.h>
-typedef struct Mtstate273035 Mtstate273035;
+typedef struct Mtstate127035 Mtstate127035;
 typedef struct Exception Exception;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
@@ -16,7 +16,7 @@ typedef struct TNimNode TNimNode;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TSafePoint TSafePoint;
-typedef struct TY276432 TY276432;
+typedef struct TY130432 TY130432;
 typedef struct Tcell46746 Tcell46746;
 typedef struct Tcellset46758 Tcellset46758;
 typedef struct Tgcheap48616 Tgcheap48616;
@@ -30,14 +30,14 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct TY277070 TY277070;
+typedef struct TY131070 TY131070;
 typedef struct Nimnodeobj89610 Nimnodeobj89610;
 typedef struct Slice88061 Slice88061;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
-typedef NU32 TY273036[624];
-struct  Mtstate273035  {
-TY273036 mt;
+typedef NU32 TY127036[624];
+struct  Mtstate127035  {
+TY127036 mt;
 NI mti;
 };
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
@@ -200,17 +200,17 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct TY276432 {
+struct TY130432 {
   TGenericSeq Sup;
   NU8 data[SEQ_DECL_SIZE];
 };
-struct TY277070 {
+struct TY131070 {
   TGenericSeq Sup;
   Nimnodeobj89610* data[SEQ_DECL_SIZE];
 };
 static N_INLINE(void, pushSafePoint)(TSafePoint* s);
-N_NIMCALL(Mtstate273035, initmersennetwister_275046)(NU8* seed, NI seedLen0);
-N_NIMCALL(TY276432*, urandom_276429)(NI size);
+N_NIMCALL(Mtstate127035, initmersennetwister_129046)(NU8* seed, NI seedLen0);
+N_NIMCALL(TY130432*, urandom_130429)(NI size);
 static N_INLINE(void, popSafePoint)(void);
 static N_INLINE(void, setFrame)(TFrame* s);
 N_NIMCALL(NIM_BOOL, isObj)(TNimType* obj, TNimType* subclass);
@@ -218,7 +218,7 @@ static N_INLINE(Exception*, getCurrentException)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(Mtstate273035, initmersennetwister_275199)(NU32 seed);
+N_NIMCALL(Mtstate127035, initmersennetwister_129199)(NU32 seed);
 N_NIMCALL(NF, ntepochTime)(void);
 static N_INLINE(void, popCurrentException)(void);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
@@ -231,40 +231,40 @@ static N_INLINE(void, decref_52204)(Tcell46746* c);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, reraiseException)(void);
-N_NIMCALL(TY277070*, newseq_277065)(NI len);
-static N_INLINE(NU8, randombyte_277253)(Mtstate273035* rng);
-static N_INLINE(NU8, randomint_277293)(Mtstate273035* rng);
-N_NIMCALL(NU8, randomintimpl_277304)(Mtstate273035* rng);
-static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max);
-N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max);
-static N_INLINE(NI, divceil_278803)(NI a, NI b);
+N_NIMCALL(TY131070*, newseq_131065)(NI len);
+static N_INLINE(NU8, randombyte_131253)(Mtstate127035* rng);
+static N_INLINE(NU8, randomint_131293)(Mtstate127035* rng);
+N_NIMCALL(NU8, randomintimpl_131304)(Mtstate127035* rng);
+static N_INLINE(NI, randomint_131853)(Mtstate127035* rng, NI max);
+N_NIMCALL(NU, randomintimpl_131871)(Mtstate127035* rng, NU max);
+static N_INLINE(NI, divceil_132803)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
-static N_INLINE(NI, randomint_279309)(Mtstate273035* rng, NI min, NI max);
+static N_INLINE(NI, randomint_133309)(Mtstate127035* rng, NI min, NI max);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-static N_INLINE(NI, randomint_279408)(Mtstate273035* rng, Slice88061 interval);
-static N_INLINE(NIM_BOOL, randombool_279479)(Mtstate273035* rng);
-static N_INLINE(NF, random_279595)(Mtstate273035* rng, NF max);
-static N_INLINE(NF, random_275023)(Mtstate273035* self);
-N_NIMCALL(NF, genrandres53_273780)(Mtstate273035* s);
-static N_INLINE(NF, random_279665)(Mtstate273035* rng, NF min, NF max);
-N_NIMCALL(NF, randomprecise_279719)(Mtstate273035* rng);
-static N_INLINE(NU64, randomint_279766)(Mtstate273035* rng);
-N_NIMCALL(NU64, randomintimpl_279777)(Mtstate273035* rng);
-static N_INLINE(NU8, randombyte_277241)(void);
-static N_INLINE(NI, randomint_277816)(NI max);
-static N_INLINE(NI, randomint_279271)(NI min, NI max);
-static N_INLINE(NI, randomint_279369)(Slice88061 interval);
-static N_INLINE(NIM_BOOL, randombool_279467)(void);
-static N_INLINE(NF, random_279535)(void);
-static N_INLINE(NF, random_279566)(NF max);
-static N_INLINE(NF, random_279635)(NF min, NF max);
-static N_INLINE(NF, randomprecise_279707)(void);
-Mtstate273035 mersennetwisterinst_277010;
+static N_INLINE(NI, randomint_133408)(Mtstate127035* rng, Slice88061 interval);
+static N_INLINE(NIM_BOOL, randombool_133479)(Mtstate127035* rng);
+static N_INLINE(NF, random_133595)(Mtstate127035* rng, NF max);
+static N_INLINE(NF, random_129023)(Mtstate127035* self);
+N_NIMCALL(NF, genrandres53_127780)(Mtstate127035* s);
+static N_INLINE(NF, random_133665)(Mtstate127035* rng, NF min, NF max);
+N_NIMCALL(NF, randomprecise_133719)(Mtstate127035* rng);
+static N_INLINE(NU64, randomint_133766)(Mtstate127035* rng);
+N_NIMCALL(NU64, randomintimpl_133777)(Mtstate127035* rng);
+static N_INLINE(NU8, randombyte_131241)(void);
+static N_INLINE(NI, randomint_131816)(NI max);
+static N_INLINE(NI, randomint_133271)(NI min, NI max);
+static N_INLINE(NI, randomint_133369)(Slice88061 interval);
+static N_INLINE(NIM_BOOL, randombool_133467)(void);
+static N_INLINE(NF, random_133535)(void);
+static N_INLINE(NF, random_133566)(NF max);
+static N_INLINE(NF, random_133635)(NF min, NF max);
+static N_INLINE(NF, randomprecise_133707)(void);
+Mtstate127035 mersennetwisterinst_131010;
 extern TSafePoint* exchandler_17043;
 extern TFrame* frameptr_17042;
 extern TNimType NTI3433; /* OSError */
@@ -437,29 +437,29 @@ static N_INLINE(void, popCurrentException)(void) {
 	asgnRef((void**) (&currexception_17045), (*currexception_17045).parent);
 }
 
-static N_INLINE(NU8, randomint_277293)(Mtstate273035* rng) {
+static N_INLINE(NU8, randomint_131293)(Mtstate127035* rng) {
 	NU8 result;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(69, "common.nim");
 	nimln(70, "common.nim");
-	result = randomintimpl_277304(rng);
+	result = randomintimpl_131304(rng);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NU8, randombyte_277253)(Mtstate273035* rng) {
+static N_INLINE(NU8, randombyte_131253)(Mtstate127035* rng) {
 	NU8 result;
 	nimfr("randomByte", "common.nim")
 	result = 0;
 	nimln(73, "common.nim");
 	nimln(76, "common.nim");
-	result = randomint_277293(rng);
+	result = randomint_131293(rng);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max) {
+static N_INLINE(NI, randomint_131853)(Mtstate127035* rng, NI max) {
 	NI result;
 	NU LOC1;
 	nimfr("randomInt", "common.nim")
@@ -467,7 +467,7 @@ static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max) {
 	nimln(102, "common.nim");
 	nimln(103, "common.nim");
 	LOC1 = 0;
-	LOC1 = randomintimpl_277871(rng, ((NU) (max)));
+	LOC1 = randomintimpl_131871(rng, ((NU) (max)));
 	result = ((NI) (LOC1));
 	popFrame();
 	return result;
@@ -538,19 +538,19 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, divceil_278803)(NI a, NI b) {
+static N_INLINE(NI, divceil_132803)(NI a, NI b) {
 	NI result;
-	NI TMP2730;
-	NI TMP2731;
-	NI TMP2732;
+	NI TMP580;
+	NI TMP581;
+	NI TMP582;
 	nimfr("divCeil", "util.nim")
 	result = 0;
 	nimln(28, "util.nim");
 	nimln(29, "util.nim");
-	TMP2730 = subInt(a, ((NI) 1));
-	TMP2731 = addInt((NI)(TMP2730), b);
-	TMP2732 = divInt((NI)(TMP2731), b);
-	result = (NI)(TMP2732);
+	TMP580 = subInt(a, ((NI) 1));
+	TMP581 = addInt((NI)(TMP580), b);
+	TMP582 = divInt((NI)(TMP581), b);
+	result = (NI)(TMP582);
 	popFrame();
 	return result;
 }
@@ -579,45 +579,45 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, randomint_279309)(Mtstate273035* rng, NI min, NI max) {
+static N_INLINE(NI, randomint_133309)(Mtstate127035* rng, NI min, NI max) {
 	NI result;
-	NI TMP2733;
+	NI TMP583;
 	NI LOC1;
-	NI TMP2734;
+	NI TMP584;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(106, "common.nim");
 	nimln(107, "common.nim");
-	TMP2733 = subInt(max, min);
+	TMP583 = subInt(max, min);
 	LOC1 = 0;
-	LOC1 = randomint_277853(rng, ((NI)chckRange((NI)(TMP2733), ((NI) 1), ((NI) IL64(9223372036854775807)))));
-	TMP2734 = addInt(min, ((NI) (LOC1)));
-	result = (NI)(TMP2734);
+	LOC1 = randomint_131853(rng, ((NI)chckRange((NI)(TMP583), ((NI) 1), ((NI) IL64(9223372036854775807)))));
+	TMP584 = addInt(min, ((NI) (LOC1)));
+	result = (NI)(TMP584);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, randomint_279408)(Mtstate273035* rng, Slice88061 interval) {
+static N_INLINE(NI, randomint_133408)(Mtstate127035* rng, Slice88061 interval) {
 	NI result;
-	NI TMP2735;
-	NI TMP2736;
+	NI TMP585;
+	NI TMP586;
 	NI LOC1;
-	NI TMP2737;
+	NI TMP587;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(110, "common.nim");
 	nimln(111, "common.nim");
-	TMP2735 = subInt(interval.b, interval.a);
-	TMP2736 = addInt((NI)(TMP2735), ((NI) 1));
+	TMP585 = subInt(interval.b, interval.a);
+	TMP586 = addInt((NI)(TMP585), ((NI) 1));
 	LOC1 = 0;
-	LOC1 = randomint_277853(rng, ((NI)chckRange((NI)(TMP2736), ((NI) 1), ((NI) IL64(9223372036854775807)))));
-	TMP2737 = addInt(interval.a, ((NI) (LOC1)));
-	result = (NI)(TMP2737);
+	LOC1 = randomint_131853(rng, ((NI)chckRange((NI)(TMP586), ((NI) 1), ((NI) IL64(9223372036854775807)))));
+	TMP587 = addInt(interval.a, ((NI) (LOC1)));
+	result = (NI)(TMP587);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, randombool_279479)(Mtstate273035* rng) {
+static N_INLINE(NIM_BOOL, randombool_133479)(Mtstate127035* rng) {
 	NIM_BOOL result;
 	NI LOC1;
 	nimfr("randomBool", "common.nim")
@@ -625,23 +625,23 @@ static N_INLINE(NIM_BOOL, randombool_279479)(Mtstate273035* rng) {
 	nimln(114, "common.nim");
 	nimln(115, "common.nim");
 	LOC1 = 0;
-	LOC1 = randomint_277853(rng, ((NI) 2));
+	LOC1 = randomint_131853(rng, ((NI) 2));
 	result = ((NIM_BOOL)chckRange(LOC1, NIM_FALSE, NIM_TRUE));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_275023)(Mtstate273035* self) {
+static N_INLINE(NF, random_129023)(Mtstate127035* self) {
 	NF result;
 	nimfr("random", "mersenne.nim")
 	result = 0;
 	nimln(41, "mersenne.nim");
-	result = genrandres53_273780(self);
+	result = genrandres53_127780(self);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_279595)(Mtstate273035* rng, NF max) {
+static N_INLINE(NF, random_133595)(Mtstate127035* rng, NF max) {
 	NF result;
 	NF LOC1;
 	nimfr("random", "common.nim")
@@ -649,13 +649,13 @@ static N_INLINE(NF, random_279595)(Mtstate273035* rng, NF max) {
 	nimln(126, "common.nim");
 	nimln(127, "common.nim");
 	LOC1 = 0;
-	LOC1 = random_275023(rng);
+	LOC1 = random_129023(rng);
 	result = ((NF)(max) * (NF)(LOC1));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_279665)(Mtstate273035* rng, NF min, NF max) {
+static N_INLINE(NF, random_133665)(Mtstate127035* rng, NF min, NF max) {
 	NF result;
 	NF LOC1;
 	nimfr("random", "common.nim")
@@ -663,124 +663,124 @@ static N_INLINE(NF, random_279665)(Mtstate273035* rng, NF min, NF max) {
 	nimln(130, "common.nim");
 	nimln(131, "common.nim");
 	LOC1 = 0;
-	LOC1 = random_275023(rng);
+	LOC1 = random_129023(rng);
 	result = ((NF)(min) + (NF)(((NF)(((NF)(max) - (NF)(min))) * (NF)(LOC1))));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NU64, randomint_279766)(Mtstate273035* rng) {
+static N_INLINE(NU64, randomint_133766)(Mtstate127035* rng) {
 	NU64 result;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(69, "common.nim");
 	nimln(70, "common.nim");
-	result = randomintimpl_279777(rng);
+	result = randomintimpl_133777(rng);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NU8, randombyte_277241)(void) {
+static N_INLINE(NU8, randombyte_131241)(void) {
 	NU8 result;
 	nimfr("randomByte", "macros.nim")
 	result = 0;
 	nimln(371, "macros.nim");
-	result = randombyte_277253((&mersennetwisterinst_277010));
+	result = randombyte_131253((&mersennetwisterinst_131010));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, randomint_277816)(NI max) {
+static N_INLINE(NI, randomint_131816)(NI max) {
 	NI result;
 	nimfr("randomInt", "macros.nim")
 	result = 0;
 	nimln(400, "macros.nim");
-	result = randomint_277853((&mersennetwisterinst_277010), max);
+	result = randomint_131853((&mersennetwisterinst_131010), max);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, randomint_279271)(NI min, NI max) {
+static N_INLINE(NI, randomint_133271)(NI min, NI max) {
 	NI result;
 	nimfr("randomInt", "macros.nim")
 	result = 0;
 	nimln(404, "macros.nim");
-	result = randomint_279309((&mersennetwisterinst_277010), min, max);
+	result = randomint_133309((&mersennetwisterinst_131010), min, max);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, randomint_279369)(Slice88061 interval) {
+static N_INLINE(NI, randomint_133369)(Slice88061 interval) {
 	NI result;
 	nimfr("randomInt", "macros.nim")
 	result = 0;
 	nimln(408, "macros.nim");
-	result = randomint_279408((&mersennetwisterinst_277010), interval);
+	result = randomint_133408((&mersennetwisterinst_131010), interval);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, randombool_279467)(void) {
+static N_INLINE(NIM_BOOL, randombool_133467)(void) {
 	NIM_BOOL result;
 	nimfr("randomBool", "macros.nim")
 	result = 0;
 	nimln(412, "macros.nim");
-	result = randombool_279479((&mersennetwisterinst_277010));
+	result = randombool_133479((&mersennetwisterinst_131010));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_279535)(void) {
+static N_INLINE(NF, random_133535)(void) {
 	NF result;
 	nimfr("random", "macros.nim")
 	result = 0;
 	nimln(419, "macros.nim");
-	result = random_275023((&mersennetwisterinst_277010));
+	result = random_129023((&mersennetwisterinst_131010));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_279566)(NF max) {
+static N_INLINE(NF, random_133566)(NF max) {
 	NF result;
 	nimfr("random", "macros.nim")
 	result = 0;
 	nimln(424, "macros.nim");
-	result = random_279595((&mersennetwisterinst_277010), max);
+	result = random_133595((&mersennetwisterinst_131010), max);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_279635)(NF min, NF max) {
+static N_INLINE(NF, random_133635)(NF min, NF max) {
 	NF result;
 	nimfr("random", "macros.nim")
 	result = 0;
 	nimln(428, "macros.nim");
-	result = random_279665((&mersennetwisterinst_277010), min, max);
+	result = random_133665((&mersennetwisterinst_131010), min, max);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, randomprecise_279707)(void) {
+static N_INLINE(NF, randomprecise_133707)(void) {
 	NF result;
 	nimfr("randomPrecise", "macros.nim")
 	result = 0;
 	nimln(432, "macros.nim");
-	result = randomprecise_279719((&mersennetwisterinst_277010));
+	result = randomprecise_133719((&mersennetwisterinst_131010));
 	popFrame();
 	return result;
 }
 NIM_EXTERNC N_NOINLINE(void, random_randomInit)(void) {
-	TSafePoint TMP2723;
+	TSafePoint TMP573;
 	nimfr("random", "random.nim")
 	nimln(47, "random.nim");
-	pushSafePoint(&TMP2723);
-	TMP2723.status = setjmp(TMP2723.context);
-	if (TMP2723.status == 0) {
-		TY276432* LOC2;
+	pushSafePoint(&TMP573);
+	TMP573.status = setjmp(TMP573.context);
+	if (TMP573.status == 0) {
+		TY130432* LOC2;
 		nimln(48, "random.nim");
 		LOC2 = 0;
-		LOC2 = urandom_276429(((NI) 2500));
-		mersennetwisterinst_277010 = initmersennetwister_275046(LOC2->data, LOC2->Sup.len);
+		LOC2 = urandom_130429(((NI) 2500));
+		mersennetwisterinst_131010 = initmersennetwister_129046(LOC2->data, LOC2->Sup.len);
 		popSafePoint();
 	}
 	else {
@@ -788,15 +788,15 @@ NIM_EXTERNC N_NOINLINE(void, random_randomInit)(void) {
 		setFrame((TFrame*)&FR);
 		if (isObj(getCurrentException()->Sup.m_type, (&NTI3433))) {
 			NF LOC5;
-			TMP2723.status = 0;
+			TMP573.status = 0;
 			nimln(50, "random.nim");
 			LOC5 = 0;
 			LOC5 = ntepochTime();
-			mersennetwisterinst_277010 = initmersennetwister_275199(((NU32) (((NU) (((NF)(LOC5) * (NF)(2.5600000000000000e+002)))))));
+			mersennetwisterinst_131010 = initmersennetwister_129199(((NU32) (((NU) (((NF)(LOC5) * (NF)(2.5600000000000000e+002)))))));
 			popCurrentException();
 		}
 	}
-	if (TMP2723.status != 0) reraiseException();
+	if (TMP573.status != 0) reraiseException();
 	popFrame();
 }
 

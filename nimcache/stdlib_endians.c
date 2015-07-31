@@ -8,18 +8,18 @@
 #include "nimbase.h"
 
 #include <string.h>
-N_NIMCALL(void, swapendian64_241015)(void* outp, void* inp);
+N_NIMCALL(void, swapendian64_253015)(void* outp, void* inp);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, swapendian32_241029)(void* outp, void* inp);
-N_NIMCALL(void, swapendian16_241043)(void* outp, void* inp);
-static N_INLINE(void, littleendian64_241066)(void* outp, void* inp);
-static N_INLINE(void, littleendian32_241073)(void* outp, void* inp);
-static N_INLINE(void, littleendian16_241080)(void* outp, void* inp);
-static N_INLINE(void, bigendian64_241087)(void* outp, void* inp);
-static N_INLINE(void, bigendian32_241094)(void* outp, void* inp);
-static N_INLINE(void, bigendian16_241101)(void* outp, void* inp);
+N_NIMCALL(void, swapendian32_253029)(void* outp, void* inp);
+N_NIMCALL(void, swapendian16_253043)(void* outp, void* inp);
+static N_INLINE(void, littleendian64_253066)(void* outp, void* inp);
+static N_INLINE(void, littleendian32_253073)(void* outp, void* inp);
+static N_INLINE(void, littleendian16_253080)(void* outp, void* inp);
+static N_INLINE(void, bigendian64_253087)(void* outp, void* inp);
+static N_INLINE(void, bigendian32_253094)(void* outp, void* inp);
+static N_INLINE(void, bigendian16_253101)(void* outp, void* inp);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -49,7 +49,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void, swapendian64_241015)(void* outp, void* inp) {
+N_NIMCALL(void, swapendian64_253015)(void* outp, void* inp) {
 	NCSTRING i;
 	NCSTRING o;
 	nimfr("swapEndian64", "endians.nim")
@@ -76,7 +76,7 @@ N_NIMCALL(void, swapendian64_241015)(void* outp, void* inp) {
 	popFrame();
 }
 
-N_NIMCALL(void, swapendian32_241029)(void* outp, void* inp) {
+N_NIMCALL(void, swapendian32_253029)(void* outp, void* inp) {
 	NCSTRING i;
 	NCSTRING o;
 	nimfr("swapEndian32", "endians.nim")
@@ -95,7 +95,7 @@ N_NIMCALL(void, swapendian32_241029)(void* outp, void* inp) {
 	popFrame();
 }
 
-N_NIMCALL(void, swapendian16_241043)(void* outp, void* inp) {
+N_NIMCALL(void, swapendian16_253043)(void* outp, void* inp) {
 	NCSTRING i;
 	NCSTRING o;
 	nimfr("swapEndian16", "endians.nim")
@@ -110,45 +110,45 @@ N_NIMCALL(void, swapendian16_241043)(void* outp, void* inp) {
 	popFrame();
 }
 
-static N_INLINE(void, littleendian64_241066)(void* outp, void* inp) {
+static N_INLINE(void, littleendian64_253066)(void* outp, void* inp) {
 	nimfr("littleEndian64", "endians.nim")
 	nimln(54, "endians.nim");
 	memcpy(outp, inp, ((NI) 8));
 	popFrame();
 }
 
-static N_INLINE(void, littleendian32_241073)(void* outp, void* inp) {
+static N_INLINE(void, littleendian32_253073)(void* outp, void* inp) {
 	nimfr("littleEndian32", "endians.nim")
 	nimln(55, "endians.nim");
 	memcpy(outp, inp, ((NI) 4));
 	popFrame();
 }
 
-static N_INLINE(void, littleendian16_241080)(void* outp, void* inp) {
+static N_INLINE(void, littleendian16_253080)(void* outp, void* inp) {
 	nimfr("littleEndian16", "endians.nim")
 	nimln(56, "endians.nim");
 	memcpy(outp, inp, ((NI) 2));
 	popFrame();
 }
 
-static N_INLINE(void, bigendian64_241087)(void* outp, void* inp) {
+static N_INLINE(void, bigendian64_253087)(void* outp, void* inp) {
 	nimfr("bigEndian64", "endians.nim")
 	nimln(57, "endians.nim");
-	swapendian64_241015(outp, inp);
+	swapendian64_253015(outp, inp);
 	popFrame();
 }
 
-static N_INLINE(void, bigendian32_241094)(void* outp, void* inp) {
+static N_INLINE(void, bigendian32_253094)(void* outp, void* inp) {
 	nimfr("bigEndian32", "endians.nim")
 	nimln(58, "endians.nim");
-	swapendian32_241029(outp, inp);
+	swapendian32_253029(outp, inp);
 	popFrame();
 }
 
-static N_INLINE(void, bigendian16_241101)(void* outp, void* inp) {
+static N_INLINE(void, bigendian16_253101)(void* outp, void* inp) {
 	nimfr("bigEndian16", "endians.nim")
 	nimln(59, "endians.nim");
-	swapendian16_241043(outp, inp);
+	swapendian16_253043(outp, inp);
 	popFrame();
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_endiansInit)(void) {

@@ -44,7 +44,9 @@ while true:
         send(sock, "PONG " & ircmsg[1] & "\r\n")
 
     elif ircmsg[1] == "QUIT":
-        send(sock, "PONG " & ircmsg[1] & "\r\n")
+        var nick: string = getNick(ircmsg[0])
+        if isLoggedIn(nick):
+          discard logoutUser(nick)
 
     elif ircmsg[1] == "PRIVMSG":
         var nick: string = getNick(ircmsg[0])
@@ -130,6 +132,12 @@ while true:
               send(sock, "PRIVMSG " & nick & " : You have logged in successfully! \r\n")
             else:
               send(sock, "PRIVMSG " & nick & " : Invalid password! \r\n")
+
+        #!logout        
+        if ircmsg[3] == ":!logout":
+          send(sock, "PRIVMSG " & nick & " : You have logged out successfully! \r\n")
+          discard logoutUser(nick)
+          
         #!register          
         if ircmsg[3] == ":!register":
           if ircmsg.high == 4:

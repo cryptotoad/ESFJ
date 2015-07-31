@@ -31,9 +31,9 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct Streamobj156027 Streamobj156027;
-typedef struct Stringstreamobj156554 Stringstreamobj156554;
-typedef struct Filestreamobj156692 Filestreamobj156692;
+typedef struct Streamobj179027 Streamobj179027;
+typedef struct Stringstreamobj179554 Stringstreamobj179554;
+typedef struct Filestreamobj179692 Filestreamobj179692;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
 struct  TGenericSeq  {
@@ -136,30 +136,30 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-typedef N_NIMCALL_PTR(void, TY156028) (Streamobj156027* s);
-typedef N_NIMCALL_PTR(NIM_BOOL, TY156032) (Streamobj156027* s);
-typedef N_NIMCALL_PTR(void, TY156036) (Streamobj156027* s, NI pos);
-typedef N_NIMCALL_PTR(NI, TY156041) (Streamobj156027* s);
-typedef N_NIMCALL_PTR(NI, TY156045) (Streamobj156027* s, void* buffer, NI buflen);
-typedef N_NIMCALL_PTR(void, TY156051) (Streamobj156027* s, void* buffer, NI buflen);
-typedef N_NIMCALL_PTR(void, TY156057) (Streamobj156027* s);
-struct  Streamobj156027  {
+typedef N_NIMCALL_PTR(void, TY179028) (Streamobj179027* s);
+typedef N_NIMCALL_PTR(NIM_BOOL, TY179032) (Streamobj179027* s);
+typedef N_NIMCALL_PTR(void, TY179036) (Streamobj179027* s, NI pos);
+typedef N_NIMCALL_PTR(NI, TY179041) (Streamobj179027* s);
+typedef N_NIMCALL_PTR(NI, TY179045) (Streamobj179027* s, void* buffer, NI buflen);
+typedef N_NIMCALL_PTR(void, TY179051) (Streamobj179027* s, void* buffer, NI buflen);
+typedef N_NIMCALL_PTR(void, TY179057) (Streamobj179027* s);
+struct  Streamobj179027  {
   TNimObject Sup;
-TY156028 closeimpl;
-TY156032 atendimpl;
-TY156036 setpositionimpl;
-TY156041 getpositionimpl;
-TY156045 readdataimpl;
-TY156051 writedataimpl;
-TY156057 flushimpl;
+TY179028 closeimpl;
+TY179032 atendimpl;
+TY179036 setpositionimpl;
+TY179041 getpositionimpl;
+TY179045 readdataimpl;
+TY179051 writedataimpl;
+TY179057 flushimpl;
 };
-struct  Stringstreamobj156554  {
-  Streamobj156027 Sup;
+struct  Stringstreamobj179554  {
+  Streamobj179027 Sup;
 NimStringDesc* data;
 NI pos;
 };
-struct  Filestreamobj156692  {
-  Streamobj156027 Sup;
+struct  Filestreamobj179692  {
+  Streamobj179027 Sup;
 FILE* f;
 };
 typedef NI TY27820[8];
@@ -210,7 +210,7 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-N_NIMCALL(Ioerror3431*, neweio_156005)(NimStringDesc* msg);
+N_NIMCALL(Ioerror3431*, neweio_179005)(NimStringDesc* msg);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
@@ -220,104 +220,104 @@ N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(void, flush_156069)(Streamobj156027* s);
-N_NIMCALL(void, close_156085)(Streamobj156027* s);
-N_NIMCALL(void, close_156101)(Streamobj156027* s, Streamobj156027* unused);
-N_NIMCALL(NIM_BOOL, atend_156111)(Streamobj156027* s);
-N_NIMCALL(NIM_BOOL, atend_156121)(Streamobj156027* s, Streamobj156027* unused);
-N_NIMCALL(void, setposition_156132)(Streamobj156027* s, NI pos);
-N_NIMCALL(void, setposition_156142)(Streamobj156027* s, Streamobj156027* unused, NI pos);
-N_NIMCALL(NI, getposition_156153)(Streamobj156027* s);
-N_NIMCALL(NI, getposition_156163)(Streamobj156027* s, Streamobj156027* unused);
-N_NIMCALL(NI, readdata_156174)(Streamobj156027* s, void* buffer, NI buflen);
-N_NIMCALL(NI, readdata_156186)(Streamobj156027* s, Streamobj156027* unused, void* buffer, NI buflen);
-N_NIMCALL(void, writedata_156199)(Streamobj156027* s, void* buffer, NI buflen);
-N_NIMCALL(void, writedata_156210)(Streamobj156027* s, Streamobj156027* unused, void* buffer, NI buflen);
-N_NIMCALL(void, write_156233)(Streamobj156027* s, NimStringDesc* x);
-N_NIMCALL(void, writeln_156243)(Streamobj156027* s, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(void, flush_179069)(Streamobj179027* s);
+N_NIMCALL(void, close_179085)(Streamobj179027* s);
+N_NIMCALL(void, close_179101)(Streamobj179027* s, Streamobj179027* unused);
+N_NIMCALL(NIM_BOOL, atend_179111)(Streamobj179027* s);
+N_NIMCALL(NIM_BOOL, atend_179121)(Streamobj179027* s, Streamobj179027* unused);
+N_NIMCALL(void, setposition_179132)(Streamobj179027* s, NI pos);
+N_NIMCALL(void, setposition_179142)(Streamobj179027* s, Streamobj179027* unused, NI pos);
+N_NIMCALL(NI, getposition_179153)(Streamobj179027* s);
+N_NIMCALL(NI, getposition_179163)(Streamobj179027* s, Streamobj179027* unused);
+N_NIMCALL(NI, readdata_179174)(Streamobj179027* s, void* buffer, NI buflen);
+N_NIMCALL(NI, readdata_179186)(Streamobj179027* s, Streamobj179027* unused, void* buffer, NI buflen);
+N_NIMCALL(void, writedata_179199)(Streamobj179027* s, void* buffer, NI buflen);
+N_NIMCALL(void, writedata_179210)(Streamobj179027* s, Streamobj179027* unused, void* buffer, NI buflen);
+N_NIMCALL(void, write_179233)(Streamobj179027* s, NimStringDesc* x);
+N_NIMCALL(void, writeln_179243)(Streamobj179027* s, NimStringDesc** args, NI argsLen0);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-N_NIMCALL(NIM_CHAR, readchar_156287)(Streamobj156027* s);
-N_NIMCALL(void, read_156303)(Streamobj156027* s, NIM_BOOL* result);
+N_NIMCALL(NIM_CHAR, readchar_179287)(Streamobj179027* s);
+N_NIMCALL(void, read_179303)(Streamobj179027* s, NIM_BOOL* result);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(NIM_BOOL, readbool_156298)(Streamobj156027* s);
-N_NIMCALL(void, read_156331)(Streamobj156027* s, NI8* result);
-N_NIMCALL(NI8, readint8_156326)(Streamobj156027* s);
-N_NIMCALL(void, read_156359)(Streamobj156027* s, NI16* result);
-N_NIMCALL(NI16, readint16_156354)(Streamobj156027* s);
-N_NIMCALL(void, read_156387)(Streamobj156027* s, NI32* result);
-N_NIMCALL(NI32, readint32_156382)(Streamobj156027* s);
-N_NIMCALL(void, read_156415)(Streamobj156027* s, NI64* result);
-N_NIMCALL(NI64, readint64_156410)(Streamobj156027* s);
-N_NIMCALL(void, read_156443)(Streamobj156027* s, NF32* result);
-N_NIMCALL(NF32, readfloat32_156438)(Streamobj156027* s);
-N_NIMCALL(void, read_156471)(Streamobj156027* s, NF* result);
-N_NIMCALL(NF, readfloat64_156466)(Streamobj156027* s);
-N_NIMCALL(NimStringDesc*, readstr_156494)(Streamobj156027* s, NI length);
+N_NIMCALL(NIM_BOOL, readbool_179298)(Streamobj179027* s);
+N_NIMCALL(void, read_179331)(Streamobj179027* s, NI8* result);
+N_NIMCALL(NI8, readint8_179326)(Streamobj179027* s);
+N_NIMCALL(void, read_179359)(Streamobj179027* s, NI16* result);
+N_NIMCALL(NI16, readint16_179354)(Streamobj179027* s);
+N_NIMCALL(void, read_179387)(Streamobj179027* s, NI32* result);
+N_NIMCALL(NI32, readint32_179382)(Streamobj179027* s);
+N_NIMCALL(void, read_179415)(Streamobj179027* s, NI64* result);
+N_NIMCALL(NI64, readint64_179410)(Streamobj179027* s);
+N_NIMCALL(void, read_179443)(Streamobj179027* s, NF32* result);
+N_NIMCALL(NF32, readfloat32_179438)(Streamobj179027* s);
+N_NIMCALL(void, read_179471)(Streamobj179027* s, NF* result);
+N_NIMCALL(NF, readfloat64_179466)(Streamobj179027* s);
+N_NIMCALL(NimStringDesc*, readstr_179494)(Streamobj179027* s, NI length);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
-N_NIMCALL(NIM_BOOL, readline_156509)(Streamobj156027* s, NimStringDesc** line);
+N_NIMCALL(NIM_BOOL, readline_179509)(Streamobj179027* s, NimStringDesc** line);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
-N_NIMCALL(NimStringDesc*, readline_156531)(Streamobj156027* s);
+N_NIMCALL(NimStringDesc*, readline_179531)(Streamobj179027* s);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
-N_NIMCALL(NIM_BOOL, ssatend_156565)(Streamobj156027* s_156567);
+N_NIMCALL(NIM_BOOL, ssatend_179565)(Streamobj179027* s_179567);
 N_NIMCALL(void, chckObj)(TNimType* obj, TNimType* subclass);
-N_NIMCALL(NI, clamp_156582)(NI x, NI a, NI b);
-N_NIMCALL(void, sssetposition_156576)(Streamobj156027* s_156578, NI pos);
-N_NIMCALL(NI, ssgetposition_156601)(Streamobj156027* s_156603);
-N_NIMCALL(NI, ssreaddata_156612)(Streamobj156027* s_156614, void* buffer, NI buflen);
+N_NIMCALL(NI, clamp_179582)(NI x, NI a, NI b);
+N_NIMCALL(void, sssetposition_179576)(Streamobj179027* s_179578, NI pos);
+N_NIMCALL(NI, ssgetposition_179601)(Streamobj179027* s_179603);
+N_NIMCALL(NI, ssreaddata_179612)(Streamobj179027* s_179614, void* buffer, NI buflen);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(void, sswritedata_156639)(Streamobj156027* s_156641, void* buffer, NI buflen);
-N_NIMCALL(void, ssclose_156661)(Streamobj156027* s_156663);
-N_NIMCALL(Stringstreamobj156554*, newstringstream_156671)(NimStringDesc* s);
+N_NIMCALL(void, sswritedata_179639)(Streamobj179027* s_179641, void* buffer, NI buflen);
+N_NIMCALL(void, ssclose_179661)(Streamobj179027* s_179663);
+N_NIMCALL(Stringstreamobj179554*, newstringstream_179671)(NimStringDesc* s);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP607)(void* p, NI op);
-N_NIMCALL(void, fsclose_156696)(Streamobj156027* s);
-N_NIMCALL(void, fsflush_156714)(Streamobj156027* s);
-N_NIMCALL(NIM_BOOL, fsatend_156720)(Streamobj156027* s);
+N_NIMCALL(void, TMP726)(void* p, NI op);
+N_NIMCALL(void, fsclose_179696)(Streamobj179027* s);
+N_NIMCALL(void, fsflush_179714)(Streamobj179027* s);
+N_NIMCALL(NIM_BOOL, fsatend_179720)(Streamobj179027* s);
 N_NIMCALL(NIM_BOOL, endoffile_13422)(FILE* f);
-N_NIMCALL(void, fssetposition_156727)(Streamobj156027* s, NI pos);
+N_NIMCALL(void, fssetposition_179727)(Streamobj179027* s, NI pos);
 N_NIMCALL(void, setfilepos_13542)(FILE* f, NI64 pos);
-N_NIMCALL(NI, fsgetposition_156734)(Streamobj156027* s);
+N_NIMCALL(NI, fsgetposition_179734)(Streamobj179027* s);
 N_NIMCALL(NI64, getfilepos_13546)(FILE* f);
-N_NIMCALL(NI, fsreaddata_156742)(Streamobj156027* s, void* buffer, NI buflen);
+N_NIMCALL(NI, fsreaddata_179742)(Streamobj179027* s, void* buffer, NI buflen);
 N_NIMCALL(NI, readbuffer_13515)(FILE* f, void* buffer, NI len);
-N_NIMCALL(void, fswritedata_156751)(Streamobj156027* s, void* buffer, NI buflen);
+N_NIMCALL(void, fswritedata_179751)(Streamobj179027* s, void* buffer, NI buflen);
 N_NIMCALL(NI, writebuffer_13537)(FILE* f, void* buffer, NI len);
-N_NIMCALL(Filestreamobj156692*, newfilestream_156759)(FILE* f);
-N_NIMCALL(void, TMP609)(void* p, NI op);
-N_NIMCALL(Filestreamobj156692*, newfilestream_156774)(NimStringDesc* filename, NU8 mode);
+N_NIMCALL(Filestreamobj179692*, newfilestream_179759)(FILE* f);
+N_NIMCALL(void, TMP728)(void* p, NI op);
+N_NIMCALL(Filestreamobj179692*, newfilestream_179774)(NimStringDesc* filename, NU8 mode);
 N_NIMCALL(NIM_BOOL, open_13203)(FILE** f, NimStringDesc* filename, NU8 mode, NI bufsize);
-N_NIMCALL(void, TMP964)(void* p, NI op);
-STRING_LITERAL(TMP597, "\015\012", 2);
-STRING_LITERAL(TMP598, "cannot read from stream", 23);
-STRING_LITERAL(TMP599, "", 0);
-STRING_LITERAL(TMP608, "cannot write to stream", 22);
+N_NIMCALL(void, TMP1071)(void* p, NI op);
+STRING_LITERAL(TMP716, "\015\012", 2);
+STRING_LITERAL(TMP717, "cannot read from stream", 23);
+STRING_LITERAL(TMP718, "", 0);
+STRING_LITERAL(TMP727, "cannot write to stream", 22);
 extern TNimType NTI13401; /* ref IOError */
 extern TNimType NTI3431; /* IOError */
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI156027; /* StreamObj */
-TNimType NTI156028; /* proc (s: Stream){.gcsafe.} */
-TNimType NTI156032; /* proc (s: Stream): bool{.gcsafe.} */
-TNimType NTI156036; /* proc (s: Stream, pos: int){.gcsafe.} */
-TNimType NTI156041; /* proc (s: Stream): int{.gcsafe.} */
-TNimType NTI156045; /* proc (s: Stream, buffer: pointer, bufLen: int): int{.gcsafe.} */
-TNimType NTI156051; /* proc (s: Stream, buffer: pointer, bufLen: int){.gcsafe.} */
-TNimType NTI156057; /* proc (s: Stream){.gcsafe.} */
-TNimType NTI156554; /* StringStreamObj */
+TNimType NTI179027; /* StreamObj */
+TNimType NTI179028; /* proc (s: Stream){.gcsafe.} */
+TNimType NTI179032; /* proc (s: Stream): bool{.gcsafe.} */
+TNimType NTI179036; /* proc (s: Stream, pos: int){.gcsafe.} */
+TNimType NTI179041; /* proc (s: Stream): int{.gcsafe.} */
+TNimType NTI179045; /* proc (s: Stream, buffer: pointer, bufLen: int): int{.gcsafe.} */
+TNimType NTI179051; /* proc (s: Stream, buffer: pointer, bufLen: int){.gcsafe.} */
+TNimType NTI179057; /* proc (s: Stream){.gcsafe.} */
+TNimType NTI179554; /* StringStreamObj */
 extern TNimType NTI149; /* string */
 extern TNimType NTI108; /* int */
-TNimType NTI156552; /* StringStream */
-TNimType NTI156692; /* FileStreamObj */
+TNimType NTI179552; /* StringStream */
+TNimType NTI179692; /* FileStreamObj */
 extern TNimType NTI13004; /* File */
-TNimType NTI156690; /* FileStream */
-TNimType NTI156025; /* Stream */
+TNimType NTI179690; /* FileStream */
+TNimType NTI179025; /* Stream */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -381,7 +381,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(Ioerror3431*, neweio_156005)(NimStringDesc* msg) {
+N_NIMCALL(Ioerror3431*, neweio_179005)(NimStringDesc* msg) {
 	Ioerror3431* result;
 	NimStringDesc* LOC1;
 	nimfr("newEIO", "streams.nim")
@@ -397,7 +397,7 @@ N_NIMCALL(Ioerror3431*, neweio_156005)(NimStringDesc* msg) {
 	return result;
 }
 
-N_NIMCALL(void, flush_156069)(Streamobj156027* s) {
+N_NIMCALL(void, flush_179069)(Streamobj179027* s) {
 	nimfr("flush", "streams.nim")
 	nimln(42, "streams.nim");
 	{
@@ -408,7 +408,7 @@ N_NIMCALL(void, flush_156069)(Streamobj156027* s) {
 	popFrame();
 }
 
-N_NIMCALL(void, close_156085)(Streamobj156027* s) {
+N_NIMCALL(void, close_179085)(Streamobj179027* s) {
 	nimfr("close", "streams.nim")
 	nimln(46, "streams.nim");
 	{
@@ -419,14 +419,14 @@ N_NIMCALL(void, close_156085)(Streamobj156027* s) {
 	popFrame();
 }
 
-N_NIMCALL(void, close_156101)(Streamobj156027* s, Streamobj156027* unused) {
+N_NIMCALL(void, close_179101)(Streamobj179027* s, Streamobj179027* unused) {
 	nimfr("close", "streams.nim")
 	nimln(50, "streams.nim");
 	(*s).closeimpl(s);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, atend_156111)(Streamobj156027* s) {
+N_NIMCALL(NIM_BOOL, atend_179111)(Streamobj179027* s) {
 	NIM_BOOL result;
 	nimfr("atEnd", "streams.nim")
 	result = 0;
@@ -436,7 +436,7 @@ N_NIMCALL(NIM_BOOL, atend_156111)(Streamobj156027* s) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, atend_156121)(Streamobj156027* s, Streamobj156027* unused) {
+N_NIMCALL(NIM_BOOL, atend_179121)(Streamobj179027* s, Streamobj179027* unused) {
 	NIM_BOOL result;
 	nimfr("atEnd", "streams.nim")
 	result = 0;
@@ -446,21 +446,21 @@ N_NIMCALL(NIM_BOOL, atend_156121)(Streamobj156027* s, Streamobj156027* unused) {
 	return result;
 }
 
-N_NIMCALL(void, setposition_156132)(Streamobj156027* s, NI pos) {
+N_NIMCALL(void, setposition_179132)(Streamobj179027* s, NI pos) {
 	nimfr("setPosition", "streams.nim")
 	nimln(64, "streams.nim");
 	(*s).setpositionimpl(s, pos);
 	popFrame();
 }
 
-N_NIMCALL(void, setposition_156142)(Streamobj156027* s, Streamobj156027* unused, NI pos) {
+N_NIMCALL(void, setposition_179142)(Streamobj179027* s, Streamobj179027* unused, NI pos) {
 	nimfr("setPosition", "streams.nim")
 	nimln(68, "streams.nim");
 	(*s).setpositionimpl(s, pos);
 	popFrame();
 }
 
-N_NIMCALL(NI, getposition_156153)(Streamobj156027* s) {
+N_NIMCALL(NI, getposition_179153)(Streamobj179027* s) {
 	NI result;
 	nimfr("getPosition", "streams.nim")
 	result = 0;
@@ -470,7 +470,7 @@ N_NIMCALL(NI, getposition_156153)(Streamobj156027* s) {
 	return result;
 }
 
-N_NIMCALL(NI, getposition_156163)(Streamobj156027* s, Streamobj156027* unused) {
+N_NIMCALL(NI, getposition_179163)(Streamobj179027* s, Streamobj179027* unused) {
 	NI result;
 	nimfr("getPosition", "streams.nim")
 	result = 0;
@@ -480,7 +480,7 @@ N_NIMCALL(NI, getposition_156163)(Streamobj156027* s, Streamobj156027* unused) {
 	return result;
 }
 
-N_NIMCALL(NI, readdata_156174)(Streamobj156027* s, void* buffer, NI buflen) {
+N_NIMCALL(NI, readdata_179174)(Streamobj179027* s, void* buffer, NI buflen) {
 	NI result;
 	nimfr("readData", "streams.nim")
 	result = 0;
@@ -490,7 +490,7 @@ N_NIMCALL(NI, readdata_156174)(Streamobj156027* s, void* buffer, NI buflen) {
 	return result;
 }
 
-N_NIMCALL(NI, readdata_156186)(Streamobj156027* s, Streamobj156027* unused, void* buffer, NI buflen) {
+N_NIMCALL(NI, readdata_179186)(Streamobj179027* s, Streamobj179027* unused, void* buffer, NI buflen) {
 	NI result;
 	nimfr("readData", "streams.nim")
 	result = 0;
@@ -500,24 +500,24 @@ N_NIMCALL(NI, readdata_156186)(Streamobj156027* s, Streamobj156027* unused, void
 	return result;
 }
 
-N_NIMCALL(void, writedata_156199)(Streamobj156027* s, void* buffer, NI buflen) {
+N_NIMCALL(void, writedata_179199)(Streamobj179027* s, void* buffer, NI buflen) {
 	nimfr("writeData", "streams.nim")
 	nimln(90, "streams.nim");
 	(*s).writedataimpl(s, buffer, buflen);
 	popFrame();
 }
 
-N_NIMCALL(void, writedata_156210)(Streamobj156027* s, Streamobj156027* unused, void* buffer, NI buflen) {
+N_NIMCALL(void, writedata_179210)(Streamobj179027* s, Streamobj179027* unused, void* buffer, NI buflen) {
 	nimfr("writeData", "streams.nim")
 	nimln(96, "streams.nim");
 	(*s).writedataimpl(s, buffer, buflen);
 	popFrame();
 }
 
-N_NIMCALL(void, write_156233)(Streamobj156027* s, NimStringDesc* x) {
+N_NIMCALL(void, write_179233)(Streamobj179027* s, NimStringDesc* x) {
 	nimfr("write", "streams.nim")
 	nimln(111, "streams.nim");
-	writedata_156199(s, ((void*) (x->data)), (x ? x->Sup.len : 0));
+	writedata_179199(s, ((void*) (x->data)), (x ? x->Sup.len : 0));
 	popFrame();
 }
 
@@ -541,36 +541,36 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, writeln_156243)(Streamobj156027* s, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(void, writeln_179243)(Streamobj179027* s, NimStringDesc** args, NI argsLen0) {
 	nimfr("writeln", "streams.nim")
 	{
-		NimStringDesc* str_156256;
-		NI i_156260;
-		str_156256 = 0;
+		NimStringDesc* str_179256;
+		NI i_179260;
+		str_179256 = 0;
 		nimln(1689, "system.nim");
-		i_156260 = ((NI) 0);
+		i_179260 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
-				NI TMP596;
-				if (!(i_156260 < argsLen0)) goto LA3;
+				NI TMP715;
+				if (!(i_179260 < argsLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_156260) >= (NU)(argsLen0)) raiseIndexError();
-				str_156256 = args[i_156260];
+				if ((NU)(i_179260) >= (NU)(argsLen0)) raiseIndexError();
+				str_179256 = args[i_179260];
 				nimln(116, "streams.nim");
-				write_156233(s, str_156256);
+				write_179233(s, str_179256);
 				nimln(1692, "system.nim");
-				TMP596 = addInt(i_156260, ((NI) 1));
-				i_156260 = (NI)(TMP596);
+				TMP715 = addInt(i_179260, ((NI) 1));
+				i_179260 = (NI)(TMP715);
 			} LA3: ;
 		}
 	}
 	nimln(117, "streams.nim");
-	write_156233(s, ((NimStringDesc*) &TMP597));
+	write_179233(s, ((NimStringDesc*) &TMP716));
 	popFrame();
 }
 
-N_NIMCALL(NIM_CHAR, readchar_156287)(Streamobj156027* s) {
+N_NIMCALL(NIM_CHAR, readchar_179287)(Streamobj179027* s) {
 	NIM_CHAR result;
 	nimfr("readChar", "streams.nim")
 	result = 0;
@@ -578,7 +578,7 @@ N_NIMCALL(NIM_CHAR, readchar_156287)(Streamobj156027* s) {
 	{
 		NI LOC3;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) ((&result))), ((NI) 1));
+		LOC3 = readdata_179174(s, ((void*) ((&result))), ((NI) 1));
 		if (!!((LOC3 == ((NI) 1)))) goto LA4;
 		result = 0;
 	}
@@ -587,198 +587,198 @@ N_NIMCALL(NIM_CHAR, readchar_156287)(Streamobj156027* s) {
 	return result;
 }
 
-N_NIMCALL(void, read_156303)(Streamobj156027* s, NIM_BOOL* result) {
+N_NIMCALL(void, read_179303)(Streamobj179027* s, NIM_BOOL* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 1));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 1));
 		if (!!((LOC3 == ((NI) 1)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, readbool_156298)(Streamobj156027* s) {
+N_NIMCALL(NIM_BOOL, readbool_179298)(Streamobj179027* s) {
 	NIM_BOOL result;
 	nimfr("readBool", "streams.nim")
 	result = 0;
 	nimln(131, "streams.nim");
-	read_156303(s, (&result));
+	read_179303(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156331)(Streamobj156027* s, NI8* result) {
+N_NIMCALL(void, read_179331)(Streamobj179027* s, NI8* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 1));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 1));
 		if (!!((LOC3 == ((NI) 1)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NI8, readint8_156326)(Streamobj156027* s) {
+N_NIMCALL(NI8, readint8_179326)(Streamobj179027* s) {
 	NI8 result;
 	nimfr("readInt8", "streams.nim")
 	result = 0;
 	nimln(135, "streams.nim");
-	read_156331(s, (&result));
+	read_179331(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156359)(Streamobj156027* s, NI16* result) {
+N_NIMCALL(void, read_179359)(Streamobj179027* s, NI16* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 2));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 2));
 		if (!!((LOC3 == ((NI) 2)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NI16, readint16_156354)(Streamobj156027* s) {
+N_NIMCALL(NI16, readint16_179354)(Streamobj179027* s) {
 	NI16 result;
 	nimfr("readInt16", "streams.nim")
 	result = 0;
 	nimln(139, "streams.nim");
-	read_156359(s, (&result));
+	read_179359(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156387)(Streamobj156027* s, NI32* result) {
+N_NIMCALL(void, read_179387)(Streamobj179027* s, NI32* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 4));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 4));
 		if (!!((LOC3 == ((NI) 4)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NI32, readint32_156382)(Streamobj156027* s) {
+N_NIMCALL(NI32, readint32_179382)(Streamobj179027* s) {
 	NI32 result;
 	nimfr("readInt32", "streams.nim")
 	result = 0;
 	nimln(143, "streams.nim");
-	read_156387(s, (&result));
+	read_179387(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156415)(Streamobj156027* s, NI64* result) {
+N_NIMCALL(void, read_179415)(Streamobj179027* s, NI64* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 8));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 8));
 		if (!!((LOC3 == ((NI) 8)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NI64, readint64_156410)(Streamobj156027* s) {
+N_NIMCALL(NI64, readint64_179410)(Streamobj179027* s) {
 	NI64 result;
 	nimfr("readInt64", "streams.nim")
 	result = 0;
 	nimln(147, "streams.nim");
-	read_156415(s, (&result));
+	read_179415(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156443)(Streamobj156027* s, NF32* result) {
+N_NIMCALL(void, read_179443)(Streamobj179027* s, NF32* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 4));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 4));
 		if (!!((LOC3 == ((NI) 4)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NF32, readfloat32_156438)(Streamobj156027* s) {
+N_NIMCALL(NF32, readfloat32_179438)(Streamobj179027* s) {
 	NF32 result;
 	nimfr("readFloat32", "streams.nim")
 	result = 0;
 	nimln(151, "streams.nim");
-	read_156443(s, (&result));
+	read_179443(s, (&result));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, read_156471)(Streamobj156027* s, NF* result) {
+N_NIMCALL(void, read_179471)(Streamobj179027* s, NF* result) {
 	nimfr("read", "streams.nim")
 	nimln(121, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
 		LOC3 = 0;
-		LOC3 = readdata_156174(s, ((void*) (result)), ((NI) 8));
+		LOC3 = readdata_179174(s, ((void*) (result)), ((NI) 8));
 		if (!!((LOC3 == ((NI) 8)))) goto LA4;
 		nimln(122, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP598));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP717));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(NF, readfloat64_156466)(Streamobj156027* s) {
+N_NIMCALL(NF, readfloat64_179466)(Streamobj179027* s) {
 	NF result;
 	nimfr("readFloat64", "streams.nim")
 	result = 0;
 	nimln(155, "streams.nim");
-	read_156471(s, (&result));
+	read_179471(s, (&result));
 	popFrame();
 	return result;
 }
@@ -807,7 +807,7 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, readstr_156494)(Streamobj156027* s, NI length) {
+N_NIMCALL(NimStringDesc*, readstr_179494)(Streamobj179027* s, NI length) {
 	NimStringDesc* result;
 	NI L;
 	nimfr("readStr", "streams.nim")
@@ -816,7 +816,7 @@ N_NIMCALL(NimStringDesc*, readstr_156494)(Streamobj156027* s, NI length) {
 	result = mnewString(((NI)chckRange(length, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(161, "streams.nim");
 	if ((NU)(((NI) 0)) > (NU)(result->Sup.len)) raiseIndexError();
-	L = readdata_156174(s, ((void*) ((&result->data[((NI) 0)]))), length);
+	L = readdata_179174(s, ((void*) ((&result->data[((NI) 0)]))), length);
 	nimln(162, "streams.nim");
 	{
 		if (!!((L == length))) goto LA3;
@@ -827,7 +827,7 @@ N_NIMCALL(NimStringDesc*, readstr_156494)(Streamobj156027* s, NI length) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, readline_156509)(Streamobj156027* s, NimStringDesc** line) {
+N_NIMCALL(NIM_BOOL, readline_179509)(Streamobj179027* s, NimStringDesc** line) {
 	NIM_BOOL result;
 	nimfr("readLine", "streams.nim")
 {	result = 0;
@@ -838,12 +838,12 @@ N_NIMCALL(NIM_BOOL, readline_156509)(Streamobj156027* s, NimStringDesc** line) {
 		while (1) {
 			NIM_CHAR c;
 			nimln(173, "streams.nim");
-			c = readchar_156287(s);
+			c = readchar_179287(s);
 			nimln(174, "streams.nim");
 			{
 				if (!((NU8)(c) == (NU8)(13))) goto LA5;
 				nimln(175, "streams.nim");
-				c = readchar_156287(s);
+				c = readchar_179287(s);
 				nimln(176, "streams.nim");
 				goto LA1;
 			}
@@ -887,23 +887,23 @@ N_NIMCALL(NIM_BOOL, readline_156509)(Streamobj156027* s, NimStringDesc** line) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, readline_156531)(Streamobj156027* s) {
+N_NIMCALL(NimStringDesc*, readline_179531)(Streamobj179027* s) {
 	NimStringDesc* result;
 	nimfr("readLine", "streams.nim")
 	result = 0;
 	nimln(187, "streams.nim");
-	result = copyString(((NimStringDesc*) &TMP599));
+	result = copyString(((NimStringDesc*) &TMP718));
 	{
 		nimln(188, "streams.nim");
 		while (1) {
 			NIM_CHAR c;
 			nimln(189, "streams.nim");
-			c = readchar_156287(s);
+			c = readchar_179287(s);
 			nimln(190, "streams.nim");
 			{
 				if (!((NU8)(c) == (NU8)(13))) goto LA5;
 				nimln(191, "streams.nim");
-				c = readchar_156287(s);
+				c = readchar_179287(s);
 				nimln(192, "streams.nim");
 				goto LA1;
 			}
@@ -933,14 +933,14 @@ N_NIMCALL(NimStringDesc*, readline_156531)(Streamobj156027* s) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, ssatend_156565)(Streamobj156027* s_156567) {
+N_NIMCALL(NIM_BOOL, ssatend_179565)(Streamobj179027* s_179567) {
 	NIM_BOOL result;
-	Stringstreamobj156554* s;
+	Stringstreamobj179554* s;
 	nimfr("ssAtEnd", "streams.nim")
 {	result = 0;
 	nimln(207, "streams.nim");
-	if (s_156567) chckObj((*s_156567).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156567));
+	if (s_179567) chckObj((*s_179567).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179567));
 	nimln(208, "streams.nim");
 	result = (((*s).data ? (*s).data->Sup.len : 0) <= (*s).pos);
 	goto BeforeRet;
@@ -949,25 +949,25 @@ N_NIMCALL(NIM_BOOL, ssatend_156565)(Streamobj156027* s_156567) {
 	return result;
 }
 
-N_NIMCALL(void, sssetposition_156576)(Streamobj156027* s_156578, NI pos) {
-	Stringstreamobj156554* s;
+N_NIMCALL(void, sssetposition_179576)(Streamobj179027* s_179578, NI pos) {
+	Stringstreamobj179554* s;
 	nimfr("ssSetPosition", "streams.nim")
 	nimln(211, "streams.nim");
-	if (s_156578) chckObj((*s_156578).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156578));
+	if (s_179578) chckObj((*s_179578).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179578));
 	nimln(212, "streams.nim");
-	(*s).pos = clamp_156582(pos, ((NI) 0), ((*s).data ? ((*s).data->Sup.len-1) : -1));
+	(*s).pos = clamp_179582(pos, ((NI) 0), ((*s).data ? ((*s).data->Sup.len-1) : -1));
 	popFrame();
 }
 
-N_NIMCALL(NI, ssgetposition_156601)(Streamobj156027* s_156603) {
+N_NIMCALL(NI, ssgetposition_179601)(Streamobj179027* s_179603) {
 	NI result;
-	Stringstreamobj156554* s;
+	Stringstreamobj179554* s;
 	nimfr("ssGetPosition", "streams.nim")
 {	result = 0;
 	nimln(215, "streams.nim");
-	if (s_156603) chckObj((*s_156603).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156603));
+	if (s_179603) chckObj((*s_179603).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179603));
 	nimln(216, "streams.nim");
 	result = (*s).pos;
 	goto BeforeRet;
@@ -996,41 +996,41 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, ssreaddata_156612)(Streamobj156027* s_156614, void* buffer, NI buflen) {
+N_NIMCALL(NI, ssreaddata_179612)(Streamobj179027* s_179614, void* buffer, NI buflen) {
 	NI result;
-	Stringstreamobj156554* s;
-	NI TMP602;
+	Stringstreamobj179554* s;
+	NI TMP721;
 	nimfr("ssReadData", "streams.nim")
 	result = 0;
 	nimln(219, "streams.nim");
-	if (s_156614) chckObj((*s_156614).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156614));
+	if (s_179614) chckObj((*s_179614).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179614));
 	nimln(220, "streams.nim");
-	TMP602 = subInt(((*s).data ? (*s).data->Sup.len : 0), (*s).pos);
-	result = ((buflen <= (NI)(TMP602)) ? buflen : (NI)(TMP602));
+	TMP721 = subInt(((*s).data ? (*s).data->Sup.len : 0), (*s).pos);
+	result = ((buflen <= (NI)(TMP721)) ? buflen : (NI)(TMP721));
 	nimln(221, "streams.nim");
 	{
-		NI TMP603;
+		NI TMP722;
 		if (!(((NI) 0) < result)) goto LA3;
 		nimln(222, "streams.nim");
 		if ((NU)((*s).pos) > (NU)((*s).data->Sup.len)) raiseIndexError();
 		memcpy(buffer, ((void*) ((&(*s).data->data[(*s).pos]))), ((NI)chckRange(result, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		nimln(223, "streams.nim");
-		TMP603 = addInt((*s).pos, result);
-		(*s).pos = (NI)(TMP603);
+		TMP722 = addInt((*s).pos, result);
+		(*s).pos = (NI)(TMP722);
 	}
 	LA3: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, sswritedata_156639)(Streamobj156027* s_156641, void* buffer, NI buflen) {
-	Stringstreamobj156554* s;
-	NI TMP606;
+N_NIMCALL(void, sswritedata_179639)(Streamobj179027* s_179641, void* buffer, NI buflen) {
+	Stringstreamobj179554* s;
+	NI TMP725;
 	nimfr("ssWriteData", "streams.nim")
 {	nimln(226, "streams.nim");
-	if (s_156641) chckObj((*s_156641).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156641));
+	if (s_179641) chckObj((*s_179641).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179641));
 	nimln(227, "streams.nim");
 	{
 		if (!(buflen <= ((NI) 0))) goto LA3;
@@ -1040,52 +1040,52 @@ N_NIMCALL(void, sswritedata_156639)(Streamobj156027* s_156641, void* buffer, NI 
 	LA3: ;
 	nimln(229, "streams.nim");
 	{
-		NI TMP604;
-		NI TMP605;
-		TMP604 = addInt((*s).pos, buflen);
-		if (!(((*s).data ? (*s).data->Sup.len : 0) < (NI)(TMP604))) goto LA7;
+		NI TMP723;
+		NI TMP724;
+		TMP723 = addInt((*s).pos, buflen);
+		if (!(((*s).data ? (*s).data->Sup.len : 0) < (NI)(TMP723))) goto LA7;
 		nimln(230, "streams.nim");
-		TMP605 = addInt((*s).pos, buflen);
-		(*s).data = setLengthStr((*s).data, ((NI)chckRange((NI)(TMP605), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		TMP724 = addInt((*s).pos, buflen);
+		(*s).data = setLengthStr((*s).data, ((NI)chckRange((NI)(TMP724), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	}
 	LA7: ;
 	nimln(231, "streams.nim");
 	if ((NU)((*s).pos) > (NU)((*s).data->Sup.len)) raiseIndexError();
 	memcpy(((void*) ((&(*s).data->data[(*s).pos]))), buffer, ((NI)chckRange(buflen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(232, "streams.nim");
-	TMP606 = addInt((*s).pos, buflen);
-	(*s).pos = (NI)(TMP606);
+	TMP725 = addInt((*s).pos, buflen);
+	(*s).pos = (NI)(TMP725);
 	}BeforeRet: ;
 	popFrame();
 }
 
-N_NIMCALL(void, ssclose_156661)(Streamobj156027* s_156663) {
-	Stringstreamobj156554* s;
+N_NIMCALL(void, ssclose_179661)(Streamobj179027* s_179663) {
+	Stringstreamobj179554* s;
 	NimStringDesc* LOC1;
 	nimfr("ssClose", "streams.nim")
 	nimln(235, "streams.nim");
-	if (s_156663) chckObj((*s_156663).Sup.m_type, (&NTI156554));
-	s = ((Stringstreamobj156554*) (s_156663));
+	if (s_179663) chckObj((*s_179663).Sup.m_type, (&NTI179554));
+	s = ((Stringstreamobj179554*) (s_179663));
 	nimln(236, "streams.nim");
 	LOC1 = 0;
 	LOC1 = (*s).data; (*s).data = copyStringRC1(NIM_NIL);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	popFrame();
 }
-N_NIMCALL(void, TMP607)(void* p, NI op) {
-	Stringstreamobj156554* a;
-	a = (Stringstreamobj156554*)p;
+N_NIMCALL(void, TMP726)(void* p, NI op) {
+	Stringstreamobj179554* a;
+	a = (Stringstreamobj179554*)p;
 	nimGCvisit((void*)(*a).data, op);
 }
 
-N_NIMCALL(Stringstreamobj156554*, newstringstream_156671)(NimStringDesc* s) {
-	Stringstreamobj156554* result;
+N_NIMCALL(Stringstreamobj179554*, newstringstream_179671)(NimStringDesc* s) {
+	Stringstreamobj179554* result;
 	NimStringDesc* LOC1;
 	nimfr("newStringStream", "streams.nim")
 	result = 0;
 	nimln(240, "streams.nim");
-	result = (Stringstreamobj156554*) newObj((&NTI156552), sizeof(Stringstreamobj156554));
-	(*result).Sup.Sup.m_type = (&NTI156554);
+	result = (Stringstreamobj179554*) newObj((&NTI179552), sizeof(Stringstreamobj179554));
+	(*result).Sup.Sup.m_type = (&NTI179554);
 	nimln(241, "streams.nim");
 	LOC1 = 0;
 	LOC1 = (*result).data; (*result).data = copyStringRC1(s);
@@ -1093,76 +1093,76 @@ N_NIMCALL(Stringstreamobj156554*, newstringstream_156671)(NimStringDesc* s) {
 	nimln(242, "streams.nim");
 	(*result).pos = ((NI) 0);
 	nimln(243, "streams.nim");
-	(*result).Sup.closeimpl = ssclose_156661;
+	(*result).Sup.closeimpl = ssclose_179661;
 	nimln(244, "streams.nim");
-	(*result).Sup.atendimpl = ssatend_156565;
+	(*result).Sup.atendimpl = ssatend_179565;
 	nimln(245, "streams.nim");
-	(*result).Sup.setpositionimpl = sssetposition_156576;
+	(*result).Sup.setpositionimpl = sssetposition_179576;
 	nimln(246, "streams.nim");
-	(*result).Sup.getpositionimpl = ssgetposition_156601;
+	(*result).Sup.getpositionimpl = ssgetposition_179601;
 	nimln(247, "streams.nim");
-	(*result).Sup.readdataimpl = ssreaddata_156612;
+	(*result).Sup.readdataimpl = ssreaddata_179612;
 	nimln(248, "streams.nim");
-	(*result).Sup.writedataimpl = sswritedata_156639;
+	(*result).Sup.writedataimpl = sswritedata_179639;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, fsclose_156696)(Streamobj156027* s) {
+N_NIMCALL(void, fsclose_179696)(Streamobj179027* s) {
 	nimfr("fsClose", "streams.nim")
 	nimln(259, "streams.nim");
 	{
-		if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-		if (!!(((*((Filestreamobj156692*) (s))).f == NIM_NIL))) goto LA3;
+		if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+		if (!!(((*((Filestreamobj179692*) (s))).f == NIM_NIL))) goto LA3;
 		nimln(260, "streams.nim");
-		if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-		fclose((*((Filestreamobj156692*) (s))).f);
+		if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+		fclose((*((Filestreamobj179692*) (s))).f);
 		nimln(261, "streams.nim");
-		if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-		(*((Filestreamobj156692*) (s))).f = NIM_NIL;
+		if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+		(*((Filestreamobj179692*) (s))).f = NIM_NIL;
 	}
 	LA3: ;
 	popFrame();
 }
 
-N_NIMCALL(void, fsflush_156714)(Streamobj156027* s) {
+N_NIMCALL(void, fsflush_179714)(Streamobj179027* s) {
 	nimfr("fsFlush", "streams.nim")
 	nimln(262, "streams.nim");
-	if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-	fflush((*((Filestreamobj156692*) (s))).f);
+	if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+	fflush((*((Filestreamobj179692*) (s))).f);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, fsatend_156720)(Streamobj156027* s) {
+N_NIMCALL(NIM_BOOL, fsatend_179720)(Streamobj179027* s) {
 	NIM_BOOL result;
 	nimfr("fsAtEnd", "streams.nim")
 {	result = 0;
 	nimln(263, "streams.nim");
-	if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-	result = endoffile_13422((*((Filestreamobj156692*) (s))).f);
+	if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+	result = endoffile_13422((*((Filestreamobj179692*) (s))).f);
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, fssetposition_156727)(Streamobj156027* s, NI pos) {
+N_NIMCALL(void, fssetposition_179727)(Streamobj179027* s, NI pos) {
 	nimfr("fsSetPosition", "streams.nim")
 	nimln(264, "streams.nim");
-	if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-	setfilepos_13542((*((Filestreamobj156692*) (s))).f, ((NI64) (pos)));
+	if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+	setfilepos_13542((*((Filestreamobj179692*) (s))).f, ((NI64) (pos)));
 	popFrame();
 }
 
-N_NIMCALL(NI, fsgetposition_156734)(Streamobj156027* s) {
+N_NIMCALL(NI, fsgetposition_179734)(Streamobj179027* s) {
 	NI result;
 	NI64 LOC1;
 	nimfr("fsGetPosition", "streams.nim")
 {	result = 0;
 	nimln(265, "streams.nim");
-	if (s) chckObj((*s).Sup.m_type, (&NTI156692));
+	if (s) chckObj((*s).Sup.m_type, (&NTI179692));
 	LOC1 = 0;
-	LOC1 = getfilepos_13546((*((Filestreamobj156692*) (s))).f);
+	LOC1 = getfilepos_13546((*((Filestreamobj179692*) (s))).f);
 	result = ((NI) (LOC1));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -1170,69 +1170,69 @@ N_NIMCALL(NI, fsgetposition_156734)(Streamobj156027* s) {
 	return result;
 }
 
-N_NIMCALL(NI, fsreaddata_156742)(Streamobj156027* s, void* buffer, NI buflen) {
+N_NIMCALL(NI, fsreaddata_179742)(Streamobj179027* s, void* buffer, NI buflen) {
 	NI result;
 	nimfr("fsReadData", "streams.nim")
 	result = 0;
 	nimln(268, "streams.nim");
-	if (s) chckObj((*s).Sup.m_type, (&NTI156692));
-	result = readbuffer_13515((*((Filestreamobj156692*) (s))).f, buffer, ((NI)chckRange(buflen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	if (s) chckObj((*s).Sup.m_type, (&NTI179692));
+	result = readbuffer_13515((*((Filestreamobj179692*) (s))).f, buffer, ((NI)chckRange(buflen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, fswritedata_156751)(Streamobj156027* s, void* buffer, NI buflen) {
+N_NIMCALL(void, fswritedata_179751)(Streamobj179027* s, void* buffer, NI buflen) {
 	nimfr("fsWriteData", "streams.nim")
 	nimln(271, "streams.nim");
 	{
 		NI LOC3;
 		Ioerror3431* LOC6;
-		if (s) chckObj((*s).Sup.m_type, (&NTI156692));
+		if (s) chckObj((*s).Sup.m_type, (&NTI179692));
 		LOC3 = 0;
-		LOC3 = writebuffer_13537((*((Filestreamobj156692*) (s))).f, buffer, ((NI)chckRange(buflen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		LOC3 = writebuffer_13537((*((Filestreamobj179692*) (s))).f, buffer, ((NI)chckRange(buflen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		if (!!((LOC3 == buflen))) goto LA4;
 		nimln(272, "streams.nim");
 		LOC6 = 0;
-		LOC6 = neweio_156005(((NimStringDesc*) &TMP608));
+		LOC6 = neweio_179005(((NimStringDesc*) &TMP727));
 		raiseException((Exception*)LOC6, "IOError");
 	}
 	LA4: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP609)(void* p, NI op) {
-	Filestreamobj156692* a;
-	a = (Filestreamobj156692*)p;
+N_NIMCALL(void, TMP728)(void* p, NI op) {
+	Filestreamobj179692* a;
+	a = (Filestreamobj179692*)p;
 }
 
-N_NIMCALL(Filestreamobj156692*, newfilestream_156759)(FILE* f) {
-	Filestreamobj156692* result;
+N_NIMCALL(Filestreamobj179692*, newfilestream_179759)(FILE* f) {
+	Filestreamobj179692* result;
 	nimfr("newFileStream", "streams.nim")
 	result = 0;
 	nimln(276, "streams.nim");
-	result = (Filestreamobj156692*) newObj((&NTI156690), sizeof(Filestreamobj156692));
-	(*result).Sup.Sup.m_type = (&NTI156692);
+	result = (Filestreamobj179692*) newObj((&NTI179690), sizeof(Filestreamobj179692));
+	(*result).Sup.Sup.m_type = (&NTI179692);
 	nimln(277, "streams.nim");
 	(*result).f = f;
 	nimln(278, "streams.nim");
-	(*result).Sup.closeimpl = fsclose_156696;
+	(*result).Sup.closeimpl = fsclose_179696;
 	nimln(279, "streams.nim");
-	(*result).Sup.atendimpl = fsatend_156720;
+	(*result).Sup.atendimpl = fsatend_179720;
 	nimln(280, "streams.nim");
-	(*result).Sup.setpositionimpl = fssetposition_156727;
+	(*result).Sup.setpositionimpl = fssetposition_179727;
 	nimln(281, "streams.nim");
-	(*result).Sup.getpositionimpl = fsgetposition_156734;
+	(*result).Sup.getpositionimpl = fsgetposition_179734;
 	nimln(282, "streams.nim");
-	(*result).Sup.readdataimpl = fsreaddata_156742;
+	(*result).Sup.readdataimpl = fsreaddata_179742;
 	nimln(283, "streams.nim");
-	(*result).Sup.writedataimpl = fswritedata_156751;
+	(*result).Sup.writedataimpl = fswritedata_179751;
 	nimln(284, "streams.nim");
-	(*result).Sup.flushimpl = fsflush_156714;
+	(*result).Sup.flushimpl = fsflush_179714;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Filestreamobj156692*, newfilestream_156774)(NimStringDesc* filename, NU8 mode) {
-	Filestreamobj156692* result;
+N_NIMCALL(Filestreamobj179692*, newfilestream_179774)(NimStringDesc* filename, NU8 mode) {
+	Filestreamobj179692* result;
 	FILE* f;
 	nimfr("newFileStream", "streams.nim")
 	result = 0;
@@ -1243,15 +1243,15 @@ N_NIMCALL(Filestreamobj156692*, newfilestream_156774)(NimStringDesc* filename, N
 		LOC3 = 0;
 		LOC3 = open_13203(&f, filename, mode, ((NI) -1));
 		if (!LOC3) goto LA4;
-		result = newfilestream_156759(f);
+		result = newfilestream_179759(f);
 	}
 	LA4: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP964)(void* p, NI op) {
-	Streamobj156027* a;
-	a = (Streamobj156027*)p;
+N_NIMCALL(void, TMP1071)(void* p, NI op) {
+	Streamobj179027* a;
+	a = (Streamobj179027*)p;
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_streamsInit)(void) {
 	nimfr("streams", "streams.nim")
@@ -1259,113 +1259,113 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_streamsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_streamsDatInit)(void) {
-static TNimNode* TMP600[7];
-static TNimNode* TMP601[2];
-static TNimNode TMP594[12];
-NTI156027.size = sizeof(Streamobj156027);
-NTI156027.kind = 17;
-NTI156027.base = (&NTI3411);
-NTI156027.flags = 1;
-TMP600[0] = &TMP594[1];
-NTI156028.size = sizeof(TY156028);
-NTI156028.kind = 25;
-NTI156028.base = 0;
-NTI156028.flags = 3;
-TMP594[1].kind = 1;
-TMP594[1].offset = offsetof(Streamobj156027, closeimpl);
-TMP594[1].typ = (&NTI156028);
-TMP594[1].name = "closeImpl";
-TMP600[1] = &TMP594[2];
-NTI156032.size = sizeof(TY156032);
-NTI156032.kind = 25;
-NTI156032.base = 0;
-NTI156032.flags = 3;
-TMP594[2].kind = 1;
-TMP594[2].offset = offsetof(Streamobj156027, atendimpl);
-TMP594[2].typ = (&NTI156032);
-TMP594[2].name = "atEndImpl";
-TMP600[2] = &TMP594[3];
-NTI156036.size = sizeof(TY156036);
-NTI156036.kind = 25;
-NTI156036.base = 0;
-NTI156036.flags = 3;
-TMP594[3].kind = 1;
-TMP594[3].offset = offsetof(Streamobj156027, setpositionimpl);
-TMP594[3].typ = (&NTI156036);
-TMP594[3].name = "setPositionImpl";
-TMP600[3] = &TMP594[4];
-NTI156041.size = sizeof(TY156041);
-NTI156041.kind = 25;
-NTI156041.base = 0;
-NTI156041.flags = 3;
-TMP594[4].kind = 1;
-TMP594[4].offset = offsetof(Streamobj156027, getpositionimpl);
-TMP594[4].typ = (&NTI156041);
-TMP594[4].name = "getPositionImpl";
-TMP600[4] = &TMP594[5];
-NTI156045.size = sizeof(TY156045);
-NTI156045.kind = 25;
-NTI156045.base = 0;
-NTI156045.flags = 3;
-TMP594[5].kind = 1;
-TMP594[5].offset = offsetof(Streamobj156027, readdataimpl);
-TMP594[5].typ = (&NTI156045);
-TMP594[5].name = "readDataImpl";
-TMP600[5] = &TMP594[6];
-NTI156051.size = sizeof(TY156051);
-NTI156051.kind = 25;
-NTI156051.base = 0;
-NTI156051.flags = 3;
-TMP594[6].kind = 1;
-TMP594[6].offset = offsetof(Streamobj156027, writedataimpl);
-TMP594[6].typ = (&NTI156051);
-TMP594[6].name = "writeDataImpl";
-TMP600[6] = &TMP594[7];
-NTI156057.size = sizeof(TY156057);
-NTI156057.kind = 25;
-NTI156057.base = 0;
-NTI156057.flags = 3;
-TMP594[7].kind = 1;
-TMP594[7].offset = offsetof(Streamobj156027, flushimpl);
-TMP594[7].typ = (&NTI156057);
-TMP594[7].name = "flushImpl";
-TMP594[0].len = 7; TMP594[0].kind = 2; TMP594[0].sons = &TMP600[0];
-NTI156027.node = &TMP594[0];
-NTI156554.size = sizeof(Stringstreamobj156554);
-NTI156554.kind = 17;
-NTI156554.base = (&NTI156027);
-TMP601[0] = &TMP594[9];
-TMP594[9].kind = 1;
-TMP594[9].offset = offsetof(Stringstreamobj156554, data);
-TMP594[9].typ = (&NTI149);
-TMP594[9].name = "data";
-TMP601[1] = &TMP594[10];
-TMP594[10].kind = 1;
-TMP594[10].offset = offsetof(Stringstreamobj156554, pos);
-TMP594[10].typ = (&NTI108);
-TMP594[10].name = "pos";
-TMP594[8].len = 2; TMP594[8].kind = 2; TMP594[8].sons = &TMP601[0];
-NTI156554.node = &TMP594[8];
-NTI156552.size = sizeof(Stringstreamobj156554*);
-NTI156552.kind = 22;
-NTI156552.base = (&NTI156554);
-NTI156552.marker = TMP607;
-NTI156692.size = sizeof(Filestreamobj156692);
-NTI156692.kind = 17;
-NTI156692.base = (&NTI156027);
-NTI156692.flags = 1;
-TMP594[11].kind = 1;
-TMP594[11].offset = offsetof(Filestreamobj156692, f);
-TMP594[11].typ = (&NTI13004);
-TMP594[11].name = "f";
-NTI156692.node = &TMP594[11];
-NTI156690.size = sizeof(Filestreamobj156692*);
-NTI156690.kind = 22;
-NTI156690.base = (&NTI156692);
-NTI156690.marker = TMP609;
-NTI156025.size = sizeof(Streamobj156027*);
-NTI156025.kind = 22;
-NTI156025.base = (&NTI156027);
-NTI156025.marker = TMP964;
+static TNimNode* TMP719[7];
+static TNimNode* TMP720[2];
+static TNimNode TMP713[12];
+NTI179027.size = sizeof(Streamobj179027);
+NTI179027.kind = 17;
+NTI179027.base = (&NTI3411);
+NTI179027.flags = 1;
+TMP719[0] = &TMP713[1];
+NTI179028.size = sizeof(TY179028);
+NTI179028.kind = 25;
+NTI179028.base = 0;
+NTI179028.flags = 3;
+TMP713[1].kind = 1;
+TMP713[1].offset = offsetof(Streamobj179027, closeimpl);
+TMP713[1].typ = (&NTI179028);
+TMP713[1].name = "closeImpl";
+TMP719[1] = &TMP713[2];
+NTI179032.size = sizeof(TY179032);
+NTI179032.kind = 25;
+NTI179032.base = 0;
+NTI179032.flags = 3;
+TMP713[2].kind = 1;
+TMP713[2].offset = offsetof(Streamobj179027, atendimpl);
+TMP713[2].typ = (&NTI179032);
+TMP713[2].name = "atEndImpl";
+TMP719[2] = &TMP713[3];
+NTI179036.size = sizeof(TY179036);
+NTI179036.kind = 25;
+NTI179036.base = 0;
+NTI179036.flags = 3;
+TMP713[3].kind = 1;
+TMP713[3].offset = offsetof(Streamobj179027, setpositionimpl);
+TMP713[3].typ = (&NTI179036);
+TMP713[3].name = "setPositionImpl";
+TMP719[3] = &TMP713[4];
+NTI179041.size = sizeof(TY179041);
+NTI179041.kind = 25;
+NTI179041.base = 0;
+NTI179041.flags = 3;
+TMP713[4].kind = 1;
+TMP713[4].offset = offsetof(Streamobj179027, getpositionimpl);
+TMP713[4].typ = (&NTI179041);
+TMP713[4].name = "getPositionImpl";
+TMP719[4] = &TMP713[5];
+NTI179045.size = sizeof(TY179045);
+NTI179045.kind = 25;
+NTI179045.base = 0;
+NTI179045.flags = 3;
+TMP713[5].kind = 1;
+TMP713[5].offset = offsetof(Streamobj179027, readdataimpl);
+TMP713[5].typ = (&NTI179045);
+TMP713[5].name = "readDataImpl";
+TMP719[5] = &TMP713[6];
+NTI179051.size = sizeof(TY179051);
+NTI179051.kind = 25;
+NTI179051.base = 0;
+NTI179051.flags = 3;
+TMP713[6].kind = 1;
+TMP713[6].offset = offsetof(Streamobj179027, writedataimpl);
+TMP713[6].typ = (&NTI179051);
+TMP713[6].name = "writeDataImpl";
+TMP719[6] = &TMP713[7];
+NTI179057.size = sizeof(TY179057);
+NTI179057.kind = 25;
+NTI179057.base = 0;
+NTI179057.flags = 3;
+TMP713[7].kind = 1;
+TMP713[7].offset = offsetof(Streamobj179027, flushimpl);
+TMP713[7].typ = (&NTI179057);
+TMP713[7].name = "flushImpl";
+TMP713[0].len = 7; TMP713[0].kind = 2; TMP713[0].sons = &TMP719[0];
+NTI179027.node = &TMP713[0];
+NTI179554.size = sizeof(Stringstreamobj179554);
+NTI179554.kind = 17;
+NTI179554.base = (&NTI179027);
+TMP720[0] = &TMP713[9];
+TMP713[9].kind = 1;
+TMP713[9].offset = offsetof(Stringstreamobj179554, data);
+TMP713[9].typ = (&NTI149);
+TMP713[9].name = "data";
+TMP720[1] = &TMP713[10];
+TMP713[10].kind = 1;
+TMP713[10].offset = offsetof(Stringstreamobj179554, pos);
+TMP713[10].typ = (&NTI108);
+TMP713[10].name = "pos";
+TMP713[8].len = 2; TMP713[8].kind = 2; TMP713[8].sons = &TMP720[0];
+NTI179554.node = &TMP713[8];
+NTI179552.size = sizeof(Stringstreamobj179554*);
+NTI179552.kind = 22;
+NTI179552.base = (&NTI179554);
+NTI179552.marker = TMP726;
+NTI179692.size = sizeof(Filestreamobj179692);
+NTI179692.kind = 17;
+NTI179692.base = (&NTI179027);
+NTI179692.flags = 1;
+TMP713[11].kind = 1;
+TMP713[11].offset = offsetof(Filestreamobj179692, f);
+TMP713[11].typ = (&NTI13004);
+TMP713[11].name = "f";
+NTI179692.node = &TMP713[11];
+NTI179690.size = sizeof(Filestreamobj179692*);
+NTI179690.kind = 22;
+NTI179690.base = (&NTI179692);
+NTI179690.marker = TMP728;
+NTI179025.size = sizeof(Streamobj179027*);
+NTI179025.kind = 22;
+NTI179025.base = (&NTI179027);
+NTI179025.marker = TMP1071;
 }
 

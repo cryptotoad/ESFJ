@@ -31,9 +31,9 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct TY276432 TY276432;
-typedef struct Systemrandom276656 Systemrandom276656;
-typedef struct TY276823 TY276823;
+typedef struct TY130432 TY130432;
+typedef struct Systemrandom130656 Systemrandom130656;
+typedef struct TY130823 TY130823;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
 struct  TGenericSeq  {
@@ -44,8 +44,8 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-typedef N_STDCALL_PTR(NI32, TY276202) (NI* phprov, NI16* pszcontainer, NI16* pszprovider, NI32 dwprovtype, NI32 dwflags);
-typedef N_STDCALL_PTR(NI32, TY276210) (NI hprov, NI32 dwlen, void* pbbuffer);
+typedef N_STDCALL_PTR(NI32, TY130202) (NI* phprov, NI16* pszcontainer, NI16* pszprovider, NI32 dwprovtype, NI32 dwflags);
+typedef N_STDCALL_PTR(NI32, TY130210) (NI hprov, NI32 dwlen, void* pbbuffer);
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -140,19 +140,19 @@ Tmemregion28610 region;
 Tgcstat48614 stat;
 };
 typedef struct {
-N_NIMCALL_PTR(NU8, ClPrc) (Systemrandom276656* self, void* ClEnv);
+N_NIMCALL_PTR(NU8, ClPrc) (Systemrandom130656* self, void* ClEnv);
 void* ClEnv;
-} TY276657;
-struct  Systemrandom276656  {
-TY276657 bytesit;
+} TY130657;
+struct  Systemrandom130656  {
+TY130657 bytesit;
 };
-typedef N_CLOSURE_PTR(NU8, TMP2718) (Systemrandom276656* self);
-struct  TY276823  {
+typedef N_CLOSURE_PTR(NU8, TMP568) (Systemrandom130656* self);
+struct  TY130823  {
 NI HEX3Astate;
-NU8 b276811;
-TY276432* HEX3Atmp276814;
-NI i276817;
-NI L276819;
+NU8 b130811;
+TY130432* HEX3Atmp130814;
+NI i130817;
+NI L130819;
 };
 typedef NI TY27820[8];
 struct  Tpagedesc46754  {
@@ -202,14 +202,14 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct TY276432 {
+struct TY130432 {
   TGenericSeq Sup;
   NU8 data[SEQ_DECL_SIZE];
 };
 N_NIMCALL(void*, nimLoadLibrary)(NimStringDesc* path);
 N_NOINLINE(void, nimLoadLibraryError)(NimStringDesc* path);
 N_NIMCALL(void*, nimGetProcAddr)(void* lib, NCSTRING name);
-N_NIMCALL(void, urandominit_276215)(void);
+N_NIMCALL(void, urandominit_130215)(void);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
@@ -220,41 +220,41 @@ static N_INLINE(void, popFrame)(void);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(TY276432*, urandom_276429)(NI size);
-N_NIMCALL(void, TMP2716)(void* p, NI op);
+N_NIMCALL(TY130432*, urandom_130429)(NI size);
+N_NIMCALL(void, TMP566)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NOINLINE(void, raiseIndexError)(void);
-static N_INLINE(NU8, randomuint8_276835)(Systemrandom276656* self);
-N_NIMCALL(void, initsystemrandom_276846)(Systemrandom276656* Result);
+static N_INLINE(NU8, randomuint8_130835)(Systemrandom130656* self);
+N_NIMCALL(void, initsystemrandom_130846)(Systemrandom130656* Result);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP2720)(void* p, NI op);
-N_CLOSURE(NU8, sysrandombytes_276665)(Systemrandom276656* self, void* ClEnv);
+N_NIMCALL(void, TMP570)(void* p, NI op);
+N_CLOSURE(NU8, sysrandombytes_130665)(Systemrandom130656* self, void* ClEnv);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-STRING_LITERAL(TMP2713, "Advapi32.dll", 12);
-STRING_LITERAL(TMP2714, "Advapi32.dll", 12);
-STRING_LITERAL(TMP2715, "Call to CryptAcquireContext failed", 34);
-STRING_LITERAL(TMP2717, "Call to CryptGenRandom failed", 29);
-STRING_LITERAL(TMP2722, "len(a) == L seq modified while iterating over it", 48);
-static void* TMP2712;
-TY276202 Dl_276201;
-TY276210 Dl_276209;
-NI cryptprov_276214;
-extern TNimType NTI115433; /* ref OSError */
+STRING_LITERAL(TMP562, "Advapi32.dll", 12);
+STRING_LITERAL(TMP563, "Advapi32.dll", 12);
+STRING_LITERAL(TMP565, "Call to CryptAcquireContext failed", 34);
+STRING_LITERAL(TMP567, "Call to CryptGenRandom failed", 29);
+STRING_LITERAL(TMP572, "len(a) == L seq modified while iterating over it", 48);
+static void* TMP561;
+TY130202 Dl_130201;
+TY130210 Dl_130209;
+NI cryptprov_130214;
+extern TNimType NTI130222; /* ref OSError */
 extern TNimType NTI3433; /* OSError */
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI120; /* uint8 */
-TNimType NTI276432; /* seq[uint8] */
-TNimType NTI276823; /* object */
-extern TNimType NTI257412; /* range -1..1(int) */
+TNimType NTI130432; /* seq[uint8] */
+TNimType NTI130823; /* object */
 extern TNimType NTI108; /* int */
-TNimType NTI276827; /* ref object */
+TNimType NTI130825; /* range -1..1(int) */
+TNimType NTI130827; /* ref object */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -318,34 +318,34 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, urandominit_276215)(void) {
+N_NIMCALL(void, urandominit_130215)(void) {
 	NI32 success;
 	nimfr("urandomInit", "urandom.nim")
 	nimln(58, "urandom.nim");
-	success = Dl_276201((&cryptprov_276214), NIM_NIL, NIM_NIL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT);
+	success = Dl_130201((&cryptprov_130214), NIM_NIL, NIM_NIL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT);
 	nimln(61, "urandom.nim");
 	{
-		Oserror3433* e_276221;
+		Oserror3433* e_130221;
 		NimStringDesc* LOC5;
 		if (!(success == ((NI32) 0))) goto LA3;
-		e_276221 = 0;
+		e_130221 = 0;
 		nimln(2265, "system.nim");
-		e_276221 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
-		(*e_276221).Sup.Sup.Sup.m_type = (&NTI3433);
+		e_130221 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
+		(*e_130221).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_276221).Sup.Sup.message; (*e_276221).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2715));
+		LOC5 = (*e_130221).Sup.Sup.message; (*e_130221).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP565));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(62, "urandom.nim");
-		raiseException((Exception*)e_276221, "OSError");
+		raiseException((Exception*)e_130221, "OSError");
 	}
 	LA3: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2716)(void* p, NI op) {
-	TY276432* a;
+N_NIMCALL(void, TMP566)(void* p, NI op) {
+	TY130432* a;
 	NI LOC1;
-	a = (TY276432*)p;
+	a = (TY130432*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	}
@@ -375,45 +375,45 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(TY276432*, urandom_276429)(NI size) {
-	TY276432* result;
-	NI32 success_276445;
+N_NIMCALL(TY130432*, urandom_130429)(NI size) {
+	TY130432* result;
+	NI32 success_130445;
 	nimfr("urandom", "urandom.nim")
 	result = 0;
 	nimln(96, "urandom.nim");
-	result = (TY276432*) newSeq((&NTI276432), size);
+	result = (TY130432*) newSeq((&NTI130432), size);
 	nimln(66, "urandom.nim");
 	{
-		if (!(cryptprov_276214 == ((NI) 0))) goto LA3;
+		if (!(cryptprov_130214 == ((NI) 0))) goto LA3;
 		nimln(67, "urandom.nim");
-		urandominit_276215();
+		urandominit_130215();
 	}
 	LA3: ;
 	nimln(69, "urandom.nim");
 	if ((NU)(((NI) 0)) >= (NU)(result->Sup.len)) raiseIndexError();
-	success_276445 = Dl_276209(cryptprov_276214, ((NI32)chckRange(size, ((NI32) (-2147483647 -1)), ((NI32) 2147483647))), ((void*) ((&result->data[((NI) 0)]))));
+	success_130445 = Dl_130209(cryptprov_130214, ((NI32)chckRange(size, ((NI32) (-2147483647 -1)), ((NI32) 2147483647))), ((void*) ((&result->data[((NI) 0)]))));
 	nimln(70, "urandom.nim");
 	{
-		Oserror3433* e_276603;
+		Oserror3433* e_130603;
 		NimStringDesc* LOC9;
-		if (!(success_276445 == ((NI32) 0))) goto LA7;
-		e_276603 = 0;
+		if (!(success_130445 == ((NI32) 0))) goto LA7;
+		e_130603 = 0;
 		nimln(2265, "system.nim");
-		e_276603 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
-		(*e_276603).Sup.Sup.Sup.m_type = (&NTI3433);
+		e_130603 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
+		(*e_130603).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC9 = 0;
-		LOC9 = (*e_276603).Sup.Sup.message; (*e_276603).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2717));
+		LOC9 = (*e_130603).Sup.Sup.message; (*e_130603).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP567));
 		if (LOC9) nimGCunrefNoCycle(LOC9);
 		nimln(71, "urandom.nim");
-		raiseException((Exception*)e_276603, "OSError");
+		raiseException((Exception*)e_130603, "OSError");
 	}
 	LA7: ;
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NU8, randomuint8_276835)(Systemrandom276656* self) {
+static N_INLINE(NU8, randomuint8_130835)(Systemrandom130656* self) {
 	NU8 result;
 	nimfr("randomUint8", "urandom.nim")
 	result = 0;
@@ -422,10 +422,10 @@ static N_INLINE(NU8, randomuint8_276835)(Systemrandom276656* self) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2720)(void* p, NI op) {
-	TY276823* a;
-	a = (TY276823*)p;
-	nimGCvisit((void*)(*a).HEX3Atmp276814, op);
+N_NIMCALL(void, TMP570)(void* p, NI op) {
+	TY130823* a;
+	a = (TY130823*)p;
+	nimGCvisit((void*)(*a).HEX3Atmp130814, op);
 }
 
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
@@ -483,13 +483,13 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_CLOSURE(NU8, sysrandombytes_276665)(Systemrandom276656* self, void* ClEnv) {
+N_CLOSURE(NU8, sysrandombytes_130665)(Systemrandom130656* self, void* ClEnv) {
 	NU8 result;
-	TY276823* HEX3Aenvp_276826;
+	TY130823* HEX3Aenvp_130826;
 	nimfr("sysRandomBytes", "urandom.nim")
 {	result = 0;
-	HEX3Aenvp_276826 = (TY276823*) ClEnv;
-	switch ((*HEX3Aenvp_276826).HEX3Astate) {
+	HEX3Aenvp_130826 = (TY130823*) ClEnv;
+	switch ((*HEX3Aenvp_130826).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -500,31 +500,31 @@ N_CLOSURE(NU8, sysrandombytes_276665)(Systemrandom276656* self, void* ClEnv) {
 		while (1) {
 			{
 				nimln(117, "urandom.nim");
-				asgnRefNoCycle((void**) (&(*HEX3Aenvp_276826).HEX3Atmp276814), urandom_276429(((NI) 128)));
+				asgnRefNoCycle((void**) (&(*HEX3Aenvp_130826).HEX3Atmp130814), urandom_130429(((NI) 128)));
 				nimln(3084, "system.nim");
-				(*HEX3Aenvp_276826).i276817 = ((NI) 0);
+				(*HEX3Aenvp_130826).i130817 = ((NI) 0);
 				nimln(3085, "system.nim");
-				(*HEX3Aenvp_276826).L276819 = ((*HEX3Aenvp_276826).HEX3Atmp276814 ? (*HEX3Aenvp_276826).HEX3Atmp276814->Sup.len : 0);
+				(*HEX3Aenvp_130826).L130819 = ((*HEX3Aenvp_130826).HEX3Atmp130814 ? (*HEX3Aenvp_130826).HEX3Atmp130814->Sup.len : 0);
 				{
 					nimln(3086, "system.nim");
 					while (1) {
-						NI TMP2721;
-						if (!((*HEX3Aenvp_276826).i276817 < (*HEX3Aenvp_276826).L276819)) goto LA5;
+						NI TMP571;
+						if (!((*HEX3Aenvp_130826).i130817 < (*HEX3Aenvp_130826).L130819)) goto LA5;
 						nimln(3087, "system.nim");
-						if ((NU)((*HEX3Aenvp_276826).i276817) >= (NU)((*HEX3Aenvp_276826).HEX3Atmp276814->Sup.len)) raiseIndexError();
-						(*HEX3Aenvp_276826).b276811 = (*HEX3Aenvp_276826).HEX3Atmp276814->data[(*HEX3Aenvp_276826).i276817];
+						if ((NU)((*HEX3Aenvp_130826).i130817) >= (NU)((*HEX3Aenvp_130826).HEX3Atmp130814->Sup.len)) raiseIndexError();
+						(*HEX3Aenvp_130826).b130811 = (*HEX3Aenvp_130826).HEX3Atmp130814->data[(*HEX3Aenvp_130826).i130817];
 						nimln(118, "urandom.nim");
-						(*HEX3Aenvp_276826).HEX3Astate = ((NI) 1);
-						result = (*HEX3Aenvp_276826).b276811;
+						(*HEX3Aenvp_130826).HEX3Astate = ((NI) 1);
+						result = (*HEX3Aenvp_130826).b130811;
 						goto BeforeRet;
 						STATE1: ;
 						nimln(3088, "system.nim");
-						TMP2721 = addInt((*HEX3Aenvp_276826).i276817, ((NI) 1));
-						(*HEX3Aenvp_276826).i276817 = (NI)(TMP2721);
+						TMP571 = addInt((*HEX3Aenvp_130826).i130817, ((NI) 1));
+						(*HEX3Aenvp_130826).i130817 = (NI)(TMP571);
 						nimln(3089, "system.nim");
 						{
-							if (!!((((*HEX3Aenvp_276826).HEX3Atmp276814 ? (*HEX3Aenvp_276826).HEX3Atmp276814->Sup.len : 0) == (*HEX3Aenvp_276826).L276819))) goto LA8;
-							failedassertimpl_88817(((NimStringDesc*) &TMP2722));
+							if (!!((((*HEX3Aenvp_130826).HEX3Atmp130814 ? (*HEX3Aenvp_130826).HEX3Atmp130814->Sup.len : 0) == (*HEX3Aenvp_130826).L130819))) goto LA8;
+							failedassertimpl_88817(((NimStringDesc*) &TMP572));
 						}
 						LA8: ;
 					} LA5: ;
@@ -533,22 +533,22 @@ N_CLOSURE(NU8, sysrandombytes_276665)(Systemrandom276656* self, void* ClEnv) {
 		}
 	}
 	nimln(113, "urandom.nim");
-	(*HEX3Aenvp_276826).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_130826).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, initsystemrandom_276846)(Systemrandom276656* Result) {
-	TY276823* sysrandombytes_276852;
-	TY276657 LOC1;
+N_NIMCALL(void, initsystemrandom_130846)(Systemrandom130656* Result) {
+	TY130823* sysrandombytes_130852;
+	TY130657 LOC1;
 	nimfr("initSystemRandom", "urandom.nim")
 	nimln(125, "urandom.nim");
-	sysrandombytes_276852 = 0;
+	sysrandombytes_130852 = 0;
 	nimln(180, "system.nim");
-	sysrandombytes_276852 = (TY276823*) newObj((&NTI276827), sizeof(TY276823));
+	sysrandombytes_130852 = (TY130823*) newObj((&NTI130827), sizeof(TY130823));
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = sysrandombytes_276665; LOC1.ClEnv = sysrandombytes_276852;
+	LOC1.ClPrc = sysrandombytes_130665; LOC1.ClEnv = sysrandombytes_130852;
 	unsureAsgnRef((void**) (&(*Result).bytesit.ClEnv), LOC1.ClEnv);
 	(*Result).bytesit.ClPrc = LOC1.ClPrc;
 	popFrame();
@@ -556,57 +556,61 @@ N_NIMCALL(void, initsystemrandom_276846)(Systemrandom276656* Result) {
 NIM_EXTERNC N_NOINLINE(void, random_urandomInit)(void) {
 	nimfr("urandom", "urandom.nim")
 	nimln(55, "urandom.nim");
-	cryptprov_276214 = ((NI) 0);
+	cryptprov_130214 = ((NI) 0);
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, random_urandomDatInit)(void) {
-static TNimNode* TMP2719[5];
-static TNimNode TMP2710[6];
-NTI276432.size = sizeof(TY276432*);
-NTI276432.kind = 24;
-NTI276432.base = (&NTI120);
-NTI276432.flags = 2;
-NTI276432.marker = TMP2716;
-NTI276823.size = sizeof(TY276823);
-NTI276823.kind = 18;
-NTI276823.base = 0;
-NTI276823.flags = 2;
-TMP2719[0] = &TMP2710[1];
-TMP2710[1].kind = 1;
-TMP2710[1].offset = offsetof(TY276823, HEX3Astate);
-TMP2710[1].typ = (&NTI257412);
-TMP2710[1].name = ":state";
-TMP2719[1] = &TMP2710[2];
-TMP2710[2].kind = 1;
-TMP2710[2].offset = offsetof(TY276823, b276811);
-TMP2710[2].typ = (&NTI120);
-TMP2710[2].name = "b276811";
-TMP2719[2] = &TMP2710[3];
-TMP2710[3].kind = 1;
-TMP2710[3].offset = offsetof(TY276823, HEX3Atmp276814);
-TMP2710[3].typ = (&NTI276432);
-TMP2710[3].name = ":tmp276814";
-TMP2719[3] = &TMP2710[4];
-TMP2710[4].kind = 1;
-TMP2710[4].offset = offsetof(TY276823, i276817);
-TMP2710[4].typ = (&NTI108);
-TMP2710[4].name = "i276817";
-TMP2719[4] = &TMP2710[5];
-TMP2710[5].kind = 1;
-TMP2710[5].offset = offsetof(TY276823, L276819);
-TMP2710[5].typ = (&NTI108);
-TMP2710[5].name = "L276819";
-TMP2710[0].len = 5; TMP2710[0].kind = 2; TMP2710[0].sons = &TMP2719[0];
-NTI276823.node = &TMP2710[0];
-NTI276827.size = sizeof(TY276823*);
-NTI276827.kind = 22;
-NTI276827.base = (&NTI276823);
-NTI276827.flags = 2;
-NTI276827.marker = TMP2720;
-if (!((TMP2712 = nimLoadLibrary((NimStringDesc*) &TMP2713))
-)) nimLoadLibraryError((NimStringDesc*) &TMP2714);
-	Dl_276201 = (TY276202) nimGetProcAddr(TMP2712, "CryptAcquireContextW");
-	Dl_276209 = (TY276210) nimGetProcAddr(TMP2712, "CryptGenRandom");
+static TNimNode* TMP569[5];
+static TNimNode TMP559[6];
+NTI130432.size = sizeof(TY130432*);
+NTI130432.kind = 24;
+NTI130432.base = (&NTI120);
+NTI130432.flags = 2;
+NTI130432.marker = TMP566;
+NTI130823.size = sizeof(TY130823);
+NTI130823.kind = 18;
+NTI130823.base = 0;
+NTI130823.flags = 2;
+TMP569[0] = &TMP559[1];
+NTI130825.size = sizeof(NI);
+NTI130825.kind = 20;
+NTI130825.base = (&NTI108);
+NTI130825.flags = 3;
+TMP559[1].kind = 1;
+TMP559[1].offset = offsetof(TY130823, HEX3Astate);
+TMP559[1].typ = (&NTI130825);
+TMP559[1].name = ":state";
+TMP569[1] = &TMP559[2];
+TMP559[2].kind = 1;
+TMP559[2].offset = offsetof(TY130823, b130811);
+TMP559[2].typ = (&NTI120);
+TMP559[2].name = "b130811";
+TMP569[2] = &TMP559[3];
+TMP559[3].kind = 1;
+TMP559[3].offset = offsetof(TY130823, HEX3Atmp130814);
+TMP559[3].typ = (&NTI130432);
+TMP559[3].name = ":tmp130814";
+TMP569[3] = &TMP559[4];
+TMP559[4].kind = 1;
+TMP559[4].offset = offsetof(TY130823, i130817);
+TMP559[4].typ = (&NTI108);
+TMP559[4].name = "i130817";
+TMP569[4] = &TMP559[5];
+TMP559[5].kind = 1;
+TMP559[5].offset = offsetof(TY130823, L130819);
+TMP559[5].typ = (&NTI108);
+TMP559[5].name = "L130819";
+TMP559[0].len = 5; TMP559[0].kind = 2; TMP559[0].sons = &TMP569[0];
+NTI130823.node = &TMP559[0];
+NTI130827.size = sizeof(TY130823*);
+NTI130827.kind = 22;
+NTI130827.base = (&NTI130823);
+NTI130827.flags = 2;
+NTI130827.marker = TMP570;
+if (!((TMP561 = nimLoadLibrary((NimStringDesc*) &TMP562))
+)) nimLoadLibraryError((NimStringDesc*) &TMP563);
+	Dl_130201 = (TY130202) nimGetProcAddr(TMP561, "CryptAcquireContextW");
+	Dl_130209 = (TY130210) nimGetProcAddr(TMP561, "CryptGenRandom");
 }
 

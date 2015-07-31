@@ -8,37 +8,37 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef struct Mtstate273035 Mtstate273035;
-typedef struct TY275057 TY275057;
+typedef struct Mtstate127035 Mtstate127035;
+typedef struct TY129057 TY129057;
 typedef struct TGenericSeq TGenericSeq;
-typedef NU32 TY273036[624];
-struct  Mtstate273035  {
-TY273036 mt;
+typedef NU32 TY127036[624];
+struct  Mtstate127035  {
+TY127036 mt;
 NI mti;
 };
 struct  TGenericSeq  {
 NI len;
 NI reserved;
 };
-struct TY275057 {
+struct TY129057 {
   TGenericSeq Sup;
   NU32 data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NU32, randomuint32_275012)(Mtstate273035* self);
-N_NIMCALL(NU32, genrandint32_273324)(Mtstate273035* s);
+static N_INLINE(NU32, randomuint32_129012)(Mtstate127035* self);
+N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NF, random_275023)(Mtstate273035* self);
-N_NIMCALL(NF, genrandres53_273780)(Mtstate273035* s);
-N_NIMCALL(Mtstate273035, initmersennetwister_275034)(NU32* seed, NI seedLen0);
-N_NIMCALL(Mtstate273035, initmtstate_273043)(void);
-N_NIMCALL(void, initbyarray_273116)(Mtstate273035* s, NU32* initkey, NI initkeyLen0);
-N_NIMCALL(TY275057*, bytestowords_275052)(NU8* bytes, NI bytesLen0);
-N_NIMCALL(TY275057*, newseq_275070)(NI len);
-N_NIMCALL(Mtstate273035, initmersennetwister_275046)(NU8* seed, NI seedLen0);
-N_NIMCALL(Mtstate273035, initmersennetwister_275199)(NU32 seed);
-N_NIMCALL(void, initgenrand_273053)(Mtstate273035* s, NU32 seed);
+static N_INLINE(NF, random_129023)(Mtstate127035* self);
+N_NIMCALL(NF, genrandres53_127780)(Mtstate127035* s);
+N_NIMCALL(Mtstate127035, initmersennetwister_129034)(NU32* seed, NI seedLen0);
+N_NIMCALL(Mtstate127035, initmtstate_127043)(void);
+N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyLen0);
+N_NIMCALL(TY129057*, bytestowords_129052)(NU8* bytes, NI bytesLen0);
+N_NIMCALL(TY129057*, newseq_129070)(NI len);
+N_NIMCALL(Mtstate127035, initmersennetwister_129046)(NU8* seed, NI seedLen0);
+N_NIMCALL(Mtstate127035, initmersennetwister_129199)(NU32 seed);
+N_NIMCALL(void, initgenrand_127053)(Mtstate127035* s, NU32 seed);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -68,60 +68,60 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NU32, randomuint32_275012)(Mtstate273035* self) {
+static N_INLINE(NU32, randomuint32_129012)(Mtstate127035* self) {
 	NU32 result;
 	nimfr("randomUint32", "mersenne.nim")
 	result = 0;
 	nimln(38, "mersenne.nim");
-	result = genrandint32_273324(self);
+	result = genrandint32_127324(self);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NF, random_275023)(Mtstate273035* self) {
+static N_INLINE(NF, random_129023)(Mtstate127035* self) {
 	NF result;
 	nimfr("random", "mersenne.nim")
 	result = 0;
 	nimln(41, "mersenne.nim");
-	result = genrandres53_273780(self);
+	result = genrandres53_127780(self);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Mtstate273035, initmersennetwister_275034)(NU32* seed, NI seedLen0) {
-	Mtstate273035 result;
+N_NIMCALL(Mtstate127035, initmersennetwister_129034)(NU32* seed, NI seedLen0) {
+	Mtstate127035 result;
 	nimfr("initMersenneTwister", "mersenne.nim")
 	memset((void*)(&result), 0, sizeof(result));
 	nimln(45, "mersenne.nim");
-	result = initmtstate_273043();
+	result = initmtstate_127043();
 	nimln(46, "mersenne.nim");
-	initbyarray_273116((&result), seed, seedLen0);
+	initbyarray_127116((&result), seed, seedLen0);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Mtstate273035, initmersennetwister_275046)(NU8* seed, NI seedLen0) {
-	Mtstate273035 result;
-	TY275057* words;
+N_NIMCALL(Mtstate127035, initmersennetwister_129046)(NU8* seed, NI seedLen0) {
+	Mtstate127035 result;
+	TY129057* words;
 	nimfr("initMersenneTwister", "mersenne.nim")
 	memset((void*)(&result), 0, sizeof(result));
 	nimln(49, "mersenne.nim");
 	nimln(50, "mersenne.nim");
-	words = bytestowords_275052(seed, seedLen0);
+	words = bytestowords_129052(seed, seedLen0);
 	nimln(51, "mersenne.nim");
-	result = initmersennetwister_275034(words->data, words->Sup.len);
+	result = initmersennetwister_129034(words->data, words->Sup.len);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Mtstate273035, initmersennetwister_275199)(NU32 seed) {
-	Mtstate273035 result;
+N_NIMCALL(Mtstate127035, initmersennetwister_129199)(NU32 seed) {
+	Mtstate127035 result;
 	nimfr("initMersenneTwister", "mersenne.nim")
 	memset((void*)(&result), 0, sizeof(result));
 	nimln(55, "mersenne.nim");
-	result = initmtstate_273043();
+	result = initmtstate_127043();
 	nimln(56, "mersenne.nim");
-	initgenrand_273053((&result), seed);
+	initgenrand_127053((&result), seed);
 	popFrame();
 	return result;
 }

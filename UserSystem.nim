@@ -1,5 +1,6 @@
 import parseopt2
 import strutils
+import sequtils
 import sockets
 import osproc
 import db_sqlite
@@ -72,6 +73,14 @@ create table if not exists users(
   loot varchar(300));
 """, [])
 
+db.exec(sql"""
+create table if not exists users_loot(
+  id integer primary key, 
+  weapon integer, 
+  armor integer, 
+  shield integer, 
+  bag varchar(1024))""", [])
+
 
 connect(sock, server, port)
 
@@ -131,6 +140,17 @@ proc loginUser(name: string, pass: string): bool =
     result = true
   else:
     result = false
+
+
+proc logoutUser(name: string): bool =
+  if isLoggedIn(name):
+    for i in countup(0, loggedIn.high):
+      if cmpIgnoreCase(loggedIn[i], name) == 0:
+        loggedIn.delete(i, i)
+        result = true
+        return
+  result = false
+
 
 proc upvote(name: string): int =
   db.exec(sql"""

@@ -8,8 +8,8 @@
 #include "nimbase.h"
 typedef struct TGenericSeq TGenericSeq;
 typedef struct NimStringDesc NimStringDesc;
-typedef struct Tsqlite3165291 Tsqlite3165291;
-typedef struct Tstmt165301 Tstmt165301;
+typedef struct Tsqlite3188286 Tsqlite3188286;
+typedef struct Tstmt188296 Tstmt188296;
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -18,21 +18,21 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-typedef N_CDECL_PTR(NCSTRING, TY165547) (Tsqlite3165291* para1);
-typedef N_CDECL_PTR(int, TY165571) (Tsqlite3165291* db, NCSTRING zsql, int nbyte, Tstmt165301** ppstmt, NCSTRING* pztail);
-typedef N_CDECL_PTR(NI32, TY165740) (Tstmt165301* para1);
-typedef N_CDECL_PTR(NI32, TY165815) (Tstmt165301* pstmt);
-typedef N_CDECL_PTR(NI32, TY165759) (Tstmt165301* para1, NI32 icol);
-typedef N_CDECL_PTR(NCSTRING, TY165794) (Tstmt165301* para1, NI32 icol);
-typedef N_CDECL_PTR(NI32, TY165706) (Tstmt165301* pstmt);
-typedef N_CDECL_PTR(NI64, TY165379) (Tsqlite3165291* para1);
-typedef N_CDECL_PTR(NI32, TY165385) (Tsqlite3165291* para1);
-typedef N_CDECL_PTR(NI32, TY165362) (Tsqlite3165291* para1);
-typedef N_CDECL_PTR(NI32, TY165525) (NCSTRING filename, Tsqlite3165291** ppdb);
-struct  Tsqlite3165291  {
+typedef N_CDECL_PTR(NCSTRING, TY188542) (Tsqlite3188286* para1);
+typedef N_CDECL_PTR(int, TY188566) (Tsqlite3188286* db, NCSTRING zsql, int nbyte, Tstmt188296** ppstmt, NCSTRING* pztail);
+typedef N_CDECL_PTR(NI32, TY188735) (Tstmt188296* para1);
+typedef N_CDECL_PTR(NI32, TY188810) (Tstmt188296* pstmt);
+typedef N_CDECL_PTR(NI32, TY188754) (Tstmt188296* para1, NI32 icol);
+typedef N_CDECL_PTR(NCSTRING, TY188789) (Tstmt188296* para1, NI32 icol);
+typedef N_CDECL_PTR(NI32, TY188701) (Tstmt188296* pstmt);
+typedef N_CDECL_PTR(NI64, TY188374) (Tsqlite3188286* para1);
+typedef N_CDECL_PTR(NI32, TY188380) (Tsqlite3188286* para1);
+typedef N_CDECL_PTR(NI32, TY188357) (Tsqlite3188286* para1);
+typedef N_CDECL_PTR(NI32, TY188520) (NCSTRING filename, Tsqlite3188286** ppdb);
+struct  Tsqlite3188286  {
 char dummy;
 };
-struct  Tstmt165301  {
+struct  Tstmt188296  {
 char dummy;
 };
 N_NIMCALL(void*, nimLoadLibrary)(NimStringDesc* path);
@@ -41,20 +41,20 @@ N_NIMCALL(void*, nimGetProcAddr)(void* lib, NCSTRING name);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-STRING_LITERAL(TMP686, "sqlite3.dll", 11);
-STRING_LITERAL(TMP687, "sqlite3.dll", 11);
-static void* TMP685;
-TY165547 Dl_165546;
-TY165571 Dl_165570;
-TY165740 Dl_165739;
-TY165815 Dl_165814;
-TY165759 Dl_165758;
-TY165794 Dl_165793;
-TY165706 Dl_165705;
-TY165379 Dl_165378;
-TY165385 Dl_165384;
-TY165362 Dl_165361;
-TY165525 Dl_165524;
+STRING_LITERAL(TMP805, "sqlite3.dll", 11);
+STRING_LITERAL(TMP806, "sqlite3.dll", 11);
+static void* TMP804;
+TY188542 Dl_188541;
+TY188566 Dl_188565;
+TY188735 Dl_188734;
+TY188810 Dl_188809;
+TY188754 Dl_188753;
+TY188789 Dl_188788;
+TY188701 Dl_188700;
+TY188374 Dl_188373;
+TY188380 Dl_188379;
+TY188357 Dl_188356;
+TY188520 Dl_188519;
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -89,18 +89,18 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_sqlite3Init)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_sqlite3DatInit)(void) {
-if (!((TMP685 = nimLoadLibrary((NimStringDesc*) &TMP686))
-)) nimLoadLibraryError((NimStringDesc*) &TMP687);
-	Dl_165546 = (TY165547) nimGetProcAddr(TMP685, "sqlite3_errmsg");
-	Dl_165570 = (TY165571) nimGetProcAddr(TMP685, "sqlite3_prepare_v2");
-	Dl_165739 = (TY165740) nimGetProcAddr(TMP685, "sqlite3_step");
-	Dl_165814 = (TY165815) nimGetProcAddr(TMP685, "sqlite3_finalize");
-	Dl_165758 = (TY165759) nimGetProcAddr(TMP685, "sqlite3_column_bytes");
-	Dl_165793 = (TY165794) nimGetProcAddr(TMP685, "sqlite3_column_text");
-	Dl_165705 = (TY165706) nimGetProcAddr(TMP685, "sqlite3_column_count");
-	Dl_165378 = (TY165379) nimGetProcAddr(TMP685, "sqlite3_last_insert_rowid");
-	Dl_165384 = (TY165385) nimGetProcAddr(TMP685, "sqlite3_changes");
-	Dl_165361 = (TY165362) nimGetProcAddr(TMP685, "sqlite3_close");
-	Dl_165524 = (TY165525) nimGetProcAddr(TMP685, "sqlite3_open");
+if (!((TMP804 = nimLoadLibrary((NimStringDesc*) &TMP805))
+)) nimLoadLibraryError((NimStringDesc*) &TMP806);
+	Dl_188541 = (TY188542) nimGetProcAddr(TMP804, "sqlite3_errmsg");
+	Dl_188565 = (TY188566) nimGetProcAddr(TMP804, "sqlite3_prepare_v2");
+	Dl_188734 = (TY188735) nimGetProcAddr(TMP804, "sqlite3_step");
+	Dl_188809 = (TY188810) nimGetProcAddr(TMP804, "sqlite3_finalize");
+	Dl_188753 = (TY188754) nimGetProcAddr(TMP804, "sqlite3_column_bytes");
+	Dl_188788 = (TY188789) nimGetProcAddr(TMP804, "sqlite3_column_text");
+	Dl_188700 = (TY188701) nimGetProcAddr(TMP804, "sqlite3_column_count");
+	Dl_188373 = (TY188374) nimGetProcAddr(TMP804, "sqlite3_last_insert_rowid");
+	Dl_188379 = (TY188380) nimGetProcAddr(TMP804, "sqlite3_changes");
+	Dl_188356 = (TY188357) nimGetProcAddr(TMP804, "sqlite3_close");
+	Dl_188519 = (TY188520) nimGetProcAddr(TMP804, "sqlite3_open");
 }
 

@@ -10,7 +10,7 @@
 #include <string.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Uri235012 Uri235012;
+typedef struct Uri247012 Uri247012;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
 typedef struct Valueerror3449 Valueerror3449;
@@ -41,7 +41,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  Uri235012  {
+struct  Uri247012  {
 NimStringDesc* scheme;
 NimStringDesc* username;
 NimStringDesc* password;
@@ -198,12 +198,12 @@ struct TY13606 {
   TGenericSeq Sup;
   NimStringDesc* data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NimStringDesc*, HEX24_235033)(NimStringDesc* url);
+N_NIMCALL(NimStringDesc*, HEX24_247033)(NimStringDesc* url);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NimStringDesc*, HEX2F_235044)(NimStringDesc* a, NimStringDesc* b);
+N_NIMCALL(NimStringDesc*, HEX2F_247044)(NimStringDesc* a, NimStringDesc* b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NOINLINE(void, raiseIndexError)(void);
@@ -212,22 +212,22 @@ N_NIMCALL(NimStringDesc*, copyStr)(NimStringDesc* s, NI start);
 N_NIMCALL(NimStringDesc*, copyStr)(NimStringDesc* s, NI first);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_NIMCALL(void, add_235058)(NimStringDesc** url, NimStringDesc* a);
+N_NIMCALL(void, add_247058)(NimStringDesc** url, NimStringDesc* a);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(void, parseauthority_235072)(NimStringDesc* authority, Uri235012* result);
+N_NIMCALL(void, parseauthority_247072)(NimStringDesc* authority, Uri247012* result);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(void, parsepath_235121)(NimStringDesc* uri, NI* i, Uri235012* result);
-static N_INLINE(NI, parseuntil_95581)(NimStringDesc* s, NimStringDesc** token, TY77659 until, NI start);
+N_NIMCALL(void, parsepath_247121)(NimStringDesc* uri, NI* i, Uri247012* result);
+static N_INLINE(NI, parseuntil_93581)(NimStringDesc* s, NimStringDesc** token, TY77659 until, NI start);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
 N_NIMCALL(NimStringDesc*, nsuToLowerStr)(NimStringDesc* s);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
-N_NIMCALL(void, inituri_235186)(Uri235012* Result);
+N_NIMCALL(void, inituri_247186)(Uri247012* Result);
 N_NIMCALL(void, genericShallowAssign)(void* dest, void* src, TNimType* mt);
-N_NIMCALL(void, reseturi_235196)(Uri235012* uri);
-N_NIMCALL(void, parseuri_237007)(NimStringDesc* uri, Uri235012* result);
-static N_INLINE(NI, parsewhile_95654)(NimStringDesc* s, NimStringDesc** token, TY77659 validchars, NI start);
+N_NIMCALL(void, reseturi_247196)(Uri247012* uri);
+N_NIMCALL(void, parseuri_249007)(NimStringDesc* uri, Uri247012* result);
+static N_INLINE(NI, parsewhile_93654)(NimStringDesc* s, NimStringDesc** token, TY77659 validchars, NI start);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
@@ -235,70 +235,70 @@ static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(void, parseuri_237100)(NimStringDesc* uri, Uri235012* Result);
+N_NIMCALL(void, parseuri_249100)(NimStringDesc* uri, Uri247012* Result);
 N_NOINLINE(void, chckNil)(void* p);
 N_NIMCALL(void, genericReset)(void* dest, TNimType* mt);
-N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path);
+N_NIMCALL(NimStringDesc*, removedotsegments_249111)(NimStringDesc* path);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(TGenericSeq*, incrSeq)(TGenericSeq* seq, NI elemsize);
-static N_INLINE(NimStringDesc*, pop_125662)(TY13606** s);
+static N_INLINE(NimStringDesc*, pop_150662)(TY13606** s);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(TGenericSeq*, setLengthSeq)(TGenericSeq* seq, NI elemsize, NI newlen);
 N_NIMCALL(NimStringDesc*, nsuJoinSep)(NimStringDesc** a, NI aLen0, NimStringDesc* sep);
-N_NIMCALL(NimStringDesc*, merge_237219)(Uri235012* base, Uri235012* reference);
+N_NIMCALL(NimStringDesc*, merge_249219)(Uri247012* base, Uri247012* reference);
 static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
-N_NIMCALL(NI, rfind_101099)(NimStringDesc* s, NimStringDesc* sub, NI start);
+N_NIMCALL(NI, rfind_99099)(NimStringDesc* s, NimStringDesc* sub, NI start);
 static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x);
-static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b);
-N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012* Result);
+static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b);
+N_NIMCALL(void, combine_249241)(Uri247012* base, Uri247012* reference, Uri247012* Result);
 N_NIMCALL(void, genericAssign)(void* dest, void* src, TNimType* mt);
 N_NIMCALL(NIM_BOOL, nsuStartsWith)(NimStringDesc* s, NimStringDesc* prefix);
-N_NIMCALL(void, combine_237256)(Uri235012* uris, NI urisLen0, Uri235012* Result);
-N_NIMCALL(void, HEX2F_237312)(Uri235012* x, NimStringDesc* path, Uri235012* Result);
-N_NIMCALL(NimStringDesc*, HEX24_237333)(Uri235012* u);
-static NIM_CONST TY77659 TMP1297 = {
+N_NIMCALL(void, combine_249256)(Uri247012* uris, NI urisLen0, Uri247012* Result);
+N_NIMCALL(void, HEX2F_249312)(Uri247012* x, NimStringDesc* path, Uri247012* Result);
+N_NIMCALL(NimStringDesc*, HEX24_249333)(Uri247012* u);
+static NIM_CONST TY77659 TMP1375 = {
 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x80,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP1299, "mailto", 6);
-static NIM_CONST TY77659 TMP1301 = {
+STRING_LITERAL(TMP1377, "mailto", 6);
+static NIM_CONST TY77659 TMP1379 = {
 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY77659 TMP1304 = {
+static NIM_CONST TY77659 TMP1382 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP1306, "", 0);
-static NIM_CONST TY77659 TMP1311 = {
+STRING_LITERAL(TMP1384, "", 0);
+static NIM_CONST TY77659 TMP1389 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x68, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x07, 0xFE, 0xFF, 0xFF, 0x07,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY77659 TMP1316 = {
+static NIM_CONST TY77659 TMP1394 = {
 0x00, 0x00, 0x00, 0x00, 0x08, 0x80, 0x00, 0x80,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP1318, "Expected authority got nothing.", 31);
-STRING_LITERAL(TMP1327, "/", 1);
-STRING_LITERAL(TMP1336, ":", 1);
-STRING_LITERAL(TMP1337, "://", 3);
-STRING_LITERAL(TMP1338, "@", 1);
-STRING_LITERAL(TMP1339, "?", 1);
-STRING_LITERAL(TMP1340, "#", 1);
+STRING_LITERAL(TMP1396, "Expected authority got nothing.", 31);
+STRING_LITERAL(TMP1405, "/", 1);
+STRING_LITERAL(TMP1414, ":", 1);
+STRING_LITERAL(TMP1415, "://", 3);
+STRING_LITERAL(TMP1416, "@", 1);
+STRING_LITERAL(TMP1417, "?", 1);
+STRING_LITERAL(TMP1418, "#", 1);
 extern TFrame* frameptr_17042;
-TNimType NTI235012; /* Uri */
+TNimType NTI247012; /* Uri */
 extern TNimType NTI149; /* string */
 extern TNimType NTI138; /* bool */
 extern TNimType NTI22801; /* ref ValueError */
@@ -333,7 +333,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_235033)(NimStringDesc* url) {
+N_NIMCALL(NimStringDesc*, HEX24_247033)(NimStringDesc* url) {
 	NimStringDesc* result;
 	nimfr("$", "uri.nim")
 {	result = 0;
@@ -370,16 +370,16 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(NimStringDesc*, HEX2F_235044)(NimStringDesc* a, NimStringDesc* b) {
+N_NIMCALL(NimStringDesc*, HEX2F_247044)(NimStringDesc* a, NimStringDesc* b) {
 	NimStringDesc* result;
 	NimStringDesc* urls;
 	NimStringDesc* bs;
 	nimfr("/", "uri.nim")
 {	result = 0;
 	nimln(32, "uri.nim");
-	urls = HEX24_235033(a);
+	urls = HEX24_247033(a);
 	nimln(33, "uri.nim");
-	bs = HEX24_235033(b);
+	bs = HEX24_247033(b);
 	nimln(34, "uri.nim");
 	{
 		if (!((urls) && (urls)->Sup.len == 0)) goto LA3;
@@ -389,10 +389,10 @@ N_NIMCALL(NimStringDesc*, HEX2F_235044)(NimStringDesc* a, NimStringDesc* b) {
 	LA3: ;
 	nimln(35, "uri.nim");
 	{
-		NI TMP1292;
-		TMP1292 = subInt((urls ? urls->Sup.len : 0), ((NI) 1));
-		if ((NU)((NI)(TMP1292)) > (NU)(urls->Sup.len)) raiseIndexError();
-		if (!!(((NU8)(urls->data[(NI)(TMP1292)]) == (NU8)(47)))) goto LA7;
+		NI TMP1370;
+		TMP1370 = subInt((urls ? urls->Sup.len : 0), ((NI) 1));
+		if ((NU)((NI)(TMP1370)) > (NU)(urls->Sup.len)) raiseIndexError();
+		if (!!(((NU8)(urls->data[(NI)(TMP1370)]) == (NU8)(47)))) goto LA7;
 		nimln(36, "uri.nim");
 		urls = addChar(urls, 47);
 	}
@@ -423,10 +423,10 @@ appendString(urls, bs);
 	return result;
 }
 
-N_NIMCALL(void, add_235058)(NimStringDesc** url, NimStringDesc* a) {
+N_NIMCALL(void, add_247058)(NimStringDesc** url, NimStringDesc* a) {
 	nimfr("add", "uri.nim")
 	nimln(47, "uri.nim");
-	unsureAsgnRef((void**) (&(*url)), HEX2F_235044((*url), a));
+	unsureAsgnRef((void**) (&(*url)), HEX2F_247044((*url), a));
 	popFrame();
 }
 
@@ -450,7 +450,7 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, parseauthority_235072)(NimStringDesc* authority, Uri235012* result) {
+N_NIMCALL(void, parseauthority_247072)(NimStringDesc* authority, Uri247012* result) {
 	NI i;
 	NIM_BOOL inport;
 	nimfr("parseAuthority", "uri.nim")
@@ -461,7 +461,7 @@ N_NIMCALL(void, parseauthority_235072)(NimStringDesc* authority, Uri235012* resu
 	{
 		nimln(53, "uri.nim");
 		while (1) {
-			NI TMP1293;
+			NI TMP1371;
 			nimln(54, "uri.nim");
 			if ((NU)(i) > (NU)(authority->Sup.len)) raiseIndexError();
 			switch (((NU8)(authority->data[i]))) {
@@ -520,18 +520,18 @@ N_NIMCALL(void, parseauthority_235072)(NimStringDesc* authority, Uri235012* resu
 			break;
 			}
 			nimln(69, "uri.nim");
-			TMP1293 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1293);
+			TMP1371 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1371);
 		}
 	} LA1: ;
 	popFrame();
 }
 
-static N_INLINE(NI, parseuntil_95581)(NimStringDesc* s, NimStringDesc** token, TY77659 until, NI start) {
+static N_INLINE(NI, parseuntil_93581)(NimStringDesc* s, NimStringDesc** token, TY77659 until, NI start) {
 	NI result;
 	NI i;
-	NI TMP1295;
-	NI TMP1296;
+	NI TMP1373;
+	NI TMP1374;
 	nimfr("parseUntil", "parseutils.nim")
 	result = 0;
 	nimln(158, "parseutils.nim");
@@ -540,7 +540,7 @@ static N_INLINE(NI, parseuntil_95581)(NimStringDesc* s, NimStringDesc** token, T
 		nimln(159, "parseutils.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP1294;
+			NI TMP1372;
 			LOC3 = 0;
 			LOC3 = (i < (s ? s->Sup.len : 0));
 			if (!(LOC3)) goto LA4;
@@ -548,16 +548,16 @@ static N_INLINE(NI, parseuntil_95581)(NimStringDesc* s, NimStringDesc** token, T
 			LOC3 = !(((until[((NU8)(s->data[i]))/8] &(1<<(((NU8)(s->data[i]))%8)))!=0));
 			LA4: ;
 			if (!LOC3) goto LA2;
-			TMP1294 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1294);
+			TMP1372 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1372);
 		} LA2: ;
 	}
 	nimln(160, "parseutils.nim");
-	TMP1295 = subInt(i, start);
-	result = (NI)(TMP1295);
+	TMP1373 = subInt(i, start);
+	result = (NI)(TMP1373);
 	nimln(161, "parseutils.nim");
-	TMP1296 = subInt(i, ((NI) 1));
-	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP1296)));
+	TMP1374 = subInt(i, ((NI) 1));
+	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP1374)));
 	popFrame();
 	return result;
 }
@@ -598,83 +598,83 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(void, parsepath_235121)(NimStringDesc* uri, NI* i, Uri235012* result) {
+N_NIMCALL(void, parsepath_247121)(NimStringDesc* uri, NI* i, Uri247012* result) {
 	NI LOC1;
-	NI TMP1298;
+	NI TMP1376;
 	nimfr("parsePath", "uri.nim")
 	nimln(73, "uri.nim");
 	LOC1 = 0;
-	LOC1 = parseuntil_95581(uri, (&(*result).path), TMP1297, (*i));
-	TMP1298 = addInt((*i), LOC1);
-	(*i) = (NI)(TMP1298);
+	LOC1 = parseuntil_93581(uri, (&(*result).path), TMP1375, (*i));
+	TMP1376 = addInt((*i), LOC1);
+	(*i) = (NI)(TMP1376);
 	nimln(76, "uri.nim");
 	{
 		NimStringDesc* LOC4;
 		LOC4 = 0;
 		LOC4 = nsuToLowerStr((*result).scheme);
-		if (!eqStrings(LOC4, ((NimStringDesc*) &TMP1299))) goto LA5;
+		if (!eqStrings(LOC4, ((NimStringDesc*) &TMP1377))) goto LA5;
 		nimln(77, "uri.nim");
-		parseauthority_235072((*result).path, result);
+		parseauthority_247072((*result).path, result);
 		nimln(78, "uri.nim");
 		(*result).path = setLengthStr((*result).path, ((NI) 0));
 	}
 	LA5: ;
 	nimln(80, "uri.nim");
 	{
-		NI TMP1300;
+		NI TMP1378;
 		NI LOC11;
-		NI TMP1302;
+		NI TMP1380;
 		if ((NU)((*i)) > (NU)(uri->Sup.len)) raiseIndexError();
 		if (!((NU8)(uri->data[(*i)]) == (NU8)(63))) goto LA9;
 		nimln(81, "uri.nim");
-		TMP1300 = addInt((*i), ((NI) 1));
-		(*i) = (NI)(TMP1300);
+		TMP1378 = addInt((*i), ((NI) 1));
+		(*i) = (NI)(TMP1378);
 		nimln(82, "uri.nim");
 		LOC11 = 0;
-		LOC11 = parseuntil_95581(uri, (&(*result).query), TMP1301, (*i));
-		TMP1302 = addInt((*i), LOC11);
-		(*i) = (NI)(TMP1302);
+		LOC11 = parseuntil_93581(uri, (&(*result).query), TMP1379, (*i));
+		TMP1380 = addInt((*i), LOC11);
+		(*i) = (NI)(TMP1380);
 	}
 	LA9: ;
 	nimln(84, "uri.nim");
 	{
-		NI TMP1303;
+		NI TMP1381;
 		NI LOC16;
-		NI TMP1305;
+		NI TMP1383;
 		if ((NU)((*i)) > (NU)(uri->Sup.len)) raiseIndexError();
 		if (!((NU8)(uri->data[(*i)]) == (NU8)(35))) goto LA14;
 		nimln(85, "uri.nim");
-		TMP1303 = addInt((*i), ((NI) 1));
-		(*i) = (NI)(TMP1303);
+		TMP1381 = addInt((*i), ((NI) 1));
+		(*i) = (NI)(TMP1381);
 		nimln(86, "uri.nim");
 		LOC16 = 0;
-		LOC16 = parseuntil_95581(uri, (&(*result).anchor), TMP1304, (*i));
-		TMP1305 = addInt((*i), LOC16);
-		(*i) = (NI)(TMP1305);
+		LOC16 = parseuntil_93581(uri, (&(*result).anchor), TMP1382, (*i));
+		TMP1383 = addInt((*i), LOC16);
+		(*i) = (NI)(TMP1383);
 	}
 	LA14: ;
 	popFrame();
 }
 
-N_NIMCALL(void, inituri_235186)(Uri235012* Result) {
-	Uri235012 LOC1;
+N_NIMCALL(void, inituri_247186)(Uri247012* Result) {
+	Uri247012 LOC1;
 	nimfr("initUri", "uri.nim")
 	nimln(90, "uri.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.scheme = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.username = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.password = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.hostname = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.port = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.path = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.query = copyString(((NimStringDesc*) &TMP1306));
-	LOC1.anchor = copyString(((NimStringDesc*) &TMP1306));
-	genericShallowAssign((void*)Result, (void*)(&LOC1), (&NTI235012));
+	LOC1.scheme = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.username = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.password = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.hostname = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.port = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.path = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.query = copyString(((NimStringDesc*) &TMP1384));
+	LOC1.anchor = copyString(((NimStringDesc*) &TMP1384));
+	genericShallowAssign((void*)Result, (void*)(&LOC1), (&NTI247012));
 	popFrame();
 }
 
-N_NIMCALL(void, reseturi_235196)(Uri235012* uri) {
+N_NIMCALL(void, reseturi_247196)(Uri247012* uri) {
 	nimfr("resetUri", "uri.nim")
 	nimln(96, "uri.nim");
 	(*uri).scheme = setLengthStr((*uri).scheme, ((NI) 0));
@@ -690,11 +690,11 @@ N_NIMCALL(void, reseturi_235196)(Uri235012* uri) {
 	popFrame();
 }
 
-static N_INLINE(NI, parsewhile_95654)(NimStringDesc* s, NimStringDesc** token, TY77659 validchars, NI start) {
+static N_INLINE(NI, parsewhile_93654)(NimStringDesc* s, NimStringDesc** token, TY77659 validchars, NI start) {
 	NI result;
 	NI i;
-	NI TMP1309;
-	NI TMP1310;
+	NI TMP1387;
+	NI TMP1388;
 	nimfr("parseWhile", "parseutils.nim")
 	result = 0;
 	nimln(178, "parseutils.nim");
@@ -702,19 +702,19 @@ static N_INLINE(NI, parsewhile_95654)(NimStringDesc* s, NimStringDesc** token, T
 	{
 		nimln(179, "parseutils.nim");
 		while (1) {
-			NI TMP1308;
+			NI TMP1386;
 			if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 			if (!((validchars[((NU8)(s->data[i]))/8] &(1<<(((NU8)(s->data[i]))%8)))!=0)) goto LA2;
-			TMP1308 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1308);
+			TMP1386 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1386);
 		} LA2: ;
 	}
 	nimln(180, "parseutils.nim");
-	TMP1309 = subInt(i, start);
-	result = (NI)(TMP1309);
+	TMP1387 = subInt(i, start);
+	result = (NI)(TMP1387);
 	nimln(181, "parseutils.nim");
-	TMP1310 = subInt(i, ((NI) 1));
-	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP1310)));
+	TMP1388 = subInt(i, ((NI) 1));
+	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP1388)));
 	popFrame();
 	return result;
 }
@@ -754,14 +754,14 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, parseuri_237007)(NimStringDesc* uri, Uri235012* result) {
+N_NIMCALL(void, parseuri_249007)(NimStringDesc* uri, Uri247012* result) {
 	NI i;
 	NI LOC5;
-	NI TMP1312;
-	NI TMP1313;
+	NI TMP1390;
+	NI TMP1391;
 	nimfr("parseUri", "uri.nim")
 {	nimln(102, "uri.nim");
-	reseturi_235196(result);
+	reseturi_247196(result);
 	nimln(104, "uri.nim");
 	i = ((NI) 0);
 	nimln(107, "uri.nim");
@@ -769,16 +769,16 @@ N_NIMCALL(void, parseuri_237007)(NimStringDesc* uri, Uri235012* result) {
 		if ((NU)(i) > (NU)(uri->Sup.len)) raiseIndexError();
 		if (!((NU8)(uri->data[i]) == (NU8)(47))) goto LA3;
 		nimln(108, "uri.nim");
-		parsepath_235121(uri, (&i), result);
+		parsepath_247121(uri, (&i), result);
 		nimln(109, "uri.nim");
 		goto BeforeRet;
 	}
 	LA3: ;
 	nimln(112, "uri.nim");
 	LOC5 = 0;
-	LOC5 = parsewhile_95654(uri, (&(*result).scheme), TMP1311, i);
-	TMP1312 = addInt(i, LOC5);
-	i = (NI)(TMP1312);
+	LOC5 = parsewhile_93654(uri, (&(*result).scheme), TMP1389, i);
+	TMP1390 = addInt(i, LOC5);
+	i = (NI)(TMP1390);
 	nimln(113, "uri.nim");
 	{
 		if ((NU)(i) > (NU)(uri->Sup.len)) raiseIndexError();
@@ -788,60 +788,60 @@ N_NIMCALL(void, parseuri_237007)(NimStringDesc* uri, Uri235012* result) {
 		nimln(116, "uri.nim");
 		(*result).scheme = setLengthStr((*result).scheme, ((NI) 0));
 		nimln(117, "uri.nim");
-		parsepath_235121(uri, (&i), result);
+		parsepath_247121(uri, (&i), result);
 		nimln(118, "uri.nim");
 		goto BeforeRet;
 	}
 	LA8: ;
 	nimln(119, "uri.nim");
-	TMP1313 = addInt(i, ((NI) 1));
-	i = (NI)(TMP1313);
+	TMP1391 = addInt(i, ((NI) 1));
+	i = (NI)(TMP1391);
 	nimln(122, "uri.nim");
 	{
 		NIM_BOOL LOC12;
-		NI TMP1314;
-		NI TMP1315;
+		NI TMP1392;
+		NI TMP1393;
 		NimStringDesc* authority;
 		NI LOC16;
-		NI TMP1317;
+		NI TMP1395;
 		LOC12 = 0;
 		if ((NU)(i) > (NU)(uri->Sup.len)) raiseIndexError();
 		LOC12 = ((NU8)(uri->data[i]) == (NU8)(47));
 		if (!(LOC12)) goto LA13;
-		TMP1314 = addInt(i, ((NI) 1));
-		if ((NU)((NI)(TMP1314)) > (NU)(uri->Sup.len)) raiseIndexError();
-		LOC12 = ((NU8)(uri->data[(NI)(TMP1314)]) == (NU8)(47));
+		TMP1392 = addInt(i, ((NI) 1));
+		if ((NU)((NI)(TMP1392)) > (NU)(uri->Sup.len)) raiseIndexError();
+		LOC12 = ((NU8)(uri->data[(NI)(TMP1392)]) == (NU8)(47));
 		LA13: ;
 		if (!LOC12) goto LA14;
 		nimln(123, "uri.nim");
-		TMP1315 = addInt(i, ((NI) 2));
-		i = (NI)(TMP1315);
+		TMP1393 = addInt(i, ((NI) 2));
+		i = (NI)(TMP1393);
 		nimln(124, "uri.nim");
-		authority = copyString(((NimStringDesc*) &TMP1306));
+		authority = copyString(((NimStringDesc*) &TMP1384));
 		nimln(125, "uri.nim");
 		LOC16 = 0;
-		LOC16 = parseuntil_95581(uri, (&authority), TMP1316, i);
-		TMP1317 = addInt(i, LOC16);
-		i = (NI)(TMP1317);
+		LOC16 = parseuntil_93581(uri, (&authority), TMP1394, i);
+		TMP1395 = addInt(i, LOC16);
+		i = (NI)(TMP1395);
 		nimln(126, "uri.nim");
 		{
-			Valueerror3449* e_237082;
+			Valueerror3449* e_249082;
 			NimStringDesc* LOC21;
 			if (!((authority) && (authority)->Sup.len == 0)) goto LA19;
-			e_237082 = 0;
+			e_249082 = 0;
 			nimln(2265, "system.nim");
-			e_237082 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-			(*e_237082).Sup.Sup.m_type = (&NTI3449);
+			e_249082 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+			(*e_249082).Sup.Sup.m_type = (&NTI3449);
 			nimln(2266, "system.nim");
 			LOC21 = 0;
-			LOC21 = (*e_237082).Sup.message; (*e_237082).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1318));
+			LOC21 = (*e_249082).Sup.message; (*e_249082).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1396));
 			if (LOC21) nimGCunrefNoCycle(LOC21);
 			nimln(127, "uri.nim");
-			raiseException((Exception*)e_237082, "ValueError");
+			raiseException((Exception*)e_249082, "ValueError");
 		}
 		LA19: ;
 		nimln(128, "uri.nim");
-		parseauthority_235072(authority, result);
+		parseauthority_247072(authority, result);
 	}
 	goto LA10;
 	LA14: ;
@@ -851,19 +851,19 @@ N_NIMCALL(void, parseuri_237007)(NimStringDesc* uri, Uri235012* result) {
 	}
 	LA10: ;
 	nimln(133, "uri.nim");
-	parsepath_235121(uri, (&i), result);
+	parsepath_247121(uri, (&i), result);
 	}BeforeRet: ;
 	popFrame();
 }
 
-N_NIMCALL(void, parseuri_237100)(NimStringDesc* uri, Uri235012* Result) {
+N_NIMCALL(void, parseuri_249100)(NimStringDesc* uri, Uri247012* Result) {
 	nimfr("parseUri", "uri.nim")
 	nimln(137, "uri.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI235012));
-	inituri_235186(Result);
+	genericReset((void*)Result, (&NTI247012));
+	inituri_247186(Result);
 	nimln(138, "uri.nim");
-	parseuri_237007(uri, Result);
+	parseuri_249007(uri, Result);
 	popFrame();
 }
 
@@ -891,15 +891,15 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NimStringDesc*, pop_125662)(TY13606** s) {
+static N_INLINE(NimStringDesc*, pop_150662)(TY13606** s) {
 	NimStringDesc* result;
 	NI L;
-	NI TMP1322;
+	NI TMP1400;
 	nimfr("pop", "system.nim")
 	result = 0;
 	nimln(1926, "system.nim");
-	TMP1322 = subInt(((*s) ? (*s)->Sup.len : 0), ((NI) 1));
-	L = (NI)(TMP1322);
+	TMP1400 = subInt(((*s) ? (*s)->Sup.len : 0), ((NI) 1));
+	L = (NI)(TMP1400);
 	nimln(1927, "system.nim");
 	if ((NU)(L) >= (NU)((*s)->Sup.len)) raiseIndexError();
 	result = copyString((*s)->data[L]);
@@ -909,11 +909,11 @@ static N_INLINE(NimStringDesc*, pop_125662)(TY13606** s) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
+N_NIMCALL(NimStringDesc*, removedotsegments_249111)(NimStringDesc* path) {
 	NimStringDesc* result;
 	TY13606* collection;
 	NIM_BOOL endswithslash;
-	NI TMP1319;
+	NI TMP1397;
 	NI i;
 	NimStringDesc* currentsegment;
 	nimfr("removeDotSegments", "uri.nim")
@@ -921,18 +921,18 @@ N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
 	nimln(141, "uri.nim");
 	collection = (TY13606*) newSeq((&NTI13606), 0);
 	nimln(142, "uri.nim");
-	TMP1319 = subInt((path ? path->Sup.len : 0), ((NI) 1));
-	if ((NU)((NI)(TMP1319)) > (NU)(path->Sup.len)) raiseIndexError();
-	endswithslash = ((NU8)(path->data[(NI)(TMP1319)]) == (NU8)(47));
+	TMP1397 = subInt((path ? path->Sup.len : 0), ((NI) 1));
+	if ((NU)((NI)(TMP1397)) > (NU)(path->Sup.len)) raiseIndexError();
+	endswithslash = ((NU8)(path->data[(NI)(TMP1397)]) == (NU8)(47));
 	nimln(143, "uri.nim");
 	i = ((NI) 0);
 	nimln(144, "uri.nim");
-	currentsegment = copyString(((NimStringDesc*) &TMP1306));
+	currentsegment = copyString(((NimStringDesc*) &TMP1384));
 	{
 		nimln(145, "uri.nim");
 		while (1) {
 			{
-				NI TMP1326;
+				NI TMP1404;
 				nimln(146, "uri.nim");
 				if ((NU)(i) > (NU)(path->Sup.len)) raiseIndexError();
 				switch (((NU8)(path->data[i]))) {
@@ -945,7 +945,7 @@ N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
 					LOC5 = collection->data[collection->Sup.len-1]; collection->data[collection->Sup.len-1] = copyStringRC1(currentsegment);
 					if (LOC5) nimGCunrefNoCycle(LOC5);
 					nimln(149, "uri.nim");
-					currentsegment = copyString(((NimStringDesc*) &TMP1306));
+					currentsegment = copyString(((NimStringDesc*) &TMP1384));
 				}
 				break;
 				case 46:
@@ -953,29 +953,29 @@ N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
 					nimln(151, "uri.nim");
 					{
 						NIM_BOOL LOC9;
-						NI TMP1320;
-						NI TMP1321;
+						NI TMP1398;
+						NI TMP1399;
 						LOC9 = 0;
-						TMP1320 = addInt(i, ((NI) 1));
-						if ((NU)((NI)(TMP1320)) > (NU)(path->Sup.len)) raiseIndexError();
-						LOC9 = ((NU8)(path->data[(NI)(TMP1320)]) == (NU8)(46));
+						TMP1398 = addInt(i, ((NI) 1));
+						if ((NU)((NI)(TMP1398)) > (NU)(path->Sup.len)) raiseIndexError();
+						LOC9 = ((NU8)(path->data[(NI)(TMP1398)]) == (NU8)(46));
 						if (!(LOC9)) goto LA10;
-						TMP1321 = addInt(i, ((NI) 2));
-						if ((NU)((NI)(TMP1321)) > (NU)(path->Sup.len)) raiseIndexError();
-						LOC9 = ((NU8)(path->data[(NI)(TMP1321)]) == (NU8)(47));
+						TMP1399 = addInt(i, ((NI) 2));
+						if ((NU)((NI)(TMP1399)) > (NU)(path->Sup.len)) raiseIndexError();
+						LOC9 = ((NU8)(path->data[(NI)(TMP1399)]) == (NU8)(47));
 						LA10: ;
 						if (!LOC9) goto LA11;
 						nimln(152, "uri.nim");
 						{
 							NimStringDesc* LOC17;
-							NI TMP1323;
+							NI TMP1401;
 							if (!(((NI) 0) < (collection ? collection->Sup.len : 0))) goto LA15;
 							nimln(153, "uri.nim");
 							LOC17 = 0;
-							LOC17 = pop_125662((&collection));
+							LOC17 = pop_150662((&collection));
 							nimln(154, "uri.nim");
-							TMP1323 = addInt(i, ((NI) 3));
-							i = (NI)(TMP1323);
+							TMP1401 = addInt(i, ((NI) 3));
+							i = (NI)(TMP1401);
 							nimln(155, "uri.nim");
 							goto LA3;
 						}
@@ -984,15 +984,15 @@ N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
 					goto LA7;
 					LA11: ;
 					{
-						NI TMP1324;
-						NI TMP1325;
+						NI TMP1402;
+						NI TMP1403;
 						nimln(156, "uri.nim");
-						TMP1324 = addInt(i, ((NI) 1));
-						if ((NU)((NI)(TMP1324)) > (NU)(path->Sup.len)) raiseIndexError();
-						if (!((NU8)(path->data[(NI)(TMP1324)]) == (NU8)(47))) goto LA19;
+						TMP1402 = addInt(i, ((NI) 1));
+						if ((NU)((NI)(TMP1402)) > (NU)(path->Sup.len)) raiseIndexError();
+						if (!((NU8)(path->data[(NI)(TMP1402)]) == (NU8)(47))) goto LA19;
 						nimln(157, "uri.nim");
-						TMP1325 = addInt(i, ((NI) 2));
-						i = (NI)(TMP1325);
+						TMP1403 = addInt(i, ((NI) 2));
+						i = (NI)(TMP1403);
 						nimln(158, "uri.nim");
 						goto LA3;
 					}
@@ -1030,13 +1030,13 @@ N_NIMCALL(NimStringDesc*, removedotsegments_237111)(NimStringDesc* path) {
 				break;
 				}
 				nimln(166, "uri.nim");
-				TMP1326 = addInt(i, ((NI) 1));
-				i = (NI)(TMP1326);
+				TMP1404 = addInt(i, ((NI) 1));
+				i = (NI)(TMP1404);
 			} LA3: ;
 		}
 	} LA1: ;
 	nimln(168, "uri.nim");
-	result = nsuJoinSep(collection->data, collection->Sup.len, ((NimStringDesc*) &TMP1327));
+	result = nsuJoinSep(collection->data, collection->Sup.len, ((NimStringDesc*) &TMP1405));
 	nimln(169, "uri.nim");
 	{
 		if (!endswithslash) goto LA30;
@@ -1063,7 +1063,7 @@ static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x
 	return result;
 }
 
-static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b) {
+static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b) {
 	Slice88061 result;
 	nimfr("..", "system.nim")
 	memset((void*)(&result), 0, sizeof(result));
@@ -1075,7 +1075,7 @@ static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, merge_237219)(Uri235012* base, Uri235012* reference) {
+N_NIMCALL(NimStringDesc*, merge_249219)(Uri247012* base, Uri247012* reference) {
 	NimStringDesc* result;
 	nimfr("merge", "uri.nim")
 	result = 0;
@@ -1101,7 +1101,7 @@ appendString(LOC7, (*reference).path);
 	{
 		NI lastsegment;
 		nimln(176, "uri.nim");
-		lastsegment = rfind_101099((*base).path, ((NimStringDesc*) &TMP1327), ((NI) -1));
+		lastsegment = rfind_99099((*base).path, ((NimStringDesc*) &TMP1405), ((NI) -1));
 		nimln(177, "uri.nim");
 		{
 			if (!(lastsegment == ((NI) -1))) goto LA11;
@@ -1115,7 +1115,7 @@ appendString(LOC7, (*reference).path);
 			NimStringDesc* LOC16;
 			nimln(180, "uri.nim");
 			LOC14 = 0;
-			LOC15 = HEX2EHEX2E_110273(((NI) 0), lastsegment);
+			LOC15 = HEX2EHEX2E_108273(((NI) 0), lastsegment);
 			LOC16 = 0;
 			LOC16 = HEX5BHEX5D_88054((*base).path, LOC15);
 			LOC14 = rawNewString(LOC16->Sup.len + (*reference).path->Sup.len + 0);
@@ -1130,12 +1130,12 @@ appendString(LOC14, (*reference).path);
 	return result;
 }
 
-N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012* Result) {
+N_NIMCALL(void, combine_249241)(Uri247012* base, Uri247012* reference, Uri247012* Result) {
 	nimfr("combine", "uri.nim")
 	nimln(211, "uri.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI235012));
-	inituri_235186(Result);
+	genericReset((void*)Result, (&NTI247012));
+	inituri_247186(Result);
 	nimln(212, "uri.nim");
 	{
 		NIM_BOOL LOC3;
@@ -1146,9 +1146,9 @@ N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(213, "uri.nim");
-		genericAssign((void*)Result, (void*)reference, (&NTI235012));
+		genericAssign((void*)Result, (void*)reference, (&NTI247012));
 		nimln(214, "uri.nim");
-		unsureAsgnRef((void**) (&(*Result).path), removedotsegments_237111((*Result).path));
+		unsureAsgnRef((void**) (&(*Result).path), removedotsegments_249111((*Result).path));
 	}
 	goto LA1;
 	LA5: ;
@@ -1165,7 +1165,7 @@ N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012
 			nimln(209, "uri.nim");
 			unsureAsgnRef((void**) (&(*Result).password), copyString((*reference).password));
 			nimln(218, "uri.nim");
-			unsureAsgnRef((void**) (&(*Result).path), removedotsegments_237111((*reference).path));
+			unsureAsgnRef((void**) (&(*Result).path), removedotsegments_249111((*reference).path));
 			nimln(219, "uri.nim");
 			unsureAsgnRef((void**) (&(*Result).query), copyString((*reference).query));
 		}
@@ -1198,10 +1198,10 @@ N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012
 				{
 					NIM_BOOL LOC25;
 					LOC25 = 0;
-					LOC25 = nsuStartsWith((*reference).path, ((NimStringDesc*) &TMP1327));
+					LOC25 = nsuStartsWith((*reference).path, ((NimStringDesc*) &TMP1405));
 					if (!LOC25) goto LA26;
 					nimln(229, "uri.nim");
-					unsureAsgnRef((void**) (&(*Result).path), removedotsegments_237111((*reference).path));
+					unsureAsgnRef((void**) (&(*Result).path), removedotsegments_249111((*reference).path));
 				}
 				goto LA23;
 				LA26: ;
@@ -1209,8 +1209,8 @@ N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012
 					NimStringDesc* LOC29;
 					nimln(231, "uri.nim");
 					LOC29 = 0;
-					LOC29 = merge_237219(base, reference);
-					unsureAsgnRef((void**) (&(*Result).path), removedotsegments_237111(LOC29));
+					LOC29 = merge_249219(base, reference);
+					unsureAsgnRef((void**) (&(*Result).path), removedotsegments_249111(LOC29));
 				}
 				LA23: ;
 				nimln(232, "uri.nim");
@@ -1236,63 +1236,63 @@ N_NIMCALL(void, combine_237241)(Uri235012* base, Uri235012* reference, Uri235012
 	popFrame();
 }
 
-N_NIMCALL(void, combine_237256)(Uri235012* uris, NI urisLen0, Uri235012* Result) {
+N_NIMCALL(void, combine_249256)(Uri247012* uris, NI urisLen0, Uri247012* Result) {
 	nimfr("combine", "uri.nim")
 	nimln(239, "uri.nim");
 	if ((NU)(((NI) 0)) >= (NU)(urisLen0)) raiseIndexError();
-	genericAssign((void*)Result, (void*)(&uris[((NI) 0)]), (&NTI235012));
+	genericAssign((void*)Result, (void*)(&uris[((NI) 0)]), (&NTI247012));
 	{
-		NI i_237286;
-		NI HEX3Atmp_237290;
-		NI res_237293;
-		i_237286 = 0;
-		HEX3Atmp_237290 = 0;
+		NI i_249286;
+		NI HEX3Atmp_249290;
+		NI res_249293;
+		i_249286 = 0;
+		HEX3Atmp_249290 = 0;
 		nimln(240, "uri.nim");
-		HEX3Atmp_237290 = subInt(urisLen0, 1);
+		HEX3Atmp_249290 = subInt(urisLen0, 1);
 		nimln(1598, "system.nim");
-		res_237293 = ((NI) 1);
+		res_249293 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				Uri235012 LOC4;
-				NI TMP1333;
-				if (!(res_237293 <= HEX3Atmp_237290)) goto LA3;
+				Uri247012 LOC4;
+				NI TMP1411;
+				if (!(res_249293 <= HEX3Atmp_249290)) goto LA3;
 				nimln(1600, "system.nim");
-				i_237286 = res_237293;
+				i_249286 = res_249293;
 				nimln(241, "uri.nim");
-				if ((NU)(i_237286) >= (NU)(urisLen0)) raiseIndexError();
+				if ((NU)(i_249286) >= (NU)(urisLen0)) raiseIndexError();
 				memset((void*)(&LOC4), 0, sizeof(LOC4));
-				combine_237241(Result, (&uris[i_237286]), (&LOC4));
-				genericShallowAssign((void*)Result, (void*)(&LOC4), (&NTI235012));
+				combine_249241(Result, (&uris[i_249286]), (&LOC4));
+				genericShallowAssign((void*)Result, (void*)(&LOC4), (&NTI247012));
 				nimln(1619, "system.nim");
-				TMP1333 = addInt(res_237293, ((NI) 1));
-				res_237293 = (NI)(TMP1333);
+				TMP1411 = addInt(res_249293, ((NI) 1));
+				res_249293 = (NI)(TMP1411);
 			} LA3: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(void, HEX2F_237312)(Uri235012* x, NimStringDesc* path, Uri235012* Result) {
+N_NIMCALL(void, HEX2F_249312)(Uri247012* x, NimStringDesc* path, Uri247012* Result) {
 	nimfr("/", "uri.nim")
 	nimln(261, "uri.nim");
-	genericAssign((void*)Result, (void*)x, (&NTI235012));
+	genericAssign((void*)Result, (void*)x, (&NTI247012));
 	nimln(262, "uri.nim");
 	{
-		NI TMP1334;
-		TMP1334 = subInt(((*Result).path ? (*Result).path->Sup.len : 0), ((NI) 1));
-		if ((NU)((NI)(TMP1334)) > (NU)((*Result).path->Sup.len)) raiseIndexError();
-		if (!((NU8)((*Result).path->data[(NI)(TMP1334)]) == (NU8)(47))) goto LA3;
+		NI TMP1412;
+		TMP1412 = subInt(((*Result).path ? (*Result).path->Sup.len : 0), ((NI) 1));
+		if ((NU)((NI)(TMP1412)) > (NU)((*Result).path->Sup.len)) raiseIndexError();
+		if (!((NU8)((*Result).path->data[(NI)(TMP1412)]) == (NU8)(47))) goto LA3;
 		nimln(263, "uri.nim");
 		{
-			NI TMP1335;
+			NI TMP1413;
 			Slice88061 LOC9;
 			NimStringDesc* LOC10;
 			if ((NU)(((NI) 0)) > (NU)(path->Sup.len)) raiseIndexError();
 			if (!((NU8)(path->data[((NI) 0)]) == (NU8)(47))) goto LA7;
 			nimln(264, "uri.nim");
-			TMP1335 = subInt((path ? path->Sup.len : 0), ((NI) 1));
-			LOC9 = HEX2EHEX2E_110273(((NI) 1), (NI)(TMP1335));
+			TMP1413 = subInt((path ? path->Sup.len : 0), ((NI) 1));
+			LOC9 = HEX2EHEX2E_108273(((NI) 1), (NI)(TMP1413));
 			LOC10 = 0;
 			LOC10 = HEX5BHEX5D_88054(path, LOC9);
 			(*Result).path = resizeString((*Result).path, LOC10->Sup.len + 0);
@@ -1326,12 +1326,12 @@ appendString((*Result).path, path);
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_237333)(Uri235012* u) {
+N_NIMCALL(NimStringDesc*, HEX24_249333)(Uri247012* u) {
 	NimStringDesc* result;
 	nimfr("$", "uri.nim")
 	result = 0;
 	nimln(274, "uri.nim");
-	result = copyString(((NimStringDesc*) &TMP1306));
+	result = copyString(((NimStringDesc*) &TMP1384));
 	nimln(275, "uri.nim");
 	{
 		if (!(((NI) 0) < ((*u).scheme ? (*u).scheme->Sup.len : 0))) goto LA3;
@@ -1343,14 +1343,14 @@ appendString(result, (*u).scheme);
 			if (!(*u).opaque) goto LA7;
 			nimln(278, "uri.nim");
 			result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1336));
+appendString(result, ((NimStringDesc*) &TMP1414));
 		}
 		goto LA5;
 		LA7: ;
 		{
 			nimln(280, "uri.nim");
 			result = resizeString(result, 3);
-appendString(result, ((NimStringDesc*) &TMP1337));
+appendString(result, ((NimStringDesc*) &TMP1415));
 		}
 		LA5: ;
 	}
@@ -1366,7 +1366,7 @@ appendString(result, (*u).username);
 			if (!(((NI) 0) < ((*u).password ? (*u).password->Sup.len : 0))) goto LA16;
 			nimln(284, "uri.nim");
 			result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1336));
+appendString(result, ((NimStringDesc*) &TMP1414));
 			nimln(285, "uri.nim");
 			result = resizeString(result, (*u).password->Sup.len + 0);
 appendString(result, (*u).password);
@@ -1374,7 +1374,7 @@ appendString(result, (*u).password);
 		LA16: ;
 		nimln(286, "uri.nim");
 		result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1338));
+appendString(result, ((NimStringDesc*) &TMP1416));
 	}
 	LA12: ;
 	nimln(287, "uri.nim");
@@ -1385,7 +1385,7 @@ appendString(result, (*u).hostname);
 		if (!(((NI) 0) < ((*u).port ? (*u).port->Sup.len : 0))) goto LA20;
 		nimln(289, "uri.nim");
 		result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1336));
+appendString(result, ((NimStringDesc*) &TMP1414));
 		nimln(290, "uri.nim");
 		result = resizeString(result, (*u).port->Sup.len + 0);
 appendString(result, (*u).port);
@@ -1404,7 +1404,7 @@ appendString(result, (*u).path);
 		if (!(((NI) 0) < ((*u).query ? (*u).query->Sup.len : 0))) goto LA28;
 		nimln(294, "uri.nim");
 		result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1339));
+appendString(result, ((NimStringDesc*) &TMP1417));
 		nimln(295, "uri.nim");
 		result = resizeString(result, (*u).query->Sup.len + 0);
 appendString(result, (*u).query);
@@ -1415,7 +1415,7 @@ appendString(result, (*u).query);
 		if (!(((NI) 0) < ((*u).anchor ? (*u).anchor->Sup.len : 0))) goto LA32;
 		nimln(297, "uri.nim");
 		result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1340));
+appendString(result, ((NimStringDesc*) &TMP1418));
 		nimln(298, "uri.nim");
 		result = resizeString(result, (*u).anchor->Sup.len + 0);
 appendString(result, (*u).anchor);
@@ -1430,58 +1430,58 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_uriInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_uriDatInit)(void) {
-static TNimNode* TMP1307[9];
-static TNimNode TMP1290[10];
-NTI235012.size = sizeof(Uri235012);
-NTI235012.kind = 18;
-NTI235012.base = 0;
-NTI235012.flags = 2;
-TMP1307[0] = &TMP1290[1];
-TMP1290[1].kind = 1;
-TMP1290[1].offset = offsetof(Uri235012, scheme);
-TMP1290[1].typ = (&NTI149);
-TMP1290[1].name = "scheme";
-TMP1307[1] = &TMP1290[2];
-TMP1290[2].kind = 1;
-TMP1290[2].offset = offsetof(Uri235012, username);
-TMP1290[2].typ = (&NTI149);
-TMP1290[2].name = "username";
-TMP1307[2] = &TMP1290[3];
-TMP1290[3].kind = 1;
-TMP1290[3].offset = offsetof(Uri235012, password);
-TMP1290[3].typ = (&NTI149);
-TMP1290[3].name = "password";
-TMP1307[3] = &TMP1290[4];
-TMP1290[4].kind = 1;
-TMP1290[4].offset = offsetof(Uri235012, hostname);
-TMP1290[4].typ = (&NTI149);
-TMP1290[4].name = "hostname";
-TMP1307[4] = &TMP1290[5];
-TMP1290[5].kind = 1;
-TMP1290[5].offset = offsetof(Uri235012, port);
-TMP1290[5].typ = (&NTI149);
-TMP1290[5].name = "port";
-TMP1307[5] = &TMP1290[6];
-TMP1290[6].kind = 1;
-TMP1290[6].offset = offsetof(Uri235012, path);
-TMP1290[6].typ = (&NTI149);
-TMP1290[6].name = "path";
-TMP1307[6] = &TMP1290[7];
-TMP1290[7].kind = 1;
-TMP1290[7].offset = offsetof(Uri235012, query);
-TMP1290[7].typ = (&NTI149);
-TMP1290[7].name = "query";
-TMP1307[7] = &TMP1290[8];
-TMP1290[8].kind = 1;
-TMP1290[8].offset = offsetof(Uri235012, anchor);
-TMP1290[8].typ = (&NTI149);
-TMP1290[8].name = "anchor";
-TMP1307[8] = &TMP1290[9];
-TMP1290[9].kind = 1;
-TMP1290[9].offset = offsetof(Uri235012, opaque);
-TMP1290[9].typ = (&NTI138);
-TMP1290[9].name = "opaque";
-TMP1290[0].len = 9; TMP1290[0].kind = 2; TMP1290[0].sons = &TMP1307[0];
-NTI235012.node = &TMP1290[0];
+static TNimNode* TMP1385[9];
+static TNimNode TMP1368[10];
+NTI247012.size = sizeof(Uri247012);
+NTI247012.kind = 18;
+NTI247012.base = 0;
+NTI247012.flags = 2;
+TMP1385[0] = &TMP1368[1];
+TMP1368[1].kind = 1;
+TMP1368[1].offset = offsetof(Uri247012, scheme);
+TMP1368[1].typ = (&NTI149);
+TMP1368[1].name = "scheme";
+TMP1385[1] = &TMP1368[2];
+TMP1368[2].kind = 1;
+TMP1368[2].offset = offsetof(Uri247012, username);
+TMP1368[2].typ = (&NTI149);
+TMP1368[2].name = "username";
+TMP1385[2] = &TMP1368[3];
+TMP1368[3].kind = 1;
+TMP1368[3].offset = offsetof(Uri247012, password);
+TMP1368[3].typ = (&NTI149);
+TMP1368[3].name = "password";
+TMP1385[3] = &TMP1368[4];
+TMP1368[4].kind = 1;
+TMP1368[4].offset = offsetof(Uri247012, hostname);
+TMP1368[4].typ = (&NTI149);
+TMP1368[4].name = "hostname";
+TMP1385[4] = &TMP1368[5];
+TMP1368[5].kind = 1;
+TMP1368[5].offset = offsetof(Uri247012, port);
+TMP1368[5].typ = (&NTI149);
+TMP1368[5].name = "port";
+TMP1385[5] = &TMP1368[6];
+TMP1368[6].kind = 1;
+TMP1368[6].offset = offsetof(Uri247012, path);
+TMP1368[6].typ = (&NTI149);
+TMP1368[6].name = "path";
+TMP1385[6] = &TMP1368[7];
+TMP1368[7].kind = 1;
+TMP1368[7].offset = offsetof(Uri247012, query);
+TMP1368[7].typ = (&NTI149);
+TMP1368[7].name = "query";
+TMP1385[7] = &TMP1368[8];
+TMP1368[8].kind = 1;
+TMP1368[8].offset = offsetof(Uri247012, anchor);
+TMP1368[8].typ = (&NTI149);
+TMP1368[8].name = "anchor";
+TMP1385[8] = &TMP1368[9];
+TMP1368[9].kind = 1;
+TMP1368[9].offset = offsetof(Uri247012, opaque);
+TMP1368[9].typ = (&NTI138);
+TMP1368[9].name = "opaque";
+TMP1368[0].len = 9; TMP1368[0].kind = 2; TMP1368[0].sons = &TMP1385[0];
+NTI247012.node = &TMP1368[0];
 }
 

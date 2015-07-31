@@ -6,12 +6,12 @@
    C:\Nim\dist\mingw\bin\gcc.exe -c  -w  -IC:\Nim\lib -o c:\users\owner\documents\nim\esfj\nimcache\random_util.o c:\users\owner\documents\nim\esfj\nimcache\random_util.c */
 #define NIM_INTBITS 64
 #include "nimbase.h"
-typedef struct TY275057 TY275057;
+typedef struct TY129057 TY129057;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef NI TY270209[64];
-typedef NU64 TY270442[6];
+typedef NI TY124209[64];
+typedef NU64 TY124442[6];
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -36,31 +36,31 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct TY275057 {
+struct TY129057 {
   TGenericSeq Sup;
   NU32 data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NI, log2pow2fallback_270204)(NU64 x);
+static N_INLINE(NI, log2pow2fallback_124204)(NU64 x);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NI, log2pow2_270246)(NU64 x);
+static N_INLINE(NI, log2pow2_124266)(NU64 x);
 N_NIMCALL(int, __builtin_clzll)(unsigned long long n);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NI, log2pow21_270407)(NU64 x);
-static N_INLINE(NI, bitsizefallback_270437)(NU64 x_270439);
+static N_INLINE(NI, log2pow21_124407)(NU64 x);
+static N_INLINE(NI, bitsizefallback_124437)(NU64 x_124439);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(NI, bitsize_270518)(NU64 x);
+N_NIMCALL(NI, bitsize_124518)(NU64 x);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
-N_NIMCALL(TY275057*, newseq_275070)(NI len);
-N_NIMCALL(void, TMP2704)(void* p, NI op);
+N_NIMCALL(TY129057*, newseq_129070)(NI len);
+N_NIMCALL(void, TMP553)(void* p, NI op);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
-NIM_CONST TY270209 debruijn64_270208 = {((NI) 0),
+NIM_CONST TY124209 debruijn64_124208 = {((NI) 0),
 ((NI) 1),
 ((NI) 2),
 ((NI) 53),
@@ -127,7 +127,7 @@ NIM_CONST TY270209 debruijn64_270208 = {((NI) 0),
 ;
 extern TFrame* frameptr_17042;
 extern TNimType NTI124; /* uint32 */
-TNimType NTI275057; /* seq[uint32] */
+TNimType NTI129057; /* seq[uint32] */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -156,14 +156,14 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NI, log2pow2fallback_270204)(NU64 x) {
+static N_INLINE(NI, log2pow2fallback_124204)(NU64 x) {
 	NI result;
 	nimfr("log2pow2Fallback", "util.nim")
 	result = 0;
 	nimln(44, "util.nim");
 	nimln(50, "util.nim");
 	if ((NU)((NU64)((NU64)((NU64)((NU64)(x) * (NU64)(157587932685088877ULL))) >> (NU64)(58ULL))) > (NU)(63)) raiseIndexError();
-	result = debruijn64_270208[((NU64)((NU64)((NU64)((NU64)(x) * (NU64)(157587932685088877ULL))) >> (NU64)(58ULL)))- 0];
+	result = debruijn64_124208[((NU64)((NU64)((NU64)((NU64)(x) * (NU64)(157587932685088877ULL))) >> (NU64)(58ULL)))- 0];
 	popFrame();
 	return result;
 }
@@ -188,24 +188,24 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, log2pow2_270246)(NU64 x) {
+static N_INLINE(NI, log2pow2_124266)(NU64 x) {
 	NI result;
 	int LOC1;
-	NI TMP2675;
+	NI TMP524;
 	nimfr("log2pow2", "util.nim")
 	result = 0;
 	nimln(53, "util.nim");
 	nimln(55, "util.nim");
 	LOC1 = 0;
 	LOC1 = __builtin_clzll(x);
-	TMP2675 = subInt(((NI32) 64), LOC1);
-	if (TMP2675 < (-2147483647 -1) || TMP2675 > 2147483647) raiseOverflow();
-	result = ((NI) ((NI32)(TMP2675)));
+	TMP524 = subInt(((NI32) 64), LOC1);
+	if (TMP524 < (-2147483647 -1) || TMP524 > 2147483647) raiseOverflow();
+	result = ((NI) ((NI32)(TMP524)));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, log2pow21_270407)(NU64 x) {
+static N_INLINE(NI, log2pow21_124407)(NU64 x) {
 	NI result;
 	nimfr("log2pow21", "util.nim")
 	result = 0;
@@ -222,7 +222,7 @@ static N_INLINE(NI, log2pow21_270407)(NU64 x) {
 	LA4: ;
 	{
 		nimln(64, "util.nim");
-		result = log2pow2_270246((NU64)((NU64)(x) + (NU64)(((NI) 1))));
+		result = log2pow2_124266((NU64)((NU64)(x) + (NU64)(((NI) 1))));
 	}
 	LA1: ;
 	popFrame();
@@ -249,29 +249,29 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, bitsizefallback_270437)(NU64 x_270439) {
+static N_INLINE(NI, bitsizefallback_124437)(NU64 x_124439) {
 	NI result;
 	NU64 x;
 	NI LOC13;
-	NI TMP2677;
+	NI TMP526;
 	nimfr("bitSizeFallback", "util.nim")
 	result = 0;
 	nimln(67, "util.nim");
-	x = x_270439;
+	x = x_124439;
 	{
-		NU64 s_270480;
-		NI i_270502;
-		s_270480 = 0;
+		NU64 s_124480;
+		NI i_124502;
+		s_124480 = 0;
 		nimln(1703, "system.nim");
-		i_270502 = ((NI) 0);
+		i_124502 = ((NI) 0);
 		nimln(1704, "system.nim");
 		{
-			if (!(((NI) (i_270502)) <= ((NI) 5))) goto LA4;
+			if (!(((NI) (i_124502)) <= ((NI) 5))) goto LA4;
 			{
 				nimln(1705, "system.nim");
 				while (1) {
-					TY270442 LOC8;
-					NI TMP2676;
+					TY124442 LOC8;
+					NI TMP525;
 					nimln(1706, "system.nim");
 					LOC8[0] = 1ULL;
 					LOC8[1] = 2ULL;
@@ -279,19 +279,19 @@ static N_INLINE(NI, bitsizefallback_270437)(NU64 x_270439) {
 					LOC8[3] = 8ULL;
 					LOC8[4] = 16ULL;
 					LOC8[5] = 32ULL;
-					s_270480 = LOC8[(i_270502)- 0];
+					s_124480 = LOC8[(i_124502)- 0];
 					nimln(69, "util.nim");
-					x = (NU64)(x | (NU64)((NU64)(x) >> (NU64)(s_270480)));
+					x = (NU64)(x | (NU64)((NU64)(x) >> (NU64)(s_124480)));
 					nimln(1707, "system.nim");
 					{
-						if (!(((NI) 5) <= ((NI) (i_270502)))) goto LA11;
+						if (!(((NI) 5) <= ((NI) (i_124502)))) goto LA11;
 						goto LA6;
 					}
 					LA11: ;
 					nimln(1708, "system.nim");
-					TMP2676 = addInt(i_270502, ((NI) 1));
-					if (TMP2676 < 0 || TMP2676 > 5) raiseOverflow();
-					i_270502 = (NI)(TMP2676);
+					TMP525 = addInt(i_124502, ((NI) 1));
+					if (TMP525 < 0 || TMP525 > 5) raiseOverflow();
+					i_124502 = (NI)(TMP525);
 				}
 			} LA6: ;
 		}
@@ -299,25 +299,25 @@ static N_INLINE(NI, bitsizefallback_270437)(NU64 x_270439) {
 	}
 	nimln(70, "util.nim");
 	LOC13 = 0;
-	LOC13 = log2pow21_270407(x);
-	TMP2677 = subInt(LOC13, ((NI) 1));
-	result = (NI)(TMP2677);
+	LOC13 = log2pow21_124407(x);
+	TMP526 = subInt(LOC13, ((NI) 1));
+	result = (NI)(TMP526);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, bitsize_270518)(NU64 x) {
+N_NIMCALL(NI, bitsize_124518)(NU64 x) {
 	NI result;
 	int LOC1;
-	NI TMP2678;
+	NI TMP527;
 	nimfr("bitSize", "util.nim")
 {	result = 0;
 	nimln(75, "util.nim");
 	LOC1 = 0;
 	LOC1 = __builtin_clzll(x);
-	TMP2678 = subInt(((NI32) 64), LOC1);
-	if (TMP2678 < (-2147483647 -1) || TMP2678 > 2147483647) raiseOverflow();
-	result = ((NI) ((NI32)(TMP2678)));
+	TMP527 = subInt(((NI32) 64), LOC1);
+	if (TMP527 < (-2147483647 -1) || TMP527 > 2147483647) raiseOverflow();
+	result = ((NI) ((NI32)(TMP527)));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -348,10 +348,10 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP2704)(void* p, NI op) {
-	TY275057* a;
+N_NIMCALL(void, TMP553)(void* p, NI op) {
+	TY129057* a;
 	NI LOC1;
-	a = (TY275057*)p;
+	a = (TY129057*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	}
@@ -381,59 +381,59 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(TY275057*, bytestowords_275052)(NU8* bytes, NI bytesLen0) {
-	TY275057* result;
+N_NIMCALL(TY129057*, bytestowords_129052)(NU8* bytes, NI bytesLen0) {
+	TY129057* result;
 	NI n;
-	NI TMP2702;
-	NI TMP2703;
+	NI TMP551;
+	NI TMP552;
 	nimfr("bytesToWords", "util.nim")
 	result = 0;
 	nimln(83, "util.nim");
-	TMP2702 = divInt((bytesLen0-1), ((NI) 4));
-	TMP2703 = addInt((NI)(TMP2702), ((NI) 1));
-	n = (NI)(TMP2703);
+	TMP551 = divInt((bytesLen0-1), ((NI) 4));
+	TMP552 = addInt((NI)(TMP551), ((NI) 1));
+	n = (NI)(TMP552);
 	nimln(84, "util.nim");
-	result = newseq_275070(((NI)chckRange(n, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	result = newseq_129070(((NI)chckRange(n, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	{
-		NI i_275108;
-		NI HEX3Atmp_275164;
-		NI res_275167;
-		i_275108 = 0;
-		HEX3Atmp_275164 = 0;
+		NI i_129108;
+		NI HEX3Atmp_129164;
+		NI res_129167;
+		i_129108 = 0;
+		HEX3Atmp_129164 = 0;
 		nimln(85, "util.nim");
-		HEX3Atmp_275164 = subInt(n, 1);
+		HEX3Atmp_129164 = subInt(n, 1);
 		nimln(1598, "system.nim");
-		res_275167 = ((NI) 0);
+		res_129167 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2709;
-				if (!(res_275167 <= HEX3Atmp_275164)) goto LA3;
+				NI TMP558;
+				if (!(res_129167 <= HEX3Atmp_129164)) goto LA3;
 				nimln(1600, "system.nim");
-				i_275108 = res_275167;
+				i_129108 = res_129167;
 				{
-					NI j_275127;
-					NI res_275160;
-					j_275127 = 0;
+					NI j_129127;
+					NI res_129160;
+					j_129127 = 0;
 					nimln(1598, "system.nim");
-					res_275160 = ((NI) 0);
+					res_129160 = ((NI) 0);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
 							NI index;
-							NI TMP2705;
-							NI TMP2706;
+							NI TMP554;
+							NI TMP555;
 							NU32 data;
 							NU8 LOC7;
-							NI TMP2707;
-							NI TMP2708;
-							if (!(res_275160 <= ((NI) 3))) goto LA6;
+							NI TMP556;
+							NI TMP557;
+							if (!(res_129160 <= ((NI) 3))) goto LA6;
 							nimln(1600, "system.nim");
-							j_275127 = res_275160;
+							j_129127 = res_129160;
 							nimln(87, "util.nim");
-							TMP2705 = mulInt(i_275108, ((NI) 4));
-							TMP2706 = addInt((NI)(TMP2705), j_275127);
-							index = (NI)(TMP2706);
+							TMP554 = mulInt(i_129108, ((NI) 4));
+							TMP555 = addInt((NI)(TMP554), j_129127);
+							index = (NI)(TMP555);
 							nimln(88, "util.nim");
 							LOC7 = 0;
 							nimln(89, "util.nim");
@@ -450,18 +450,18 @@ N_NIMCALL(TY275057*, bytestowords_275052)(NU8* bytes, NI bytesLen0) {
 							LA8: ;
 							data = ((NU32) (LOC7));
 							nimln(91, "util.nim");
-							if ((NU)(i_275108) >= (NU)(result->Sup.len)) raiseIndexError();
-							if ((NU)(i_275108) >= (NU)(result->Sup.len)) raiseIndexError();
-							TMP2707 = mulInt(((NI) 8), j_275127);
-							result->data[i_275108] = (NU32)(result->data[i_275108] | (NU32)((NU32)(data) << (NU32)(((NU32) ((NI)(TMP2707))))));
+							if ((NU)(i_129108) >= (NU)(result->Sup.len)) raiseIndexError();
+							if ((NU)(i_129108) >= (NU)(result->Sup.len)) raiseIndexError();
+							TMP556 = mulInt(((NI) 8), j_129127);
+							result->data[i_129108] = (NU32)(result->data[i_129108] | (NU32)((NU32)(data) << (NU32)(((NU32) ((NI)(TMP556))))));
 							nimln(1619, "system.nim");
-							TMP2708 = addInt(res_275160, ((NI) 1));
-							res_275160 = (NI)(TMP2708);
+							TMP557 = addInt(res_129160, ((NI) 1));
+							res_129160 = (NI)(TMP557);
 						} LA6: ;
 					}
 				}
-				TMP2709 = addInt(res_275167, ((NI) 1));
-				res_275167 = (NI)(TMP2709);
+				TMP558 = addInt(res_129167, ((NI) 1));
+				res_129167 = (NI)(TMP558);
 			} LA3: ;
 		}
 	}
@@ -474,10 +474,10 @@ NIM_EXTERNC N_NOINLINE(void, random_utilInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, random_utilDatInit)(void) {
-NTI275057.size = sizeof(TY275057*);
-NTI275057.kind = 24;
-NTI275057.base = (&NTI124);
-NTI275057.flags = 2;
-NTI275057.marker = TMP2704;
+NTI129057.size = sizeof(TY129057*);
+NTI129057.kind = 24;
+NTI129057.base = (&NTI124);
+NTI129057.flags = 2;
+NTI129057.marker = TMP553;
 }
 

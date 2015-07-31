@@ -17,12 +17,12 @@ struct  NimStringDesc  {
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
 N_NIMCALL(NI, ncpicountProcessors)(void);
-N_NIMCALL(NimStringDesc*, getenv_124843)(NimStringDesc* key);
+N_NIMCALL(NimStringDesc*, getenv_149843)(NimStringDesc* key);
 N_NIMCALL(NI, nsuParseInt)(NimStringDesc* s);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-STRING_LITERAL(TMP612, "NUMBER_OF_PROCESSORS", 20);
+STRING_LITERAL(TMP731, "NUMBER_OF_PROCESSORS", 20);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -58,7 +58,7 @@ N_NIMCALL(NI, ncpicountProcessors)(void) {
 	nimfr("countProcessors", "cpuinfo.nim")
 	result = 0;
 	nimln(44, "cpuinfo.nim");
-	x = getenv_124843(((NimStringDesc*) &TMP612));
+	x = getenv_149843(((NimStringDesc*) &TMP731));
 	nimln(45, "cpuinfo.nim");
 	{
 		if (!(((NI) 0) < (x ? x->Sup.len : 0))) goto LA3;

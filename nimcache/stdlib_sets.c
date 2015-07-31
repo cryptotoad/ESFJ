@@ -8,9 +8,9 @@
 #include "nimbase.h"
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Hashset246026 Hashset246026;
-typedef struct Keyvaluepairseq246029 Keyvaluepairseq246029;
-typedef struct Keyvaluepair246032 Keyvaluepair246032;
+typedef struct Hashset258026 Hashset258026;
+typedef struct Keyvaluepairseq258029 Keyvaluepairseq258029;
+typedef struct Keyvaluepair258032 Keyvaluepair258032;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
 struct  TGenericSeq  {
@@ -21,11 +21,11 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  Hashset246026  {
-Keyvaluepairseq246029* data;
+struct  Hashset258026  {
+Keyvaluepairseq258029* data;
 NI counter;
 };
-struct Keyvaluepair246032 {
+struct Keyvaluepair258032 {
 NI Field0;
 NI Field1;
 };
@@ -49,49 +49,49 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct Keyvaluepairseq246029 {
+struct Keyvaluepairseq258029 {
   TGenericSeq Sup;
-  Keyvaluepair246032 data[SEQ_DECL_SIZE];
+  Keyvaluepair258032 data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NIM_BOOL, isempty_244434)(NI hcode);
+static N_INLINE(NIM_BOOL, isempty_256434)(NI hcode);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NIM_BOOL, isfilled_244444)(NI hcode);
-static N_INLINE(NIM_BOOL, mustrehash_244503)(NI length, NI counter);
+static N_INLINE(NIM_BOOL, isfilled_256444)(NI hcode);
+static N_INLINE(NIM_BOOL, mustrehash_256503)(NI length, NI counter);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NI, rightsize_244607)(NI count);
-N_NIMCALL(NI, nextpoweroftwo_210531)(NI x);
+static N_INLINE(NI, rightsize_256607)(NI count);
+N_NIMCALL(NI, nextpoweroftwo_119531)(NI x);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
-static N_INLINE(NI, nexttry_244620)(NI h, NI maxhash);
-N_NIMCALL(void, init_246075)(Hashset246026* s, NI initialsize);
-N_NIMCALL(NIM_BOOL, ispoweroftwo_210521)(NI x);
+static N_INLINE(NI, nexttry_256620)(NI h, NI maxhash);
+N_NIMCALL(void, init_258075)(Hashset258026* s, NI initialsize);
+N_NIMCALL(NIM_BOOL, ispoweroftwo_119521)(NI x);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(void, TMP2255)(void* p, NI op);
+N_NIMCALL(void, TMP2333)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(NIM_BOOL, isvalid_246267)(Hashset246026 s);
-static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc);
-static N_INLINE(NI, hash_150804)(NI x);
+N_NIMCALL(NIM_BOOL, isvalid_258267)(Hashset258026 s);
+static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc);
+static N_INLINE(NI, hash_116804)(NI x);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(void, enlarge_246438)(Hashset246026* s);
-static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc);
-N_NIMCALL(void, rawinsert_246515)(Hashset246026* s, Keyvaluepairseq246029** data, NI key, NI hc, NI h);
-STRING_LITERAL(TMP2245, "counter < length ", 17);
-STRING_LITERAL(TMP2253, "isPowerOfTwo(initialSize) ", 26);
-STRING_LITERAL(TMP2256, "isValid(s) The set needs to be initialized.", 43);
+N_NIMCALL(void, enlarge_258438)(Hashset258026* s);
+static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc);
+N_NIMCALL(void, rawinsert_258515)(Hashset258026* s, Keyvaluepairseq258029** data, NI key, NI hc, NI h);
+STRING_LITERAL(TMP2323, "counter < length ", 17);
+STRING_LITERAL(TMP2331, "isPowerOfTwo(initialSize) ", 26);
+STRING_LITERAL(TMP2334, "isValid(s) The set needs to be initialized.", 43);
 extern TFrame* frameptr_17042;
-TNimType NTI246032; /* KeyValuePair */
-extern TNimType NTI150019; /* THash */
+TNimType NTI258032; /* KeyValuePair */
+extern TNimType NTI116023; /* THash */
 extern TNimType NTI108; /* int */
-TNimType NTI246029; /* KeyValuePairSeq */
-TNimType NTI246026; /* HashSet */
+TNimType NTI258029; /* KeyValuePairSeq */
+TNimType NTI258026; /* HashSet */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -120,7 +120,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NIM_BOOL, isempty_244434)(NI hcode) {
+static N_INLINE(NIM_BOOL, isempty_256434)(NI hcode) {
 	NIM_BOOL result;
 	nimfr("isEmpty", "sets.nim")
 	result = 0;
@@ -130,7 +130,7 @@ static N_INLINE(NIM_BOOL, isempty_244434)(NI hcode) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, isfilled_244444)(NI hcode) {
+static N_INLINE(NIM_BOOL, isfilled_256444)(NI hcode) {
 	NIM_BOOL result;
 	nimfr("isFilled", "sets.nim")
 	result = 0;
@@ -160,28 +160,28 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, mustrehash_244503)(NI length, NI counter) {
+static N_INLINE(NIM_BOOL, mustrehash_256503)(NI length, NI counter) {
 	NIM_BOOL result;
 	NIM_BOOL LOC5;
-	NI TMP2246;
-	NI TMP2247;
-	NI TMP2248;
+	NI TMP2324;
+	NI TMP2325;
+	NI TMP2326;
 	nimfr("mustRehash", "sets.nim")
 	result = 0;
 	nimln(114, "sets.nim");
 	{
 		if (!!((counter < length))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2245));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2323));
 	}
 	LA3: ;
 	nimln(115, "sets.nim");
 	LOC5 = 0;
-	TMP2246 = mulInt(length, ((NI) 2));
-	TMP2247 = mulInt(counter, ((NI) 3));
-	LOC5 = ((NI)(TMP2246) < (NI)(TMP2247));
+	TMP2324 = mulInt(length, ((NI) 2));
+	TMP2325 = mulInt(counter, ((NI) 3));
+	LOC5 = ((NI)(TMP2324) < (NI)(TMP2325));
 	if (LOC5) goto LA6;
-	TMP2248 = subInt(length, counter);
-	LOC5 = ((NI)(TMP2248) < ((NI) 4));
+	TMP2326 = subInt(length, counter);
+	LOC5 = ((NI)(TMP2326) < ((NI) 4));
 	LA6: ;
 	result = LOC5;
 	popFrame();
@@ -233,30 +233,30 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, rightsize_244607)(NI count) {
+static N_INLINE(NI, rightsize_256607)(NI count) {
 	NI result;
-	NI TMP2249;
-	NI TMP2250;
-	NI TMP2251;
+	NI TMP2327;
+	NI TMP2328;
+	NI TMP2329;
 	nimfr("rightSize", "sets.nim")
 	result = 0;
 	nimln(124, "sets.nim");
-	TMP2249 = mulInt(((NI) (count)), ((NI) 3));
-	TMP2250 = divInt(((NI) ((NI)(TMP2249))), ((NI) 2));
-	TMP2251 = addInt(((NI) ((NI)(TMP2250))), ((NI) 4));
-	result = nextpoweroftwo_210531(((NI) ((NI)(TMP2251))));
+	TMP2327 = mulInt(((NI) (count)), ((NI) 3));
+	TMP2328 = divInt(((NI) ((NI)(TMP2327))), ((NI) 2));
+	TMP2329 = addInt(((NI) ((NI)(TMP2328))), ((NI) 4));
+	result = nextpoweroftwo_119531(((NI) ((NI)(TMP2329))));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, nexttry_244620)(NI h, NI maxhash) {
+static N_INLINE(NI, nexttry_256620)(NI h, NI maxhash) {
 	NI result;
-	NI TMP2252;
+	NI TMP2330;
 	nimfr("nextTry", "sets.nim")
 	result = 0;
 	nimln(127, "sets.nim");
-	TMP2252 = addInt(h, ((NI) 1));
-	result = (NI)((NI)(TMP2252) & maxhash);
+	TMP2330 = addInt(h, ((NI) 1));
+	result = (NI)((NI)(TMP2330) & maxhash);
 	popFrame();
 	return result;
 }
@@ -284,41 +284,41 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP2255)(void* p, NI op) {
-	Keyvaluepairseq246029* a;
+N_NIMCALL(void, TMP2333)(void* p, NI op) {
+	Keyvaluepairseq258029* a;
 	NI LOC1;
-	a = (Keyvaluepairseq246029*)p;
+	a = (Keyvaluepairseq258029*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	}
 }
 
-N_NIMCALL(void, init_246075)(Hashset246026* s, NI initialsize) {
+N_NIMCALL(void, init_258075)(Hashset258026* s, NI initialsize) {
 	nimfr("init", "sets.nim")
 	nimln(331, "sets.nim");
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = ispoweroftwo_210521(initialsize);
+		LOC3 = ispoweroftwo_119521(initialsize);
 		if (!!(LOC3)) goto LA4;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2253));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2331));
 	}
 	LA4: ;
 	nimln(332, "sets.nim");
 	(*s).counter = ((NI) 0);
 	nimln(333, "sets.nim");
-	unsureAsgnRef((void**) (&(*s).data), (Keyvaluepairseq246029*) newSeq((&NTI246029), ((NI)chckRange(initialsize, ((NI) 0), ((NI) IL64(9223372036854775807))))));
+	unsureAsgnRef((void**) (&(*s).data), (Keyvaluepairseq258029*) newSeq((&NTI258029), ((NI)chckRange(initialsize, ((NI) 0), ((NI) IL64(9223372036854775807))))));
 	popFrame();
 }
 
-N_NIMCALL(void, initset_246067)(NI initialsize, Hashset246026* Result) {
+N_NIMCALL(void, initset_258067)(NI initialsize, Hashset258026* Result) {
 	nimfr("initSet", "sets.nim")
 	nimln(345, "sets.nim");
-	init_246075(Result, initialsize);
+	init_258075(Result, initialsize);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, isvalid_246267)(Hashset246026 s) {
+N_NIMCALL(NIM_BOOL, isvalid_258267)(Hashset258026 s) {
 	NIM_BOOL result;
 	nimfr("isValid", "sets.nim")
 	result = 0;
@@ -328,7 +328,7 @@ N_NIMCALL(NIM_BOOL, isvalid_246267)(Hashset246026 s) {
 	return result;
 }
 
-static N_INLINE(NI, hash_150804)(NI x) {
+static N_INLINE(NI, hash_116804)(NI x) {
 	NI result;
 	nimfr("hash", "hashes.nim")
 	result = 0;
@@ -338,14 +338,14 @@ static N_INLINE(NI, hash_150804)(NI x) {
 	return result;
 }
 
-static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc) {
+static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc) {
 	NI result;
 	NI h;
-	NI TMP2257;
+	NI TMP2335;
 	nimfr("rawGet", "sets.nim")
 {	result = 0;
 	nimln(142, "sets.nim");
-	(*hc) = hash_150804(key);
+	(*hc) = hash_116804(key);
 	nimln(143, "sets.nim");
 	{
 		if (!((*hc) == ((NI) 0))) goto LA3;
@@ -361,7 +361,7 @@ static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc) {
 			NIM_BOOL LOC7;
 			if ((NU)(h) >= (NU)(s.data->Sup.len)) raiseIndexError();
 			LOC7 = 0;
-			LOC7 = isfilled_244444(s.data->data[h].Field0);
+			LOC7 = isfilled_256444(s.data->data[h].Field0);
 			if (!LOC7) goto LA6;
 			nimln(136, "sets.nim");
 			{
@@ -380,21 +380,21 @@ static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc) {
 			}
 			LA12: ;
 			nimln(138, "sets.nim");
-			h = nexttry_244620(h, (s.data ? (s.data->Sup.len-1) : -1));
+			h = nexttry_256620(h, (s.data ? (s.data->Sup.len-1) : -1));
 		} LA6: ;
 	}
 	nimln(139, "sets.nim");
-	TMP2257 = subInt(((NI) -1), h);
-	result = (NI)(TMP2257);
+	TMP2335 = subInt(((NI) -1), h);
+	result = (NI)(TMP2335);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc) {
+static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc) {
 	NI result;
 	NI h;
-	NI TMP2259;
+	NI TMP2337;
 	nimfr("rawGetKnownHC", "sets.nim")
 {	result = 0;
 	nimln(130, "sets.nim");
@@ -405,7 +405,7 @@ static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc) {
 			NIM_BOOL LOC3;
 			if ((NU)(h) >= (NU)(s.data->Sup.len)) raiseIndexError();
 			LOC3 = 0;
-			LOC3 = isfilled_244444(s.data->data[h].Field0);
+			LOC3 = isfilled_256444(s.data->data[h].Field0);
 			if (!LOC3) goto LA2;
 			nimln(136, "sets.nim");
 			{
@@ -424,18 +424,18 @@ static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc) {
 			}
 			LA8: ;
 			nimln(138, "sets.nim");
-			h = nexttry_244620(h, (s.data ? (s.data->Sup.len-1) : -1));
+			h = nexttry_256620(h, (s.data ? (s.data->Sup.len-1) : -1));
 		} LA2: ;
 	}
 	nimln(139, "sets.nim");
-	TMP2259 = subInt(((NI) -1), h);
-	result = (NI)(TMP2259);
+	TMP2337 = subInt(((NI) -1), h);
+	result = (NI)(TMP2337);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, rawinsert_246515)(Hashset246026* s, Keyvaluepairseq246029** data, NI key, NI hc, NI h) {
+N_NIMCALL(void, rawinsert_258515)(Hashset258026* s, Keyvaluepairseq258029** data, NI key, NI hc, NI h) {
 	nimfr("rawInsert", "sets.nim")
 	nimln(148, "sets.nim");
 	if ((NU)(h) >= (NU)((*data)->Sup.len)) raiseIndexError();
@@ -446,70 +446,70 @@ N_NIMCALL(void, rawinsert_246515)(Hashset246026* s, Keyvaluepairseq246029** data
 	popFrame();
 }
 
-N_NIMCALL(void, enlarge_246438)(Hashset246026* s) {
-	Keyvaluepairseq246029* n;
-	NI TMP2258;
-	Keyvaluepairseq246029* LOC1;
+N_NIMCALL(void, enlarge_258438)(Hashset258026* s) {
+	Keyvaluepairseq258029* n;
+	NI TMP2336;
+	Keyvaluepairseq258029* LOC1;
 	nimfr("enlarge", "sets.nim")
 	n = 0;
 	nimln(191, "sets.nim");
-	TMP2258 = mulInt(((*s).data ? (*s).data->Sup.len : 0), ((NI) 2));
-	n = (Keyvaluepairseq246029*) newSeq((&NTI246029), ((NI)chckRange((NI)(TMP2258), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP2336 = mulInt(((*s).data ? (*s).data->Sup.len : 0), ((NI) 2));
+	n = (Keyvaluepairseq258029*) newSeq((&NTI258029), ((NI)chckRange((NI)(TMP2336), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(192, "sets.nim");
 	LOC1 = 0;
 	LOC1 = (*s).data;
 	unsureAsgnRef((void**) (&(*s).data), n);
 	n = LOC1;
 	{
-		NI i_246488;
-		NI HEX3Atmp_246538;
-		NI res_246541;
-		i_246488 = 0;
-		HEX3Atmp_246538 = 0;
+		NI i_258488;
+		NI HEX3Atmp_258538;
+		NI res_258541;
+		i_258488 = 0;
+		HEX3Atmp_258538 = 0;
 		nimln(193, "sets.nim");
-		HEX3Atmp_246538 = (n ? (n->Sup.len-1) : -1);
+		HEX3Atmp_258538 = (n ? (n->Sup.len-1) : -1);
 		nimln(1598, "system.nim");
-		res_246541 = ((NI) 0);
+		res_258541 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2261;
-				if (!(res_246541 <= HEX3Atmp_246538)) goto LA4;
+				NI TMP2339;
+				if (!(res_258541 <= HEX3Atmp_258538)) goto LA4;
 				nimln(1600, "system.nim");
-				i_246488 = res_246541;
+				i_258488 = res_258541;
 				nimln(194, "sets.nim");
 				{
 					NIM_BOOL LOC7;
 					NI j;
 					NI LOC10;
-					NI TMP2260;
-					if ((NU)(i_246488) >= (NU)(n->Sup.len)) raiseIndexError();
+					NI TMP2338;
+					if ((NU)(i_258488) >= (NU)(n->Sup.len)) raiseIndexError();
 					LOC7 = 0;
-					LOC7 = isfilled_244444(n->data[i_246488].Field0);
+					LOC7 = isfilled_256444(n->data[i_258488].Field0);
 					if (!LOC7) goto LA8;
 					nimln(195, "sets.nim");
-					if ((NU)(i_246488) >= (NU)(n->Sup.len)) raiseIndexError();
-					if ((NU)(i_246488) >= (NU)(n->Sup.len)) raiseIndexError();
+					if ((NU)(i_258488) >= (NU)(n->Sup.len)) raiseIndexError();
+					if ((NU)(i_258488) >= (NU)(n->Sup.len)) raiseIndexError();
 					LOC10 = 0;
-					LOC10 = rawgetknownhc_246490((*s), n->data[i_246488].Field1, n->data[i_246488].Field0);
-					TMP2260 = subInt(((NI) -1), LOC10);
-					j = (NI)(TMP2260);
+					LOC10 = rawgetknownhc_258490((*s), n->data[i_258488].Field1, n->data[i_258488].Field0);
+					TMP2338 = subInt(((NI) -1), LOC10);
+					j = (NI)(TMP2338);
 					nimln(196, "sets.nim");
-					if ((NU)(i_246488) >= (NU)(n->Sup.len)) raiseIndexError();
-					if ((NU)(i_246488) >= (NU)(n->Sup.len)) raiseIndexError();
-					rawinsert_246515(s, (&(*s).data), n->data[i_246488].Field1, n->data[i_246488].Field0, j);
+					if ((NU)(i_258488) >= (NU)(n->Sup.len)) raiseIndexError();
+					if ((NU)(i_258488) >= (NU)(n->Sup.len)) raiseIndexError();
+					rawinsert_258515(s, (&(*s).data), n->data[i_258488].Field1, n->data[i_258488].Field0, j);
 				}
 				LA8: ;
 				nimln(1614, "system.nim");
-				TMP2261 = addInt(res_246541, ((NI) 1));
-				res_246541 = (NI)(TMP2261);
+				TMP2339 = addInt(res_258541, ((NI) 1));
+				res_258541 = (NI)(TMP2339);
 			} LA4: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(void, incl_246257)(Hashset246026* s, NI key) {
+N_NIMCALL(void, incl_258257)(Hashset258026* s, NI key) {
 	NI hc;
 	NI index;
 	nimfr("incl", "sets.nim")
@@ -517,43 +517,43 @@ N_NIMCALL(void, incl_246257)(Hashset246026* s, NI key) {
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = isvalid_246267((*s));
+		LOC3 = isvalid_258267((*s));
 		if (!!(LOC3)) goto LA4;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2256));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2334));
 	}
 	LA4: ;
 	hc = 0;
 	nimln(200, "sets.nim");
-	index = rawget_246403((*s), key, (&hc));
+	index = rawget_258403((*s), key, (&hc));
 	nimln(201, "sets.nim");
 	{
-		NI TMP2262;
-		NI TMP2263;
+		NI TMP2340;
+		NI TMP2341;
 		if (!(index < ((NI) 0))) goto LA8;
 		nimln(202, "sets.nim");
 		{
 			NIM_BOOL LOC12;
 			LOC12 = 0;
-			LOC12 = mustrehash_244503(((*s).data ? (*s).data->Sup.len : 0), (*s).counter);
+			LOC12 = mustrehash_256503(((*s).data ? (*s).data->Sup.len : 0), (*s).counter);
 			if (!LOC12) goto LA13;
 			nimln(203, "sets.nim");
-			enlarge_246438(s);
+			enlarge_258438(s);
 			nimln(204, "sets.nim");
-			index = rawgetknownhc_246490((*s), key, hc);
+			index = rawgetknownhc_258490((*s), key, hc);
 		}
 		LA13: ;
 		nimln(205, "sets.nim");
-		TMP2262 = subInt(((NI) -1), index);
-		rawinsert_246515(s, (&(*s).data), key, hc, (NI)(TMP2262));
+		TMP2340 = subInt(((NI) -1), index);
+		rawinsert_258515(s, (&(*s).data), key, hc, (NI)(TMP2340));
 		nimln(206, "sets.nim");
-		TMP2263 = addInt((*s).counter, ((NI) 1));
-		(*s).counter = (NI)(TMP2263);
+		TMP2341 = addInt((*s).counter, ((NI) 1));
+		(*s).counter = (NI)(TMP2341);
 	}
 	LA8: ;
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, contains_246612)(Hashset246026 s, NI key) {
+N_NIMCALL(NIM_BOOL, contains_258612)(Hashset258026 s, NI key) {
 	NIM_BOOL result;
 	NI hc;
 	NI index;
@@ -563,21 +563,21 @@ N_NIMCALL(NIM_BOOL, contains_246612)(Hashset246026 s, NI key) {
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = isvalid_246267(s);
+		LOC3 = isvalid_258267(s);
 		if (!!(LOC3)) goto LA4;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2256));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2334));
 	}
 	LA4: ;
 	hc = 0;
 	nimln(182, "sets.nim");
-	index = rawget_246403(s, key, (&hc));
+	index = rawget_258403(s, key, (&hc));
 	nimln(183, "sets.nim");
 	result = (((NI) 0) <= index);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, len_246842)(Hashset246026 s) {
+N_NIMCALL(NI, len_258842)(Hashset258026 s) {
 	NI result;
 	nimfr("len", "sets.nim")
 	result = 0;
@@ -587,7 +587,7 @@ N_NIMCALL(NI, len_246842)(Hashset246026 s) {
 	return result;
 }
 
-N_NIMCALL(void, excl_252225)(Hashset246026* s, NI key) {
+N_NIMCALL(void, excl_264225)(Hashset258026* s, NI key) {
 	NI hc;
 	NI i;
 	NI msk;
@@ -596,26 +596,26 @@ N_NIMCALL(void, excl_252225)(Hashset246026* s, NI key) {
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = isvalid_246267((*s));
+		LOC3 = isvalid_258267((*s));
 		if (!!(LOC3)) goto LA4;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2256));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2334));
 	}
 	LA4: ;
 	hc = 0;
 	nimln(265, "sets.nim");
-	i = rawget_246403((*s), key, (&hc));
+	i = rawget_258403((*s), key, (&hc));
 	nimln(266, "sets.nim");
 	msk = ((*s).data ? ((*s).data->Sup.len-1) : -1);
 	nimln(267, "sets.nim");
 	{
-		NI TMP2289;
+		NI TMP2367;
 		if (!(((NI) 0) <= i)) goto LA8;
 		nimln(268, "sets.nim");
 		if ((NU)(i) >= (NU)((*s).data->Sup.len)) raiseIndexError();
 		(*s).data->data[i].Field0 = ((NI) 0);
 		nimln(269, "sets.nim");
-		TMP2289 = subInt((*s).counter, ((NI) 1));
-		(*s).counter = (NI)(TMP2289);
+		TMP2367 = subInt((*s).counter, ((NI) 1));
+		(*s).counter = (NI)(TMP2367);
 		{
 			nimln(270, "sets.nim");
 			while (1) {
@@ -631,16 +631,16 @@ N_NIMCALL(void, excl_252225)(Hashset246026* s, NI key) {
 				{
 					nimln(249, "sets.nim");
 					while (1) {
-						NI TMP2290;
+						NI TMP2368;
 						nimln(275, "sets.nim");
-						TMP2290 = addInt(i, ((NI) 1));
-						i = (NI)((NI)(TMP2290) & msk);
+						TMP2368 = addInt(i, ((NI) 1));
+						i = (NI)((NI)(TMP2368) & msk);
 						nimln(276, "sets.nim");
 						{
 							NIM_BOOL LOC16;
 							if ((NU)(i) >= (NU)((*s).data->Sup.len)) raiseIndexError();
 							LOC16 = 0;
-							LOC16 = isempty_244434((*s).data->data[i].Field0);
+							LOC16 = isempty_256434((*s).data->data[i].Field0);
 							if (!LOC16) goto LA17;
 							nimln(277, "sets.nim");
 							goto BeforeRet;
@@ -706,45 +706,45 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_setsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_setsDatInit)(void) {
-static TNimNode* TMP2254[2];
-static TNimNode* TMP2292[2];
-static TNimNode TMP2243[6];
-NTI246032.size = sizeof(Keyvaluepair246032);
-NTI246032.kind = 18;
-NTI246032.base = 0;
-NTI246032.flags = 3;
-TMP2254[0] = &TMP2243[1];
-TMP2243[1].kind = 1;
-TMP2243[1].offset = offsetof(Keyvaluepair246032, Field0);
-TMP2243[1].typ = (&NTI150019);
-TMP2243[1].name = "Field0";
-TMP2254[1] = &TMP2243[2];
-TMP2243[2].kind = 1;
-TMP2243[2].offset = offsetof(Keyvaluepair246032, Field1);
-TMP2243[2].typ = (&NTI108);
-TMP2243[2].name = "Field1";
-TMP2243[0].len = 2; TMP2243[0].kind = 2; TMP2243[0].sons = &TMP2254[0];
-NTI246032.node = &TMP2243[0];
-NTI246029.size = sizeof(Keyvaluepairseq246029*);
-NTI246029.kind = 24;
-NTI246029.base = (&NTI246032);
-NTI246029.flags = 2;
-NTI246029.marker = TMP2255;
-NTI246026.size = sizeof(Hashset246026);
-NTI246026.kind = 18;
-NTI246026.base = 0;
-NTI246026.flags = 2;
-TMP2292[0] = &TMP2243[4];
-TMP2243[4].kind = 1;
-TMP2243[4].offset = offsetof(Hashset246026, data);
-TMP2243[4].typ = (&NTI246029);
-TMP2243[4].name = "data";
-TMP2292[1] = &TMP2243[5];
-TMP2243[5].kind = 1;
-TMP2243[5].offset = offsetof(Hashset246026, counter);
-TMP2243[5].typ = (&NTI108);
-TMP2243[5].name = "counter";
-TMP2243[3].len = 2; TMP2243[3].kind = 2; TMP2243[3].sons = &TMP2292[0];
-NTI246026.node = &TMP2243[3];
+static TNimNode* TMP2332[2];
+static TNimNode* TMP2370[2];
+static TNimNode TMP2321[6];
+NTI258032.size = sizeof(Keyvaluepair258032);
+NTI258032.kind = 18;
+NTI258032.base = 0;
+NTI258032.flags = 3;
+TMP2332[0] = &TMP2321[1];
+TMP2321[1].kind = 1;
+TMP2321[1].offset = offsetof(Keyvaluepair258032, Field0);
+TMP2321[1].typ = (&NTI116023);
+TMP2321[1].name = "Field0";
+TMP2332[1] = &TMP2321[2];
+TMP2321[2].kind = 1;
+TMP2321[2].offset = offsetof(Keyvaluepair258032, Field1);
+TMP2321[2].typ = (&NTI108);
+TMP2321[2].name = "Field1";
+TMP2321[0].len = 2; TMP2321[0].kind = 2; TMP2321[0].sons = &TMP2332[0];
+NTI258032.node = &TMP2321[0];
+NTI258029.size = sizeof(Keyvaluepairseq258029*);
+NTI258029.kind = 24;
+NTI258029.base = (&NTI258032);
+NTI258029.flags = 2;
+NTI258029.marker = TMP2333;
+NTI258026.size = sizeof(Hashset258026);
+NTI258026.kind = 18;
+NTI258026.base = 0;
+NTI258026.flags = 2;
+TMP2370[0] = &TMP2321[4];
+TMP2321[4].kind = 1;
+TMP2321[4].offset = offsetof(Hashset258026, data);
+TMP2321[4].typ = (&NTI258029);
+TMP2321[4].name = "data";
+TMP2370[1] = &TMP2321[5];
+TMP2321[5].kind = 1;
+TMP2321[5].offset = offsetof(Hashset258026, counter);
+TMP2321[5].typ = (&NTI108);
+TMP2321[5].name = "counter";
+TMP2321[3].len = 2; TMP2321[3].kind = 2; TMP2321[3].sons = &TMP2370[0];
+NTI258026.node = &TMP2321[3];
 }
 

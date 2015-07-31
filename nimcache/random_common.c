@@ -8,26 +8,26 @@
 #include "nimbase.h"
 
 #include <math.h>
-typedef struct Mtstate273035 Mtstate273035;
-typedef NU32 TY273036[624];
-struct  Mtstate273035  {
-TY273036 mt;
+typedef struct Mtstate127035 Mtstate127035;
+typedef NU32 TY127036[624];
+struct  Mtstate127035  {
+TY127036 mt;
 NI mti;
 };
-static N_INLINE(NU32, randomuint32_275012)(Mtstate273035* self);
-N_NIMCALL(NU32, genrandint32_273324)(Mtstate273035* s);
+static N_INLINE(NU32, randomuint32_129012)(Mtstate127035* self);
+N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NI, divceil_278803)(NI a, NI b);
+static N_INLINE(NI, divceil_132803)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
-N_NIMCALL(NI, bitsize_270518)(NU64 x);
-static N_INLINE(NU64, randomint_279766)(Mtstate273035* rng);
-N_NIMCALL(NU64, randomintimpl_279777)(Mtstate273035* rng);
+N_NIMCALL(NI, bitsize_124518)(NU64 x);
+static N_INLINE(NU64, randomint_133766)(Mtstate127035* rng);
+N_NIMCALL(NU64, randomintimpl_133777)(Mtstate127035* rng);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 extern TFrame* frameptr_17042;
@@ -59,17 +59,17 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NU32, randomuint32_275012)(Mtstate273035* self) {
+static N_INLINE(NU32, randomuint32_129012)(Mtstate127035* self) {
 	NU32 result;
 	nimfr("randomUint32", "mersenne.nim")
 	result = 0;
 	nimln(38, "mersenne.nim");
-	result = genrandint32_273324(self);
+	result = genrandint32_127324(self);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NU8, randomintimpl_277304)(Mtstate273035* rng) {
+N_NIMCALL(NU8, randomintimpl_131304)(Mtstate127035* rng) {
 	NU8 result;
 	NU32 LOC1;
 	nimfr("randomIntImpl", "common.nim")
@@ -77,7 +77,7 @@ N_NIMCALL(NU8, randomintimpl_277304)(Mtstate273035* rng) {
 	nimln(60, "common.nim");
 	nimln(61, "common.nim");
 	LOC1 = 0;
-	LOC1 = randomuint32_275012(rng);
+	LOC1 = randomuint32_129012(rng);
 	result = ((NU8) (LOC1));
 	popFrame();
 	return result;
@@ -148,24 +148,24 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, divceil_278803)(NI a, NI b) {
+static N_INLINE(NI, divceil_132803)(NI a, NI b) {
 	NI result;
-	NI TMP2726;
-	NI TMP2727;
-	NI TMP2728;
+	NI TMP576;
+	NI TMP577;
+	NI TMP578;
 	nimfr("divCeil", "util.nim")
 	result = 0;
 	nimln(28, "util.nim");
 	nimln(29, "util.nim");
-	TMP2726 = subInt(a, ((NI) 1));
-	TMP2727 = addInt((NI)(TMP2726), b);
-	TMP2728 = divInt((NI)(TMP2727), b);
-	result = (NI)(TMP2728);
+	TMP576 = subInt(a, ((NI) 1));
+	TMP577 = addInt((NI)(TMP576), b);
+	TMP578 = divInt((NI)(TMP577), b);
+	result = (NI)(TMP578);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max) {
+N_NIMCALL(NU, randomintimpl_131871)(Mtstate127035* rng, NU max) {
 	NU result;
 	NU limit;
 	nimfr("randomIntImpl", "common.nim")
@@ -181,7 +181,7 @@ N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max) {
 				NU32 LOC7;
 				nimln(87, "common.nim");
 				LOC7 = 0;
-				LOC7 = randomuint32_275012(rng);
+				LOC7 = randomuint32_129012(rng);
 				result = ((NU) (LOC7));
 				nimln(88, "common.nim");
 				{
@@ -199,32 +199,32 @@ N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max) {
 		NI LOC13;
 		nimln(90, "common.nim");
 		LOC13 = 0;
-		LOC13 = bitsize_270518(((NU64) (max)));
-		neededparts = divceil_278803(LOC13, ((NI) 32));
+		LOC13 = bitsize_124518(((NU64) (max)));
+		neededparts = divceil_132803(LOC13, ((NI) 32));
 		{
 			nimln(91, "common.nim");
 			while (1) {
 				{
-					NI i_278825;
-					NI res_279235;
-					i_278825 = 0;
+					NI i_132825;
+					NI res_133235;
+					i_132825 = 0;
 					nimln(1598, "system.nim");
-					res_279235 = ((NI) 1);
+					res_133235 = ((NI) 1);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
 							NU32 LOC19;
-							NI TMP2729;
-							if (!(res_279235 <= neededparts)) goto LA18;
+							NI TMP579;
+							if (!(res_133235 <= neededparts)) goto LA18;
 							nimln(1600, "system.nim");
-							i_278825 = res_279235;
+							i_132825 = res_133235;
 							nimln(93, "common.nim");
 							LOC19 = 0;
-							LOC19 = randomuint32_275012(rng);
+							LOC19 = randomuint32_129012(rng);
 							result = (NU)((NU)((NU64)(result) << (NU64)(((NI) 32))) | ((NU) (LOC19)));
 							nimln(1619, "system.nim");
-							TMP2729 = addInt(res_279235, ((NI) 1));
-							res_279235 = (NI)(TMP2729);
+							TMP579 = addInt(res_133235, ((NI) 1));
+							res_133235 = (NI)(TMP579);
 						} LA18: ;
 					}
 				}
@@ -244,7 +244,7 @@ N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max) {
 	return result;
 }
 
-N_NIMCALL(NU64, randomintimpl_279777)(Mtstate273035* rng) {
+N_NIMCALL(NU64, randomintimpl_133777)(Mtstate127035* rng) {
 	NU64 result;
 	NI neededparts;
 	nimfr("randomIntImpl", "common.nim")
@@ -252,27 +252,27 @@ N_NIMCALL(NU64, randomintimpl_279777)(Mtstate273035* rng) {
 	nimln(63, "common.nim");
 	neededparts = ((NI) 2);
 	{
-		NI i_280213;
-		NI res_280615;
-		i_280213 = 0;
+		NI i_134213;
+		NI res_134615;
+		i_134213 = 0;
 		nimln(1598, "system.nim");
-		res_280615 = ((NI) 1);
+		res_134615 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NU32 LOC4;
-				NI TMP2738;
-				if (!(res_280615 <= neededparts)) goto LA3;
+				NI TMP588;
+				if (!(res_134615 <= neededparts)) goto LA3;
 				nimln(1600, "system.nim");
-				i_280213 = res_280615;
+				i_134213 = res_134615;
 				nimln(65, "common.nim");
 				nimln(66, "common.nim");
 				LOC4 = 0;
-				LOC4 = randomuint32_275012(rng);
+				LOC4 = randomuint32_129012(rng);
 				result = (NU64)((NU64)((NU64)(result) << (NU64)(32ULL)) | ((NU64) (LOC4)));
 				nimln(1619, "system.nim");
-				TMP2738 = addInt(res_280615, ((NI) 1));
-				res_280615 = (NI)(TMP2738);
+				TMP588 = addInt(res_134615, ((NI) 1));
+				res_134615 = (NI)(TMP588);
 			} LA3: ;
 		}
 	}
@@ -280,13 +280,13 @@ N_NIMCALL(NU64, randomintimpl_279777)(Mtstate273035* rng) {
 	return result;
 }
 
-static N_INLINE(NU64, randomint_279766)(Mtstate273035* rng) {
+static N_INLINE(NU64, randomint_133766)(Mtstate127035* rng) {
 	NU64 result;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(69, "common.nim");
 	nimln(70, "common.nim");
-	result = randomintimpl_279777(rng);
+	result = randomintimpl_133777(rng);
 	popFrame();
 	return result;
 }
@@ -315,34 +315,34 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NF, randomprecise_279719)(Mtstate273035* rng) {
+N_NIMCALL(NF, randomprecise_133719)(Mtstate127035* rng) {
 	NF result;
-	NI exponent_279727;
-	NU64 significand_279729;
-	NI rshift_279731;
+	NI exponent_133727;
+	NU64 significand_133729;
+	NI rshift_133731;
 	nimfr("randomPrecise", "common.nim")
 {	result = 0;
 	nimln(77, "random_real.nim");
-	exponent_279727 = ((NI) -64);
-	significand_279729 = 0;
-	rshift_279731 = 0;
+	exponent_133727 = ((NI) -64);
+	significand_133729 = 0;
+	rshift_133731 = 0;
 	{
 		nimln(83, "random_real.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP2739;
-			significand_279729 = randomint_279766(rng);
+			NI TMP589;
+			significand_133729 = randomint_133766(rng);
 			LOC3 = 0;
-			LOC3 = unlikely((significand_279729 == ((NI) 0)));
+			LOC3 = unlikely((significand_133729 == ((NI) 0)));
 			if (!LOC3) goto LA2;
 			nimln(84, "random_real.nim");
-			TMP2739 = subInt(exponent_279727, ((NI) 64));
-			exponent_279727 = (NI)(TMP2739);
+			TMP589 = subInt(exponent_133727, ((NI) 64));
+			exponent_133727 = (NI)(TMP589);
 			nimln(91, "random_real.nim");
 			{
 				NIM_BOOL LOC6;
 				LOC6 = 0;
-				LOC6 = unlikely((exponent_279727 < ((NI) -1074)));
+				LOC6 = unlikely((exponent_133727 < ((NI) -1074)));
 				if (!LOC6) goto LA7;
 				nimln(92, "random_real.nim");
 				result = 0.0;
@@ -352,32 +352,32 @@ N_NIMCALL(NF, randomprecise_279719)(Mtstate273035* rng) {
 		} LA2: ;
 	}
 	nimln(100, "random_real.nim");
-	rshift_279731 = bitsize_270518(significand_279729);
+	rshift_133731 = bitsize_124518(significand_133729);
 	nimln(101, "random_real.nim");
 	{
-		NI TMP2740;
-		NI TMP2741;
-		NI TMP2742;
+		NI TMP590;
+		NI TMP591;
+		NI TMP592;
 		NU64 LOC13;
-		if (!!((rshift_279731 == ((NI) 64)))) goto LA11;
+		if (!!((rshift_133731 == ((NI) 64)))) goto LA11;
 		nimln(102, "random_real.nim");
-		TMP2740 = subInt(((NI) 64), rshift_279731);
-		TMP2741 = subInt(exponent_279727, (NI)(TMP2740));
-		exponent_279727 = (NI)(TMP2741);
+		TMP590 = subInt(((NI) 64), rshift_133731);
+		TMP591 = subInt(exponent_133727, (NI)(TMP590));
+		exponent_133727 = (NI)(TMP591);
 		nimln(103, "random_real.nim");
-		TMP2742 = subInt(((NI) 64), rshift_279731);
-		significand_279729 = (NU64)((NU64)(significand_279729) << (NU64)(((NU64) ((NI)(TMP2742)))));
+		TMP592 = subInt(((NI) 64), rshift_133731);
+		significand_133729 = (NU64)((NU64)(significand_133729) << (NU64)(((NU64) ((NI)(TMP592)))));
 		nimln(104, "random_real.nim");
 		nimln(138, "common.nim");
 		LOC13 = 0;
-		LOC13 = randomint_279766(rng);
-		significand_279729 = (NU64)(significand_279729 | (NU64)((NU64)(LOC13) >> (NU64)(((NU64) (rshift_279731)))));
+		LOC13 = randomint_133766(rng);
+		significand_133729 = (NU64)(significand_133729 | (NU64)((NU64)(LOC13) >> (NU64)(((NU64) (rshift_133731)))));
 	}
 	LA11: ;
 	nimln(111, "random_real.nim");
-	significand_279729 = (NU64)(significand_279729 | 1ULL);
+	significand_133729 = (NU64)(significand_133729 | 1ULL);
 	nimln(115, "random_real.nim");
-	result = ldexp(((NF) (significand_279729)), ((int)chckRange(exponent_279727, ((int) (-2147483647 -1)), ((int) 2147483647))));
+	result = ldexp(((NF) (significand_133729)), ((int)chckRange(exponent_133727, ((int) (-2147483647 -1)), ((int) 2147483647))));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
