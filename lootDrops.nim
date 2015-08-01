@@ -18,4 +18,7 @@ proc generateLootDrop(user: string, rare: bool): int =
     return 
 
 proc addUserLoot(user: string, item: int): bool =
+  db.exec(sql"""
+  update users_loot set upvotes = upvotes + 1 where upper(name) = ?;
+  """,  toUpper(name))
   result = true
