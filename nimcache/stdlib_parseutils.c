@@ -178,7 +178,7 @@ Tfreecell27830* next;
 NI zerofield;
 };
 N_NIMCALL(NI, npuParseBiggestInt)(NimStringDesc* s, NI64* number, NI start);
-N_NIMCALL(NI, rawparseint_93714)(NimStringDesc* s, NI64* b, NI start);
+N_NIMCALL(NI, rawparseint_95714)(NimStringDesc* s, NI64* b, NI start);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
@@ -197,10 +197,10 @@ N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
 N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s, NF* number, NI start);
 N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s, NF* number, NI start);
-static N_INLINE(NIM_CHAR, tolower_93014)(NIM_CHAR c);
+static N_INLINE(NIM_CHAR, tolower_95014)(NIM_CHAR c);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-STRING_LITERAL(TMP290, "overflow", 8);
+STRING_LITERAL(TMP292, "overflow", 8);
 extern TFrame* frameptr_17042;
 extern TNimType NTI23401; /* ref OverflowError */
 extern TNimType NTI3443; /* OverflowError */
@@ -293,7 +293,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI, rawparseint_93714)(NimStringDesc* s, NI64* b, NI start) {
+N_NIMCALL(NI, rawparseint_95714)(NimStringDesc* s, NI64* b, NI start) {
 	NI result;
 	NI64 sign;
 	NI i;
@@ -305,22 +305,22 @@ N_NIMCALL(NI, rawparseint_93714)(NimStringDesc* s, NI64* b, NI start) {
 	i = start;
 	nimln(196, "parseutils.nim");
 	{
-		NI TMP281;
+		NI TMP283;
 		if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 		if (!((NU8)(s->data[i]) == (NU8)(43))) goto LA3;
-		TMP281 = addInt(i, ((NI) 1));
-		i = (NI)(TMP281);
+		TMP283 = addInt(i, ((NI) 1));
+		i = (NI)(TMP283);
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP282;
+		NI TMP284;
 		nimln(197, "parseutils.nim");
 		if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 		if (!((NU8)(s->data[i]) == (NU8)(45))) goto LA6;
 		nimln(198, "parseutils.nim");
-		TMP282 = addInt(i, ((NI) 1));
-		i = (NI)(TMP282);
+		TMP284 = addInt(i, ((NI) 1));
+		i = (NI)(TMP284);
 		nimln(199, "parseutils.nim");
 		sign = IL64(1);
 	}
@@ -329,8 +329,8 @@ N_NIMCALL(NI, rawparseint_93714)(NimStringDesc* s, NI64* b, NI start) {
 	LA1: ;
 	nimln(200, "parseutils.nim");
 	{
-		NI64 TMP288;
-		NI TMP289;
+		NI64 TMP290;
+		NI TMP291;
 		if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 		if (!(((NU8)(s->data[i])) >= ((NU8)(48)) && ((NU8)(s->data[i])) <= ((NU8)(57)))) goto LA10;
 		nimln(201, "parseutils.nim");
@@ -338,39 +338,39 @@ N_NIMCALL(NI, rawparseint_93714)(NimStringDesc* s, NI64* b, NI start) {
 		{
 			nimln(202, "parseutils.nim");
 			while (1) {
-				NI64 TMP283;
-				NI TMP284;
 				NI64 TMP285;
 				NI TMP286;
+				NI64 TMP287;
+				NI TMP288;
 				if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 				if (!(((NU8)(s->data[i])) >= ((NU8)(48)) && ((NU8)(s->data[i])) <= ((NU8)(57)))) goto LA13;
 				nimln(203, "parseutils.nim");
-				TMP283 = mulInt64((*b), IL64(10));
+				TMP285 = mulInt64((*b), IL64(10));
 				if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
-				TMP284 = subInt(((NI) (((NU8)(s->data[i])))), ((NI) 48));
-				TMP285 = subInt64((NI64)(TMP283), ((NI64) ((NI)(TMP284))));
-				(*b) = (NI64)(TMP285);
+				TMP286 = subInt(((NI) (((NU8)(s->data[i])))), ((NI) 48));
+				TMP287 = subInt64((NI64)(TMP285), ((NI64) ((NI)(TMP286))));
+				(*b) = (NI64)(TMP287);
 				nimln(204, "parseutils.nim");
-				TMP286 = addInt(i, ((NI) 1));
-				i = (NI)(TMP286);
+				TMP288 = addInt(i, ((NI) 1));
+				i = (NI)(TMP288);
 				{
 					nimln(205, "parseutils.nim");
 					while (1) {
-						NI TMP287;
+						NI TMP289;
 						if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 						if (!((NU8)(s->data[i]) == (NU8)(95))) goto LA15;
-						TMP287 = addInt(i, ((NI) 1));
-						i = (NI)(TMP287);
+						TMP289 = addInt(i, ((NI) 1));
+						i = (NI)(TMP289);
 					} LA15: ;
 				}
 			} LA13: ;
 		}
 		nimln(206, "parseutils.nim");
-		TMP288 = mulInt64((*b), sign);
-		(*b) = (NI64)(TMP288);
+		TMP290 = mulInt64((*b), sign);
+		(*b) = (NI64)(TMP290);
 		nimln(207, "parseutils.nim");
-		TMP289 = subInt(i, start);
-		result = (NI)(TMP289);
+		TMP291 = subInt(i, start);
+		result = (NI)(TMP291);
 	}
 	LA10: ;
 	popFrame();
@@ -384,7 +384,7 @@ N_NIMCALL(NI, npuParseBiggestInt)(NimStringDesc* s, NI64* number, NI start) {
 	result = 0;
 	res = 0;
 	nimln(218, "parseutils.nim");
-	result = rawparseint_93714(s, (&res), start);
+	result = rawparseint_95714(s, (&res), start);
 	nimln(219, "parseutils.nim");
 	(*number) = res;
 	popFrame();
@@ -438,7 +438,7 @@ N_NIMCALL(NI, npuParseInt)(NimStringDesc* s, NI* number, NI start) {
 	{
 		NIM_BOOL LOC3;
 		NIM_BOOL LOC5;
-		Overflowerror3443* e_93855;
+		Overflowerror3443* e_95855;
 		NimStringDesc* LOC9;
 		LOC3 = 0;
 		LOC3 = NIM_FALSE;
@@ -452,16 +452,16 @@ N_NIMCALL(NI, npuParseInt)(NimStringDesc* s, NI* number, NI start) {
 		LOC3 = LOC5;
 		LA4: ;
 		if (!LOC3) goto LA7;
-		e_93855 = 0;
+		e_95855 = 0;
 		nimln(2265, "system.nim");
-		e_93855 = (Overflowerror3443*) newObj((&NTI23401), sizeof(Overflowerror3443));
-		(*e_93855).Sup.Sup.Sup.m_type = (&NTI3443);
+		e_95855 = (Overflowerror3443*) newObj((&NTI23401), sizeof(Overflowerror3443));
+		(*e_95855).Sup.Sup.Sup.m_type = (&NTI3443);
 		nimln(2266, "system.nim");
 		LOC9 = 0;
-		LOC9 = (*e_93855).Sup.Sup.message; (*e_93855).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP290));
+		LOC9 = (*e_95855).Sup.Sup.message; (*e_95855).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP292));
 		if (LOC9) nimGCunrefNoCycle(LOC9);
 		nimln(230, "parseutils.nim");
-		raiseException((Exception*)e_93855, "OverflowError");
+		raiseException((Exception*)e_95855, "OverflowError");
 	}
 	goto LA1;
 	LA7: ;
@@ -521,18 +521,18 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NIM_CHAR, tolower_93014)(NIM_CHAR c) {
+static N_INLINE(NIM_CHAR, tolower_95014)(NIM_CHAR c) {
 	NIM_CHAR result;
 	nimfr("toLower", "parseutils.nim")
 	result = 0;
 	nimln(26, "parseutils.nim");
 	{
-		NI TMP2575;
-		NI TMP2576;
+		NI TMP2497;
+		NI TMP2498;
 		if (!(((NU8)(c)) >= ((NU8)(65)) && ((NU8)(c)) <= ((NU8)(90)))) goto LA3;
-		TMP2575 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
-		TMP2576 = addInt(((NI) ((NI)(TMP2575))), ((NI) 97));
-		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2576), ((NI) 0), ((NI) 255)))));
+		TMP2497 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
+		TMP2498 = addInt(((NI) ((NI)(TMP2497))), ((NI) 97));
+		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2498), ((NI) 0), ((NI) 255)))));
 	}
 	goto LA1;
 	LA3: ;
@@ -544,7 +544,7 @@ static N_INLINE(NIM_CHAR, tolower_93014)(NIM_CHAR c) {
 	return result;
 }
 
-N_NIMCALL(NI, skipignorecase_93447)(NimStringDesc* s, NimStringDesc* token, NI start) {
+N_NIMCALL(NI, skipignorecase_95447)(NimStringDesc* s, NimStringDesc* token, NI start) {
 	NI result;
 	nimfr("skipIgnoreCase", "parseutils.nim")
 	result = 0;
@@ -552,26 +552,26 @@ N_NIMCALL(NI, skipignorecase_93447)(NimStringDesc* s, NimStringDesc* token, NI s
 		nimln(132, "parseutils.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP2577;
+			NI TMP2499;
 			NIM_CHAR LOC5;
 			NIM_CHAR LOC6;
-			NI TMP2578;
+			NI TMP2500;
 			LOC3 = 0;
 			LOC3 = (result < (token ? token->Sup.len : 0));
 			if (!(LOC3)) goto LA4;
 			nimln(133, "parseutils.nim");
-			TMP2577 = addInt(result, start);
-			if ((NU)((NI)(TMP2577)) > (NU)(s->Sup.len)) raiseIndexError();
+			TMP2499 = addInt(result, start);
+			if ((NU)((NI)(TMP2499)) > (NU)(s->Sup.len)) raiseIndexError();
 			LOC5 = 0;
-			LOC5 = tolower_93014(s->data[(NI)(TMP2577)]);
+			LOC5 = tolower_95014(s->data[(NI)(TMP2499)]);
 			if ((NU)(result) > (NU)(token->Sup.len)) raiseIndexError();
 			LOC6 = 0;
-			LOC6 = tolower_93014(token->data[result]);
+			LOC6 = tolower_95014(token->data[result]);
 			LOC3 = ((NU8)(LOC5) == (NU8)(LOC6));
 			LA4: ;
 			if (!LOC3) goto LA2;
-			TMP2578 = addInt(result, ((NI) 1));
-			result = (NI)(TMP2578);
+			TMP2500 = addInt(result, ((NI) 1));
+			result = (NI)(TMP2500);
 		} LA2: ;
 	}
 	nimln(134, "parseutils.nim");

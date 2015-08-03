@@ -31,15 +31,14 @@ typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
 typedef struct Slice88061 Slice88061;
-typedef struct TY282131 TY282131;
-typedef struct Profile282002 Profile282002;
 typedef struct Tsocketimpl136607 Tsocketimpl136607;
 typedef struct Tsqlite3165291 Tsqlite3165291;
 typedef struct Exception Exception;
 typedef struct TNimObject TNimObject;
 typedef struct TSafePoint TSafePoint;
-typedef struct TY164210 TY164210;
 typedef struct Mtstate273035 Mtstate273035;
+typedef struct TY167494 TY167494;
+typedef struct TY164210 TY164210;
 typedef struct SslcontextHEX3Aobjecttype265375 SslcontextHEX3Aobjecttype265375;
 typedef struct ProxyHEX3Aobjecttype265023 ProxyHEX3Aobjecttype265023;
 typedef struct Tbasechunk27838 Tbasechunk27838;
@@ -133,12 +132,6 @@ struct  Slice88061  {
 NI a;
 NI b;
 };
-struct  Profile282002  {
-NimStringDesc* name;
-NI upvotes;
-NI downvotes;
-NimStringDesc* rank;
-};
 typedef NimStringDesc* TY161637[1];
 struct  TNimObject  {
 TNimType* m_type;
@@ -162,17 +155,17 @@ NIM_BOOL hasRaiseAction;
 TY15609 raiseAction;
 };
 typedef NimStringDesc* TY167666[1];
-typedef NimStringDesc* TY282225[2];
-struct TY164210 {
-NimStringDesc* Field0;
-NI Field1;
-};
-typedef NU8 TY77659[32];
+typedef NimStringDesc* TY282228[2];
 typedef NU32 TY273036[624];
 struct  Mtstate273035  {
 TY273036 mt;
 NI mti;
 };
+struct TY164210 {
+NimStringDesc* Field0;
+NI Field1;
+};
+typedef NU8 TY77659[32];
 typedef NI TY27820[8];
 struct  Tpagedesc46754  {
 Tpagedesc46754* next;
@@ -258,20 +251,20 @@ struct TY13606 {
   TGenericSeq Sup;
   NimStringDesc* data[SEQ_DECL_SIZE];
 };
-struct TY282131 {
+struct TY167494 {
   TGenericSeq Sup;
-  Profile282002 data[SEQ_DECL_SIZE];
+  TY13606* data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(void, delete_282270)(TY13606** s, NI first, NI last);
-N_NIMCALL(NimStringDesc*, version_282007)(void);
+N_NIMCALL(void, delete_282273)(TY13606** s, NI first, NI last);
+N_NIMCALL(NimStringDesc*, version_282001)(void);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NimStringDesc*, about_282013)(void);
+N_NIMCALL(NimStringDesc*, about_282007)(void);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
-N_NIMCALL(TY13606*, chansplit_282019)(NimStringDesc* raw);
+N_NIMCALL(TY13606*, chansplit_282013)(NimStringDesc* raw);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
@@ -285,7 +278,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(NimStringDesc*, getnick_282076)(NimStringDesc* raw);
+N_NIMCALL(NimStringDesc*, getnick_282070)(NimStringDesc* raw);
 static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x);
 static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b);
 N_NIMCALL(NI, nsuFindChar)(NimStringDesc* s, NIM_CHAR sub, NI start);
@@ -297,11 +290,11 @@ N_NIMCALL(void, exec_167155)(Tsqlite3165291* db, NimStringDesc* query, NimString
 static N_INLINE(NimStringDesc*, sql_167021)(NimStringDesc* query);
 N_NIMCALL(void, connect_142083)(Tsocketimpl136607* socket, NimStringDesc* address, NU16 port, NU8 af);
 N_NIMCALL(void, send_146407)(Tsocketimpl136607* socket, NimStringDesc* data);
-N_NIMCALL(NimStringDesc*, inttoitem_282145)(NI itemid);
-N_NIMCALL(NIM_BOOL, isloggedin_282152)(NimStringDesc* name);
+N_NIMCALL(NimStringDesc*, inttoitem_282137)(NI itemid);
+N_NIMCALL(NIM_BOOL, isloggedin_282144)(NimStringDesc* name);
 N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringDesc* a, NimStringDesc* b);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(NIM_BOOL, checkuser_282189)(NimStringDesc* name);
+N_NIMCALL(NIM_BOOL, checkuser_282181)(NimStringDesc* name);
 static N_INLINE(void, pushSafePoint)(TSafePoint* s);
 N_NIMCALL(NimStringDesc*, getvalue_167577)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 N_NIMCALL(NimStringDesc*, nsuToUpperStr)(NimStringDesc* s);
@@ -316,24 +309,54 @@ static N_INLINE(void, rtladdcycleroot_51023)(Tcell46746* c);
 N_NOINLINE(void, incl_47465)(Tcellset46758* s, Tcell46746* cell);
 static N_INLINE(void, decref_52204)(Tcell46746* c);
 N_NIMCALL(void, reraiseException)(void);
-N_NIMCALL(NimStringDesc*, getquote_282200)(NI id);
+N_NIMCALL(NIM_BOOL, checkblacklist_282192)(NimStringDesc* name);
+N_NIMCALL(NimStringDesc*, getquote_282203)(NI id);
 N_NIMCALL(TY13606*, getrow_167472)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
-N_NIMCALL(NI, addquote_282210)(NimStringDesc* content);
+N_NIMCALL(NI, addquote_282213)(NimStringDesc* content);
 N_NIMCALL(NI64, tryinsertid_167593)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(NI, adduser_282220)(NimStringDesc* name, NimStringDesc* pass);
-N_NIMCALL(NI, getquotecount_282231)(void);
-N_NIMCALL(NIM_BOOL, loginuser_282241)(NimStringDesc* name, NimStringDesc* pass);
-N_NIMCALL(NIM_BOOL, logoutuser_282252)(NimStringDesc* name);
-N_NIMCALL(NI, upvote_282360)(NimStringDesc* name);
-N_NIMCALL(NI, downvote_282372)(NimStringDesc* name);
-N_NIMCALL(NI, karma_282384)(NimStringDesc* name);
-static N_INLINE(void, writeln_282416)(FILE* f, NimStringDesc** x, NI xLen0);
+N_NIMCALL(NI, adduser_282223)(NimStringDesc* name, NimStringDesc* pass);
+N_NIMCALL(NI, getquotecount_282234)(void);
+N_NIMCALL(NIM_BOOL, loginuser_282244)(NimStringDesc* name, NimStringDesc* pass);
+N_NIMCALL(NIM_BOOL, logoutuser_282255)(NimStringDesc* name);
+N_NIMCALL(NI, upvote_282363)(NimStringDesc* name);
+N_NIMCALL(NI, downvote_282375)(NimStringDesc* name);
+N_NIMCALL(NI, karma_282387)(NimStringDesc* name);
+N_NIMCALL(NI, userid_282396)(NimStringDesc* name);
+N_NIMCALL(NI, getweapon_282422)(NimStringDesc* user);
+N_NIMCALL(NI, getarmor_282431)(NimStringDesc* user);
+N_NIMCALL(NI, getshield_282440)(NimStringDesc* user);
+N_NIMCALL(NimStringDesc*, getbag_282449)(NimStringDesc* user);
+N_NIMCALL(NIM_BOOL, hasitem_282458)(NI item, NimStringDesc* user);
+N_NIMCALL(NIM_BOOL, tryexec_167138)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NIM_BOOL, removeitem_282468)(NI item, NimStringDesc* user);
+N_NIMCALL(NimStringDesc*, nsuReplaceStr)(NimStringDesc* s, NimStringDesc* sub, NimStringDesc* by);
+N_NIMCALL(NI, itemid_282480)(NimStringDesc* item);
+N_NIMCALL(NIM_BOOL, isweapon_282489)(NI item);
+N_NIMCALL(void, setweapon_282498)(NI item, NimStringDesc* user);
+N_NIMCALL(void, setarmor_282507)(NI item, NimStringDesc* user);
+N_NIMCALL(void, equipitem_282516)(NI item, NimStringDesc* user);
+N_NIMCALL(NI, getitembonus_282523)(NI item);
+N_NIMCALL(NimStringDesc*, getitemname_282532)(NI item);
+N_NIMCALL(NI, getdefensebonus_282541)(NimStringDesc* user);
+N_NIMCALL(NI, getattackbonus_282548)(NimStringDesc* user);
+N_NIMCALL(NimStringDesc*, battleusers_282555)(NimStringDesc* user1, NimStringDesc* user2);
+static N_INLINE(NI, randomint_279271)(NI min, NI max);
+static N_INLINE(NI, randomint_279309)(Mtstate273035* rng, NI min, NI max);
+static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max);
+N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max);
+static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
+N_NOINLINE(void, raiseRangeError)(NI64 val);
+N_NIMCALL(NIM_BOOL, doesusergetdrop_282673)(NimStringDesc* msg, NimStringDesc* user);
+N_NIMCALL(NI, generatelootdrop_282706)(NimStringDesc* user, NIM_BOOL rare);
+N_NIMCALL(TY167494*, getallrows_167488)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NIM_BOOL, adduserloot_282768)(NI user, NI item);
+static N_INLINE(void, writeln_282786)(FILE* f, NimStringDesc** x, NI xLen0);
 N_NIMCALL(void, write_13457)(FILE* f, NimStringDesc* s);
 N_NIMCALL(void, readline_145045)(Tsocketimpl136607* socket, NimStringDesc** line, NI timeout);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
-N_NIMCALL(NimStringDesc*, HEX24_282510)(TY13606* x);
-N_NIMCALL(NimStringDesc*, collectiontostring_282518)(TY13606* x, NimStringDesc* b, NimStringDesc* e);
+N_NIMCALL(NimStringDesc*, HEX24_282880)(TY13606* x);
+N_NIMCALL(NimStringDesc*, collectiontostring_282888)(TY13606* x, NimStringDesc* b, NimStringDesc* e);
 N_NIMCALL(TY13606*, nsuSplitString)(NimStringDesc* s, NimStringDesc* sep);
 N_NIMCALL(NimStringDesc*, nsuToLowerStr)(NimStringDesc* s);
 N_NIMCALL(FILE*, open_13217)(NimStringDesc* filename, NU8 mode, NI bufsize);
@@ -342,13 +365,6 @@ N_NIMCALL(TY13606*, HEX5BHEX5D_133598)(TY13606* s, Slice88061 x);
 N_NIMCALL(void, execcmdex_164204)(NimStringDesc* command, NU8 options, TY164210* Result);
 N_NOINLINE(void, chckNil)(void* p);
 N_NIMCALL(TY13606*, nsuSplitCharSet)(NimStringDesc* s, TY77659 seps);
-static N_INLINE(NI, randomint_279271)(NI min, NI max);
-static N_INLINE(NI, randomint_279309)(Mtstate273035* rng, NI min, NI max);
-static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max);
-N_NIMCALL(NU, randomintimpl_277871)(Mtstate273035* rng, NU max);
-static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
-N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(NIM_BOOL, tryexec_167138)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 N_NIMCALL(NimStringDesc*, nimBoolToStr)(NIM_BOOL x);
 N_NIMCALL(NIM_BOOL, nsuStartsWith)(NimStringDesc* s, NimStringDesc* prefix);
 N_NIMCALL(void, nsuDelete)(NimStringDesc** s, NI first, NI last);
@@ -491,139 +507,172 @@ STRING_LITERAL(TMP2787, " +i\015\015\012", 6);
 STRING_LITERAL(TMP2788, "flaming", 7);
 STRING_LITERAL(TMP2789, "none", 4);
 STRING_LITERAL(TMP2792, "select id from users where upper(name) = ?", 42);
-STRING_LITERAL(TMP2793, "select id, content from quotes where id = ?", 43);
-STRING_LITERAL(TMP2794, "Quote #", 7);
-STRING_LITERAL(TMP2795, " : ", 3);
-STRING_LITERAL(TMP2796, "insert into quotes(id, content) values (null, ?)", 48);
-STRING_LITERAL(TMP2797, "insert into users(id, name, upvotes, downvotes, rank, pass, loo"
+STRING_LITERAL(TMP2794, "select id from blacklist where upper(name) = ?", 46);
+STRING_LITERAL(TMP2795, "select id, content from quotes where id = ?", 43);
+STRING_LITERAL(TMP2796, "Quote #", 7);
+STRING_LITERAL(TMP2797, " : ", 3);
+STRING_LITERAL(TMP2798, "insert into quotes(id, content) values (null, ?)", 48);
+STRING_LITERAL(TMP2799, "insert into users(id, name, upvotes, downvotes, rank, pass, loo"
 "t) values (null, ?, 0, 0, 0, ?, \'\')", 98);
-STRING_LITERAL(TMP2798, "select count(*) from quotes", 27);
-STRING_LITERAL(TMP2799, "select id from users where upper(name) = ? and pass = ?", 55);
-STRING_LITERAL(TMP2801, "  update users set upvotes = upvotes + 1 where upper(name) = ?;"
+STRING_LITERAL(TMP2800, "select count(*) from quotes", 27);
+STRING_LITERAL(TMP2802, "select id from users where upper(name) = ? and pass = ?", 55);
+STRING_LITERAL(TMP2804, "  update users set upvotes = upvotes + 1 where upper(name) = ?;"
 "\015\012  ", 67);
-STRING_LITERAL(TMP2802, "select upvotes - downvotes from users where upper(name) = ?", 59);
-STRING_LITERAL(TMP2803, "  update users set downvotes = downvotes + 1 where upper(name) "
+STRING_LITERAL(TMP2805, "select upvotes - downvotes from users where upper(name) = ?", 59);
+STRING_LITERAL(TMP2806, "  update users set downvotes = downvotes + 1 where upper(name) "
 "= ?;\015\012  ", 71);
-STRING_LITERAL(TMP2805, "\015\012", 2);
-STRING_LITERAL(TMP2836, ":", 1);
-STRING_LITERAL(TMP2837, " MODE ", 6);
-STRING_LITERAL(TMP2838, " :+i", 4);
-STRING_LITERAL(TMP2839, "JOIN ", 5);
-STRING_LITERAL(TMP2841, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP2845, "connection is closed", 20);
-STRING_LITERAL(TMP2850, "PING", 4);
-STRING_LITERAL(TMP2851, "PONG ", 5);
-STRING_LITERAL(TMP2852, "QUIT", 4);
-STRING_LITERAL(TMP2853, "PRIVMSG", 7);
-STRING_LITERAL(TMP2854, ":!v", 3);
-STRING_LITERAL(TMP2855, "PRIVMSG ", 8);
-STRING_LITERAL(TMP2856, " :", 2);
-STRING_LITERAL(TMP2857, ":!eval", 6);
-STRING_LITERAL(TMP2858, "Cryptotoad", 10);
-STRING_LITERAL(TMP2859, "cryptotoad", 10);
-STRING_LITERAL(TMP2860, "eval.nim", 8);
-STRING_LITERAL(TMP2862, "proc eval(): auto =", 19);
-NIM_CONST TY167666 TMP2861 = {((NimStringDesc*) &TMP2862)}
+STRING_LITERAL(TMP2809, "select weapon from users_loot where id = ?", 42);
+STRING_LITERAL(TMP2810, "select armor from users_loot where id = ?", 41);
+STRING_LITERAL(TMP2811, "select shield from users_loot where id = ?", 42);
+STRING_LITERAL(TMP2812, "select bag from users_loot where id = ?", 39);
+STRING_LITERAL(TMP2813, "select id from users_loot where id=? and bag like \'%,?,%", 56);
+STRING_LITERAL(TMP2814, ",,", 2);
+STRING_LITERAL(TMP2815, "  update users_loot set bag = ? where id = ?;\015\012  ", 49);
+STRING_LITERAL(TMP2816, "select id from items where upper(name) = ?", 42);
+STRING_LITERAL(TMP2817, "select name from items where id=? and armor=null", 48);
+STRING_LITERAL(TMP2818, "  update users_loot set weapon = ? where id = ?;\015\012  ", 52);
+STRING_LITERAL(TMP2819, "  update users_loot set armor = ? where id = ?;\015\012  ", 51);
+STRING_LITERAL(TMP2820, "select rank from items where id = ?", 35);
+STRING_LITERAL(TMP2821, "fists", 5);
+STRING_LITERAL(TMP2822, "select name from items where id = ?", 35);
+STRING_LITERAL(TMP2831, " Has hit ", 9);
+STRING_LITERAL(TMP2832, " for ", 5);
+STRING_LITERAL(TMP2833, " damage! ", 9);
+STRING_LITERAL(TMP2835, "The battle has ended in a draw!", 31);
+STRING_LITERAL(TMP2836, " is victorious and has stolen karma from the loser!", 51);
+STRING_LITERAL(TMP2837, "select id from items where rank = ?", 35);
+STRING_LITERAL(TMP2838, "  update users_loot set bag = bag + ? + \',\' where id = ?;\015\012  ", 61);
+STRING_LITERAL(TMP2839, "\015\012", 2);
+STRING_LITERAL(TMP2870, ":", 1);
+STRING_LITERAL(TMP2871, " MODE ", 6);
+STRING_LITERAL(TMP2872, " :+i", 4);
+STRING_LITERAL(TMP2873, "JOIN ", 5);
+STRING_LITERAL(TMP2875, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP2879, "connection is closed", 20);
+STRING_LITERAL(TMP2884, "PING", 4);
+STRING_LITERAL(TMP2885, "PONG ", 5);
+STRING_LITERAL(TMP2886, "QUIT", 4);
+STRING_LITERAL(TMP2887, "PRIVMSG", 7);
+STRING_LITERAL(TMP2888, ":!v", 3);
+STRING_LITERAL(TMP2889, "PRIVMSG ", 8);
+STRING_LITERAL(TMP2890, " :", 2);
+STRING_LITERAL(TMP2891, ":!eval", 6);
+STRING_LITERAL(TMP2892, "Cryptotoad", 10);
+STRING_LITERAL(TMP2893, "cryptotoad", 10);
+STRING_LITERAL(TMP2894, "eval.nim", 8);
+STRING_LITERAL(TMP2896, "proc eval(): auto =", 19);
+NIM_CONST TY167666 TMP2895 = {((NimStringDesc*) &TMP2896)}
 ;
-STRING_LITERAL(TMP2864, ";", 1);
-STRING_LITERAL(TMP2869, "when compiles(echo eval()): echo eval()", 39);
-NIM_CONST TY167666 TMP2868 = {((NimStringDesc*) &TMP2869)}
+STRING_LITERAL(TMP2898, ";", 1);
+STRING_LITERAL(TMP2903, "when compiles(echo eval()): echo eval()", 39);
+NIM_CONST TY167666 TMP2902 = {((NimStringDesc*) &TMP2903)}
 ;
-STRING_LITERAL(TMP2871, "else: eval()", 12);
-NIM_CONST TY167666 TMP2870 = {((NimStringDesc*) &TMP2871)}
+STRING_LITERAL(TMP2905, "else: eval()", 12);
+NIM_CONST TY167666 TMP2904 = {((NimStringDesc*) &TMP2905)}
 ;
-STRING_LITERAL(TMP2872, "nim c --stackTrace:off --lineTrace:off --threads:off --checks:o"
+STRING_LITERAL(TMP2906, "nim c --stackTrace:off --lineTrace:off --threads:off --checks:o"
 "ff --fieldChecks:off --rangeChecks:on --boundChecks:on --overflo"
 "wChecks:on --assertions:on --floatChecks:off --nanChecks:on --in"
 "fChecks:off --opt:none --warnings:off --hints:off --threadanalys"
 "is:off --verbosity:0 ", 276);
-STRING_LITERAL(TMP2873, "./", 2);
-STRING_LITERAL(TMP2876, "<no output>", 11);
-STRING_LITERAL(TMP2877, ": ", 2);
-STRING_LITERAL(TMP2878, ":!roll", 6);
-STRING_LITERAL(TMP2879, "Please enter a formula (1d20) \015\015\012", 33);
-static NIM_CONST TY77659 TMP2880 = {
+STRING_LITERAL(TMP2907, "./", 2);
+STRING_LITERAL(TMP2910, "<no output>", 11);
+STRING_LITERAL(TMP2911, ": ", 2);
+STRING_LITERAL(TMP2912, ":!roll", 6);
+STRING_LITERAL(TMP2913, "Please enter a formula (1d20) \015\015\012", 33);
+static NIM_CONST TY77659 TMP2914 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP2882, " : Don\'t roll that many dice! Why would you need to?!??! \015\015\012", 60);
-STRING_LITERAL(TMP2888, " rolled a ", 10);
-STRING_LITERAL(TMP2889, "! \015\015\012", 5);
-STRING_LITERAL(TMP2890, " : Please use smaller / positive / whole) numbers! \015\015\012", 54);
-STRING_LITERAL(TMP2891, ":!upvote", 8);
-STRING_LITERAL(TMP2892, " :You have upvoted ", 19);
-STRING_LITERAL(TMP2893, " Bringing them to ", 18);
-STRING_LITERAL(TMP2894, " karma.\015\015\012", 10);
-STRING_LITERAL(TMP2895, " :You cannot upvote unless you are logged in, you cannot upvote"
+STRING_LITERAL(TMP2916, " : Don\'t roll that many dice! Why would you need to?!??! \015\015\012", 60);
+STRING_LITERAL(TMP2920, " rolled a ", 10);
+STRING_LITERAL(TMP2921, "! \015\015\012", 5);
+STRING_LITERAL(TMP2922, " : Please use smaller / positive / whole) numbers! \015\015\012", 54);
+STRING_LITERAL(TMP2923, ":!upvote", 8);
+STRING_LITERAL(TMP2924, " :You have upvoted ", 19);
+STRING_LITERAL(TMP2925, " Bringing them to ", 18);
+STRING_LITERAL(TMP2926, " karma.\015\015\012", 10);
+STRING_LITERAL(TMP2927, " :You cannot upvote unless you are logged in, you cannot upvote"
 " yourself, and you must specify a recipient!\015\015\012", 110);
-STRING_LITERAL(TMP2896, ":!downvote", 10);
-STRING_LITERAL(TMP2897, " :You have downvoted ", 21);
-STRING_LITERAL(TMP2898, " :You cannot downvote unless you are logged in, you cannot down"
+STRING_LITERAL(TMP2928, ":!downvote", 10);
+STRING_LITERAL(TMP2929, " :You have downvoted ", 21);
+STRING_LITERAL(TMP2930, " :You cannot downvote unless you are logged in, you cannot down"
 "vote yourself, and you must specify a recipient!\015\015\012", 114);
-STRING_LITERAL(TMP2899, ":!karma", 7);
-STRING_LITERAL(TMP2900, " has a total of ", 16);
-STRING_LITERAL(TMP2901, ":!login", 7);
-STRING_LITERAL(TMP2902, " : Please enter a password! \015\015\012", 31);
-STRING_LITERAL(TMP2903, " : You have logged in successfully! \015\015\012", 39);
-STRING_LITERAL(TMP2904, " : Invalid password! \015\015\012", 24);
-STRING_LITERAL(TMP2905, ":!logout", 8);
-STRING_LITERAL(TMP2906, ":!register", 10);
-STRING_LITERAL(TMP2907, " : Your pass is ", 16);
-STRING_LITERAL(TMP2908, " \015\015\012", 4);
-STRING_LITERAL(TMP2909, " : Username is taken. \015\015\012", 25);
-STRING_LITERAL(TMP2910, " : Your randomly generated pass is ", 35);
-STRING_LITERAL(TMP2911, ":!help", 6);
-STRING_LITERAL(TMP2912, " :!quote # - Retrieve quote / !addquote <quote> - adds a quote "
+STRING_LITERAL(TMP2931, ":!karma", 7);
+STRING_LITERAL(TMP2932, " has a total of ", 16);
+STRING_LITERAL(TMP2933, ":!fight", 7);
+STRING_LITERAL(TMP2934, ":!equip", 7);
+STRING_LITERAL(TMP2935, " :You have equipped a ", 22);
+STRING_LITERAL(TMP2936, "!\015\015\012", 4);
+STRING_LITERAL(TMP2937, ":!login", 7);
+STRING_LITERAL(TMP2938, " : Please enter a password! \015\015\012", 31);
+STRING_LITERAL(TMP2939, " : You have logged in successfully! \015\015\012", 39);
+STRING_LITERAL(TMP2940, " : Invalid password! \015\015\012", 24);
+STRING_LITERAL(TMP2941, ":!logout", 8);
+STRING_LITERAL(TMP2942, " : You have logged out successfully! \015\015\012", 40);
+STRING_LITERAL(TMP2943, ":!register", 10);
+STRING_LITERAL(TMP2944, "              insert into users_loot(id, weapon, armor, shield,"
+" bag) values (?, null, null, null, null)", 103);
+STRING_LITERAL(TMP2945, " : Your pass is ", 16);
+STRING_LITERAL(TMP2946, " \015\015\012", 4);
+STRING_LITERAL(TMP2947, " : Username is taken. \015\015\012", 25);
+STRING_LITERAL(TMP2948, " : Your randomly generated pass is ", 35);
+STRING_LITERAL(TMP2949, ":!help", 6);
+STRING_LITERAL(TMP2950, " :!quote # - Retrieve quote / !addquote <quote> - adds a quote "
 "to database\015\015\012", 77);
-STRING_LITERAL(TMP2913, " :!roll <1d20> - Dice roller / !help - this menu\015\015\012", 51);
-STRING_LITERAL(TMP2914, ":!quote", 7);
-STRING_LITERAL(TMP2916, " :No... Bad human...\015\015\012", 23);
-STRING_LITERAL(TMP2918, ":!addquote", 10);
-STRING_LITERAL(TMP2919, " :Quote #", 9);
-STRING_LITERAL(TMP2920, " added!\015\015\012", 10);
-STRING_LITERAL(TMP2921, " :Please enter a quote.\015\015\012", 26);
-STRING_LITERAL(TMP2922, ":!rawsql", 8);
-STRING_LITERAL(TMP2923, " :Result: ", 10);
-STRING_LITERAL(TMP2924, ":http", 5);
-STRING_LITERAL(TMP2925, ":https", 6);
-STRING_LITERAL(TMP2932, "Nim httpclient/0.1", 18);
-STRING_LITERAL(TMP2933, "1", 1);
-STRING_LITERAL(TMP2934, "<title>", 7);
-STRING_LITERAL(TMP2935, "2", 1);
-STRING_LITERAL(TMP2936, "</title>", 8);
-STRING_LITERAL(TMP2937, " - ", 3);
-STRING_LITERAL(TMP2938, " - URL Preview\015\015\012", 17);
-STRING_LITERAL(TMP2939, "N/A", 3);
-STRING_LITERAL(TMP2940, "err!", 4);
-STRING_LITERAL(TMP2941, "meme", 4);
-STRING_LITERAL(TMP2942, "newfag", 6);
-STRING_LITERAL(TMP2943, "triforce", 8);
-STRING_LITERAL(TMP2944, " : \342\226\262\015\015\012", 9);
-STRING_LITERAL(TMP2945, " :\342\226\262 \342\226\262\015\015\012", 12);
+STRING_LITERAL(TMP2951, " :!roll <1d20> - Dice roller / !help - this menu\015\015\012", 51);
+STRING_LITERAL(TMP2952, ":!quote", 7);
+STRING_LITERAL(TMP2954, " :No... Bad human...\015\015\012", 23);
+STRING_LITERAL(TMP2956, ":!addquote", 10);
+STRING_LITERAL(TMP2957, " :Quote #", 9);
+STRING_LITERAL(TMP2958, " added!\015\015\012", 10);
+STRING_LITERAL(TMP2959, " :Please enter a quote.\015\015\012", 26);
+STRING_LITERAL(TMP2960, ":!rawsql", 8);
+STRING_LITERAL(TMP2961, " :Result: ", 10);
+STRING_LITERAL(TMP2962, ":!blacklist", 11);
+STRING_LITERAL(TMP2963, "insert into blacklist(id, name) values (null, ?)", 48);
+STRING_LITERAL(TMP2964, ":http", 5);
+STRING_LITERAL(TMP2965, ":https", 6);
+STRING_LITERAL(TMP2972, "Nim httpclient/0.1", 18);
+STRING_LITERAL(TMP2973, "1", 1);
+STRING_LITERAL(TMP2974, "<title>", 7);
+STRING_LITERAL(TMP2975, "2", 1);
+STRING_LITERAL(TMP2976, "</title>", 8);
+STRING_LITERAL(TMP2977, " - ", 3);
+STRING_LITERAL(TMP2978, " - URL Preview\015\015\012", 17);
+STRING_LITERAL(TMP2979, "N/A", 3);
+STRING_LITERAL(TMP2980, "err!", 4);
+STRING_LITERAL(TMP2981, "meme", 4);
+STRING_LITERAL(TMP2982, "newfag", 6);
+STRING_LITERAL(TMP2983, "triforce", 8);
+STRING_LITERAL(TMP2984, " : \342\226\262\015\015\012", 9);
+STRING_LITERAL(TMP2985, " :\342\226\262 \342\226\262\015\015\012", 12);
+STRING_LITERAL(TMP2986, " has got a ", 11);
+STRING_LITERAL(TMP2987, " as a random drop!\015\015\012", 21);
+STRING_LITERAL(TMP2988, " would have gotten a drop here, but they\'re not registered.\015\015\012", 62);
 extern TFrame* frameptr_17042;
 extern TNimType NTI13606; /* seq[string] */
 extern Tgcheap48616 gch_48644;
-NimStringDesc* server_282093;
-TY13606* loggedin_282108;
-NU16 port_282110;
-NimStringDesc* username_282111;
-NimStringDesc* nick_282112;
-TY13606* channels_282127;
-FILE* log_282128;
-NIM_BOOL islogging_282129;
-NIM_BOOL outputting_282130;
-TY282131* profiles_282132;
-Tsocketimpl136607* sock_282133;
-NimStringDesc* buffer_282134;
-Tsqlite3165291* db_282135;
+NimStringDesc* server_282087;
+TY13606* loggedin_282102;
+NU16 port_282104;
+NimStringDesc* username_282105;
+NimStringDesc* nick_282106;
+TY13606* channels_282121;
+FILE* log_282122;
+NIM_BOOL islogging_282123;
+NIM_BOOL outputting_282124;
+Tsocketimpl136607* sock_282125;
+NimStringDesc* buffer_282126;
+Tsqlite3165291* db_282127;
 extern TSafePoint* exchandler_17043;
 extern Exception* currexception_17045;
-NimStringDesc* channel_282474;
-NimStringDesc* line_282601;
-NI i_282667;
 extern Mtstate273035 mersennetwisterinst_277010;
+NimStringDesc* channel_282844;
+NimStringDesc* line_282971;
+NI i_283037;
 extern SslcontextHEX3Aobjecttype265375* defaultsslcontext_265377;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -653,11 +702,11 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NimStringDesc*, version_282007)(void) {
+N_NIMCALL(NimStringDesc*, version_282001)(void) {
 	NimStringDesc* result;
 	nimfr("version", "usersystem.nim")
 	result = 0;
-	nimln(24, "usersystem.nim");
+	nimln(16, "usersystem.nim");
 	result = copyString(((NimStringDesc*) &TMP2750));
 	popFrame();
 	return result;
@@ -668,16 +717,16 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(NimStringDesc*, about_282013)(void) {
+N_NIMCALL(NimStringDesc*, about_282007)(void) {
 	NimStringDesc* result;
 	NimStringDesc* LOC1;
 	NimStringDesc* LOC2;
 	nimfr("about", "usersystem.nim")
 	result = 0;
-	nimln(27, "usersystem.nim");
+	nimln(19, "usersystem.nim");
 	LOC1 = 0;
 	LOC2 = 0;
-	LOC2 = version_282007();
+	LOC2 = version_282001();
 	LOC1 = rawNewString(LOC2->Sup.len + 23);
 appendString(LOC1, ((NimStringDesc*) &TMP2751));
 appendString(LOC1, LOC2);
@@ -798,32 +847,32 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(TY13606*, chansplit_282019)(NimStringDesc* raw) {
+N_NIMCALL(TY13606*, chansplit_282013)(NimStringDesc* raw) {
 	TY13606* result;
 	nimfr("chansplit", "usersystem.nim")
 	result = 0;
-	nimln(31, "usersystem.nim");
+	nimln(23, "usersystem.nim");
 	result = (TY13606*) newSeq((&NTI13606), 0);
 	{
-		NimStringDesc* channel_282040;
-		NI last_282055;
-		channel_282040 = 0;
+		NimStringDesc* channel_282034;
+		NI last_282049;
+		channel_282034 = 0;
 		nimln(293, "strutils.nim");
-		last_282055 = ((NI) 0);
+		last_282049 = ((NI) 0);
 		nimln(294, "strutils.nim");
 		{
 			if (!(((NI) 0) < (raw ? raw->Sup.len : 0))) goto LA4;
 			{
 				nimln(295, "strutils.nim");
 				while (1) {
-					NI first_282057;
+					NI first_282051;
 					NI TMP2756;
 					NimStringDesc* LOC13;
 					NimStringDesc* LOC14;
 					NI TMP2758;
-					if (!(last_282055 <= (raw ? raw->Sup.len : 0))) goto LA7;
+					if (!(last_282049 <= (raw ? raw->Sup.len : 0))) goto LA7;
 					nimln(296, "strutils.nim");
-					first_282057 = last_282055;
+					first_282051 = last_282049;
 					{
 						nimln(297, "strutils.nim");
 						while (1) {
@@ -832,34 +881,34 @@ N_NIMCALL(TY13606*, chansplit_282019)(NimStringDesc* raw) {
 							NimStringDesc* LOC12;
 							NI TMP2755;
 							LOC10 = 0;
-							LOC10 = (last_282055 < (raw ? raw->Sup.len : 0));
+							LOC10 = (last_282049 < (raw ? raw->Sup.len : 0));
 							if (!(LOC10)) goto LA11;
-							TMP2753 = addInt(last_282055, ((NI) 0));
+							TMP2753 = addInt(last_282049, ((NI) 0));
 							LOC12 = 0;
-							LOC12 = copyStrLast(raw, last_282055, (NI)(TMP2753));
+							LOC12 = copyStrLast(raw, last_282049, (NI)(TMP2753));
 							LOC10 = !(eqStrings(LOC12, ((NimStringDesc*) &TMP2754)));
 							LA11: ;
 							if (!LOC10) goto LA9;
 							nimln(298, "strutils.nim");
-							TMP2755 = addInt(last_282055, ((NI) 1));
-							last_282055 = (NI)(TMP2755);
+							TMP2755 = addInt(last_282049, ((NI) 1));
+							last_282049 = (NI)(TMP2755);
 						} LA9: ;
 					}
 					nimln(299, "strutils.nim");
-					TMP2756 = subInt(last_282055, ((NI) 1));
-					channel_282040 = copyStrLast(raw, first_282057, (NI)(TMP2756));
-					nimln(34, "usersystem.nim");
+					TMP2756 = subInt(last_282049, ((NI) 1));
+					channel_282034 = copyStrLast(raw, first_282051, (NI)(TMP2756));
+					nimln(26, "usersystem.nim");
 					LOC13 = 0;
-					LOC13 = rawNewString(channel_282040->Sup.len + 1);
+					LOC13 = rawNewString(channel_282034->Sup.len + 1);
 appendString(LOC13, ((NimStringDesc*) &TMP2757));
-appendString(LOC13, channel_282040);
+appendString(LOC13, channel_282034);
 					result = (TY13606*) incrSeq(&(result)->Sup, sizeof(NimStringDesc*));
 					LOC14 = 0;
 					LOC14 = result->data[result->Sup.len-1]; result->data[result->Sup.len-1] = copyStringRC1(LOC13);
 					if (LOC14) nimGCunrefNoCycle(LOC14);
 					nimln(300, "strutils.nim");
-					TMP2758 = addInt(last_282055, ((NI) 1));
-					last_282055 = (NI)(TMP2758);
+					TMP2758 = addInt(last_282049, ((NI) 1));
+					last_282049 = (NI)(TMP2758);
 				} LA7: ;
 			}
 		}
@@ -891,14 +940,14 @@ static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, getnick_282076)(NimStringDesc* raw) {
+N_NIMCALL(NimStringDesc*, getnick_282070)(NimStringDesc* raw) {
 	NimStringDesc* result;
 	NI LOC1;
 	NI TMP2759;
 	Slice88061 LOC2;
 	nimfr("getNick", "usersystem.nim")
 	result = 0;
-	nimln(38, "usersystem.nim");
+	nimln(30, "usersystem.nim");
 	LOC1 = 0;
 	LOC1 = nsuFindChar(raw, 33, ((NI) 0));
 	TMP2759 = subInt(LOC1, ((NI) 1));
@@ -953,21 +1002,21 @@ static N_INLINE(NimStringDesc*, sql_167021)(NimStringDesc* query) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, inttoitem_282145)(NI itemid) {
+N_NIMCALL(NimStringDesc*, inttoitem_282137)(NI itemid) {
 	NimStringDesc* result;
 	nimfr("intToItem", "usersystem.nim")
 	result = 0;
-	nimln(92, "usersystem.nim");
+	nimln(83, "usersystem.nim");
 	switch (itemid) {
 	case ((NI) 1):
 	{
-		nimln(94, "usersystem.nim");
+		nimln(85, "usersystem.nim");
 		result = copyString(((NimStringDesc*) &TMP2788));
 	}
 	break;
 	default:
 	{
-		nimln(96, "usersystem.nim");
+		nimln(87, "usersystem.nim");
 		result = copyString(((NimStringDesc*) &TMP2789));
 	}
 	break;
@@ -976,47 +1025,47 @@ N_NIMCALL(NimStringDesc*, inttoitem_282145)(NI itemid) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, isloggedin_282152)(NimStringDesc* name) {
+N_NIMCALL(NIM_BOOL, isloggedin_282144)(NimStringDesc* name) {
 	NIM_BOOL result;
 	nimfr("isLoggedIn", "usersystem.nim")
 {	result = 0;
 	{
-		NI i_282168;
-		NI HEX3Atmp_282170;
-		NI res_282173;
-		i_282168 = 0;
-		HEX3Atmp_282170 = 0;
-		nimln(99, "usersystem.nim");
-		HEX3Atmp_282170 = (loggedin_282108 ? (loggedin_282108->Sup.len-1) : -1);
+		NI i_282160;
+		NI HEX3Atmp_282162;
+		NI res_282165;
+		i_282160 = 0;
+		HEX3Atmp_282162 = 0;
+		nimln(90, "usersystem.nim");
+		HEX3Atmp_282162 = (loggedin_282102 ? (loggedin_282102->Sup.len-1) : -1);
 		nimln(1598, "system.nim");
-		res_282173 = ((NI) 0);
+		res_282165 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP2790;
-				if (!(res_282173 <= HEX3Atmp_282170)) goto LA3;
+				if (!(res_282165 <= HEX3Atmp_282162)) goto LA3;
 				nimln(1600, "system.nim");
-				i_282168 = res_282173;
-				nimln(100, "usersystem.nim");
+				i_282160 = res_282165;
+				nimln(91, "usersystem.nim");
 				{
 					NI LOC6;
-					if ((NU)(i_282168) >= (NU)(loggedin_282108->Sup.len)) raiseIndexError();
+					if ((NU)(i_282160) >= (NU)(loggedin_282102->Sup.len)) raiseIndexError();
 					LOC6 = 0;
-					LOC6 = nsuCmpIgnoreCase(loggedin_282108->data[i_282168], name);
+					LOC6 = nsuCmpIgnoreCase(loggedin_282102->data[i_282160], name);
 					if (!(LOC6 == ((NI) 0))) goto LA7;
-					nimln(101, "usersystem.nim");
+					nimln(92, "usersystem.nim");
 					result = NIM_TRUE;
-					nimln(102, "usersystem.nim");
+					nimln(93, "usersystem.nim");
 					goto BeforeRet;
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP2790 = addInt(res_282173, ((NI) 1));
-				res_282173 = (NI)(TMP2790);
+				TMP2790 = addInt(res_282165, ((NI) 1));
+				res_282165 = (NI)(TMP2790);
 			} LA3: ;
 		}
 	}
-	nimln(103, "usersystem.nim");
+	nimln(94, "usersystem.nim");
 	result = NIM_FALSE;
 	}BeforeRet: ;
 	popFrame();
@@ -1135,40 +1184,40 @@ static N_INLINE(void, popCurrentException)(void) {
 	asgnRef((void**) (&currexception_17045), (*currexception_17045).parent);
 }
 
-N_NIMCALL(NIM_BOOL, checkuser_282189)(NimStringDesc* name) {
+N_NIMCALL(NIM_BOOL, checkuser_282181)(NimStringDesc* name) {
 	NIM_BOOL volatile result;
 	TSafePoint TMP2791;
 	nimfr("checkUser", "usersystem.nim")
 	result = 0;
-	nimln(106, "usersystem.nim");
+	nimln(97, "usersystem.nim");
 	pushSafePoint(&TMP2791);
 	TMP2791.status = setjmp(TMP2791.context);
 	if (TMP2791.status == 0) {
 		NimStringDesc* res;
 		NimStringDesc* LOC2;
 		TY167666 LOC3;
-		nimln(107, "usersystem.nim");
+		nimln(98, "usersystem.nim");
 		LOC2 = 0;
 		LOC2 = sql_167021(((NimStringDesc*) &TMP2792));
 		memset((void*)LOC3, 0, sizeof(LOC3));
 		LOC3[0] = nsuToUpperStr(name);
-		res = getvalue_167577(db_282135, LOC2, LOC3, 1);
-		nimln(108, "usersystem.nim");
+		res = getvalue_167577(db_282127, LOC2, LOC3, 1);
+		nimln(99, "usersystem.nim");
 		{
 			NI row;
 			if (!!(((res) && (res)->Sup.len == 0))) goto LA6;
-			nimln(109, "usersystem.nim");
+			nimln(100, "usersystem.nim");
 			row = nsuParseInt(res);
-			nimln(110, "usersystem.nim");
+			nimln(101, "usersystem.nim");
 			{
 				if (!(((NI) 0) < row)) goto LA10;
-				nimln(111, "usersystem.nim");
+				nimln(102, "usersystem.nim");
 				result = NIM_TRUE;
 			}
 			goto LA8;
 			LA10: ;
 			{
-				nimln(113, "usersystem.nim");
+				nimln(104, "usersystem.nim");
 				result = NIM_FALSE;
 			}
 			LA8: ;
@@ -1181,7 +1230,7 @@ N_NIMCALL(NIM_BOOL, checkuser_282189)(NimStringDesc* name) {
 		setFrame((TFrame*)&FR);
 		{
 			TMP2791.status = 0;
-			nimln(115, "usersystem.nim");
+			nimln(106, "usersystem.nim");
 			result = NIM_FALSE;
 			popCurrentException();
 		}
@@ -1191,7 +1240,63 @@ N_NIMCALL(NIM_BOOL, checkuser_282189)(NimStringDesc* name) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, getquote_282200)(NI id) {
+N_NIMCALL(NIM_BOOL, checkblacklist_282192)(NimStringDesc* name) {
+	NIM_BOOL volatile result;
+	TSafePoint TMP2793;
+	nimfr("checkBlacklist", "usersystem.nim")
+	result = 0;
+	nimln(109, "usersystem.nim");
+	pushSafePoint(&TMP2793);
+	TMP2793.status = setjmp(TMP2793.context);
+	if (TMP2793.status == 0) {
+		NimStringDesc* res;
+		NimStringDesc* LOC2;
+		TY167666 LOC3;
+		nimln(110, "usersystem.nim");
+		LOC2 = 0;
+		LOC2 = sql_167021(((NimStringDesc*) &TMP2794));
+		memset((void*)LOC3, 0, sizeof(LOC3));
+		LOC3[0] = nsuToUpperStr(name);
+		res = getvalue_167577(db_282127, LOC2, LOC3, 1);
+		nimln(111, "usersystem.nim");
+		{
+			NI row;
+			if (!!(((res) && (res)->Sup.len == 0))) goto LA6;
+			nimln(112, "usersystem.nim");
+			row = nsuParseInt(res);
+			nimln(113, "usersystem.nim");
+			{
+				if (!(((NI) 0) < row)) goto LA10;
+				nimln(114, "usersystem.nim");
+				result = NIM_TRUE;
+			}
+			goto LA8;
+			LA10: ;
+			{
+				nimln(116, "usersystem.nim");
+				result = NIM_FALSE;
+			}
+			LA8: ;
+		}
+		LA6: ;
+		popSafePoint();
+	}
+	else {
+		popSafePoint();
+		setFrame((TFrame*)&FR);
+		{
+			TMP2793.status = 0;
+			nimln(118, "usersystem.nim");
+			result = NIM_FALSE;
+			popCurrentException();
+		}
+	}
+	if (TMP2793.status != 0) reraiseException();
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NimStringDesc*, getquote_282203)(NI id) {
 	NimStringDesc* result;
 	TY13606* row;
 	NimStringDesc* LOC1;
@@ -1199,29 +1304,29 @@ N_NIMCALL(NimStringDesc*, getquote_282200)(NI id) {
 	NimStringDesc* LOC7;
 	nimfr("getQuote", "usersystem.nim")
 {	result = 0;
-	nimln(118, "usersystem.nim");
+	nimln(121, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2793));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2795));
 	memset((void*)LOC2, 0, sizeof(LOC2));
 	LOC2[0] = nimIntToStr(id);
-	row = getrow_167472(db_282135, LOC1, LOC2, 1);
-	nimln(119, "usersystem.nim");
+	row = getrow_167472(db_282127, LOC1, LOC2, 1);
+	nimln(122, "usersystem.nim");
 	{
 		if ((NU)(((NI) 0)) >= (NU)(row->Sup.len)) raiseIndexError();
 		if (!((row->data[((NI) 0)]) && (row->data[((NI) 0)])->Sup.len == 0)) goto LA5;
-		nimln(120, "usersystem.nim");
+		nimln(123, "usersystem.nim");
 		result = copyString(((NimStringDesc*) &TMP2762));
 		goto BeforeRet;
 	}
 	LA5: ;
-	nimln(121, "usersystem.nim");
+	nimln(124, "usersystem.nim");
 	LOC7 = 0;
 	if ((NU)(((NI) 0)) >= (NU)(row->Sup.len)) raiseIndexError();
 	if ((NU)(((NI) 1)) >= (NU)(row->Sup.len)) raiseIndexError();
 	LOC7 = rawNewString(row->data[((NI) 0)]->Sup.len + row->data[((NI) 1)]->Sup.len + 10);
-appendString(LOC7, ((NimStringDesc*) &TMP2794));
+appendString(LOC7, ((NimStringDesc*) &TMP2796));
 appendString(LOC7, row->data[((NI) 0)]);
-appendString(LOC7, ((NimStringDesc*) &TMP2795));
+appendString(LOC7, ((NimStringDesc*) &TMP2797));
 appendString(LOC7, row->data[((NI) 1)]);
 	result = LOC7;
 	goto BeforeRet;
@@ -1230,52 +1335,52 @@ appendString(LOC7, row->data[((NI) 1)]);
 	return result;
 }
 
-N_NIMCALL(NI, addquote_282210)(NimStringDesc* content) {
+N_NIMCALL(NI, addquote_282213)(NimStringDesc* content) {
 	NI result;
 	NimStringDesc* LOC1;
 	TY167666 LOC2;
 	NI64 LOC3;
 	nimfr("addQuote", "usersystem.nim")
 	result = 0;
-	nimln(124, "usersystem.nim");
+	nimln(127, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2796));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2798));
 	memset((void*)LOC2, 0, sizeof(LOC2));
 	LOC2[0] = copyString(content);
 	LOC3 = 0;
-	LOC3 = tryinsertid_167593(db_282135, LOC1, LOC2, 1);
+	LOC3 = tryinsertid_167593(db_282127, LOC1, LOC2, 1);
 	result = ((NI) (LOC3));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, adduser_282220)(NimStringDesc* name, NimStringDesc* pass) {
+N_NIMCALL(NI, adduser_282223)(NimStringDesc* name, NimStringDesc* pass) {
 	NI result;
 	nimfr("addUser", "usersystem.nim")
 {	result = 0;
-	nimln(127, "usersystem.nim");
+	nimln(130, "usersystem.nim");
 	{
 		NIM_BOOL LOC3;
 		NimStringDesc* LOC6;
-		TY282225 LOC7;
+		TY282228 LOC7;
 		NI64 LOC8;
 		LOC3 = 0;
-		LOC3 = checkuser_282189(name);
+		LOC3 = checkuser_282181(name);
 		if (!!(LOC3)) goto LA4;
-		nimln(128, "usersystem.nim");
+		nimln(131, "usersystem.nim");
 		LOC6 = 0;
-		LOC6 = sql_167021(((NimStringDesc*) &TMP2797));
+		LOC6 = sql_167021(((NimStringDesc*) &TMP2799));
 		memset((void*)LOC7, 0, sizeof(LOC7));
 		LOC7[0] = copyString(name);
 		LOC7[1] = copyString(pass);
 		LOC8 = 0;
-		LOC8 = tryinsertid_167593(db_282135, LOC6, LOC7, 2);
+		LOC8 = tryinsertid_167593(db_282127, LOC6, LOC7, 2);
 		result = ((NI) (LOC8));
 	}
 	goto LA1;
 	LA4: ;
 	{
-		nimln(130, "usersystem.nim");
+		nimln(133, "usersystem.nim");
 		result = ((NI) -1);
 		goto BeforeRet;
 	}
@@ -1285,116 +1390,134 @@ N_NIMCALL(NI, adduser_282220)(NimStringDesc* name, NimStringDesc* pass) {
 	return result;
 }
 
-N_NIMCALL(NI, getquotecount_282231)(void) {
+N_NIMCALL(NI, getquotecount_282234)(void) {
 	NI result;
 	NimStringDesc* LOC1;
 	TY161637 LOC2;
 	NimStringDesc* LOC3;
 	nimfr("getQuoteCount", "usersystem.nim")
 	result = 0;
-	nimln(133, "usersystem.nim");
+	nimln(136, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2798));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2800));
 	memset((void*)LOC2, 0, sizeof(LOC2));
 	LOC3 = 0;
-	LOC3 = getvalue_167577(db_282135, LOC1, LOC2, 0);
+	LOC3 = getvalue_167577(db_282127, LOC1, LOC2, 0);
 	result = nsuParseInt(LOC3);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, loginuser_282241)(NimStringDesc* name, NimStringDesc* pass) {
-	NIM_BOOL result;
-	NI row;
-	NimStringDesc* LOC1;
-	TY282225 LOC2;
-	NimStringDesc* LOC3;
+N_NIMCALL(NIM_BOOL, loginuser_282244)(NimStringDesc* name, NimStringDesc* pass) {
+	NIM_BOOL volatile result;
+	TSafePoint TMP2801;
 	nimfr("loginUser", "usersystem.nim")
 	result = 0;
-	nimln(138, "usersystem.nim");
-	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2799));
-	memset((void*)LOC2, 0, sizeof(LOC2));
-	LOC2[0] = nsuToUpperStr(name);
-	LOC2[1] = copyString(pass);
-	LOC3 = 0;
-	LOC3 = getvalue_167577(db_282135, LOC1, LOC2, 2);
-	row = nsuParseInt(LOC3);
-	nimln(139, "usersystem.nim");
-	{
-		if (!(((NI) 0) < row)) goto LA6;
-		nimln(140, "usersystem.nim");
-		result = NIM_TRUE;
-	}
-	goto LA4;
-	LA6: ;
-	{
+	nimln(141, "usersystem.nim");
+	pushSafePoint(&TMP2801);
+	TMP2801.status = setjmp(TMP2801.context);
+	if (TMP2801.status == 0) {
+		NI row;
+		NimStringDesc* LOC2;
+		TY282228 LOC3;
+		NimStringDesc* LOC4;
 		nimln(142, "usersystem.nim");
-		result = NIM_FALSE;
+		LOC2 = 0;
+		LOC2 = sql_167021(((NimStringDesc*) &TMP2802));
+		memset((void*)LOC3, 0, sizeof(LOC3));
+		LOC3[0] = nsuToUpperStr(name);
+		LOC3[1] = copyString(pass);
+		LOC4 = 0;
+		LOC4 = getvalue_167577(db_282127, LOC2, LOC3, 2);
+		row = nsuParseInt(LOC4);
+		nimln(143, "usersystem.nim");
+		{
+			if (!(((NI) 0) < row)) goto LA7;
+			nimln(144, "usersystem.nim");
+			result = NIM_TRUE;
+		}
+		goto LA5;
+		LA7: ;
+		{
+			nimln(146, "usersystem.nim");
+			result = NIM_FALSE;
+		}
+		LA5: ;
+		popSafePoint();
 	}
-	LA4: ;
+	else {
+		popSafePoint();
+		setFrame((TFrame*)&FR);
+		{
+			TMP2801.status = 0;
+			nimln(148, "usersystem.nim");
+			result = NIM_FALSE;
+			popCurrentException();
+		}
+	}
+	if (TMP2801.status != 0) reraiseException();
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, logoutuser_282252)(NimStringDesc* name) {
+N_NIMCALL(NIM_BOOL, logoutuser_282255)(NimStringDesc* name) {
 	NIM_BOOL result;
 	nimfr("logoutUser", "usersystem.nim")
 {	result = 0;
-	nimln(146, "usersystem.nim");
+	nimln(152, "usersystem.nim");
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = isloggedin_282152(name);
+		LOC3 = isloggedin_282144(name);
 		if (!LOC3) goto LA4;
 		{
-			NI i_282268;
-			NI HEX3Atmp_282341;
-			NI res_282344;
-			i_282268 = 0;
-			HEX3Atmp_282341 = 0;
-			nimln(147, "usersystem.nim");
-			HEX3Atmp_282341 = (loggedin_282108 ? (loggedin_282108->Sup.len-1) : -1);
+			NI i_282271;
+			NI HEX3Atmp_282344;
+			NI res_282347;
+			i_282271 = 0;
+			HEX3Atmp_282344 = 0;
+			nimln(153, "usersystem.nim");
+			HEX3Atmp_282344 = (loggedin_282102 ? (loggedin_282102->Sup.len-1) : -1);
 			nimln(1598, "system.nim");
-			res_282344 = ((NI) 0);
+			res_282347 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP2800;
-					if (!(res_282344 <= HEX3Atmp_282341)) goto LA8;
+					NI TMP2803;
+					if (!(res_282347 <= HEX3Atmp_282344)) goto LA8;
 					nimln(1600, "system.nim");
-					i_282268 = res_282344;
-					nimln(148, "usersystem.nim");
+					i_282271 = res_282347;
+					nimln(154, "usersystem.nim");
 					{
 						NI LOC11;
-						if ((NU)(i_282268) >= (NU)(loggedin_282108->Sup.len)) raiseIndexError();
+						if ((NU)(i_282271) >= (NU)(loggedin_282102->Sup.len)) raiseIndexError();
 						LOC11 = 0;
-						LOC11 = nsuCmpIgnoreCase(loggedin_282108->data[i_282268], name);
+						LOC11 = nsuCmpIgnoreCase(loggedin_282102->data[i_282271], name);
 						if (!(LOC11 == ((NI) 0))) goto LA12;
-						nimln(149, "usersystem.nim");
-						delete_282270((&loggedin_282108), i_282268, i_282268);
-						nimln(150, "usersystem.nim");
+						nimln(155, "usersystem.nim");
+						delete_282273((&loggedin_282102), i_282271, i_282271);
+						nimln(156, "usersystem.nim");
 						result = NIM_TRUE;
-						nimln(151, "usersystem.nim");
+						nimln(157, "usersystem.nim");
 						goto BeforeRet;
 					}
 					LA12: ;
 					nimln(1614, "system.nim");
-					TMP2800 = addInt(res_282344, ((NI) 1));
-					res_282344 = (NI)(TMP2800);
+					TMP2803 = addInt(res_282347, ((NI) 1));
+					res_282347 = (NI)(TMP2803);
 				} LA8: ;
 			}
 		}
 	}
 	LA4: ;
-	nimln(152, "usersystem.nim");
+	nimln(158, "usersystem.nim");
 	result = NIM_FALSE;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, upvote_282360)(NimStringDesc* name) {
+N_NIMCALL(NI, upvote_282363)(NimStringDesc* name) {
 	NI result;
 	NimStringDesc* LOC1;
 	TY167666 LOC2;
@@ -1403,29 +1526,29 @@ N_NIMCALL(NI, upvote_282360)(NimStringDesc* name) {
 	TY167666 LOC4;
 	nimfr("upvote", "usersystem.nim")
 	result = 0;
-	nimln(156, "usersystem.nim");
+	nimln(162, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2801));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2804));
 	memset((void*)LOC2, 0, sizeof(LOC2));
-	nimln(158, "usersystem.nim");
+	nimln(164, "usersystem.nim");
 	LOC2[0] = nsuToUpperStr(name);
-	exec_167155(db_282135, LOC1, LOC2, 1);
-	nimln(159, "usersystem.nim");
+	exec_167155(db_282127, LOC1, LOC2, 1);
+	nimln(165, "usersystem.nim");
 	LOC3 = 0;
-	LOC3 = sql_167021(((NimStringDesc*) &TMP2802));
+	LOC3 = sql_167021(((NimStringDesc*) &TMP2805));
 	memset((void*)LOC4, 0, sizeof(LOC4));
 	LOC4[0] = nsuToUpperStr(name);
-	totalvotes = getvalue_167577(db_282135, LOC3, LOC4, 1);
-	nimln(160, "usersystem.nim");
+	totalvotes = getvalue_167577(db_282127, LOC3, LOC4, 1);
+	nimln(166, "usersystem.nim");
 	{
 		if (!((totalvotes) && (totalvotes)->Sup.len == 0)) goto LA7;
-		nimln(161, "usersystem.nim");
+		nimln(167, "usersystem.nim");
 		result = ((NI) -1);
 	}
 	goto LA5;
 	LA7: ;
 	{
-		nimln(163, "usersystem.nim");
+		nimln(169, "usersystem.nim");
 		result = nsuParseInt(totalvotes);
 	}
 	LA5: ;
@@ -1433,7 +1556,7 @@ N_NIMCALL(NI, upvote_282360)(NimStringDesc* name) {
 	return result;
 }
 
-N_NIMCALL(NI, downvote_282372)(NimStringDesc* name) {
+N_NIMCALL(NI, downvote_282375)(NimStringDesc* name) {
 	NI result;
 	NimStringDesc* LOC1;
 	TY167666 LOC2;
@@ -1442,29 +1565,29 @@ N_NIMCALL(NI, downvote_282372)(NimStringDesc* name) {
 	TY167666 LOC4;
 	nimfr("downvote", "usersystem.nim")
 	result = 0;
-	nimln(167, "usersystem.nim");
+	nimln(173, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = sql_167021(((NimStringDesc*) &TMP2803));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2806));
 	memset((void*)LOC2, 0, sizeof(LOC2));
-	nimln(169, "usersystem.nim");
+	nimln(175, "usersystem.nim");
 	LOC2[0] = nsuToUpperStr(name);
-	exec_167155(db_282135, LOC1, LOC2, 1);
-	nimln(170, "usersystem.nim");
+	exec_167155(db_282127, LOC1, LOC2, 1);
+	nimln(176, "usersystem.nim");
 	LOC3 = 0;
-	LOC3 = sql_167021(((NimStringDesc*) &TMP2802));
+	LOC3 = sql_167021(((NimStringDesc*) &TMP2805));
 	memset((void*)LOC4, 0, sizeof(LOC4));
 	LOC4[0] = nsuToUpperStr(name);
-	totalvotes = getvalue_167577(db_282135, LOC3, LOC4, 1);
-	nimln(171, "usersystem.nim");
+	totalvotes = getvalue_167577(db_282127, LOC3, LOC4, 1);
+	nimln(177, "usersystem.nim");
 	{
 		if (!((totalvotes) && (totalvotes)->Sup.len == 0)) goto LA7;
-		nimln(172, "usersystem.nim");
+		nimln(178, "usersystem.nim");
 		result = ((NI) -1);
 	}
 	goto LA5;
 	LA7: ;
 	{
-		nimln(174, "usersystem.nim");
+		nimln(180, "usersystem.nim");
 		result = nsuParseInt(totalvotes);
 	}
 	LA5: ;
@@ -1472,25 +1595,25 @@ N_NIMCALL(NI, downvote_282372)(NimStringDesc* name) {
 	return result;
 }
 
-N_NIMCALL(NI, karma_282384)(NimStringDesc* name) {
+N_NIMCALL(NI, karma_282387)(NimStringDesc* name) {
 	NI volatile result;
-	TSafePoint TMP2804;
+	TSafePoint TMP2807;
 	nimfr("karma", "usersystem.nim")
 	result = 0;
-	nimln(177, "usersystem.nim");
-	pushSafePoint(&TMP2804);
-	TMP2804.status = setjmp(TMP2804.context);
-	if (TMP2804.status == 0) {
+	nimln(183, "usersystem.nim");
+	pushSafePoint(&TMP2807);
+	TMP2807.status = setjmp(TMP2807.context);
+	if (TMP2807.status == 0) {
 		NimStringDesc* LOC2;
 		TY167666 LOC3;
 		NimStringDesc* LOC4;
-		nimln(178, "usersystem.nim");
+		nimln(184, "usersystem.nim");
 		LOC2 = 0;
-		LOC2 = sql_167021(((NimStringDesc*) &TMP2802));
+		LOC2 = sql_167021(((NimStringDesc*) &TMP2805));
 		memset((void*)LOC3, 0, sizeof(LOC3));
 		LOC3[0] = nsuToUpperStr(name);
 		LOC4 = 0;
-		LOC4 = getvalue_167577(db_282135, LOC2, LOC3, 1);
+		LOC4 = getvalue_167577(db_282127, LOC2, LOC3, 1);
 		result = nsuParseInt(LOC4);
 		popSafePoint();
 	}
@@ -1498,41 +1621,401 @@ N_NIMCALL(NI, karma_282384)(NimStringDesc* name) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2804.status = 0;
-			nimln(180, "usersystem.nim");
+			TMP2807.status = 0;
+			nimln(186, "usersystem.nim");
 			result = ((NI) -1);
 			popCurrentException();
 		}
 	}
-	if (TMP2804.status != 0) reraiseException();
+	if (TMP2807.status != 0) reraiseException();
 	popFrame();
 	return result;
 }
 
-static N_INLINE(void, writeln_282416)(FILE* f, NimStringDesc** x, NI xLen0) {
-	nimfr("writeln", "sysio.nim")
-	{
-		NimStringDesc* i_282432;
-		NI i_282440;
-		i_282432 = 0;
-		nimln(1689, "system.nim");
-		i_282440 = ((NI) 0);
+N_NIMCALL(NI, userid_282396)(NimStringDesc* name) {
+	NI volatile result;
+	TSafePoint TMP2808;
+	nimfr("userID", "usersystem.nim")
+	result = 0;
+	nimln(189, "usersystem.nim");
+	pushSafePoint(&TMP2808);
+	TMP2808.status = setjmp(TMP2808.context);
+	if (TMP2808.status == 0) {
+		NimStringDesc* LOC2;
+		TY167666 LOC3;
+		NimStringDesc* LOC4;
+		nimln(190, "usersystem.nim");
+		LOC2 = 0;
+		LOC2 = sql_167021(((NimStringDesc*) &TMP2792));
+		memset((void*)LOC3, 0, sizeof(LOC3));
+		LOC3[0] = nsuToUpperStr(name);
+		LOC4 = 0;
+		LOC4 = getvalue_167577(db_282127, LOC2, LOC3, 1);
+		result = nsuParseInt(LOC4);
+		popSafePoint();
+	}
+	else {
+		popSafePoint();
+		setFrame((TFrame*)&FR);
 		{
-			nimln(1690, "system.nim");
-			while (1) {
-				if (!(i_282440 < xLen0)) goto LA3;
-				nimln(1691, "system.nim");
-				i_282432 = x[i_282440];
-				nimln(212, "sysio.nim");
-				write_13457(f, i_282432);
-				nimln(1692, "system.nim");
-				i_282440 += ((NI) 1);
-			} LA3: ;
+			TMP2808.status = 0;
+			nimln(192, "usersystem.nim");
+			result = ((NI) -1);
+			popCurrentException();
 		}
 	}
-	nimln(213, "sysio.nim");
-	write_13457(f, ((NimStringDesc*) &TMP2805));
+	if (TMP2808.status != 0) reraiseException();
 	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getweapon_282422)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getWeapon", "lootdrops.nim")
+	result = 0;
+	nimln(14, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2809));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_167577(db_282127, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getarmor_282431)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getArmor", "lootdrops.nim")
+	result = 0;
+	nimln(18, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2810));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_167577(db_282127, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getshield_282440)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getShield", "lootdrops.nim")
+	result = 0;
+	nimln(22, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2811));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_167577(db_282127, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NimStringDesc*, getbag_282449)(NimStringDesc* user) {
+	NimStringDesc* result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	NI LOC3;
+	nimfr("getBag", "lootdrops.nim")
+	result = 0;
+	nimln(26, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2812));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	result = getvalue_167577(db_282127, LOC1, LOC2, 1);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, hasitem_282458)(NI item, NimStringDesc* user) {
+	NIM_BOOL result;
+	NimStringDesc* LOC1;
+	TY282228 LOC2;
+	NI LOC3;
+	nimfr("hasItem", "lootdrops.nim")
+	result = 0;
+	nimln(29, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2813));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC2[1] = nimIntToStr(item);
+	result = tryexec_167138(db_282127, LOC1, LOC2, 2);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, removeitem_282468)(NI item, NimStringDesc* user) {
+	NIM_BOOL result;
+	NimStringDesc* bag;
+	NimStringDesc* LOC1;
+	NimStringDesc* LOC2;
+	NimStringDesc* LOC3;
+	TY282228 LOC4;
+	NI LOC5;
+	nimfr("removeItem", "lootdrops.nim")
+	result = 0;
+	bag = 0;
+	nimln(34, "lootdrops.nim");
+	bag = getbag_282449(user);
+	nimln(36, "lootdrops.nim");
+	LOC1 = 0;
+	LOC2 = 0;
+	LOC2 = nimIntToStr(item);
+	LOC1 = rawNewString(LOC2->Sup.len + 2);
+appendString(LOC1, ((NimStringDesc*) &TMP2754));
+appendString(LOC1, LOC2);
+appendString(LOC1, ((NimStringDesc*) &TMP2754));
+	bag = nsuReplaceStr(bag, LOC1, ((NimStringDesc*) &TMP2754));
+	nimln(38, "lootdrops.nim");
+	bag = nsuReplaceStr(bag, ((NimStringDesc*) &TMP2814), ((NimStringDesc*) &TMP2754));
+	nimln(40, "lootdrops.nim");
+	LOC3 = 0;
+	LOC3 = sql_167021(((NimStringDesc*) &TMP2815));
+	memset((void*)LOC4, 0, sizeof(LOC4));
+	nimln(42, "lootdrops.nim");
+	LOC4[0] = nimIntToStr(item);
+	LOC5 = 0;
+	LOC5 = userid_282396(user);
+	LOC4[1] = nimIntToStr(LOC5);
+	result = tryexec_167138(db_282127, LOC3, LOC4, 2);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, itemid_282480)(NimStringDesc* item) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	NimStringDesc* LOC3;
+	nimfr("itemID", "lootdrops.nim")
+	result = 0;
+	nimln(45, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2816));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC2[0] = nsuToUpperStr(item);
+	LOC3 = 0;
+	LOC3 = getvalue_167577(db_282127, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC3);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, isweapon_282489)(NI item) {
+	NIM_BOOL result;
+	NimStringDesc* LOC1;
+	TY167666 LOC2;
+	nimfr("isWeapon", "lootdrops.nim")
+	result = 0;
+	nimln(48, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2817));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC2[0] = nimIntToStr(item);
+	result = tryexec_167138(db_282127, LOC1, LOC2, 1);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(void, setweapon_282498)(NI item, NimStringDesc* user) {
+	NimStringDesc* LOC1;
+	TY282228 LOC2;
+	NI LOC3;
+	NIM_BOOL LOC4;
+	nimfr("setWeapon", "lootdrops.nim")
+	nimln(51, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2818));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	nimln(53, "lootdrops.nim");
+	LOC2[0] = nimIntToStr(item);
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[1] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = tryexec_167138(db_282127, LOC1, LOC2, 2);
+	popFrame();
+}
+
+N_NIMCALL(void, setarmor_282507)(NI item, NimStringDesc* user) {
+	NimStringDesc* LOC1;
+	TY282228 LOC2;
+	NI LOC3;
+	NIM_BOOL LOC4;
+	nimfr("setArmor", "lootdrops.nim")
+	nimln(56, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2819));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	nimln(58, "lootdrops.nim");
+	LOC2[0] = nimIntToStr(item);
+	LOC3 = 0;
+	LOC3 = userid_282396(user);
+	LOC2[1] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = tryexec_167138(db_282127, LOC1, LOC2, 2);
+	popFrame();
+}
+
+N_NIMCALL(void, equipitem_282516)(NI item, NimStringDesc* user) {
+	nimfr("equipItem", "lootdrops.nim")
+	nimln(62, "lootdrops.nim");
+	{
+		NIM_BOOL LOC3;
+		LOC3 = 0;
+		LOC3 = hasitem_282458(item, user);
+		if (!LOC3) goto LA4;
+		nimln(63, "lootdrops.nim");
+		{
+			NIM_BOOL LOC8;
+			LOC8 = 0;
+			LOC8 = removeitem_282468(item, user);
+			if (!LOC8) goto LA9;
+			nimln(64, "lootdrops.nim");
+			{
+				NIM_BOOL LOC13;
+				LOC13 = 0;
+				LOC13 = isweapon_282489(item);
+				if (!LOC13) goto LA14;
+				nimln(65, "lootdrops.nim");
+				setweapon_282498(item, user);
+			}
+			goto LA11;
+			LA14: ;
+			{
+				nimln(67, "lootdrops.nim");
+				setarmor_282507(item, user);
+			}
+			LA11: ;
+		}
+		LA9: ;
+	}
+	LA4: ;
+	popFrame();
+}
+
+N_NIMCALL(NI, getitembonus_282523)(NI item) {
+	NI result;
+	nimfr("getItemBonus", "lootdrops.nim")
+	result = 0;
+	nimln(72, "lootdrops.nim");
+	{
+		if (!(item == ((NI) 0))) goto LA3;
+		nimln(73, "lootdrops.nim");
+		result = ((NI) 0);
+	}
+	goto LA1;
+	LA3: ;
+	{
+		NimStringDesc* LOC6;
+		TY167666 LOC7;
+		NimStringDesc* LOC8;
+		nimln(75, "lootdrops.nim");
+		LOC6 = 0;
+		LOC6 = sql_167021(((NimStringDesc*) &TMP2820));
+		memset((void*)LOC7, 0, sizeof(LOC7));
+		LOC7[0] = nimIntToStr(item);
+		LOC8 = 0;
+		LOC8 = getvalue_167577(db_282127, LOC6, LOC7, 1);
+		result = nsuParseInt(LOC8);
+	}
+	LA1: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NimStringDesc*, getitemname_282532)(NI item) {
+	NimStringDesc* result;
+	nimfr("getItemName", "lootdrops.nim")
+	result = 0;
+	nimln(78, "lootdrops.nim");
+	{
+		if (!(item == ((NI) 0))) goto LA3;
+		nimln(79, "lootdrops.nim");
+		result = copyString(((NimStringDesc*) &TMP2821));
+	}
+	goto LA1;
+	LA3: ;
+	{
+		NimStringDesc* LOC6;
+		TY167666 LOC7;
+		nimln(81, "lootdrops.nim");
+		LOC6 = 0;
+		LOC6 = sql_167021(((NimStringDesc*) &TMP2822));
+		memset((void*)LOC7, 0, sizeof(LOC7));
+		LOC7[0] = nimIntToStr(item);
+		result = getvalue_167577(db_282127, LOC6, LOC7, 1);
+	}
+	LA1: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getdefensebonus_282541)(NimStringDesc* user) {
+	NI result;
+	NI LOC1;
+	NI LOC2;
+	NI LOC3;
+	NI LOC4;
+	NI TMP2823;
+	nimfr("getDefenseBonus", "lootdrops.nim")
+	result = 0;
+	nimln(84, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getarmor_282431(user);
+	LOC2 = 0;
+	LOC2 = getitembonus_282523(LOC1);
+	LOC3 = 0;
+	LOC3 = getshield_282440(user);
+	LOC4 = 0;
+	LOC4 = getitembonus_282523(LOC3);
+	TMP2823 = addInt(LOC2, LOC4);
+	result = (NI)(TMP2823);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getattackbonus_282548)(NimStringDesc* user) {
+	NI result;
+	NI LOC1;
+	nimfr("getAttackBonus", "lootdrops.nim")
+	result = 0;
+	nimln(87, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getweapon_282422(user);
+	result = getitembonus_282523(LOC1);
+	popFrame();
+	return result;
 }
 
 static N_INLINE(NI, randomint_277853)(Mtstate273035* rng, NI max) {
@@ -1575,18 +2058,18 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 
 static N_INLINE(NI, randomint_279309)(Mtstate273035* rng, NI min, NI max) {
 	NI result;
-	NI TMP2883;
+	NI TMP2828;
 	NI LOC1;
-	NI TMP2884;
+	NI TMP2829;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(106, "common.nim");
 	nimln(107, "common.nim");
-	TMP2883 = subInt(max, min);
+	TMP2828 = subInt(max, min);
 	LOC1 = 0;
-	LOC1 = randomint_277853(rng, ((NI)chckRange((NI)(TMP2883), ((NI) 1), ((NI) IL64(9223372036854775807)))));
-	TMP2884 = addInt(min, ((NI) (LOC1)));
-	result = (NI)(TMP2884);
+	LOC1 = randomint_277853(rng, ((NI)chckRange((NI)(TMP2828), ((NI) 1), ((NI) IL64(9223372036854775807)))));
+	TMP2829 = addInt(min, ((NI) (LOC1)));
+	result = (NI)(TMP2829);
 	popFrame();
 	return result;
 }
@@ -1599,6 +2082,310 @@ static N_INLINE(NI, randomint_279271)(NI min, NI max) {
 	result = randomint_279309((&mersennetwisterinst_277010), min, max);
 	popFrame();
 	return result;
+}
+
+N_NIMCALL(NimStringDesc*, battleusers_282555)(NimStringDesc* user1, NimStringDesc* user2) {
+	NimStringDesc* result;
+	NimStringDesc* battleoutcome;
+	NI user1dam;
+	NI user2dam;
+	NI user1def;
+	NI user2def;
+	NI user1att;
+	NI user2att;
+	NI user1att5;
+	NI LOC1;
+	NI TMP2824;
+	NI user2att5;
+	NI LOC2;
+	NI TMP2825;
+	NI Ac1;
+	NI TMP2826;
+	NI Ac2;
+	NI TMP2827;
+	nimfr("battleUsers", "lootdrops.nim")
+	result = 0;
+	battleoutcome = 0;
+	user1dam = 0;
+	user2dam = 0;
+	nimln(94, "lootdrops.nim");
+	user1def = getdefensebonus_282541(user1);
+	nimln(95, "lootdrops.nim");
+	user2def = getdefensebonus_282541(user2);
+	nimln(97, "lootdrops.nim");
+	user1att = getattackbonus_282548(user1);
+	nimln(98, "lootdrops.nim");
+	user2att = getattackbonus_282548(user2);
+	nimln(100, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getattackbonus_282548(user1);
+	TMP2824 = addInt(LOC1, ((NI) 5));
+	user1att5 = (NI)(TMP2824);
+	nimln(101, "lootdrops.nim");
+	LOC2 = 0;
+	LOC2 = getattackbonus_282548(user2);
+	TMP2825 = addInt(LOC2, ((NI) 5));
+	user2att5 = (NI)(TMP2825);
+	nimln(103, "lootdrops.nim");
+	TMP2826 = addInt(((NI) 10), user2def);
+	Ac1 = (NI)(TMP2826);
+	nimln(104, "lootdrops.nim");
+	TMP2827 = addInt(((NI) 10), user1def);
+	Ac2 = (NI)(TMP2827);
+	nimln(106, "lootdrops.nim");
+	battleoutcome = copyString(((NimStringDesc*) &TMP2762));
+	nimln(108, "lootdrops.nim");
+	{
+		NI TMP2830;
+		NI LOC5;
+		NimStringDesc* LOC8;
+		NimStringDesc* LOC9;
+		TMP2830 = addInt(((NI) 21), user1att);
+		LOC5 = 0;
+		LOC5 = randomint_279271(((NI) 1), (NI)(TMP2830));
+		if (!(Ac1 < LOC5)) goto LA6;
+		nimln(109, "lootdrops.nim");
+		user1dam = randomint_279271(((NI) 1), user1att5);
+		nimln(110, "lootdrops.nim");
+		LOC8 = 0;
+		LOC9 = 0;
+		LOC9 = nimIntToStr(user1dam);
+		LOC8 = rawNewString(user1->Sup.len + user2->Sup.len + LOC9->Sup.len + 23);
+appendString(LOC8, user1);
+appendString(LOC8, ((NimStringDesc*) &TMP2831));
+appendString(LOC8, user2);
+appendString(LOC8, ((NimStringDesc*) &TMP2832));
+appendString(LOC8, LOC9);
+appendString(LOC8, ((NimStringDesc*) &TMP2833));
+		battleoutcome = LOC8;
+	}
+	goto LA3;
+	LA6: ;
+	{
+		nimln(112, "lootdrops.nim");
+		user1dam = ((NI) 0);
+	}
+	LA3: ;
+	nimln(114, "lootdrops.nim");
+	{
+		NI TMP2834;
+		NI LOC13;
+		NimStringDesc* LOC16;
+		NimStringDesc* LOC17;
+		TMP2834 = addInt(((NI) 21), user2att);
+		LOC13 = 0;
+		LOC13 = randomint_279271(((NI) 1), (NI)(TMP2834));
+		if (!(Ac2 < LOC13)) goto LA14;
+		nimln(115, "lootdrops.nim");
+		user2dam = randomint_279271(((NI) 1), user2att5);
+		nimln(116, "lootdrops.nim");
+		LOC16 = 0;
+		LOC17 = 0;
+		LOC17 = nimIntToStr(user2dam);
+		LOC16 = rawNewString(battleoutcome->Sup.len + user2->Sup.len + user1->Sup.len + LOC17->Sup.len + 24);
+appendString(LOC16, battleoutcome);
+appendString(LOC16, ((NimStringDesc*) &TMP2784));
+appendString(LOC16, user2);
+appendString(LOC16, ((NimStringDesc*) &TMP2831));
+appendString(LOC16, user1);
+appendString(LOC16, ((NimStringDesc*) &TMP2832));
+appendString(LOC16, LOC17);
+appendString(LOC16, ((NimStringDesc*) &TMP2833));
+		battleoutcome = LOC16;
+	}
+	goto LA11;
+	LA14: ;
+	{
+		nimln(118, "lootdrops.nim");
+		user2dam = ((NI) 0);
+	}
+	LA11: ;
+	nimln(120, "lootdrops.nim");
+	{
+		NimStringDesc* LOC23;
+		if (!(user2dam == user1dam)) goto LA21;
+		nimln(121, "lootdrops.nim");
+		LOC23 = 0;
+		LOC23 = rawNewString(battleoutcome->Sup.len + 31);
+appendString(LOC23, battleoutcome);
+appendString(LOC23, ((NimStringDesc*) &TMP2835));
+		battleoutcome = LOC23;
+	}
+	goto LA19;
+	LA21: ;
+	{
+		NimStringDesc* LOC27;
+		NI LOC28;
+		NI LOC29;
+		nimln(122, "lootdrops.nim");
+		if (!(user1dam < user2dam)) goto LA25;
+		nimln(123, "lootdrops.nim");
+		LOC27 = 0;
+		LOC27 = rawNewString(battleoutcome->Sup.len + user2->Sup.len + 52);
+appendString(LOC27, battleoutcome);
+appendString(LOC27, ((NimStringDesc*) &TMP2784));
+appendString(LOC27, user2);
+appendString(LOC27, ((NimStringDesc*) &TMP2836));
+		battleoutcome = LOC27;
+		nimln(124, "lootdrops.nim");
+		LOC28 = 0;
+		LOC28 = downvote_282375(user1);
+		nimln(125, "lootdrops.nim");
+		LOC29 = 0;
+		LOC29 = upvote_282363(user2);
+	}
+	goto LA19;
+	LA25: ;
+	{
+		NimStringDesc* LOC33;
+		NI LOC34;
+		NI LOC35;
+		nimln(126, "lootdrops.nim");
+		if (!(user2dam < user1dam)) goto LA31;
+		nimln(127, "lootdrops.nim");
+		LOC33 = 0;
+		LOC33 = rawNewString(battleoutcome->Sup.len + user1->Sup.len + 52);
+appendString(LOC33, battleoutcome);
+appendString(LOC33, ((NimStringDesc*) &TMP2784));
+appendString(LOC33, user1);
+appendString(LOC33, ((NimStringDesc*) &TMP2836));
+		battleoutcome = LOC33;
+		nimln(128, "lootdrops.nim");
+		LOC34 = 0;
+		LOC34 = downvote_282375(user2);
+		nimln(129, "lootdrops.nim");
+		LOC35 = 0;
+		LOC35 = upvote_282363(user1);
+	}
+	goto LA19;
+	LA31: ;
+	LA19: ;
+	nimln(131, "lootdrops.nim");
+	result = copyString(battleoutcome);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, doesusergetdrop_282673)(NimStringDesc* msg, NimStringDesc* user) {
+	NIM_BOOL result;
+	nimfr("doesUserGetDrop", "lootdrops.nim")
+{	result = 0;
+	nimln(135, "lootdrops.nim");
+	{
+		NIM_BOOL LOC3;
+		LOC3 = 0;
+		LOC3 = checkblacklist_282192(user);
+		if (!LOC3) goto LA4;
+		nimln(136, "lootdrops.nim");
+		result = NIM_FALSE;
+		goto BeforeRet;
+	}
+	LA4: ;
+	nimln(138, "lootdrops.nim");
+	{
+		NI LOC8;
+		LOC8 = 0;
+		LOC8 = randomint_279271(((NI) 1), ((NI) 200));
+		if (!(LOC8 == ((NI) 1))) goto LA9;
+		nimln(139, "lootdrops.nim");
+		result = NIM_TRUE;
+	}
+	goto LA6;
+	LA9: ;
+	{
+		nimln(141, "lootdrops.nim");
+		result = NIM_FALSE;
+	}
+	LA6: ;
+	}BeforeRet: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, generatelootdrop_282706)(NimStringDesc* user, NIM_BOOL rare) {
+	NI result;
+	NI rank;
+	TY167494* rows;
+	NimStringDesc* LOC6;
+	TY167666 LOC7;
+	NimStringDesc* randomitem;
+	NI LOC8;
+	nimfr("generateLootDrop", "lootdrops.nim")
+	result = 0;
+	rank = 0;
+	nimln(146, "lootdrops.nim");
+	{
+		if (!rare) goto LA3;
+		nimln(147, "lootdrops.nim");
+		rank = randomint_279271(((NI) 1), ((NI) 4));
+	}
+	goto LA1;
+	LA3: ;
+	{
+		nimln(149, "lootdrops.nim");
+		rank = ((NI) 1);
+	}
+	LA1: ;
+	nimln(151, "lootdrops.nim");
+	LOC6 = 0;
+	LOC6 = sql_167021(((NimStringDesc*) &TMP2837));
+	memset((void*)LOC7, 0, sizeof(LOC7));
+	LOC7[0] = nimIntToStr(rank);
+	rows = getallrows_167488(db_282127, LOC6, LOC7, 1);
+	nimln(153, "lootdrops.nim");
+	LOC8 = 0;
+	LOC8 = randomint_279271(((NI) 0), (rows ? (rows->Sup.len-1) : -1));
+	if ((NU)(LOC8) >= (NU)(rows->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 0)) >= (NU)(rows->data[LOC8]->Sup.len)) raiseIndexError();
+	randomitem = rows->data[LOC8]->data[((NI) 0)];
+	nimln(154, "lootdrops.nim");
+	result = nsuParseInt(randomitem);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, adduserloot_282768)(NI user, NI item) {
+	NIM_BOOL result;
+	NimStringDesc* LOC1;
+	TY282228 LOC2;
+	nimfr("addUserLoot", "lootdrops.nim")
+	result = 0;
+	nimln(157, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_167021(((NimStringDesc*) &TMP2838));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	nimln(159, "lootdrops.nim");
+	LOC2[0] = nimIntToStr(item);
+	LOC2[1] = nimIntToStr(user);
+	result = tryexec_167138(db_282127, LOC1, LOC2, 2);
+	popFrame();
+	return result;
+}
+
+static N_INLINE(void, writeln_282786)(FILE* f, NimStringDesc** x, NI xLen0) {
+	nimfr("writeln", "sysio.nim")
+	{
+		NimStringDesc* i_282802;
+		NI i_282810;
+		i_282802 = 0;
+		nimln(1689, "system.nim");
+		i_282810 = ((NI) 0);
+		{
+			nimln(1690, "system.nim");
+			while (1) {
+				if (!(i_282810 < xLen0)) goto LA3;
+				nimln(1691, "system.nim");
+				i_282802 = x[i_282810];
+				nimln(212, "sysio.nim");
+				write_13457(f, i_282802);
+				nimln(1692, "system.nim");
+				i_282810 += ((NI) 1);
+			} LA3: ;
+		}
+	}
+	nimln(213, "sysio.nim");
+	write_13457(f, ((NimStringDesc*) &TMP2839));
+	popFrame();
 }
 
 static N_INLINE(void, initStackBottomWith)(void* locals) {
@@ -1743,226 +2530,226 @@ NIM_EXTERNC N_NOINLINE(void, nimbusInit)(void) {
 	NimStringDesc* LOC12;
 	NimStringDesc* LOC13;
 	nimfr("nimbus", "nimbus.nim")
-	nimln(40, "usersystem.nim");
+	nimln(32, "usersystem.nim");
 	LOC1 = 0;
-	LOC1 = server_282093; server_282093 = copyStringRC1(((NimStringDesc*) &TMP2760));
+	LOC1 = server_282087; server_282087 = copyStringRC1(((NimStringDesc*) &TMP2760));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
-	nimln(41, "usersystem.nim");
-	genericSeqAssign((&loggedin_282108), TMP2761, (&NTI13606));
-	nimln(42, "usersystem.nim");
-	port_282110 = ((NU16) 6667);
-	nimln(43, "usersystem.nim");
+	nimln(33, "usersystem.nim");
+	genericSeqAssign((&loggedin_282102), TMP2761, (&NTI13606));
+	nimln(34, "usersystem.nim");
+	port_282104 = ((NU16) 6667);
+	nimln(35, "usersystem.nim");
 	LOC2 = 0;
-	LOC2 = username_282111; username_282111 = copyStringRC1(((NimStringDesc*) &TMP2764));
+	LOC2 = username_282105; username_282105 = copyStringRC1(((NimStringDesc*) &TMP2764));
 	if (LOC2) nimGCunrefNoCycle(LOC2);
-	nimln(44, "usersystem.nim");
+	nimln(36, "usersystem.nim");
 	LOC3 = 0;
-	LOC3 = nick_282112; nick_282112 = copyStringRC1(((NimStringDesc*) &TMP2765));
+	LOC3 = nick_282106; nick_282106 = copyStringRC1(((NimStringDesc*) &TMP2765));
 	if (LOC3) nimGCunrefNoCycle(LOC3);
-	nimln(45, "usersystem.nim");
-	genericSeqAssign((&channels_282127), TMP2766, (&NTI13606));
-	nimln(47, "usersystem.nim");
-	islogging_282129 = NIM_FALSE;
-	nimln(48, "usersystem.nim");
-	outputting_282130 = NIM_TRUE;
-	nimln(51, "usersystem.nim");
-	asgnRefNoCycle((void**) (&sock_282133), socket_137604(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE));
-	nimln(52, "usersystem.nim");
+	nimln(37, "usersystem.nim");
+	genericSeqAssign((&channels_282121), TMP2766, (&NTI13606));
+	nimln(39, "usersystem.nim");
+	islogging_282123 = NIM_FALSE;
+	nimln(40, "usersystem.nim");
+	outputting_282124 = NIM_TRUE;
+	nimln(42, "usersystem.nim");
+	asgnRefNoCycle((void**) (&sock_282125), socket_137604(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE));
+	nimln(43, "usersystem.nim");
 	LOC4 = 0;
-	LOC4 = buffer_282134; buffer_282134 = copyStringRC1(((NimStringDesc*) &TMP2762));
+	LOC4 = buffer_282126; buffer_282126 = copyStringRC1(((NimStringDesc*) &TMP2762));
 	if (LOC4) nimGCunrefNoCycle(LOC4);
-	nimln(56, "usersystem.nim");
-	db_282135 = open_167645(((NimStringDesc*) &TMP2773), ((NimStringDesc*) &TMP2774), ((NimStringDesc*) &TMP2762), ((NimStringDesc*) &TMP2775));
-	nimln(59, "usersystem.nim");
+	nimln(47, "usersystem.nim");
+	db_282127 = open_167645(((NimStringDesc*) &TMP2773), ((NimStringDesc*) &TMP2774), ((NimStringDesc*) &TMP2762), ((NimStringDesc*) &TMP2775));
+	nimln(50, "usersystem.nim");
 	LOC5 = 0;
 	LOC5 = sql_167021(((NimStringDesc*) &TMP2776));
 	memset((void*)LOC6, 0, sizeof(LOC6));
-	exec_167155(db_282135, LOC5, LOC6, 0);
-	nimln(65, "usersystem.nim");
+	exec_167155(db_282127, LOC5, LOC6, 0);
+	nimln(56, "usersystem.nim");
 	LOC7 = 0;
 	LOC7 = sql_167021(((NimStringDesc*) &TMP2777));
 	memset((void*)LOC8, 0, sizeof(LOC8));
-	exec_167155(db_282135, LOC7, LOC8, 0);
-	nimln(76, "usersystem.nim");
+	exec_167155(db_282127, LOC7, LOC8, 0);
+	nimln(67, "usersystem.nim");
 	LOC9 = 0;
 	LOC9 = sql_167021(((NimStringDesc*) &TMP2778));
 	memset((void*)LOC10, 0, sizeof(LOC10));
-	exec_167155(db_282135, LOC9, LOC10, 0);
-	nimln(85, "usersystem.nim");
-	connect_142083(sock_282133, server_282093, port_282110, ((NU8) 2));
-	nimln(87, "usersystem.nim");
+	exec_167155(db_282127, LOC9, LOC10, 0);
+	nimln(76, "usersystem.nim");
+	connect_142083(sock_282125, server_282087, port_282104, ((NU8) 2));
+	nimln(78, "usersystem.nim");
 	LOC11 = 0;
-	LOC11 = rawNewString(nick_282112->Sup.len + 8);
+	LOC11 = rawNewString(nick_282106->Sup.len + 8);
 appendString(LOC11, ((NimStringDesc*) &TMP2781));
-appendString(LOC11, nick_282112);
+appendString(LOC11, nick_282106);
 appendString(LOC11, ((NimStringDesc*) &TMP2782));
-	send_146407(sock_282133, LOC11);
-	nimln(88, "usersystem.nim");
+	send_146407(sock_282125, LOC11);
+	nimln(79, "usersystem.nim");
 	LOC12 = 0;
-	LOC12 = rawNewString(nick_282112->Sup.len + nick_282112->Sup.len + nick_282112->Sup.len + 20);
+	LOC12 = rawNewString(nick_282106->Sup.len + nick_282106->Sup.len + nick_282106->Sup.len + 20);
 appendString(LOC12, ((NimStringDesc*) &TMP2783));
-appendString(LOC12, nick_282112);
+appendString(LOC12, nick_282106);
 appendString(LOC12, ((NimStringDesc*) &TMP2784));
-appendString(LOC12, nick_282112);
+appendString(LOC12, nick_282106);
 appendString(LOC12, ((NimStringDesc*) &TMP2784));
-appendString(LOC12, nick_282112);
+appendString(LOC12, nick_282106);
 appendString(LOC12, ((NimStringDesc*) &TMP2785));
-	send_146407(sock_282133, LOC12);
-	nimln(89, "usersystem.nim");
+	send_146407(sock_282125, LOC12);
+	nimln(80, "usersystem.nim");
 	LOC13 = 0;
-	LOC13 = rawNewString(nick_282112->Sup.len + 11);
+	LOC13 = rawNewString(nick_282106->Sup.len + 11);
 appendString(LOC13, ((NimStringDesc*) &TMP2786));
-appendString(LOC13, nick_282112);
+appendString(LOC13, nick_282106);
 appendString(LOC13, ((NimStringDesc*) &TMP2787));
-	send_146407(sock_282133, LOC13);
+	send_146407(sock_282125, LOC13);
 	{
-		nimln(13, "nimbus.nim");
+		nimln(14, "nimbus.nim");
 		while (1) {
-			nimln(14, "nimbus.nim");
-			readline_145045(sock_282133, (&buffer_282134), ((NI) -1));
-			nimln(16, "nimbus.nim");
+			nimln(15, "nimbus.nim");
+			readline_145045(sock_282125, (&buffer_282126), ((NI) -1));
+			nimln(17, "nimbus.nim");
 			{
 				TY167666 LOC20;
-				if (!islogging_282129) goto LA18;
-				nimln(17, "nimbus.nim");
+				if (!islogging_282123) goto LA18;
+				nimln(18, "nimbus.nim");
 				memset((void*)LOC20, 0, sizeof(LOC20));
-				LOC20[0] = copyString(buffer_282134);
-				writeln_282416(log_282128, LOC20, 1);
+				LOC20[0] = copyString(buffer_282126);
+				writeln_282786(log_282122, LOC20, 1);
 			}
 			LA18: ;
-			nimln(19, "nimbus.nim");
+			nimln(20, "nimbus.nim");
 			{
-				if (!outputting_282130) goto LA23;
-				nimln(20, "nimbus.nim");
-				printf("%s\015\012", buffer_282134? (buffer_282134)->data:"nil");
+				if (!outputting_282124) goto LA23;
+				nimln(21, "nimbus.nim");
+				printf("%s\015\012", buffer_282126? (buffer_282126)->data:"nil");
 			}
 			LA23: ;
-			nimln(22, "nimbus.nim");
+			nimln(23, "nimbus.nim");
 			{
 				NimStringDesc* LOC27;
 				LOC27 = 0;
-				LOC27 = rawNewString(nick_282112->Sup.len + nick_282112->Sup.len + 11);
-appendString(LOC27, ((NimStringDesc*) &TMP2836));
-appendString(LOC27, nick_282112);
-appendString(LOC27, ((NimStringDesc*) &TMP2837));
-appendString(LOC27, nick_282112);
-appendString(LOC27, ((NimStringDesc*) &TMP2838));
-				if (!eqStrings(buffer_282134, LOC27)) goto LA28;
-				nimln(23, "nimbus.nim");
+				LOC27 = rawNewString(nick_282106->Sup.len + nick_282106->Sup.len + 11);
+appendString(LOC27, ((NimStringDesc*) &TMP2870));
+appendString(LOC27, nick_282106);
+appendString(LOC27, ((NimStringDesc*) &TMP2871));
+appendString(LOC27, nick_282106);
+appendString(LOC27, ((NimStringDesc*) &TMP2872));
+				if (!eqStrings(buffer_282126, LOC27)) goto LA28;
+				nimln(24, "nimbus.nim");
 				goto LA14;
 			}
 			LA28: ;
 		}
 	} LA14: ;
 	{
-		NI i_282478;
-		NI L_282480;
+		NI i_282848;
+		NI L_282850;
 		nimln(3084, "system.nim");
-		i_282478 = ((NI) 0);
+		i_282848 = ((NI) 0);
 		nimln(3085, "system.nim");
-		L_282480 = (channels_282127 ? channels_282127->Sup.len : 0);
+		L_282850 = (channels_282121 ? channels_282121->Sup.len : 0);
 		{
 			nimln(3086, "system.nim");
 			while (1) {
 				NimStringDesc* LOC33;
 				NimStringDesc* LOC34;
-				NI TMP2840;
-				if (!(i_282478 < L_282480)) goto LA32;
+				NI TMP2874;
+				if (!(i_282848 < L_282850)) goto LA32;
 				nimln(3087, "system.nim");
-				if ((NU)(i_282478) >= (NU)(channels_282127->Sup.len)) raiseIndexError();
+				if ((NU)(i_282848) >= (NU)(channels_282121->Sup.len)) raiseIndexError();
 				LOC33 = 0;
-				LOC33 = channel_282474; channel_282474 = copyStringRC1(channels_282127->data[i_282478]);
+				LOC33 = channel_282844; channel_282844 = copyStringRC1(channels_282121->data[i_282848]);
 				if (LOC33) nimGCunrefNoCycle(LOC33);
-				nimln(26, "nimbus.nim");
+				nimln(27, "nimbus.nim");
 				LOC34 = 0;
-				LOC34 = rawNewString(channel_282474->Sup.len + 8);
-appendString(LOC34, ((NimStringDesc*) &TMP2839));
-appendString(LOC34, channel_282474);
+				LOC34 = rawNewString(channel_282844->Sup.len + 8);
+appendString(LOC34, ((NimStringDesc*) &TMP2873));
+appendString(LOC34, channel_282844);
 appendString(LOC34, ((NimStringDesc*) &TMP2782));
-				send_146407(sock_282133, LOC34);
+				send_146407(sock_282125, LOC34);
 				nimln(3088, "system.nim");
-				TMP2840 = addInt(i_282478, ((NI) 1));
-				i_282478 = (NI)(TMP2840);
+				TMP2874 = addInt(i_282848, ((NI) 1));
+				i_282848 = (NI)(TMP2874);
 				nimln(3089, "system.nim");
 				{
-					if (!!(((channels_282127 ? channels_282127->Sup.len : 0) == L_282480))) goto LA37;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2841));
+					if (!!(((channels_282121 ? channels_282121->Sup.len : 0) == L_282850))) goto LA37;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2875));
 				}
 				LA37: ;
 			} LA32: ;
 		}
 	}
 	{
-		nimln(28, "nimbus.nim");
+		nimln(29, "nimbus.nim");
 		while (1) {
 			TY13606* ircmsg;
-			nimln(29, "nimbus.nim");
-			readline_145045(sock_282133, (&buffer_282134), ((NI) -1));
-			nimln(31, "nimbus.nim");
+			nimln(30, "nimbus.nim");
+			readline_145045(sock_282125, (&buffer_282126), ((NI) -1));
+			nimln(32, "nimbus.nim");
 			{
-				if (!((buffer_282134) && (buffer_282134)->Sup.len == 0)) goto LA43;
-				nimln(32, "nimbus.nim");
-				printf("%s\015\012", ((NimStringDesc*) &TMP2845)? (((NimStringDesc*) &TMP2845))->data:"nil");
+				if (!((buffer_282126) && (buffer_282126)->Sup.len == 0)) goto LA43;
 				nimln(33, "nimbus.nim");
+				printf("%s\015\012", ((NimStringDesc*) &TMP2879)? (((NimStringDesc*) &TMP2879))->data:"nil");
+				nimln(34, "nimbus.nim");
 				goto LA39;
 			}
 			LA43: ;
-			nimln(35, "nimbus.nim");
+			nimln(36, "nimbus.nim");
 			{
 				TY167666 LOC49;
-				if (!islogging_282129) goto LA47;
-				nimln(36, "nimbus.nim");
+				if (!islogging_282123) goto LA47;
+				nimln(37, "nimbus.nim");
 				memset((void*)LOC49, 0, sizeof(LOC49));
-				LOC49[0] = copyString(buffer_282134);
-				writeln_282416(log_282128, LOC49, 1);
+				LOC49[0] = copyString(buffer_282126);
+				writeln_282786(log_282122, LOC49, 1);
 			}
 			LA47: ;
-			nimln(38, "nimbus.nim");
-			ircmsg = nsuSplitString(buffer_282134, ((NimStringDesc*) &TMP2784));
-			nimln(40, "nimbus.nim");
+			nimln(39, "nimbus.nim");
+			ircmsg = nsuSplitString(buffer_282126, ((NimStringDesc*) &TMP2784));
+			nimln(41, "nimbus.nim");
 			{
 				NimStringDesc* LOC54;
-				if (!outputting_282130) goto LA52;
-				nimln(41, "nimbus.nim");
+				if (!outputting_282124) goto LA52;
+				nimln(42, "nimbus.nim");
 				LOC54 = 0;
-				LOC54 = HEX24_282510(ircmsg);
+				LOC54 = HEX24_282880(ircmsg);
 				printf("%s\015\012", LOC54? (LOC54)->data:"nil");
 			}
 			LA52: ;
-			nimln(43, "nimbus.nim");
+			nimln(44, "nimbus.nim");
 			{
 				NimStringDesc* LOC59;
 				if ((NU)(((NI) 0)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-				if (!eqStrings(ircmsg->data[((NI) 0)], ((NimStringDesc*) &TMP2850))) goto LA57;
-				nimln(44, "nimbus.nim");
+				if (!eqStrings(ircmsg->data[((NI) 0)], ((NimStringDesc*) &TMP2884))) goto LA57;
+				nimln(45, "nimbus.nim");
 				LOC59 = 0;
 				if ((NU)(((NI) 1)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 				LOC59 = rawNewString(ircmsg->data[((NI) 1)]->Sup.len + 8);
-appendString(LOC59, ((NimStringDesc*) &TMP2851));
+appendString(LOC59, ((NimStringDesc*) &TMP2885));
 appendString(LOC59, ircmsg->data[((NI) 1)]);
 appendString(LOC59, ((NimStringDesc*) &TMP2782));
-				send_146407(sock_282133, LOC59);
+				send_146407(sock_282125, LOC59);
 			}
 			goto LA55;
 			LA57: ;
 			{
 				NimStringDesc* nick;
-				nimln(46, "nimbus.nim");
-				if ((NU)(((NI) 1)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-				if (!eqStrings(ircmsg->data[((NI) 1)], ((NimStringDesc*) &TMP2852))) goto LA61;
 				nimln(47, "nimbus.nim");
-				if ((NU)(((NI) 0)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-				nick = getnick_282076(ircmsg->data[((NI) 0)]);
+				if ((NU)(((NI) 1)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+				if (!eqStrings(ircmsg->data[((NI) 1)], ((NimStringDesc*) &TMP2886))) goto LA61;
 				nimln(48, "nimbus.nim");
+				if ((NU)(((NI) 0)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+				nick = getnick_282070(ircmsg->data[((NI) 0)]);
+				nimln(49, "nimbus.nim");
 				{
 					NIM_BOOL LOC65;
 					NIM_BOOL LOC68;
 					LOC65 = 0;
-					LOC65 = isloggedin_282152(nick);
+					LOC65 = isloggedin_282144(nick);
 					if (!LOC65) goto LA66;
-					nimln(49, "nimbus.nim");
+					nimln(50, "nimbus.nim");
 					LOC68 = 0;
-					LOC68 = logoutuser_282252(nick);
+					LOC68 = logoutuser_282255(nick);
 				}
 				LA66: ;
 			}
@@ -1970,33 +2757,33 @@ appendString(LOC59, ((NimStringDesc*) &TMP2782));
 			LA61: ;
 			{
 				NimStringDesc* nick;
-				nimln(51, "nimbus.nim");
-				if ((NU)(((NI) 1)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-				if (!eqStrings(ircmsg->data[((NI) 1)], ((NimStringDesc*) &TMP2853))) goto LA70;
 				nimln(52, "nimbus.nim");
+				if ((NU)(((NI) 1)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+				if (!eqStrings(ircmsg->data[((NI) 1)], ((NimStringDesc*) &TMP2887))) goto LA70;
+				nimln(53, "nimbus.nim");
 				if ((NU)(((NI) 0)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-				nick = getnick_282076(ircmsg->data[((NI) 0)]);
-				nimln(56, "nimbus.nim");
+				nick = getnick_282070(ircmsg->data[((NI) 0)]);
+				nimln(57, "nimbus.nim");
 				{
 					NimStringDesc* LOC76;
 					NimStringDesc* LOC77;
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2854))) goto LA74;
-					nimln(57, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2888))) goto LA74;
+					nimln(58, "nimbus.nim");
 					LOC76 = 0;
 					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 					LOC77 = 0;
-					LOC77 = about_282013();
+					LOC77 = about_282007();
 					LOC76 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC77->Sup.len + 13);
-appendString(LOC76, ((NimStringDesc*) &TMP2855));
+appendString(LOC76, ((NimStringDesc*) &TMP2889));
 appendString(LOC76, ircmsg->data[((NI) 2)]);
-appendString(LOC76, ((NimStringDesc*) &TMP2856));
+appendString(LOC76, ((NimStringDesc*) &TMP2890));
 appendString(LOC76, LOC77);
 appendString(LOC76, ((NimStringDesc*) &TMP2782));
-					send_146407(sock_282133, LOC76);
+					send_146407(sock_282125, LOC76);
 				}
 				LA74: ;
-				nimln(60, "nimbus.nim");
+				nimln(61, "nimbus.nim");
 				{
 					NIM_BOOL LOC80;
 					NIM_BOOL LOC81;
@@ -2010,140 +2797,140 @@ appendString(LOC76, ((NimStringDesc*) &TMP2782));
 					LOC80 = 0;
 					LOC81 = 0;
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC81 = eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2857));
+					LOC81 = eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2891));
 					if (!(LOC81)) goto LA82;
-					LOC81 = isloggedin_282152(((NimStringDesc*) &TMP2858));
+					LOC81 = isloggedin_282144(((NimStringDesc*) &TMP2892));
 					LA82: ;
 					LOC80 = LOC81;
 					if (!(LOC80)) goto LA83;
 					LOC84 = 0;
 					LOC84 = nsuToLowerStr(nick);
-					LOC80 = eqStrings(LOC84, ((NimStringDesc*) &TMP2859));
+					LOC80 = eqStrings(LOC84, ((NimStringDesc*) &TMP2893));
 					LA83: ;
 					if (!LOC80) goto LA85;
-					nimln(61, "nimbus.nim");
-					filename = copyString(((NimStringDesc*) &TMP2860));
 					nimln(62, "nimbus.nim");
+					filename = copyString(((NimStringDesc*) &TMP2894));
+					nimln(63, "nimbus.nim");
 					outhandle = open_13217(filename, ((NU8) 1), ((NI) -1));
 					result = 0;
-					nimln(65, "nimbus.nim");
-					writeln_282416(outhandle, TMP2861, 1);
+					nimln(66, "nimbus.nim");
+					writeln_282786(outhandle, TMP2895, 1);
 					{
-						NimStringDesc* HEX3Atmp_282884;
+						NimStringDesc* HEX3Atmp_283281;
 						Slice88061 LOC88;
 						TY13606* LOC89;
-						NI last_282888;
-						asgnRefNoCycle((void**) (&line_282601), NIM_NIL);
-						HEX3Atmp_282884 = 0;
-						nimln(66, "nimbus.nim");
+						NI last_283285;
+						asgnRefNoCycle((void**) (&line_282971), NIM_NIL);
+						HEX3Atmp_283281 = 0;
+						nimln(67, "nimbus.nim");
 						LOC88 = HEX2EHEX2E_110273(((NI) 4), (ircmsg ? (ircmsg->Sup.len-1) : -1));
 						LOC89 = 0;
 						LOC89 = HEX5BHEX5D_133598(ircmsg, LOC88);
-						HEX3Atmp_282884 = nsuJoinSep(LOC89->data, LOC89->Sup.len, ((NimStringDesc*) &TMP2784));
+						HEX3Atmp_283281 = nsuJoinSep(LOC89->data, LOC89->Sup.len, ((NimStringDesc*) &TMP2784));
 						nimln(293, "strutils.nim");
-						last_282888 = ((NI) 0);
+						last_283285 = ((NI) 0);
 						nimln(294, "strutils.nim");
 						{
-							if (!(((NI) 0) < (HEX3Atmp_282884 ? HEX3Atmp_282884->Sup.len : 0))) goto LA92;
+							if (!(((NI) 0) < (HEX3Atmp_283281 ? HEX3Atmp_283281->Sup.len : 0))) goto LA92;
 							{
 								nimln(295, "strutils.nim");
 								while (1) {
-									NI first_282890;
-									NI TMP2866;
+									NI first_283287;
+									NI TMP2900;
 									TY167666 LOC101;
 									NimStringDesc* LOC102;
-									NI TMP2867;
-									if (!(last_282888 <= (HEX3Atmp_282884 ? HEX3Atmp_282884->Sup.len : 0))) goto LA95;
+									NI TMP2901;
+									if (!(last_283285 <= (HEX3Atmp_283281 ? HEX3Atmp_283281->Sup.len : 0))) goto LA95;
 									nimln(296, "strutils.nim");
-									first_282890 = last_282888;
+									first_283287 = last_283285;
 									{
 										nimln(297, "strutils.nim");
 										while (1) {
 											NIM_BOOL LOC98;
-											NI TMP2863;
+											NI TMP2897;
 											NimStringDesc* LOC100;
-											NI TMP2865;
+											NI TMP2899;
 											LOC98 = 0;
-											LOC98 = (last_282888 < (HEX3Atmp_282884 ? HEX3Atmp_282884->Sup.len : 0));
+											LOC98 = (last_283285 < (HEX3Atmp_283281 ? HEX3Atmp_283281->Sup.len : 0));
 											if (!(LOC98)) goto LA99;
-											TMP2863 = addInt(last_282888, ((NI) 0));
+											TMP2897 = addInt(last_283285, ((NI) 0));
 											LOC100 = 0;
-											LOC100 = copyStrLast(HEX3Atmp_282884, last_282888, (NI)(TMP2863));
-											LOC98 = !(eqStrings(LOC100, ((NimStringDesc*) &TMP2864)));
+											LOC100 = copyStrLast(HEX3Atmp_283281, last_283285, (NI)(TMP2897));
+											LOC98 = !(eqStrings(LOC100, ((NimStringDesc*) &TMP2898)));
 											LA99: ;
 											if (!LOC98) goto LA97;
 											nimln(298, "strutils.nim");
-											TMP2865 = addInt(last_282888, ((NI) 1));
-											last_282888 = (NI)(TMP2865);
+											TMP2899 = addInt(last_283285, ((NI) 1));
+											last_283285 = (NI)(TMP2899);
 										} LA97: ;
 									}
 									nimln(299, "strutils.nim");
-									TMP2866 = subInt(last_282888, ((NI) 1));
-									asgnRefNoCycle((void**) (&line_282601), copyStrLast(HEX3Atmp_282884, first_282890, (NI)(TMP2866)));
-									nimln(67, "nimbus.nim");
+									TMP2900 = subInt(last_283285, ((NI) 1));
+									asgnRefNoCycle((void**) (&line_282971), copyStrLast(HEX3Atmp_283281, first_283287, (NI)(TMP2900)));
+									nimln(68, "nimbus.nim");
 									memset((void*)LOC101, 0, sizeof(LOC101));
 									LOC102 = 0;
-									LOC102 = rawNewString(line_282601->Sup.len + 1);
+									LOC102 = rawNewString(line_282971->Sup.len + 1);
 appendString(LOC102, ((NimStringDesc*) &TMP2784));
-appendString(LOC102, line_282601);
+appendString(LOC102, line_282971);
 									LOC101[0] = LOC102;
-									writeln_282416(outhandle, LOC101, 1);
+									writeln_282786(outhandle, LOC101, 1);
 									nimln(300, "strutils.nim");
-									TMP2867 = addInt(last_282888, ((NI) 1));
-									last_282888 = (NI)(TMP2867);
+									TMP2901 = addInt(last_283285, ((NI) 1));
+									last_283285 = (NI)(TMP2901);
 								} LA95: ;
 							}
 						}
 						LA92: ;
 					}
-					nimln(68, "nimbus.nim");
-					writeln_282416(outhandle, TMP2868, 1);
 					nimln(69, "nimbus.nim");
-					writeln_282416(outhandle, TMP2870, 1);
+					writeln_282786(outhandle, TMP2902, 1);
 					nimln(70, "nimbus.nim");
+					writeln_282786(outhandle, TMP2904, 1);
+					nimln(71, "nimbus.nim");
 					fclose(outhandle);
 					memset((void*)(&resultinitial), 0, sizeof(resultinitial));
-					nimln(72, "nimbus.nim");
+					nimln(73, "nimbus.nim");
 					LOC103 = 0;
 					LOC103 = rawNewString(filename->Sup.len + 276);
-appendString(LOC103, ((NimStringDesc*) &TMP2872));
+appendString(LOC103, ((NimStringDesc*) &TMP2906));
 appendString(LOC103, filename);
 					chckNil((void*)(&resultinitial));
 					memset((void*)(&resultinitial), 0, sizeof(resultinitial));
 					execcmdex_164204(LOC103, 10, (&resultinitial));
-					nimln(74, "nimbus.nim");
+					nimln(75, "nimbus.nim");
 					{
 						TY164210 resultsecond;
 						NimStringDesc* LOC108;
-						NI TMP2874;
-						NI TMP2875;
+						NI TMP2908;
+						NI TMP2909;
 						Slice88061 LOC109;
 						NimStringDesc* LOC110;
 						if (!((resultinitial.Field0) && (resultinitial.Field0)->Sup.len == 0)) goto LA106;
 						memset((void*)(&resultsecond), 0, sizeof(resultsecond));
-						nimln(75, "nimbus.nim");
+						nimln(76, "nimbus.nim");
 						LOC108 = 0;
-						TMP2874 = subInt((filename ? filename->Sup.len : 0), ((NI) 4));
-						TMP2875 = subInt((NI)(TMP2874), ((NI) 1));
-						LOC109 = HEX2EHEX2E_110273(((NI) 0), (NI)(TMP2875));
+						TMP2908 = subInt((filename ? filename->Sup.len : 0), ((NI) 4));
+						TMP2909 = subInt((NI)(TMP2908), ((NI) 1));
+						LOC109 = HEX2EHEX2E_110273(((NI) 0), (NI)(TMP2909));
 						LOC110 = 0;
 						LOC110 = HEX5BHEX5D_88054(filename, LOC109);
 						LOC108 = rawNewString(LOC110->Sup.len + 2);
-appendString(LOC108, ((NimStringDesc*) &TMP2873));
+appendString(LOC108, ((NimStringDesc*) &TMP2907));
 appendString(LOC108, LOC110);
 						chckNil((void*)(&resultsecond));
 						memset((void*)(&resultsecond), 0, sizeof(resultsecond));
 						execcmdex_164204(LOC108, 10, (&resultsecond));
-						nimln(77, "nimbus.nim");
+						nimln(78, "nimbus.nim");
 						{
 							if (!((resultsecond.Field0) && (resultsecond.Field0)->Sup.len == 0)) goto LA113;
-							nimln(78, "nimbus.nim");
-							result = copyString(((NimStringDesc*) &TMP2876));
+							nimln(79, "nimbus.nim");
+							result = copyString(((NimStringDesc*) &TMP2910));
 						}
 						goto LA111;
 						LA113: ;
 						{
-							nimln(81, "nimbus.nim");
+							nimln(82, "nimbus.nim");
 							result = copyString(resultsecond.Field0);
 						}
 						LA111: ;
@@ -2151,61 +2938,61 @@ appendString(LOC108, LOC110);
 					goto LA104;
 					LA106: ;
 					{
-						nimln(84, "nimbus.nim");
+						nimln(85, "nimbus.nim");
 						result = copyString(resultinitial.Field0);
 					}
 					LA104: ;
-					nimln(86, "nimbus.nim");
+					nimln(87, "nimbus.nim");
 					LOC117 = 0;
 					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 					LOC117 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + nick->Sup.len + result->Sup.len + 15);
-appendString(LOC117, ((NimStringDesc*) &TMP2855));
+appendString(LOC117, ((NimStringDesc*) &TMP2889));
 appendString(LOC117, ircmsg->data[((NI) 2)]);
-appendString(LOC117, ((NimStringDesc*) &TMP2856));
+appendString(LOC117, ((NimStringDesc*) &TMP2890));
 appendString(LOC117, nick);
-appendString(LOC117, ((NimStringDesc*) &TMP2877));
+appendString(LOC117, ((NimStringDesc*) &TMP2911));
 appendString(LOC117, result);
 appendString(LOC117, ((NimStringDesc*) &TMP2782));
-					send_146407(sock_282133, LOC117);
+					send_146407(sock_282125, LOC117);
 				}
 				LA85: ;
-				nimln(88, "nimbus.nim");
+				nimln(89, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2878))) goto LA120;
-					nimln(89, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2912))) goto LA120;
+					nimln(90, "nimbus.nim");
 					{
 						NimStringDesc* LOC126;
 						if (!((ircmsg ? (ircmsg->Sup.len-1) : -1) < ((NI) 4))) goto LA124;
-						nimln(90, "nimbus.nim");
+						nimln(91, "nimbus.nim");
 						LOC126 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC126 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 41);
-appendString(LOC126, ((NimStringDesc*) &TMP2855));
+appendString(LOC126, ((NimStringDesc*) &TMP2889));
 appendString(LOC126, ircmsg->data[((NI) 2)]);
-appendString(LOC126, ((NimStringDesc*) &TMP2879));
-						send_146407(sock_282133, LOC126);
+appendString(LOC126, ((NimStringDesc*) &TMP2913));
+						send_146407(sock_282125, LOC126);
 					}
 					goto LA122;
 					LA124: ;
 					{
 						NimStringDesc* formula;
 						TY13606* formula2;
-						TSafePoint TMP2881;
-						nimln(92, "nimbus.nim");
+						TSafePoint TMP2915;
+						nimln(93, "nimbus.nim");
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						formula = copyString(ircmsg->data[((NI) 4)]);
-						nimln(93, "nimbus.nim");
-						formula2 = nsuSplitCharSet(formula, TMP2880);
 						nimln(94, "nimbus.nim");
-						pushSafePoint(&TMP2881);
-						TMP2881.status = setjmp(TMP2881.context);
-						if (TMP2881.status == 0) {
+						formula2 = nsuSplitCharSet(formula, TMP2914);
+						nimln(95, "nimbus.nim");
+						pushSafePoint(&TMP2915);
+						TMP2915.status = setjmp(TMP2915.context);
+						if (TMP2915.status == 0) {
 							NI volatile diceresult;
 							diceresult = 0;
-							nimln(96, "nimbus.nim");
-							diceresult = ((NI) 0);
 							nimln(97, "nimbus.nim");
+							diceresult = ((NI) 0);
+							nimln(98, "nimbus.nim");
 							{
 								NI LOC131;
 								NimStringDesc* LOC134;
@@ -2213,14 +3000,14 @@ appendString(LOC126, ((NimStringDesc*) &TMP2879));
 								LOC131 = 0;
 								LOC131 = nsuParseInt(formula2->data[((NI) 0)]);
 								if (!(((NI) 200) < LOC131)) goto LA132;
-								nimln(98, "nimbus.nim");
+								nimln(99, "nimbus.nim");
 								LOC134 = 0;
 								if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 								LOC134 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 68);
-appendString(LOC134, ((NimStringDesc*) &TMP2855));
+appendString(LOC134, ((NimStringDesc*) &TMP2889));
 appendString(LOC134, ircmsg->data[((NI) 2)]);
-appendString(LOC134, ((NimStringDesc*) &TMP2882));
-								send_146407(sock_282133, LOC134);
+appendString(LOC134, ((NimStringDesc*) &TMP2916));
+								send_146407(sock_282125, LOC134);
 							}
 							goto LA129;
 							LA132: ;
@@ -2228,55 +3015,55 @@ appendString(LOC134, ((NimStringDesc*) &TMP2882));
 								NimStringDesc* LOC141;
 								NimStringDesc* LOC142;
 								{
-									NI HEX3Atmp_282893;
-									NI res_282896;
-									i_282667 = 0;
-									HEX3Atmp_282893 = 0;
-									nimln(100, "nimbus.nim");
+									NI HEX3Atmp_283290;
+									NI res_283293;
+									i_283037 = 0;
+									HEX3Atmp_283290 = 0;
+									nimln(101, "nimbus.nim");
 									if ((NU)(((NI) 0)) >= (NU)(formula2->Sup.len)) raiseIndexError();
-									HEX3Atmp_282893 = nsuParseInt(formula2->data[((NI) 0)]);
+									HEX3Atmp_283290 = nsuParseInt(formula2->data[((NI) 0)]);
 									nimln(1598, "system.nim");
-									res_282896 = ((NI) 1);
+									res_283293 = ((NI) 1);
 									{
 										nimln(1599, "system.nim");
 										while (1) {
 											NI LOC139;
-											NI TMP2885;
+											NI TMP2917;
 											NI LOC140;
-											NI TMP2886;
-											NI TMP2887;
-											if (!(res_282896 <= HEX3Atmp_282893)) goto LA138;
+											NI TMP2918;
+											NI TMP2919;
+											if (!(res_283293 <= HEX3Atmp_283290)) goto LA138;
 											nimln(1600, "system.nim");
-											i_282667 = res_282896;
-											nimln(101, "nimbus.nim");
+											i_283037 = res_283293;
+											nimln(102, "nimbus.nim");
 											if ((NU)(((NI) 1)) >= (NU)(formula2->Sup.len)) raiseIndexError();
 											LOC139 = 0;
 											LOC139 = nsuParseInt(formula2->data[((NI) 1)]);
-											TMP2885 = addInt(LOC139, ((NI) 1));
+											TMP2917 = addInt(LOC139, ((NI) 1));
 											LOC140 = 0;
-											LOC140 = randomint_279271(((NI) 1), (NI)(TMP2885));
-											TMP2886 = addInt(diceresult, LOC140);
-											diceresult = (NI)(TMP2886);
+											LOC140 = randomint_279271(((NI) 1), (NI)(TMP2917));
+											TMP2918 = addInt(diceresult, LOC140);
+											diceresult = (NI)(TMP2918);
 											nimln(1614, "system.nim");
-											TMP2887 = addInt(res_282896, ((NI) 1));
-											res_282896 = (NI)(TMP2887);
+											TMP2919 = addInt(res_283293, ((NI) 1));
+											res_283293 = (NI)(TMP2919);
 										} LA138: ;
 									}
 								}
-								nimln(102, "nimbus.nim");
+								nimln(103, "nimbus.nim");
 								LOC141 = 0;
 								if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 								LOC142 = 0;
 								LOC142 = nimIntToStr(diceresult);
 								LOC141 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + nick->Sup.len + LOC142->Sup.len + 25);
-appendString(LOC141, ((NimStringDesc*) &TMP2855));
-appendString(LOC141, ircmsg->data[((NI) 2)]);
-appendString(LOC141, ((NimStringDesc*) &TMP2856));
-appendString(LOC141, nick);
-appendString(LOC141, ((NimStringDesc*) &TMP2888));
-appendString(LOC141, LOC142);
 appendString(LOC141, ((NimStringDesc*) &TMP2889));
-								send_146407(sock_282133, LOC141);
+appendString(LOC141, ircmsg->data[((NI) 2)]);
+appendString(LOC141, ((NimStringDesc*) &TMP2890));
+appendString(LOC141, nick);
+appendString(LOC141, ((NimStringDesc*) &TMP2920));
+appendString(LOC141, LOC142);
+appendString(LOC141, ((NimStringDesc*) &TMP2921));
+								send_146407(sock_282125, LOC141);
 							}
 							LA129: ;
 							popSafePoint();
@@ -2286,28 +3073,28 @@ appendString(LOC141, ((NimStringDesc*) &TMP2889));
 							setFrame((TFrame*)&FR);
 							{
 								NimStringDesc* LOC145;
-								TMP2881.status = 0;
-								nimln(104, "nimbus.nim");
+								TMP2915.status = 0;
+								nimln(105, "nimbus.nim");
 								LOC145 = 0;
 								if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 								LOC145 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 62);
-appendString(LOC145, ((NimStringDesc*) &TMP2855));
+appendString(LOC145, ((NimStringDesc*) &TMP2889));
 appendString(LOC145, ircmsg->data[((NI) 2)]);
-appendString(LOC145, ((NimStringDesc*) &TMP2890));
-								send_146407(sock_282133, LOC145);
+appendString(LOC145, ((NimStringDesc*) &TMP2922));
+								send_146407(sock_282125, LOC145);
 								popCurrentException();
 							}
 						}
-						if (TMP2881.status != 0) reraiseException();
+						if (TMP2915.status != 0) reraiseException();
 					}
 					LA122: ;
 				}
 				LA120: ;
-				nimln(107, "nimbus.nim");
+				nimln(108, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2891))) goto LA148;
-					nimln(108, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2923))) goto LA148;
+					nimln(109, "nimbus.nim");
 					{
 						NIM_BOOL LOC152;
 						NIM_BOOL LOC153;
@@ -2320,7 +3107,7 @@ appendString(LOC145, ((NimStringDesc*) &TMP2890));
 						LOC153 = 0;
 						LOC153 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
 						if (!(LOC153)) goto LA154;
-						LOC153 = isloggedin_282152(nick);
+						LOC153 = isloggedin_282144(nick);
 						LA154: ;
 						LOC152 = LOC153;
 						if (!(LOC152)) goto LA155;
@@ -2332,46 +3119,46 @@ appendString(LOC145, ((NimStringDesc*) &TMP2890));
 						LOC152 = !(eqStrings(LOC156, LOC157));
 						LA155: ;
 						if (!LOC152) goto LA158;
-						nimln(109, "nimbus.nim");
+						nimln(110, "nimbus.nim");
 						LOC160 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC161 = 0;
-						LOC161 = upvote_282360(ircmsg->data[((NI) 4)]);
+						LOC161 = upvote_282363(ircmsg->data[((NI) 4)]);
 						LOC162 = 0;
 						LOC162 = nimIntToStr(LOC161);
 						LOC160 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + ircmsg->data[((NI) 4)]->Sup.len + LOC162->Sup.len + 55);
-appendString(LOC160, ((NimStringDesc*) &TMP2855));
+appendString(LOC160, ((NimStringDesc*) &TMP2889));
 appendString(LOC160, ircmsg->data[((NI) 2)]);
-appendString(LOC160, ((NimStringDesc*) &TMP2892));
+appendString(LOC160, ((NimStringDesc*) &TMP2924));
 appendString(LOC160, ircmsg->data[((NI) 4)]);
-appendString(LOC160, ((NimStringDesc*) &TMP2893));
+appendString(LOC160, ((NimStringDesc*) &TMP2925));
 appendString(LOC160, LOC162);
-appendString(LOC160, ((NimStringDesc*) &TMP2894));
-						send_146407(sock_282133, LOC160);
+appendString(LOC160, ((NimStringDesc*) &TMP2926));
+						send_146407(sock_282125, LOC160);
 					}
 					goto LA150;
 					LA158: ;
 					{
 						NimStringDesc* LOC164;
-						nimln(111, "nimbus.nim");
+						nimln(112, "nimbus.nim");
 						LOC164 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC164 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 118);
-appendString(LOC164, ((NimStringDesc*) &TMP2855));
+appendString(LOC164, ((NimStringDesc*) &TMP2889));
 appendString(LOC164, ircmsg->data[((NI) 2)]);
-appendString(LOC164, ((NimStringDesc*) &TMP2895));
-						send_146407(sock_282133, LOC164);
+appendString(LOC164, ((NimStringDesc*) &TMP2927));
+						send_146407(sock_282125, LOC164);
 					}
 					LA150: ;
 				}
 				LA148: ;
-				nimln(114, "nimbus.nim");
+				nimln(115, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2896))) goto LA167;
-					nimln(115, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2928))) goto LA167;
+					nimln(116, "nimbus.nim");
 					{
 						NIM_BOOL LOC171;
 						NIM_BOOL LOC172;
@@ -2384,7 +3171,7 @@ appendString(LOC164, ((NimStringDesc*) &TMP2895));
 						LOC172 = 0;
 						LOC172 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
 						if (!(LOC172)) goto LA173;
-						LOC172 = isloggedin_282152(nick);
+						LOC172 = isloggedin_282144(nick);
 						LA173: ;
 						LOC171 = LOC172;
 						if (!(LOC171)) goto LA174;
@@ -2396,46 +3183,46 @@ appendString(LOC164, ((NimStringDesc*) &TMP2895));
 						LOC171 = !(eqStrings(LOC175, LOC176));
 						LA174: ;
 						if (!LOC171) goto LA177;
-						nimln(116, "nimbus.nim");
+						nimln(117, "nimbus.nim");
 						LOC179 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC180 = 0;
-						LOC180 = downvote_282372(ircmsg->data[((NI) 4)]);
+						LOC180 = downvote_282375(ircmsg->data[((NI) 4)]);
 						LOC181 = 0;
 						LOC181 = nimIntToStr(LOC180);
 						LOC179 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + ircmsg->data[((NI) 4)]->Sup.len + LOC181->Sup.len + 57);
-appendString(LOC179, ((NimStringDesc*) &TMP2855));
+appendString(LOC179, ((NimStringDesc*) &TMP2889));
 appendString(LOC179, ircmsg->data[((NI) 2)]);
-appendString(LOC179, ((NimStringDesc*) &TMP2897));
+appendString(LOC179, ((NimStringDesc*) &TMP2929));
 appendString(LOC179, ircmsg->data[((NI) 4)]);
-appendString(LOC179, ((NimStringDesc*) &TMP2893));
+appendString(LOC179, ((NimStringDesc*) &TMP2925));
 appendString(LOC179, LOC181);
-appendString(LOC179, ((NimStringDesc*) &TMP2894));
-						send_146407(sock_282133, LOC179);
+appendString(LOC179, ((NimStringDesc*) &TMP2926));
+						send_146407(sock_282125, LOC179);
 					}
 					goto LA169;
 					LA177: ;
 					{
 						NimStringDesc* LOC183;
-						nimln(118, "nimbus.nim");
+						nimln(119, "nimbus.nim");
 						LOC183 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC183 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 122);
-appendString(LOC183, ((NimStringDesc*) &TMP2855));
+appendString(LOC183, ((NimStringDesc*) &TMP2889));
 appendString(LOC183, ircmsg->data[((NI) 2)]);
-appendString(LOC183, ((NimStringDesc*) &TMP2898));
-						send_146407(sock_282133, LOC183);
+appendString(LOC183, ((NimStringDesc*) &TMP2930));
+						send_146407(sock_282125, LOC183);
 					}
 					LA169: ;
 				}
 				LA167: ;
-				nimln(121, "nimbus.nim");
+				nimln(122, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2899))) goto LA186;
-					nimln(122, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2931))) goto LA186;
+					nimln(123, "nimbus.nim");
 					{
 						NIM_BOOL LOC190;
 						NimStringDesc* LOC194;
@@ -2444,539 +3231,787 @@ appendString(LOC183, ((NimStringDesc*) &TMP2898));
 						LOC190 = 0;
 						LOC190 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
 						if (!(LOC190)) goto LA191;
-						LOC190 = isloggedin_282152(nick);
+						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC190 = checkuser_282181(ircmsg->data[((NI) 4)]);
 						LA191: ;
 						if (!LOC190) goto LA192;
-						nimln(123, "nimbus.nim");
+						nimln(124, "nimbus.nim");
 						LOC194 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						LOC195 = 0;
-						LOC195 = karma_282384(ircmsg->data[((NI) 4)]);
+						LOC195 = karma_282387(ircmsg->data[((NI) 4)]);
 						LOC196 = 0;
 						LOC196 = nimIntToStr(LOC195);
 						LOC194 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + ircmsg->data[((NI) 4)]->Sup.len + LOC196->Sup.len + 36);
-appendString(LOC194, ((NimStringDesc*) &TMP2855));
+appendString(LOC194, ((NimStringDesc*) &TMP2889));
 appendString(LOC194, ircmsg->data[((NI) 2)]);
-appendString(LOC194, ((NimStringDesc*) &TMP2856));
+appendString(LOC194, ((NimStringDesc*) &TMP2890));
 appendString(LOC194, ircmsg->data[((NI) 4)]);
-appendString(LOC194, ((NimStringDesc*) &TMP2900));
+appendString(LOC194, ((NimStringDesc*) &TMP2932));
 appendString(LOC194, LOC196);
-appendString(LOC194, ((NimStringDesc*) &TMP2894));
-						send_146407(sock_282133, LOC194);
+appendString(LOC194, ((NimStringDesc*) &TMP2926));
+						send_146407(sock_282125, LOC194);
 					}
+					goto LA188;
 					LA192: ;
+					{
+						NIM_BOOL LOC198;
+						NimStringDesc* LOC201;
+						NI LOC202;
+						NimStringDesc* LOC203;
+						nimln(125, "nimbus.nim");
+						LOC198 = 0;
+						LOC198 = checkuser_282181(nick);
+						if (!LOC198) goto LA199;
+						nimln(126, "nimbus.nim");
+						LOC201 = 0;
+						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC202 = 0;
+						LOC202 = karma_282387(nick);
+						LOC203 = 0;
+						LOC203 = nimIntToStr(LOC202);
+						LOC201 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + nick->Sup.len + LOC203->Sup.len + 36);
+appendString(LOC201, ((NimStringDesc*) &TMP2889));
+appendString(LOC201, ircmsg->data[((NI) 2)]);
+appendString(LOC201, ((NimStringDesc*) &TMP2890));
+appendString(LOC201, nick);
+appendString(LOC201, ((NimStringDesc*) &TMP2932));
+appendString(LOC201, LOC203);
+appendString(LOC201, ((NimStringDesc*) &TMP2926));
+						send_146407(sock_282125, LOC201);
+					}
+					goto LA188;
+					LA199: ;
+					LA188: ;
 				}
 				LA186: ;
-				nimln(126, "nimbus.nim");
+				nimln(129, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2901))) goto LA199;
-					nimln(127, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2933))) goto LA206;
+					nimln(130, "nimbus.nim");
 					{
-						NimStringDesc* LOC205;
-						if (!((ircmsg ? (ircmsg->Sup.len-1) : -1) < ((NI) 4))) goto LA203;
-						nimln(128, "nimbus.nim");
-						LOC205 = 0;
-						LOC205 = rawNewString(nick->Sup.len + 39);
-appendString(LOC205, ((NimStringDesc*) &TMP2855));
-appendString(LOC205, nick);
-appendString(LOC205, ((NimStringDesc*) &TMP2902));
-						send_146407(sock_282133, LOC205);
+						NIM_BOOL LOC210;
+						NIM_BOOL LOC211;
+						NimStringDesc* LOC216;
+						NimStringDesc* LOC217;
+						LOC210 = 0;
+						LOC211 = 0;
+						LOC211 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						if (!(LOC211)) goto LA212;
+						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC211 = isloggedin_282144(ircmsg->data[((NI) 4)]);
+						LA212: ;
+						LOC210 = LOC211;
+						if (!(LOC210)) goto LA213;
+						LOC210 = isloggedin_282144(nick);
+						LA213: ;
+						if (!LOC210) goto LA214;
+						nimln(131, "nimbus.nim");
+						LOC216 = 0;
+						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC217 = 0;
+						LOC217 = battleusers_282555(nick, ircmsg->data[((NI) 4)]);
+						LOC216 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC217->Sup.len + 13);
+appendString(LOC216, ((NimStringDesc*) &TMP2889));
+appendString(LOC216, ircmsg->data[((NI) 2)]);
+appendString(LOC216, ((NimStringDesc*) &TMP2890));
+appendString(LOC216, LOC217);
+appendString(LOC216, ((NimStringDesc*) &TMP2782));
+						send_146407(sock_282125, LOC216);
 					}
-					goto LA201;
-					LA203: ;
+					LA214: ;
+				}
+				LA206: ;
+				nimln(134, "nimbus.nim");
+				{
+					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2934))) goto LA220;
+					nimln(135, "nimbus.nim");
 					{
-						nimln(130, "nimbus.nim");
-						{
-							NIM_BOOL LOC209;
-							NimStringDesc* LOC212;
-							NimStringDesc* LOC213;
-							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-							LOC209 = 0;
-							LOC209 = loginuser_282241(nick, ircmsg->data[((NI) 4)]);
-							if (!LOC209) goto LA210;
-							nimln(131, "nimbus.nim");
-							loggedin_282108 = (TY13606*) incrSeq(&(loggedin_282108)->Sup, sizeof(NimStringDesc*));
-							LOC212 = 0;
-							LOC212 = loggedin_282108->data[loggedin_282108->Sup.len-1]; loggedin_282108->data[loggedin_282108->Sup.len-1] = copyStringRC1(nick);
-							if (LOC212) nimGCunrefNoCycle(LOC212);
-							nimln(132, "nimbus.nim");
-							LOC213 = 0;
-							LOC213 = rawNewString(nick->Sup.len + 47);
-appendString(LOC213, ((NimStringDesc*) &TMP2855));
-appendString(LOC213, nick);
-appendString(LOC213, ((NimStringDesc*) &TMP2903));
-							send_146407(sock_282133, LOC213);
-						}
-						goto LA207;
-						LA210: ;
-						{
-							NimStringDesc* LOC215;
-							nimln(134, "nimbus.nim");
-							LOC215 = 0;
-							LOC215 = rawNewString(nick->Sup.len + 32);
-appendString(LOC215, ((NimStringDesc*) &TMP2855));
-appendString(LOC215, nick);
-appendString(LOC215, ((NimStringDesc*) &TMP2904));
-							send_146407(sock_282133, LOC215);
-						}
-						LA207: ;
+						NIM_BOOL LOC224;
+						NimStringDesc* LOC228;
+						NI LOC229;
+						NimStringDesc* LOC230;
+						LOC224 = 0;
+						LOC224 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						if (!(LOC224)) goto LA225;
+						LOC224 = isloggedin_282144(nick);
+						LA225: ;
+						if (!LOC224) goto LA226;
+						nimln(136, "nimbus.nim");
+						LOC228 = 0;
+						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC229 = 0;
+						LOC229 = nsuParseInt(ircmsg->data[((NI) 4)]);
+						LOC230 = 0;
+						LOC230 = getitemname_282532(LOC229);
+						LOC228 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC230->Sup.len + 34);
+appendString(LOC228, ((NimStringDesc*) &TMP2889));
+appendString(LOC228, ircmsg->data[((NI) 2)]);
+appendString(LOC228, ((NimStringDesc*) &TMP2935));
+appendString(LOC228, LOC230);
+appendString(LOC228, ((NimStringDesc*) &TMP2936));
+						send_146407(sock_282125, LOC228);
 					}
-					LA201: ;
+					LA226: ;
 				}
-				LA199: ;
-				nimln(137, "nimbus.nim");
-				{
-					NIM_BOOL LOC220;
-					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2905))) goto LA218;
-					nimln(138, "nimbus.nim");
-					LOC220 = 0;
-					LOC220 = logoutuser_282252(nick);
-				}
-				LA218: ;
-				nimln(141, "nimbus.nim");
+				LA220: ;
+				nimln(139, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2906))) goto LA223;
-					nimln(142, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2937))) goto LA233;
+					nimln(140, "nimbus.nim");
 					{
-						if (!((ircmsg ? (ircmsg->Sup.len-1) : -1) == ((NI) 4))) goto LA227;
+						NimStringDesc* LOC239;
+						if (!((ircmsg ? (ircmsg->Sup.len-1) : -1) < ((NI) 4))) goto LA237;
+						nimln(141, "nimbus.nim");
+						LOC239 = 0;
+						LOC239 = rawNewString(nick->Sup.len + 39);
+appendString(LOC239, ((NimStringDesc*) &TMP2889));
+appendString(LOC239, nick);
+appendString(LOC239, ((NimStringDesc*) &TMP2938));
+						send_146407(sock_282125, LOC239);
+					}
+					goto LA235;
+					LA237: ;
+					{
 						nimln(143, "nimbus.nim");
 						{
-							NI LOC231;
-							NimStringDesc* LOC234;
-							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-							LOC231 = 0;
-							LOC231 = adduser_282220(nick, ircmsg->data[((NI) 4)]);
-							if (!(((NI) 0) < LOC231)) goto LA232;
-							nimln(144, "nimbus.nim");
-							LOC234 = 0;
-							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-							LOC234 = rawNewString(nick->Sup.len + ircmsg->data[((NI) 4)]->Sup.len + 28);
-appendString(LOC234, ((NimStringDesc*) &TMP2855));
-appendString(LOC234, nick);
-appendString(LOC234, ((NimStringDesc*) &TMP2907));
-appendString(LOC234, ircmsg->data[((NI) 4)]);
-appendString(LOC234, ((NimStringDesc*) &TMP2908));
-							send_146407(sock_282133, LOC234);
-						}
-						goto LA229;
-						LA232: ;
-						{
-							NimStringDesc* LOC236;
-							nimln(146, "nimbus.nim");
-							LOC236 = 0;
-							LOC236 = rawNewString(nick->Sup.len + 33);
-appendString(LOC236, ((NimStringDesc*) &TMP2855));
-appendString(LOC236, nick);
-appendString(LOC236, ((NimStringDesc*) &TMP2909));
-							send_146407(sock_282133, LOC236);
-						}
-						LA229: ;
-					}
-					goto LA225;
-					LA227: ;
-					{
-						NI pass;
-						nimln(148, "nimbus.nim");
-						pass = randomint_279271(((NI) 10000), ((NI) 99999));
-						nimln(149, "nimbus.nim");
-						{
-							NimStringDesc* LOC240;
-							NI LOC241;
-							NimStringDesc* LOC244;
-							NimStringDesc* LOC245;
-							LOC240 = 0;
-							LOC240 = nimIntToStr(pass);
-							LOC241 = 0;
-							LOC241 = adduser_282220(nick, LOC240);
-							if (!(((NI) 0) < LOC241)) goto LA242;
-							nimln(150, "nimbus.nim");
-							LOC244 = 0;
-							LOC245 = 0;
-							LOC245 = nimIntToStr(pass);
-							LOC244 = rawNewString(nick->Sup.len + LOC245->Sup.len + 47);
-appendString(LOC244, ((NimStringDesc*) &TMP2855));
-appendString(LOC244, nick);
-appendString(LOC244, ((NimStringDesc*) &TMP2910));
-appendString(LOC244, LOC245);
-appendString(LOC244, ((NimStringDesc*) &TMP2908));
-							send_146407(sock_282133, LOC244);
-						}
-						goto LA238;
-						LA242: ;
-						{
+							NIM_BOOL LOC243;
+							NimStringDesc* LOC246;
 							NimStringDesc* LOC247;
-							nimln(152, "nimbus.nim");
+							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+							LOC243 = 0;
+							LOC243 = loginuser_282244(nick, ircmsg->data[((NI) 4)]);
+							if (!LOC243) goto LA244;
+							nimln(144, "nimbus.nim");
+							loggedin_282102 = (TY13606*) incrSeq(&(loggedin_282102)->Sup, sizeof(NimStringDesc*));
+							LOC246 = 0;
+							LOC246 = loggedin_282102->data[loggedin_282102->Sup.len-1]; loggedin_282102->data[loggedin_282102->Sup.len-1] = copyStringRC1(nick);
+							if (LOC246) nimGCunrefNoCycle(LOC246);
+							nimln(145, "nimbus.nim");
 							LOC247 = 0;
-							LOC247 = rawNewString(nick->Sup.len + 33);
-appendString(LOC247, ((NimStringDesc*) &TMP2855));
+							LOC247 = rawNewString(nick->Sup.len + 47);
+appendString(LOC247, ((NimStringDesc*) &TMP2889));
 appendString(LOC247, nick);
-appendString(LOC247, ((NimStringDesc*) &TMP2909));
-							send_146407(sock_282133, LOC247);
+appendString(LOC247, ((NimStringDesc*) &TMP2939));
+							send_146407(sock_282125, LOC247);
 						}
-						LA238: ;
+						goto LA241;
+						LA244: ;
+						{
+							NimStringDesc* LOC249;
+							nimln(147, "nimbus.nim");
+							LOC249 = 0;
+							LOC249 = rawNewString(nick->Sup.len + 32);
+appendString(LOC249, ((NimStringDesc*) &TMP2889));
+appendString(LOC249, nick);
+appendString(LOC249, ((NimStringDesc*) &TMP2940));
+							send_146407(sock_282125, LOC249);
+						}
+						LA241: ;
 					}
-					LA225: ;
+					LA235: ;
 				}
-				LA223: ;
+				LA233: ;
+				nimln(150, "nimbus.nim");
+				{
+					NimStringDesc* LOC254;
+					NIM_BOOL LOC255;
+					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2941))) goto LA252;
+					nimln(151, "nimbus.nim");
+					LOC254 = 0;
+					LOC254 = rawNewString(nick->Sup.len + 48);
+appendString(LOC254, ((NimStringDesc*) &TMP2889));
+appendString(LOC254, nick);
+appendString(LOC254, ((NimStringDesc*) &TMP2942));
+					send_146407(sock_282125, LOC254);
+					nimln(152, "nimbus.nim");
+					LOC255 = 0;
+					LOC255 = logoutuser_282255(nick);
+				}
+				LA252: ;
 				nimln(155, "nimbus.nim");
 				{
-					NimStringDesc* LOC252;
-					NimStringDesc* LOC253;
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2911))) goto LA250;
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2943))) goto LA258;
 					nimln(156, "nimbus.nim");
-					LOC252 = 0;
-					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC252 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 85);
-appendString(LOC252, ((NimStringDesc*) &TMP2855));
-appendString(LOC252, ircmsg->data[((NI) 2)]);
-appendString(LOC252, ((NimStringDesc*) &TMP2912));
-					send_146407(sock_282133, LOC252);
-					nimln(157, "nimbus.nim");
-					LOC253 = 0;
-					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC253 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 59);
-appendString(LOC253, ((NimStringDesc*) &TMP2855));
-appendString(LOC253, ircmsg->data[((NI) 2)]);
-appendString(LOC253, ((NimStringDesc*) &TMP2913));
-					send_146407(sock_282133, LOC253);
+					{
+						if (!((ircmsg ? (ircmsg->Sup.len-1) : -1) == ((NI) 4))) goto LA262;
+						nimln(157, "nimbus.nim");
+						{
+							NI LOC266;
+							NimStringDesc* LOC269;
+							TY167666 LOC270;
+							NI LOC271;
+							NimStringDesc* LOC272;
+							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+							LOC266 = 0;
+							LOC266 = adduser_282223(nick, ircmsg->data[((NI) 4)]);
+							if (!(((NI) 0) < LOC266)) goto LA267;
+							nimln(158, "nimbus.nim");
+							LOC269 = 0;
+							LOC269 = sql_167021(((NimStringDesc*) &TMP2944));
+							memset((void*)LOC270, 0, sizeof(LOC270));
+							nimln(159, "nimbus.nim");
+							LOC271 = 0;
+							LOC271 = userid_282396(nick);
+							LOC270[0] = nimIntToStr(LOC271);
+							exec_167155(db_282127, LOC269, LOC270, 1);
+							nimln(161, "nimbus.nim");
+							LOC272 = 0;
+							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+							LOC272 = rawNewString(nick->Sup.len + ircmsg->data[((NI) 4)]->Sup.len + 28);
+appendString(LOC272, ((NimStringDesc*) &TMP2889));
+appendString(LOC272, nick);
+appendString(LOC272, ((NimStringDesc*) &TMP2945));
+appendString(LOC272, ircmsg->data[((NI) 4)]);
+appendString(LOC272, ((NimStringDesc*) &TMP2946));
+							send_146407(sock_282125, LOC272);
+						}
+						goto LA264;
+						LA267: ;
+						{
+							NimStringDesc* LOC274;
+							nimln(163, "nimbus.nim");
+							LOC274 = 0;
+							LOC274 = rawNewString(nick->Sup.len + 33);
+appendString(LOC274, ((NimStringDesc*) &TMP2889));
+appendString(LOC274, nick);
+appendString(LOC274, ((NimStringDesc*) &TMP2947));
+							send_146407(sock_282125, LOC274);
+						}
+						LA264: ;
+					}
+					goto LA260;
+					LA262: ;
+					{
+						NI pass;
+						nimln(165, "nimbus.nim");
+						pass = randomint_279271(((NI) 10000), ((NI) 99999));
+						nimln(166, "nimbus.nim");
+						{
+							NimStringDesc* LOC278;
+							NI LOC279;
+							NimStringDesc* LOC282;
+							NimStringDesc* LOC283;
+							LOC278 = 0;
+							LOC278 = nimIntToStr(pass);
+							LOC279 = 0;
+							LOC279 = adduser_282223(nick, LOC278);
+							if (!(((NI) 0) < LOC279)) goto LA280;
+							nimln(167, "nimbus.nim");
+							LOC282 = 0;
+							LOC283 = 0;
+							LOC283 = nimIntToStr(pass);
+							LOC282 = rawNewString(nick->Sup.len + LOC283->Sup.len + 47);
+appendString(LOC282, ((NimStringDesc*) &TMP2889));
+appendString(LOC282, nick);
+appendString(LOC282, ((NimStringDesc*) &TMP2948));
+appendString(LOC282, LOC283);
+appendString(LOC282, ((NimStringDesc*) &TMP2946));
+							send_146407(sock_282125, LOC282);
+						}
+						goto LA276;
+						LA280: ;
+						{
+							NimStringDesc* LOC285;
+							nimln(169, "nimbus.nim");
+							LOC285 = 0;
+							LOC285 = rawNewString(nick->Sup.len + 33);
+appendString(LOC285, ((NimStringDesc*) &TMP2889));
+appendString(LOC285, nick);
+appendString(LOC285, ((NimStringDesc*) &TMP2947));
+							send_146407(sock_282125, LOC285);
+						}
+						LA276: ;
+					}
+					LA260: ;
 				}
-				LA250: ;
-				nimln(160, "nimbus.nim");
+				LA258: ;
+				nimln(172, "nimbus.nim");
+				{
+					NimStringDesc* LOC290;
+					NimStringDesc* LOC291;
+					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2949))) goto LA288;
+					nimln(173, "nimbus.nim");
+					LOC290 = 0;
+					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					LOC290 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 85);
+appendString(LOC290, ((NimStringDesc*) &TMP2889));
+appendString(LOC290, ircmsg->data[((NI) 2)]);
+appendString(LOC290, ((NimStringDesc*) &TMP2950));
+					send_146407(sock_282125, LOC290);
+					nimln(174, "nimbus.nim");
+					LOC291 = 0;
+					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					LOC291 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 59);
+appendString(LOC291, ((NimStringDesc*) &TMP2889));
+appendString(LOC291, ircmsg->data[((NI) 2)]);
+appendString(LOC291, ((NimStringDesc*) &TMP2951));
+					send_146407(sock_282125, LOC291);
+				}
+				LA288: ;
+				nimln(177, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2914))) goto LA256;
-					nimln(161, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2952))) goto LA294;
+					nimln(178, "nimbus.nim");
 					{
-						TSafePoint TMP2915;
-						if (!(((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1))) goto LA260;
-						nimln(162, "nimbus.nim");
-						pushSafePoint(&TMP2915);
-						TMP2915.status = setjmp(TMP2915.context);
-						if (TMP2915.status == 0) {
-							NimStringDesc* LOC263;
-							NI LOC264;
-							NimStringDesc* LOC265;
-							nimln(163, "nimbus.nim");
-							LOC263 = 0;
+						TSafePoint TMP2953;
+						if (!(((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1))) goto LA298;
+						nimln(179, "nimbus.nim");
+						pushSafePoint(&TMP2953);
+						TMP2953.status = setjmp(TMP2953.context);
+						if (TMP2953.status == 0) {
+							NimStringDesc* LOC301;
+							NI LOC302;
+							NimStringDesc* LOC303;
+							nimln(180, "nimbus.nim");
+							LOC301 = 0;
 							if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 							if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-							LOC264 = 0;
-							LOC264 = nsuParseInt(ircmsg->data[((NI) 4)]);
-							LOC265 = 0;
-							LOC265 = getquote_282200(LOC264);
-							LOC263 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC265->Sup.len + 13);
-appendString(LOC263, ((NimStringDesc*) &TMP2855));
-appendString(LOC263, ircmsg->data[((NI) 2)]);
-appendString(LOC263, ((NimStringDesc*) &TMP2856));
-appendString(LOC263, LOC265);
-appendString(LOC263, ((NimStringDesc*) &TMP2782));
-							send_146407(sock_282133, LOC263);
+							LOC302 = 0;
+							LOC302 = nsuParseInt(ircmsg->data[((NI) 4)]);
+							LOC303 = 0;
+							LOC303 = getquote_282203(LOC302);
+							LOC301 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC303->Sup.len + 13);
+appendString(LOC301, ((NimStringDesc*) &TMP2889));
+appendString(LOC301, ircmsg->data[((NI) 2)]);
+appendString(LOC301, ((NimStringDesc*) &TMP2890));
+appendString(LOC301, LOC303);
+appendString(LOC301, ((NimStringDesc*) &TMP2782));
+							send_146407(sock_282125, LOC301);
 							popSafePoint();
 						}
 						else {
 							popSafePoint();
 							setFrame((TFrame*)&FR);
 							{
-								NimStringDesc* LOC268;
-								TMP2915.status = 0;
-								nimln(165, "nimbus.nim");
-								LOC268 = 0;
+								NimStringDesc* LOC306;
+								TMP2953.status = 0;
+								nimln(182, "nimbus.nim");
+								LOC306 = 0;
 								if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-								LOC268 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 31);
-appendString(LOC268, ((NimStringDesc*) &TMP2855));
-appendString(LOC268, ircmsg->data[((NI) 2)]);
-appendString(LOC268, ((NimStringDesc*) &TMP2916));
-								send_146407(sock_282133, LOC268);
+								LOC306 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 31);
+appendString(LOC306, ((NimStringDesc*) &TMP2889));
+appendString(LOC306, ircmsg->data[((NI) 2)]);
+appendString(LOC306, ((NimStringDesc*) &TMP2954));
+								send_146407(sock_282125, LOC306);
 								popCurrentException();
 							}
 						}
-						if (TMP2915.status != 0) reraiseException();
+						if (TMP2953.status != 0) reraiseException();
 					}
-					goto LA258;
-					LA260: ;
+					goto LA296;
+					LA298: ;
 					{
-						NimStringDesc* LOC270;
-						NI LOC271;
-						NI TMP2917;
-						NI LOC272;
-						NimStringDesc* LOC273;
-						nimln(167, "nimbus.nim");
-						LOC270 = 0;
+						NimStringDesc* LOC308;
+						NI LOC309;
+						NI TMP2955;
+						NI LOC310;
+						NimStringDesc* LOC311;
+						nimln(184, "nimbus.nim");
+						LOC308 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						LOC271 = 0;
-						LOC271 = getquotecount_282231();
-						TMP2917 = addInt(LOC271, ((NI) 1));
-						LOC272 = 0;
-						LOC272 = randomint_279271(((NI) 1), (NI)(TMP2917));
-						LOC273 = 0;
-						LOC273 = getquote_282200(LOC272);
-						LOC270 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC273->Sup.len + 13);
-appendString(LOC270, ((NimStringDesc*) &TMP2855));
-appendString(LOC270, ircmsg->data[((NI) 2)]);
-appendString(LOC270, ((NimStringDesc*) &TMP2856));
-appendString(LOC270, LOC273);
-appendString(LOC270, ((NimStringDesc*) &TMP2782));
-						send_146407(sock_282133, LOC270);
+						LOC309 = 0;
+						LOC309 = getquotecount_282234();
+						TMP2955 = addInt(LOC309, ((NI) 1));
+						LOC310 = 0;
+						LOC310 = randomint_279271(((NI) 1), (NI)(TMP2955));
+						LOC311 = 0;
+						LOC311 = getquote_282203(LOC310);
+						LOC308 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC311->Sup.len + 13);
+appendString(LOC308, ((NimStringDesc*) &TMP2889));
+appendString(LOC308, ircmsg->data[((NI) 2)]);
+appendString(LOC308, ((NimStringDesc*) &TMP2890));
+appendString(LOC308, LOC311);
+appendString(LOC308, ((NimStringDesc*) &TMP2782));
+						send_146407(sock_282125, LOC308);
 					}
-					LA258: ;
+					LA296: ;
 				}
-				LA256: ;
-				nimln(170, "nimbus.nim");
+				LA294: ;
+				nimln(187, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2918))) goto LA276;
-					nimln(171, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2956))) goto LA314;
+					nimln(188, "nimbus.nim");
 					{
 						NI id;
-						Slice88061 LOC282;
-						TY13606* LOC283;
-						NimStringDesc* LOC284;
-						NimStringDesc* LOC285;
-						NimStringDesc* LOC286;
-						if (!(((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1))) goto LA280;
-						nimln(172, "nimbus.nim");
-						LOC282 = HEX2EHEX2E_110273(((NI) 4), (ircmsg ? (ircmsg->Sup.len-1) : -1));
-						LOC283 = 0;
-						LOC283 = HEX5BHEX5D_133598(ircmsg, LOC282);
-						LOC284 = 0;
-						LOC284 = nsuJoinSep(LOC283->data, LOC283->Sup.len, ((NimStringDesc*) &TMP2784));
-						id = addquote_282210(LOC284);
-						nimln(173, "nimbus.nim");
-						LOC285 = 0;
+						Slice88061 LOC320;
+						TY13606* LOC321;
+						NimStringDesc* LOC322;
+						NimStringDesc* LOC323;
+						NimStringDesc* LOC324;
+						if (!(((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1))) goto LA318;
+						nimln(189, "nimbus.nim");
+						LOC320 = HEX2EHEX2E_110273(((NI) 4), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						LOC321 = 0;
+						LOC321 = HEX5BHEX5D_133598(ircmsg, LOC320);
+						LOC322 = 0;
+						LOC322 = nsuJoinSep(LOC321->data, LOC321->Sup.len, ((NimStringDesc*) &TMP2784));
+						id = addquote_282213(LOC322);
+						nimln(190, "nimbus.nim");
+						LOC323 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						LOC286 = 0;
-						LOC286 = nimIntToStr(id);
-						LOC285 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC286->Sup.len + 27);
-appendString(LOC285, ((NimStringDesc*) &TMP2855));
-appendString(LOC285, ircmsg->data[((NI) 2)]);
-appendString(LOC285, ((NimStringDesc*) &TMP2919));
-appendString(LOC285, LOC286);
-appendString(LOC285, ((NimStringDesc*) &TMP2920));
-						send_146407(sock_282133, LOC285);
+						LOC324 = 0;
+						LOC324 = nimIntToStr(id);
+						LOC323 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC324->Sup.len + 27);
+appendString(LOC323, ((NimStringDesc*) &TMP2889));
+appendString(LOC323, ircmsg->data[((NI) 2)]);
+appendString(LOC323, ((NimStringDesc*) &TMP2957));
+appendString(LOC323, LOC324);
+appendString(LOC323, ((NimStringDesc*) &TMP2958));
+						send_146407(sock_282125, LOC323);
 					}
-					goto LA278;
-					LA280: ;
+					goto LA316;
+					LA318: ;
 					{
-						NimStringDesc* LOC288;
-						nimln(175, "nimbus.nim");
-						LOC288 = 0;
+						NimStringDesc* LOC326;
+						nimln(192, "nimbus.nim");
+						LOC326 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						LOC288 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 34);
-appendString(LOC288, ((NimStringDesc*) &TMP2855));
-appendString(LOC288, ircmsg->data[((NI) 2)]);
-appendString(LOC288, ((NimStringDesc*) &TMP2921));
-						send_146407(sock_282133, LOC288);
+						LOC326 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 34);
+appendString(LOC326, ((NimStringDesc*) &TMP2889));
+appendString(LOC326, ircmsg->data[((NI) 2)]);
+appendString(LOC326, ((NimStringDesc*) &TMP2959));
+						send_146407(sock_282125, LOC326);
 					}
-					LA278: ;
+					LA316: ;
 				}
-				LA276: ;
-				nimln(178, "nimbus.nim");
+				LA314: ;
+				nimln(195, "nimbus.nim");
 				{
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2922))) goto LA291;
-					nimln(179, "nimbus.nim");
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2960))) goto LA329;
+					nimln(196, "nimbus.nim");
 					{
-						NIM_BOOL LOC295;
-						NIM_BOOL LOC296;
-						NimStringDesc* LOC299;
-						NimStringDesc* LOC302;
-						Slice88061 LOC303;
-						TY13606* LOC304;
-						NimStringDesc* LOC305;
-						NimStringDesc* LOC306;
-						TY161637 LOC307;
-						NIM_BOOL LOC308;
-						NimStringDesc* LOC309;
-						LOC295 = 0;
-						LOC296 = 0;
-						LOC296 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
-						if (!(LOC296)) goto LA297;
-						LOC296 = isloggedin_282152(((NimStringDesc*) &TMP2858));
-						LA297: ;
-						LOC295 = LOC296;
-						if (!(LOC295)) goto LA298;
-						LOC299 = 0;
-						LOC299 = nsuToLowerStr(nick);
-						LOC295 = eqStrings(LOC299, ((NimStringDesc*) &TMP2859));
-						LA298: ;
-						if (!LOC295) goto LA300;
-						nimln(180, "nimbus.nim");
-						LOC302 = 0;
+						NIM_BOOL LOC333;
+						NIM_BOOL LOC334;
+						NimStringDesc* LOC337;
+						NimStringDesc* LOC340;
+						Slice88061 LOC341;
+						TY13606* LOC342;
+						NimStringDesc* LOC343;
+						NimStringDesc* LOC344;
+						TY161637 LOC345;
+						NIM_BOOL LOC346;
+						NimStringDesc* LOC347;
+						LOC333 = 0;
+						LOC334 = 0;
+						LOC334 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						if (!(LOC334)) goto LA335;
+						LOC334 = isloggedin_282144(((NimStringDesc*) &TMP2892));
+						LA335: ;
+						LOC333 = LOC334;
+						if (!(LOC333)) goto LA336;
+						LOC337 = 0;
+						LOC337 = nsuToLowerStr(nick);
+						LOC333 = eqStrings(LOC337, ((NimStringDesc*) &TMP2893));
+						LA336: ;
+						if (!LOC333) goto LA338;
+						nimln(197, "nimbus.nim");
+						LOC340 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						LOC303 = HEX2EHEX2E_110273(((NI) 4), (ircmsg ? (ircmsg->Sup.len-1) : -1));
-						LOC304 = 0;
-						LOC304 = HEX5BHEX5D_133598(ircmsg, LOC303);
-						LOC305 = 0;
-						LOC305 = nsuJoinSep(LOC304->data, LOC304->Sup.len, ((NimStringDesc*) &TMP2784));
-						LOC306 = 0;
-						LOC306 = sql_167021(LOC305);
-						memset((void*)LOC307, 0, sizeof(LOC307));
-						LOC308 = 0;
-						LOC308 = tryexec_167138(db_282135, LOC306, LOC307, 0);
-						LOC309 = 0;
-						LOC309 = nimBoolToStr(LOC308);
-						LOC302 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC309->Sup.len + 21);
-appendString(LOC302, ((NimStringDesc*) &TMP2855));
-appendString(LOC302, ircmsg->data[((NI) 2)]);
-appendString(LOC302, ((NimStringDesc*) &TMP2923));
-appendString(LOC302, LOC309);
-appendString(LOC302, ((NimStringDesc*) &TMP2782));
-						send_146407(sock_282133, LOC302);
+						LOC341 = HEX2EHEX2E_110273(((NI) 4), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						LOC342 = 0;
+						LOC342 = HEX5BHEX5D_133598(ircmsg, LOC341);
+						LOC343 = 0;
+						LOC343 = nsuJoinSep(LOC342->data, LOC342->Sup.len, ((NimStringDesc*) &TMP2784));
+						LOC344 = 0;
+						LOC344 = sql_167021(LOC343);
+						memset((void*)LOC345, 0, sizeof(LOC345));
+						LOC346 = 0;
+						LOC346 = tryexec_167138(db_282127, LOC344, LOC345, 0);
+						LOC347 = 0;
+						LOC347 = nimBoolToStr(LOC346);
+						LOC340 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC347->Sup.len + 21);
+appendString(LOC340, ((NimStringDesc*) &TMP2889));
+appendString(LOC340, ircmsg->data[((NI) 2)]);
+appendString(LOC340, ((NimStringDesc*) &TMP2961));
+appendString(LOC340, LOC347);
+appendString(LOC340, ((NimStringDesc*) &TMP2782));
+						send_146407(sock_282125, LOC340);
 					}
-					LA300: ;
+					LA338: ;
 				}
-				LA291: ;
-				nimln(191, "nimbus.nim");
+				LA329: ;
+				nimln(200, "nimbus.nim");
 				{
-					NIM_BOOL LOC312;
+					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+					if (!eqStrings(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2962))) goto LA350;
+					nimln(201, "nimbus.nim");
+					{
+						NIM_BOOL LOC354;
+						NIM_BOOL LOC355;
+						NimStringDesc* LOC358;
+						NimStringDesc* LOC361;
+						NimStringDesc* LOC362;
+						TY167666 LOC363;
+						NI64 LOC364;
+						NimStringDesc* LOC365;
+						LOC354 = 0;
+						LOC355 = 0;
+						LOC355 = (((NI) 4) <= (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						if (!(LOC355)) goto LA356;
+						LOC355 = isloggedin_282144(((NimStringDesc*) &TMP2892));
+						LA356: ;
+						LOC354 = LOC355;
+						if (!(LOC354)) goto LA357;
+						LOC358 = 0;
+						LOC358 = nsuToLowerStr(nick);
+						LOC354 = eqStrings(LOC358, ((NimStringDesc*) &TMP2893));
+						LA357: ;
+						if (!LOC354) goto LA359;
+						nimln(202, "nimbus.nim");
+						LOC361 = 0;
+						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC362 = 0;
+						LOC362 = sql_167021(((NimStringDesc*) &TMP2963));
+						memset((void*)LOC363, 0, sizeof(LOC363));
+						if ((NU)(((NI) 4)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+						LOC363[0] = copyString(ircmsg->data[((NI) 4)]);
+						LOC364 = 0;
+						LOC364 = tryinsertid_167593(db_282127, LOC362, LOC363, 1);
+						LOC365 = 0;
+						LOC365 = nimIntToStr(((NI) (LOC364)));
+						LOC361 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + LOC365->Sup.len + 21);
+appendString(LOC361, ((NimStringDesc*) &TMP2889));
+appendString(LOC361, ircmsg->data[((NI) 2)]);
+appendString(LOC361, ((NimStringDesc*) &TMP2961));
+appendString(LOC361, LOC365);
+appendString(LOC361, ((NimStringDesc*) &TMP2782));
+						send_146407(sock_282125, LOC361);
+					}
+					LA359: ;
+				}
+				LA350: ;
+				nimln(213, "nimbus.nim");
+				{
+					NIM_BOOL LOC368;
 					NimStringDesc* volatile linktitle;
-					TSafePoint TMP2926;
-					LOC312 = 0;
+					TSafePoint TMP2966;
+					LOC368 = 0;
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC312 = nsuStartsWith(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2924));
-					if (LOC312) goto LA313;
+					LOC368 = nsuStartsWith(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2964));
+					if (LOC368) goto LA369;
 					if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC312 = nsuStartsWith(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2925));
-					LA313: ;
-					if (!LOC312) goto LA314;
+					LOC368 = nsuStartsWith(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2965));
+					LA369: ;
+					if (!LOC368) goto LA370;
 					linktitle = 0;
-					nimln(193, "nimbus.nim");
-					pushSafePoint(&TMP2926);
-					TMP2926.status = setjmp(TMP2926.context);
-					if (TMP2926.status == 0) {
-						TY13606* LOC317;
-						TY13606* LOC318;
-						NimStringDesc* LOC319;
-						nimln(194, "nimbus.nim");
+					nimln(215, "nimbus.nim");
+					pushSafePoint(&TMP2966);
+					TMP2966.status = setjmp(TMP2966.context);
+					if (TMP2966.status == 0) {
+						TY13606* LOC373;
+						TY13606* LOC374;
+						NimStringDesc* LOC375;
+						nimln(216, "nimbus.nim");
 						if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						nsuDelete((&ircmsg->data[((NI) 3)]), ((NI) 0), ((NI) 0));
-						nimln(195, "nimbus.nim");
+						nimln(217, "nimbus.nim");
 						if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						printf("%s\015\012", ircmsg->data[((NI) 3)]? (ircmsg->data[((NI) 3)])->data:"nil");
-						nimln(196, "nimbus.nim");
+						nimln(218, "nimbus.nim");
 						if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						linktitle = getcontent_266171(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2762), ((NI) 5), defaultsslcontext_265377, ((NI) -1), ((NimStringDesc*) &TMP2932), NIM_NIL);
-						nimln(197, "nimbus.nim");
-						printf("%s\015\012", ((NimStringDesc*) &TMP2933)? (((NimStringDesc*) &TMP2933))->data:"nil");
-						nimln(198, "nimbus.nim");
-						LOC317 = 0;
-						LOC317 = nsuSplitString(linktitle, ((NimStringDesc*) &TMP2934));
-						if ((NU)(((NI) 1)) >= (NU)(LOC317->Sup.len)) raiseIndexError();
-						linktitle = copyString(LOC317->data[((NI) 1)]);
-						nimln(199, "nimbus.nim");
-						printf("%s\015\012", ((NimStringDesc*) &TMP2935)? (((NimStringDesc*) &TMP2935))->data:"nil");
-						nimln(200, "nimbus.nim");
-						LOC318 = 0;
-						LOC318 = nsuSplitString(linktitle, ((NimStringDesc*) &TMP2936));
-						if ((NU)(((NI) 0)) >= (NU)(LOC318->Sup.len)) raiseIndexError();
-						linktitle = copyString(LOC318->data[((NI) 0)]);
-						nimln(201, "nimbus.nim");
+						linktitle = getcontent_266171(ircmsg->data[((NI) 3)], ((NimStringDesc*) &TMP2762), ((NI) 5), defaultsslcontext_265377, ((NI) -1), ((NimStringDesc*) &TMP2972), NIM_NIL);
+						nimln(219, "nimbus.nim");
+						printf("%s\015\012", ((NimStringDesc*) &TMP2973)? (((NimStringDesc*) &TMP2973))->data:"nil");
+						nimln(220, "nimbus.nim");
+						LOC373 = 0;
+						LOC373 = nsuSplitString(linktitle, ((NimStringDesc*) &TMP2974));
+						if ((NU)(((NI) 1)) >= (NU)(LOC373->Sup.len)) raiseIndexError();
+						linktitle = copyString(LOC373->data[((NI) 1)]);
+						nimln(221, "nimbus.nim");
+						printf("%s\015\012", ((NimStringDesc*) &TMP2975)? (((NimStringDesc*) &TMP2975))->data:"nil");
+						nimln(222, "nimbus.nim");
+						LOC374 = 0;
+						LOC374 = nsuSplitString(linktitle, ((NimStringDesc*) &TMP2976));
+						if ((NU)(((NI) 0)) >= (NU)(LOC374->Sup.len)) raiseIndexError();
+						linktitle = copyString(LOC374->data[((NI) 0)]);
+						nimln(223, "nimbus.nim");
 						printf("%s\015\012", linktitle? (linktitle)->data:"nil");
-						nimln(202, "nimbus.nim");
-						LOC319 = 0;
+						nimln(224, "nimbus.nim");
+						LOC375 = 0;
 						if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
 						if ((NU)(((NI) 3)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-						LOC319 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + linktitle->Sup.len + ircmsg->data[((NI) 3)]->Sup.len + 30);
-appendString(LOC319, ((NimStringDesc*) &TMP2855));
-appendString(LOC319, ircmsg->data[((NI) 2)]);
-appendString(LOC319, ((NimStringDesc*) &TMP2856));
-appendString(LOC319, linktitle);
-appendString(LOC319, ((NimStringDesc*) &TMP2937));
-appendString(LOC319, ircmsg->data[((NI) 3)]);
-appendString(LOC319, ((NimStringDesc*) &TMP2938));
-						send_146407(sock_282133, LOC319);
+						LOC375 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + linktitle->Sup.len + ircmsg->data[((NI) 3)]->Sup.len + 30);
+appendString(LOC375, ((NimStringDesc*) &TMP2889));
+appendString(LOC375, ircmsg->data[((NI) 2)]);
+appendString(LOC375, ((NimStringDesc*) &TMP2890));
+appendString(LOC375, linktitle);
+appendString(LOC375, ((NimStringDesc*) &TMP2977));
+appendString(LOC375, ircmsg->data[((NI) 3)]);
+appendString(LOC375, ((NimStringDesc*) &TMP2978));
+						send_146407(sock_282125, LOC375);
 						popSafePoint();
 					}
 					else {
 						popSafePoint();
 						setFrame((TFrame*)&FR);
 						{
-							TMP2926.status = 0;
-							nimln(204, "nimbus.nim");
-							linktitle = copyString(((NimStringDesc*) &TMP2939));
-							nimln(205, "nimbus.nim");
-							printf("%s\015\012", ((NimStringDesc*) &TMP2940)? (((NimStringDesc*) &TMP2940))->data:"nil");
+							TMP2966.status = 0;
+							nimln(226, "nimbus.nim");
+							linktitle = copyString(((NimStringDesc*) &TMP2979));
+							nimln(227, "nimbus.nim");
+							printf("%s\015\012", ((NimStringDesc*) &TMP2980)? (((NimStringDesc*) &TMP2980))->data:"nil");
 							popCurrentException();
 						}
 					}
-					if (TMP2926.status != 0) reraiseException();
+					if (TMP2966.status != 0) reraiseException();
 				}
-				LA314: ;
-				nimln(208, "nimbus.nim");
+				LA370: ;
+				nimln(230, "nimbus.nim");
 				{
-					NIM_BOOL LOC324;
-					NIM_BOOL LOC325;
-					Slice88061 LOC326;
-					TY13606* LOC327;
-					NimStringDesc* LOC328;
-					Slice88061 LOC330;
-					TY13606* LOC331;
-					NimStringDesc* LOC332;
-					Slice88061 LOC334;
-					TY13606* LOC335;
-					NimStringDesc* LOC336;
-					NimStringDesc* LOC339;
-					NimStringDesc* LOC340;
-					LOC324 = 0;
-					LOC325 = 0;
-					LOC326 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
-					LOC327 = 0;
-					LOC327 = HEX5BHEX5D_133598(ircmsg, LOC326);
-					LOC328 = 0;
-					LOC328 = nsuJoinSep(LOC327->data, LOC327->Sup.len, ((NimStringDesc*) &TMP2784));
-					LOC325 = contains_101362(LOC328, ((NimStringDesc*) &TMP2941));
-					if (LOC325) goto LA329;
-					LOC330 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
-					LOC331 = 0;
-					LOC331 = HEX5BHEX5D_133598(ircmsg, LOC330);
-					LOC332 = 0;
-					LOC332 = nsuJoinSep(LOC331->data, LOC331->Sup.len, ((NimStringDesc*) &TMP2784));
-					LOC325 = contains_101362(LOC332, ((NimStringDesc*) &TMP2942));
-					LA329: ;
-					LOC324 = LOC325;
-					if (LOC324) goto LA333;
-					LOC334 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
-					LOC335 = 0;
-					LOC335 = HEX5BHEX5D_133598(ircmsg, LOC334);
-					LOC336 = 0;
-					LOC336 = nsuJoinSep(LOC335->data, LOC335->Sup.len, ((NimStringDesc*) &TMP2784));
-					LOC324 = contains_101362(LOC336, ((NimStringDesc*) &TMP2943));
-					LA333: ;
-					if (!LOC324) goto LA337;
-					nimln(209, "nimbus.nim");
-					LOC339 = 0;
+					NIM_BOOL LOC380;
+					NIM_BOOL LOC381;
+					Slice88061 LOC382;
+					TY13606* LOC383;
+					NimStringDesc* LOC384;
+					Slice88061 LOC386;
+					TY13606* LOC387;
+					NimStringDesc* LOC388;
+					Slice88061 LOC390;
+					TY13606* LOC391;
+					NimStringDesc* LOC392;
+					NimStringDesc* LOC395;
+					NimStringDesc* LOC396;
+					LOC380 = 0;
+					LOC381 = 0;
+					LOC382 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+					LOC383 = 0;
+					LOC383 = HEX5BHEX5D_133598(ircmsg, LOC382);
+					LOC384 = 0;
+					LOC384 = nsuJoinSep(LOC383->data, LOC383->Sup.len, ((NimStringDesc*) &TMP2784));
+					LOC381 = contains_101362(LOC384, ((NimStringDesc*) &TMP2981));
+					if (LOC381) goto LA385;
+					LOC386 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+					LOC387 = 0;
+					LOC387 = HEX5BHEX5D_133598(ircmsg, LOC386);
+					LOC388 = 0;
+					LOC388 = nsuJoinSep(LOC387->data, LOC387->Sup.len, ((NimStringDesc*) &TMP2784));
+					LOC381 = contains_101362(LOC388, ((NimStringDesc*) &TMP2982));
+					LA385: ;
+					LOC380 = LOC381;
+					if (LOC380) goto LA389;
+					LOC390 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+					LOC391 = 0;
+					LOC391 = HEX5BHEX5D_133598(ircmsg, LOC390);
+					LOC392 = 0;
+					LOC392 = nsuJoinSep(LOC391->data, LOC391->Sup.len, ((NimStringDesc*) &TMP2784));
+					LOC380 = contains_101362(LOC392, ((NimStringDesc*) &TMP2983));
+					LA389: ;
+					if (!LOC380) goto LA393;
+					nimln(231, "nimbus.nim");
+					LOC395 = 0;
 					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC339 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 17);
-appendString(LOC339, ((NimStringDesc*) &TMP2855));
-appendString(LOC339, ircmsg->data[((NI) 2)]);
-appendString(LOC339, ((NimStringDesc*) &TMP2944));
-					send_146407(sock_282133, LOC339);
-					nimln(210, "nimbus.nim");
-					LOC340 = 0;
+					LOC395 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 17);
+appendString(LOC395, ((NimStringDesc*) &TMP2889));
+appendString(LOC395, ircmsg->data[((NI) 2)]);
+appendString(LOC395, ((NimStringDesc*) &TMP2984));
+					send_146407(sock_282125, LOC395);
+					nimln(232, "nimbus.nim");
+					LOC396 = 0;
 					if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
-					LOC340 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 20);
-appendString(LOC340, ((NimStringDesc*) &TMP2855));
-appendString(LOC340, ircmsg->data[((NI) 2)]);
-appendString(LOC340, ((NimStringDesc*) &TMP2945));
-					send_146407(sock_282133, LOC340);
+					LOC396 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + 20);
+appendString(LOC396, ((NimStringDesc*) &TMP2889));
+appendString(LOC396, ircmsg->data[((NI) 2)]);
+appendString(LOC396, ((NimStringDesc*) &TMP2985));
+					send_146407(sock_282125, LOC396);
 				}
-				LA337: ;
+				goto LA378;
+				LA393: ;
+				{
+					nimln(235, "nimbus.nim");
+					{
+						Slice88061 LOC400;
+						TY13606* LOC401;
+						NimStringDesc* LOC402;
+						NIM_BOOL LOC403;
+						LOC400 = HEX2EHEX2E_110273(((NI) 3), (ircmsg ? (ircmsg->Sup.len-1) : -1));
+						LOC401 = 0;
+						LOC401 = HEX5BHEX5D_133598(ircmsg, LOC400);
+						LOC402 = 0;
+						LOC402 = nsuJoinSep(LOC401->data, LOC401->Sup.len, ((NimStringDesc*) &TMP2784));
+						LOC403 = 0;
+						LOC403 = doesusergetdrop_282673(LOC402, nick);
+						if (!LOC403) goto LA404;
+						nimln(236, "nimbus.nim");
+						{
+							NIM_BOOL LOC408;
+							NI itemid;
+							LOC408 = 0;
+							LOC408 = isloggedin_282144(nick);
+							if (!LOC408) goto LA409;
+							nimln(237, "nimbus.nim");
+							itemid = generatelootdrop_282706(nick, NIM_FALSE);
+							nimln(238, "nimbus.nim");
+							{
+								NI LOC413;
+								NIM_BOOL LOC414;
+								NimStringDesc* LOC417;
+								NimStringDesc* LOC418;
+								LOC413 = 0;
+								LOC413 = userid_282396(nick);
+								LOC414 = 0;
+								LOC414 = adduserloot_282768(LOC413, itemid);
+								if (!LOC414) goto LA415;
+								nimln(239, "nimbus.nim");
+								LOC417 = 0;
+								if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+								LOC418 = 0;
+								LOC418 = getitemname_282532(itemid);
+								LOC417 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + nick->Sup.len + LOC418->Sup.len + 42);
+appendString(LOC417, ((NimStringDesc*) &TMP2889));
+appendString(LOC417, ircmsg->data[((NI) 2)]);
+appendString(LOC417, ((NimStringDesc*) &TMP2890));
+appendString(LOC417, nick);
+appendString(LOC417, ((NimStringDesc*) &TMP2986));
+appendString(LOC417, LOC418);
+appendString(LOC417, ((NimStringDesc*) &TMP2987));
+								send_146407(sock_282125, LOC417);
+							}
+							LA415: ;
+						}
+						goto LA406;
+						LA409: ;
+						{
+							NimStringDesc* LOC420;
+							nimln(241, "nimbus.nim");
+							LOC420 = 0;
+							if ((NU)(((NI) 2)) >= (NU)(ircmsg->Sup.len)) raiseIndexError();
+							LOC420 = rawNewString(ircmsg->data[((NI) 2)]->Sup.len + nick->Sup.len + 72);
+appendString(LOC420, ((NimStringDesc*) &TMP2889));
+appendString(LOC420, ircmsg->data[((NI) 2)]);
+appendString(LOC420, ((NimStringDesc*) &TMP2890));
+appendString(LOC420, nick);
+appendString(LOC420, ((NimStringDesc*) &TMP2988));
+							send_146407(sock_282125, LOC420);
+						}
+						LA406: ;
+					}
+					LA404: ;
+				}
+				LA378: ;
 			}
 			goto LA55;
 			LA70: ;
 			LA55: ;
 		}
 	} LA39: ;
-	nimln(216, "nimbus.nim");
-	fclose(log_282128);
-	nimln(217, "nimbus.nim");
-	close_140462(sock_282133);
+	nimln(247, "nimbus.nim");
+	fclose(log_282122);
+	nimln(248, "nimbus.nim");
+	close_140462(sock_282125);
 	popFrame();
 }
 

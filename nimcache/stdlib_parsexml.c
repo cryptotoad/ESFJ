@@ -10,9 +10,9 @@
 #include <string.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Xmlparser232018 Xmlparser232018;
-typedef struct Streamobj179027 Streamobj179027;
-typedef struct Baselexer191021 Baselexer191021;
+typedef struct Xmlparser220021 Xmlparser220021;
+typedef struct Streamobj156027 Streamobj156027;
+typedef struct Baselexer168024 Baselexer168024;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -24,7 +24,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-typedef NimStringDesc* TY232069[9];
+typedef NimStringDesc* TY220072[9];
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -40,19 +40,19 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Baselexer191021  {
+struct  Baselexer168024  {
   TNimObject Sup;
 NI bufpos;
 NCSTRING buf;
 NI buflen;
-Streamobj179027* input;
+Streamobj156027* input;
 NI linenumber;
 NI sentinel;
 NI linestart;
 NIM_BOOL fileopened;
 };
-struct  Xmlparser232018  {
-  Baselexer191021 Sup;
+struct  Xmlparser220021  {
+  Baselexer168024 Sup;
 NimStringDesc* a;
 NimStringDesc* b;
 NimStringDesc* c;
@@ -62,24 +62,24 @@ NU8 state;
 NimStringDesc* filename;
 NU8 options;
 };
-typedef NimStringDesc* TY205801[4];
+typedef NimStringDesc* TY187801[4];
 typedef NU8 TY77659[32];
-typedef N_NIMCALL_PTR(void, TY179028) (Streamobj179027* s);
-typedef N_NIMCALL_PTR(NIM_BOOL, TY179032) (Streamobj179027* s);
-typedef N_NIMCALL_PTR(void, TY179036) (Streamobj179027* s, NI pos);
-typedef N_NIMCALL_PTR(NI, TY179041) (Streamobj179027* s);
-typedef N_NIMCALL_PTR(NI, TY179045) (Streamobj179027* s, void* buffer, NI buflen);
-typedef N_NIMCALL_PTR(void, TY179051) (Streamobj179027* s, void* buffer, NI buflen);
-typedef N_NIMCALL_PTR(void, TY179057) (Streamobj179027* s);
-struct  Streamobj179027  {
+typedef N_NIMCALL_PTR(void, TY156028) (Streamobj156027* s);
+typedef N_NIMCALL_PTR(NIM_BOOL, TY156032) (Streamobj156027* s);
+typedef N_NIMCALL_PTR(void, TY156036) (Streamobj156027* s, NI pos);
+typedef N_NIMCALL_PTR(NI, TY156041) (Streamobj156027* s);
+typedef N_NIMCALL_PTR(NI, TY156045) (Streamobj156027* s, void* buffer, NI buflen);
+typedef N_NIMCALL_PTR(void, TY156051) (Streamobj156027* s, void* buffer, NI buflen);
+typedef N_NIMCALL_PTR(void, TY156057) (Streamobj156027* s);
+struct  Streamobj156027  {
   TNimObject Sup;
-TY179028 closeimpl;
-TY179032 atendimpl;
-TY179036 setpositionimpl;
-TY179041 getpositionimpl;
-TY179045 readdataimpl;
-TY179051 writedataimpl;
-TY179057 flushimpl;
+TY156028 closeimpl;
+TY156032 atendimpl;
+TY156036 setpositionimpl;
+TY156041 getpositionimpl;
+TY156045 readdataimpl;
+TY156051 writedataimpl;
+TY156057 flushimpl;
 };
 struct  TNimNode  {
 NU8 kind;
@@ -89,93 +89,93 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(void, open_232077)(Xmlparser232018* my, Streamobj179027* input, NimStringDesc* filename, NU8 options);
-N_NIMCALL(void, open_191037)(Baselexer191021* L, Streamobj179027* input, NI buflen);
+N_NIMCALL(void, open_220080)(Xmlparser220021* my, Streamobj156027* input, NimStringDesc* filename, NU8 options);
+N_NIMCALL(void, open_168040)(Baselexer168024* L, Streamobj156027* input, NI buflen);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(void, close_232093)(Xmlparser232018* my);
-N_NIMCALL(void, close_191047)(Baselexer191021* L);
-static N_INLINE(NU8, kind_232103)(Xmlparser232018* my);
-static N_INLINE(NimStringDesc*, rawdata_232160)(Xmlparser232018* my);
-static N_INLINE(NimStringDesc*, rawdata2_232170)(Xmlparser232018* my);
-static N_INLINE(NI, getcolumn_232180)(Xmlparser232018* my);
-N_NIMCALL(NI, getcolnumber_191061)(Baselexer191021* L, NI pos);
-static N_INLINE(NI, getline_232190)(Xmlparser232018* my);
-static N_INLINE(NimStringDesc*, getfilename_232200)(Xmlparser232018* my);
-N_NIMCALL(NimStringDesc*, errormsg_232210)(Xmlparser232018* my);
+static N_INLINE(void, close_220096)(Xmlparser220021* my);
+N_NIMCALL(void, close_168050)(Baselexer168024* L);
+static N_INLINE(NU8, kind_220106)(Xmlparser220021* my);
+static N_INLINE(NimStringDesc*, rawdata_220163)(Xmlparser220021* my);
+static N_INLINE(NimStringDesc*, rawdata2_220173)(Xmlparser220021* my);
+static N_INLINE(NI, getcolumn_220183)(Xmlparser220021* my);
+N_NIMCALL(NI, getcolnumber_168064)(Baselexer168024* L, NI pos);
+static N_INLINE(NI, getline_220193)(Xmlparser220021* my);
+static N_INLINE(NimStringDesc*, getfilename_220203)(Xmlparser220021* my);
+N_NIMCALL(NimStringDesc*, errormsg_220213)(Xmlparser220021* my);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
 N_NIMCALL(NimStringDesc*, nsuFormatOpenArray)(NimStringDesc* formatstr, NimStringDesc** a, NI aLen0);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
-N_NIMCALL(NimStringDesc*, errormsgexpected_232409)(Xmlparser232018* my, NimStringDesc* tag);
+N_NIMCALL(NimStringDesc*, errormsgexpected_220409)(Xmlparser220021* my, NimStringDesc* tag);
 N_NIMCALL(NimStringDesc*, nsuFormatSingleElem)(NimStringDesc* formatstr, NimStringDesc* a);
-N_NIMCALL(NimStringDesc*, errormsg_232422)(Xmlparser232018* my, NimStringDesc* msg);
-static N_INLINE(void, markerror_232435)(Xmlparser232018* my, NU8 kind);
-N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my);
+N_NIMCALL(NimStringDesc*, errormsg_220422)(Xmlparser220021* my, NimStringDesc* msg);
+static N_INLINE(void, markerror_220435)(Xmlparser220021* my, NU8 kind);
+N_NIMCALL(void, parsecdata_220446)(Xmlparser220021* my);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
-N_NIMCALL(NI, handlecr_191068)(Baselexer191021* L, NI pos);
-N_NIMCALL(NI, handlelf_191076)(Baselexer191021* L, NI pos);
-N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my);
-N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip);
-N_NIMCALL(void, parsename_232614)(Xmlparser232018* my, NimStringDesc** dest);
-N_NIMCALL(void, parseentity_232664)(Xmlparser232018* my, NimStringDesc** dest);
+N_NIMCALL(NI, handlecr_168071)(Baselexer168024* L, NI pos);
+N_NIMCALL(NI, handlelf_168079)(Baselexer168024* L, NI pos);
+N_NIMCALL(void, parsecomment_220492)(Xmlparser220021* my);
+N_NIMCALL(void, parsewhitespace_220578)(Xmlparser220021* my, NIM_BOOL skip);
+N_NIMCALL(void, parsename_220614)(Xmlparser220021* my, NimStringDesc** dest);
+N_NIMCALL(void, parseentity_220664)(Xmlparser220021* my, NimStringDesc** dest);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 N_NIMCALL(NimStringDesc*, nuctoUTF8)(NI c);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my);
+N_NIMCALL(void, parsepi_220877)(Xmlparser220021* my);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
-N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my);
-N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my);
-N_NIMCALL(void, parseendtag_233055)(Xmlparser232018* my);
-N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my);
-N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my);
-N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my);
-N_NIMCALL(void, gettok_233407)(Xmlparser232018* my);
-N_NIMCALL(void, next_233444)(Xmlparser232018* my);
+N_NIMCALL(void, parsespecial_220933)(Xmlparser220021* my);
+N_NIMCALL(void, parsetag_221007)(Xmlparser220021* my);
+N_NIMCALL(void, parseendtag_221055)(Xmlparser220021* my);
+N_NIMCALL(void, parseattribute_221084)(Xmlparser220021* my);
+N_NIMCALL(void, parsechardata_221163)(Xmlparser220021* my);
+N_NIMCALL(void, rawgettok_221191)(Xmlparser220021* my);
+N_NIMCALL(void, gettok_221407)(Xmlparser220021* my);
+N_NIMCALL(void, next_221444)(Xmlparser220021* my);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
-STRING_LITERAL(TMP1243, "no error", 8);
-STRING_LITERAL(TMP1244, "\']]>\' expected", 14);
-STRING_LITERAL(TMP1245, "name expected", 13);
-STRING_LITERAL(TMP1246, "\';\' expected", 12);
-STRING_LITERAL(TMP1247, "\'?>\' expected", 13);
-STRING_LITERAL(TMP1248, "\'>\' expected", 12);
-STRING_LITERAL(TMP1249, "\'=\' expected", 12);
-STRING_LITERAL(TMP1250, "\'\"\' or \"\'\" expected", 19);
-STRING_LITERAL(TMP1251, "\'-->\' expected", 14);
-NIM_CONST TY232069 errormessages_232068 = {((NimStringDesc*) &TMP1243),
-((NimStringDesc*) &TMP1244),
-((NimStringDesc*) &TMP1245),
-((NimStringDesc*) &TMP1246),
-((NimStringDesc*) &TMP1247),
-((NimStringDesc*) &TMP1248),
-((NimStringDesc*) &TMP1249),
-((NimStringDesc*) &TMP1250),
-((NimStringDesc*) &TMP1251)}
+STRING_LITERAL(TMP1165, "no error", 8);
+STRING_LITERAL(TMP1166, "\']]>\' expected", 14);
+STRING_LITERAL(TMP1167, "name expected", 13);
+STRING_LITERAL(TMP1168, "\';\' expected", 12);
+STRING_LITERAL(TMP1169, "\'?>\' expected", 13);
+STRING_LITERAL(TMP1170, "\'>\' expected", 12);
+STRING_LITERAL(TMP1171, "\'=\' expected", 12);
+STRING_LITERAL(TMP1172, "\'\"\' or \"\'\" expected", 19);
+STRING_LITERAL(TMP1173, "\'-->\' expected", 14);
+NIM_CONST TY220072 errormessages_220071 = {((NimStringDesc*) &TMP1165),
+((NimStringDesc*) &TMP1166),
+((NimStringDesc*) &TMP1167),
+((NimStringDesc*) &TMP1168),
+((NimStringDesc*) &TMP1169),
+((NimStringDesc*) &TMP1170),
+((NimStringDesc*) &TMP1171),
+((NimStringDesc*) &TMP1172),
+((NimStringDesc*) &TMP1173)}
 ;
-STRING_LITERAL(TMP1252, "", 0);
-STRING_LITERAL(TMP1253, "my.kind == xmlError ", 20);
-STRING_LITERAL(TMP1254, "$1($2, $3) Error: $4", 20);
-STRING_LITERAL(TMP1256, "<$1> expected", 13);
-NIM_CONST TY77659 Namestartchar_232607 = {
+STRING_LITERAL(TMP1174, "", 0);
+STRING_LITERAL(TMP1175, "my.kind == xmlError ", 20);
+STRING_LITERAL(TMP1176, "$1($2, $3) Error: $4", 20);
+STRING_LITERAL(TMP1178, "<$1> expected", 13);
+NIM_CONST TY77659 Namestartchar_220607 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04,
 0xFE, 0xFF, 0xFF, 0x87, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-NIM_CONST TY77659 Namechar_232609 = {
+NIM_CONST TY77659 Namechar_220609 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x60, 0xFF, 0x07,
 0xFE, 0xFF, 0xFF, 0x87, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-STRING_LITERAL(TMP1339, "not (my.kind == xmlError) ", 26);
-STRING_LITERAL(TMP1340, "xml", 3);
+STRING_LITERAL(TMP1261, "not (my.kind == xmlError) ", 26);
+STRING_LITERAL(TMP1262, "xml", 3);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -205,13 +205,13 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void, open_232077)(Xmlparser232018* my, Streamobj179027* input, NimStringDesc* filename, NU8 options) {
-	Baselexer191021* LOC1;
+N_NIMCALL(void, open_220080)(Xmlparser220021* my, Streamobj156027* input, NimStringDesc* filename, NU8 options) {
+	Baselexer168024* LOC1;
 	nimfr("open", "parsexml.nim")
 	nimln(125, "parsexml.nim");
 	LOC1 = 0;
 	LOC1 = &my->Sup;
-	open_191037(LOC1, input, ((NI) 8192));
+	open_168040(LOC1, input, ((NI) 8192));
 	nimln(126, "parsexml.nim");
 	unsureAsgnRef((void**) (&(*my).filename), copyString(filename));
 	nimln(127, "parsexml.nim");
@@ -219,9 +219,9 @@ N_NIMCALL(void, open_232077)(Xmlparser232018* my, Streamobj179027* input, NimStr
 	nimln(128, "parsexml.nim");
 	(*my).kind = ((NU8) 0);
 	nimln(129, "parsexml.nim");
-	unsureAsgnRef((void**) (&(*my).a), copyString(((NimStringDesc*) &TMP1252)));
+	unsureAsgnRef((void**) (&(*my).a), copyString(((NimStringDesc*) &TMP1174)));
 	nimln(130, "parsexml.nim");
-	unsureAsgnRef((void**) (&(*my).b), copyString(((NimStringDesc*) &TMP1252)));
+	unsureAsgnRef((void**) (&(*my).b), copyString(((NimStringDesc*) &TMP1174)));
 	nimln(131, "parsexml.nim");
 	unsureAsgnRef((void**) (&(*my).c), copyString(NIM_NIL));
 	nimln(132, "parsexml.nim");
@@ -229,17 +229,17 @@ N_NIMCALL(void, open_232077)(Xmlparser232018* my, Streamobj179027* input, NimStr
 	popFrame();
 }
 
-static N_INLINE(void, close_232093)(Xmlparser232018* my) {
-	Baselexer191021* LOC1;
+static N_INLINE(void, close_220096)(Xmlparser220021* my) {
+	Baselexer168024* LOC1;
 	nimfr("close", "parsexml.nim")
 	nimln(136, "parsexml.nim");
 	LOC1 = 0;
 	LOC1 = &my->Sup;
-	close_191047(LOC1);
+	close_168050(LOC1);
 	popFrame();
 }
 
-static N_INLINE(NU8, kind_232103)(Xmlparser232018* my) {
+static N_INLINE(NU8, kind_220106)(Xmlparser220021* my) {
 	NU8 result;
 	nimfr("kind", "parsexml.nim")
 {	result = 0;
@@ -251,7 +251,7 @@ static N_INLINE(NU8, kind_232103)(Xmlparser232018* my) {
 	return result;
 }
 
-static N_INLINE(NimStringDesc*, rawdata_232160)(Xmlparser232018* my) {
+static N_INLINE(NimStringDesc*, rawdata_220163)(Xmlparser220021* my) {
 	NimStringDesc* result;
 	nimfr("rawData", "parsexml.nim")
 	result = 0;
@@ -261,7 +261,7 @@ static N_INLINE(NimStringDesc*, rawdata_232160)(Xmlparser232018* my) {
 	return result;
 }
 
-static N_INLINE(NimStringDesc*, rawdata2_232170)(Xmlparser232018* my) {
+static N_INLINE(NimStringDesc*, rawdata2_220173)(Xmlparser220021* my) {
 	NimStringDesc* result;
 	nimfr("rawData2", "parsexml.nim")
 	result = 0;
@@ -271,17 +271,17 @@ static N_INLINE(NimStringDesc*, rawdata2_232170)(Xmlparser232018* my) {
 	return result;
 }
 
-static N_INLINE(NI, getcolumn_232180)(Xmlparser232018* my) {
+static N_INLINE(NI, getcolumn_220183)(Xmlparser220021* my) {
 	NI result;
 	nimfr("getColumn", "parsexml.nim")
 	result = 0;
 	nimln(192, "parsexml.nim");
-	result = getcolnumber_191061((&(*my).Sup), (*my).Sup.bufpos);
+	result = getcolnumber_168064((&(*my).Sup), (*my).Sup.bufpos);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, getline_232190)(Xmlparser232018* my) {
+static N_INLINE(NI, getline_220193)(Xmlparser220021* my) {
 	NI result;
 	nimfr("getLine", "parsexml.nim")
 	result = 0;
@@ -291,7 +291,7 @@ static N_INLINE(NI, getline_232190)(Xmlparser232018* my) {
 	return result;
 }
 
-static N_INLINE(NimStringDesc*, getfilename_232200)(Xmlparser232018* my) {
+static N_INLINE(NimStringDesc*, getfilename_220203)(Xmlparser220021* my) {
 	NimStringDesc* result;
 	nimfr("getFilename", "parsexml.nim")
 	result = 0;
@@ -301,9 +301,9 @@ static N_INLINE(NimStringDesc*, getfilename_232200)(Xmlparser232018* my) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, errormsg_232210)(Xmlparser232018* my) {
+N_NIMCALL(NimStringDesc*, errormsg_220213)(Xmlparser220021* my) {
 	NimStringDesc* result;
-	TY205801 LOC5;
+	TY187801 LOC5;
 	NI LOC6;
 	NI LOC7;
 	nimfr("errorMsg", "parsexml.nim")
@@ -311,7 +311,7 @@ N_NIMCALL(NimStringDesc*, errormsg_232210)(Xmlparser232018* my) {
 	nimln(204, "parsexml.nim");
 	{
 		if (!!(((*my).kind == ((NU8) 0)))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP1253));
+		failedassertimpl_88817(((NimStringDesc*) &TMP1175));
 	}
 	LA3: ;
 	nimln(205, "parsexml.nim");
@@ -319,20 +319,20 @@ N_NIMCALL(NimStringDesc*, errormsg_232210)(Xmlparser232018* my) {
 	LOC5[0] = copyString((*my).filename);
 	nimln(206, "parsexml.nim");
 	LOC6 = 0;
-	LOC6 = getline_232190(my);
+	LOC6 = getline_220193(my);
 	LOC5[1] = nimIntToStr(LOC6);
 	LOC7 = 0;
-	LOC7 = getcolumn_232180(my);
+	LOC7 = getcolumn_220183(my);
 	LOC5[2] = nimIntToStr(LOC7);
-	LOC5[3] = copyString(errormessages_232068[((*my).err)- 0]);
-	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1254), LOC5, 4);
+	LOC5[3] = copyString(errormessages_220071[((*my).err)- 0]);
+	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1176), LOC5, 4);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, errormsgexpected_232409)(Xmlparser232018* my, NimStringDesc* tag) {
+N_NIMCALL(NimStringDesc*, errormsgexpected_220409)(Xmlparser220021* my, NimStringDesc* tag) {
 	NimStringDesc* result;
-	TY205801 LOC1;
+	TY187801 LOC1;
 	NI LOC2;
 	NI LOC3;
 	nimfr("errorMsgExpected", "parsexml.nim")
@@ -342,20 +342,20 @@ N_NIMCALL(NimStringDesc*, errormsgexpected_232409)(Xmlparser232018* my, NimStrin
 	LOC1[0] = copyString((*my).filename);
 	nimln(212, "parsexml.nim");
 	LOC2 = 0;
-	LOC2 = getline_232190(my);
+	LOC2 = getline_220193(my);
 	LOC1[1] = nimIntToStr(LOC2);
 	LOC3 = 0;
-	LOC3 = getcolumn_232180(my);
+	LOC3 = getcolumn_220183(my);
 	LOC1[2] = nimIntToStr(LOC3);
-	LOC1[3] = nsuFormatSingleElem(((NimStringDesc*) &TMP1256), tag);
-	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1254), LOC1, 4);
+	LOC1[3] = nsuFormatSingleElem(((NimStringDesc*) &TMP1178), tag);
+	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1176), LOC1, 4);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, errormsg_232422)(Xmlparser232018* my, NimStringDesc* msg) {
+N_NIMCALL(NimStringDesc*, errormsg_220422)(Xmlparser220021* my, NimStringDesc* msg) {
 	NimStringDesc* result;
-	TY205801 LOC1;
+	TY187801 LOC1;
 	NI LOC2;
 	NI LOC3;
 	nimfr("errorMsg", "parsexml.nim")
@@ -365,18 +365,18 @@ N_NIMCALL(NimStringDesc*, errormsg_232422)(Xmlparser232018* my, NimStringDesc* m
 	LOC1[0] = copyString((*my).filename);
 	nimln(218, "parsexml.nim");
 	LOC2 = 0;
-	LOC2 = getline_232190(my);
+	LOC2 = getline_220193(my);
 	LOC1[1] = nimIntToStr(LOC2);
 	LOC3 = 0;
-	LOC3 = getcolumn_232180(my);
+	LOC3 = getcolumn_220183(my);
 	LOC1[2] = nimIntToStr(LOC3);
 	LOC1[3] = copyString(msg);
-	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1254), LOC1, 4);
+	result = nsuFormatOpenArray(((NimStringDesc*) &TMP1176), LOC1, 4);
 	popFrame();
 	return result;
 }
 
-static N_INLINE(void, markerror_232435)(Xmlparser232018* my, NU8 kind) {
+static N_INLINE(void, markerror_220435)(Xmlparser220021* my, NU8 kind) {
 	nimfr("markError", "parsexml.nim")
 	nimln(221, "parsexml.nim");
 	(*my).err = kind;
@@ -405,14 +405,14 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
+N_NIMCALL(void, parsecdata_220446)(Xmlparser220021* my) {
 	NI pos;
-	NI TMP1257;
+	NI TMP1179;
 	NCSTRING buf;
 	nimfr("parseCDATA", "parsexml.nim")
 	nimln(225, "parsexml.nim");
-	TMP1257 = addInt((*my).Sup.bufpos, ((NI) 9));
-	pos = (NI)(TMP1257);
+	TMP1179 = addInt((*my).Sup.bufpos, ((NI) 9));
+	pos = (NI)(TMP1179);
 	nimln(226, "parsexml.nim");
 	buf = (*my).Sup.buf;
 	{
@@ -422,24 +422,24 @@ N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
 			switch (((NU8)(buf[pos]))) {
 			case 93:
 			{
-				NI TMP1261;
+				NI TMP1183;
 				nimln(230, "parsexml.nim");
 				{
 					NIM_BOOL LOC6;
-					NI TMP1258;
-					NI TMP1259;
-					NI TMP1260;
+					NI TMP1180;
+					NI TMP1181;
+					NI TMP1182;
 					LOC6 = 0;
-					TMP1258 = addInt(pos, ((NI) 1));
-					LOC6 = ((NU8)(buf[(NI)(TMP1258)]) == (NU8)(93));
+					TMP1180 = addInt(pos, ((NI) 1));
+					LOC6 = ((NU8)(buf[(NI)(TMP1180)]) == (NU8)(93));
 					if (!(LOC6)) goto LA7;
-					TMP1259 = addInt(pos, ((NI) 2));
-					LOC6 = ((NU8)(buf[(NI)(TMP1259)]) == (NU8)(62));
+					TMP1181 = addInt(pos, ((NI) 2));
+					LOC6 = ((NU8)(buf[(NI)(TMP1181)]) == (NU8)(62));
 					LA7: ;
 					if (!LOC6) goto LA8;
 					nimln(231, "parsexml.nim");
-					TMP1260 = addInt(pos, ((NI) 3));
-					pos = (NI)(TMP1260);
+					TMP1182 = addInt(pos, ((NI) 3));
+					pos = (NI)(TMP1182);
 					nimln(232, "parsexml.nim");
 					goto LA1;
 				}
@@ -447,25 +447,25 @@ N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
 				nimln(233, "parsexml.nim");
 				(*my).a = addChar((*my).a, 93);
 				nimln(234, "parsexml.nim");
-				TMP1261 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1261);
+				TMP1183 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1183);
 			}
 			break;
 			case 0:
 			{
 				nimln(236, "parsexml.nim");
-				markerror_232435(my, ((NU8) 1));
+				markerror_220435(my, ((NU8) 1));
 				nimln(237, "parsexml.nim");
 				goto LA1;
 			}
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC12;
+				Baselexer168024* LOC12;
 				nimln(239, "parsexml.nim");
 				LOC12 = 0;
 				LOC12 = &my->Sup;
-				pos = handlecr_191068(LOC12, pos);
+				pos = handlecr_168071(LOC12, pos);
 				nimln(240, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(241, "parsexml.nim");
@@ -474,11 +474,11 @@ N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC14;
+				Baselexer168024* LOC14;
 				nimln(243, "parsexml.nim");
 				LOC14 = 0;
 				LOC14 = &my->Sup;
-				pos = handlelf_191076(LOC14, pos);
+				pos = handlelf_168079(LOC14, pos);
 				nimln(244, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(245, "parsexml.nim");
@@ -487,12 +487,12 @@ N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
 			break;
 			default:
 			{
-				NI TMP1262;
+				NI TMP1184;
 				nimln(247, "parsexml.nim");
 				(*my).a = addChar((*my).a, buf[pos]);
 				nimln(248, "parsexml.nim");
-				TMP1262 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1262);
+				TMP1184 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1184);
 			}
 			break;
 			}
@@ -505,14 +505,14 @@ N_NIMCALL(void, parsecdata_232446)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
+N_NIMCALL(void, parsecomment_220492)(Xmlparser220021* my) {
 	NI pos;
-	NI TMP1263;
+	NI TMP1185;
 	NCSTRING buf;
 	nimfr("parseComment", "parsexml.nim")
 	nimln(253, "parsexml.nim");
-	TMP1263 = addInt((*my).Sup.bufpos, ((NI) 4));
-	pos = (NI)(TMP1263);
+	TMP1185 = addInt((*my).Sup.bufpos, ((NI) 4));
+	pos = (NI)(TMP1185);
 	nimln(254, "parsexml.nim");
 	buf = (*my).Sup.buf;
 	{
@@ -522,24 +522,24 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 			switch (((NU8)(buf[pos]))) {
 			case 45:
 			{
-				NI TMP1267;
+				NI TMP1189;
 				nimln(258, "parsexml.nim");
 				{
 					NIM_BOOL LOC6;
-					NI TMP1264;
-					NI TMP1265;
-					NI TMP1266;
+					NI TMP1186;
+					NI TMP1187;
+					NI TMP1188;
 					LOC6 = 0;
-					TMP1264 = addInt(pos, ((NI) 1));
-					LOC6 = ((NU8)(buf[(NI)(TMP1264)]) == (NU8)(45));
+					TMP1186 = addInt(pos, ((NI) 1));
+					LOC6 = ((NU8)(buf[(NI)(TMP1186)]) == (NU8)(45));
 					if (!(LOC6)) goto LA7;
-					TMP1265 = addInt(pos, ((NI) 2));
-					LOC6 = ((NU8)(buf[(NI)(TMP1265)]) == (NU8)(62));
+					TMP1187 = addInt(pos, ((NI) 2));
+					LOC6 = ((NU8)(buf[(NI)(TMP1187)]) == (NU8)(62));
 					LA7: ;
 					if (!LOC6) goto LA8;
 					nimln(259, "parsexml.nim");
-					TMP1266 = addInt(pos, ((NI) 3));
-					pos = (NI)(TMP1266);
+					TMP1188 = addInt(pos, ((NI) 3));
+					pos = (NI)(TMP1188);
 					nimln(260, "parsexml.nim");
 					goto LA1;
 				}
@@ -551,25 +551,25 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 				}
 				LA12: ;
 				nimln(262, "parsexml.nim");
-				TMP1267 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1267);
+				TMP1189 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1189);
 			}
 			break;
 			case 0:
 			{
 				nimln(264, "parsexml.nim");
-				markerror_232435(my, ((NU8) 8));
+				markerror_220435(my, ((NU8) 8));
 				nimln(265, "parsexml.nim");
 				goto LA1;
 			}
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC16;
+				Baselexer168024* LOC16;
 				nimln(267, "parsexml.nim");
 				LOC16 = 0;
 				LOC16 = &my->Sup;
-				pos = handlecr_191068(LOC16, pos);
+				pos = handlecr_168071(LOC16, pos);
 				nimln(268, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(269, "parsexml.nim");
@@ -582,11 +582,11 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC22;
+				Baselexer168024* LOC22;
 				nimln(271, "parsexml.nim");
 				LOC22 = 0;
 				LOC22 = &my->Sup;
-				pos = handlelf_191076(LOC22, pos);
+				pos = handlelf_168079(LOC22, pos);
 				nimln(272, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(273, "parsexml.nim");
@@ -599,7 +599,7 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 			break;
 			default:
 			{
-				NI TMP1268;
+				NI TMP1190;
 				nimln(275, "parsexml.nim");
 				{
 					if (!(((*my).options &(1<<((((NU8) 1))&7)))!=0)) goto LA30;
@@ -607,8 +607,8 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 				}
 				LA30: ;
 				nimln(276, "parsexml.nim");
-				TMP1268 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1268);
+				TMP1190 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1190);
 			}
 			break;
 			}
@@ -621,7 +621,7 @@ N_NIMCALL(void, parsecomment_232492)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip) {
+N_NIMCALL(void, parsewhitespace_220578)(Xmlparser220021* my, NIM_BOOL skip) {
 	NI pos;
 	NCSTRING buf;
 	nimfr("parseWhitespace", "parsexml.nim")
@@ -637,7 +637,7 @@ N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip) {
 			case 32:
 			case 9:
 			{
-				NI TMP1269;
+				NI TMP1191;
 				nimln(286, "parsexml.nim");
 				{
 					if (!!(skip)) goto LA6;
@@ -645,17 +645,17 @@ N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip) {
 				}
 				LA6: ;
 				nimln(287, "parsexml.nim");
-				TMP1269 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1269);
+				TMP1191 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1191);
 			}
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC9;
+				Baselexer168024* LOC9;
 				nimln(290, "parsexml.nim");
 				LOC9 = 0;
 				LOC9 = &my->Sup;
-				pos = handlecr_191068(LOC9, pos);
+				pos = handlecr_168071(LOC9, pos);
 				nimln(291, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(292, "parsexml.nim");
@@ -668,11 +668,11 @@ N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC15;
+				Baselexer168024* LOC15;
 				nimln(294, "parsexml.nim");
 				LOC15 = 0;
 				LOC15 = &my->Sup;
-				pos = handlelf_191076(LOC15, pos);
+				pos = handlelf_168079(LOC15, pos);
 				nimln(295, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(296, "parsexml.nim");
@@ -697,7 +697,7 @@ N_NIMCALL(void, parsewhitespace_232578)(Xmlparser232018* my, NIM_BOOL skip) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsename_232614)(Xmlparser232018* my, NimStringDesc** dest) {
+N_NIMCALL(void, parsename_220614)(Xmlparser220021* my, NimStringDesc** dest) {
 	NI pos;
 	NCSTRING buf;
 	nimfr("parseName", "parsexml.nim")
@@ -711,12 +711,12 @@ N_NIMCALL(void, parsename_232614)(Xmlparser232018* my, NimStringDesc** dest) {
 		{
 			nimln(309, "parsexml.nim");
 			while (1) {
-				NI TMP1270;
+				NI TMP1192;
 				nimln(310, "parsexml.nim");
 				(*dest) = addChar((*dest), buf[pos]);
 				nimln(311, "parsexml.nim");
-				TMP1270 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1270);
+				TMP1192 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1192);
 				nimln(312, "parsexml.nim");
 				{
 					if (!!((((NU8)(buf[pos])) >= ((NU8)(65)) && ((NU8)(buf[pos])) <= ((NU8)(90)) || ((NU8)(buf[pos])) >= ((NU8)(97)) && ((NU8)(buf[pos])) <= ((NU8)(122)) || ((NU8)(buf[pos])) >= ((NU8)(48)) && ((NU8)(buf[pos])) <= ((NU8)(57)) || ((NU8)(buf[pos])) == ((NU8)(46)) || ((NU8)(buf[pos])) == ((NU8)(45)) || ((NU8)(buf[pos])) == ((NU8)(95)) || ((NU8)(buf[pos])) == ((NU8)(58)) || ((NU8)(buf[pos])) >= ((NU8)(128)) && ((NU8)(buf[pos])) <= ((NU8)(255))))) goto LA9;
@@ -732,7 +732,7 @@ N_NIMCALL(void, parsename_232614)(Xmlparser232018* my, NimStringDesc** dest) {
 	LA3: ;
 	{
 		nimln(315, "parsexml.nim");
-		markerror_232435(my, ((NU8) 2));
+		markerror_220435(my, ((NU8) 2));
 	}
 	LA1: ;
 	popFrame();
@@ -763,14 +763,14 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(void, parseentity_232664)(Xmlparser232018* my, NimStringDesc** dest) {
+N_NIMCALL(void, parseentity_220664)(Xmlparser220021* my, NimStringDesc** dest) {
 	NI pos;
-	NI TMP1271;
+	NI TMP1193;
 	NCSTRING buf;
 	nimfr("parseEntity", "parsexml.nim")
 	nimln(318, "parsexml.nim");
-	TMP1271 = addInt((*my).Sup.bufpos, ((NI) 1));
-	pos = (NI)(TMP1271);
+	TMP1193 = addInt((*my).Sup.bufpos, ((NI) 1));
+	pos = (NI)(TMP1193);
 	nimln(319, "parsexml.nim");
 	buf = (*my).Sup.buf;
 	nimln(320, "parsexml.nim");
@@ -778,52 +778,52 @@ N_NIMCALL(void, parseentity_232664)(Xmlparser232018* my, NimStringDesc** dest) {
 	nimln(321, "parsexml.nim");
 	{
 		NI r;
-		NI TMP1272;
+		NI TMP1194;
 		NimStringDesc* LOC18;
 		if (!((NU8)(buf[pos]) == (NU8)(35))) goto LA3;
 		r = 0;
 		nimln(323, "parsexml.nim");
-		TMP1272 = addInt(pos, ((NI) 1));
-		pos = (NI)(TMP1272);
+		TMP1194 = addInt(pos, ((NI) 1));
+		pos = (NI)(TMP1194);
 		nimln(324, "parsexml.nim");
 		{
-			NI TMP1273;
+			NI TMP1195;
 			if (!((NU8)(buf[pos]) == (NU8)(120))) goto LA7;
 			nimln(325, "parsexml.nim");
-			TMP1273 = addInt(pos, ((NI) 1));
-			pos = (NI)(TMP1273);
+			TMP1195 = addInt(pos, ((NI) 1));
+			pos = (NI)(TMP1195);
 			{
 				nimln(326, "parsexml.nim");
 				while (1) {
-					NI TMP1279;
+					NI TMP1201;
 					nimln(327, "parsexml.nim");
 					switch (((NU8)(buf[pos]))) {
 					case 48 ... 57:
 					{
-						NI TMP1274;
+						NI TMP1196;
 						nimln(328, "parsexml.nim");
-						TMP1274 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 48));
-						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1274))));
+						TMP1196 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 48));
+						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1196))));
 					}
 					break;
 					case 97 ... 102:
 					{
-						NI TMP1275;
-						NI TMP1276;
+						NI TMP1197;
+						NI TMP1198;
 						nimln(329, "parsexml.nim");
-						TMP1275 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 97));
-						TMP1276 = addInt(((NI) ((NI)(TMP1275))), ((NI) 10));
-						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1276))));
+						TMP1197 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 97));
+						TMP1198 = addInt(((NI) ((NI)(TMP1197))), ((NI) 10));
+						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1198))));
 					}
 					break;
 					case 65 ... 70:
 					{
-						NI TMP1277;
-						NI TMP1278;
+						NI TMP1199;
+						NI TMP1200;
 						nimln(330, "parsexml.nim");
-						TMP1277 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 65));
-						TMP1278 = addInt(((NI) ((NI)(TMP1277))), ((NI) 10));
-						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1278))));
+						TMP1199 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 65));
+						TMP1200 = addInt(((NI) ((NI)(TMP1199))), ((NI) 10));
+						r = (NI)((NI)((NU64)(r) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP1200))));
 					}
 					break;
 					default:
@@ -834,8 +834,8 @@ N_NIMCALL(void, parseentity_232664)(Xmlparser232018* my, NimStringDesc** dest) {
 					break;
 					}
 					nimln(332, "parsexml.nim");
-					TMP1279 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP1279);
+					TMP1201 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP1201);
 				}
 			} LA9: ;
 		}
@@ -845,19 +845,19 @@ N_NIMCALL(void, parseentity_232664)(Xmlparser232018* my, NimStringDesc** dest) {
 			{
 				nimln(334, "parsexml.nim");
 				while (1) {
-					NI TMP1280;
-					NI TMP1281;
-					NI TMP1282;
-					NI TMP1283;
+					NI TMP1202;
+					NI TMP1203;
+					NI TMP1204;
+					NI TMP1205;
 					if (!(((NU8)(buf[pos])) >= ((NU8)(48)) && ((NU8)(buf[pos])) <= ((NU8)(57)))) goto LA17;
 					nimln(335, "parsexml.nim");
-					TMP1280 = mulInt(r, ((NI) 10));
-					TMP1281 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 48));
-					TMP1282 = addInt((NI)(TMP1280), ((NI) ((NI)(TMP1281))));
-					r = (NI)(TMP1282);
+					TMP1202 = mulInt(r, ((NI) 10));
+					TMP1203 = subInt(((NI) (((NU8)(buf[pos])))), ((NI) 48));
+					TMP1204 = addInt((NI)(TMP1202), ((NI) ((NI)(TMP1203))));
+					r = (NI)(TMP1204);
 					nimln(336, "parsexml.nim");
-					TMP1283 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP1283);
+					TMP1205 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP1205);
 				} LA17: ;
 			}
 		}
@@ -873,56 +873,56 @@ appendString((*dest), LOC18);
 	{
 		NIM_BOOL LOC20;
 		NIM_BOOL LOC21;
-		NI TMP1284;
-		NI TMP1285;
-		NI TMP1286;
+		NI TMP1206;
+		NI TMP1207;
+		NI TMP1208;
 		nimln(338, "parsexml.nim");
 		LOC20 = 0;
 		LOC21 = 0;
 		LOC21 = ((NU8)(buf[pos]) == (NU8)(108));
 		if (!(LOC21)) goto LA22;
-		TMP1284 = addInt(pos, ((NI) 1));
-		LOC21 = ((NU8)(buf[(NI)(TMP1284)]) == (NU8)(116));
+		TMP1206 = addInt(pos, ((NI) 1));
+		LOC21 = ((NU8)(buf[(NI)(TMP1206)]) == (NU8)(116));
 		LA22: ;
 		LOC20 = LOC21;
 		if (!(LOC20)) goto LA23;
-		TMP1285 = addInt(pos, ((NI) 2));
-		LOC20 = ((NU8)(buf[(NI)(TMP1285)]) == (NU8)(59));
+		TMP1207 = addInt(pos, ((NI) 2));
+		LOC20 = ((NU8)(buf[(NI)(TMP1207)]) == (NU8)(59));
 		LA23: ;
 		if (!LOC20) goto LA24;
 		nimln(339, "parsexml.nim");
 		(*dest) = addChar((*dest), 60);
 		nimln(340, "parsexml.nim");
-		TMP1286 = addInt(pos, ((NI) 2));
-		pos = (NI)(TMP1286);
+		TMP1208 = addInt(pos, ((NI) 2));
+		pos = (NI)(TMP1208);
 	}
 	goto LA1;
 	LA24: ;
 	{
 		NIM_BOOL LOC27;
 		NIM_BOOL LOC28;
-		NI TMP1287;
-		NI TMP1288;
-		NI TMP1289;
+		NI TMP1209;
+		NI TMP1210;
+		NI TMP1211;
 		nimln(341, "parsexml.nim");
 		LOC27 = 0;
 		LOC28 = 0;
 		LOC28 = ((NU8)(buf[pos]) == (NU8)(103));
 		if (!(LOC28)) goto LA29;
-		TMP1287 = addInt(pos, ((NI) 1));
-		LOC28 = ((NU8)(buf[(NI)(TMP1287)]) == (NU8)(116));
+		TMP1209 = addInt(pos, ((NI) 1));
+		LOC28 = ((NU8)(buf[(NI)(TMP1209)]) == (NU8)(116));
 		LA29: ;
 		LOC27 = LOC28;
 		if (!(LOC27)) goto LA30;
-		TMP1288 = addInt(pos, ((NI) 2));
-		LOC27 = ((NU8)(buf[(NI)(TMP1288)]) == (NU8)(59));
+		TMP1210 = addInt(pos, ((NI) 2));
+		LOC27 = ((NU8)(buf[(NI)(TMP1210)]) == (NU8)(59));
 		LA30: ;
 		if (!LOC27) goto LA31;
 		nimln(342, "parsexml.nim");
 		(*dest) = addChar((*dest), 62);
 		nimln(343, "parsexml.nim");
-		TMP1289 = addInt(pos, ((NI) 2));
-		pos = (NI)(TMP1289);
+		TMP1211 = addInt(pos, ((NI) 2));
+		pos = (NI)(TMP1211);
 	}
 	goto LA1;
 	LA31: ;
@@ -930,36 +930,36 @@ appendString((*dest), LOC18);
 		NIM_BOOL LOC34;
 		NIM_BOOL LOC35;
 		NIM_BOOL LOC36;
-		NI TMP1290;
-		NI TMP1291;
-		NI TMP1292;
-		NI TMP1293;
+		NI TMP1212;
+		NI TMP1213;
+		NI TMP1214;
+		NI TMP1215;
 		nimln(344, "parsexml.nim");
 		LOC34 = 0;
 		LOC35 = 0;
 		LOC36 = 0;
 		LOC36 = ((NU8)(buf[pos]) == (NU8)(97));
 		if (!(LOC36)) goto LA37;
-		TMP1290 = addInt(pos, ((NI) 1));
-		LOC36 = ((NU8)(buf[(NI)(TMP1290)]) == (NU8)(109));
+		TMP1212 = addInt(pos, ((NI) 1));
+		LOC36 = ((NU8)(buf[(NI)(TMP1212)]) == (NU8)(109));
 		LA37: ;
 		LOC35 = LOC36;
 		if (!(LOC35)) goto LA38;
-		TMP1291 = addInt(pos, ((NI) 2));
-		LOC35 = ((NU8)(buf[(NI)(TMP1291)]) == (NU8)(112));
+		TMP1213 = addInt(pos, ((NI) 2));
+		LOC35 = ((NU8)(buf[(NI)(TMP1213)]) == (NU8)(112));
 		LA38: ;
 		LOC34 = LOC35;
 		if (!(LOC34)) goto LA39;
 		nimln(345, "parsexml.nim");
-		TMP1292 = addInt(pos, ((NI) 3));
-		LOC34 = ((NU8)(buf[(NI)(TMP1292)]) == (NU8)(59));
+		TMP1214 = addInt(pos, ((NI) 3));
+		LOC34 = ((NU8)(buf[(NI)(TMP1214)]) == (NU8)(59));
 		LA39: ;
 		if (!LOC34) goto LA40;
 		nimln(346, "parsexml.nim");
 		(*dest) = addChar((*dest), 38);
 		nimln(347, "parsexml.nim");
-		TMP1293 = addInt(pos, ((NI) 3));
-		pos = (NI)(TMP1293);
+		TMP1215 = addInt(pos, ((NI) 3));
+		pos = (NI)(TMP1215);
 	}
 	goto LA1;
 	LA40: ;
@@ -968,11 +968,11 @@ appendString((*dest), LOC18);
 		NIM_BOOL LOC44;
 		NIM_BOOL LOC45;
 		NIM_BOOL LOC46;
-		NI TMP1294;
-		NI TMP1295;
-		NI TMP1296;
-		NI TMP1297;
-		NI TMP1298;
+		NI TMP1216;
+		NI TMP1217;
+		NI TMP1218;
+		NI TMP1219;
+		NI TMP1220;
 		nimln(349, "parsexml.nim");
 		LOC43 = 0;
 		nimln(348, "parsexml.nim");
@@ -981,31 +981,31 @@ appendString((*dest), LOC18);
 		LOC46 = 0;
 		LOC46 = ((NU8)(buf[pos]) == (NU8)(97));
 		if (!(LOC46)) goto LA47;
-		TMP1294 = addInt(pos, ((NI) 1));
-		LOC46 = ((NU8)(buf[(NI)(TMP1294)]) == (NU8)(112));
+		TMP1216 = addInt(pos, ((NI) 1));
+		LOC46 = ((NU8)(buf[(NI)(TMP1216)]) == (NU8)(112));
 		LA47: ;
 		LOC45 = LOC46;
 		if (!(LOC45)) goto LA48;
-		TMP1295 = addInt(pos, ((NI) 2));
-		LOC45 = ((NU8)(buf[(NI)(TMP1295)]) == (NU8)(111));
+		TMP1217 = addInt(pos, ((NI) 2));
+		LOC45 = ((NU8)(buf[(NI)(TMP1217)]) == (NU8)(111));
 		LA48: ;
 		LOC44 = LOC45;
 		if (!(LOC44)) goto LA49;
 		nimln(349, "parsexml.nim");
-		TMP1296 = addInt(pos, ((NI) 3));
-		LOC44 = ((NU8)(buf[(NI)(TMP1296)]) == (NU8)(115));
+		TMP1218 = addInt(pos, ((NI) 3));
+		LOC44 = ((NU8)(buf[(NI)(TMP1218)]) == (NU8)(115));
 		LA49: ;
 		LOC43 = LOC44;
 		if (!(LOC43)) goto LA50;
-		TMP1297 = addInt(pos, ((NI) 4));
-		LOC43 = ((NU8)(buf[(NI)(TMP1297)]) == (NU8)(59));
+		TMP1219 = addInt(pos, ((NI) 4));
+		LOC43 = ((NU8)(buf[(NI)(TMP1219)]) == (NU8)(59));
 		LA50: ;
 		if (!LOC43) goto LA51;
 		nimln(350, "parsexml.nim");
 		(*dest) = addChar((*dest), 39);
 		nimln(351, "parsexml.nim");
-		TMP1298 = addInt(pos, ((NI) 4));
-		pos = (NI)(TMP1298);
+		TMP1220 = addInt(pos, ((NI) 4));
+		pos = (NI)(TMP1220);
 	}
 	goto LA1;
 	LA51: ;
@@ -1014,11 +1014,11 @@ appendString((*dest), LOC18);
 		NIM_BOOL LOC55;
 		NIM_BOOL LOC56;
 		NIM_BOOL LOC57;
-		NI TMP1299;
-		NI TMP1300;
-		NI TMP1301;
-		NI TMP1302;
-		NI TMP1303;
+		NI TMP1221;
+		NI TMP1222;
+		NI TMP1223;
+		NI TMP1224;
+		NI TMP1225;
 		nimln(353, "parsexml.nim");
 		LOC54 = 0;
 		nimln(352, "parsexml.nim");
@@ -1027,31 +1027,31 @@ appendString((*dest), LOC18);
 		LOC57 = 0;
 		LOC57 = ((NU8)(buf[pos]) == (NU8)(113));
 		if (!(LOC57)) goto LA58;
-		TMP1299 = addInt(pos, ((NI) 1));
-		LOC57 = ((NU8)(buf[(NI)(TMP1299)]) == (NU8)(117));
+		TMP1221 = addInt(pos, ((NI) 1));
+		LOC57 = ((NU8)(buf[(NI)(TMP1221)]) == (NU8)(117));
 		LA58: ;
 		LOC56 = LOC57;
 		if (!(LOC56)) goto LA59;
-		TMP1300 = addInt(pos, ((NI) 2));
-		LOC56 = ((NU8)(buf[(NI)(TMP1300)]) == (NU8)(111));
+		TMP1222 = addInt(pos, ((NI) 2));
+		LOC56 = ((NU8)(buf[(NI)(TMP1222)]) == (NU8)(111));
 		LA59: ;
 		LOC55 = LOC56;
 		if (!(LOC55)) goto LA60;
 		nimln(353, "parsexml.nim");
-		TMP1301 = addInt(pos, ((NI) 3));
-		LOC55 = ((NU8)(buf[(NI)(TMP1301)]) == (NU8)(116));
+		TMP1223 = addInt(pos, ((NI) 3));
+		LOC55 = ((NU8)(buf[(NI)(TMP1223)]) == (NU8)(116));
 		LA60: ;
 		LOC54 = LOC55;
 		if (!(LOC54)) goto LA61;
-		TMP1302 = addInt(pos, ((NI) 4));
-		LOC54 = ((NU8)(buf[(NI)(TMP1302)]) == (NU8)(59));
+		TMP1224 = addInt(pos, ((NI) 4));
+		LOC54 = ((NU8)(buf[(NI)(TMP1224)]) == (NU8)(59));
 		LA61: ;
 		if (!LOC54) goto LA62;
 		nimln(354, "parsexml.nim");
 		(*dest) = addChar((*dest), 34);
 		nimln(355, "parsexml.nim");
-		TMP1303 = addInt(pos, ((NI) 4));
-		pos = (NI)(TMP1303);
+		TMP1225 = addInt(pos, ((NI) 4));
+		pos = (NI)(TMP1225);
 	}
 	goto LA1;
 	LA62: ;
@@ -1059,7 +1059,7 @@ appendString((*dest), LOC18);
 		nimln(357, "parsexml.nim");
 		(*my).Sup.bufpos = pos;
 		nimln(358, "parsexml.nim");
-		parsename_232614(my, dest);
+		parsename_220614(my, dest);
 		nimln(359, "parsexml.nim");
 		pos = (*my).Sup.bufpos;
 		nimln(360, "parsexml.nim");
@@ -1079,17 +1079,17 @@ appendString((*dest), LOC18);
 	LA1: ;
 	nimln(364, "parsexml.nim");
 	{
-		NI TMP1304;
+		NI TMP1226;
 		if (!((NU8)(buf[pos]) == (NU8)(59))) goto LA72;
 		nimln(365, "parsexml.nim");
-		TMP1304 = addInt(pos, ((NI) 1));
-		pos = (NI)(TMP1304);
+		TMP1226 = addInt(pos, ((NI) 1));
+		pos = (NI)(TMP1226);
 	}
 	goto LA70;
 	LA72: ;
 	{
 		nimln(367, "parsexml.nim");
-		markerror_232435(my, ((NU8) 3));
+		markerror_220435(my, ((NU8) 3));
 	}
 	LA70: ;
 	nimln(368, "parsexml.nim");
@@ -1097,16 +1097,16 @@ appendString((*dest), LOC18);
 	popFrame();
 }
 
-N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
-	NI TMP1305;
+N_NIMCALL(void, parsepi_220877)(Xmlparser220021* my) {
+	NI TMP1227;
 	NI pos;
 	NCSTRING buf;
 	nimfr("parsePI", "parsexml.nim")
 	nimln(371, "parsexml.nim");
-	TMP1305 = addInt((*my).Sup.bufpos, ((NI) 2));
-	(*my).Sup.bufpos = (NI)(TMP1305);
+	TMP1227 = addInt((*my).Sup.bufpos, ((NI) 2));
+	(*my).Sup.bufpos = (NI)(TMP1227);
 	nimln(372, "parsexml.nim");
-	parsename_232614(my, (&(*my).a));
+	parsename_220614(my, (&(*my).a));
 	nimln(373, "parsexml.nim");
 	pos = (*my).Sup.bufpos;
 	nimln(374, "parsexml.nim");
@@ -1121,23 +1121,23 @@ N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
 			case 0:
 			{
 				nimln(379, "parsexml.nim");
-				markerror_232435(my, ((NU8) 4));
+				markerror_220435(my, ((NU8) 4));
 				nimln(380, "parsexml.nim");
 				goto LA1;
 			}
 			break;
 			case 63:
 			{
-				NI TMP1308;
+				NI TMP1230;
 				nimln(382, "parsexml.nim");
 				{
-					NI TMP1306;
-					NI TMP1307;
-					TMP1306 = addInt(pos, ((NI) 1));
-					if (!((NU8)(buf[(NI)(TMP1306)]) == (NU8)(62))) goto LA7;
+					NI TMP1228;
+					NI TMP1229;
+					TMP1228 = addInt(pos, ((NI) 1));
+					if (!((NU8)(buf[(NI)(TMP1228)]) == (NU8)(62))) goto LA7;
 					nimln(383, "parsexml.nim");
-					TMP1307 = addInt(pos, ((NI) 2));
-					pos = (NI)(TMP1307);
+					TMP1229 = addInt(pos, ((NI) 2));
+					pos = (NI)(TMP1229);
 					nimln(384, "parsexml.nim");
 					goto LA1;
 				}
@@ -1145,17 +1145,17 @@ N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
 				nimln(385, "parsexml.nim");
 				(*my).b = addChar((*my).b, 63);
 				nimln(386, "parsexml.nim");
-				TMP1308 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1308);
+				TMP1230 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1230);
 			}
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC10;
+				Baselexer168024* LOC10;
 				nimln(389, "parsexml.nim");
 				LOC10 = 0;
 				LOC10 = &my->Sup;
-				pos = handlecr_191068(LOC10, pos);
+				pos = handlecr_168071(LOC10, pos);
 				nimln(390, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(391, "parsexml.nim");
@@ -1164,11 +1164,11 @@ N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC12;
+				Baselexer168024* LOC12;
 				nimln(393, "parsexml.nim");
 				LOC12 = 0;
 				LOC12 = &my->Sup;
-				pos = handlelf_191076(LOC12, pos);
+				pos = handlelf_168079(LOC12, pos);
 				nimln(394, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(395, "parsexml.nim");
@@ -1177,12 +1177,12 @@ N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
 			break;
 			default:
 			{
-				NI TMP1309;
+				NI TMP1231;
 				nimln(397, "parsexml.nim");
 				(*my).b = addChar((*my).b, buf[pos]);
 				nimln(398, "parsexml.nim");
-				TMP1309 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1309);
+				TMP1231 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1231);
 			}
 			break;
 			}
@@ -1195,15 +1195,15 @@ N_NIMCALL(void, parsepi_232877)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my) {
+N_NIMCALL(void, parsespecial_220933)(Xmlparser220021* my) {
 	NI pos;
-	NI TMP1310;
+	NI TMP1232;
 	NCSTRING buf;
 	NI opentags;
 	nimfr("parseSpecial", "parsexml.nim")
 	nimln(404, "parsexml.nim");
-	TMP1310 = addInt((*my).Sup.bufpos, ((NI) 2));
-	pos = (NI)(TMP1310);
+	TMP1232 = addInt((*my).Sup.bufpos, ((NI) 2));
+	pos = (NI)(TMP1232);
 	nimln(405, "parsexml.nim");
 	buf = (*my).Sup.buf;
 	nimln(406, "parsexml.nim");
@@ -1216,57 +1216,57 @@ N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my) {
 			case 0:
 			{
 				nimln(410, "parsexml.nim");
-				markerror_232435(my, ((NU8) 5));
+				markerror_220435(my, ((NU8) 5));
 				nimln(411, "parsexml.nim");
 				goto LA1;
 			}
 			break;
 			case 60:
 			{
-				NI TMP1311;
-				NI TMP1312;
+				NI TMP1233;
+				NI TMP1234;
 				nimln(413, "parsexml.nim");
-				TMP1311 = addInt(opentags, ((NI) 1));
-				opentags = (NI)(TMP1311);
+				TMP1233 = addInt(opentags, ((NI) 1));
+				opentags = (NI)(TMP1233);
 				nimln(414, "parsexml.nim");
-				TMP1312 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1312);
+				TMP1234 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1234);
 				nimln(415, "parsexml.nim");
 				(*my).a = addChar((*my).a, 60);
 			}
 			break;
 			case 62:
 			{
-				NI TMP1314;
-				NI TMP1315;
+				NI TMP1236;
+				NI TMP1237;
 				nimln(417, "parsexml.nim");
 				{
-					NI TMP1313;
+					NI TMP1235;
 					if (!(opentags <= ((NI) 0))) goto LA8;
 					nimln(418, "parsexml.nim");
-					TMP1313 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP1313);
+					TMP1235 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP1235);
 					nimln(419, "parsexml.nim");
 					goto LA1;
 				}
 				LA8: ;
 				nimln(420, "parsexml.nim");
-				TMP1314 = subInt(opentags, ((NI) 1));
-				opentags = (NI)(TMP1314);
+				TMP1236 = subInt(opentags, ((NI) 1));
+				opentags = (NI)(TMP1236);
 				nimln(421, "parsexml.nim");
-				TMP1315 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1315);
+				TMP1237 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1237);
 				nimln(422, "parsexml.nim");
 				(*my).a = addChar((*my).a, 62);
 			}
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC11;
+				Baselexer168024* LOC11;
 				nimln(424, "parsexml.nim");
 				LOC11 = 0;
 				LOC11 = &my->Sup;
-				pos = handlecr_191068(LOC11, pos);
+				pos = handlecr_168071(LOC11, pos);
 				nimln(425, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(426, "parsexml.nim");
@@ -1275,11 +1275,11 @@ N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC13;
+				Baselexer168024* LOC13;
 				nimln(428, "parsexml.nim");
 				LOC13 = 0;
 				LOC13 = &my->Sup;
-				pos = handlelf_191076(LOC13, pos);
+				pos = handlelf_168079(LOC13, pos);
 				nimln(429, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(430, "parsexml.nim");
@@ -1288,12 +1288,12 @@ N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my) {
 			break;
 			default:
 			{
-				NI TMP1316;
+				NI TMP1238;
 				nimln(432, "parsexml.nim");
 				(*my).a = addChar((*my).a, buf[pos]);
 				nimln(433, "parsexml.nim");
-				TMP1316 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1316);
+				TMP1238 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1238);
 			}
 			break;
 			}
@@ -1306,14 +1306,14 @@ N_NIMCALL(void, parsespecial_232933)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my) {
-	NI TMP1317;
+N_NIMCALL(void, parsetag_221007)(Xmlparser220021* my) {
+	NI TMP1239;
 	nimfr("parseTag", "parsexml.nim")
 {	nimln(438, "parsexml.nim");
-	TMP1317 = addInt((*my).Sup.bufpos, ((NI) 1));
-	(*my).Sup.bufpos = (NI)(TMP1317);
+	TMP1239 = addInt((*my).Sup.bufpos, ((NI) 1));
+	(*my).Sup.bufpos = (NI)(TMP1239);
 	nimln(439, "parsexml.nim");
-	parsename_232614(my, (&(*my).a));
+	parsename_220614(my, (&(*my).a));
 	nimln(441, "parsexml.nim");
 	{
 		if (!(((*my).a ? (*my).a->Sup.len : 0) == ((NI) 0))) goto LA3;
@@ -1326,7 +1326,7 @@ N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my) {
 	}
 	LA3: ;
 	nimln(445, "parsexml.nim");
-	parsewhitespace_232578(my, NIM_TRUE);
+	parsewhitespace_220578(my, NIM_TRUE);
 	nimln(446, "parsexml.nim");
 	{
 		if (!(((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) >= ((NU8)(65)) && ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) <= ((NU8)(90)) || ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) >= ((NU8)(97)) && ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) <= ((NU8)(122)) || ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) == ((NU8)(95)) || ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) == ((NU8)(58)) || ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) >= ((NU8)(128)) && ((NU8)((*my).Sup.buf[(*my).Sup.bufpos])) <= ((NU8)(255)))) goto LA7;
@@ -1345,18 +1345,18 @@ N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my) {
 		nimln(453, "parsexml.nim");
 		{
 			NIM_BOOL LOC12;
-			NI TMP1318;
-			NI TMP1319;
+			NI TMP1240;
+			NI TMP1241;
 			LOC12 = 0;
 			LOC12 = ((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(47));
 			if (!(LOC12)) goto LA13;
-			TMP1318 = addInt((*my).Sup.bufpos, ((NI) 1));
-			LOC12 = ((NU8)((*my).Sup.buf[(NI)(TMP1318)]) == (NU8)(62));
+			TMP1240 = addInt((*my).Sup.bufpos, ((NI) 1));
+			LOC12 = ((NU8)((*my).Sup.buf[(NI)(TMP1240)]) == (NU8)(62));
 			LA13: ;
 			if (!LOC12) goto LA14;
 			nimln(454, "parsexml.nim");
-			TMP1319 = addInt((*my).Sup.bufpos, ((NI) 2));
-			(*my).Sup.bufpos = (NI)(TMP1319);
+			TMP1241 = addInt((*my).Sup.bufpos, ((NI) 2));
+			(*my).Sup.bufpos = (NI)(TMP1241);
 			nimln(455, "parsexml.nim");
 			(*my).state = ((NU8) 3);
 			nimln(456, "parsexml.nim");
@@ -1365,18 +1365,18 @@ N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my) {
 		goto LA10;
 		LA14: ;
 		{
-			NI TMP1320;
+			NI TMP1242;
 			nimln(457, "parsexml.nim");
 			if (!((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(62))) goto LA17;
 			nimln(458, "parsexml.nim");
-			TMP1320 = addInt((*my).Sup.bufpos, ((NI) 1));
-			(*my).Sup.bufpos = (NI)(TMP1320);
+			TMP1242 = addInt((*my).Sup.bufpos, ((NI) 1));
+			(*my).Sup.bufpos = (NI)(TMP1242);
 		}
 		goto LA10;
 		LA17: ;
 		{
 			nimln(460, "parsexml.nim");
-			markerror_232435(my, ((NU8) 5));
+			markerror_220435(my, ((NU8) 5));
 		}
 		LA10: ;
 	}
@@ -1385,29 +1385,29 @@ N_NIMCALL(void, parsetag_233007)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parseendtag_233055)(Xmlparser232018* my) {
-	NI TMP1321;
+N_NIMCALL(void, parseendtag_221055)(Xmlparser220021* my) {
+	NI TMP1243;
 	nimfr("parseEndTag", "parsexml.nim")
 	nimln(463, "parsexml.nim");
-	TMP1321 = addInt((*my).Sup.bufpos, ((NI) 2));
-	(*my).Sup.bufpos = (NI)(TMP1321);
+	TMP1243 = addInt((*my).Sup.bufpos, ((NI) 2));
+	(*my).Sup.bufpos = (NI)(TMP1243);
 	nimln(464, "parsexml.nim");
-	parsename_232614(my, (&(*my).a));
+	parsename_220614(my, (&(*my).a));
 	nimln(465, "parsexml.nim");
-	parsewhitespace_232578(my, NIM_TRUE);
+	parsewhitespace_220578(my, NIM_TRUE);
 	nimln(466, "parsexml.nim");
 	{
-		NI TMP1322;
+		NI TMP1244;
 		if (!((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(62))) goto LA3;
 		nimln(467, "parsexml.nim");
-		TMP1322 = addInt((*my).Sup.bufpos, ((NI) 1));
-		(*my).Sup.bufpos = (NI)(TMP1322);
+		TMP1244 = addInt((*my).Sup.bufpos, ((NI) 1));
+		(*my).Sup.bufpos = (NI)(TMP1244);
 	}
 	goto LA1;
 	LA3: ;
 	{
 		nimln(469, "parsexml.nim");
-		markerror_232435(my, ((NU8) 5));
+		markerror_220435(my, ((NU8) 5));
 	}
 	LA1: ;
 	nimln(470, "parsexml.nim");
@@ -1415,8 +1415,8 @@ N_NIMCALL(void, parseendtag_233055)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
-	NI TMP1323;
+N_NIMCALL(void, parseattribute_221084)(Xmlparser220021* my) {
+	NI TMP1245;
 	NI pos;
 	NCSTRING buf;
 	nimfr("parseAttribute", "parsexml.nim")
@@ -1427,32 +1427,32 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 	nimln(475, "parsexml.nim");
 	(*my).b = setLengthStr((*my).b, ((NI) 0));
 	nimln(476, "parsexml.nim");
-	parsename_232614(my, (&(*my).a));
+	parsename_220614(my, (&(*my).a));
 	nimln(478, "parsexml.nim");
 	{
 		if (!(((*my).a ? (*my).a->Sup.len : 0) == ((NI) 0))) goto LA3;
 		nimln(479, "parsexml.nim");
-		markerror_232435(my, ((NU8) 5));
+		markerror_220435(my, ((NU8) 5));
 		nimln(480, "parsexml.nim");
 		goto BeforeRet;
 	}
 	LA3: ;
 	nimln(481, "parsexml.nim");
-	parsewhitespace_232578(my, NIM_TRUE);
+	parsewhitespace_220578(my, NIM_TRUE);
 	nimln(482, "parsexml.nim");
 	{
 		if (!!(((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(61)))) goto LA7;
 		nimln(483, "parsexml.nim");
-		markerror_232435(my, ((NU8) 6));
+		markerror_220435(my, ((NU8) 6));
 		nimln(484, "parsexml.nim");
 		goto BeforeRet;
 	}
 	LA7: ;
 	nimln(485, "parsexml.nim");
-	TMP1323 = addInt((*my).Sup.bufpos, ((NI) 1));
-	(*my).Sup.bufpos = (NI)(TMP1323);
+	TMP1245 = addInt((*my).Sup.bufpos, ((NI) 1));
+	(*my).Sup.bufpos = (NI)(TMP1245);
 	nimln(486, "parsexml.nim");
-	parsewhitespace_232578(my, NIM_TRUE);
+	parsewhitespace_220578(my, NIM_TRUE);
 	nimln(488, "parsexml.nim");
 	pos = (*my).Sup.bufpos;
 	nimln(489, "parsexml.nim");
@@ -1461,15 +1461,15 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 	{
 		NIM_CHAR quote;
 		NIM_BOOL pendingspace;
-		NI TMP1324;
+		NI TMP1246;
 		if (!(((NU8)(buf[pos])) == ((NU8)(39)) || ((NU8)(buf[pos])) == ((NU8)(34)))) goto LA11;
 		nimln(491, "parsexml.nim");
 		quote = buf[pos];
 		nimln(492, "parsexml.nim");
 		pendingspace = NIM_FALSE;
 		nimln(493, "parsexml.nim");
-		TMP1324 = addInt(pos, ((NI) 1));
-		pos = (NI)(TMP1324);
+		TMP1246 = addInt(pos, ((NI) 1));
+		pos = (NI)(TMP1246);
 		{
 			nimln(494, "parsexml.nim");
 			while (1) {
@@ -1478,7 +1478,7 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 				case 0:
 				{
 					nimln(497, "parsexml.nim");
-					markerror_232435(my, ((NU8) 7));
+					markerror_220435(my, ((NU8) 7));
 					nimln(498, "parsexml.nim");
 					goto LA13;
 				}
@@ -1497,7 +1497,7 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 					nimln(503, "parsexml.nim");
 					(*my).Sup.bufpos = pos;
 					nimln(504, "parsexml.nim");
-					parseentity_232664(my, (&(*my).b));
+					parseentity_220664(my, (&(*my).b));
 					nimln(505, "parsexml.nim");
 					(*my).kind = ((NU8) 9);
 					nimln(506, "parsexml.nim");
@@ -1507,21 +1507,21 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 				case 32:
 				case 9:
 				{
-					NI TMP1325;
+					NI TMP1247;
 					nimln(508, "parsexml.nim");
 					pendingspace = NIM_TRUE;
 					nimln(509, "parsexml.nim");
-					TMP1325 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP1325);
+					TMP1247 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP1247);
 				}
 				break;
 				case 13:
 				{
-					Baselexer191021* LOC23;
+					Baselexer168024* LOC23;
 					nimln(511, "parsexml.nim");
 					LOC23 = 0;
 					LOC23 = &my->Sup;
-					pos = handlecr_191068(LOC23, pos);
+					pos = handlecr_168071(LOC23, pos);
 					nimln(512, "parsexml.nim");
 					buf = (*my).Sup.buf;
 					nimln(513, "parsexml.nim");
@@ -1530,11 +1530,11 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 				break;
 				case 10:
 				{
-					Baselexer191021* LOC25;
+					Baselexer168024* LOC25;
 					nimln(515, "parsexml.nim");
 					LOC25 = 0;
 					LOC25 = &my->Sup;
-					pos = handlelf_191076(LOC25, pos);
+					pos = handlelf_168079(LOC25, pos);
 					nimln(516, "parsexml.nim");
 					buf = (*my).Sup.buf;
 					nimln(517, "parsexml.nim");
@@ -1545,18 +1545,18 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 				{
 					nimln(519, "parsexml.nim");
 					{
-						NI TMP1326;
+						NI TMP1248;
 						if (!((NU8)(buf[pos]) == (NU8)(quote))) goto LA29;
 						nimln(520, "parsexml.nim");
-						TMP1326 = addInt(pos, ((NI) 1));
-						pos = (NI)(TMP1326);
+						TMP1248 = addInt(pos, ((NI) 1));
+						pos = (NI)(TMP1248);
 						nimln(521, "parsexml.nim");
 						goto LA13;
 					}
 					goto LA27;
 					LA29: ;
 					{
-						NI TMP1327;
+						NI TMP1249;
 						nimln(523, "parsexml.nim");
 						{
 							if (!pendingspace) goto LA34;
@@ -1569,8 +1569,8 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 						nimln(526, "parsexml.nim");
 						(*my).b = addChar((*my).b, buf[pos]);
 						nimln(527, "parsexml.nim");
-						TMP1327 = addInt(pos, ((NI) 1));
-						pos = (NI)(TMP1327);
+						TMP1249 = addInt(pos, ((NI) 1));
+						pos = (NI)(TMP1249);
 					}
 					LA27: ;
 				}
@@ -1583,18 +1583,18 @@ N_NIMCALL(void, parseattribute_233084)(Xmlparser232018* my) {
 	LA11: ;
 	{
 		nimln(529, "parsexml.nim");
-		markerror_232435(my, ((NU8) 7));
+		markerror_220435(my, ((NU8) 7));
 	}
 	LA9: ;
 	nimln(530, "parsexml.nim");
 	(*my).Sup.bufpos = pos;
 	nimln(531, "parsexml.nim");
-	parsewhitespace_232578(my, NIM_TRUE);
+	parsewhitespace_220578(my, NIM_TRUE);
 	}BeforeRet: ;
 	popFrame();
 }
 
-N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my) {
+N_NIMCALL(void, parsechardata_221163)(Xmlparser220021* my) {
 	NI pos;
 	NCSTRING buf;
 	nimfr("parseCharData", "parsexml.nim")
@@ -1617,11 +1617,11 @@ N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my) {
 			break;
 			case 13:
 			{
-				Baselexer191021* LOC5;
+				Baselexer168024* LOC5;
 				nimln(541, "parsexml.nim");
 				LOC5 = 0;
 				LOC5 = &my->Sup;
-				pos = handlecr_191068(LOC5, pos);
+				pos = handlecr_168071(LOC5, pos);
 				nimln(542, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(543, "parsexml.nim");
@@ -1630,11 +1630,11 @@ N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my) {
 			break;
 			case 10:
 			{
-				Baselexer191021* LOC7;
+				Baselexer168024* LOC7;
 				nimln(545, "parsexml.nim");
 				LOC7 = 0;
 				LOC7 = &my->Sup;
-				pos = handlelf_191076(LOC7, pos);
+				pos = handlelf_168079(LOC7, pos);
 				nimln(546, "parsexml.nim");
 				buf = (*my).Sup.buf;
 				nimln(547, "parsexml.nim");
@@ -1643,12 +1643,12 @@ N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my) {
 			break;
 			default:
 			{
-				NI TMP1328;
+				NI TMP1250;
 				nimln(549, "parsexml.nim");
 				(*my).a = addChar((*my).a, buf[pos]);
 				nimln(550, "parsexml.nim");
-				TMP1328 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP1328);
+				TMP1250 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP1250);
 			}
 			break;
 			}
@@ -1661,7 +1661,7 @@ N_NIMCALL(void, parsechardata_233163)(Xmlparser232018* my) {
 	popFrame();
 }
 
-N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
+N_NIMCALL(void, rawgettok_221191)(Xmlparser220021* my) {
 	NI pos;
 	NCSTRING buf;
 	nimfr("rawGetTok", "parsexml.nim")
@@ -1677,14 +1677,14 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 	switch (((NU8)(buf[pos]))) {
 	case 60:
 	{
-		NI TMP1329;
+		NI TMP1251;
 		nimln(561, "parsexml.nim");
-		TMP1329 = addInt(pos, ((NI) 1));
-		switch (((NU8)(buf[(NI)(TMP1329)]))) {
+		TMP1251 = addInt(pos, ((NI) 1));
+		switch (((NU8)(buf[(NI)(TMP1251)]))) {
 		case 47:
 		{
 			nimln(563, "parsexml.nim");
-			parseendtag_233055(my);
+			parseendtag_221055(my);
 		}
 		break;
 		case 33:
@@ -1697,13 +1697,13 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 				NIM_BOOL LOC9;
 				NIM_BOOL LOC10;
 				NIM_BOOL LOC11;
-				NI TMP1330;
-				NI TMP1331;
-				NI TMP1332;
-				NI TMP1333;
-				NI TMP1334;
-				NI TMP1335;
-				NI TMP1336;
+				NI TMP1252;
+				NI TMP1253;
+				NI TMP1254;
+				NI TMP1255;
+				NI TMP1256;
+				NI TMP1257;
+				NI TMP1258;
 				nimln(566, "parsexml.nim");
 				LOC6 = 0;
 				LOC7 = 0;
@@ -1712,66 +1712,66 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 				LOC9 = 0;
 				LOC10 = 0;
 				LOC11 = 0;
-				TMP1330 = addInt(pos, ((NI) 2));
-				LOC11 = ((NU8)(buf[(NI)(TMP1330)]) == (NU8)(91));
+				TMP1252 = addInt(pos, ((NI) 2));
+				LOC11 = ((NU8)(buf[(NI)(TMP1252)]) == (NU8)(91));
 				if (!(LOC11)) goto LA12;
-				TMP1331 = addInt(pos, ((NI) 3));
-				LOC11 = ((NU8)(buf[(NI)(TMP1331)]) == (NU8)(67));
+				TMP1253 = addInt(pos, ((NI) 3));
+				LOC11 = ((NU8)(buf[(NI)(TMP1253)]) == (NU8)(67));
 				LA12: ;
 				LOC10 = LOC11;
 				if (!(LOC10)) goto LA13;
-				TMP1332 = addInt(pos, ((NI) 4));
-				LOC10 = ((NU8)(buf[(NI)(TMP1332)]) == (NU8)(68));
+				TMP1254 = addInt(pos, ((NI) 4));
+				LOC10 = ((NU8)(buf[(NI)(TMP1254)]) == (NU8)(68));
 				LA13: ;
 				LOC9 = LOC10;
 				if (!(LOC9)) goto LA14;
 				nimln(566, "parsexml.nim");
-				TMP1333 = addInt(pos, ((NI) 5));
-				LOC9 = ((NU8)(buf[(NI)(TMP1333)]) == (NU8)(65));
+				TMP1255 = addInt(pos, ((NI) 5));
+				LOC9 = ((NU8)(buf[(NI)(TMP1255)]) == (NU8)(65));
 				LA14: ;
 				LOC8 = LOC9;
 				if (!(LOC8)) goto LA15;
-				TMP1334 = addInt(pos, ((NI) 6));
-				LOC8 = ((NU8)(buf[(NI)(TMP1334)]) == (NU8)(84));
+				TMP1256 = addInt(pos, ((NI) 6));
+				LOC8 = ((NU8)(buf[(NI)(TMP1256)]) == (NU8)(84));
 				LA15: ;
 				LOC7 = LOC8;
 				if (!(LOC7)) goto LA16;
-				TMP1335 = addInt(pos, ((NI) 7));
-				LOC7 = ((NU8)(buf[(NI)(TMP1335)]) == (NU8)(65));
+				TMP1257 = addInt(pos, ((NI) 7));
+				LOC7 = ((NU8)(buf[(NI)(TMP1257)]) == (NU8)(65));
 				LA16: ;
 				LOC6 = LOC7;
 				if (!(LOC6)) goto LA17;
 				nimln(567, "parsexml.nim");
-				TMP1336 = addInt(pos, ((NI) 8));
-				LOC6 = ((NU8)(buf[(NI)(TMP1336)]) == (NU8)(91));
+				TMP1258 = addInt(pos, ((NI) 8));
+				LOC6 = ((NU8)(buf[(NI)(TMP1258)]) == (NU8)(91));
 				LA17: ;
 				if (!LOC6) goto LA18;
 				nimln(568, "parsexml.nim");
-				parsecdata_232446(my);
+				parsecdata_220446(my);
 			}
 			goto LA4;
 			LA18: ;
 			{
 				NIM_BOOL LOC21;
-				NI TMP1337;
-				NI TMP1338;
+				NI TMP1259;
+				NI TMP1260;
 				nimln(569, "parsexml.nim");
 				LOC21 = 0;
-				TMP1337 = addInt(pos, ((NI) 2));
-				LOC21 = ((NU8)(buf[(NI)(TMP1337)]) == (NU8)(45));
+				TMP1259 = addInt(pos, ((NI) 2));
+				LOC21 = ((NU8)(buf[(NI)(TMP1259)]) == (NU8)(45));
 				if (!(LOC21)) goto LA22;
-				TMP1338 = addInt(pos, ((NI) 3));
-				LOC21 = ((NU8)(buf[(NI)(TMP1338)]) == (NU8)(45));
+				TMP1260 = addInt(pos, ((NI) 3));
+				LOC21 = ((NU8)(buf[(NI)(TMP1260)]) == (NU8)(45));
 				LA22: ;
 				if (!LOC21) goto LA23;
 				nimln(570, "parsexml.nim");
-				parsecomment_232492(my);
+				parsecomment_220492(my);
 			}
 			goto LA4;
 			LA23: ;
 			{
 				nimln(572, "parsexml.nim");
-				parsespecial_232933(my);
+				parsespecial_220933(my);
 			}
 			LA4: ;
 		}
@@ -1779,13 +1779,13 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 		case 63:
 		{
 			nimln(574, "parsexml.nim");
-			parsepi_232877(my);
+			parsepi_220877(my);
 		}
 		break;
 		default:
 		{
 			nimln(576, "parsexml.nim");
-			parsetag_233007(my);
+			parsetag_221007(my);
 		}
 		break;
 		}
@@ -1797,7 +1797,7 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 	case 10:
 	{
 		nimln(578, "parsexml.nim");
-		parsewhitespace_232578(my, NIM_FALSE);
+		parsewhitespace_220578(my, NIM_FALSE);
 		nimln(579, "parsexml.nim");
 		(*my).kind = ((NU8) 3);
 	}
@@ -1811,32 +1811,32 @@ N_NIMCALL(void, rawgettok_233191)(Xmlparser232018* my) {
 	case 38:
 	{
 		nimln(583, "parsexml.nim");
-		parseentity_232664(my, (&(*my).a));
+		parseentity_220664(my, (&(*my).a));
 	}
 	break;
 	default:
 	{
 		nimln(585, "parsexml.nim");
-		parsechardata_233163(my);
+		parsechardata_221163(my);
 	}
 	break;
 	}
 	nimln(586, "parsexml.nim");
 	{
 		if (!!(!(((*my).kind == ((NU8) 0))))) goto LA34;
-		failedassertimpl_88817(((NimStringDesc*) &TMP1339));
+		failedassertimpl_88817(((NimStringDesc*) &TMP1261));
 	}
 	LA34: ;
 	popFrame();
 }
 
-N_NIMCALL(void, gettok_233407)(Xmlparser232018* my) {
+N_NIMCALL(void, gettok_221407)(Xmlparser220021* my) {
 	nimfr("getTok", "parsexml.nim")
 	{
 		nimln(589, "parsexml.nim");
 		while (1) {
 			nimln(590, "parsexml.nim");
-			rawgettok_233191(my);
+			rawgettok_221191(my);
 			nimln(591, "parsexml.nim");
 			switch ((*my).kind) {
 			case ((NU8) 4):
@@ -1907,14 +1907,14 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(void, next_233444)(Xmlparser232018* my) {
+N_NIMCALL(void, next_221444)(Xmlparser220021* my) {
 	nimfr("next", "parsexml.nim")
 	nimln(600, "parsexml.nim");
 	switch ((*my).state) {
 	case ((NU8) 1):
 	{
 		nimln(602, "parsexml.nim");
-		gettok_233407(my);
+		gettok_221407(my);
 	}
 	break;
 	case ((NU8) 0):
@@ -1922,18 +1922,18 @@ N_NIMCALL(void, next_233444)(Xmlparser232018* my) {
 		nimln(604, "parsexml.nim");
 		(*my).state = ((NU8) 1);
 		nimln(605, "parsexml.nim");
-		gettok_233407(my);
+		gettok_221407(my);
 		nimln(606, "parsexml.nim");
 		{
 			NIM_BOOL LOC5;
 			LOC5 = 0;
 			LOC5 = ((*my).kind == ((NU8) 5));
 			if (!(LOC5)) goto LA6;
-			LOC5 = eqStrings((*my).a, ((NimStringDesc*) &TMP1340));
+			LOC5 = eqStrings((*my).a, ((NimStringDesc*) &TMP1262));
 			LA6: ;
 			if (!LOC5) goto LA7;
 			nimln(608, "parsexml.nim");
-			gettok_233407(my);
+			gettok_221407(my);
 		}
 		LA7: ;
 	}
@@ -1942,13 +1942,13 @@ N_NIMCALL(void, next_233444)(Xmlparser232018* my) {
 	{
 		nimln(611, "parsexml.nim");
 		{
-			NI TMP1341;
+			NI TMP1263;
 			if (!((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(62))) goto LA12;
 			nimln(612, "parsexml.nim");
 			(*my).kind = ((NU8) 10);
 			nimln(613, "parsexml.nim");
-			TMP1341 = addInt((*my).Sup.bufpos, ((NI) 1));
-			(*my).Sup.bufpos = (NI)(TMP1341);
+			TMP1263 = addInt((*my).Sup.bufpos, ((NI) 1));
+			(*my).Sup.bufpos = (NI)(TMP1263);
 			nimln(614, "parsexml.nim");
 			(*my).state = ((NU8) 1);
 		}
@@ -1956,21 +1956,21 @@ N_NIMCALL(void, next_233444)(Xmlparser232018* my) {
 		LA12: ;
 		{
 			NIM_BOOL LOC15;
-			NI TMP1342;
-			NI TMP1343;
+			NI TMP1264;
+			NI TMP1265;
 			nimln(615, "parsexml.nim");
 			LOC15 = 0;
 			LOC15 = ((NU8)((*my).Sup.buf[(*my).Sup.bufpos]) == (NU8)(47));
 			if (!(LOC15)) goto LA16;
-			TMP1342 = addInt((*my).Sup.bufpos, ((NI) 1));
-			LOC15 = ((NU8)((*my).Sup.buf[(NI)(TMP1342)]) == (NU8)(62));
+			TMP1264 = addInt((*my).Sup.bufpos, ((NI) 1));
+			LOC15 = ((NU8)((*my).Sup.buf[(NI)(TMP1264)]) == (NU8)(62));
 			LA16: ;
 			if (!LOC15) goto LA17;
 			nimln(616, "parsexml.nim");
 			(*my).kind = ((NU8) 10);
 			nimln(617, "parsexml.nim");
-			TMP1343 = addInt((*my).Sup.bufpos, ((NI) 2));
-			(*my).Sup.bufpos = (NI)(TMP1343);
+			TMP1265 = addInt((*my).Sup.bufpos, ((NI) 2));
+			(*my).Sup.bufpos = (NI)(TMP1265);
 			nimln(618, "parsexml.nim");
 			(*my).state = ((NU8) 3);
 		}
@@ -1978,7 +1978,7 @@ N_NIMCALL(void, next_233444)(Xmlparser232018* my) {
 		LA17: ;
 		{
 			nimln(620, "parsexml.nim");
-			parseattribute_233084(my);
+			parseattribute_221084(my);
 		}
 		LA10: ;
 	}

@@ -10,9 +10,9 @@
 #include <string.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Ttrunk122034 Ttrunk122034;
-typedef struct Intset122038 Intset122038;
-typedef struct Ttrunkseq122036 Ttrunkseq122036;
+typedef struct Ttrunk213034 Ttrunk213034;
+typedef struct Intset213038 Intset213038;
+typedef struct Ttrunkseq213036 Ttrunkseq213036;
 typedef struct Tcell46746 Tcell46746;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -38,15 +38,15 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  Intset122038  {
+struct  Intset213038  {
 NI counter;
 NI max;
-Ttrunk122034* head;
-Ttrunkseq122036* data;
+Ttrunk213034* head;
+Ttrunkseq213036* data;
 };
 typedef NI TY27820[8];
-struct  Ttrunk122034  {
-Ttrunk122034* next;
+struct  Ttrunk213034  {
+Ttrunk213034* next;
 NI key;
 TY27820 bits;
 };
@@ -173,11 +173,11 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct Ttrunkseq122036 {
+struct Ttrunkseq213036 {
   TGenericSeq Sup;
-  Ttrunk122034* data[SEQ_DECL_SIZE];
+  Ttrunk213034* data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NIM_BOOL, mustrehash_122055)(NI length, NI counter);
+static N_INLINE(NIM_BOOL, mustrehash_213055)(NI length, NI counter);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
@@ -185,11 +185,11 @@ N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NI, nexttry_122207)(NI h, NI maxhash);
+static N_INLINE(NI, nexttry_213207)(NI h, NI maxhash);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(Ttrunk122034*, intsetget_122218)(Intset122038* t, NI key);
+N_NIMCALL(Ttrunk213034*, intsetget_213218)(Intset213038* t, NI key);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(void, intsetrawinsert_122249)(Intset122038* t, Ttrunkseq122036** data, Ttrunk122034* desc);
+N_NIMCALL(void, intsetrawinsert_213249)(Intset213038* t, Ttrunkseq213036** data, Ttrunk213034* desc);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
 static N_INLINE(void, incref_52622)(Tcell46746* c);
 static N_INLINE(NIM_BOOL, canbecycleroot_50267)(Tcell46746* c);
@@ -199,43 +199,43 @@ static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, decref_52204)(Tcell46746* c);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(void, intsetenlarge_122614)(Intset122038* t);
+N_NIMCALL(void, intsetenlarge_213614)(Intset213038* t);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP510)(void* p, NI op);
-N_NIMCALL(void, TMP511)(void* p, NI op);
+N_NIMCALL(void, TMP1066)(void* p, NI op);
+N_NIMCALL(void, TMP1067)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(Ttrunk122034*, intsetput_122689)(Intset122038* t, NI key);
+N_NIMCALL(Ttrunk213034*, intsetput_213689)(Intset213038* t, NI key);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
-N_NIMCALL(NIM_BOOL, contains_122829)(Intset122038* s, NI key);
-N_NIMCALL(void, incl_122856)(Intset122038* s, NI key);
-N_NIMCALL(void, excl_122871)(Intset122038* s, NI key);
-N_NIMCALL(NIM_BOOL, containsorincl_122898)(Intset122038* s, NI key);
-N_NIMCALL(void, initintset_122927)(Intset122038* Result);
-N_NIMCALL(void, assign_122946)(Intset122038* dest, Intset122038* src);
-N_NIMCALL(NimStringDesc*, HEX24_123318)(Intset122038* s);
+N_NIMCALL(NIM_BOOL, contains_213829)(Intset213038* s, NI key);
+N_NIMCALL(void, incl_213856)(Intset213038* s, NI key);
+N_NIMCALL(void, excl_213871)(Intset213038* s, NI key);
+N_NIMCALL(NIM_BOOL, containsorincl_213898)(Intset213038* s, NI key);
+N_NIMCALL(void, initintset_213927)(Intset213038* Result);
+N_NIMCALL(void, assign_213946)(Intset213038* dest, Intset213038* src);
+N_NIMCALL(NimStringDesc*, HEX24_214318)(Intset213038* s);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
-static N_INLINE(NIM_BOOL, empty_123363)(Intset122038* s);
-STRING_LITERAL(TMP497, "counter < length ", 17);
-STRING_LITERAL(TMP503, "not (data[h] == desc) ", 22);
-STRING_LITERAL(TMP504, "data[h] == nil ", 15);
-STRING_LITERAL(TMP515, "t.data[h] == nil ", 17);
-STRING_LITERAL(TMP516, "dest.data[h] == nil ", 20);
-STRING_LITERAL(TMP517, "{", 1);
-STRING_LITERAL(TMP518, ", ", 2);
-STRING_LITERAL(TMP521, "}", 1);
+static N_INLINE(NIM_BOOL, empty_214363)(Intset213038* s);
+STRING_LITERAL(TMP1053, "counter < length ", 17);
+STRING_LITERAL(TMP1059, "not (data[h] == desc) ", 22);
+STRING_LITERAL(TMP1060, "data[h] == nil ", 15);
+STRING_LITERAL(TMP1071, "t.data[h] == nil ", 17);
+STRING_LITERAL(TMP1072, "dest.data[h] == nil ", 20);
+STRING_LITERAL(TMP1073, "{", 1);
+STRING_LITERAL(TMP1074, ", ", 2);
+STRING_LITERAL(TMP1077, "}", 1);
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
-TNimType NTI122034; /* TTrunk */
+TNimType NTI213034; /* TTrunk */
 extern TNimType NTI108; /* int */
 extern TNimType NTI27820; /* array[0..7, int] */
-TNimType NTI122032; /* PTrunk */
-TNimType NTI122036; /* TTrunkSeq */
+TNimType NTI213032; /* PTrunk */
+TNimType NTI213036; /* TTrunkSeq */
 
 static N_INLINE(NI, subInt)(NI a, NI b) {
 	NI result;
@@ -284,28 +284,28 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NIM_BOOL, mustrehash_122055)(NI length, NI counter) {
+static N_INLINE(NIM_BOOL, mustrehash_213055)(NI length, NI counter) {
 	NIM_BOOL result;
 	NIM_BOOL LOC5;
-	NI TMP498;
-	NI TMP499;
-	NI TMP500;
+	NI TMP1054;
+	NI TMP1055;
+	NI TMP1056;
 	nimfr("mustRehash", "intsets.nim")
 	result = 0;
 	nimln(48, "intsets.nim");
 	{
 		if (!!((counter < length))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP497));
+		failedassertimpl_88817(((NimStringDesc*) &TMP1053));
 	}
 	LA3: ;
 	nimln(49, "intsets.nim");
 	LOC5 = 0;
-	TMP498 = mulInt(length, ((NI) 2));
-	TMP499 = mulInt(counter, ((NI) 3));
-	LOC5 = ((NI)(TMP498) < (NI)(TMP499));
+	TMP1054 = mulInt(length, ((NI) 2));
+	TMP1055 = mulInt(counter, ((NI) 3));
+	LOC5 = ((NI)(TMP1054) < (NI)(TMP1055));
 	if (LOC5) goto LA6;
-	TMP500 = subInt(length, counter);
-	LOC5 = ((NI)(TMP500) < ((NI) 4));
+	TMP1056 = subInt(length, counter);
+	LOC5 = ((NI)(TMP1056) < ((NI) 4));
 	LA6: ;
 	result = LOC5;
 	popFrame();
@@ -332,22 +332,22 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, nexttry_122207)(NI h, NI maxhash) {
+static N_INLINE(NI, nexttry_213207)(NI h, NI maxhash) {
 	NI result;
-	NI TMP501;
-	NI TMP502;
+	NI TMP1057;
+	NI TMP1058;
 	nimfr("nextTry", "intsets.nim")
 	result = 0;
 	nimln(52, "intsets.nim");
-	TMP501 = mulInt(((NI) 5), h);
-	TMP502 = addInt((NI)(TMP501), ((NI) 1));
-	result = (NI)((NI)(TMP502) & maxhash);
+	TMP1057 = mulInt(((NI) 5), h);
+	TMP1058 = addInt((NI)(TMP1057), ((NI) 1));
+	result = (NI)((NI)(TMP1058) & maxhash);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ttrunk122034*, intsetget_122218)(Intset122038* t, NI key) {
-	Ttrunk122034* result;
+N_NIMCALL(Ttrunk213034*, intsetget_213218)(Intset213038* t, NI key) {
+	Ttrunk213034* result;
 	NI h;
 	nimfr("intSetGet", "intsets.nim")
 {	result = 0;
@@ -369,7 +369,7 @@ N_NIMCALL(Ttrunk122034*, intsetget_122218)(Intset122038* t, NI key) {
 			}
 			LA5: ;
 			nimln(59, "intsets.nim");
-			h = nexttry_122207(h, (*t).max);
+			h = nexttry_213207(h, (*t).max);
 		} LA2: ;
 	}
 	nimln(60, "intsets.nim");
@@ -490,7 +490,7 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, intsetrawinsert_122249)(Intset122038* t, Ttrunkseq122036** data, Ttrunk122034* desc) {
+N_NIMCALL(void, intsetrawinsert_213249)(Intset213038* t, Ttrunkseq213036** data, Ttrunk213034* desc) {
 	NI h;
 	nimfr("intSetRawInsert", "intsets.nim")
 	nimln(63, "intsets.nim");
@@ -504,18 +504,18 @@ N_NIMCALL(void, intsetrawinsert_122249)(Intset122038* t, Ttrunkseq122036** data,
 			{
 				if ((NU)(h) >= (NU)((*data)->Sup.len)) raiseIndexError();
 				if (!!(!(((*data)->data[h] == desc)))) goto LA5;
-				failedassertimpl_88817(((NimStringDesc*) &TMP503));
+				failedassertimpl_88817(((NimStringDesc*) &TMP1059));
 			}
 			LA5: ;
 			nimln(66, "intsets.nim");
-			h = nexttry_122207(h, (*t).max);
+			h = nexttry_213207(h, (*t).max);
 		} LA2: ;
 	}
 	nimln(67, "intsets.nim");
 	{
 		if ((NU)(h) >= (NU)((*data)->Sup.len)) raiseIndexError();
 		if (!!(((*data)->data[h] == NIM_NIL))) goto LA9;
-		failedassertimpl_88817(((NimStringDesc*) &TMP504));
+		failedassertimpl_88817(((NimStringDesc*) &TMP1060));
 	}
 	LA9: ;
 	nimln(68, "intsets.nim");
@@ -547,69 +547,69 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP510)(void* p, NI op) {
-	Ttrunk122034* a;
+N_NIMCALL(void, TMP1066)(void* p, NI op) {
+	Ttrunk213034* a;
 	NI LOC1;
-	a = (Ttrunk122034*)p;
+	a = (Ttrunk213034*)p;
 	nimGCvisit((void*)(*a).next, op);
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < 8; LOC1++) {
 	}
 }
-N_NIMCALL(void, TMP511)(void* p, NI op) {
-	Ttrunkseq122036* a;
+N_NIMCALL(void, TMP1067)(void* p, NI op) {
+	Ttrunkseq213036* a;
 	NI LOC1;
-	a = (Ttrunkseq122036*)p;
+	a = (Ttrunkseq213036*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	nimGCvisit((void*)a->data[LOC1], op);
 	}
 }
 
-N_NIMCALL(void, intsetenlarge_122614)(Intset122038* t) {
-	Ttrunkseq122036* n;
+N_NIMCALL(void, intsetenlarge_213614)(Intset213038* t) {
+	Ttrunkseq213036* n;
 	NI oldmax;
-	NI TMP505;
-	NI TMP506;
-	NI TMP507;
-	NI TMP508;
-	Ttrunkseq122036* LOC8;
+	NI TMP1061;
+	NI TMP1062;
+	NI TMP1063;
+	NI TMP1064;
+	Ttrunkseq213036* LOC8;
 	nimfr("intSetEnlarge", "intsets.nim")
 	n = 0;
 	nimln(72, "intsets.nim");
 	oldmax = (*t).max;
 	nimln(73, "intsets.nim");
-	TMP505 = addInt((*t).max, ((NI) 1));
-	TMP506 = mulInt((NI)(TMP505), ((NI) 2));
-	TMP507 = subInt((NI)(TMP506), ((NI) 1));
-	(*t).max = (NI)(TMP507);
+	TMP1061 = addInt((*t).max, ((NI) 1));
+	TMP1062 = mulInt((NI)(TMP1061), ((NI) 2));
+	TMP1063 = subInt((NI)(TMP1062), ((NI) 1));
+	(*t).max = (NI)(TMP1063);
 	nimln(74, "intsets.nim");
-	TMP508 = addInt((*t).max, ((NI) 1));
-	n = (Ttrunkseq122036*) newSeq((&NTI122036), ((NI)chckRange((NI)(TMP508), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1064 = addInt((*t).max, ((NI) 1));
+	n = (Ttrunkseq213036*) newSeq((&NTI213036), ((NI)chckRange((NI)(TMP1064), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	{
-		NI i_122642;
-		NI res_122670;
-		i_122642 = 0;
+		NI i_213642;
+		NI res_213670;
+		i_213642 = 0;
 		nimln(1598, "system.nim");
-		res_122670 = ((NI) 0);
+		res_213670 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP512;
-				if (!(res_122670 <= oldmax)) goto LA3;
+				NI TMP1068;
+				if (!(res_213670 <= oldmax)) goto LA3;
 				nimln(1600, "system.nim");
-				i_122642 = res_122670;
+				i_213642 = res_213670;
 				nimln(76, "intsets.nim");
 				{
-					if ((NU)(i_122642) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-					if (!!(((*t).data->data[i_122642] == NIM_NIL))) goto LA6;
-					if ((NU)(i_122642) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-					intsetrawinsert_122249((&(*t)), (&n), (*t).data->data[i_122642]);
+					if ((NU)(i_213642) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+					if (!!(((*t).data->data[i_213642] == NIM_NIL))) goto LA6;
+					if ((NU)(i_213642) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+					intsetrawinsert_213249((&(*t)), (&n), (*t).data->data[i_213642]);
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP512 = addInt(res_122670, ((NI) 1));
-				res_122670 = (NI)(TMP512);
+				TMP1068 = addInt(res_213670, ((NI) 1));
+				res_213670 = (NI)(TMP1068);
 			} LA3: ;
 		}
 	}
@@ -621,10 +621,10 @@ N_NIMCALL(void, intsetenlarge_122614)(Intset122038* t) {
 	popFrame();
 }
 
-N_NIMCALL(Ttrunk122034*, intsetput_122689)(Intset122038* t, NI key) {
-	Ttrunk122034* result;
+N_NIMCALL(Ttrunk213034*, intsetput_213689)(Intset213038* t, NI key) {
+	Ttrunk213034* result;
 	NI h;
-	NI TMP514;
+	NI TMP1070;
 	nimfr("intSetPut", "intsets.nim")
 {	result = 0;
 	nimln(80, "intsets.nim");
@@ -645,23 +645,23 @@ N_NIMCALL(Ttrunk122034*, intsetput_122689)(Intset122038* t, NI key) {
 			}
 			LA5: ;
 			nimln(84, "intsets.nim");
-			h = nexttry_122207(h, (*t).max);
+			h = nexttry_213207(h, (*t).max);
 		} LA2: ;
 	}
 	nimln(85, "intsets.nim");
 	{
-		NI TMP513;
+		NI TMP1069;
 		NIM_BOOL LOC9;
-		TMP513 = addInt((*t).max, ((NI) 1));
+		TMP1069 = addInt((*t).max, ((NI) 1));
 		LOC9 = 0;
-		LOC9 = mustrehash_122055((NI)(TMP513), (*t).counter);
+		LOC9 = mustrehash_213055((NI)(TMP1069), (*t).counter);
 		if (!LOC9) goto LA10;
-		intsetenlarge_122614(t);
+		intsetenlarge_213614(t);
 	}
 	LA10: ;
 	nimln(86, "intsets.nim");
-	TMP514 = addInt((*t).counter, ((NI) 1));
-	(*t).counter = (NI)(TMP514);
+	TMP1070 = addInt((*t).counter, ((NI) 1));
+	(*t).counter = (NI)(TMP1070);
 	nimln(87, "intsets.nim");
 	h = (NI)(key & (*t).max);
 	{
@@ -669,18 +669,18 @@ N_NIMCALL(Ttrunk122034*, intsetput_122689)(Intset122038* t, NI key) {
 		while (1) {
 			if ((NU)(h) >= (NU)((*t).data->Sup.len)) raiseIndexError();
 			if (!!(((*t).data->data[h] == NIM_NIL))) goto LA13;
-			h = nexttry_122207(h, (*t).max);
+			h = nexttry_213207(h, (*t).max);
 		} LA13: ;
 	}
 	nimln(89, "intsets.nim");
 	{
 		if ((NU)(h) >= (NU)((*t).data->Sup.len)) raiseIndexError();
 		if (!!(((*t).data->data[h] == NIM_NIL))) goto LA16;
-		failedassertimpl_88817(((NimStringDesc*) &TMP515));
+		failedassertimpl_88817(((NimStringDesc*) &TMP1071));
 	}
 	LA16: ;
 	nimln(90, "intsets.nim");
-	result = (Ttrunk122034*) newObj((&NTI122032), sizeof(Ttrunk122034));
+	result = (Ttrunk213034*) newObj((&NTI213032), sizeof(Ttrunk213034));
 	nimln(91, "intsets.nim");
 	asgnRef((void**) (&(*result).next), (*t).head);
 	nimln(92, "intsets.nim");
@@ -695,13 +695,13 @@ N_NIMCALL(Ttrunk122034*, intsetput_122689)(Intset122038* t, NI key) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, contains_122829)(Intset122038* s, NI key) {
+N_NIMCALL(NIM_BOOL, contains_213829)(Intset213038* s, NI key) {
 	NIM_BOOL result;
-	Ttrunk122034* t;
+	Ttrunk213034* t;
 	nimfr("contains", "intsets.nim")
 	result = 0;
 	nimln(98, "intsets.nim");
-	t = intsetget_122218(s, (NI)((NU64)(key) >> (NU64)(((NI) 9))));
+	t = intsetget_213218(s, (NI)((NU64)(key) >> (NU64)(((NI) 9))));
 	nimln(99, "intsets.nim");
 	{
 		NI u;
@@ -723,12 +723,12 @@ N_NIMCALL(NIM_BOOL, contains_122829)(Intset122038* s, NI key) {
 	return result;
 }
 
-N_NIMCALL(void, incl_122856)(Intset122038* s, NI key) {
-	Ttrunk122034* t;
+N_NIMCALL(void, incl_213856)(Intset213038* s, NI key) {
+	Ttrunk213034* t;
 	NI u;
 	nimfr("incl", "intsets.nim")
 	nimln(107, "intsets.nim");
-	t = intsetput_122689(s, (NI)((NU64)(key) >> (NU64)(((NI) 9))));
+	t = intsetput_213689(s, (NI)((NU64)(key) >> (NU64)(((NI) 9))));
 	nimln(108, "intsets.nim");
 	u = (NI)(key & ((NI) 511));
 	nimln(109, "intsets.nim");
@@ -739,11 +739,11 @@ N_NIMCALL(void, incl_122856)(Intset122038* s, NI key) {
 	popFrame();
 }
 
-N_NIMCALL(void, excl_122871)(Intset122038* s, NI key) {
-	Ttrunk122034* t;
+N_NIMCALL(void, excl_213871)(Intset213038* s, NI key) {
+	Ttrunk213034* t;
 	nimfr("excl", "intsets.nim")
 	nimln(114, "intsets.nim");
-	t = intsetget_122218((&(*s)), (NI)((NU64)(key) >> (NU64)(((NI) 9))));
+	t = intsetget_213218((&(*s)), (NI)((NU64)(key) >> (NU64)(((NI) 9))));
 	nimln(115, "intsets.nim");
 	{
 		NI u;
@@ -760,13 +760,13 @@ N_NIMCALL(void, excl_122871)(Intset122038* s, NI key) {
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, containsorincl_122898)(Intset122038* s, NI key) {
+N_NIMCALL(NIM_BOOL, containsorincl_213898)(Intset213038* s, NI key) {
 	NIM_BOOL result;
-	Ttrunk122034* t;
+	Ttrunk213034* t;
 	nimfr("containsOrIncl", "intsets.nim")
 	result = 0;
 	nimln(123, "intsets.nim");
-	t = intsetget_122218((&(*s)), (NI)((NU64)(key) >> (NU64)(((NI) 9))));
+	t = intsetget_213218((&(*s)), (NI)((NU64)(key) >> (NU64)(((NI) 9))));
 	nimln(124, "intsets.nim");
 	{
 		NI u;
@@ -791,7 +791,7 @@ N_NIMCALL(NIM_BOOL, containsorincl_122898)(Intset122038* s, NI key) {
 	LA3: ;
 	{
 		nimln(131, "intsets.nim");
-		incl_122856(s, key);
+		incl_213856(s, key);
 		nimln(132, "intsets.nim");
 		result = NIM_FALSE;
 	}
@@ -800,10 +800,10 @@ N_NIMCALL(NIM_BOOL, containsorincl_122898)(Intset122038* s, NI key) {
 	return result;
 }
 
-N_NIMCALL(void, initintset_122927)(Intset122038* Result) {
+N_NIMCALL(void, initintset_213927)(Intset213038* Result) {
 	nimfr("initIntSet", "intsets.nim")
 	nimln(136, "intsets.nim");
-	unsureAsgnRef((void**) (&(*Result).data), (Ttrunkseq122036*) newSeq((&NTI122036), ((NI) 8)));
+	unsureAsgnRef((void**) (&(*Result).data), (Ttrunkseq213036*) newSeq((&NTI213036), ((NI) 8)));
 	nimln(137, "intsets.nim");
 	(*Result).max = ((NI) 7);
 	nimln(138, "intsets.nim");
@@ -813,22 +813,22 @@ N_NIMCALL(void, initintset_122927)(Intset122038* Result) {
 	popFrame();
 }
 
-N_NIMCALL(void, assign_122946)(Intset122038* dest, Intset122038* src) {
-	Ttrunk122034* it;
+N_NIMCALL(void, assign_213946)(Intset213038* dest, Intset213038* src) {
+	Ttrunk213034* it;
 	nimfr("assign", "intsets.nim")
 	nimln(144, "intsets.nim");
 	(*dest).counter = (*src).counter;
 	nimln(145, "intsets.nim");
 	(*dest).max = (*src).max;
 	nimln(146, "intsets.nim");
-	unsureAsgnRef((void**) (&(*dest).data), (Ttrunkseq122036*) newSeq((&NTI122036), ((NI)chckRange(((*src).data ? (*src).data->Sup.len : 0), ((NI) 0), ((NI) IL64(9223372036854775807))))));
+	unsureAsgnRef((void**) (&(*dest).data), (Ttrunkseq213036*) newSeq((&NTI213036), ((NI)chckRange(((*src).data ? (*src).data->Sup.len : 0), ((NI) 0), ((NI) IL64(9223372036854775807))))));
 	nimln(148, "intsets.nim");
 	it = (*src).head;
 	{
 		nimln(149, "intsets.nim");
 		while (1) {
 			NI h;
-			Ttrunk122034* n;
+			Ttrunk213034* n;
 			if (!!((it == NIM_NIL))) goto LA2;
 			nimln(151, "intsets.nim");
 			h = (NI)((*it).key & (*dest).max);
@@ -837,19 +837,19 @@ N_NIMCALL(void, assign_122946)(Intset122038* dest, Intset122038* src) {
 				while (1) {
 					if ((NU)(h) >= (NU)((*dest).data->Sup.len)) raiseIndexError();
 					if (!!(((*dest).data->data[h] == NIM_NIL))) goto LA4;
-					h = nexttry_122207(h, (*dest).max);
+					h = nexttry_213207(h, (*dest).max);
 				} LA4: ;
 			}
 			nimln(153, "intsets.nim");
 			{
 				if ((NU)(h) >= (NU)((*dest).data->Sup.len)) raiseIndexError();
 				if (!!(((*dest).data->data[h] == NIM_NIL))) goto LA7;
-				failedassertimpl_88817(((NimStringDesc*) &TMP516));
+				failedassertimpl_88817(((NimStringDesc*) &TMP1072));
 			}
 			LA7: ;
 			n = 0;
 			nimln(156, "intsets.nim");
-			n = (Ttrunk122034*) newObj((&NTI122032), sizeof(Ttrunk122034));
+			n = (Ttrunk213034*) newObj((&NTI213032), sizeof(Ttrunk213034));
 			nimln(157, "intsets.nim");
 			asgnRef((void**) (&(*n).next), (*dest).head);
 			nimln(158, "intsets.nim");
@@ -873,87 +873,87 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_123318)(Intset122038* s) {
+N_NIMCALL(NimStringDesc*, HEX24_214318)(Intset213038* s) {
 	NimStringDesc* result;
 	nimfr("$", "intsets.nim")
 	result = 0;
 	nimln(184, "intsets.nim");
-	result = copyString(((NimStringDesc*) &TMP517));
+	result = copyString(((NimStringDesc*) &TMP1073));
 	{
-		NI key_123323;
-		Ttrunk122034* r_123329;
-		key_123323 = 0;
+		NI key_214323;
+		Ttrunk213034* r_214329;
+		key_214323 = 0;
 		nimln(167, "intsets.nim");
-		r_123329 = (*s).head;
+		r_214329 = (*s).head;
 		{
 			nimln(168, "intsets.nim");
 			while (1) {
-				NI i_123331;
-				if (!!((r_123329 == NIM_NIL))) goto LA3;
+				NI i_214331;
+				if (!!((r_214329 == NIM_NIL))) goto LA3;
 				nimln(169, "intsets.nim");
-				i_123331 = ((NI) 0);
+				i_214331 = ((NI) 0);
 				{
 					nimln(170, "intsets.nim");
 					while (1) {
-						NI w_123333;
-						NI j_123335;
-						NI TMP520;
-						if (!(i_123331 <= ((NI) 7))) goto LA5;
+						NI w_214333;
+						NI j_214335;
+						NI TMP1076;
+						if (!(i_214331 <= ((NI) 7))) goto LA5;
 						nimln(171, "intsets.nim");
-						if ((NU)(i_123331) > (NU)(7)) raiseIndexError();
-						w_123333 = (*r_123329).bits[(i_123331)- 0];
+						if ((NU)(i_214331) > (NU)(7)) raiseIndexError();
+						w_214333 = (*r_214329).bits[(i_214331)- 0];
 						nimln(174, "intsets.nim");
-						j_123335 = ((NI) 0);
+						j_214335 = ((NI) 0);
 						{
 							nimln(175, "intsets.nim");
 							while (1) {
-								NI TMP519;
-								if (!!((w_123333 == ((NI) 0)))) goto LA7;
+								NI TMP1075;
+								if (!!((w_214333 == ((NI) 0)))) goto LA7;
 								nimln(176, "intsets.nim");
 								{
 									NimStringDesc* LOC16;
-									if (!!((((NI) ((NI)(w_123333 & ((NI) 1)))) == ((NI) 0)))) goto LA10;
+									if (!!((((NI) ((NI)(w_214333 & ((NI) 1)))) == ((NI) 0)))) goto LA10;
 									nimln(177, "intsets.nim");
-									key_123323 = (NI)((NI)((NU64)((*r_123329).key) << (NU64)(((NI) 9))) | (NI)((NU64)((NI)((NU64)(i_123331) << (NU64)(((NI) 6)))) + (NU64)(j_123335)));
+									key_214323 = (NI)((NI)((NU64)((*r_214329).key) << (NU64)(((NI) 9))) | (NI)((NU64)((NI)((NU64)(i_214331) << (NU64)(((NI) 6)))) + (NU64)(j_214335)));
 									nimln(186, "intsets.nim");
 									{
 										if (!(((NI) 1) < (result ? result->Sup.len : 0))) goto LA14;
 										result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP518));
+appendString(result, ((NimStringDesc*) &TMP1074));
 									}
 									LA14: ;
 									nimln(187, "intsets.nim");
 									LOC16 = 0;
-									LOC16 = nimIntToStr(key_123323);
+									LOC16 = nimIntToStr(key_214323);
 									result = resizeString(result, LOC16->Sup.len + 0);
 appendString(result, LOC16);
 								}
 								LA10: ;
 								nimln(178, "intsets.nim");
-								TMP519 = addInt(j_123335, ((NI) 1));
-								j_123335 = (NI)(TMP519);
+								TMP1075 = addInt(j_214335, ((NI) 1));
+								j_214335 = (NI)(TMP1075);
 								nimln(179, "intsets.nim");
-								w_123333 = (NI)((NU64)(w_123333) >> (NU64)(((NI) 1)));
+								w_214333 = (NI)((NU64)(w_214333) >> (NU64)(((NI) 1)));
 							} LA7: ;
 						}
 						nimln(180, "intsets.nim");
-						TMP520 = addInt(i_123331, ((NI) 1));
-						i_123331 = (NI)(TMP520);
+						TMP1076 = addInt(i_214331, ((NI) 1));
+						i_214331 = (NI)(TMP1076);
 					} LA5: ;
 				}
 				nimln(181, "intsets.nim");
-				r_123329 = (*r_123329).next;
+				r_214329 = (*r_214329).next;
 			} LA3: ;
 		}
 	}
 	nimln(188, "intsets.nim");
 	result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP521));
+appendString(result, ((NimStringDesc*) &TMP1077));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, empty_123363)(Intset122038* s) {
+static N_INLINE(NIM_BOOL, empty_214363)(Intset213038* s) {
 	NIM_BOOL result;
 	nimfr("empty", "intsets.nim")
 	result = 0;
@@ -968,36 +968,36 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_intsetsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_intsetsDatInit)(void) {
-static TNimNode* TMP509[3];
-static TNimNode TMP481[4];
-NTI122034.size = sizeof(Ttrunk122034);
-NTI122034.kind = 18;
-NTI122034.base = 0;
-TMP509[0] = &TMP481[1];
-TMP481[1].kind = 1;
-TMP481[1].offset = offsetof(Ttrunk122034, next);
-TMP481[1].typ = (&NTI122032);
-TMP481[1].name = "next";
-TMP509[1] = &TMP481[2];
-TMP481[2].kind = 1;
-TMP481[2].offset = offsetof(Ttrunk122034, key);
-TMP481[2].typ = (&NTI108);
-TMP481[2].name = "key";
-TMP509[2] = &TMP481[3];
-TMP481[3].kind = 1;
-TMP481[3].offset = offsetof(Ttrunk122034, bits);
-TMP481[3].typ = (&NTI27820);
-TMP481[3].name = "bits";
-TMP481[0].len = 3; TMP481[0].kind = 2; TMP481[0].sons = &TMP509[0];
-NTI122034.node = &TMP481[0];
-NTI122032.size = sizeof(Ttrunk122034*);
-NTI122032.kind = 22;
-NTI122032.base = (&NTI122034);
-NTI122032.marker = TMP510;
-NTI122036.size = sizeof(Ttrunkseq122036*);
-NTI122036.kind = 24;
-NTI122036.base = (&NTI122032);
-NTI122036.flags = 2;
-NTI122036.marker = TMP511;
+static TNimNode* TMP1065[3];
+static TNimNode TMP1049[4];
+NTI213034.size = sizeof(Ttrunk213034);
+NTI213034.kind = 18;
+NTI213034.base = 0;
+TMP1065[0] = &TMP1049[1];
+TMP1049[1].kind = 1;
+TMP1049[1].offset = offsetof(Ttrunk213034, next);
+TMP1049[1].typ = (&NTI213032);
+TMP1049[1].name = "next";
+TMP1065[1] = &TMP1049[2];
+TMP1049[2].kind = 1;
+TMP1049[2].offset = offsetof(Ttrunk213034, key);
+TMP1049[2].typ = (&NTI108);
+TMP1049[2].name = "key";
+TMP1065[2] = &TMP1049[3];
+TMP1049[3].kind = 1;
+TMP1049[3].offset = offsetof(Ttrunk213034, bits);
+TMP1049[3].typ = (&NTI27820);
+TMP1049[3].name = "bits";
+TMP1049[0].len = 3; TMP1049[0].kind = 2; TMP1049[0].sons = &TMP1065[0];
+NTI213034.node = &TMP1049[0];
+NTI213032.size = sizeof(Ttrunk213034*);
+NTI213032.kind = 22;
+NTI213032.base = (&NTI213034);
+NTI213032.marker = TMP1066;
+NTI213036.size = sizeof(Ttrunkseq213036*);
+NTI213036.kind = 24;
+NTI213036.base = (&NTI213032);
+NTI213036.flags = 2;
+NTI213036.marker = TMP1067;
 }
 

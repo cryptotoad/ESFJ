@@ -9,6 +9,7 @@ import parsexml
 import httpclient
 import random
 include UserSystem
+include lootDrops
 
 while true:
     readLine(sock, buffer)
@@ -119,9 +120,21 @@ while true:
 
         #!karma
         if ircmsg[3] == ":!karma":
-          if ircmsg.high >= 4 and isLoggedIn(nick):
+          if ircmsg.high >= 4 and checkUser(ircmsg[4]):
             send(sock, "PRIVMSG " & ircmsg[2] & " :" & ircmsg[4] & " has a total of " & $karma(ircmsg[4]) & " karma.\r\n")
+          elif checkUser(nick):
+            send(sock, "PRIVMSG " & ircmsg[2] & " :" & nick & " has a total of " & $karma(nick) & " karma.\r\n")
 
+        #!fight
+        if ircmsg[3] == ":!fight":
+          if ircmsg.high >= 4 and isLoggedIn(ircmsg[4]) and isLoggedIn(nick):
+            send(sock, "PRIVMSG " & ircmsg[2] & " :" & battleUsers(nick, ircmsg[4]) & "\r\n")
+
+        #!equip
+        if ircmsg[3] == ":!equip":
+          if ircmsg.high >= 4 and isLoggedIn(nick):
+            send(sock, "PRIVMSG " & ircmsg[2] & " :You have equipped a " & getItemName(parseInt(ircmsg[4])) &"!\r\n")
+                  
         #!login     
         if ircmsg[3] == ":!login":
           if ircmsg.high < 4:
@@ -142,6 +155,9 @@ while true:
         if ircmsg[3] == ":!register":
           if ircmsg.high == 4:
             if adduser(nick, ircmsg[4]) > 0:
+              db.exec(sql"""
+              insert into users_loot(id, weapon, armor, shield, bag) values (?, null, null, null, null)""", userID(nick))
+              
               send(sock, "PRIVMSG " & nick & " : Your pass is " & ircmsg[4] & " \r\n")
             else:
               send(sock, "PRIVMSG " & nick & " : Username is taken. \r\n")  
@@ -156,7 +172,7 @@ while true:
         if ircmsg[3] == ":!help":
           send(sock, "PRIVMSG " & ircmsg[2] & " :!quote # - Retrieve quote / !addquote <quote> - adds a quote to database\r\n")
           send(sock, "PRIVMSG " & ircmsg[2] & " :!roll <1d20> - Dice roller / !help - this menu\r\n")
-
+        
         #!quote
         if ircmsg[3] == ":!quote":
           if(ircmsg.high >= 4):
@@ -179,6 +195,11 @@ while true:
         if ircmsg[3] == ":!rawsql":
           if(ircmsg.high >= 4) and isLoggedIn("Cryptotoad") and toLower(nick) == "cryptotoad":
             send(sock, "PRIVMSG " & ircmsg[2] & " :Result: " & $db.tryExec(sql(join(ircmsg[4 .. ircmsg.high], " "))) & "\r\n")
+
+        #!blacklist
+        if ircmsg[3] == ":!blacklist":
+          if(ircmsg.high >= 4) and isLoggedIn("Cryptotoad") and toLower(nick) == "cryptotoad":
+            send(sock, "PRIVMSG " & ircmsg[2] & " :Result: " & $tryInsertID(db, sql"insert into blacklist(id, name) values (null, ?)", ircmsg[4]).int & "\r\n")
 
 
 
@@ -209,6 +230,15 @@ while true:
         if contains(join(ircmsg[3 .. ircmsg.high], " "), "meme") or contains(join(ircmsg[3 .. ircmsg.high], " "), "newfag") or contains(join(ircmsg[3 .. ircmsg.high], " "), "triforce"):
           send(sock, "PRIVMSG " & ircmsg[2] & " : ▲\r\n")
           send(sock, "PRIVMSG " & ircmsg[2] & " :▲ ▲\r\n")
+
+        else:
+          if doesUserGetDrop(join(ircmsg[3 .. ircmsg.high], " "), nick) :
+            if isLoggedIn(nick):
+              let itemid = generateLootDrop(nick, false)
+              if addUserLoot(userID(nick), itemid):
+                send(sock, "PRIVMSG " & ircmsg[2] & " :" & nick & " has got a " & getItemName(itemid) & " as a random drop!\r\n")
+            else:
+              send(sock, "PRIVMSG " & ircmsg[2] & " :" & nick & " would have gotten a drop here, but they're not registered.\r\n")
 
           
         

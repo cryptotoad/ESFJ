@@ -306,14 +306,26 @@ N_NIMCALL(NIM_BOOL, logoutuser_282252)(NimStringDesc* name);
 N_NIMCALL(NI, upvote_282360)(NimStringDesc* name);
 N_NIMCALL(NI, downvote_282372)(NimStringDesc* name);
 N_NIMCALL(NI, karma_282384)(NimStringDesc* name);
-N_NIMCALL(NI, generatelootdrop_282411)(NimStringDesc* user, NIM_BOOL rare);
+N_NIMCALL(NI, userid_282393)(NimStringDesc* name);
+N_NIMCALL(NI, getweapon_282420)(NimStringDesc* user);
+N_NIMCALL(NI, getarmor_282432)(NimStringDesc* user);
+N_NIMCALL(NI, getshield_282444)(NimStringDesc* user);
+N_NIMCALL(NimStringDesc*, getbag_282456)(NimStringDesc* user);
+N_NIMCALL(NI, getitembonus_282468)(NI item);
+N_NIMCALL(NI, getdefensebonus_282480)(NimStringDesc* user);
+N_NIMCALL(NI, getattackbonus_282490)(NimStringDesc* user);
+N_NIMCALL(NimStringDesc*, battleusers_282500)(NimStringDesc* user1, NimStringDesc* user2);
 static N_INLINE(NI, randomint_133271)(NI min, NI max);
 static N_INLINE(NI, randomint_133309)(Mtstate127035* rng, NI min, NI max);
 static N_INLINE(NI, randomint_131853)(Mtstate127035* rng, NI max);
 N_NIMCALL(NU, randomintimpl_131871)(Mtstate127035* rng, NU max);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
+N_NIMCALL(NIM_BOOL, doesusergetdrop_282621)(NimStringDesc* msg, NimStringDesc* user);
+N_NIMCALL(NI, generatelootdrop_282657)(NimStringDesc* user, NIM_BOOL rare);
 N_NIMCALL(TY190494*, getallrows_190488)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NIM_BOOL, adduserloot_282722)(NI user, NI item);
+N_NIMCALL(NIM_BOOL, tryexec_190138)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* thestackbottom);
 NIM_EXTERNC N_NOINLINE(void, systemInit)(void);
@@ -463,9 +475,20 @@ STRING_LITERAL(TMP2801, "  update users set upvotes = upvotes + 1 where upper(na
 STRING_LITERAL(TMP2802, "select upvotes - downvotes from users where upper(name) = ?", 59);
 STRING_LITERAL(TMP2803, "  update users set downvotes = downvotes + 1 where upper(name) "
 "= ?;\015\012  ", 71);
-STRING_LITERAL(TMP2807, "select id from items where rank <= ?", 36);
-STRING_LITERAL(TMP2808, "select id from items where rank = ?", 35);
-STRING_LITERAL(TMP2809, "toad", 4);
+STRING_LITERAL(TMP2806, "select weapon from users_loot where id = ?", 42);
+STRING_LITERAL(TMP2807, "select armor from users_loot where id = ?", 41);
+STRING_LITERAL(TMP2808, "select shield from users_loot where id = ?", 42);
+STRING_LITERAL(TMP2809, "select bag from users_loot where id = ?", 39);
+STRING_LITERAL(TMP2810, "select rank from items where id = ?", 35);
+STRING_LITERAL(TMP2819, " Has hit ", 9);
+STRING_LITERAL(TMP2820, " for ", 5);
+STRING_LITERAL(TMP2821, " damage! ", 9);
+STRING_LITERAL(TMP2823, "The battle has ended in a draw!", 31);
+STRING_LITERAL(TMP2824, " is victorious!", 15);
+STRING_LITERAL(TMP2825, "select id from items where rank = ?", 35);
+STRING_LITERAL(TMP2826, "  update users_loot set bag = bag + \',\' + ? where id = ?;\015\012  ", 61);
+STRING_LITERAL(TMP2827, "cryptotoad", 10);
+STRING_LITERAL(TMP2828, "poxod", 5);
 extern TFrame* frameptr_17042;
 extern TNimType NTI13606; /* seq[string] */
 extern Tgcheap48616 gch_48644;
@@ -1369,6 +1392,195 @@ N_NIMCALL(NI, karma_282384)(NimStringDesc* name) {
 	return result;
 }
 
+N_NIMCALL(NI, userid_282393)(NimStringDesc* name) {
+	NI volatile result;
+	TSafePoint TMP2805;
+	nimfr("userID", "usersystem.nim")
+	result = 0;
+	nimln(183, "usersystem.nim");
+	pushSafePoint(&TMP2805);
+	TMP2805.status = setjmp(TMP2805.context);
+	if (TMP2805.status == 0) {
+		NimStringDesc* LOC2;
+		TY190666 LOC3;
+		NimStringDesc* LOC4;
+		nimln(184, "usersystem.nim");
+		LOC2 = 0;
+		LOC2 = sql_190021(((NimStringDesc*) &TMP2792));
+		memset((void*)LOC3, 0, sizeof(LOC3));
+		LOC3[0] = nsuToUpperStr(name);
+		LOC4 = 0;
+		LOC4 = getvalue_190577(db_282135, LOC2, LOC3, 1);
+		result = nsuParseInt(LOC4);
+		popSafePoint();
+	}
+	else {
+		popSafePoint();
+		setFrame((TFrame*)&FR);
+		{
+			TMP2805.status = 0;
+			nimln(186, "usersystem.nim");
+			result = ((NI) -1);
+			popCurrentException();
+		}
+	}
+	if (TMP2805.status != 0) reraiseException();
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getweapon_282420)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY190666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getWeapon", "lootdrops.nim")
+	result = 0;
+	nimln(5, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_190021(((NimStringDesc*) &TMP2806));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282393(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_190577(db_282135, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getarmor_282432)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY190666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getArmor", "lootdrops.nim")
+	result = 0;
+	nimln(9, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_190021(((NimStringDesc*) &TMP2807));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282393(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_190577(db_282135, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getshield_282444)(NimStringDesc* user) {
+	NI result;
+	NimStringDesc* LOC1;
+	TY190666 LOC2;
+	NI LOC3;
+	NimStringDesc* LOC4;
+	nimfr("getShield", "lootdrops.nim")
+	result = 0;
+	nimln(13, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_190021(((NimStringDesc*) &TMP2808));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282393(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	LOC4 = 0;
+	LOC4 = getvalue_190577(db_282135, LOC1, LOC2, 1);
+	result = nsuParseInt(LOC4);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NimStringDesc*, getbag_282456)(NimStringDesc* user) {
+	NimStringDesc* result;
+	NimStringDesc* LOC1;
+	TY190666 LOC2;
+	NI LOC3;
+	nimfr("getBag", "lootdrops.nim")
+	result = 0;
+	nimln(17, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_190021(((NimStringDesc*) &TMP2809));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	LOC3 = 0;
+	LOC3 = userid_282393(user);
+	LOC2[0] = nimIntToStr(LOC3);
+	result = getvalue_190577(db_282135, LOC1, LOC2, 1);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getitembonus_282468)(NI item) {
+	NI result;
+	nimfr("getItemBonus", "lootdrops.nim")
+	result = 0;
+	nimln(21, "lootdrops.nim");
+	{
+		if (!(item == ((NI) 0))) goto LA3;
+		nimln(22, "lootdrops.nim");
+		result = ((NI) 0);
+	}
+	goto LA1;
+	LA3: ;
+	{
+		NimStringDesc* LOC6;
+		TY190666 LOC7;
+		NimStringDesc* LOC8;
+		nimln(24, "lootdrops.nim");
+		LOC6 = 0;
+		LOC6 = sql_190021(((NimStringDesc*) &TMP2810));
+		memset((void*)LOC7, 0, sizeof(LOC7));
+		LOC7[0] = nimIntToStr(item);
+		LOC8 = 0;
+		LOC8 = getvalue_190577(db_282135, LOC6, LOC7, 1);
+		result = nsuParseInt(LOC8);
+	}
+	LA1: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getdefensebonus_282480)(NimStringDesc* user) {
+	NI result;
+	NI LOC1;
+	NI LOC2;
+	NI LOC3;
+	NI LOC4;
+	NI TMP2811;
+	nimfr("getDefenseBonus", "lootdrops.nim")
+	result = 0;
+	nimln(27, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getarmor_282432(user);
+	LOC2 = 0;
+	LOC2 = getitembonus_282468(LOC1);
+	LOC3 = 0;
+	LOC3 = getshield_282444(user);
+	LOC4 = 0;
+	LOC4 = getitembonus_282468(LOC3);
+	TMP2811 = addInt(LOC2, LOC4);
+	result = (NI)(TMP2811);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, getattackbonus_282490)(NimStringDesc* user) {
+	NI result;
+	NI LOC1;
+	nimfr("getAttackBonus", "lootdrops.nim")
+	result = 0;
+	nimln(30, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getweapon_282420(user);
+	result = getitembonus_282468(LOC1);
+	popFrame();
+	return result;
+}
+
 static N_INLINE(NI, randomint_131853)(Mtstate127035* rng, NI max) {
 	NI result;
 	NU LOC1;
@@ -1409,18 +1621,18 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 
 static N_INLINE(NI, randomint_133309)(Mtstate127035* rng, NI min, NI max) {
 	NI result;
-	NI TMP2805;
+	NI TMP2816;
 	NI LOC1;
-	NI TMP2806;
+	NI TMP2817;
 	nimfr("randomInt", "common.nim")
 	result = 0;
 	nimln(106, "common.nim");
 	nimln(107, "common.nim");
-	TMP2805 = subInt(max, min);
+	TMP2816 = subInt(max, min);
 	LOC1 = 0;
-	LOC1 = randomint_131853(rng, ((NI)chckRange((NI)(TMP2805), ((NI) 1), ((NI) IL64(9223372036854775807)))));
-	TMP2806 = addInt(min, ((NI) (LOC1)));
-	result = (NI)(TMP2806);
+	LOC1 = randomint_131853(rng, ((NI)chckRange((NI)(TMP2816), ((NI) 1), ((NI) IL64(9223372036854775807)))));
+	TMP2817 = addInt(min, ((NI) (LOC1)));
+	result = (NI)(TMP2817);
 	popFrame();
 	return result;
 }
@@ -1435,68 +1647,255 @@ static N_INLINE(NI, randomint_133271)(NI min, NI max) {
 	return result;
 }
 
-N_NIMCALL(NI, generatelootdrop_282411)(NimStringDesc* user, NIM_BOOL rare) {
+N_NIMCALL(NimStringDesc*, battleusers_282500)(NimStringDesc* user1, NimStringDesc* user2) {
+	NimStringDesc* result;
+	NimStringDesc* battleoutcome;
+	NI user1dam;
+	NI user2dam;
+	NI user1def;
+	NI user2def;
+	NI user1att;
+	NI user2att;
+	NI user1att5;
+	NI LOC1;
+	NI TMP2812;
+	NI user2att5;
+	NI LOC2;
+	NI TMP2813;
+	NI Ac1;
+	NI TMP2814;
+	NI Ac2;
+	NI TMP2815;
+	nimfr("battleUsers", "lootdrops.nim")
+	result = 0;
+	battleoutcome = 0;
+	user1dam = 0;
+	user2dam = 0;
+	nimln(37, "lootdrops.nim");
+	user1def = getdefensebonus_282480(user1);
+	nimln(38, "lootdrops.nim");
+	user2def = getdefensebonus_282480(user2);
+	nimln(40, "lootdrops.nim");
+	user1att = getattackbonus_282490(user1);
+	nimln(41, "lootdrops.nim");
+	user2att = getattackbonus_282490(user2);
+	nimln(43, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = getattackbonus_282490(user1);
+	TMP2812 = addInt(LOC1, ((NI) 5));
+	user1att5 = (NI)(TMP2812);
+	nimln(44, "lootdrops.nim");
+	LOC2 = 0;
+	LOC2 = getattackbonus_282490(user2);
+	TMP2813 = addInt(LOC2, ((NI) 5));
+	user2att5 = (NI)(TMP2813);
+	nimln(46, "lootdrops.nim");
+	TMP2814 = addInt(((NI) 10), user2def);
+	Ac1 = (NI)(TMP2814);
+	nimln(47, "lootdrops.nim");
+	TMP2815 = addInt(((NI) 10), user1def);
+	Ac2 = (NI)(TMP2815);
+	nimln(49, "lootdrops.nim");
+	battleoutcome = copyString(((NimStringDesc*) &TMP2762));
+	nimln(51, "lootdrops.nim");
+	{
+		NI TMP2818;
+		NI LOC5;
+		NimStringDesc* LOC8;
+		NimStringDesc* LOC9;
+		TMP2818 = addInt(((NI) 21), user1att);
+		LOC5 = 0;
+		LOC5 = randomint_133271(((NI) 1), (NI)(TMP2818));
+		if (!(Ac1 < LOC5)) goto LA6;
+		nimln(52, "lootdrops.nim");
+		user1dam = randomint_133271(((NI) 1), user1att5);
+		nimln(53, "lootdrops.nim");
+		LOC8 = 0;
+		LOC9 = 0;
+		LOC9 = nimIntToStr(user1dam);
+		LOC8 = rawNewString(user1->Sup.len + user2->Sup.len + LOC9->Sup.len + 23);
+appendString(LOC8, user1);
+appendString(LOC8, ((NimStringDesc*) &TMP2819));
+appendString(LOC8, user2);
+appendString(LOC8, ((NimStringDesc*) &TMP2820));
+appendString(LOC8, LOC9);
+appendString(LOC8, ((NimStringDesc*) &TMP2821));
+		battleoutcome = LOC8;
+	}
+	goto LA3;
+	LA6: ;
+	{
+		nimln(55, "lootdrops.nim");
+		user1dam = ((NI) 0);
+	}
+	LA3: ;
+	nimln(57, "lootdrops.nim");
+	{
+		NI TMP2822;
+		NI LOC13;
+		NimStringDesc* LOC16;
+		NimStringDesc* LOC17;
+		TMP2822 = addInt(((NI) 21), user2att);
+		LOC13 = 0;
+		LOC13 = randomint_133271(((NI) 1), (NI)(TMP2822));
+		if (!(Ac2 < LOC13)) goto LA14;
+		nimln(58, "lootdrops.nim");
+		user2dam = randomint_133271(((NI) 1), user2att5);
+		nimln(59, "lootdrops.nim");
+		LOC16 = 0;
+		LOC17 = 0;
+		LOC17 = nimIntToStr(user2dam);
+		LOC16 = rawNewString(battleoutcome->Sup.len + user2->Sup.len + user1->Sup.len + LOC17->Sup.len + 24);
+appendString(LOC16, battleoutcome);
+appendString(LOC16, ((NimStringDesc*) &TMP2784));
+appendString(LOC16, user2);
+appendString(LOC16, ((NimStringDesc*) &TMP2819));
+appendString(LOC16, user1);
+appendString(LOC16, ((NimStringDesc*) &TMP2820));
+appendString(LOC16, LOC17);
+appendString(LOC16, ((NimStringDesc*) &TMP2821));
+		battleoutcome = LOC16;
+	}
+	goto LA11;
+	LA14: ;
+	{
+		nimln(61, "lootdrops.nim");
+		user2dam = ((NI) 0);
+	}
+	LA11: ;
+	nimln(63, "lootdrops.nim");
+	{
+		NimStringDesc* LOC23;
+		if (!(user2dam == user1dam)) goto LA21;
+		nimln(64, "lootdrops.nim");
+		LOC23 = 0;
+		LOC23 = rawNewString(battleoutcome->Sup.len + 31);
+appendString(LOC23, battleoutcome);
+appendString(LOC23, ((NimStringDesc*) &TMP2823));
+		battleoutcome = LOC23;
+	}
+	goto LA19;
+	LA21: ;
+	{
+		NimStringDesc* LOC27;
+		nimln(65, "lootdrops.nim");
+		if (!(user1dam < user2dam)) goto LA25;
+		nimln(66, "lootdrops.nim");
+		LOC27 = 0;
+		LOC27 = rawNewString(battleoutcome->Sup.len + user2->Sup.len + 16);
+appendString(LOC27, battleoutcome);
+appendString(LOC27, ((NimStringDesc*) &TMP2784));
+appendString(LOC27, user2);
+appendString(LOC27, ((NimStringDesc*) &TMP2824));
+		battleoutcome = LOC27;
+	}
+	goto LA19;
+	LA25: ;
+	{
+		NimStringDesc* LOC31;
+		nimln(67, "lootdrops.nim");
+		if (!(user2dam < user1dam)) goto LA29;
+		nimln(68, "lootdrops.nim");
+		LOC31 = 0;
+		LOC31 = rawNewString(battleoutcome->Sup.len + user1->Sup.len + 16);
+appendString(LOC31, battleoutcome);
+appendString(LOC31, ((NimStringDesc*) &TMP2784));
+appendString(LOC31, user1);
+appendString(LOC31, ((NimStringDesc*) &TMP2824));
+		battleoutcome = LOC31;
+	}
+	goto LA19;
+	LA29: ;
+	LA19: ;
+	nimln(70, "lootdrops.nim");
+	result = copyString(battleoutcome);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, doesusergetdrop_282621)(NimStringDesc* msg, NimStringDesc* user) {
+	NIM_BOOL result;
+	nimfr("doesUserGetDrop", "lootdrops.nim")
+	result = 0;
+	nimln(77, "lootdrops.nim");
+	{
+		NI LOC3;
+		LOC3 = 0;
+		LOC3 = randomint_133271(((NI) 1), ((NI) 300));
+		if (!(LOC3 == ((NI) 1))) goto LA4;
+		nimln(78, "lootdrops.nim");
+		result = NIM_TRUE;
+	}
+	goto LA1;
+	LA4: ;
+	{
+		nimln(80, "lootdrops.nim");
+		result = NIM_FALSE;
+	}
+	LA1: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NI, generatelootdrop_282657)(NimStringDesc* user, NIM_BOOL rare) {
 	NI result;
+	NI rank;
+	TY190494* rows;
+	NimStringDesc* LOC6;
+	TY190666 LOC7;
+	NimStringDesc* randomitem;
+	NI LOC8;
 	nimfr("generateLootDrop", "lootdrops.nim")
 {	result = 0;
-	nimln(5, "lootdrops.nim");
+	rank = 0;
+	nimln(85, "lootdrops.nim");
 	{
-		NI rank;
-		TY190494* rows;
-		NimStringDesc* LOC5;
-		TY190666 LOC6;
-		NimStringDesc* randomitem;
-		NI LOC7;
 		if (!rare) goto LA3;
-		nimln(6, "lootdrops.nim");
+		nimln(86, "lootdrops.nim");
 		rank = randomint_133271(((NI) 1), ((NI) 4));
-		nimln(7, "lootdrops.nim");
-		LOC5 = 0;
-		LOC5 = sql_190021(((NimStringDesc*) &TMP2807));
-		memset((void*)LOC6, 0, sizeof(LOC6));
-		LOC6[0] = nimIntToStr(rank);
-		rows = getallrows_190488(db_282135, LOC5, LOC6, 1);
-		nimln(9, "lootdrops.nim");
-		LOC7 = 0;
-		LOC7 = randomint_133271(((NI) 0), (rows ? (rows->Sup.len-1) : -1));
-		if ((NU)(LOC7) >= (NU)(rows->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 0)) >= (NU)(rows->data[LOC7]->Sup.len)) raiseIndexError();
-		randomitem = rows->data[LOC7]->data[((NI) 0)];
-		nimln(10, "lootdrops.nim");
-		result = nsuParseInt(randomitem);
-		nimln(11, "lootdrops.nim");
-		goto BeforeRet;
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI rank;
-		TY190494* rows;
-		NimStringDesc* LOC9;
-		TY190666 LOC10;
-		NimStringDesc* randomitem;
-		NI LOC11;
-		nimln(13, "lootdrops.nim");
+		nimln(88, "lootdrops.nim");
 		rank = ((NI) 1);
-		nimln(14, "lootdrops.nim");
-		LOC9 = 0;
-		LOC9 = sql_190021(((NimStringDesc*) &TMP2808));
-		memset((void*)LOC10, 0, sizeof(LOC10));
-		LOC10[0] = nimIntToStr(rank);
-		rows = getallrows_190488(db_282135, LOC9, LOC10, 1);
-		nimln(16, "lootdrops.nim");
-		LOC11 = 0;
-		LOC11 = randomint_133271(((NI) 0), (rows ? (rows->Sup.len-1) : -1));
-		if ((NU)(LOC11) >= (NU)(rows->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 0)) >= (NU)(rows->data[LOC11]->Sup.len)) raiseIndexError();
-		randomitem = rows->data[LOC11]->data[((NI) 0)];
-		nimln(17, "lootdrops.nim");
-		result = nsuParseInt(randomitem);
-		nimln(18, "lootdrops.nim");
-		goto BeforeRet;
 	}
 	LA1: ;
+	nimln(90, "lootdrops.nim");
+	LOC6 = 0;
+	LOC6 = sql_190021(((NimStringDesc*) &TMP2825));
+	memset((void*)LOC7, 0, sizeof(LOC7));
+	LOC7[0] = nimIntToStr(rank);
+	rows = getallrows_190488(db_282135, LOC6, LOC7, 1);
+	nimln(92, "lootdrops.nim");
+	LOC8 = 0;
+	LOC8 = randomint_133271(((NI) 0), (rows ? (rows->Sup.len-1) : -1));
+	if ((NU)(LOC8) >= (NU)(rows->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 0)) >= (NU)(rows->data[LOC8]->Sup.len)) raiseIndexError();
+	randomitem = rows->data[LOC8]->data[((NI) 0)];
+	nimln(93, "lootdrops.nim");
+	result = nsuParseInt(randomitem);
+	nimln(94, "lootdrops.nim");
+	goto BeforeRet;
 	}BeforeRet: ;
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(NIM_BOOL, adduserloot_282722)(NI user, NI item) {
+	NIM_BOOL result;
+	NimStringDesc* LOC1;
+	TY282225 LOC2;
+	nimfr("addUserLoot", "lootdrops.nim")
+	result = 0;
+	nimln(97, "lootdrops.nim");
+	LOC1 = 0;
+	LOC1 = sql_190021(((NimStringDesc*) &TMP2826));
+	memset((void*)LOC2, 0, sizeof(LOC2));
+	nimln(99, "lootdrops.nim");
+	LOC2[0] = nimIntToStr(item);
+	LOC2[1] = nimIntToStr(user);
+	result = tryexec_190138(db_282135, LOC1, LOC2, 2);
 	popFrame();
 	return result;
 }
@@ -1642,18 +2041,11 @@ NIM_EXTERNC N_NOINLINE(void, lootdropsInit)(void) {
 	NimStringDesc* LOC11;
 	NimStringDesc* LOC12;
 	NimStringDesc* LOC13;
-	NI LOC14;
+	NimStringDesc* LOC14;
 	NimStringDesc* LOC15;
-	NI LOC16;
+	NimStringDesc* LOC16;
 	NimStringDesc* LOC17;
-	NI LOC18;
-	NimStringDesc* LOC19;
-	NI LOC20;
-	NimStringDesc* LOC21;
-	NI LOC22;
-	NimStringDesc* LOC23;
-	NI LOC24;
-	NimStringDesc* LOC25;
+	NimStringDesc* LOC18;
 	nimfr("lootdrops", "lootdrops.nim")
 	nimln(40, "usersystem.nim");
 	LOC1 = 0;
@@ -1727,42 +2119,26 @@ appendString(LOC13, ((NimStringDesc*) &TMP2786));
 appendString(LOC13, nick_282112);
 appendString(LOC13, ((NimStringDesc*) &TMP2787));
 	send_171607(sock_282133, LOC13);
-	nimln(20, "lootdrops.nim");
+	nimln(101, "lootdrops.nim");
 	LOC14 = 0;
-	LOC14 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
+	LOC14 = battleusers_282500(((NimStringDesc*) &TMP2827), ((NimStringDesc*) &TMP2828));
+	printf("%s\015\012", LOC14? (LOC14)->data:"nil");
+	nimln(102, "lootdrops.nim");
 	LOC15 = 0;
-	LOC15 = nimIntToStr(LOC14);
+	LOC15 = battleusers_282500(((NimStringDesc*) &TMP2827), ((NimStringDesc*) &TMP2828));
 	printf("%s\015\012", LOC15? (LOC15)->data:"nil");
-	nimln(21, "lootdrops.nim");
+	nimln(103, "lootdrops.nim");
 	LOC16 = 0;
-	LOC16 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
+	LOC16 = battleusers_282500(((NimStringDesc*) &TMP2827), ((NimStringDesc*) &TMP2828));
+	printf("%s\015\012", LOC16? (LOC16)->data:"nil");
+	nimln(104, "lootdrops.nim");
 	LOC17 = 0;
-	LOC17 = nimIntToStr(LOC16);
+	LOC17 = battleusers_282500(((NimStringDesc*) &TMP2827), ((NimStringDesc*) &TMP2828));
 	printf("%s\015\012", LOC17? (LOC17)->data:"nil");
-	nimln(22, "lootdrops.nim");
+	nimln(105, "lootdrops.nim");
 	LOC18 = 0;
-	LOC18 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
-	LOC19 = 0;
-	LOC19 = nimIntToStr(LOC18);
-	printf("%s\015\012", LOC19? (LOC19)->data:"nil");
-	nimln(23, "lootdrops.nim");
-	LOC20 = 0;
-	LOC20 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
-	LOC21 = 0;
-	LOC21 = nimIntToStr(LOC20);
-	printf("%s\015\012", LOC21? (LOC21)->data:"nil");
-	nimln(24, "lootdrops.nim");
-	LOC22 = 0;
-	LOC22 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
-	LOC23 = 0;
-	LOC23 = nimIntToStr(LOC22);
-	printf("%s\015\012", LOC23? (LOC23)->data:"nil");
-	nimln(25, "lootdrops.nim");
-	LOC24 = 0;
-	LOC24 = generatelootdrop_282411(((NimStringDesc*) &TMP2809), NIM_TRUE);
-	LOC25 = 0;
-	LOC25 = nimIntToStr(LOC24);
-	printf("%s\015\012", LOC25? (LOC25)->data:"nil");
+	LOC18 = battleusers_282500(((NimStringDesc*) &TMP2827), ((NimStringDesc*) &TMP2828));
+	printf("%s\015\012", LOC18? (LOC18)->data:"nil");
 	popFrame();
 }
 

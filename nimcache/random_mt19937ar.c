@@ -8,31 +8,31 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef struct Mtstate127035 Mtstate127035;
-typedef NU32 TY127036[624];
-struct  Mtstate127035  {
-TY127036 mt;
+typedef struct Mtstate273035 Mtstate273035;
+typedef NU32 TY273036[624];
+struct  Mtstate273035  {
+TY273036 mt;
 NI mti;
 };
-typedef NU32 TY127330[2];
-N_NIMCALL(Mtstate127035, initmtstate_127043)(void);
+typedef NU32 TY273330[2];
+N_NIMCALL(Mtstate273035, initmtstate_273043)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, initgenrand_127053)(Mtstate127035* s, NU32 seed);
+N_NIMCALL(void, initgenrand_273053)(Mtstate273035* s, NU32 seed);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyLen0);
-N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s);
-N_NIMCALL(NI32, genrandint31_127714)(Mtstate127035* s);
+N_NIMCALL(void, initbyarray_273116)(Mtstate273035* s, NU32* initkey, NI initkeyLen0);
+N_NIMCALL(NU32, genrandint32_273324)(Mtstate273035* s);
+N_NIMCALL(NI32, genrandint31_273714)(Mtstate273035* s);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(NF, genrandreal1_127734)(Mtstate127035* s);
-N_NIMCALL(NF, genrandreal2_127749)(Mtstate127035* s);
-N_NIMCALL(NF, genrandreal3_127764)(Mtstate127035* s);
-N_NIMCALL(NF, genrandres53_127780)(Mtstate127035* s);
+N_NIMCALL(NF, genrandreal1_273734)(Mtstate273035* s);
+N_NIMCALL(NF, genrandreal2_273749)(Mtstate273035* s);
+N_NIMCALL(NF, genrandreal3_273764)(Mtstate273035* s);
+N_NIMCALL(NF, genrandres53_273780)(Mtstate273035* s);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -62,8 +62,8 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(Mtstate127035, initmtstate_127043)(void) {
-	Mtstate127035 result;
+N_NIMCALL(Mtstate273035, initmtstate_273043)(void) {
+	Mtstate273035 result;
 	nimfr("init_MTState", "mt19937ar.nim")
 	memset((void*)(&result), 0, sizeof(result));
 	nimln(72, "mt19937ar.nim");
@@ -112,7 +112,7 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, initgenrand_127053)(Mtstate127035* s, NU32 seed) {
+N_NIMCALL(void, initgenrand_273053)(Mtstate273035* s, NU32 seed) {
 	nimfr("init_genrand", "mt19937ar.nim")
 	nimln(76, "mt19937ar.nim");
 	(*s).mt[(((NI) 0))- 0] = seed;
@@ -121,27 +121,27 @@ N_NIMCALL(void, initgenrand_127053)(Mtstate127035* s, NU32 seed) {
 	{
 		nimln(78, "mt19937ar.nim");
 		while (1) {
-			NI TMP532;
-			NI TMP533;
-			NI TMP534;
+			NI TMP2683;
+			NI TMP2684;
+			NI TMP2685;
 			if (!((*s).mti < ((NI) 624))) goto LA2;
 			nimln(79, "mt19937ar.nim");
 			if ((NU)((*s).mti) > (NU)(623)) raiseIndexError();
 			nimln(80, "mt19937ar.nim");
-			TMP532 = subInt((*s).mti, ((NI) 1));
-			if ((NU)((NI)(TMP532)) > (NU)(623)) raiseIndexError();
-			TMP533 = subInt((*s).mti, ((NI) 1));
-			if ((NU)((NI)(TMP533)) > (NU)(623)) raiseIndexError();
-			(*s).mt[((*s).mti)- 0] = (NU32)((NU32)((NU32)((NU32)(((NU32) 1812433253)) * (NU32)((NU32)((*s).mt[((NI)(TMP532))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP533))- 0]) >> (NU64)(((NI) 30))))))) + (NU32)(((NU32) ((*s).mti))));
+			TMP2683 = subInt((*s).mti, ((NI) 1));
+			if ((NU)((NI)(TMP2683)) > (NU)(623)) raiseIndexError();
+			TMP2684 = subInt((*s).mti, ((NI) 1));
+			if ((NU)((NI)(TMP2684)) > (NU)(623)) raiseIndexError();
+			(*s).mt[((*s).mti)- 0] = (NU32)((NU32)((NU32)((NU32)(((NU32) 1812433253)) * (NU32)((NU32)((*s).mt[((NI)(TMP2683))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP2684))- 0]) >> (NU64)(((NI) 30))))))) + (NU32)(((NU32) ((*s).mti))));
 			nimln(87, "mt19937ar.nim");
-			TMP534 = addInt((*s).mti, ((NI) 1));
-			(*s).mti = (NI)(TMP534);
+			TMP2685 = addInt((*s).mti, ((NI) 1));
+			(*s).mti = (NI)(TMP2685);
 		} LA2: ;
 	}
 	popFrame();
 }
 
-N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyLen0) {
+N_NIMCALL(void, initbyarray_273116)(Mtstate273035* s, NU32* initkey, NI initkeyLen0) {
 	NI keylength;
 	NI i;
 	NI j;
@@ -149,58 +149,58 @@ N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyL
 	nimln(93, "mt19937ar.nim");
 	keylength = initkeyLen0;
 	nimln(94, "mt19937ar.nim");
-	initgenrand_127053(s, ((NU32) 19650218));
+	initgenrand_273053(s, ((NU32) 19650218));
 	nimln(95, "mt19937ar.nim");
 	i = ((NI) 1);
 	nimln(96, "mt19937ar.nim");
 	j = ((NI) 0);
 	{
-		NI k_127143;
-		NI HEX3Atmp_127286;
-		NI res_127289;
-		k_127143 = 0;
-		HEX3Atmp_127286 = 0;
+		NI k_273143;
+		NI HEX3Atmp_273286;
+		NI res_273289;
+		k_273143 = 0;
+		HEX3Atmp_273286 = 0;
 		nimln(98, "mt19937ar.nim");
 		{
 			if (!(keylength < ((NI) 624))) goto LA4;
-			HEX3Atmp_127286 = ((NI) 624);
+			HEX3Atmp_273286 = ((NI) 624);
 		}
 		goto LA2;
 		LA4: ;
 		{
-			HEX3Atmp_127286 = keylength;
+			HEX3Atmp_273286 = keylength;
 		}
 		LA2: ;
 		nimln(1586, "system.nim");
-		res_127289 = HEX3Atmp_127286;
+		res_273289 = HEX3Atmp_273286;
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP535;
-				NI TMP536;
-				NI TMP537;
-				NI TMP538;
-				NI TMP539;
-				if (!(((NI) 1) <= res_127289)) goto LA8;
+				NI TMP2686;
+				NI TMP2687;
+				NI TMP2688;
+				NI TMP2689;
+				NI TMP2690;
+				if (!(((NI) 1) <= res_273289)) goto LA8;
 				nimln(1588, "system.nim");
-				k_127143 = res_127289;
+				k_273143 = res_273289;
 				nimln(99, "mt19937ar.nim");
 				if ((NU)(i) > (NU)(623)) raiseIndexError();
 				nimln(101, "mt19937ar.nim");
 				nimln(100, "mt19937ar.nim");
 				if ((NU)(i) > (NU)(623)) raiseIndexError();
-				TMP535 = subInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP535)) > (NU)(623)) raiseIndexError();
-				TMP536 = subInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP536)) > (NU)(623)) raiseIndexError();
+				TMP2686 = subInt(i, ((NI) 1));
+				if ((NU)((NI)(TMP2686)) > (NU)(623)) raiseIndexError();
+				TMP2687 = subInt(i, ((NI) 1));
+				if ((NU)((NI)(TMP2687)) > (NU)(623)) raiseIndexError();
 				if ((NU)(j) >= (NU)(initkeyLen0)) raiseIndexError();
-				(*s).mt[(i)- 0] = (NU32)((NU32)((NU32)((NU32)((NU32)((*s).mt[(i)- 0] ^ (NU32)((NU32)((NU32)((*s).mt[((NI)(TMP535))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP536))- 0]) >> (NU64)(((NI) 30))))) * (NU32)(((NU32) 1664525))))) + (NU32)(initkey[j]))) + (NU32)(((NU32) (j))));
+				(*s).mt[(i)- 0] = (NU32)((NU32)((NU32)((NU32)((NU32)((*s).mt[(i)- 0] ^ (NU32)((NU32)((NU32)((*s).mt[((NI)(TMP2686))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP2687))- 0]) >> (NU64)(((NI) 30))))) * (NU32)(((NU32) 1664525))))) + (NU32)(initkey[j]))) + (NU32)(((NU32) (j))));
 				nimln(102, "mt19937ar.nim");
-				TMP537 = addInt(i, ((NI) 1));
-				i = (NI)(TMP537);
+				TMP2688 = addInt(i, ((NI) 1));
+				i = (NI)(TMP2688);
 				nimln(103, "mt19937ar.nim");
-				TMP538 = addInt(j, ((NI) 1));
-				j = (NI)(TMP538);
+				TMP2689 = addInt(j, ((NI) 1));
+				j = (NI)(TMP2689);
 				nimln(104, "mt19937ar.nim");
 				{
 					if (!(((NI) 624) <= i)) goto LA11;
@@ -218,39 +218,39 @@ N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyL
 				}
 				LA15: ;
 				nimln(1589, "system.nim");
-				TMP539 = subInt(res_127289, ((NI) 1));
-				res_127289 = (NI)(TMP539);
+				TMP2690 = subInt(res_273289, ((NI) 1));
+				res_273289 = (NI)(TMP2690);
 			} LA8: ;
 		}
 	}
 	{
-		NI k_127229;
-		NI res_127296;
-		k_127229 = 0;
+		NI k_273229;
+		NI res_273296;
+		k_273229 = 0;
 		nimln(1586, "system.nim");
-		res_127296 = ((NI) 623);
+		res_273296 = ((NI) 623);
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP540;
-				NI TMP541;
-				NI TMP542;
-				NI TMP543;
-				if (!(((NI) 1) <= res_127296)) goto LA19;
+				NI TMP2691;
+				NI TMP2692;
+				NI TMP2693;
+				NI TMP2694;
+				if (!(((NI) 1) <= res_273296)) goto LA19;
 				nimln(1588, "system.nim");
-				k_127229 = res_127296;
+				k_273229 = res_273296;
 				nimln(111, "mt19937ar.nim");
 				if ((NU)(i) > (NU)(623)) raiseIndexError();
 				nimln(112, "mt19937ar.nim");
 				if ((NU)(i) > (NU)(623)) raiseIndexError();
-				TMP540 = subInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP540)) > (NU)(623)) raiseIndexError();
-				TMP541 = subInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP541)) > (NU)(623)) raiseIndexError();
-				(*s).mt[(i)- 0] = (NU32)((NU32)((NU32)((*s).mt[(i)- 0] ^ (NU32)((NU32)((NU32)((*s).mt[((NI)(TMP540))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP541))- 0]) >> (NU64)(((NI) 30))))) * (NU32)(((NU32) 1566083941))))) - (NU32)(((NU32) (i))));
+				TMP2691 = subInt(i, ((NI) 1));
+				if ((NU)((NI)(TMP2691)) > (NU)(623)) raiseIndexError();
+				TMP2692 = subInt(i, ((NI) 1));
+				if ((NU)((NI)(TMP2692)) > (NU)(623)) raiseIndexError();
+				(*s).mt[(i)- 0] = (NU32)((NU32)((NU32)((*s).mt[(i)- 0] ^ (NU32)((NU32)((NU32)((*s).mt[((NI)(TMP2691))- 0] ^ (NU32)((NU64)((*s).mt[((NI)(TMP2692))- 0]) >> (NU64)(((NI) 30))))) * (NU32)(((NU32) 1566083941))))) - (NU32)(((NU32) (i))));
 				nimln(114, "mt19937ar.nim");
-				TMP542 = addInt(i, ((NI) 1));
-				i = (NI)(TMP542);
+				TMP2693 = addInt(i, ((NI) 1));
+				i = (NI)(TMP2693);
 				nimln(115, "mt19937ar.nim");
 				{
 					if (!(((NI) 624) <= i)) goto LA22;
@@ -261,8 +261,8 @@ N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyL
 				}
 				LA22: ;
 				nimln(1589, "system.nim");
-				TMP543 = subInt(res_127296, ((NI) 1));
-				res_127296 = (NI)(TMP543);
+				TMP2694 = subInt(res_273296, ((NI) 1));
+				res_273296 = (NI)(TMP2694);
 			} LA19: ;
 		}
 	}
@@ -271,11 +271,11 @@ N_NIMCALL(void, initbyarray_127116)(Mtstate127035* s, NU32* initkey, NI initkeyL
 	popFrame();
 }
 
-N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s) {
+N_NIMCALL(NU32, genrandint32_273324)(Mtstate273035* s) {
 	NU32 result;
 	NU32 y;
-	TY127330 mag01;
-	NI TMP550;
+	TY273330 mag01;
+	NI TMP2701;
 	nimfr("genrand_int32", "mt19937ar.nim")
 {	result = 0;
 	y = 0;
@@ -290,68 +290,68 @@ N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s) {
 		{
 			if (!((*s).mti == ((NI) 625))) goto LA7;
 			nimln(129, "mt19937ar.nim");
-			initgenrand_127053(s, ((NU32) 5489));
+			initgenrand_273053(s, ((NU32) 5489));
 		}
 		LA7: ;
 		{
-			NI kk_127354;
-			NI res_127679;
-			kk_127354 = 0;
+			NI kk_273354;
+			NI res_273679;
+			kk_273354 = 0;
 			nimln(1598, "system.nim");
-			res_127679 = ((NI) 0);
+			res_273679 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP544;
-					NI TMP545;
-					NI TMP546;
-					if (!(res_127679 <= ((NI) 226))) goto LA11;
+					NI TMP2695;
+					NI TMP2696;
+					NI TMP2697;
+					if (!(res_273679 <= ((NI) 226))) goto LA11;
 					nimln(1600, "system.nim");
-					kk_127354 = res_127679;
+					kk_273354 = res_273679;
 					nimln(132, "mt19937ar.nim");
-					if ((NU)(kk_127354) > (NU)(623)) raiseIndexError();
-					TMP544 = addInt(kk_127354, ((NI) 1));
-					if ((NU)((NI)(TMP544)) > (NU)(623)) raiseIndexError();
-					y = (NU32)((NU32)((*s).mt[(kk_127354)- 0] & ((NU32) (-2147483647 -1))) | ((NU32) ((NU32)((*s).mt[((NI)(TMP544))- 0] & ((NU32) 2147483647)))));
+					if ((NU)(kk_273354) > (NU)(623)) raiseIndexError();
+					TMP2695 = addInt(kk_273354, ((NI) 1));
+					if ((NU)((NI)(TMP2695)) > (NU)(623)) raiseIndexError();
+					y = (NU32)((NU32)((*s).mt[(kk_273354)- 0] & ((NU32) (-2147483647 -1))) | ((NU32) ((NU32)((*s).mt[((NI)(TMP2695))- 0] & ((NU32) 2147483647)))));
 					nimln(133, "mt19937ar.nim");
-					if ((NU)(kk_127354) > (NU)(623)) raiseIndexError();
-					TMP545 = addInt(kk_127354, ((NI) 397));
-					if ((NU)((NI)(TMP545)) > (NU)(623)) raiseIndexError();
-					(*s).mt[(kk_127354)- 0] = (NU32)((NU32)((*s).mt[((NI)(TMP545))- 0] ^ (NU32)((NU64)(y) >> (NU64)(((NI) 1)))) ^ mag01[((NU32)(y & ((NU32) 1)))- 0]);
+					if ((NU)(kk_273354) > (NU)(623)) raiseIndexError();
+					TMP2696 = addInt(kk_273354, ((NI) 397));
+					if ((NU)((NI)(TMP2696)) > (NU)(623)) raiseIndexError();
+					(*s).mt[(kk_273354)- 0] = (NU32)((NU32)((*s).mt[((NI)(TMP2696))- 0] ^ (NU32)((NU64)(y) >> (NU64)(((NI) 1)))) ^ mag01[((NU32)(y & ((NU32) 1)))- 0]);
 					nimln(1619, "system.nim");
-					TMP546 = addInt(res_127679, ((NI) 1));
-					res_127679 = (NI)(TMP546);
+					TMP2697 = addInt(res_273679, ((NI) 1));
+					res_273679 = (NI)(TMP2697);
 				} LA11: ;
 			}
 		}
 		{
-			NI kk_127441;
-			NI res_127686;
-			kk_127441 = 0;
+			NI kk_273441;
+			NI res_273686;
+			kk_273441 = 0;
 			nimln(1598, "system.nim");
-			res_127686 = ((NI) 227);
+			res_273686 = ((NI) 227);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP547;
-					NI TMP548;
-					NI TMP549;
-					if (!(res_127686 <= ((NI) 622))) goto LA14;
+					NI TMP2698;
+					NI TMP2699;
+					NI TMP2700;
+					if (!(res_273686 <= ((NI) 622))) goto LA14;
 					nimln(1600, "system.nim");
-					kk_127441 = res_127686;
+					kk_273441 = res_273686;
 					nimln(136, "mt19937ar.nim");
-					if ((NU)(kk_127441) > (NU)(623)) raiseIndexError();
-					TMP547 = addInt(kk_127441, ((NI) 1));
-					if ((NU)((NI)(TMP547)) > (NU)(623)) raiseIndexError();
-					y = (NU32)((NU32)((*s).mt[(kk_127441)- 0] & ((NU32) (-2147483647 -1))) | ((NU32) ((NU32)((*s).mt[((NI)(TMP547))- 0] & ((NU32) 2147483647)))));
+					if ((NU)(kk_273441) > (NU)(623)) raiseIndexError();
+					TMP2698 = addInt(kk_273441, ((NI) 1));
+					if ((NU)((NI)(TMP2698)) > (NU)(623)) raiseIndexError();
+					y = (NU32)((NU32)((*s).mt[(kk_273441)- 0] & ((NU32) (-2147483647 -1))) | ((NU32) ((NU32)((*s).mt[((NI)(TMP2698))- 0] & ((NU32) 2147483647)))));
 					nimln(137, "mt19937ar.nim");
-					if ((NU)(kk_127441) > (NU)(623)) raiseIndexError();
-					TMP548 = addInt(kk_127441, ((NI) -227));
-					if ((NU)((NI)(TMP548)) > (NU)(623)) raiseIndexError();
-					(*s).mt[(kk_127441)- 0] = (NU32)((NU32)((*s).mt[((NI)(TMP548))- 0] ^ (NU32)((NU64)(y) >> (NU64)(((NI) 1)))) ^ mag01[((NU32)(y & ((NU32) 1)))- 0]);
+					if ((NU)(kk_273441) > (NU)(623)) raiseIndexError();
+					TMP2699 = addInt(kk_273441, ((NI) -227));
+					if ((NU)((NI)(TMP2699)) > (NU)(623)) raiseIndexError();
+					(*s).mt[(kk_273441)- 0] = (NU32)((NU32)((*s).mt[((NI)(TMP2699))- 0] ^ (NU32)((NU64)(y) >> (NU64)(((NI) 1)))) ^ mag01[((NU32)(y & ((NU32) 1)))- 0]);
 					nimln(1619, "system.nim");
-					TMP549 = addInt(res_127686, ((NI) 1));
-					res_127686 = (NI)(TMP549);
+					TMP2700 = addInt(res_273686, ((NI) 1));
+					res_273686 = (NI)(TMP2700);
 				} LA14: ;
 			}
 		}
@@ -367,8 +367,8 @@ N_NIMCALL(NU32, genrandint32_127324)(Mtstate127035* s) {
 	if ((NU)((*s).mti) > (NU)(623)) raiseIndexError();
 	y = (*s).mt[((*s).mti)- 0];
 	nimln(145, "mt19937ar.nim");
-	TMP550 = addInt((*s).mti, ((NI) 1));
-	(*s).mti = (NI)(TMP550);
+	TMP2701 = addInt((*s).mti, ((NI) 1));
+	(*s).mti = (NI)(TMP2701);
 	nimln(148, "mt19937ar.nim");
 	y = (NU32)(y ^ (NU32)((NU64)(y) >> (NU64)(((NI) 11))));
 	nimln(149, "mt19937ar.nim");
@@ -409,14 +409,14 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI32, genrandint31_127714)(Mtstate127035* s) {
+N_NIMCALL(NI32, genrandint31_273714)(Mtstate273035* s) {
 	NI32 result;
 	NU32 LOC1;
 	nimfr("genrand_int31", "mt19937ar.nim")
 {	result = 0;
 	nimln(157, "mt19937ar.nim");
 	LOC1 = 0;
-	LOC1 = genrandint32_127324(s);
+	LOC1 = genrandint32_273324(s);
 	result = ((NI32)chckRange((NU32)((NU64)(LOC1) >> (NU64)(((NI) 1))), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -424,14 +424,14 @@ N_NIMCALL(NI32, genrandint31_127714)(Mtstate127035* s) {
 	return result;
 }
 
-N_NIMCALL(NF, genrandreal1_127734)(Mtstate127035* s) {
+N_NIMCALL(NF, genrandreal1_273734)(Mtstate273035* s) {
 	NF result;
 	NU32 LOC1;
 	nimfr("genrand_real1", "mt19937ar.nim")
 {	result = 0;
 	nimln(161, "mt19937ar.nim");
 	LOC1 = 0;
-	LOC1 = genrandint32_127324(s);
+	LOC1 = genrandint32_273324(s);
 	result = ((NF)(((NF) (LOC1))) * (NF)(2.3283064370807974e-010));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -439,14 +439,14 @@ N_NIMCALL(NF, genrandreal1_127734)(Mtstate127035* s) {
 	return result;
 }
 
-N_NIMCALL(NF, genrandreal2_127749)(Mtstate127035* s) {
+N_NIMCALL(NF, genrandreal2_273749)(Mtstate273035* s) {
 	NF result;
 	NU32 LOC1;
 	nimfr("genrand_real2", "mt19937ar.nim")
 {	result = 0;
 	nimln(166, "mt19937ar.nim");
 	LOC1 = 0;
-	LOC1 = genrandint32_127324(s);
+	LOC1 = genrandint32_273324(s);
 	result = ((NF)(((NF) (LOC1))) * (NF)(2.3283064365386963e-010));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -454,14 +454,14 @@ N_NIMCALL(NF, genrandreal2_127749)(Mtstate127035* s) {
 	return result;
 }
 
-N_NIMCALL(NF, genrandreal3_127764)(Mtstate127035* s) {
+N_NIMCALL(NF, genrandreal3_273764)(Mtstate273035* s) {
 	NF result;
 	NU32 LOC1;
 	nimfr("genrand_real3", "mt19937ar.nim")
 {	result = 0;
 	nimln(171, "mt19937ar.nim");
 	LOC1 = 0;
-	LOC1 = genrandint32_127324(s);
+	LOC1 = genrandint32_273324(s);
 	result = ((NF)(((NF)(((NF) (LOC1))) + (NF)(5.0000000000000000e-001))) * (NF)(2.3283064365386963e-010));
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -469,7 +469,7 @@ N_NIMCALL(NF, genrandreal3_127764)(Mtstate127035* s) {
 	return result;
 }
 
-N_NIMCALL(NF, genrandres53_127780)(Mtstate127035* s) {
+N_NIMCALL(NF, genrandres53_273780)(Mtstate273035* s) {
 	NF result;
 	NU32 a;
 	NU32 LOC1;
@@ -479,11 +479,11 @@ N_NIMCALL(NF, genrandres53_127780)(Mtstate127035* s) {
 {	result = 0;
 	nimln(177, "mt19937ar.nim");
 	LOC1 = 0;
-	LOC1 = genrandint32_127324(s);
+	LOC1 = genrandint32_273324(s);
 	a = (NU32)((NU64)(LOC1) >> (NU64)(((NI) 5)));
 	nimln(178, "mt19937ar.nim");
 	LOC2 = 0;
-	LOC2 = genrandint32_127324(s);
+	LOC2 = genrandint32_273324(s);
 	b = (NU32)((NU64)(LOC2) >> (NU64)(((NI) 6)));
 	nimln(179, "mt19937ar.nim");
 	result = ((NF)(((NF)(((NF)(((NF) (a))) * (NF)(6.7108864000000000e+007))) + (NF)(((NF) (b))))) * (NF)(1.1102230246251565e-016));

@@ -14,7 +14,7 @@
 #include <setjmp.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Protocolerror277016 Protocolerror277016;
+typedef struct Protocolerror265016 Protocolerror265016;
 typedef struct Ioerror3431 Ioerror3431;
 typedef struct Systemerror3429 Systemerror3429;
 typedef struct Exception Exception;
@@ -34,35 +34,35 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct Socketimpl239407 Socketimpl239407;
-typedef struct Stringtableobj176012 Stringtableobj176012;
-typedef struct Response277008 Response277008;
+typedef struct Socketimpl227407 Socketimpl227407;
+typedef struct Stringtableobj153012 Stringtableobj153012;
+typedef struct Response265008 Response265008;
 typedef struct Slice88061 Slice88061;
-typedef struct SslcontextHEX3Aobjecttype277375 SslcontextHEX3Aobjecttype277375;
-typedef struct ProxyHEX3Aobjecttype277023 ProxyHEX3Aobjecttype277023;
-typedef struct Uri247012 Uri247012;
-typedef struct MultipartdataHEX3Aobjecttype277030 MultipartdataHEX3Aobjecttype277030;
+typedef struct SslcontextHEX3Aobjecttype265375 SslcontextHEX3Aobjecttype265375;
+typedef struct ProxyHEX3Aobjecttype265023 ProxyHEX3Aobjecttype265023;
+typedef struct Uri235012 Uri235012;
+typedef struct MultipartdataHEX3Aobjecttype265030 MultipartdataHEX3Aobjecttype265030;
 typedef struct TY13606 TY13606;
 typedef struct Valueerror3449 Valueerror3449;
-typedef struct TY106548 TY106548;
-typedef struct Mimedb251010 Mimedb251010;
-typedef struct TY144789 TY144789;
-typedef struct Httprequesterror277018 Httprequesterror277018;
-typedef struct Keyvaluepairseq176010 Keyvaluepairseq176010;
-typedef struct AsynchttpclientHEX3Aobjecttype278373 AsynchttpclientHEX3Aobjecttype278373;
-typedef struct Asyncsocketdesc268202 Asyncsocketdesc268202;
-typedef struct FutureHEX3Aobjecttype259769 FutureHEX3Aobjecttype259769;
-typedef struct TY278810 TY278810;
-typedef struct FuturebaseHEX3Aobjecttype255017 FuturebaseHEX3Aobjecttype255017;
+typedef struct TY108548 TY108548;
+typedef struct Mimedb239010 Mimedb239010;
+typedef struct TY119789 TY119789;
+typedef struct Httprequesterror265018 Httprequesterror265018;
+typedef struct Keyvaluepairseq153010 Keyvaluepairseq153010;
+typedef struct AsynchttpclientHEX3Aobjecttype266373 AsynchttpclientHEX3Aobjecttype266373;
+typedef struct Asyncsocketdesc256202 Asyncsocketdesc256202;
+typedef struct FutureHEX3Aobjecttype247769 FutureHEX3Aobjecttype247769;
+typedef struct TY266810 TY266810;
+typedef struct FuturebaseHEX3Aobjecttype243017 FuturebaseHEX3Aobjecttype243017;
 typedef struct TSafePoint TSafePoint;
-typedef struct TY279010 TY279010;
-typedef struct TY279210 TY279210;
-typedef struct FutureHEX3Aobjecttype279252 FutureHEX3Aobjecttype279252;
-typedef struct TY280429 TY280429;
-typedef struct FutureHEX3Aobjecttype255097 FutureHEX3Aobjecttype255097;
-typedef struct TY280810 TY280810;
-typedef struct TY281410 TY281410;
-typedef struct TY281610 TY281610;
+typedef struct TY267010 TY267010;
+typedef struct TY267210 TY267210;
+typedef struct FutureHEX3Aobjecttype267252 FutureHEX3Aobjecttype267252;
+typedef struct TY268429 TY268429;
+typedef struct FutureHEX3Aobjecttype243097 FutureHEX3Aobjecttype243097;
+typedef struct TY268810 TY268810;
+typedef struct TY269410 TY269410;
+typedef struct TY269610 TY269610;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
 struct  TGenericSeq  {
@@ -101,7 +101,7 @@ struct  Systemerror3429  {
 struct  Ioerror3431  {
   Systemerror3429 Sup;
 };
-struct  Protocolerror277016  {
+struct  Protocolerror265016  {
   Ioerror3431 Sup;
 };
 struct  TNimNode  {
@@ -168,17 +168,17 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-struct Response277008 {
+struct Response265008 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
-Stringtableobj176012* Field2;
+Stringtableobj153012* Field2;
 NimStringDesc* Field3;
 };
 struct  Slice88061  {
 NI a;
 NI b;
 };
-struct  Uri247012  {
+struct  Uri235012  {
 NimStringDesc* scheme;
 NimStringDesc* username;
 NimStringDesc* password;
@@ -189,60 +189,60 @@ NimStringDesc* query;
 NimStringDesc* anchor;
 NIM_BOOL opaque;
 };
-struct  ProxyHEX3Aobjecttype277023  {
-Uri247012 url;
+struct  ProxyHEX3Aobjecttype265023  {
+Uri235012 url;
 NimStringDesc* auth;
 };
-struct  MultipartdataHEX3Aobjecttype277030  {
+struct  MultipartdataHEX3Aobjecttype265030  {
 TY13606* content;
 };
 typedef NU8 TY77659[32];
 struct  Valueerror3449  {
   Exception Sup;
 };
-struct TY106548 {
+struct TY108548 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 };
-struct  Mimedb251010  {
-Stringtableobj176012* mimes;
+struct  Mimedb239010  {
+Stringtableobj153012* mimes;
 };
-struct TY144789 {
+struct TY119789 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 NimStringDesc* Field2;
 };
-struct  Httprequesterror277018  {
+struct  Httprequesterror265018  {
   Ioerror3431 Sup;
 };
-typedef NimStringDesc* TY205801[4];
-struct  Stringtableobj176012  {
+typedef NimStringDesc* TY187801[4];
+struct  Stringtableobj153012  {
   TNimObject Sup;
 NI counter;
-Keyvaluepairseq176010* data;
+Keyvaluepairseq153010* data;
 NU8 mode;
 };
-struct  AsynchttpclientHEX3Aobjecttype278373  {
-Asyncsocketdesc268202* socket;
+struct  AsynchttpclientHEX3Aobjecttype266373  {
+Asyncsocketdesc256202* socket;
 NIM_BOOL connected;
-Uri247012 currenturl;
-Stringtableobj176012* headers;
+Uri235012 currenturl;
+Stringtableobj153012* headers;
 NI maxredirects;
 NimStringDesc* useragent;
 };
 typedef struct {
-N_NIMCALL_PTR(FuturebaseHEX3Aobjecttype255017*, ClPrc) (void* ClEnv);
+N_NIMCALL_PTR(FuturebaseHEX3Aobjecttype243017*, ClPrc) (void* ClEnv);
 void* ClEnv;
-} TY266613;
-struct  TY278810  {
+} TY254613;
+struct  TY266810  {
 NI HEX3Astate;
-NI size278624;
-Asyncsocketdesc268202* socket278623;
-FutureHEX3Aobjecttype259769* retfuture278618;
-TY266613 nameitervar278662;
-NimStringDesc* result278638;
-FutureHEX3Aobjecttype259769* future278620;
-NimStringDesc* data278649;
+NI size266624;
+Asyncsocketdesc256202* socket266623;
+FutureHEX3Aobjecttype247769* retfuture266618;
+TY254613 nameitervar266662;
+NimStringDesc* result266638;
+FutureHEX3Aobjecttype247769* future266620;
+NimStringDesc* data266649;
 };
 typedef struct {
 N_NIMCALL_PTR(NIM_BOOL, ClPrc) (Exception* e, void* ClEnv);
@@ -255,14 +255,14 @@ jmp_buf context;
 NIM_BOOL hasRaiseAction;
 TY15609 raiseAction;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2676) (void);
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2598) (void);
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (void* ClEnv);
 void* ClEnv;
-} TY255018;
-struct  FuturebaseHEX3Aobjecttype255017  {
+} TY243018;
+struct  FuturebaseHEX3Aobjecttype243017  {
   TNimObject Sup;
-TY255018 cb;
+TY243018 cb;
 NIM_BOOL finished;
 Exception* error;
 NimStringDesc* errorstacktrace;
@@ -270,116 +270,116 @@ NimStringDesc* stacktrace;
 NI id;
 NimStringDesc* fromproc;
 };
-struct  FutureHEX3Aobjecttype259769  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+struct  FutureHEX3Aobjecttype247769  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 NimStringDesc* value;
 };
-typedef N_CLOSURE_PTR(void, TMP2678) (void);
-struct  TY279010  {
+typedef N_CLOSURE_PTR(void, TMP2600) (void);
+struct  TY267010  {
 NI HEX3Astate;
-AsynchttpclientHEX3Aobjecttype278373* client278843;
-FutureHEX3Aobjecttype259769* retfuture278835;
-TY266613 nameitervar278972;
-NimStringDesc* result278857;
-NI chunksize278858;
-FutureHEX3Aobjecttype259769* future278837;
-NimStringDesc* chunksizestr278869;
-NI i278870;
-FutureHEX3Aobjecttype259769* future278838;
-FutureHEX3Aobjecttype259769* future278839;
-FutureHEX3Aobjecttype259769* future278840;
+AsynchttpclientHEX3Aobjecttype266373* client266843;
+FutureHEX3Aobjecttype247769* retfuture266835;
+TY254613 nameitervar266972;
+NimStringDesc* result266857;
+NI chunksize266858;
+FutureHEX3Aobjecttype247769* future266837;
+NimStringDesc* chunksizestr266869;
+NI i266870;
+FutureHEX3Aobjecttype247769* future266838;
+FutureHEX3Aobjecttype247769* future266839;
+FutureHEX3Aobjecttype247769* future266840;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2689) (void);
-typedef N_CLOSURE_PTR(void, TMP2691) (void);
-struct  TY279210  {
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2611) (void);
+typedef N_CLOSURE_PTR(void, TMP2613) (void);
+struct  TY267210  {
 NI HEX3Astate;
-Stringtableobj176012* headers279047;
-AsynchttpclientHEX3Aobjecttype278373* client279046;
-FutureHEX3Aobjecttype259769* retfuture279039;
-TY266613 nameitervar279106;
-NimStringDesc* result279061;
-FutureHEX3Aobjecttype259769* future279041;
-NimStringDesc* contentlengthheader279070;
-NI length279071;
-FutureHEX3Aobjecttype259769* future279042;
-NimStringDesc* buf279082;
-FutureHEX3Aobjecttype259769* future279043;
+Stringtableobj153012* headers267047;
+AsynchttpclientHEX3Aobjecttype266373* client267046;
+FutureHEX3Aobjecttype247769* retfuture267039;
+TY254613 nameitervar267106;
+NimStringDesc* result267061;
+FutureHEX3Aobjecttype247769* future267041;
+NimStringDesc* contentlengthheader267070;
+NI length267071;
+FutureHEX3Aobjecttype247769* future267042;
+NimStringDesc* buf267082;
+FutureHEX3Aobjecttype247769* future267043;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2699) (void);
-typedef N_CLOSURE_PTR(void, TMP2701) (void);
-struct  TY280429  {
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2621) (void);
+typedef N_CLOSURE_PTR(void, TMP2623) (void);
+struct  TY268429  {
 NI HEX3Astate;
-AsynchttpclientHEX3Aobjecttype278373* client279245;
-NIM_BOOL getbody279246;
-FutureHEX3Aobjecttype279252* retfuture279239;
-TY266613 nameitervar280216;
-Response277008 result279415;
-NIM_BOOL parsedstatus279416;
-NI linei279417;
-NIM_BOOL fullyread279418;
-NimStringDesc* line279419;
-FutureHEX3Aobjecttype259769* future279241;
-NI le279430;
-NimStringDesc* name279476;
-NI le279478;
-FutureHEX3Aobjecttype259769* future279242;
+AsynchttpclientHEX3Aobjecttype266373* client267245;
+NIM_BOOL getbody267246;
+FutureHEX3Aobjecttype267252* retfuture267239;
+TY254613 nameitervar268216;
+Response265008 result267415;
+NIM_BOOL parsedstatus267416;
+NI linei267417;
+NIM_BOOL fullyread267418;
+NimStringDesc* line267419;
+FutureHEX3Aobjecttype247769* future267241;
+NI le267430;
+NimStringDesc* name267476;
+NI le267478;
+FutureHEX3Aobjecttype247769* future267242;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2718) (void);
-struct  FutureHEX3Aobjecttype279252  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
-Response277008 value;
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2640) (void);
+struct  FutureHEX3Aobjecttype267252  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
+Response265008 value;
 };
-typedef N_CLOSURE_PTR(void, TMP2720) (void);
-struct  TY280810  {
+typedef N_CLOSURE_PTR(void, TMP2642) (void);
+struct  TY268810  {
 NI HEX3Astate;
-AsynchttpclientHEX3Aobjecttype278373* client280466;
-Uri247012 url280467;
-FutureHEX3Aobjecttype255097* retfuture280461;
-TY266613 nameitervar280624;
-NU16 port280486;
-Httprequesterror277018* e280603;
-FutureHEX3Aobjecttype255097* future280463;
+AsynchttpclientHEX3Aobjecttype266373* client268466;
+Uri235012 url268467;
+FutureHEX3Aobjecttype243097* retfuture268461;
+TY254613 nameitervar268624;
+NU16 port268486;
+Httprequesterror265018* e268603;
+FutureHEX3Aobjecttype243097* future268463;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2725) (void);
-struct  FutureHEX3Aobjecttype255097  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2647) (void);
+struct  FutureHEX3Aobjecttype243097  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 };
-typedef N_CLOSURE_PTR(void, TMP2727) (void);
-struct  TY281410  {
+typedef N_CLOSURE_PTR(void, TMP2649) (void);
+struct  TY269410  {
 NI HEX3Astate;
-NimStringDesc* url280844;
-AsynchttpclientHEX3Aobjecttype278373* client280843;
-NimStringDesc* httpmethod280845;
-NimStringDesc* body280846;
-FutureHEX3Aobjecttype279252* retfuture280835;
-TY266613 nameitervar281227;
-Response277008 result280860;
-Uri247012 r280861;
-FutureHEX3Aobjecttype255097* future280837;
-NimStringDesc* headers280869;
-FutureHEX3Aobjecttype255097* future280838;
-FutureHEX3Aobjecttype255097* future280839;
-FutureHEX3Aobjecttype279252* future280840;
+NimStringDesc* url268844;
+AsynchttpclientHEX3Aobjecttype266373* client268843;
+NimStringDesc* httpmethod268845;
+NimStringDesc* body268846;
+FutureHEX3Aobjecttype267252* retfuture268835;
+TY254613 nameitervar269227;
+Response265008 result268860;
+Uri235012 r268861;
+FutureHEX3Aobjecttype243097* future268837;
+NimStringDesc* headers268869;
+FutureHEX3Aobjecttype243097* future268838;
+FutureHEX3Aobjecttype243097* future268839;
+FutureHEX3Aobjecttype267252* future268840;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2734) (void);
-typedef N_CLOSURE_PTR(void, TMP2736) (void);
-struct  TY281610  {
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2656) (void);
+typedef N_CLOSURE_PTR(void, TMP2658) (void);
+struct  TY269610  {
 NI HEX3Astate;
-AsynchttpclientHEX3Aobjecttype278373* client281469;
-NimStringDesc* url281470;
-FutureHEX3Aobjecttype279252* retfuture281463;
-TY266613 nameitervar281533;
-Response277008 result281484;
-FutureHEX3Aobjecttype279252* future281465;
-NimStringDesc* lasturl281493;
-NI i281504;
-NI HEX3Atmp281525;
-NI res281528;
-NimStringDesc* redirectto281505;
-FutureHEX3Aobjecttype279252* future281466;
+AsynchttpclientHEX3Aobjecttype266373* client269469;
+NimStringDesc* url269470;
+FutureHEX3Aobjecttype267252* retfuture269463;
+TY254613 nameitervar269533;
+Response265008 result269484;
+FutureHEX3Aobjecttype267252* future269465;
+NimStringDesc* lasturl269493;
+NI i269504;
+NI HEX3Atmp269525;
+NI res269528;
+NimStringDesc* redirectto269505;
+FutureHEX3Aobjecttype267252* future269466;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2742) (void);
-typedef N_CLOSURE_PTR(void, TMP2744) (void);
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2664) (void);
+typedef N_CLOSURE_PTR(void, TMP2666) (void);
 typedef NI TY27820[8];
 struct  Tpagedesc46754  {
 Tpagedesc46754* next;
@@ -424,27 +424,27 @@ NI key;
 NI upperbound;
 NI level;
 };
-typedef NIM_CHAR TY268208[4001];
-struct  Socketimpl239407  {
+typedef NIM_CHAR TY256208[4001];
+struct  Socketimpl227407  {
 NI fd;
 NIM_BOOL isbuffered;
 union{
-struct {TY268208 buffer;
+struct {TY256208 buffer;
 NI currpos;
 NI buflen;
 } S1;
 } isbufferedU;
 NI32 lasterror;
 };
-struct  SslcontextHEX3Aobjecttype277375  {
+struct  SslcontextHEX3Aobjecttype265375  {
 char dummy;
 };
-struct  Asyncsocketdesc268202  {
+struct  Asyncsocketdesc256202  {
 NI fd;
 NIM_BOOL closed;
 NIM_BOOL isbuffered;
 union{
-struct {TY268208 buffer;
+struct {TY256208 buffer;
 NI currpos;
 NI buflen;
 } S1;
@@ -459,13 +459,13 @@ struct TY13606 {
   TGenericSeq Sup;
   NimStringDesc* data[SEQ_DECL_SIZE];
 };
-struct Keyvaluepairseq176010 {
+struct Keyvaluepairseq153010 {
   TGenericSeq Sup;
-  TY106548 data[SEQ_DECL_SIZE];
+  TY108548 data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(void, httperror_277048)(NimStringDesc* msg);
+N_NIMCALL(void, httperror_265048)(NimStringDesc* msg);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP2522)(void* p, NI op);
+N_NIMCALL(void, TMP2444)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
@@ -476,311 +476,311 @@ static N_INLINE(void, popFrame)(void);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(void, fileerror_277068)(NimStringDesc* msg);
-N_NIMCALL(NimStringDesc*, parsechunks_277088)(Socketimpl239407* s, NI timeout);
+N_NIMCALL(void, fileerror_265068)(NimStringDesc* msg);
+N_NIMCALL(NimStringDesc*, parsechunks_265088)(Socketimpl227407* s, NI timeout);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
-N_NIMCALL(void, readline_243608)(Socketimpl239407* socket, NimStringDesc** line, NI timeout, NU8 flags);
+N_NIMCALL(void, readline_231608)(Socketimpl227407* socket, NimStringDesc** line, NI timeout, NU8 flags);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
-N_NIMCALL(void, skip_243682)(Socketimpl239407* socket, NI size, NI timeout);
+N_NIMCALL(void, skip_231682)(Socketimpl227407* socket, NI size, NI timeout);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
-N_NIMCALL(NI, recv_243235)(Socketimpl239407* socket, void* data, NI size, NI timeout);
-N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj176012* headers, NI timeout);
-N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj176012* t, NimStringDesc* key);
+N_NIMCALL(NI, recv_231235)(Socketimpl227407* socket, void* data, NI size, NI timeout);
+N_NIMCALL(NimStringDesc*, parsebody_265213)(Socketimpl227407* s, Stringtableobj153012* headers, NI timeout);
+N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj153012* t, NimStringDesc* key);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
 N_NIMCALL(NI, nsuParseInt)(NimStringDesc* s);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI timeout, Response277008* Result);
-N_NIMCALL(Stringtableobj176012*, nstnewStringTable)(NU8 mode);
+N_NIMCALL(void, parseresponse_265260)(Socketimpl227407* s, NIM_BOOL getbody, NI timeout, Response265008* Result);
+N_NIMCALL(Stringtableobj153012*, nstnewStringTable)(NU8 mode);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(NI, skipignorecase_93447)(NimStringDesc* s, NimStringDesc* token, NI start);
-static N_INLINE(NI, skipwhitespace_93382)(NimStringDesc* s, NI start);
+N_NIMCALL(NI, skipignorecase_95447)(NimStringDesc* s, NimStringDesc* token, NI start);
+static N_INLINE(NI, skipwhitespace_95382)(NimStringDesc* s, NI start);
 static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
-static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b);
-static N_INLINE(NI, parseuntil_93623)(NimStringDesc* s, NimStringDesc** token, NIM_CHAR until, NI start);
-N_NIMCALL(void, nstPut)(Stringtableobj176012* t, NimStringDesc* key, NimStringDesc* val);
+static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b);
+static N_INLINE(NI, parseuntil_95623)(NimStringDesc* s, NimStringDesc** token, NIM_CHAR until, NI start);
+N_NIMCALL(void, nstPut)(Stringtableobj153012* t, NimStringDesc* key, NimStringDesc* val);
 N_NIMCALL(NimStringDesc*, nsuStrip)(NimStringDesc* s, NIM_BOOL leading, NIM_BOOL trailing);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
-N_NIMCALL(ProxyHEX3Aobjecttype277023*, newproxy_277405)(NimStringDesc* url, NimStringDesc* auth);
-N_NIMCALL(void, TMP2602)(void* p, NI op);
-N_NIMCALL(void, parseuri_249100)(NimStringDesc* uri, Uri247012* Result);
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, newmultipartdata_277417)(void);
-N_NIMCALL(void, TMP2603)(void* p, NI op);
+N_NIMCALL(ProxyHEX3Aobjecttype265023*, newproxy_265405)(NimStringDesc* url, NimStringDesc* auth);
+N_NIMCALL(void, TMP2524)(void* p, NI op);
+N_NIMCALL(void, parseuri_237100)(NimStringDesc* uri, Uri235012* Result);
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, newmultipartdata_265417)(void);
+N_NIMCALL(void, TMP2525)(void* p, NI op);
 N_NIMCALL(void*, newSeqRC1)(TNimType* typ, NI len);
-N_NIMCALL(void, add_277443)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, NimStringDesc* content, NimStringDesc* filename, NimStringDesc* contenttype);
-N_NIMCALL(NIM_BOOL, contains_99373)(NimStringDesc* s, TY77659 chars);
+N_NIMCALL(void, add_265443)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, NimStringDesc* content, NimStringDesc* filename, NimStringDesc* contenttype);
+N_NIMCALL(NIM_BOOL, contains_101373)(NimStringDesc* s, TY77659 chars);
 N_NIMCALL(TGenericSeq*, incrSeq)(TGenericSeq* seq, NI elemsize);
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, add_277510)(MultipartdataHEX3Aobjecttype277030** p, TY106548* xs, NI xsLen0);
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, newmultipartdata_277572)(TY106548* xs, NI xsLen0);
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, addfiles_277600)(MultipartdataHEX3Aobjecttype277030** p, TY106548* xs, NI xsLen0);
-N_NIMCALL(void, newmimetypes_251499)(Mimedb251010* Result);
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, add_265510)(MultipartdataHEX3Aobjecttype265030** p, TY108548* xs, NI xsLen0);
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, newmultipartdata_265572)(TY108548* xs, NI xsLen0);
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, addfiles_265600)(MultipartdataHEX3Aobjecttype265030** p, TY108548* xs, NI xsLen0);
+N_NIMCALL(void, newmimetypes_239499)(Mimedb239010* Result);
 N_NOINLINE(void, chckNil)(void* p);
-N_NIMCALL(void, nossplitFile)(NimStringDesc* path, TY144789* Result);
-N_NIMCALL(NimStringDesc*, getmimetype_251508)(Mimedb251010 mimedb, NimStringDesc* ext, NimStringDesc* default_251512);
+N_NIMCALL(void, nossplitFile)(NimStringDesc* path, TY119789* Result);
+N_NIMCALL(NimStringDesc*, getmimetype_239508)(Mimedb239010 mimedb, NimStringDesc* ext, NimStringDesc* default_239512);
 N_NIMCALL(NimStringDesc*, readfile_13434)(NimStringDesc* filename);
-N_NIMCALL(void, HEX5BHEX5DHEX3D_277682)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, NimStringDesc* content);
-N_NIMCALL(void, HEX5BHEX5DHEX3D_277694)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, TY144789* file);
-N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* Result);
-N_NIMCALL(NIM_BOOL, HEX3DHEX3D_158203)(TY13606* x, TY13606* y);
-N_NIMCALL(NI, random_120212)(NI max);
-N_NIMCALL(NIM_BOOL, contains_99362)(NimStringDesc* s, NimStringDesc* sub);
+N_NIMCALL(void, HEX5BHEX5DHEX3D_265682)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, NimStringDesc* content);
+N_NIMCALL(void, HEX5BHEX5DHEX3D_265694)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, TY119789* file);
+N_NIMCALL(void, format_265710)(MultipartdataHEX3Aobjecttype265030* p, TY108548* Result);
+N_NIMCALL(NIM_BOOL, HEX3DHEX3D_133203)(TY13606* x, TY13606* y);
+N_NIMCALL(NI, random_211212)(NI max);
+N_NIMCALL(NIM_BOOL, contains_101362)(NimStringDesc* s, NimStringDesc* sub);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
-N_NIMCALL(void, request_277870)(NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result);
+N_NIMCALL(void, request_265870)(NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result);
 N_NIMCALL(void, genericAssign)(void* dest, void* src, TNimType* mt);
 N_NIMCALL(NimStringDesc*, copyStr)(NimStringDesc* s, NI start);
 N_NIMCALL(NimStringDesc*, copyStr)(NimStringDesc* s, NI first);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
-N_NIMCALL(NimStringDesc*, encode_250174)(NimStringDesc* s, NI linelen, NimStringDesc* newline);
-N_NIMCALL(Socketimpl239407*, newsocket_239830)(NU8 domain, NU8 typ, NU8 protocol, NIM_BOOL buffered);
-N_NIMCALL(void, raiseoserror_140430)(NI32 errorcode);
-N_NIMCALL(NI32, oslasterror_140454)(void);
-N_NIMCALL(void, TMP2639)(void* p, NI op);
-N_NIMCALL(void, connect_241645)(Socketimpl239407* socket, NimStringDesc* address, NU16 port, NU8 af);
-N_NIMCALL(void, connect_244216)(Socketimpl239407* socket, NimStringDesc* address, NU16 port, NI timeout, NU8 af);
-N_NIMCALL(void, send_244007)(Socketimpl239407* socket, NimStringDesc* data, NU8 flags);
+N_NIMCALL(NimStringDesc*, encode_238174)(NimStringDesc* s, NI linelen, NimStringDesc* newline);
+N_NIMCALL(Socketimpl227407*, newsocket_227830)(NU8 domain, NU8 typ, NU8 protocol, NIM_BOOL buffered);
+N_NIMCALL(void, raiseoserror_115430)(NI32 errorcode);
+N_NIMCALL(NI32, oslasterror_115454)(void);
+N_NIMCALL(void, TMP2561)(void* p, NI op);
+N_NIMCALL(void, connect_229645)(Socketimpl227407* socket, NimStringDesc* address, NU16 port, NU8 af);
+N_NIMCALL(void, connect_232216)(Socketimpl227407* socket, NimStringDesc* address, NU16 port, NI timeout, NU8 af);
+N_NIMCALL(void, send_232007)(Socketimpl227407* socket, NimStringDesc* data, NU8 flags);
 N_NIMCALL(void, genericReset)(void* dest, TNimType* mt);
-N_NIMCALL(void, close_241417)(Socketimpl239407* socket);
-N_NIMCALL(void, request_278026)(NimStringDesc* url, NU8 httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result);
+N_NIMCALL(void, close_229417)(Socketimpl227407* socket);
+N_NIMCALL(void, request_266026)(NimStringDesc* url, NU8 httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result);
 N_NIMCALL(NimStringDesc*, reprEnum)(NI e_84729, TNimType* typ);
-N_NIMCALL(NIM_BOOL, redirection_278050)(NimStringDesc* status);
+N_NIMCALL(NIM_BOOL, redirection_266050)(NimStringDesc* status);
 N_NIMCALL(NIM_BOOL, nsuStartsWith)(NimStringDesc* s, NimStringDesc* prefix);
-N_NIMCALL(NimStringDesc*, getnewlocation_278113)(NimStringDesc* lasturl, Stringtableobj176012* headers);
-N_NIMCALL(void, get_278126)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result);
-N_NIMCALL(NimStringDesc*, getcontent_278171)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy);
-N_NIMCALL(void, post_278212)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, MultipartdataHEX3Aobjecttype277030* multipart, Response277008* Result);
+N_NIMCALL(NimStringDesc*, getnewlocation_266113)(NimStringDesc* lasturl, Stringtableobj153012* headers);
+N_NIMCALL(void, get_266126)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result);
+N_NIMCALL(NimStringDesc*, getcontent_266171)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy);
+N_NIMCALL(void, post_266212)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, MultipartdataHEX3Aobjecttype265030* multipart, Response265008* Result);
 N_NIMCALL(NIM_BOOL, nsuEndsWith)(NimStringDesc* s, NimStringDesc* suffix);
-N_NIMCALL(NimStringDesc*, postcontent_278272)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, MultipartdataHEX3Aobjecttype277030* multipart);
-N_NIMCALL(void, downloadfile_278315)(NimStringDesc* url, NimStringDesc* outputfilename, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy);
+N_NIMCALL(NimStringDesc*, postcontent_266272)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, MultipartdataHEX3Aobjecttype265030* multipart);
+N_NIMCALL(void, downloadfile_266315)(NimStringDesc* url, NimStringDesc* outputfilename, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy);
 N_NIMCALL(NIM_BOOL, open_13203)(FILE** f, NimStringDesc* filename, NU8 mode, NI bufsize);
 N_NIMCALL(void, write_13457)(FILE* f, NimStringDesc* s);
-N_NIMCALL(NimStringDesc*, generateheaders_278334)(Uri247012* r, NimStringDesc* httpmethod, Stringtableobj176012* headers);
-N_NIMCALL(AsynchttpclientHEX3Aobjecttype278373*, newasynchttpclient_278388)(NimStringDesc* useragent, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext);
-N_NIMCALL(void, TMP2669)(void* p, NI op);
+N_NIMCALL(NimStringDesc*, generateheaders_266334)(Uri235012* r, NimStringDesc* httpmethod, Stringtableobj153012* headers);
+N_NIMCALL(AsynchttpclientHEX3Aobjecttype266373*, newasynchttpclient_266388)(NimStringDesc* useragent, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext);
+N_NIMCALL(void, TMP2591)(void* p, NI op);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
 static N_INLINE(void, incref_52622)(Tcell46746* c);
 static N_INLINE(NIM_BOOL, canbecycleroot_50267)(Tcell46746* c);
 static N_INLINE(void, rtladdcycleroot_51023)(Tcell46746* c);
 N_NOINLINE(void, incl_47465)(Tcellset46758* s, Tcell46746* cell);
 static N_INLINE(void, decref_52204)(Tcell46746* c);
-N_NIMCALL(void, close_278607)(AsynchttpclientHEX3Aobjecttype278373* client);
-N_NIMCALL(void, close_275612)(Asyncsocketdesc268202* socket);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recvfull_278621)(Asyncsocketdesc268202* socket, NI size);
-N_NIMCALL(void, TMP2672)(void* p, NI op);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, newfuture_259802)(NimStringDesc* fromproc);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvfulliter_278619)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_269460)(Asyncsocketdesc268202* socket, NI size_269463, NU8 flags);
-N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future);
-N_NIMCALL(void, complete_260031)(FutureHEX3Aobjecttype259769* future, NimStringDesc* val);
-N_CLOSURE(void, cb_278665)(void* ClEnv);
+N_NIMCALL(void, close_266607)(AsynchttpclientHEX3Aobjecttype266373* client);
+N_NIMCALL(void, close_263612)(Asyncsocketdesc256202* socket);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recvfull_266621)(Asyncsocketdesc256202* socket, NI size);
+N_NIMCALL(void, TMP2594)(void* p, NI op);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, newfuture_247802)(NimStringDesc* fromproc);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, recvfulliter_266619)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recv_257460)(Asyncsocketdesc256202* socket, NI size_257463, NU8 flags);
+N_NIMCALL(NimStringDesc*, read_254623)(FutureHEX3Aobjecttype247769* future);
+N_NIMCALL(void, complete_248031)(FutureHEX3Aobjecttype247769* future, NimStringDesc* val);
+N_CLOSURE(void, cb_266665)(void* ClEnv);
 static N_INLINE(void, pushSafePoint)(TSafePoint* s);
-static N_INLINE(NIM_BOOL, finished_267237)(TY266613 x);
-N_NIMCALL(void, callbackHEX3D_255832)(FuturebaseHEX3Aobjecttype255017* future, TY255018 cb);
+static N_INLINE(NIM_BOOL, finished_255237)(TY254613 x);
+N_NIMCALL(void, callbackHEX3D_243832)(FuturebaseHEX3Aobjecttype243017* future, TY243018 cb);
 static N_INLINE(void, popSafePoint)(void);
 static N_INLINE(void, setFrame)(TFrame* s);
 N_NIMCALL(void, reraiseException)(void);
-N_NIMCALL(void, fail_261034)(FutureHEX3Aobjecttype259769* future, Exception* error);
+N_NIMCALL(void, fail_249034)(FutureHEX3Aobjecttype247769* future, Exception* error);
 static N_INLINE(Exception*, getCurrentException)(void);
 static N_INLINE(void, popCurrentException)(void);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, parsechunks_278841)(AsynchttpclientHEX3Aobjecttype278373* client);
-N_NIMCALL(void, TMP2680)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsechunksiter_278836)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recvline_275048)(Asyncsocketdesc268202* socket, NU8 flags);
-N_CLOSURE(void, cb_278975)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, parsebody_279044)(AsynchttpclientHEX3Aobjecttype278373* client, Stringtableobj176012* headers);
-N_NIMCALL(void, TMP2693)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsebodyiter_279040)(void* ClEnv);
-N_CLOSURE(void, cb_279109)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype279252*, newfuture_279257)(NimStringDesc* fromproc);
-N_NIMCALL(void, complete_279517)(FutureHEX3Aobjecttype279252* future, Response277008* val);
-N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future);
-N_NIMCALL(void, fail_280402)(FutureHEX3Aobjecttype279252* future, Exception* error);
-N_NIMCALL(FutureHEX3Aobjecttype279252*, parseresponse_279243)(AsynchttpclientHEX3Aobjecttype278373* client, NIM_BOOL getbody);
-N_NIMCALL(void, TMP2707)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parseresponseiter_279240)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, parsechunks_266841)(AsynchttpclientHEX3Aobjecttype266373* client);
+N_NIMCALL(void, TMP2602)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parsechunksiter_266836)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recvline_263048)(Asyncsocketdesc256202* socket, NU8 flags);
+N_CLOSURE(void, cb_266975)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, parsebody_267044)(AsynchttpclientHEX3Aobjecttype266373* client, Stringtableobj153012* headers);
+N_NIMCALL(void, TMP2615)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parsebodyiter_267040)(void* ClEnv);
+N_CLOSURE(void, cb_267109)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype267252*, newfuture_267257)(NimStringDesc* fromproc);
+N_NIMCALL(void, complete_267517)(FutureHEX3Aobjecttype267252* future, Response265008* val);
+N_NIMCALL(void, checkfinished_267526)(FutureHEX3Aobjecttype267252* future);
+N_NIMCALL(void, fail_268402)(FutureHEX3Aobjecttype267252* future, Exception* error);
+N_NIMCALL(FutureHEX3Aobjecttype267252*, parseresponse_267243)(AsynchttpclientHEX3Aobjecttype266373* client, NIM_BOOL getbody);
+N_NIMCALL(void, TMP2629)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parseresponseiter_267240)(void* ClEnv);
 N_NIMCALL(NimStringDesc*, reprStr)(NimStringDesc* s);
-N_CLOSURE(void, cb_280219)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, newconnection_280464)(AsynchttpclientHEX3Aobjecttype278373* client, Uri247012* url);
-N_NIMCALL(void, TMP2722)(void* p, NI op);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, newfuture_259407)(NimStringDesc* fromproc);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, newconnectioniter_280462)(void* ClEnv);
-N_NIMCALL(Asyncsocketdesc268202*, newasyncsocket_268418)(NU8 domain, NU8 typ, NU8 protocol, NIM_BOOL buffered);
+N_CLOSURE(void, cb_268219)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, newconnection_268464)(AsynchttpclientHEX3Aobjecttype266373* client, Uri235012* url);
+N_NIMCALL(void, TMP2644)(void* p, NI op);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, newfuture_247407)(NimStringDesc* fromproc);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, newconnectioniter_268462)(void* ClEnv);
+N_NIMCALL(Asyncsocketdesc256202*, newasyncsocket_256418)(NU8 domain, NU8 typ, NU8 protocol, NIM_BOOL buffered);
 N_NIMCALL(NimStringDesc*, nsuToLowerStr)(NimStringDesc* s);
 static N_INLINE(void, nimGCunref)(void* p);
 N_NIMCALL(void*, newObjRC1)(TNimType* typ, NI size);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_268604)(Asyncsocketdesc268202* socket, NimStringDesc* address, NU16 port, NU8 af);
-N_NIMCALL(void, read_268624)(FutureHEX3Aobjecttype255097* future);
-N_NIMCALL(void, complete_255090)(FutureHEX3Aobjecttype255097* future);
-N_CLOSURE(void, cb_280627)(void* ClEnv);
-N_NIMCALL(void, fail_259659)(FutureHEX3Aobjecttype255097* future, Exception* error);
-N_NIMCALL(void, read_280889)(FutureHEX3Aobjecttype279252* future, Response277008* Result);
-N_NIMCALL(void, echooriginalstacktrace_280909)(FutureHEX3Aobjecttype279252* future);
-N_NIMCALL(FutureHEX3Aobjecttype279252*, request_280841)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* body);
-N_NIMCALL(void, TMP2729)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, requestiter_280836)(void* ClEnv);
-N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj176012* t, NimStringDesc* key);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, send_270652)(Asyncsocketdesc268202* socket, NimStringDesc* data, NU8 flags);
-N_CLOSURE(void, cb_281230)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype279252*, request_281441)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url, NU8 httpmethod, NimStringDesc* body);
-N_NIMCALL(FutureHEX3Aobjecttype279252*, get_281467)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url);
-N_NIMCALL(void, TMP2738)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, getiter_281464)(void* ClEnv);
-N_CLOSURE(void, cb_281536)(void* ClEnv);
-STRING_LITERAL(TMP2523, "", 0);
-STRING_LITERAL(TMP2545, "Server terminated connection prematurely", 40);
-STRING_LITERAL(TMP2551, "Invalid chunk size: ", 20);
-STRING_LITERAL(TMP2565, "Transfer-Encoding", 17);
-STRING_LITERAL(TMP2566, "chunked", 7);
-STRING_LITERAL(TMP2567, "Content-Length", 14);
-STRING_LITERAL(TMP2570, "Got invalid content length. Expected: ", 38);
-STRING_LITERAL(TMP2571, " got: ", 6);
-STRING_LITERAL(TMP2572, "Connection", 10);
-STRING_LITERAL(TMP2573, "close", 5);
-STRING_LITERAL(TMP2574, "\015\012", 2);
-STRING_LITERAL(TMP2579, "HTTP/", 5);
-STRING_LITERAL(TMP2580, "invalid http version", 20);
-STRING_LITERAL(TMP2582, "1.1", 3);
-STRING_LITERAL(TMP2583, "1.0", 3);
-STRING_LITERAL(TMP2584, "unsupported http version", 24);
-STRING_LITERAL(TMP2593, "invalid headers", 15);
-STRING_LITERAL(TMP2600, "Connection was closed before full request has been made", 55);
-static NIM_CONST TY77659 TMP2604 = {
+N_NIMCALL(FutureHEX3Aobjecttype243097*, connect_256604)(Asyncsocketdesc256202* socket, NimStringDesc* address, NU16 port, NU8 af);
+N_NIMCALL(void, read_256624)(FutureHEX3Aobjecttype243097* future);
+N_NIMCALL(void, complete_243090)(FutureHEX3Aobjecttype243097* future);
+N_CLOSURE(void, cb_268627)(void* ClEnv);
+N_NIMCALL(void, fail_247659)(FutureHEX3Aobjecttype243097* future, Exception* error);
+N_NIMCALL(void, read_268889)(FutureHEX3Aobjecttype267252* future, Response265008* Result);
+N_NIMCALL(void, echooriginalstacktrace_268909)(FutureHEX3Aobjecttype267252* future);
+N_NIMCALL(FutureHEX3Aobjecttype267252*, request_268841)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* body);
+N_NIMCALL(void, TMP2651)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, requestiter_268836)(void* ClEnv);
+N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj153012* t, NimStringDesc* key);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, send_258652)(Asyncsocketdesc256202* socket, NimStringDesc* data, NU8 flags);
+N_CLOSURE(void, cb_269230)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype267252*, request_269441)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url, NU8 httpmethod, NimStringDesc* body);
+N_NIMCALL(FutureHEX3Aobjecttype267252*, get_269467)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url);
+N_NIMCALL(void, TMP2660)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, getiter_269464)(void* ClEnv);
+N_CLOSURE(void, cb_269536)(void* ClEnv);
+STRING_LITERAL(TMP2445, "", 0);
+STRING_LITERAL(TMP2467, "Server terminated connection prematurely", 40);
+STRING_LITERAL(TMP2473, "Invalid chunk size: ", 20);
+STRING_LITERAL(TMP2487, "Transfer-Encoding", 17);
+STRING_LITERAL(TMP2488, "chunked", 7);
+STRING_LITERAL(TMP2489, "Content-Length", 14);
+STRING_LITERAL(TMP2492, "Got invalid content length. Expected: ", 38);
+STRING_LITERAL(TMP2493, " got: ", 6);
+STRING_LITERAL(TMP2494, "Connection", 10);
+STRING_LITERAL(TMP2495, "close", 5);
+STRING_LITERAL(TMP2496, "\015\012", 2);
+STRING_LITERAL(TMP2501, "HTTP/", 5);
+STRING_LITERAL(TMP2502, "invalid http version", 20);
+STRING_LITERAL(TMP2504, "1.1", 3);
+STRING_LITERAL(TMP2505, "1.0", 3);
+STRING_LITERAL(TMP2506, "unsupported http version", 24);
+STRING_LITERAL(TMP2515, "invalid headers", 15);
+STRING_LITERAL(TMP2522, "Connection was closed before full request has been made", 55);
+static NIM_CONST TY77659 TMP2526 = {
 0x00, 0x24, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP2605, "name contains a newline character", 33);
-STRING_LITERAL(TMP2606, "filename contains a newline character", 37);
-STRING_LITERAL(TMP2607, "contentType contains a newline character", 40);
-STRING_LITERAL(TMP2608, "Content-Disposition: form-data; name=\"", 38);
-STRING_LITERAL(TMP2609, "\"", 1);
-STRING_LITERAL(TMP2610, "; filename=\"", 12);
-STRING_LITERAL(TMP2611, "Content-Type: ", 14);
-NIM_CONST TY106548 TMP2621 = {((NimStringDesc*) &TMP2523),
-((NimStringDesc*) &TMP2523)}
+STRING_LITERAL(TMP2527, "name contains a newline character", 33);
+STRING_LITERAL(TMP2528, "filename contains a newline character", 37);
+STRING_LITERAL(TMP2529, "contentType contains a newline character", 40);
+STRING_LITERAL(TMP2530, "Content-Disposition: form-data; name=\"", 38);
+STRING_LITERAL(TMP2531, "\"", 1);
+STRING_LITERAL(TMP2532, "; filename=\"", 12);
+STRING_LITERAL(TMP2533, "Content-Type: ", 14);
+NIM_CONST TY108548 TMP2543 = {((NimStringDesc*) &TMP2445),
+((NimStringDesc*) &TMP2445)}
 ;
-STRING_LITERAL(TMP2623, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP2624, "Content-Type: multipart/form-data; boundary=", 44);
-STRING_LITERAL(TMP2625, "--", 2);
-STRING_LITERAL(TMP2627, "--\015\012", 4);
-STRING_LITERAL(TMP2628, "?", 1);
-STRING_LITERAL(TMP2629, " ", 1);
-STRING_LITERAL(TMP2630, " HTTP/1.1\015\012", 11);
-STRING_LITERAL(TMP2631, "Host: ", 6);
-STRING_LITERAL(TMP2632, "User-Agent: ", 12);
-STRING_LITERAL(TMP2633, "Proxy-Authorization: basic ", 27);
-STRING_LITERAL(TMP2638, "https", 5);
-STRING_LITERAL(TMP2640, "SSL support is not available. Cannot connect over SSL.", 54);
-STRING_LITERAL(TMP2643, "httpHEAD", 8);
-STRING_LITERAL(TMP2649, "301", 3);
-STRING_LITERAL(TMP2650, "302", 3);
-STRING_LITERAL(TMP2651, "303", 3);
-STRING_LITERAL(TMP2652, "307", 3);
-NIM_CONST TY205801 redirectionnrs_278054 = {((NimStringDesc*) &TMP2649),
-((NimStringDesc*) &TMP2650),
-((NimStringDesc*) &TMP2651),
-((NimStringDesc*) &TMP2652)}
+STRING_LITERAL(TMP2545, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP2546, "Content-Type: multipart/form-data; boundary=", 44);
+STRING_LITERAL(TMP2547, "--", 2);
+STRING_LITERAL(TMP2549, "--\015\012", 4);
+STRING_LITERAL(TMP2550, "?", 1);
+STRING_LITERAL(TMP2551, " ", 1);
+STRING_LITERAL(TMP2552, " HTTP/1.1\015\012", 11);
+STRING_LITERAL(TMP2553, "Host: ", 6);
+STRING_LITERAL(TMP2554, "User-Agent: ", 12);
+STRING_LITERAL(TMP2555, "Proxy-Authorization: basic ", 27);
+STRING_LITERAL(TMP2560, "https", 5);
+STRING_LITERAL(TMP2562, "SSL support is not available. Cannot connect over SSL.", 54);
+STRING_LITERAL(TMP2565, "httpHEAD", 8);
+STRING_LITERAL(TMP2571, "301", 3);
+STRING_LITERAL(TMP2572, "302", 3);
+STRING_LITERAL(TMP2573, "303", 3);
+STRING_LITERAL(TMP2574, "307", 3);
+NIM_CONST TY187801 redirectionnrs_266054 = {((NimStringDesc*) &TMP2571),
+((NimStringDesc*) &TMP2572),
+((NimStringDesc*) &TMP2573),
+((NimStringDesc*) &TMP2574)}
 ;
-STRING_LITERAL(TMP2654, "Location", 8);
-STRING_LITERAL(TMP2655, "location header expected", 24);
-STRING_LITERAL(TMP2656, "/", 1);
-STRING_LITERAL(TMP2662, "Content-Length: ", 16);
-STRING_LITERAL(TMP2664, "Unable to open file", 19);
-STRING_LITERAL(TMP2665, "Connection: Keep-Alive\015\012", 24);
-STRING_LITERAL(TMP2666, ": ", 2);
-STRING_LITERAL(TMP2670, "Nim httpclient/0.1", 18);
-STRING_LITERAL(TMP2673, "recvFull", 8);
-STRING_LITERAL(TMP2677, "retFuture.finished Async procedure\'s (recvFull) return Future w"
+STRING_LITERAL(TMP2576, "Location", 8);
+STRING_LITERAL(TMP2577, "location header expected", 24);
+STRING_LITERAL(TMP2578, "/", 1);
+STRING_LITERAL(TMP2584, "Content-Length: ", 16);
+STRING_LITERAL(TMP2586, "Unable to open file", 19);
+STRING_LITERAL(TMP2587, "Connection: Keep-Alive\015\012", 24);
+STRING_LITERAL(TMP2588, ": ", 2);
+STRING_LITERAL(TMP2592, "Nim httpclient/0.1", 18);
+STRING_LITERAL(TMP2595, "recvFull", 8);
+STRING_LITERAL(TMP2599, "retFuture.finished Async procedure\'s (recvFull) return Future w"
 "as not finished.", 79);
-STRING_LITERAL(TMP2681, "parseChunks", 11);
-STRING_LITERAL(TMP2690, "retFuture.finished Async procedure\'s (parseChunks) return Futur"
+STRING_LITERAL(TMP2603, "parseChunks", 11);
+STRING_LITERAL(TMP2612, "retFuture.finished Async procedure\'s (parseChunks) return Futur"
 "e was not finished.", 82);
-STRING_LITERAL(TMP2694, "parseBody", 9);
-STRING_LITERAL(TMP2695, "Got disconnected while trying to read body.", 43);
-STRING_LITERAL(TMP2696, "Received length doesn\'t match expected length. Wanted ", 54);
-STRING_LITERAL(TMP2697, " got ", 5);
-STRING_LITERAL(TMP2700, "retFuture.finished Async procedure\'s (parseBody) return Future "
+STRING_LITERAL(TMP2616, "parseBody", 9);
+STRING_LITERAL(TMP2617, "Got disconnected while trying to read body.", 43);
+STRING_LITERAL(TMP2618, "Received length doesn\'t match expected length. Wanted ", 54);
+STRING_LITERAL(TMP2619, " got ", 5);
+STRING_LITERAL(TMP2622, "retFuture.finished Async procedure\'s (parseBody) return Future "
 "was not finished.", 80);
-STRING_LITERAL(TMP2708, "parseResponse", 13);
-STRING_LITERAL(TMP2709, "invalid http version, ", 22);
-STRING_LITERAL(TMP2719, "retFuture.finished Async procedure\'s (parseResponse) return Fut"
+STRING_LITERAL(TMP2630, "parseResponse", 13);
+STRING_LITERAL(TMP2631, "invalid http version, ", 22);
+STRING_LITERAL(TMP2641, "retFuture.finished Async procedure\'s (parseResponse) return Fut"
 "ure was not finished.", 84);
-STRING_LITERAL(TMP2723, "newConnection", 13);
-STRING_LITERAL(TMP2726, "retFuture.finished Async procedure\'s (newConnection) return Fut"
+STRING_LITERAL(TMP2645, "newConnection", 13);
+STRING_LITERAL(TMP2648, "retFuture.finished Async procedure\'s (newConnection) return Fut"
 "ure was not finished.", 84);
-STRING_LITERAL(TMP2730, "request", 7);
-STRING_LITERAL(TMP2731, "user-agent", 10);
-STRING_LITERAL(TMP2732, "User-Agent", 10);
-STRING_LITERAL(TMP2735, "retFuture.finished Async procedure\'s (request) return Future wa"
+STRING_LITERAL(TMP2652, "request", 7);
+STRING_LITERAL(TMP2653, "user-agent", 10);
+STRING_LITERAL(TMP2654, "User-Agent", 10);
+STRING_LITERAL(TMP2657, "retFuture.finished Async procedure\'s (request) return Future wa"
 "s not finished.", 78);
-STRING_LITERAL(TMP2739, "get", 3);
-STRING_LITERAL(TMP2743, "retFuture.finished Async procedure\'s (get) return Future was no"
+STRING_LITERAL(TMP2661, "get", 3);
+STRING_LITERAL(TMP2665, "retFuture.finished Async procedure\'s (get) return Future was no"
 "t finished.", 74);
 extern TNimType NTI3431; /* IOError */
-TNimType NTI277016; /* ProtocolError */
-TNimType NTI277051; /* ref ProtocolError */
+TNimType NTI265016; /* ProtocolError */
+TNimType NTI265051; /* ref ProtocolError */
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI13401; /* ref IOError */
-SslcontextHEX3Aobjecttype277375* defaultsslcontext_277377;
-TNimType NTI277023; /* Proxy:ObjectType */
-extern TNimType NTI247012; /* Uri */
+SslcontextHEX3Aobjecttype265375* defaultsslcontext_265377;
+TNimType NTI265023; /* Proxy:ObjectType */
+extern TNimType NTI235012; /* Uri */
 extern TNimType NTI149; /* string */
-TNimType NTI277010; /* Proxy */
-TNimType NTI277030; /* MultipartData:ObjectType */
+TNimType NTI265010; /* Proxy */
+TNimType NTI265030; /* MultipartData:ObjectType */
 extern TNimType NTI13606; /* seq[string] */
-TNimType NTI277014; /* MultipartData */
+TNimType NTI265014; /* MultipartData */
 extern TNimType NTI22801; /* ref ValueError */
 extern TNimType NTI3449; /* ValueError */
-TNimType NTI277018; /* HttpRequestError */
-TNimType NTI278004; /* ref HttpRequestError */
-TNimType NTI277008; /* Response */
-extern TNimType NTI176014; /* StringTableRef */
-TNimType NTI277357; /* HttpMethod */
-TNimType NTI278373; /* AsyncHttpClient:ObjectType */
-extern TNimType NTI268204; /* AsyncSocket */
+TNimType NTI265018; /* HttpRequestError */
+TNimType NTI266004; /* ref HttpRequestError */
+TNimType NTI265008; /* Response */
+extern TNimType NTI153014; /* StringTableRef */
+TNimType NTI265357; /* HttpMethod */
+TNimType NTI266373; /* AsyncHttpClient:ObjectType */
+extern TNimType NTI256204; /* AsyncSocket */
 extern TNimType NTI138; /* bool */
 extern TNimType NTI108; /* int */
-TNimType NTI278372; /* AsyncHttpClient */
-TNimType NTI278810; /* object */
-extern TNimType NTI130825; /* range -1..1(int) */
-extern TNimType NTI259768; /* Future */
-extern TNimType NTI266613; /* iterator (): FutureBase{.closure, gcsafe, locks: <unknown>.} */
-TNimType NTI278817; /* ref object */
+TNimType NTI266372; /* AsyncHttpClient */
+TNimType NTI266810; /* object */
+extern TNimType NTI257412; /* range -1..1(int) */
+extern TNimType NTI247768; /* Future */
+extern TNimType NTI254613; /* iterator (): FutureBase{.closure, gcsafe, locks: <unknown>.} */
+TNimType NTI266817; /* ref object */
 extern TSafePoint* exchandler_17043;
 extern Exception* currexception_17045;
-TNimType NTI279010; /* object */
-TNimType NTI279012; /* range -1..4(int) */
-TNimType NTI279017; /* ref object */
-TNimType NTI279210; /* object */
-extern TNimType NTI270612; /* range -1..3(int) */
-TNimType NTI279217; /* ref object */
-TNimType NTI280429; /* object */
-extern TNimType NTI267412; /* range -1..2(int) */
-extern TNimType NTI279251; /* Future */
-TNimType NTI280436; /* ref object */
-TNimType NTI280810; /* object */
-extern TNimType NTI255096; /* Future */
+TNimType NTI267010; /* object */
+TNimType NTI267012; /* range -1..4(int) */
+TNimType NTI267017; /* ref object */
+TNimType NTI267210; /* object */
+extern TNimType NTI258612; /* range -1..3(int) */
+TNimType NTI267217; /* ref object */
+TNimType NTI268429; /* object */
+extern TNimType NTI255412; /* range -1..2(int) */
+extern TNimType NTI267251; /* Future */
+TNimType NTI268436; /* ref object */
+TNimType NTI268810; /* object */
+extern TNimType NTI243096; /* Future */
 extern TNimType NTI122; /* uint16 */
-TNimType NTI280817; /* ref object */
-TNimType NTI281410; /* object */
-TNimType NTI281417; /* ref object */
-TNimType NTI281610; /* object */
-TNimType NTI281617; /* ref object */
-N_NIMCALL(void, TMP2522)(void* p, NI op) {
-	Protocolerror277016* a;
-	a = (Protocolerror277016*)p;
+TNimType NTI268817; /* ref object */
+TNimType NTI269410; /* object */
+TNimType NTI269417; /* ref object */
+TNimType NTI269610; /* object */
+TNimType NTI269617; /* ref object */
+N_NIMCALL(void, TMP2444)(void* p, NI op) {
+	Protocolerror265016* a;
+	a = (Protocolerror265016*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.parent, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.message, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.trace, op);
@@ -848,14 +848,14 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, httperror_277048)(NimStringDesc* msg) {
-	Protocolerror277016* e;
+N_NIMCALL(void, httperror_265048)(NimStringDesc* msg) {
+	Protocolerror265016* e;
 	NimStringDesc* LOC1;
 	nimfr("httpError", "httpclient.nim")
 	e = 0;
 	nimln(117, "httpclient.nim");
-	e = (Protocolerror277016*) newObj((&NTI277051), sizeof(Protocolerror277016));
-	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI277016);
+	e = (Protocolerror265016*) newObj((&NTI265051), sizeof(Protocolerror265016));
+	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI265016);
 	nimln(118, "httpclient.nim");
 	LOC1 = 0;
 	LOC1 = (*e).Sup.Sup.Sup.message; (*e).Sup.Sup.Sup.message = copyStringRC1(msg);
@@ -865,7 +865,7 @@ N_NIMCALL(void, httperror_277048)(NimStringDesc* msg) {
 	popFrame();
 }
 
-N_NIMCALL(void, fileerror_277068)(NimStringDesc* msg) {
+N_NIMCALL(void, fileerror_265068)(NimStringDesc* msg) {
 	Ioerror3431* e;
 	NimStringDesc* LOC1;
 	nimfr("fileError", "httpclient.nim")
@@ -951,13 +951,13 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, parsechunks_277088)(Socketimpl239407* s, NI timeout) {
+N_NIMCALL(NimStringDesc*, parsechunks_265088)(Socketimpl227407* s, NI timeout) {
 	NimStringDesc* result;
 	NI ri;
 	nimfr("parseChunks", "httpclient.nim")
 	result = 0;
 	nimln(128, "httpclient.nim");
-	result = copyString(((NimStringDesc*) &TMP2523));
+	result = copyString(((NimStringDesc*) &TMP2445));
 	nimln(129, "httpclient.nim");
 	ri = ((NI) 0);
 	{
@@ -966,59 +966,59 @@ N_NIMCALL(NimStringDesc*, parsechunks_277088)(Socketimpl239407* s, NI timeout) {
 			NimStringDesc* chunksizestr;
 			NI chunksize;
 			NI i;
-			NI TMP2556;
+			NI TMP2478;
 			NI bytesread;
 			nimln(131, "httpclient.nim");
-			chunksizestr = copyString(((NimStringDesc*) &TMP2523));
+			chunksizestr = copyString(((NimStringDesc*) &TMP2445));
 			nimln(132, "httpclient.nim");
 			chunksize = ((NI) 0);
 			nimln(133, "httpclient.nim");
-			readline_243608(s, (&chunksizestr), timeout, 2);
+			readline_231608(s, (&chunksizestr), timeout, 2);
 			nimln(134, "httpclient.nim");
 			i = ((NI) 0);
 			nimln(135, "httpclient.nim");
 			{
 				if (!((chunksizestr) && (chunksizestr)->Sup.len == 0)) goto LA5;
 				nimln(136, "httpclient.nim");
-				httperror_277048(((NimStringDesc*) &TMP2545));
+				httperror_265048(((NimStringDesc*) &TMP2467));
 			}
 			LA5: ;
 			{
 				nimln(137, "httpclient.nim");
 				while (1) {
-					NI TMP2552;
+					NI TMP2474;
 					nimln(138, "httpclient.nim");
 					if ((NU)(i) > (NU)(chunksizestr->Sup.len)) raiseIndexError();
 					switch (((NU8)(chunksizestr->data[i]))) {
 					case 48 ... 57:
 					{
-						NI TMP2546;
+						NI TMP2468;
 						nimln(140, "httpclient.nim");
 						if ((NU)(i) > (NU)(chunksizestr->Sup.len)) raiseIndexError();
-						TMP2546 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 48));
-						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2546))));
+						TMP2468 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 48));
+						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2468))));
 					}
 					break;
 					case 97 ... 102:
 					{
-						NI TMP2547;
-						NI TMP2548;
+						NI TMP2469;
+						NI TMP2470;
 						nimln(142, "httpclient.nim");
 						if ((NU)(i) > (NU)(chunksizestr->Sup.len)) raiseIndexError();
-						TMP2547 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 97));
-						TMP2548 = addInt(((NI) ((NI)(TMP2547))), ((NI) 10));
-						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2548))));
+						TMP2469 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 97));
+						TMP2470 = addInt(((NI) ((NI)(TMP2469))), ((NI) 10));
+						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2470))));
 					}
 					break;
 					case 65 ... 70:
 					{
-						NI TMP2549;
-						NI TMP2550;
+						NI TMP2471;
+						NI TMP2472;
 						nimln(144, "httpclient.nim");
 						if ((NU)(i) > (NU)(chunksizestr->Sup.len)) raiseIndexError();
-						TMP2549 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 65));
-						TMP2550 = addInt(((NI) ((NI)(TMP2549))), ((NI) 10));
-						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2550))));
+						TMP2471 = subInt(((NI) (((NU8)(chunksizestr->data[i])))), ((NI) 65));
+						TMP2472 = addInt(((NI) ((NI)(TMP2471))), ((NI) 10));
+						chunksize = (NI)((NI)((NU64)(chunksize) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2472))));
 					}
 					break;
 					case 0:
@@ -1039,53 +1039,53 @@ N_NIMCALL(NimStringDesc*, parsechunks_277088)(Socketimpl239407* s, NI timeout) {
 						nimln(152, "httpclient.nim");
 						LOC15 = 0;
 						LOC15 = rawNewString(chunksizestr->Sup.len + 20);
-appendString(LOC15, ((NimStringDesc*) &TMP2551));
+appendString(LOC15, ((NimStringDesc*) &TMP2473));
 appendString(LOC15, chunksizestr);
-						httperror_277048(LOC15);
+						httperror_265048(LOC15);
 					}
 					break;
 					}
 					nimln(153, "httpclient.nim");
-					TMP2552 = addInt(i, ((NI) 1));
-					i = (NI)(TMP2552);
+					TMP2474 = addInt(i, ((NI) 1));
+					i = (NI)(TMP2474);
 				}
 			} LA7: ;
 			nimln(154, "httpclient.nim");
 			{
 				if (!(chunksize <= ((NI) 0))) goto LA18;
 				nimln(155, "httpclient.nim");
-				skip_243682(s, ((NI) 2), timeout);
+				skip_231682(s, ((NI) 2), timeout);
 				nimln(156, "httpclient.nim");
 				goto LA1;
 			}
 			LA18: ;
 			nimln(157, "httpclient.nim");
-			TMP2556 = addInt(ri, chunksize);
-			result = setLengthStr(result, ((NI)chckRange((NI)(TMP2556), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+			TMP2478 = addInt(ri, chunksize);
+			result = setLengthStr(result, ((NI)chckRange((NI)(TMP2478), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			nimln(158, "httpclient.nim");
 			bytesread = ((NI) 0);
 			{
 				nimln(159, "httpclient.nim");
 				while (1) {
 					NI ret;
-					NI TMP2562;
-					NI TMP2563;
-					NI TMP2564;
+					NI TMP2484;
+					NI TMP2485;
+					NI TMP2486;
 					if (!!((bytesread == chunksize))) goto LA21;
 					nimln(160, "httpclient.nim");
 					if ((NU)(ri) > (NU)(result->Sup.len)) raiseIndexError();
-					TMP2562 = subInt(chunksize, bytesread);
-					ret = recv_243235(s, ((void*) ((&result->data[ri]))), (NI)(TMP2562), timeout);
+					TMP2484 = subInt(chunksize, bytesread);
+					ret = recv_231235(s, ((void*) ((&result->data[ri]))), (NI)(TMP2484), timeout);
 					nimln(161, "httpclient.nim");
-					TMP2563 = addInt(ri, ret);
-					ri = (NI)(TMP2563);
+					TMP2485 = addInt(ri, ret);
+					ri = (NI)(TMP2485);
 					nimln(162, "httpclient.nim");
-					TMP2564 = addInt(bytesread, ret);
-					bytesread = (NI)(TMP2564);
+					TMP2486 = addInt(bytesread, ret);
+					bytesread = (NI)(TMP2486);
 				} LA21: ;
 			}
 			nimln(163, "httpclient.nim");
-			skip_243682(s, ((NI) 2), timeout);
+			skip_231682(s, ((NI) 2), timeout);
 		}
 	} LA1: ;
 	popFrame();
@@ -1128,27 +1128,27 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj176012* headers, NI timeout) {
+N_NIMCALL(NimStringDesc*, parsebody_265213)(Socketimpl227407* s, Stringtableobj153012* headers, NI timeout) {
 	NimStringDesc* result;
 	nimfr("parseBody", "httpclient.nim")
 	result = 0;
 	nimln(168, "httpclient.nim");
-	result = copyString(((NimStringDesc*) &TMP2523));
+	result = copyString(((NimStringDesc*) &TMP2445));
 	nimln(169, "httpclient.nim");
 	{
 		NimStringDesc* LOC3;
 		LOC3 = 0;
-		LOC3 = nstGet(headers, ((NimStringDesc*) &TMP2565));
-		if (!eqStrings(LOC3, ((NimStringDesc*) &TMP2566))) goto LA4;
+		LOC3 = nstGet(headers, ((NimStringDesc*) &TMP2487));
+		if (!eqStrings(LOC3, ((NimStringDesc*) &TMP2488))) goto LA4;
 		nimln(170, "httpclient.nim");
-		result = parsechunks_277088(s, timeout);
+		result = parsechunks_265088(s, timeout);
 	}
 	goto LA1;
 	LA4: ;
 	{
 		NimStringDesc* contentlengthheader;
 		nimln(174, "httpclient.nim");
-		contentlengthheader = nstGet(headers, ((NimStringDesc*) &TMP2567));
+		contentlengthheader = nstGet(headers, ((NimStringDesc*) &TMP2489));
 		nimln(175, "httpclient.nim");
 		{
 			NI length;
@@ -1167,8 +1167,8 @@ N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj1
 					nimln(180, "httpclient.nim");
 					while (1) {
 						NI r;
-						NI TMP2568;
-						NI TMP2569;
+						NI TMP2490;
+						NI TMP2491;
 						nimln(181, "httpclient.nim");
 						{
 							if (!(length <= received)) goto LA19;
@@ -1177,8 +1177,8 @@ N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj1
 						LA19: ;
 						nimln(182, "httpclient.nim");
 						if ((NU)(received) > (NU)(result->Sup.len)) raiseIndexError();
-						TMP2568 = subInt(length, received);
-						r = recv_243235(s, ((void*) ((&result->data[received]))), (NI)(TMP2568), timeout);
+						TMP2490 = subInt(length, received);
+						r = recv_231235(s, ((void*) ((&result->data[received]))), (NI)(TMP2490), timeout);
 						nimln(183, "httpclient.nim");
 						{
 							if (!(r == ((NI) 0))) goto LA23;
@@ -1186,8 +1186,8 @@ N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj1
 						}
 						LA23: ;
 						nimln(184, "httpclient.nim");
-						TMP2569 = addInt(received, r);
-						received = (NI)(TMP2569);
+						TMP2491 = addInt(received, r);
+						received = (NI)(TMP2491);
 					}
 				} LA15: ;
 				nimln(185, "httpclient.nim");
@@ -1206,11 +1206,11 @@ N_NIMCALL(NimStringDesc*, parsebody_277213)(Socketimpl239407* s, Stringtableobj1
 					LOC31 = 0;
 					LOC31 = nimIntToStr(received);
 					LOC29 = rawNewString(LOC30->Sup.len + LOC31->Sup.len + 44);
-appendString(LOC29, ((NimStringDesc*) &TMP2570));
+appendString(LOC29, ((NimStringDesc*) &TMP2492));
 appendString(LOC29, LOC30);
-appendString(LOC29, ((NimStringDesc*) &TMP2571));
+appendString(LOC29, ((NimStringDesc*) &TMP2493));
 appendString(LOC29, LOC31);
-					httperror_277048(LOC29);
+					httperror_265048(LOC29);
 				}
 				LA27: ;
 			}
@@ -1224,10 +1224,10 @@ appendString(LOC29, LOC31);
 				NimStringDesc* LOC35;
 				NimStringDesc* buf;
 				LOC35 = 0;
-				LOC35 = nstGet(headers, ((NimStringDesc*) &TMP2572));
-				if (!eqStrings(LOC35, ((NimStringDesc*) &TMP2573))) goto LA36;
+				LOC35 = nstGet(headers, ((NimStringDesc*) &TMP2494));
+				if (!eqStrings(LOC35, ((NimStringDesc*) &TMP2495))) goto LA36;
 				nimln(194, "httpclient.nim");
-				buf = copyString(((NimStringDesc*) &TMP2523));
+				buf = copyString(((NimStringDesc*) &TMP2445));
 				{
 					nimln(195, "httpclient.nim");
 					while (1) {
@@ -1236,7 +1236,7 @@ appendString(LOC29, LOC31);
 						buf = mnewString(((NI) 4000));
 						nimln(197, "httpclient.nim");
 						if ((NU)(((NI) 0)) > (NU)(buf->Sup.len)) raiseIndexError();
-						r = recv_243235(s, ((void*) ((&buf->data[((NI) 0)]))), ((NI) 4000), timeout);
+						r = recv_231235(s, ((void*) ((&buf->data[((NI) 0)]))), ((NI) 4000), timeout);
 						nimln(198, "httpclient.nim");
 						{
 							if (!(r == ((NI) 0))) goto LA42;
@@ -1260,20 +1260,20 @@ appendString(result, buf);
 	return result;
 }
 
-static N_INLINE(NI, skipwhitespace_93382)(NimStringDesc* s, NI start) {
+static N_INLINE(NI, skipwhitespace_95382)(NimStringDesc* s, NI start) {
 	NI result;
 	nimfr("skipWhitespace", "parseutils.nim")
 	result = 0;
 	{
 		nimln(122, "parseutils.nim");
 		while (1) {
-			NI TMP2586;
-			NI TMP2587;
-			TMP2586 = addInt(start, result);
-			if ((NU)((NI)(TMP2586)) > (NU)(s->Sup.len)) raiseIndexError();
-			if (!(((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(32)) || ((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(9)) || ((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(11)) || ((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(13)) || ((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(10)) || ((NU8)(s->data[(NI)(TMP2586)])) == ((NU8)(12)))) goto LA2;
-			TMP2587 = addInt(result, ((NI) 1));
-			result = (NI)(TMP2587);
+			NI TMP2508;
+			NI TMP2509;
+			TMP2508 = addInt(start, result);
+			if ((NU)((NI)(TMP2508)) > (NU)(s->Sup.len)) raiseIndexError();
+			if (!(((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(32)) || ((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(9)) || ((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(11)) || ((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(13)) || ((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(10)) || ((NU8)(s->data[(NI)(TMP2508)])) == ((NU8)(12)))) goto LA2;
+			TMP2509 = addInt(result, ((NI) 1));
+			result = (NI)(TMP2509);
 		} LA2: ;
 	}
 	popFrame();
@@ -1290,7 +1290,7 @@ static N_INLINE(NimStringDesc*, HEX5BHEX5D_88054)(NimStringDesc* s, Slice88061 x
 	return result;
 }
 
-static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b) {
+static N_INLINE(Slice88061, HEX2EHEX2E_110273)(NI a, NI b) {
 	Slice88061 result;
 	nimfr("..", "system.nim")
 	memset((void*)(&result), 0, sizeof(result));
@@ -1302,11 +1302,11 @@ static N_INLINE(Slice88061, HEX2EHEX2E_108273)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, parseuntil_93623)(NimStringDesc* s, NimStringDesc** token, NIM_CHAR until, NI start) {
+static N_INLINE(NI, parseuntil_95623)(NimStringDesc* s, NimStringDesc** token, NIM_CHAR until, NI start) {
 	NI result;
 	NI i;
-	NI TMP2591;
-	NI TMP2592;
+	NI TMP2513;
+	NI TMP2514;
 	nimfr("parseUntil", "parseutils.nim")
 	result = 0;
 	nimln(168, "parseutils.nim");
@@ -1315,7 +1315,7 @@ static N_INLINE(NI, parseuntil_93623)(NimStringDesc* s, NimStringDesc** token, N
 		nimln(169, "parseutils.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP2590;
+			NI TMP2512;
 			LOC3 = 0;
 			LOC3 = (i < (s ? s->Sup.len : 0));
 			if (!(LOC3)) goto LA4;
@@ -1323,21 +1323,21 @@ static N_INLINE(NI, parseuntil_93623)(NimStringDesc* s, NimStringDesc** token, N
 			LOC3 = !(((NU8)(s->data[i]) == (NU8)(until)));
 			LA4: ;
 			if (!LOC3) goto LA2;
-			TMP2590 = addInt(i, ((NI) 1));
-			i = (NI)(TMP2590);
+			TMP2512 = addInt(i, ((NI) 1));
+			i = (NI)(TMP2512);
 		} LA2: ;
 	}
 	nimln(170, "parseutils.nim");
-	TMP2591 = subInt(i, start);
-	result = (NI)(TMP2591);
+	TMP2513 = subInt(i, start);
+	result = (NI)(TMP2513);
 	nimln(171, "parseutils.nim");
-	TMP2592 = subInt(i, ((NI) 1));
-	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP2592)));
+	TMP2514 = subInt(i, ((NI) 1));
+	unsureAsgnRef((void**) (&(*token)), copyStrLast(s, start, (NI)(TMP2514)));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI timeout, Response277008* Result) {
+N_NIMCALL(void, parseresponse_265260)(Socketimpl227407* s, NIM_BOOL getbody, NI timeout, Response265008* Result) {
 	NIM_BOOL parsedstatus;
 	NI linei;
 	NIM_BOOL fullyread;
@@ -1350,18 +1350,18 @@ N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI 
 	nimln(205, "httpclient.nim");
 	fullyread = NIM_FALSE;
 	nimln(206, "httpclient.nim");
-	line = copyString(((NimStringDesc*) &TMP2523));
+	line = copyString(((NimStringDesc*) &TMP2445));
 	nimln(207, "httpclient.nim");
 	unsureAsgnRef((void**) (&(*Result).Field2), nstnewStringTable(((NU8) 1)));
 	{
 		nimln(208, "httpclient.nim");
 		while (1) {
 			nimln(209, "httpclient.nim");
-			line = copyString(((NimStringDesc*) &TMP2523));
+			line = copyString(((NimStringDesc*) &TMP2445));
 			nimln(210, "httpclient.nim");
 			linei = ((NI) 0);
 			nimln(211, "httpclient.nim");
-			readline_243608(s, (&line), timeout, 2);
+			readline_231608(s, (&line), timeout, 2);
 			nimln(212, "httpclient.nim");
 			{
 				if (!((line) && (line)->Sup.len == 0)) goto LA5;
@@ -1370,7 +1370,7 @@ N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI 
 			LA5: ;
 			nimln(213, "httpclient.nim");
 			{
-				if (!eqStrings(line, ((NimStringDesc*) &TMP2574))) goto LA9;
+				if (!eqStrings(line, ((NimStringDesc*) &TMP2496))) goto LA9;
 				nimln(214, "httpclient.nim");
 				fullyread = NIM_TRUE;
 				nimln(215, "httpclient.nim");
@@ -1380,57 +1380,57 @@ N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI 
 			nimln(216, "httpclient.nim");
 			{
 				NI le;
-				NI TMP2581;
-				NI TMP2585;
+				NI TMP2503;
+				NI TMP2507;
 				NI LOC28;
-				NI TMP2588;
-				NI TMP2589;
+				NI TMP2510;
+				NI TMP2511;
 				Slice88061 LOC29;
 				if (!!(parsedstatus)) goto LA13;
 				nimln(218, "httpclient.nim");
-				le = skipignorecase_93447(line, ((NimStringDesc*) &TMP2579), linei);
+				le = skipignorecase_95447(line, ((NimStringDesc*) &TMP2501), linei);
 				nimln(219, "httpclient.nim");
 				{
 					if (!(le <= ((NI) 0))) goto LA17;
-					httperror_277048(((NimStringDesc*) &TMP2580));
+					httperror_265048(((NimStringDesc*) &TMP2502));
 				}
 				LA17: ;
 				nimln(220, "httpclient.nim");
-				TMP2581 = addInt(linei, le);
-				linei = (NI)(TMP2581);
+				TMP2503 = addInt(linei, le);
+				linei = (NI)(TMP2503);
 				nimln(221, "httpclient.nim");
-				le = skipignorecase_93447(line, ((NimStringDesc*) &TMP2582), linei);
+				le = skipignorecase_95447(line, ((NimStringDesc*) &TMP2504), linei);
 				nimln(222, "httpclient.nim");
 				{
 					if (!(((NI) 0) < le)) goto LA21;
-					unsureAsgnRef((void**) (&(*Result).Field0), copyString(((NimStringDesc*) &TMP2582)));
+					unsureAsgnRef((void**) (&(*Result).Field0), copyString(((NimStringDesc*) &TMP2504)));
 				}
 				goto LA19;
 				LA21: ;
 				{
 					nimln(224, "httpclient.nim");
-					le = skipignorecase_93447(line, ((NimStringDesc*) &TMP2583), linei);
+					le = skipignorecase_95447(line, ((NimStringDesc*) &TMP2505), linei);
 					nimln(225, "httpclient.nim");
 					{
 						if (!(le <= ((NI) 0))) goto LA26;
-						httperror_277048(((NimStringDesc*) &TMP2584));
+						httperror_265048(((NimStringDesc*) &TMP2506));
 					}
 					LA26: ;
 					nimln(226, "httpclient.nim");
-					unsureAsgnRef((void**) (&(*Result).Field0), copyString(((NimStringDesc*) &TMP2583)));
+					unsureAsgnRef((void**) (&(*Result).Field0), copyString(((NimStringDesc*) &TMP2505)));
 				}
 				LA19: ;
 				nimln(227, "httpclient.nim");
-				TMP2585 = addInt(linei, le);
-				linei = (NI)(TMP2585);
+				TMP2507 = addInt(linei, le);
+				linei = (NI)(TMP2507);
 				nimln(229, "httpclient.nim");
 				LOC28 = 0;
-				LOC28 = skipwhitespace_93382(line, linei);
-				TMP2588 = addInt(linei, LOC28);
-				linei = (NI)(TMP2588);
+				LOC28 = skipwhitespace_95382(line, linei);
+				TMP2510 = addInt(linei, LOC28);
+				linei = (NI)(TMP2510);
 				nimln(230, "httpclient.nim");
-				TMP2589 = subInt((line ? line->Sup.len : 0), ((NI) 1));
-				LOC29 = HEX2EHEX2E_108273(linei, (NI)(TMP2589));
+				TMP2511 = subInt((line ? line->Sup.len : 0), ((NI) 1));
+				LOC29 = HEX2EHEX2E_110273(linei, (NI)(TMP2511));
 				unsureAsgnRef((void**) (&(*Result).Field1), HEX5BHEX5D_88054(line, LOC29));
 				nimln(231, "httpclient.nim");
 				parsedstatus = NIM_TRUE;
@@ -1440,38 +1440,38 @@ N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI 
 			{
 				NimStringDesc* name;
 				NI le;
-				NI TMP2594;
-				NI TMP2595;
-				NI TMP2599;
+				NI TMP2516;
+				NI TMP2517;
+				NI TMP2521;
 				Slice88061 LOC39;
 				NimStringDesc* LOC40;
 				NimStringDesc* LOC41;
 				nimln(234, "httpclient.nim");
-				name = copyString(((NimStringDesc*) &TMP2523));
+				name = copyString(((NimStringDesc*) &TMP2445));
 				nimln(235, "httpclient.nim");
-				le = parseuntil_93623(line, (&name), 58, linei);
+				le = parseuntil_95623(line, (&name), 58, linei);
 				nimln(236, "httpclient.nim");
 				{
 					if (!(le <= ((NI) 0))) goto LA33;
-					httperror_277048(((NimStringDesc*) &TMP2593));
+					httperror_265048(((NimStringDesc*) &TMP2515));
 				}
 				LA33: ;
 				nimln(237, "httpclient.nim");
-				TMP2594 = addInt(linei, le);
-				linei = (NI)(TMP2594);
+				TMP2516 = addInt(linei, le);
+				linei = (NI)(TMP2516);
 				nimln(238, "httpclient.nim");
 				{
 					if ((NU)(linei) > (NU)(line->Sup.len)) raiseIndexError();
 					if (!!(((NU8)(line->data[linei]) == (NU8)(58)))) goto LA37;
-					httperror_277048(((NimStringDesc*) &TMP2593));
+					httperror_265048(((NimStringDesc*) &TMP2515));
 				}
 				LA37: ;
 				nimln(239, "httpclient.nim");
-				TMP2595 = addInt(linei, ((NI) 1));
-				linei = (NI)(TMP2595);
+				TMP2517 = addInt(linei, ((NI) 1));
+				linei = (NI)(TMP2517);
 				nimln(241, "httpclient.nim");
-				TMP2599 = subInt((line ? line->Sup.len : 0), ((NI) 1));
-				LOC39 = HEX2EHEX2E_108273(linei, (NI)(TMP2599));
+				TMP2521 = subInt((line ? line->Sup.len : 0), ((NI) 1));
+				LOC39 = HEX2EHEX2E_110273(linei, (NI)(TMP2521));
 				LOC40 = 0;
 				LOC40 = HEX5BHEX5D_88054(line, LOC39);
 				LOC41 = 0;
@@ -1485,20 +1485,20 @@ N_NIMCALL(void, parseresponse_277260)(Socketimpl239407* s, NIM_BOOL getbody, NI 
 	{
 		if (!!(fullyread)) goto LA44;
 		nimln(243, "httpclient.nim");
-		httperror_277048(((NimStringDesc*) &TMP2600));
+		httperror_265048(((NimStringDesc*) &TMP2522));
 	}
 	LA44: ;
 	nimln(244, "httpclient.nim");
 	{
 		if (!getbody) goto LA48;
 		nimln(245, "httpclient.nim");
-		unsureAsgnRef((void**) (&(*Result).Field3), parsebody_277213(s, (*Result).Field2, timeout));
+		unsureAsgnRef((void**) (&(*Result).Field3), parsebody_265213(s, (*Result).Field2, timeout));
 	}
 	goto LA46;
 	LA48: ;
 	{
 		nimln(247, "httpclient.nim");
-		unsureAsgnRef((void**) (&(*Result).Field3), copyString(((NimStringDesc*) &TMP2523)));
+		unsureAsgnRef((void**) (&(*Result).Field3), copyString(((NimStringDesc*) &TMP2445)));
 	}
 	LA46: ;
 	popFrame();
@@ -1538,9 +1538,9 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	(*dest) = src;
 	popFrame();
 }
-N_NIMCALL(void, TMP2602)(void* p, NI op) {
-	ProxyHEX3Aobjecttype277023* a;
-	a = (ProxyHEX3Aobjecttype277023*)p;
+N_NIMCALL(void, TMP2524)(void* p, NI op) {
+	ProxyHEX3Aobjecttype265023* a;
+	a = (ProxyHEX3Aobjecttype265023*)p;
 	nimGCvisit((void*)(*a).url.scheme, op);
 	nimGCvisit((void*)(*a).url.username, op);
 	nimGCvisit((void*)(*a).url.password, op);
@@ -1552,16 +1552,16 @@ N_NIMCALL(void, TMP2602)(void* p, NI op) {
 	nimGCvisit((void*)(*a).auth, op);
 }
 
-N_NIMCALL(ProxyHEX3Aobjecttype277023*, newproxy_277405)(NimStringDesc* url, NimStringDesc* auth) {
-	ProxyHEX3Aobjecttype277023* result;
-	ProxyHEX3Aobjecttype277023* LOC1;
+N_NIMCALL(ProxyHEX3Aobjecttype265023*, newproxy_265405)(NimStringDesc* url, NimStringDesc* auth) {
+	ProxyHEX3Aobjecttype265023* result;
+	ProxyHEX3Aobjecttype265023* LOC1;
 	NimStringDesc* LOC2;
 	nimfr("newProxy", "httpclient.nim")
 	result = 0;
 	nimln(278, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (ProxyHEX3Aobjecttype277023*) newObj((&NTI277010), sizeof(ProxyHEX3Aobjecttype277023));
-	parseuri_249100(url, (&(*LOC1).url));
+	LOC1 = (ProxyHEX3Aobjecttype265023*) newObj((&NTI265010), sizeof(ProxyHEX3Aobjecttype265023));
+	parseuri_237100(url, (&(*LOC1).url));
 	LOC2 = 0;
 	LOC2 = (*LOC1).auth; (*LOC1).auth = copyStringRC1(auth);
 	if (LOC2) nimGCunrefNoCycle(LOC2);
@@ -1569,20 +1569,20 @@ N_NIMCALL(ProxyHEX3Aobjecttype277023*, newproxy_277405)(NimStringDesc* url, NimS
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2603)(void* p, NI op) {
-	MultipartdataHEX3Aobjecttype277030* a;
-	a = (MultipartdataHEX3Aobjecttype277030*)p;
+N_NIMCALL(void, TMP2525)(void* p, NI op) {
+	MultipartdataHEX3Aobjecttype265030* a;
+	a = (MultipartdataHEX3Aobjecttype265030*)p;
 	nimGCvisit((void*)(*a).content, op);
 }
 
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, newmultipartdata_277417)(void) {
-	MultipartdataHEX3Aobjecttype277030* result;
-	MultipartdataHEX3Aobjecttype277030* LOC1;
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, newmultipartdata_265417)(void) {
+	MultipartdataHEX3Aobjecttype265030* result;
+	MultipartdataHEX3Aobjecttype265030* LOC1;
 	nimfr("newMultipartData", "httpclient.nim")
 	result = 0;
 	nimln(281, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (MultipartdataHEX3Aobjecttype277030*) newObj((&NTI277014), sizeof(MultipartdataHEX3Aobjecttype277030));
+	LOC1 = (MultipartdataHEX3Aobjecttype265030*) newObj((&NTI265014), sizeof(MultipartdataHEX3Aobjecttype265030));
 	if ((*LOC1).content) nimGCunrefNoCycle((*LOC1).content);
 	(*LOC1).content = (TY13606*) newSeqRC1((&NTI13606), 0);
 	result = LOC1;
@@ -1590,7 +1590,7 @@ N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, newmultipartdata_277417)(void) {
 	return result;
 }
 
-N_NIMCALL(void, add_277443)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, NimStringDesc* content, NimStringDesc* filename, NimStringDesc* contenttype) {
+N_NIMCALL(void, add_265443)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, NimStringDesc* content, NimStringDesc* filename, NimStringDesc* contenttype) {
 	NimStringDesc* str;
 	NimStringDesc* LOC21;
 	NimStringDesc* LOC32;
@@ -1599,75 +1599,75 @@ N_NIMCALL(void, add_277443)(MultipartdataHEX3Aobjecttype277030** p, NimStringDes
 	nimln(289, "httpclient.nim");
 	{
 		NIM_BOOL LOC3;
-		Valueerror3449* e_277454;
+		Valueerror3449* e_265454;
 		NimStringDesc* LOC6;
 		LOC3 = 0;
-		LOC3 = contains_99373(name, TMP2604);
+		LOC3 = contains_101373(name, TMP2526);
 		if (!LOC3) goto LA4;
-		e_277454 = 0;
+		e_265454 = 0;
 		nimln(2265, "system.nim");
-		e_277454 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_277454).Sup.Sup.m_type = (&NTI3449);
+		e_265454 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_265454).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC6 = 0;
-		LOC6 = (*e_277454).Sup.message; (*e_277454).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2605));
+		LOC6 = (*e_265454).Sup.message; (*e_265454).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2527));
 		if (LOC6) nimGCunrefNoCycle(LOC6);
 		nimln(290, "httpclient.nim");
-		raiseException((Exception*)e_277454, "ValueError");
+		raiseException((Exception*)e_265454, "ValueError");
 	}
 	LA4: ;
 	nimln(291, "httpclient.nim");
 	{
 		NIM_BOOL LOC9;
-		Valueerror3449* e_277467;
+		Valueerror3449* e_265467;
 		NimStringDesc* LOC13;
 		LOC9 = 0;
 		LOC9 = !((filename == NIM_NIL));
 		if (!(LOC9)) goto LA10;
-		LOC9 = contains_99373(filename, TMP2604);
+		LOC9 = contains_101373(filename, TMP2526);
 		LA10: ;
 		if (!LOC9) goto LA11;
-		e_277467 = 0;
+		e_265467 = 0;
 		nimln(2265, "system.nim");
-		e_277467 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_277467).Sup.Sup.m_type = (&NTI3449);
+		e_265467 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_265467).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC13 = 0;
-		LOC13 = (*e_277467).Sup.message; (*e_277467).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2606));
+		LOC13 = (*e_265467).Sup.message; (*e_265467).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2528));
 		if (LOC13) nimGCunrefNoCycle(LOC13);
 		nimln(292, "httpclient.nim");
-		raiseException((Exception*)e_277467, "ValueError");
+		raiseException((Exception*)e_265467, "ValueError");
 	}
 	LA11: ;
 	nimln(293, "httpclient.nim");
 	{
 		NIM_BOOL LOC16;
-		Valueerror3449* e_277480;
+		Valueerror3449* e_265480;
 		NimStringDesc* LOC20;
 		LOC16 = 0;
 		LOC16 = !((contenttype == NIM_NIL));
 		if (!(LOC16)) goto LA17;
-		LOC16 = contains_99373(contenttype, TMP2604);
+		LOC16 = contains_101373(contenttype, TMP2526);
 		LA17: ;
 		if (!LOC16) goto LA18;
-		e_277480 = 0;
+		e_265480 = 0;
 		nimln(2265, "system.nim");
-		e_277480 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_277480).Sup.Sup.m_type = (&NTI3449);
+		e_265480 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_265480).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC20 = 0;
-		LOC20 = (*e_277480).Sup.message; (*e_277480).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2607));
+		LOC20 = (*e_265480).Sup.message; (*e_265480).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2529));
 		if (LOC20) nimGCunrefNoCycle(LOC20);
 		nimln(294, "httpclient.nim");
-		raiseException((Exception*)e_277480, "ValueError");
+		raiseException((Exception*)e_265480, "ValueError");
 	}
 	LA18: ;
 	nimln(296, "httpclient.nim");
 	LOC21 = 0;
 	LOC21 = rawNewString(name->Sup.len + 39);
-appendString(LOC21, ((NimStringDesc*) &TMP2608));
+appendString(LOC21, ((NimStringDesc*) &TMP2530));
 appendString(LOC21, name);
-appendString(LOC21, ((NimStringDesc*) &TMP2609));
+appendString(LOC21, ((NimStringDesc*) &TMP2531));
 	str = LOC21;
 	nimln(297, "httpclient.nim");
 	{
@@ -1676,16 +1676,16 @@ appendString(LOC21, ((NimStringDesc*) &TMP2609));
 		nimln(298, "httpclient.nim");
 		LOC26 = 0;
 		LOC26 = rawNewString(filename->Sup.len + 13);
-appendString(LOC26, ((NimStringDesc*) &TMP2610));
+appendString(LOC26, ((NimStringDesc*) &TMP2532));
 appendString(LOC26, filename);
-appendString(LOC26, ((NimStringDesc*) &TMP2609));
+appendString(LOC26, ((NimStringDesc*) &TMP2531));
 		str = resizeString(str, LOC26->Sup.len + 0);
 appendString(str, LOC26);
 	}
 	LA24: ;
 	nimln(299, "httpclient.nim");
 	str = resizeString(str, 2);
-appendString(str, ((NimStringDesc*) &TMP2574));
+appendString(str, ((NimStringDesc*) &TMP2496));
 	nimln(300, "httpclient.nim");
 	{
 		NimStringDesc* LOC31;
@@ -1693,9 +1693,9 @@ appendString(str, ((NimStringDesc*) &TMP2574));
 		nimln(301, "httpclient.nim");
 		LOC31 = 0;
 		LOC31 = rawNewString(contenttype->Sup.len + 16);
-appendString(LOC31, ((NimStringDesc*) &TMP2611));
+appendString(LOC31, ((NimStringDesc*) &TMP2533));
 appendString(LOC31, contenttype);
-appendString(LOC31, ((NimStringDesc*) &TMP2574));
+appendString(LOC31, ((NimStringDesc*) &TMP2496));
 		str = resizeString(str, LOC31->Sup.len + 0);
 appendString(str, LOC31);
 	}
@@ -1703,9 +1703,9 @@ appendString(str, LOC31);
 	nimln(302, "httpclient.nim");
 	LOC32 = 0;
 	LOC32 = rawNewString(content->Sup.len + 4);
-appendString(LOC32, ((NimStringDesc*) &TMP2574));
+appendString(LOC32, ((NimStringDesc*) &TMP2496));
 appendString(LOC32, content);
-appendString(LOC32, ((NimStringDesc*) &TMP2574));
+appendString(LOC32, ((NimStringDesc*) &TMP2496));
 	str = resizeString(str, LOC32->Sup.len + 0);
 appendString(str, LOC32);
 	nimln(304, "httpclient.nim");
@@ -1716,33 +1716,33 @@ appendString(str, LOC32);
 	popFrame();
 }
 
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, add_277510)(MultipartdataHEX3Aobjecttype277030** p, TY106548* xs, NI xsLen0) {
-	MultipartdataHEX3Aobjecttype277030* result;
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, add_265510)(MultipartdataHEX3Aobjecttype265030** p, TY108548* xs, NI xsLen0) {
+	MultipartdataHEX3Aobjecttype265030* result;
 	nimfr("add", "httpclient.nim")
 	result = 0;
 	{
-		NimStringDesc* name_277551;
-		NimStringDesc* content_277552;
-		NI i_277556;
-		name_277551 = 0;
-		content_277552 = 0;
+		NimStringDesc* name_265551;
+		NimStringDesc* content_265552;
+		NI i_265556;
+		name_265551 = 0;
+		content_265552 = 0;
 		nimln(1689, "system.nim");
-		i_277556 = ((NI) 0);
+		i_265556 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
-				NI TMP2612;
-				if (!(i_277556 < xsLen0)) goto LA3;
+				NI TMP2534;
+				if (!(i_265556 < xsLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_277556) >= (NU)(xsLen0)) raiseIndexError();
-				name_277551 = xs[i_277556].Field0;
-				if ((NU)(i_277556) >= (NU)(xsLen0)) raiseIndexError();
-				content_277552 = xs[i_277556].Field1;
+				if ((NU)(i_265556) >= (NU)(xsLen0)) raiseIndexError();
+				name_265551 = xs[i_265556].Field0;
+				if ((NU)(i_265556) >= (NU)(xsLen0)) raiseIndexError();
+				content_265552 = xs[i_265556].Field1;
 				nimln(314, "httpclient.nim");
-				add_277443(p, name_277551, content_277552, NIM_NIL, NIM_NIL);
+				add_265443(p, name_265551, content_265552, NIM_NIL, NIM_NIL);
 				nimln(1692, "system.nim");
-				TMP2612 = addInt(i_277556, ((NI) 1));
-				i_277556 = (NI)(TMP2612);
+				TMP2534 = addInt(i_265556, ((NI) 1));
+				i_265556 = (NI)(TMP2534);
 			} LA3: ;
 		}
 	}
@@ -1752,64 +1752,64 @@ N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, add_277510)(MultipartdataHEX3Aobj
 	return result;
 }
 
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, newmultipartdata_277572)(TY106548* xs, NI xsLen0) {
-	MultipartdataHEX3Aobjecttype277030* result;
-	MultipartdataHEX3Aobjecttype277030* LOC1;
-	MultipartdataHEX3Aobjecttype277030* LOC2;
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, newmultipartdata_265572)(TY108548* xs, NI xsLen0) {
+	MultipartdataHEX3Aobjecttype265030* result;
+	MultipartdataHEX3Aobjecttype265030* LOC1;
+	MultipartdataHEX3Aobjecttype265030* LOC2;
 	nimfr("newMultipartData", "httpclient.nim")
 	result = 0;
 	nimln(323, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (MultipartdataHEX3Aobjecttype277030*) newObj((&NTI277014), sizeof(MultipartdataHEX3Aobjecttype277030));
+	LOC1 = (MultipartdataHEX3Aobjecttype265030*) newObj((&NTI265014), sizeof(MultipartdataHEX3Aobjecttype265030));
 	if ((*LOC1).content) nimGCunrefNoCycle((*LOC1).content);
 	(*LOC1).content = (TY13606*) newSeqRC1((&NTI13606), 0);
 	result = LOC1;
 	nimln(324, "httpclient.nim");
 	LOC2 = 0;
-	LOC2 = add_277510(&result, xs, xsLen0);
+	LOC2 = add_265510(&result, xs, xsLen0);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, addfiles_277600)(MultipartdataHEX3Aobjecttype277030** p, TY106548* xs, NI xsLen0) {
-	MultipartdataHEX3Aobjecttype277030* result;
-	Mimedb251010 m;
+N_NIMCALL(MultipartdataHEX3Aobjecttype265030*, addfiles_265600)(MultipartdataHEX3Aobjecttype265030** p, TY108548* xs, NI xsLen0) {
+	MultipartdataHEX3Aobjecttype265030* result;
+	Mimedb239010 m;
 	nimfr("addFiles", "httpclient.nim")
 	result = 0;
 	memset((void*)(&m), 0, sizeof(m));
 	nimln(335, "httpclient.nim");
 	chckNil((void*)(&m));
 	memset((void*)(&m), 0, sizeof(m));
-	newmimetypes_251499((&m));
+	newmimetypes_239499((&m));
 	{
-		NimStringDesc* name_277646;
-		NimStringDesc* file_277647;
-		NI i_277666;
-		name_277646 = 0;
-		file_277647 = 0;
+		NimStringDesc* name_265646;
+		NimStringDesc* file_265647;
+		NI i_265666;
+		name_265646 = 0;
+		file_265647 = 0;
 		nimln(1689, "system.nim");
-		i_277666 = ((NI) 0);
+		i_265666 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
 				NimStringDesc* contenttype;
-				TY144789 LOC4;
+				TY119789 LOC4;
 				NimStringDesc* dir;
 				NimStringDesc* fname;
 				NimStringDesc* ext;
 				NimStringDesc* LOC11;
 				NimStringDesc* LOC12;
-				NI TMP2620;
-				if (!(i_277666 < xsLen0)) goto LA3;
+				NI TMP2542;
+				if (!(i_265666 < xsLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_277666) >= (NU)(xsLen0)) raiseIndexError();
-				name_277646 = xs[i_277666].Field0;
-				if ((NU)(i_277666) >= (NU)(xsLen0)) raiseIndexError();
-				file_277647 = xs[i_277666].Field1;
+				if ((NU)(i_265666) >= (NU)(xsLen0)) raiseIndexError();
+				name_265646 = xs[i_265666].Field0;
+				if ((NU)(i_265666) >= (NU)(xsLen0)) raiseIndexError();
+				file_265647 = xs[i_265666].Field1;
 				contenttype = 0;
 				nimln(338, "httpclient.nim");
 				memset((void*)(&LOC4), 0, sizeof(LOC4));
-				nossplitFile(file_277647, (&LOC4));
+				nossplitFile(file_265647, (&LOC4));
 				dir = 0;
 				dir = LOC4.Field0;
 				fname = 0;
@@ -1822,23 +1822,23 @@ N_NIMCALL(MultipartdataHEX3Aobjecttype277030*, addfiles_277600)(MultipartdataHEX
 					NimStringDesc* LOC10;
 					if (!(((NI) 0) < (ext ? ext->Sup.len : 0))) goto LA7;
 					nimln(340, "httpclient.nim");
-					LOC9 = HEX2EHEX2E_108273(((NI) 1), (ext ? (ext->Sup.len-1) : -1));
+					LOC9 = HEX2EHEX2E_110273(((NI) 1), (ext ? (ext->Sup.len-1) : -1));
 					LOC10 = 0;
 					LOC10 = HEX5BHEX5D_88054(ext, LOC9);
-					contenttype = getmimetype_251508(m, LOC10, NIM_NIL);
+					contenttype = getmimetype_239508(m, LOC10, NIM_NIL);
 				}
 				LA7: ;
 				nimln(341, "httpclient.nim");
 				LOC11 = 0;
-				LOC11 = readfile_13434(file_277647);
+				LOC11 = readfile_13434(file_265647);
 				LOC12 = 0;
 				LOC12 = rawNewString(fname->Sup.len + ext->Sup.len + 0);
 appendString(LOC12, fname);
 appendString(LOC12, ext);
-				add_277443(p, name_277646, LOC11, LOC12, contenttype);
+				add_265443(p, name_265646, LOC11, LOC12, contenttype);
 				nimln(1692, "system.nim");
-				TMP2620 = addInt(i_277666, ((NI) 1));
-				i_277666 = (NI)(TMP2620);
+				TMP2542 = addInt(i_265666, ((NI) 1));
+				i_265666 = (NI)(TMP2542);
 			} LA3: ;
 		}
 	}
@@ -1848,21 +1848,21 @@ appendString(LOC12, ext);
 	return result;
 }
 
-N_NIMCALL(void, HEX5BHEX5DHEX3D_277682)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, NimStringDesc* content) {
+N_NIMCALL(void, HEX5BHEX5DHEX3D_265682)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, NimStringDesc* content) {
 	nimfr("[]=", "httpclient.nim")
 	nimln(350, "httpclient.nim");
-	add_277443(p, name, content, NIM_NIL, NIM_NIL);
+	add_265443(p, name, content, NIM_NIL, NIM_NIL);
 	popFrame();
 }
 
-N_NIMCALL(void, HEX5BHEX5DHEX3D_277694)(MultipartdataHEX3Aobjecttype277030** p, NimStringDesc* name, TY144789* file) {
+N_NIMCALL(void, HEX5BHEX5DHEX3D_265694)(MultipartdataHEX3Aobjecttype265030** p, NimStringDesc* name, TY119789* file) {
 	nimfr("[]=", "httpclient.nim")
 	nimln(360, "httpclient.nim");
-	add_277443(p, name, (*file).Field2, (*file).Field0, (*file).Field1);
+	add_265443(p, name, (*file).Field2, (*file).Field0, (*file).Field1);
 	popFrame();
 }
 
-N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* Result) {
+N_NIMCALL(void, format_265710)(MultipartdataHEX3Aobjecttype265030* p, TY108548* Result) {
 	NimStringDesc* bound;
 	NimStringDesc* LOC28;
 	NimStringDesc* LOC37;
@@ -1875,7 +1875,7 @@ N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* 
 		LOC4 = 0;
 		LOC4 = (p == NIM_NIL);
 		if (LOC4) goto LA5;
-		LOC4 = HEX3DHEX3D_158203((*p).content, NIM_NIL);
+		LOC4 = HEX3DHEX3D_133203((*p).content, NIM_NIL);
 		LA5: ;
 		LOC3 = LOC4;
 		if (LOC3) goto LA6;
@@ -1883,8 +1883,8 @@ N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* 
 		LA6: ;
 		if (!LOC3) goto LA7;
 		nimln(364, "httpclient.nim");
-		unsureAsgnRef((void**) (&(*Result).Field0), copyString(TMP2621.Field0));
-		unsureAsgnRef((void**) (&(*Result).Field1), copyString(TMP2621.Field1));
+		unsureAsgnRef((void**) (&(*Result).Field0), copyString(TMP2543.Field0));
+		unsureAsgnRef((void**) (&(*Result).Field1), copyString(TMP2543.Field1));
 		goto BeforeRet;
 	}
 	LA7: ;
@@ -1896,48 +1896,48 @@ N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* 
 			NIM_BOOL found;
 			nimln(369, "httpclient.nim");
 			LOC11 = 0;
-			LOC11 = random_120212(((NI) IL64(9223372036854775807)));
+			LOC11 = random_211212(((NI) IL64(9223372036854775807)));
 			bound = nimIntToStr(LOC11);
 			nimln(370, "httpclient.nim");
 			found = NIM_FALSE;
 			{
-				NimStringDesc* s_277811;
-				TY13606* HEX3Atmp_277827;
-				NI i_277830;
-				NI L_277832;
-				s_277811 = 0;
-				HEX3Atmp_277827 = 0;
+				NimStringDesc* s_265811;
+				TY13606* HEX3Atmp_265827;
+				NI i_265830;
+				NI L_265832;
+				s_265811 = 0;
+				HEX3Atmp_265827 = 0;
 				nimln(371, "httpclient.nim");
-				HEX3Atmp_277827 = (*p).content;
+				HEX3Atmp_265827 = (*p).content;
 				nimln(3084, "system.nim");
-				i_277830 = ((NI) 0);
+				i_265830 = ((NI) 0);
 				nimln(3085, "system.nim");
-				L_277832 = (HEX3Atmp_277827 ? HEX3Atmp_277827->Sup.len : 0);
+				L_265832 = (HEX3Atmp_265827 ? HEX3Atmp_265827->Sup.len : 0);
 				{
 					nimln(3086, "system.nim");
 					while (1) {
-						NI TMP2622;
-						if (!(i_277830 < L_277832)) goto LA14;
+						NI TMP2544;
+						if (!(i_265830 < L_265832)) goto LA14;
 						nimln(3087, "system.nim");
-						if ((NU)(i_277830) >= (NU)(HEX3Atmp_277827->Sup.len)) raiseIndexError();
-						s_277811 = HEX3Atmp_277827->data[i_277830];
+						if ((NU)(i_265830) >= (NU)(HEX3Atmp_265827->Sup.len)) raiseIndexError();
+						s_265811 = HEX3Atmp_265827->data[i_265830];
 						nimln(372, "httpclient.nim");
 						{
 							NIM_BOOL LOC17;
 							LOC17 = 0;
-							LOC17 = contains_99362(s_277811, bound);
+							LOC17 = contains_101362(s_265811, bound);
 							if (!LOC17) goto LA18;
 							nimln(373, "httpclient.nim");
 							found = NIM_TRUE;
 						}
 						LA18: ;
 						nimln(3088, "system.nim");
-						TMP2622 = addInt(i_277830, ((NI) 1));
-						i_277830 = (NI)(TMP2622);
+						TMP2544 = addInt(i_265830, ((NI) 1));
+						i_265830 = (NI)(TMP2544);
 						nimln(3089, "system.nim");
 						{
-							if (!!(((HEX3Atmp_277827 ? HEX3Atmp_277827->Sup.len : 0) == L_277832))) goto LA22;
-							failedassertimpl_88817(((NimStringDesc*) &TMP2623));
+							if (!!(((HEX3Atmp_265827 ? HEX3Atmp_265827->Sup.len : 0) == L_265832))) goto LA22;
+							failedassertimpl_88817(((NimStringDesc*) &TMP2545));
 						}
 						LA22: ;
 					} LA14: ;
@@ -1955,50 +1955,50 @@ N_NIMCALL(void, format_277710)(MultipartdataHEX3Aobjecttype277030* p, TY106548* 
 	nimln(377, "httpclient.nim");
 	LOC28 = 0;
 	LOC28 = rawNewString(bound->Sup.len + 46);
-appendString(LOC28, ((NimStringDesc*) &TMP2624));
+appendString(LOC28, ((NimStringDesc*) &TMP2546));
 appendString(LOC28, bound);
-appendString(LOC28, ((NimStringDesc*) &TMP2574));
+appendString(LOC28, ((NimStringDesc*) &TMP2496));
 	unsureAsgnRef((void**) (&(*Result).Field0), LOC28);
 	nimln(378, "httpclient.nim");
-	unsureAsgnRef((void**) (&(*Result).Field1), copyString(((NimStringDesc*) &TMP2523)));
+	unsureAsgnRef((void**) (&(*Result).Field1), copyString(((NimStringDesc*) &TMP2445)));
 	{
-		NimStringDesc* s_277821;
-		TY13606* HEX3Atmp_277834;
-		NI i_277837;
-		NI L_277839;
-		s_277821 = 0;
-		HEX3Atmp_277834 = 0;
+		NimStringDesc* s_265821;
+		TY13606* HEX3Atmp_265834;
+		NI i_265837;
+		NI L_265839;
+		s_265821 = 0;
+		HEX3Atmp_265834 = 0;
 		nimln(379, "httpclient.nim");
-		HEX3Atmp_277834 = (*p).content;
+		HEX3Atmp_265834 = (*p).content;
 		nimln(3084, "system.nim");
-		i_277837 = ((NI) 0);
+		i_265837 = ((NI) 0);
 		nimln(3085, "system.nim");
-		L_277839 = (HEX3Atmp_277834 ? HEX3Atmp_277834->Sup.len : 0);
+		L_265839 = (HEX3Atmp_265834 ? HEX3Atmp_265834->Sup.len : 0);
 		{
 			nimln(3086, "system.nim");
 			while (1) {
 				NimStringDesc* LOC32;
-				NI TMP2626;
-				if (!(i_277837 < L_277839)) goto LA31;
+				NI TMP2548;
+				if (!(i_265837 < L_265839)) goto LA31;
 				nimln(3087, "system.nim");
-				if ((NU)(i_277837) >= (NU)(HEX3Atmp_277834->Sup.len)) raiseIndexError();
-				s_277821 = HEX3Atmp_277834->data[i_277837];
+				if ((NU)(i_265837) >= (NU)(HEX3Atmp_265834->Sup.len)) raiseIndexError();
+				s_265821 = HEX3Atmp_265834->data[i_265837];
 				nimln(380, "httpclient.nim");
 				LOC32 = 0;
-				LOC32 = rawNewString(bound->Sup.len + s_277821->Sup.len + 4);
-appendString(LOC32, ((NimStringDesc*) &TMP2625));
+				LOC32 = rawNewString(bound->Sup.len + s_265821->Sup.len + 4);
+appendString(LOC32, ((NimStringDesc*) &TMP2547));
 appendString(LOC32, bound);
-appendString(LOC32, ((NimStringDesc*) &TMP2574));
-appendString(LOC32, s_277821);
+appendString(LOC32, ((NimStringDesc*) &TMP2496));
+appendString(LOC32, s_265821);
 				(*Result).Field1 = resizeString((*Result).Field1, LOC32->Sup.len + 0);
 appendString((*Result).Field1, LOC32);
 				nimln(3088, "system.nim");
-				TMP2626 = addInt(i_277837, ((NI) 1));
-				i_277837 = (NI)(TMP2626);
+				TMP2548 = addInt(i_265837, ((NI) 1));
+				i_265837 = (NI)(TMP2548);
 				nimln(3089, "system.nim");
 				{
-					if (!!(((HEX3Atmp_277834 ? HEX3Atmp_277834->Sup.len : 0) == L_277839))) goto LA35;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2623));
+					if (!!(((HEX3Atmp_265834 ? HEX3Atmp_265834->Sup.len : 0) == L_265839))) goto LA35;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2545));
 				}
 				LA35: ;
 			} LA31: ;
@@ -2007,27 +2007,27 @@ appendString((*Result).Field1, LOC32);
 	nimln(381, "httpclient.nim");
 	LOC37 = 0;
 	LOC37 = rawNewString(bound->Sup.len + 6);
-appendString(LOC37, ((NimStringDesc*) &TMP2625));
+appendString(LOC37, ((NimStringDesc*) &TMP2547));
 appendString(LOC37, bound);
-appendString(LOC37, ((NimStringDesc*) &TMP2627));
+appendString(LOC37, ((NimStringDesc*) &TMP2549));
 	(*Result).Field1 = resizeString((*Result).Field1, LOC37->Sup.len + 0);
 appendString((*Result).Field1, LOC37);
 	}BeforeRet: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2639)(void* p, NI op) {
-	Httprequesterror277018* a;
-	a = (Httprequesterror277018*)p;
+N_NIMCALL(void, TMP2561)(void* p, NI op) {
+	Httprequesterror265018* a;
+	a = (Httprequesterror265018*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.parent, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.message, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.trace, op);
 }
 
-N_NIMCALL(void, request_277870)(NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result) {
-	Uri247012 r;
+N_NIMCALL(void, request_265870)(NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result) {
+	Uri235012 r;
 	NimStringDesc* headers;
 	NimStringDesc* LOC21;
-	Socketimpl239407* s;
+	Socketimpl227407* s;
 	NU16 port;
 	nimfr("request", "httpclient.nim")
 	memset((void*)(&r), 0, sizeof(r));
@@ -2036,12 +2036,12 @@ N_NIMCALL(void, request_277870)(NimStringDesc* url, NimStringDesc* httpmethod, N
 		if (!(proxy == NIM_NIL)) goto LA3;
 		chckNil((void*)(&r));
 		memset((void*)(&r), 0, sizeof(r));
-		parseuri_249100(url, (&r));
+		parseuri_237100(url, (&r));
 	}
 	goto LA1;
 	LA3: ;
 	{
-		genericAssign((void*)(&r), (void*)(&(*proxy).url), (&NTI247012));
+		genericAssign((void*)(&r), (void*)(&(*proxy).url), (&NTI235012));
 	}
 	LA1: ;
 	nimln(392, "httpclient.nim");
@@ -2068,7 +2068,7 @@ appendString(headers, r.path);
 			nimln(399, "httpclient.nim");
 			LOC18 = 0;
 			LOC18 = rawNewString(r.query->Sup.len + 1);
-appendString(LOC18, ((NimStringDesc*) &TMP2628));
+appendString(LOC18, ((NimStringDesc*) &TMP2550));
 appendString(LOC18, r.query);
 			headers = resizeString(headers, LOC18->Sup.len + 0);
 appendString(headers, LOC18);
@@ -2082,7 +2082,7 @@ appendString(headers, LOC18);
 		nimln(401, "httpclient.nim");
 		LOC20 = 0;
 		LOC20 = rawNewString(url->Sup.len + 1);
-appendString(LOC20, ((NimStringDesc*) &TMP2629));
+appendString(LOC20, ((NimStringDesc*) &TMP2551));
 appendString(LOC20, url);
 		headers = resizeString(headers, LOC20->Sup.len + 0);
 appendString(headers, LOC20);
@@ -2090,13 +2090,13 @@ appendString(headers, LOC20);
 	LA6: ;
 	nimln(403, "httpclient.nim");
 	headers = resizeString(headers, 11);
-appendString(headers, ((NimStringDesc*) &TMP2630));
+appendString(headers, ((NimStringDesc*) &TMP2552));
 	nimln(405, "httpclient.nim");
 	LOC21 = 0;
 	LOC21 = rawNewString(r.hostname->Sup.len + 8);
-appendString(LOC21, ((NimStringDesc*) &TMP2631));
+appendString(LOC21, ((NimStringDesc*) &TMP2553));
 appendString(LOC21, r.hostname);
-appendString(LOC21, ((NimStringDesc*) &TMP2574));
+appendString(LOC21, ((NimStringDesc*) &TMP2496));
 	headers = resizeString(headers, LOC21->Sup.len + 0);
 appendString(headers, LOC21);
 	nimln(406, "httpclient.nim");
@@ -2106,9 +2106,9 @@ appendString(headers, LOC21);
 		nimln(407, "httpclient.nim");
 		LOC26 = 0;
 		LOC26 = rawNewString(useragent->Sup.len + 14);
-appendString(LOC26, ((NimStringDesc*) &TMP2632));
+appendString(LOC26, ((NimStringDesc*) &TMP2554));
 appendString(LOC26, useragent);
-appendString(LOC26, ((NimStringDesc*) &TMP2574));
+appendString(LOC26, ((NimStringDesc*) &TMP2496));
 		headers = resizeString(headers, LOC26->Sup.len + 0);
 appendString(headers, LOC26);
 	}
@@ -2125,13 +2125,13 @@ appendString(headers, LOC26);
 		LA30: ;
 		if (!LOC29) goto LA31;
 		nimln(409, "httpclient.nim");
-		auth = encode_250174((*proxy).auth, ((NI) 75), ((NimStringDesc*) &TMP2523));
+		auth = encode_238174((*proxy).auth, ((NI) 75), ((NimStringDesc*) &TMP2445));
 		nimln(410, "httpclient.nim");
 		LOC33 = 0;
 		LOC33 = rawNewString(auth->Sup.len + 29);
-appendString(LOC33, ((NimStringDesc*) &TMP2633));
+appendString(LOC33, ((NimStringDesc*) &TMP2555));
 appendString(LOC33, auth);
-appendString(LOC33, ((NimStringDesc*) &TMP2574));
+appendString(LOC33, ((NimStringDesc*) &TMP2496));
 		headers = resizeString(headers, LOC33->Sup.len + 0);
 appendString(headers, LOC33);
 	}
@@ -2141,35 +2141,35 @@ appendString(headers, LOC33);
 appendString(headers, extraheaders);
 	nimln(412, "httpclient.nim");
 	headers = resizeString(headers, 2);
-appendString(headers, ((NimStringDesc*) &TMP2574));
+appendString(headers, ((NimStringDesc*) &TMP2496));
 	nimln(414, "httpclient.nim");
-	s = newsocket_239830(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE);
+	s = newsocket_227830(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE);
 	nimln(415, "httpclient.nim");
 	{
 		NI32 LOC38;
 		if (!(s == NIM_NIL)) goto LA36;
 		LOC38 = 0;
-		LOC38 = oslasterror_140454();
-		raiseoserror_140430(LOC38);
+		LOC38 = oslasterror_115454();
+		raiseoserror_115430(LOC38);
 	}
 	LA36: ;
 	nimln(416, "httpclient.nim");
 	port = ((NU16) 80);
 	nimln(417, "httpclient.nim");
 	{
-		Httprequesterror277018* e_278003;
+		Httprequesterror265018* e_266003;
 		NimStringDesc* LOC43;
-		if (!eqStrings(r.scheme, ((NimStringDesc*) &TMP2638))) goto LA41;
-		e_278003 = 0;
+		if (!eqStrings(r.scheme, ((NimStringDesc*) &TMP2560))) goto LA41;
+		e_266003 = 0;
 		nimln(2265, "system.nim");
-		e_278003 = (Httprequesterror277018*) newObj((&NTI278004), sizeof(Httprequesterror277018));
-		(*e_278003).Sup.Sup.Sup.Sup.m_type = (&NTI277018);
+		e_266003 = (Httprequesterror265018*) newObj((&NTI266004), sizeof(Httprequesterror265018));
+		(*e_266003).Sup.Sup.Sup.Sup.m_type = (&NTI265018);
 		nimln(2266, "system.nim");
 		LOC43 = 0;
-		LOC43 = (*e_278003).Sup.Sup.Sup.message; (*e_278003).Sup.Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2640));
+		LOC43 = (*e_266003).Sup.Sup.Sup.message; (*e_266003).Sup.Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2562));
 		if (LOC43) nimGCunrefNoCycle(LOC43);
 		nimln(422, "httpclient.nim");
-		raiseException((Exception*)e_278003, "HttpRequestError");
+		raiseException((Exception*)e_266003, "HttpRequestError");
 	}
 	LA41: ;
 	nimln(424, "httpclient.nim");
@@ -2186,66 +2186,66 @@ appendString(headers, ((NimStringDesc*) &TMP2574));
 	{
 		if (!(timeout == ((NI) -1))) goto LA51;
 		nimln(428, "httpclient.nim");
-		connect_241645(s, r.hostname, port, ((NU8) 2));
+		connect_229645(s, r.hostname, port, ((NU8) 2));
 	}
 	goto LA49;
 	LA51: ;
 	{
 		nimln(430, "httpclient.nim");
-		connect_244216(s, r.hostname, port, timeout, ((NU8) 2));
+		connect_232216(s, r.hostname, port, timeout, ((NU8) 2));
 	}
 	LA49: ;
 	nimln(431, "httpclient.nim");
-	send_244007(s, headers, 2);
+	send_232007(s, headers, 2);
 	nimln(432, "httpclient.nim");
 	{
 		if (!!(((body) && (body)->Sup.len == 0))) goto LA56;
 		nimln(433, "httpclient.nim");
-		send_244007(s, body, 2);
+		send_232007(s, body, 2);
 	}
 	LA56: ;
 	nimln(435, "httpclient.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI277008));
-	parseresponse_277260(s, !(eqStrings(httpmethod, ((NimStringDesc*) &TMP2643))), timeout, Result);
+	genericReset((void*)Result, (&NTI265008));
+	parseresponse_265260(s, !(eqStrings(httpmethod, ((NimStringDesc*) &TMP2565))), timeout, Result);
 	nimln(436, "httpclient.nim");
-	close_241417(s);
+	close_229417(s);
 	popFrame();
 }
 
-N_NIMCALL(void, request_278026)(NimStringDesc* url, NU8 httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result) {
+N_NIMCALL(void, request_266026)(NimStringDesc* url, NU8 httpmethod, NimStringDesc* extraheaders, NimStringDesc* body, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result) {
 	nimfr("request", "httpclient.nim")
 	nimln(445, "httpclient.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI277008));
-	request_277870(url, reprEnum(httpmethod, (&NTI277357)), extraheaders, body, sslcontext, timeout, useragent, proxy, Result);
+	genericReset((void*)Result, (&NTI265008));
+	request_265870(url, reprEnum(httpmethod, (&NTI265357)), extraheaders, body, sslcontext, timeout, useragent, proxy, Result);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, redirection_278050)(NimStringDesc* status) {
+N_NIMCALL(NIM_BOOL, redirection_266050)(NimStringDesc* status) {
 	NIM_BOOL result;
 	nimfr("redirection", "httpclient.nim")
 {	result = 0;
 	{
-		NimStringDesc* i_278093;
-		NI i_278097;
-		i_278093 = 0;
+		NimStringDesc* i_266093;
+		NI i_266097;
+		i_266093 = 0;
 		nimln(1703, "system.nim");
-		i_278097 = ((NI) 0);
+		i_266097 = ((NI) 0);
 		nimln(1704, "system.nim");
 		{
-			if (!(((NI) (i_278097)) <= ((NI) 3))) goto LA4;
+			if (!(((NI) (i_266097)) <= ((NI) 3))) goto LA4;
 			{
 				nimln(1705, "system.nim");
 				while (1) {
-					NI TMP2653;
+					NI TMP2575;
 					nimln(1706, "system.nim");
-					i_278093 = redirectionnrs_278054[(i_278097)- 0];
+					i_266093 = redirectionnrs_266054[(i_266097)- 0];
 					nimln(451, "httpclient.nim");
 					{
 						NIM_BOOL LOC10;
 						LOC10 = 0;
-						LOC10 = nsuStartsWith(status, i_278093);
+						LOC10 = nsuStartsWith(status, i_266093);
 						if (!LOC10) goto LA11;
 						nimln(452, "httpclient.nim");
 						result = NIM_TRUE;
@@ -2254,14 +2254,14 @@ N_NIMCALL(NIM_BOOL, redirection_278050)(NimStringDesc* status) {
 					LA11: ;
 					nimln(1707, "system.nim");
 					{
-						if (!(((NI) 3) <= ((NI) (i_278097)))) goto LA15;
+						if (!(((NI) 3) <= ((NI) (i_266097)))) goto LA15;
 						goto LA6;
 					}
 					LA15: ;
 					nimln(1708, "system.nim");
-					TMP2653 = addInt(i_278097, ((NI) 1));
-					if (TMP2653 < 0 || TMP2653 > 3) raiseOverflow();
-					i_278097 = (NI)(TMP2653);
+					TMP2575 = addInt(i_266097, ((NI) 1));
+					if (TMP2575 < 0 || TMP2575 > 3) raiseOverflow();
+					i_266097 = (NI)(TMP2575);
 				}
 			} LA6: ;
 		}
@@ -2272,28 +2272,28 @@ N_NIMCALL(NIM_BOOL, redirection_278050)(NimStringDesc* status) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, getnewlocation_278113)(NimStringDesc* lasturl, Stringtableobj176012* headers) {
+N_NIMCALL(NimStringDesc*, getnewlocation_266113)(NimStringDesc* lasturl, Stringtableobj153012* headers) {
 	NimStringDesc* result;
-	Uri247012 r;
+	Uri235012 r;
 	nimfr("getNewLocation", "httpclient.nim")
 	result = 0;
 	nimln(455, "httpclient.nim");
-	result = nstGet(headers, ((NimStringDesc*) &TMP2654));
+	result = nstGet(headers, ((NimStringDesc*) &TMP2576));
 	nimln(456, "httpclient.nim");
 	{
 		if (!((result) && (result)->Sup.len == 0)) goto LA3;
-		httperror_277048(((NimStringDesc*) &TMP2655));
+		httperror_265048(((NimStringDesc*) &TMP2577));
 	}
 	LA3: ;
 	memset((void*)(&r), 0, sizeof(r));
 	nimln(458, "httpclient.nim");
 	chckNil((void*)(&r));
 	memset((void*)(&r), 0, sizeof(r));
-	parseuri_249100(result, (&r));
+	parseuri_237100(result, (&r));
 	nimln(459, "httpclient.nim");
 	{
 		NIM_BOOL LOC7;
-		Uri247012 origparsed;
+		Uri235012 origparsed;
 		NimStringDesc* LOC11;
 		LOC7 = 0;
 		LOC7 = ((r.hostname) && (r.hostname)->Sup.len == 0);
@@ -2305,12 +2305,12 @@ N_NIMCALL(NimStringDesc*, getnewlocation_278113)(NimStringDesc* lasturl, Stringt
 		nimln(460, "httpclient.nim");
 		chckNil((void*)(&origparsed));
 		memset((void*)(&origparsed), 0, sizeof(origparsed));
-		parseuri_249100(lasturl, (&origparsed));
+		parseuri_237100(lasturl, (&origparsed));
 		nimln(461, "httpclient.nim");
 		LOC11 = 0;
 		LOC11 = rawNewString(origparsed.hostname->Sup.len + r.path->Sup.len + 1);
 appendString(LOC11, origparsed.hostname);
-appendString(LOC11, ((NimStringDesc*) &TMP2656));
+appendString(LOC11, ((NimStringDesc*) &TMP2578));
 appendString(LOC11, r.path);
 		result = LOC11;
 	}
@@ -2319,80 +2319,80 @@ appendString(LOC11, r.path);
 	return result;
 }
 
-N_NIMCALL(void, get_278126)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, Response277008* Result) {
+N_NIMCALL(void, get_266126)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, Response265008* Result) {
 	NimStringDesc* lasturl;
 	nimfr("get", "httpclient.nim")
 	nimln(472, "httpclient.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI277008));
-	request_278026(url, ((NU8) 1), extraheaders, ((NimStringDesc*) &TMP2523), sslcontext, timeout, useragent, proxy, Result);
+	genericReset((void*)Result, (&NTI265008));
+	request_266026(url, ((NU8) 1), extraheaders, ((NimStringDesc*) &TMP2445), sslcontext, timeout, useragent, proxy, Result);
 	nimln(474, "httpclient.nim");
 	lasturl = copyString(url);
 	{
-		NI i_278147;
-		NI res_278152;
-		i_278147 = 0;
+		NI i_266147;
+		NI res_266152;
+		i_266147 = 0;
 		nimln(1598, "system.nim");
-		res_278152 = ((NI) 1);
+		res_266152 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2657;
-				if (!(res_278152 <= maxredirects)) goto LA3;
+				NI TMP2579;
+				if (!(res_266152 <= maxredirects)) goto LA3;
 				nimln(1600, "system.nim");
-				i_278147 = res_278152;
+				i_266147 = res_266152;
 				nimln(476, "httpclient.nim");
 				{
 					NIM_BOOL LOC6;
 					NimStringDesc* redirectto;
 					LOC6 = 0;
-					LOC6 = redirection_278050((*Result).Field1);
+					LOC6 = redirection_266050((*Result).Field1);
 					if (!LOC6) goto LA7;
 					nimln(477, "httpclient.nim");
-					redirectto = getnewlocation_278113(lasturl, (*Result).Field2);
+					redirectto = getnewlocation_266113(lasturl, (*Result).Field2);
 					nimln(478, "httpclient.nim");
 					chckNil((void*)Result);
-					genericReset((void*)Result, (&NTI277008));
-					request_278026(redirectto, ((NU8) 1), extraheaders, ((NimStringDesc*) &TMP2523), sslcontext, timeout, useragent, proxy, Result);
+					genericReset((void*)Result, (&NTI265008));
+					request_266026(redirectto, ((NU8) 1), extraheaders, ((NimStringDesc*) &TMP2445), sslcontext, timeout, useragent, proxy, Result);
 					nimln(480, "httpclient.nim");
 					lasturl = copyString(redirectto);
 				}
 				LA7: ;
 				nimln(1619, "system.nim");
-				TMP2657 = addInt(res_278152, ((NI) 1));
-				res_278152 = (NI)(TMP2657);
+				TMP2579 = addInt(res_266152, ((NI) 1));
+				res_266152 = (NI)(TMP2579);
 			} LA3: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, getcontent_278171)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy) {
+N_NIMCALL(NimStringDesc*, getcontent_266171)(NimStringDesc* url, NimStringDesc* extraheaders, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy) {
 	NimStringDesc* result;
-	Response277008 r;
+	Response265008 r;
 	nimfr("getContent", "httpclient.nim")
 {	result = 0;
 	memset((void*)(&r), 0, sizeof(r));
 	nimln(491, "httpclient.nim");
 	chckNil((void*)(&r));
 	memset((void*)(&r), 0, sizeof(r));
-	get_278126(url, extraheaders, maxredirects, sslcontext, timeout, useragent, proxy, (&r));
+	get_266126(url, extraheaders, maxredirects, sslcontext, timeout, useragent, proxy, (&r));
 	nimln(493, "httpclient.nim");
 	{
-		Httprequesterror277018* e_278195;
+		Httprequesterror265018* e_266195;
 		NimStringDesc* LOC5;
 		if ((NU)(((NI) 0)) > (NU)(r.Field1->Sup.len)) raiseIndexError();
 		if (!(((NU8)(r.Field1->data[((NI) 0)])) == ((NU8)(52)) || ((NU8)(r.Field1->data[((NI) 0)])) == ((NU8)(53)))) goto LA3;
-		e_278195 = 0;
+		e_266195 = 0;
 		nimln(2265, "system.nim");
-		e_278195 = (Httprequesterror277018*) newObj((&NTI278004), sizeof(Httprequesterror277018));
-		(*e_278195).Sup.Sup.Sup.Sup.m_type = (&NTI277018);
+		e_266195 = (Httprequesterror265018*) newObj((&NTI266004), sizeof(Httprequesterror265018));
+		(*e_266195).Sup.Sup.Sup.Sup.m_type = (&NTI265018);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_278195).Sup.Sup.Sup.message; (*e_278195).Sup.Sup.Sup.message = copyStringRC1(r.Field1);
+		LOC5 = (*e_266195).Sup.Sup.Sup.message; (*e_266195).Sup.Sup.Sup.message = copyStringRC1(r.Field1);
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(494, "httpclient.nim");
-		raiseException((Exception*)e_278195, "HttpRequestError");
+		raiseException((Exception*)e_266195, "HttpRequestError");
 	}
 	goto LA1;
 	LA3: ;
@@ -2407,8 +2407,8 @@ N_NIMCALL(NimStringDesc*, getcontent_278171)(NimStringDesc* url, NimStringDesc* 
 	return result;
 }
 
-N_NIMCALL(void, post_278212)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, MultipartdataHEX3Aobjecttype277030* multipart, Response277008* Result) {
-	TY106548 LOC1;
+N_NIMCALL(void, post_266212)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, MultipartdataHEX3Aobjecttype265030* multipart, Response265008* Result) {
+	TY108548 LOC1;
 	NimStringDesc* mpheaders;
 	NimStringDesc* mpbody;
 	NimStringDesc* xb;
@@ -2423,7 +2423,7 @@ N_NIMCALL(void, post_278212)(NimStringDesc* url, NimStringDesc* extraheaders, Ni
 	nimfr("post", "httpclient.nim")
 	nimln(512, "httpclient.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	format_277710(multipart, (&LOC1));
+	format_265710(multipart, (&LOC1));
 	mpheaders = 0;
 	mpheaders = LOC1.Field0;
 	mpbody = 0;
@@ -2439,14 +2439,14 @@ N_NIMCALL(void, post_278212)(NimStringDesc* url, NimStringDesc* extraheaders, Ni
 		LOC6 = (((NI) 0) < (mpbody ? mpbody->Sup.len : 0));
 		if (!(LOC6)) goto LA7;
 		LOC8 = 0;
-		LOC8 = nsuEndsWith(mpbody, ((NimStringDesc*) &TMP2574));
+		LOC8 = nsuEndsWith(mpbody, ((NimStringDesc*) &TMP2496));
 		LOC6 = !(LOC8);
 		LA7: ;
 		if (!LOC6) goto LA9;
 		LOC11 = 0;
 		LOC11 = rawNewString(mpbody->Sup.len + 2);
 appendString(LOC11, mpbody);
-appendString(LOC11, ((NimStringDesc*) &TMP2574));
+appendString(LOC11, ((NimStringDesc*) &TMP2496));
 		LOC3 = LOC11;
 	}
 	goto LA4;
@@ -2470,14 +2470,14 @@ appendString(LOC2, body);
 		LOC17 = (((NI) 0) < (extraheaders ? extraheaders->Sup.len : 0));
 		if (!(LOC17)) goto LA18;
 		LOC19 = 0;
-		LOC19 = nsuEndsWith(extraheaders, ((NimStringDesc*) &TMP2574));
+		LOC19 = nsuEndsWith(extraheaders, ((NimStringDesc*) &TMP2496));
 		LOC17 = !(LOC19);
 		LA18: ;
 		if (!LOC17) goto LA20;
 		LOC22 = 0;
 		LOC22 = rawNewString(extraheaders->Sup.len + 2);
 appendString(LOC22, extraheaders);
-appendString(LOC22, ((NimStringDesc*) &TMP2574));
+appendString(LOC22, ((NimStringDesc*) &TMP2496));
 		LOC14 = LOC22;
 	}
 	goto LA15;
@@ -2495,14 +2495,14 @@ appendString(LOC22, ((NimStringDesc*) &TMP2574));
 		LOC27 = (((NI) 0) < (mpheaders ? mpheaders->Sup.len : 0));
 		if (!(LOC27)) goto LA28;
 		LOC29 = 0;
-		LOC29 = nsuEndsWith(mpheaders, ((NimStringDesc*) &TMP2574));
+		LOC29 = nsuEndsWith(mpheaders, ((NimStringDesc*) &TMP2496));
 		LOC27 = !(LOC29);
 		LA28: ;
 		if (!LOC27) goto LA30;
 		LOC32 = 0;
 		LOC32 = rawNewString(mpheaders->Sup.len + 2);
 appendString(LOC32, mpheaders);
-appendString(LOC32, ((NimStringDesc*) &TMP2574));
+appendString(LOC32, ((NimStringDesc*) &TMP2496));
 		LOC24 = LOC32;
 	}
 	goto LA25;
@@ -2527,7 +2527,7 @@ appendString(LOC32, ((NimStringDesc*) &TMP2574));
 		LOC39 = 0;
 		LOC39 = nimIntToStr((xb ? xb->Sup.len : 0));
 		LOC38 = rawNewString(LOC39->Sup.len + 16);
-appendString(LOC38, ((NimStringDesc*) &TMP2662));
+appendString(LOC38, ((NimStringDesc*) &TMP2584));
 appendString(LOC38, LOC39);
 		LOC37 = (((NI) 0) < (LOC38 ? LOC38->Sup.len : 0));
 		if (!(LOC37)) goto LA40;
@@ -2535,10 +2535,10 @@ appendString(LOC38, LOC39);
 		LOC42 = 0;
 		LOC42 = nimIntToStr((xb ? xb->Sup.len : 0));
 		LOC41 = rawNewString(LOC42->Sup.len + 16);
-appendString(LOC41, ((NimStringDesc*) &TMP2662));
+appendString(LOC41, ((NimStringDesc*) &TMP2584));
 appendString(LOC41, LOC42);
 		LOC43 = 0;
-		LOC43 = nsuEndsWith(LOC41, ((NimStringDesc*) &TMP2574));
+		LOC43 = nsuEndsWith(LOC41, ((NimStringDesc*) &TMP2496));
 		LOC37 = !(LOC43);
 		LA40: ;
 		if (!LOC37) goto LA44;
@@ -2546,9 +2546,9 @@ appendString(LOC41, LOC42);
 		LOC47 = 0;
 		LOC47 = nimIntToStr((xb ? xb->Sup.len : 0));
 		LOC46 = rawNewString(LOC47->Sup.len + 18);
-appendString(LOC46, ((NimStringDesc*) &TMP2662));
+appendString(LOC46, ((NimStringDesc*) &TMP2584));
 appendString(LOC46, LOC47);
-appendString(LOC46, ((NimStringDesc*) &TMP2574));
+appendString(LOC46, ((NimStringDesc*) &TMP2496));
 		LOC34 = LOC46;
 	}
 	goto LA35;
@@ -2560,7 +2560,7 @@ appendString(LOC46, ((NimStringDesc*) &TMP2574));
 		LOC50 = 0;
 		LOC50 = nimIntToStr((xb ? xb->Sup.len : 0));
 		LOC49 = rawNewString(LOC50->Sup.len + 16);
-appendString(LOC49, ((NimStringDesc*) &TMP2662));
+appendString(LOC49, ((NimStringDesc*) &TMP2584));
 appendString(LOC49, LOC50);
 		LOC34 = LOC49;
 	}
@@ -2572,36 +2572,36 @@ appendString(LOC13, LOC34);
 	xh = LOC13;
 	nimln(525, "httpclient.nim");
 	chckNil((void*)Result);
-	genericReset((void*)Result, (&NTI277008));
-	request_278026(url, ((NU8) 2), xh, xb, sslcontext, timeout, useragent, proxy, Result);
+	genericReset((void*)Result, (&NTI265008));
+	request_266026(url, ((NU8) 2), xh, xb, sslcontext, timeout, useragent, proxy, Result);
 	nimln(527, "httpclient.nim");
-	lasturl = copyString(((NimStringDesc*) &TMP2523));
+	lasturl = copyString(((NimStringDesc*) &TMP2445));
 	{
-		NI i_278247;
-		NI res_278253;
-		i_278247 = 0;
+		NI i_266247;
+		NI res_266253;
+		i_266247 = 0;
 		nimln(1598, "system.nim");
-		res_278253 = ((NI) 1);
+		res_266253 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2663;
-				if (!(res_278253 <= maxredirects)) goto LA53;
+				NI TMP2585;
+				if (!(res_266253 <= maxredirects)) goto LA53;
 				nimln(1600, "system.nim");
-				i_278247 = res_278253;
+				i_266247 = res_266253;
 				nimln(529, "httpclient.nim");
 				{
 					NIM_BOOL LOC56;
 					NimStringDesc* redirectto;
 					NU8 meth;
 					LOC56 = 0;
-					LOC56 = redirection_278050((*Result).Field1);
+					LOC56 = redirection_266050((*Result).Field1);
 					if (!LOC56) goto LA57;
 					nimln(530, "httpclient.nim");
-					redirectto = getnewlocation_278113(lasturl, (*Result).Field2);
+					redirectto = getnewlocation_266113(lasturl, (*Result).Field2);
 					nimln(531, "httpclient.nim");
 					{
-						if (!!(eqStrings((*Result).Field1, ((NimStringDesc*) &TMP2652)))) goto LA61;
+						if (!!(eqStrings((*Result).Field1, ((NimStringDesc*) &TMP2574)))) goto LA61;
 						meth = ((NU8) 1);
 					}
 					goto LA59;
@@ -2612,47 +2612,47 @@ appendString(LOC13, LOC34);
 					LA59: ;
 					nimln(532, "httpclient.nim");
 					chckNil((void*)Result);
-					genericReset((void*)Result, (&NTI277008));
-					request_278026(redirectto, meth, xh, xb, sslcontext, timeout, useragent, proxy, Result);
+					genericReset((void*)Result, (&NTI265008));
+					request_266026(redirectto, meth, xh, xb, sslcontext, timeout, useragent, proxy, Result);
 					nimln(534, "httpclient.nim");
 					lasturl = copyString(redirectto);
 				}
 				LA57: ;
 				nimln(1619, "system.nim");
-				TMP2663 = addInt(res_278253, ((NI) 1));
-				res_278253 = (NI)(TMP2663);
+				TMP2585 = addInt(res_266253, ((NI) 1));
+				res_266253 = (NI)(TMP2585);
 			} LA53: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, postcontent_278272)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy, MultipartdataHEX3Aobjecttype277030* multipart) {
+N_NIMCALL(NimStringDesc*, postcontent_266272)(NimStringDesc* url, NimStringDesc* extraheaders, NimStringDesc* body, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy, MultipartdataHEX3Aobjecttype265030* multipart) {
 	NimStringDesc* result;
-	Response277008 r;
+	Response265008 r;
 	nimfr("postContent", "httpclient.nim")
 {	result = 0;
 	memset((void*)(&r), 0, sizeof(r));
 	nimln(549, "httpclient.nim");
 	chckNil((void*)(&r));
 	memset((void*)(&r), 0, sizeof(r));
-	post_278212(url, extraheaders, body, maxredirects, sslcontext, timeout, useragent, proxy, multipart, (&r));
+	post_266212(url, extraheaders, body, maxredirects, sslcontext, timeout, useragent, proxy, multipart, (&r));
 	nimln(551, "httpclient.nim");
 	{
-		Httprequesterror277018* e_278298;
+		Httprequesterror265018* e_266298;
 		NimStringDesc* LOC5;
 		if ((NU)(((NI) 0)) > (NU)(r.Field1->Sup.len)) raiseIndexError();
 		if (!(((NU8)(r.Field1->data[((NI) 0)])) == ((NU8)(52)) || ((NU8)(r.Field1->data[((NI) 0)])) == ((NU8)(53)))) goto LA3;
-		e_278298 = 0;
+		e_266298 = 0;
 		nimln(2265, "system.nim");
-		e_278298 = (Httprequesterror277018*) newObj((&NTI278004), sizeof(Httprequesterror277018));
-		(*e_278298).Sup.Sup.Sup.Sup.m_type = (&NTI277018);
+		e_266298 = (Httprequesterror265018*) newObj((&NTI266004), sizeof(Httprequesterror265018));
+		(*e_266298).Sup.Sup.Sup.Sup.m_type = (&NTI265018);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_278298).Sup.Sup.Sup.message; (*e_278298).Sup.Sup.Sup.message = copyStringRC1(r.Field1);
+		LOC5 = (*e_266298).Sup.Sup.Sup.message; (*e_266298).Sup.Sup.Sup.message = copyStringRC1(r.Field1);
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(552, "httpclient.nim");
-		raiseException((Exception*)e_278298, "HttpRequestError");
+		raiseException((Exception*)e_266298, "HttpRequestError");
 	}
 	goto LA1;
 	LA3: ;
@@ -2667,7 +2667,7 @@ N_NIMCALL(NimStringDesc*, postcontent_278272)(NimStringDesc* url, NimStringDesc*
 	return result;
 }
 
-N_NIMCALL(void, downloadfile_278315)(NimStringDesc* url, NimStringDesc* outputfilename, SslcontextHEX3Aobjecttype277375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype277023* proxy) {
+N_NIMCALL(void, downloadfile_266315)(NimStringDesc* url, NimStringDesc* outputfilename, SslcontextHEX3Aobjecttype265375* sslcontext, NI timeout, NimStringDesc* useragent, ProxyHEX3Aobjecttype265023* proxy) {
 	FILE* f;
 	nimfr("downloadFile", "httpclient.nim")
 	f = 0;
@@ -2680,7 +2680,7 @@ N_NIMCALL(void, downloadfile_278315)(NimStringDesc* url, NimStringDesc* outputfi
 		if (!LOC3) goto LA4;
 		nimln(565, "httpclient.nim");
 		LOC6 = 0;
-		LOC6 = getcontent_278171(url, ((NimStringDesc*) &TMP2523), ((NI) 5), sslcontext, timeout, useragent, proxy);
+		LOC6 = getcontent_266171(url, ((NimStringDesc*) &TMP2445), ((NI) 5), sslcontext, timeout, useragent, proxy);
 		write_13457(f, LOC6);
 		nimln(567, "httpclient.nim");
 		fclose(f);
@@ -2689,13 +2689,13 @@ N_NIMCALL(void, downloadfile_278315)(NimStringDesc* url, NimStringDesc* outputfi
 	LA4: ;
 	{
 		nimln(569, "httpclient.nim");
-		fileerror_277068(((NimStringDesc*) &TMP2664));
+		fileerror_265068(((NimStringDesc*) &TMP2586));
 	}
 	LA1: ;
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, generateheaders_278334)(Uri247012* r, NimStringDesc* httpmethod, Stringtableobj176012* headers) {
+N_NIMCALL(NimStringDesc*, generateheaders_266334)(Uri235012* r, NimStringDesc* httpmethod, Stringtableobj153012* headers) {
 	NimStringDesc* result;
 	NimStringDesc* LOC10;
 	nimfr("generateHeaders", "httpclient.nim")
@@ -2721,7 +2721,7 @@ appendString(result, (*r).path);
 		nimln(580, "httpclient.nim");
 		LOC9 = 0;
 		LOC9 = rawNewString((*r).query->Sup.len + 1);
-appendString(LOC9, ((NimStringDesc*) &TMP2628));
+appendString(LOC9, ((NimStringDesc*) &TMP2550));
 appendString(LOC9, (*r).query);
 		result = resizeString(result, LOC9->Sup.len + 0);
 appendString(result, LOC9);
@@ -2729,77 +2729,77 @@ appendString(result, LOC9);
 	LA7: ;
 	nimln(581, "httpclient.nim");
 	result = resizeString(result, 11);
-appendString(result, ((NimStringDesc*) &TMP2630));
+appendString(result, ((NimStringDesc*) &TMP2552));
 	nimln(583, "httpclient.nim");
 	LOC10 = 0;
 	LOC10 = rawNewString((*r).hostname->Sup.len + 8);
-appendString(LOC10, ((NimStringDesc*) &TMP2631));
+appendString(LOC10, ((NimStringDesc*) &TMP2553));
 appendString(LOC10, (*r).hostname);
-appendString(LOC10, ((NimStringDesc*) &TMP2574));
+appendString(LOC10, ((NimStringDesc*) &TMP2496));
 	result = resizeString(result, LOC10->Sup.len + 0);
 appendString(result, LOC10);
 	nimln(584, "httpclient.nim");
 	result = resizeString(result, 24);
-appendString(result, ((NimStringDesc*) &TMP2665));
+appendString(result, ((NimStringDesc*) &TMP2587));
 	{
-		NimStringDesc* key_278340;
-		NimStringDesc* val_278341;
-		key_278340 = 0;
-		val_278341 = 0;
+		NimStringDesc* key_266340;
+		NimStringDesc* val_266341;
+		key_266340 = 0;
+		val_266341 = 0;
 		{
-			NI h_278346;
-			NI HEX3Atmp_278348;
-			NI res_278350;
-			h_278346 = 0;
-			HEX3Atmp_278348 = 0;
+			NI h_266346;
+			NI HEX3Atmp_266348;
+			NI res_266350;
+			h_266346 = 0;
+			HEX3Atmp_266348 = 0;
 			nimln(43, "strtabs.nim");
-			HEX3Atmp_278348 = ((*headers).data ? ((*headers).data->Sup.len-1) : -1);
+			HEX3Atmp_266348 = ((*headers).data ? ((*headers).data->Sup.len-1) : -1);
 			nimln(1598, "system.nim");
-			res_278350 = ((NI) 0);
+			res_266350 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP2667;
-					if (!(res_278350 <= HEX3Atmp_278348)) goto LA14;
+					NI TMP2589;
+					if (!(res_266350 <= HEX3Atmp_266348)) goto LA14;
 					nimln(1600, "system.nim");
-					h_278346 = res_278350;
+					h_266346 = res_266350;
 					nimln(44, "strtabs.nim");
 					{
 						NimStringDesc* LOC19;
-						if ((NU)(h_278346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
-						if (!!((*headers).data->data[h_278346].Field0 == 0)) goto LA17;
+						if ((NU)(h_266346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
+						if (!!((*headers).data->data[h_266346].Field0 == 0)) goto LA17;
 						nimln(45, "strtabs.nim");
-						if ((NU)(h_278346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
-						key_278340 = (*headers).data->data[h_278346].Field0;
-						if ((NU)(h_278346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
-						val_278341 = (*headers).data->data[h_278346].Field1;
+						if ((NU)(h_266346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
+						key_266340 = (*headers).data->data[h_266346].Field0;
+						if ((NU)(h_266346) >= (NU)((*headers).data->Sup.len)) raiseIndexError();
+						val_266341 = (*headers).data->data[h_266346].Field1;
 						nimln(586, "httpclient.nim");
 						LOC19 = 0;
-						LOC19 = rawNewString(key_278340->Sup.len + val_278341->Sup.len + 4);
-appendString(LOC19, key_278340);
-appendString(LOC19, ((NimStringDesc*) &TMP2666));
-appendString(LOC19, val_278341);
-appendString(LOC19, ((NimStringDesc*) &TMP2574));
+						LOC19 = rawNewString(key_266340->Sup.len + val_266341->Sup.len + 4);
+appendString(LOC19, key_266340);
+appendString(LOC19, ((NimStringDesc*) &TMP2588));
+appendString(LOC19, val_266341);
+appendString(LOC19, ((NimStringDesc*) &TMP2496));
 						result = resizeString(result, LOC19->Sup.len + 0);
 appendString(result, LOC19);
 					}
 					LA17: ;
 					nimln(1619, "system.nim");
-					TMP2667 = addInt(res_278350, ((NI) 1));
-					res_278350 = (NI)(TMP2667);
+					TMP2589 = addInt(res_266350, ((NI) 1));
+					res_266350 = (NI)(TMP2589);
 				} LA14: ;
 			}
 		}
 	}
 	nimln(588, "httpclient.nim");
 	result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP2574));
+appendString(result, ((NimStringDesc*) &TMP2496));
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2669)(void* p, NI op) {
-	AsynchttpclientHEX3Aobjecttype278373* a;
-	a = (AsynchttpclientHEX3Aobjecttype278373*)p;
+N_NIMCALL(void, TMP2591)(void* p, NI op) {
+	AsynchttpclientHEX3Aobjecttype266373* a;
+	a = (AsynchttpclientHEX3Aobjecttype266373*)p;
 	nimGCvisit((void*)(*a).socket, op);
 	nimGCvisit((void*)(*a).currenturl.scheme, op);
 	nimGCvisit((void*)(*a).currenturl.username, op);
@@ -2907,18 +2907,18 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(AsynchttpclientHEX3Aobjecttype278373*, newasynchttpclient_278388)(NimStringDesc* useragent, NI maxredirects, SslcontextHEX3Aobjecttype277375* sslcontext) {
-	AsynchttpclientHEX3Aobjecttype278373* result;
+N_NIMCALL(AsynchttpclientHEX3Aobjecttype266373*, newasynchttpclient_266388)(NimStringDesc* useragent, NI maxredirects, SslcontextHEX3Aobjecttype265375* sslcontext) {
+	AsynchttpclientHEX3Aobjecttype266373* result;
 	NimStringDesc* LOC1;
 	nimfr("newAsyncHttpClient", "httpclient.nim")
 	result = 0;
 	nimln(614, "httpclient.nim");
-	result = (AsynchttpclientHEX3Aobjecttype278373*) newObj((&NTI278372), sizeof(AsynchttpclientHEX3Aobjecttype278373));
+	result = (AsynchttpclientHEX3Aobjecttype266373*) newObj((&NTI266372), sizeof(AsynchttpclientHEX3Aobjecttype266373));
 	nimln(615, "httpclient.nim");
 	asgnRef((void**) (&(*result).headers), nstnewStringTable(((NU8) 1)));
 	nimln(616, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*result).useragent; (*result).useragent = copyStringRC1(((NimStringDesc*) &TMP2670));
+	LOC1 = (*result).useragent; (*result).useragent = copyStringRC1(((NimStringDesc*) &TMP2592));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(617, "httpclient.nim");
 	(*result).maxredirects = maxredirects;
@@ -2926,38 +2926,38 @@ N_NIMCALL(AsynchttpclientHEX3Aobjecttype278373*, newasynchttpclient_278388)(NimS
 	return result;
 }
 
-N_NIMCALL(void, close_278607)(AsynchttpclientHEX3Aobjecttype278373* client) {
+N_NIMCALL(void, close_266607)(AsynchttpclientHEX3Aobjecttype266373* client) {
 	nimfr("close", "httpclient.nim")
 	nimln(623, "httpclient.nim");
 	{
 		if (!(*client).connected) goto LA3;
 		nimln(624, "httpclient.nim");
-		close_275612((*client).socket);
+		close_263612((*client).socket);
 		nimln(625, "httpclient.nim");
 		(*client).connected = NIM_FALSE;
 	}
 	LA3: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2672)(void* p, NI op) {
-	TY278810* a;
-	a = (TY278810*)p;
-	nimGCvisit((void*)(*a).socket278623, op);
-	nimGCvisit((void*)(*a).retfuture278618, op);
-	nimGCvisit((void*)(*a).nameitervar278662.ClEnv, op);
-	nimGCvisit((void*)(*a).result278638, op);
-	nimGCvisit((void*)(*a).future278620, op);
-	nimGCvisit((void*)(*a).data278649, op);
+N_NIMCALL(void, TMP2594)(void* p, NI op) {
+	TY266810* a;
+	a = (TY266810*)p;
+	nimGCvisit((void*)(*a).socket266623, op);
+	nimGCvisit((void*)(*a).retfuture266618, op);
+	nimGCvisit((void*)(*a).nameitervar266662.ClEnv, op);
+	nimGCvisit((void*)(*a).result266638, op);
+	nimGCvisit((void*)(*a).future266620, op);
+	nimGCvisit((void*)(*a).data266649, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvfulliter_278619)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_278637;
-	TY278810* HEX3Aenvp_278816;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, recvfulliter_266619)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_266637;
+	TY266810* HEX3Aenvp_266816;
 	NimStringDesc* LOC1;
 	nimfr("recvFullIter", "asyncdispatch.nim")
-{	result_278637 = 0;
-	HEX3Aenvp_278816 = (TY278810*) ClEnv;
-	switch ((*HEX3Aenvp_278816).HEX3Astate) {
+{	result_266637 = 0;
+	HEX3Aenvp_266816 = (TY266810*) ClEnv;
+	switch ((*HEX3Aenvp_266816).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -2965,45 +2965,45 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvfulliter_278619)(void* ClEnv) {
 	STATE0: ;
 	nimln(629, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_278816).result278638; (*HEX3Aenvp_278816).result278638 = copyStringRC1(((NimStringDesc*) &TMP2523));
+	LOC1 = (*HEX3Aenvp_266816).result266638; (*HEX3Aenvp_266816).result266638 = copyStringRC1(((NimStringDesc*) &TMP2445));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	{
 		nimln(630, "httpclient.nim");
 		while (1) {
-			NI TMP2674;
+			NI TMP2596;
 			nimln(631, "httpclient.nim");
 			{
-				if (!((*HEX3Aenvp_278816).size278624 == ((*HEX3Aenvp_278816).result278638 ? (*HEX3Aenvp_278816).result278638->Sup.len : 0))) goto LA6;
+				if (!((*HEX3Aenvp_266816).size266624 == ((*HEX3Aenvp_266816).result266638 ? (*HEX3Aenvp_266816).result266638->Sup.len : 0))) goto LA6;
 				goto LA2;
 			}
 			LA6: ;
 			nimln(632, "httpclient.nim");
-			TMP2674 = subInt((*HEX3Aenvp_278816).size278624, ((*HEX3Aenvp_278816).result278638 ? (*HEX3Aenvp_278816).result278638->Sup.len : 0));
-			asgnRef((void**) (&(*HEX3Aenvp_278816).future278620), recv_269460((*HEX3Aenvp_278816).socket278623, (NI)(TMP2674), 2));
-			(*HEX3Aenvp_278816).HEX3Astate = ((NI) 1);
+			TMP2596 = subInt((*HEX3Aenvp_266816).size266624, ((*HEX3Aenvp_266816).result266638 ? (*HEX3Aenvp_266816).result266638->Sup.len : 0));
+			asgnRef((void**) (&(*HEX3Aenvp_266816).future266620), recv_257460((*HEX3Aenvp_266816).socket266623, (NI)(TMP2596), 2));
+			(*HEX3Aenvp_266816).HEX3Astate = ((NI) 1);
 			nimln(1266, "asyncdispatch.nim");
-			result_278637 = &(*HEX3Aenvp_278816).future278620->Sup;
+			result_266637 = &(*HEX3Aenvp_266816).future266620->Sup;
 			goto BeforeRet;
 			STATE1: ;
 			nimln(632, "httpclient.nim");
-			asgnRefNoCycle((void**) (&(*HEX3Aenvp_278816).data278649), read_266623((*HEX3Aenvp_278816).future278620));
+			asgnRefNoCycle((void**) (&(*HEX3Aenvp_266816).data266649), read_254623((*HEX3Aenvp_266816).future266620));
 			nimln(633, "httpclient.nim");
 			{
-				if (!(((*HEX3Aenvp_278816).data278649) && ((*HEX3Aenvp_278816).data278649)->Sup.len == 0)) goto LA10;
+				if (!(((*HEX3Aenvp_266816).data266649) && ((*HEX3Aenvp_266816).data266649)->Sup.len == 0)) goto LA10;
 				goto LA2;
 			}
 			LA10: ;
 			nimln(634, "httpclient.nim");
-			(*HEX3Aenvp_278816).result278638 = resizeString((*HEX3Aenvp_278816).result278638, (*HEX3Aenvp_278816).data278649->Sup.len + 0);
-appendString((*HEX3Aenvp_278816).result278638, (*HEX3Aenvp_278816).data278649);
+			(*HEX3Aenvp_266816).result266638 = resizeString((*HEX3Aenvp_266816).result266638, (*HEX3Aenvp_266816).data266649->Sup.len + 0);
+appendString((*HEX3Aenvp_266816).result266638, (*HEX3Aenvp_266816).data266649);
 		}
 	} LA2: ;
-	complete_260031((*HEX3Aenvp_278816).retfuture278618, (*HEX3Aenvp_278816).result278638);
+	complete_248031((*HEX3Aenvp_266816).retfuture266618, (*HEX3Aenvp_266816).result266638);
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_278816).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_266816).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_278637;
+	return result_266637;
 }
 
 static N_INLINE(void, pushSafePoint)(TSafePoint* s) {
@@ -3012,7 +3012,7 @@ static N_INLINE(void, pushSafePoint)(TSafePoint* s) {
 	exchandler_17043 = s;
 }
 
-static N_INLINE(NIM_BOOL, finished_267237)(TY266613 x) {
+static N_INLINE(NIM_BOOL, finished_255237)(TY254613 x) {
 	NIM_BOOL result;
 	nimfr("finished", "system.nim")
 	result = 0;
@@ -3045,42 +3045,42 @@ static N_INLINE(void, popCurrentException)(void) {
 	asgnRef((void**) (&currexception_17045), (*currexception_17045).parent);
 }
 
-N_CLOSURE(void, cb_278665)(void* ClEnv) {
-	TY278810* HEX3Aenvp_278824;
-	TSafePoint TMP2675;
+N_CLOSURE(void, cb_266665)(void* ClEnv) {
+	TY266810* HEX3Aenvp_266824;
+	TSafePoint TMP2597;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_278824 = (TY278810*) ClEnv;
+	HEX3Aenvp_266824 = (TY266810*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2675);
-	TMP2675.status = setjmp(TMP2675.context);
-	if (TMP2675.status == 0) {
+	pushSafePoint(&TMP2597);
+	TMP2597.status = setjmp(TMP2597.context);
+	if (TMP2597.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_278664;
+			FuturebaseHEX3Aobjecttype243017* next_266664;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_278824).nameitervar278662);
+			LOC4 = finished_255237((*HEX3Aenvp_266824).nameitervar266662);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_278664 = (*HEX3Aenvp_278824).nameitervar278662.ClPrc((*HEX3Aenvp_278824).nameitervar278662.ClEnv);
+			next_266664 = (*HEX3Aenvp_266824).nameitervar266662.ClPrc((*HEX3Aenvp_266824).nameitervar266662.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_278664 == NIM_NIL)) goto LA9;
+				if (!(next_266664 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_278824).retfuture278618).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2677));
+					if (!!((*(*HEX3Aenvp_266824).retfuture266618).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2599));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_278665; LOC16.ClEnv = HEX3Aenvp_278824;
-				callbackHEX3D_255832(next_278664, LOC16);
+				LOC16.ClPrc = cb_266665; LOC16.ClEnv = HEX3Aenvp_266824;
+				callbackHEX3D_243832(next_266664, LOC16);
 			}
 			LA7: ;
 		}
@@ -3091,10 +3091,10 @@ N_CLOSURE(void, cb_278665)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2675.status = 0;
+			TMP2597.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_278824).retfuture278618).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_266824).retfuture266618).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -3105,70 +3105,70 @@ N_CLOSURE(void, cb_278665)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_261034((*HEX3Aenvp_278824).retfuture278618, LOC24);
+				fail_249034((*HEX3Aenvp_266824).retfuture266618, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2675.status != 0) reraiseException();
+	if (TMP2597.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recvfull_278621)(Asyncsocketdesc268202* socket, NI size) {
-	FutureHEX3Aobjecttype259769* result;
-	TY278810* HEX3Aenv_278827;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recvfull_266621)(Asyncsocketdesc256202* socket, NI size) {
+	FutureHEX3Aobjecttype247769* result;
+	TY266810* HEX3Aenv_266827;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("recvFull", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_278827 = 0;
+	HEX3Aenv_266827 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_278827 = (TY278810*) newObj((&NTI278817), sizeof(TY278810));
+	HEX3Aenv_266827 = (TY266810*) newObj((&NTI266817), sizeof(TY266810));
 	nimln(628, "httpclient.nim");
-	(*HEX3Aenv_278827).size278624 = size;
-	asgnRefNoCycle((void**) (&(*HEX3Aenv_278827).socket278623), socket);
+	(*HEX3Aenv_266827).size266624 = size;
+	asgnRefNoCycle((void**) (&(*HEX3Aenv_266827).socket266623), socket);
 	nimln(627, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_278827).retfuture278618), newfuture_259802(((NimStringDesc*) &TMP2673)));
+	asgnRef((void**) (&(*HEX3Aenv_266827).retfuture266618), newfuture_247802(((NimStringDesc*) &TMP2595)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = recvfulliter_278619; LOC1.ClEnv = HEX3Aenv_278827;
-	asgnRef((void**) (&(*HEX3Aenv_278827).nameitervar278662.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_278827).nameitervar278662.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = recvfulliter_266619; LOC1.ClEnv = HEX3Aenv_266827;
+	asgnRef((void**) (&(*HEX3Aenv_266827).nameitervar266662.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_266827).nameitervar266662.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_278665; LOC2.ClEnv = HEX3Aenv_278827;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2678)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_266665; LOC2.ClEnv = HEX3Aenv_266827;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2600)(LOC2.ClPrc))();
 	nimln(634, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_278827).retfuture278618;
+	result = (*HEX3Aenv_266827).retfuture266618;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2680)(void* p, NI op) {
-	TY279010* a;
-	a = (TY279010*)p;
-	nimGCvisit((void*)(*a).client278843, op);
-	nimGCvisit((void*)(*a).retfuture278835, op);
-	nimGCvisit((void*)(*a).nameitervar278972.ClEnv, op);
-	nimGCvisit((void*)(*a).result278857, op);
-	nimGCvisit((void*)(*a).future278837, op);
-	nimGCvisit((void*)(*a).chunksizestr278869, op);
-	nimGCvisit((void*)(*a).future278838, op);
-	nimGCvisit((void*)(*a).future278839, op);
-	nimGCvisit((void*)(*a).future278840, op);
+N_NIMCALL(void, TMP2602)(void* p, NI op) {
+	TY267010* a;
+	a = (TY267010*)p;
+	nimGCvisit((void*)(*a).client266843, op);
+	nimGCvisit((void*)(*a).retfuture266835, op);
+	nimGCvisit((void*)(*a).nameitervar266972.ClEnv, op);
+	nimGCvisit((void*)(*a).result266857, op);
+	nimGCvisit((void*)(*a).future266837, op);
+	nimGCvisit((void*)(*a).chunksizestr266869, op);
+	nimGCvisit((void*)(*a).future266838, op);
+	nimGCvisit((void*)(*a).future266839, op);
+	nimGCvisit((void*)(*a).future266840, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsechunksiter_278836)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_278856;
-	TY279010* HEX3Aenvp_279016;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parsechunksiter_266836)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_266856;
+	TY267010* HEX3Aenvp_267016;
 	NimStringDesc* LOC1;
 	nimfr("parseChunksIter", "asyncdispatch.nim")
-{	result_278856 = 0;
-	HEX3Aenvp_279016 = (TY279010*) ClEnv;
-	switch ((*HEX3Aenvp_279016).HEX3Astate) {
+{	result_266856 = 0;
+	HEX3Aenvp_267016 = (TY267010*) ClEnv;
+	switch ((*HEX3Aenvp_267016).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -3179,7 +3179,7 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsechunksiter_278836)(void* ClEnv)
 	STATE0: ;
 	nimln(637, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_279016).result278857; (*HEX3Aenvp_279016).result278857 = copyStringRC1(((NimStringDesc*) &TMP2523));
+	LOC1 = (*HEX3Aenvp_267016).result266857; (*HEX3Aenvp_267016).result266857 = copyStringRC1(((NimStringDesc*) &TMP2445));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	{
 		nimln(638, "httpclient.nim");
@@ -3187,61 +3187,61 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsechunksiter_278836)(void* ClEnv)
 			NimStringDesc* LOC22;
 			NimStringDesc* LOC23;
 			nimln(639, "httpclient.nim");
-			(*HEX3Aenvp_279016).chunksize278858 = ((NI) 0);
+			(*HEX3Aenvp_267016).chunksize266858 = ((NI) 0);
 			nimln(640, "httpclient.nim");
-			asgnRef((void**) (&(*HEX3Aenvp_279016).future278837), recvline_275048((*(*HEX3Aenvp_279016).client278843).socket, 2));
-			(*HEX3Aenvp_279016).HEX3Astate = ((NI) 1);
+			asgnRef((void**) (&(*HEX3Aenvp_267016).future266837), recvline_263048((*(*HEX3Aenvp_267016).client266843).socket, 2));
+			(*HEX3Aenvp_267016).HEX3Astate = ((NI) 1);
 			nimln(1266, "asyncdispatch.nim");
-			result_278856 = &(*HEX3Aenvp_279016).future278837->Sup;
+			result_266856 = &(*HEX3Aenvp_267016).future266837->Sup;
 			goto BeforeRet;
 			STATE1: ;
 			nimln(640, "httpclient.nim");
-			asgnRefNoCycle((void**) (&(*HEX3Aenvp_279016).chunksizestr278869), read_266623((*HEX3Aenvp_279016).future278837));
+			asgnRefNoCycle((void**) (&(*HEX3Aenvp_267016).chunksizestr266869), read_254623((*HEX3Aenvp_267016).future266837));
 			nimln(641, "httpclient.nim");
-			(*HEX3Aenvp_279016).i278870 = ((NI) 0);
+			(*HEX3Aenvp_267016).i266870 = ((NI) 0);
 			nimln(642, "httpclient.nim");
 			{
-				if (!(((*HEX3Aenvp_279016).chunksizestr278869) && ((*HEX3Aenvp_279016).chunksizestr278869)->Sup.len == 0)) goto LA6;
+				if (!(((*HEX3Aenvp_267016).chunksizestr266869) && ((*HEX3Aenvp_267016).chunksizestr266869)->Sup.len == 0)) goto LA6;
 				nimln(643, "httpclient.nim");
-				httperror_277048(((NimStringDesc*) &TMP2545));
+				httperror_265048(((NimStringDesc*) &TMP2467));
 			}
 			LA6: ;
 			{
 				nimln(644, "httpclient.nim");
 				while (1) {
-					NI TMP2687;
+					NI TMP2609;
 					nimln(645, "httpclient.nim");
-					if ((NU)((*HEX3Aenvp_279016).i278870) > (NU)((*HEX3Aenvp_279016).chunksizestr278869->Sup.len)) raiseIndexError();
-					switch (((NU8)((*HEX3Aenvp_279016).chunksizestr278869->data[(*HEX3Aenvp_279016).i278870]))) {
+					if ((NU)((*HEX3Aenvp_267016).i266870) > (NU)((*HEX3Aenvp_267016).chunksizestr266869->Sup.len)) raiseIndexError();
+					switch (((NU8)((*HEX3Aenvp_267016).chunksizestr266869->data[(*HEX3Aenvp_267016).i266870]))) {
 					case 48 ... 57:
 					{
-						NI TMP2682;
+						NI TMP2604;
 						nimln(647, "httpclient.nim");
-						if ((NU)((*HEX3Aenvp_279016).i278870) > (NU)((*HEX3Aenvp_279016).chunksizestr278869->Sup.len)) raiseIndexError();
-						TMP2682 = subInt(((NI) (((NU8)((*HEX3Aenvp_279016).chunksizestr278869->data[(*HEX3Aenvp_279016).i278870])))), ((NI) 48));
-						(*HEX3Aenvp_279016).chunksize278858 = (NI)((NI)((NU64)((*HEX3Aenvp_279016).chunksize278858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2682))));
+						if ((NU)((*HEX3Aenvp_267016).i266870) > (NU)((*HEX3Aenvp_267016).chunksizestr266869->Sup.len)) raiseIndexError();
+						TMP2604 = subInt(((NI) (((NU8)((*HEX3Aenvp_267016).chunksizestr266869->data[(*HEX3Aenvp_267016).i266870])))), ((NI) 48));
+						(*HEX3Aenvp_267016).chunksize266858 = (NI)((NI)((NU64)((*HEX3Aenvp_267016).chunksize266858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2604))));
 					}
 					break;
 					case 97 ... 102:
 					{
-						NI TMP2683;
-						NI TMP2684;
+						NI TMP2605;
+						NI TMP2606;
 						nimln(649, "httpclient.nim");
-						if ((NU)((*HEX3Aenvp_279016).i278870) > (NU)((*HEX3Aenvp_279016).chunksizestr278869->Sup.len)) raiseIndexError();
-						TMP2683 = subInt(((NI) (((NU8)((*HEX3Aenvp_279016).chunksizestr278869->data[(*HEX3Aenvp_279016).i278870])))), ((NI) 97));
-						TMP2684 = addInt(((NI) ((NI)(TMP2683))), ((NI) 10));
-						(*HEX3Aenvp_279016).chunksize278858 = (NI)((NI)((NU64)((*HEX3Aenvp_279016).chunksize278858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2684))));
+						if ((NU)((*HEX3Aenvp_267016).i266870) > (NU)((*HEX3Aenvp_267016).chunksizestr266869->Sup.len)) raiseIndexError();
+						TMP2605 = subInt(((NI) (((NU8)((*HEX3Aenvp_267016).chunksizestr266869->data[(*HEX3Aenvp_267016).i266870])))), ((NI) 97));
+						TMP2606 = addInt(((NI) ((NI)(TMP2605))), ((NI) 10));
+						(*HEX3Aenvp_267016).chunksize266858 = (NI)((NI)((NU64)((*HEX3Aenvp_267016).chunksize266858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2606))));
 					}
 					break;
 					case 65 ... 70:
 					{
-						NI TMP2685;
-						NI TMP2686;
+						NI TMP2607;
+						NI TMP2608;
 						nimln(651, "httpclient.nim");
-						if ((NU)((*HEX3Aenvp_279016).i278870) > (NU)((*HEX3Aenvp_279016).chunksizestr278869->Sup.len)) raiseIndexError();
-						TMP2685 = subInt(((NI) (((NU8)((*HEX3Aenvp_279016).chunksizestr278869->data[(*HEX3Aenvp_279016).i278870])))), ((NI) 65));
-						TMP2686 = addInt(((NI) ((NI)(TMP2685))), ((NI) 10));
-						(*HEX3Aenvp_279016).chunksize278858 = (NI)((NI)((NU64)((*HEX3Aenvp_279016).chunksize278858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2686))));
+						if ((NU)((*HEX3Aenvp_267016).i266870) > (NU)((*HEX3Aenvp_267016).chunksizestr266869->Sup.len)) raiseIndexError();
+						TMP2607 = subInt(((NI) (((NU8)((*HEX3Aenvp_267016).chunksizestr266869->data[(*HEX3Aenvp_267016).i266870])))), ((NI) 65));
+						TMP2608 = addInt(((NI) ((NI)(TMP2607))), ((NI) 10));
+						(*HEX3Aenvp_267016).chunksize266858 = (NI)((NI)((NU64)((*HEX3Aenvp_267016).chunksize266858) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2608))));
 					}
 					break;
 					case 0:
@@ -3261,104 +3261,104 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsechunksiter_278836)(void* ClEnv)
 						NimStringDesc* LOC16;
 						nimln(659, "httpclient.nim");
 						LOC16 = 0;
-						LOC16 = rawNewString((*HEX3Aenvp_279016).chunksizestr278869->Sup.len + 20);
-appendString(LOC16, ((NimStringDesc*) &TMP2551));
-appendString(LOC16, (*HEX3Aenvp_279016).chunksizestr278869);
-						httperror_277048(LOC16);
+						LOC16 = rawNewString((*HEX3Aenvp_267016).chunksizestr266869->Sup.len + 20);
+appendString(LOC16, ((NimStringDesc*) &TMP2473));
+appendString(LOC16, (*HEX3Aenvp_267016).chunksizestr266869);
+						httperror_265048(LOC16);
 					}
 					break;
 					}
 					nimln(660, "httpclient.nim");
-					TMP2687 = addInt((*HEX3Aenvp_279016).i278870, ((NI) 1));
-					(*HEX3Aenvp_279016).i278870 = (NI)(TMP2687);
+					TMP2609 = addInt((*HEX3Aenvp_267016).i266870, ((NI) 1));
+					(*HEX3Aenvp_267016).i266870 = (NI)(TMP2609);
 				}
 			} LA8: ;
 			nimln(661, "httpclient.nim");
 			{
 				NimStringDesc* LOC21;
-				if (!((*HEX3Aenvp_279016).chunksize278858 <= ((NI) 0))) goto LA19;
+				if (!((*HEX3Aenvp_267016).chunksize266858 <= ((NI) 0))) goto LA19;
 				nimln(662, "httpclient.nim");
-				asgnRef((void**) (&(*HEX3Aenvp_279016).future278838), recvfull_278621((*(*HEX3Aenvp_279016).client278843).socket, ((NI) 2)));
-				(*HEX3Aenvp_279016).HEX3Astate = ((NI) 2);
+				asgnRef((void**) (&(*HEX3Aenvp_267016).future266838), recvfull_266621((*(*HEX3Aenvp_267016).client266843).socket, ((NI) 2)));
+				(*HEX3Aenvp_267016).HEX3Astate = ((NI) 2);
 				nimln(1266, "asyncdispatch.nim");
-				result_278856 = &(*HEX3Aenvp_279016).future278838->Sup;
+				result_266856 = &(*HEX3Aenvp_267016).future266838->Sup;
 				goto BeforeRet;
 				STATE2: ;
 				nimln(662, "httpclient.nim");
 				LOC21 = 0;
-				LOC21 = read_266623((*HEX3Aenvp_279016).future278838);
+				LOC21 = read_254623((*HEX3Aenvp_267016).future266838);
 				nimln(663, "httpclient.nim");
 				goto LA2;
 			}
 			LA19: ;
 			nimln(664, "httpclient.nim");
-			asgnRef((void**) (&(*HEX3Aenvp_279016).future278839), recvfull_278621((*(*HEX3Aenvp_279016).client278843).socket, (*HEX3Aenvp_279016).chunksize278858));
-			(*HEX3Aenvp_279016).HEX3Astate = ((NI) 3);
+			asgnRef((void**) (&(*HEX3Aenvp_267016).future266839), recvfull_266621((*(*HEX3Aenvp_267016).client266843).socket, (*HEX3Aenvp_267016).chunksize266858));
+			(*HEX3Aenvp_267016).HEX3Astate = ((NI) 3);
 			nimln(1266, "asyncdispatch.nim");
-			result_278856 = &(*HEX3Aenvp_279016).future278839->Sup;
+			result_266856 = &(*HEX3Aenvp_267016).future266839->Sup;
 			goto BeforeRet;
 			STATE3: ;
 			nimln(664, "httpclient.nim");
 			LOC22 = 0;
-			LOC22 = read_266623((*HEX3Aenvp_279016).future278839);
-			(*HEX3Aenvp_279016).result278857 = resizeString((*HEX3Aenvp_279016).result278857, LOC22->Sup.len + 0);
-appendString((*HEX3Aenvp_279016).result278857, LOC22);
+			LOC22 = read_254623((*HEX3Aenvp_267016).future266839);
+			(*HEX3Aenvp_267016).result266857 = resizeString((*HEX3Aenvp_267016).result266857, LOC22->Sup.len + 0);
+appendString((*HEX3Aenvp_267016).result266857, LOC22);
 			nimln(665, "httpclient.nim");
-			asgnRef((void**) (&(*HEX3Aenvp_279016).future278840), recvfull_278621((*(*HEX3Aenvp_279016).client278843).socket, ((NI) 2)));
-			(*HEX3Aenvp_279016).HEX3Astate = ((NI) 4);
+			asgnRef((void**) (&(*HEX3Aenvp_267016).future266840), recvfull_266621((*(*HEX3Aenvp_267016).client266843).socket, ((NI) 2)));
+			(*HEX3Aenvp_267016).HEX3Astate = ((NI) 4);
 			nimln(1266, "asyncdispatch.nim");
-			result_278856 = &(*HEX3Aenvp_279016).future278840->Sup;
+			result_266856 = &(*HEX3Aenvp_267016).future266840->Sup;
 			goto BeforeRet;
 			STATE4: ;
 			nimln(665, "httpclient.nim");
 			LOC23 = 0;
-			LOC23 = read_266623((*HEX3Aenvp_279016).future278840);
+			LOC23 = read_254623((*HEX3Aenvp_267016).future266840);
 		}
 	} LA2: ;
-	complete_260031((*HEX3Aenvp_279016).retfuture278835, (*HEX3Aenvp_279016).result278857);
+	complete_248031((*HEX3Aenvp_267016).retfuture266835, (*HEX3Aenvp_267016).result266857);
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_279016).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_267016).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_278856;
+	return result_266856;
 }
 
-N_CLOSURE(void, cb_278975)(void* ClEnv) {
-	TY279010* HEX3Aenvp_279023;
-	TSafePoint TMP2688;
+N_CLOSURE(void, cb_266975)(void* ClEnv) {
+	TY267010* HEX3Aenvp_267023;
+	TSafePoint TMP2610;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_279023 = (TY279010*) ClEnv;
+	HEX3Aenvp_267023 = (TY267010*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2688);
-	TMP2688.status = setjmp(TMP2688.context);
-	if (TMP2688.status == 0) {
+	pushSafePoint(&TMP2610);
+	TMP2610.status = setjmp(TMP2610.context);
+	if (TMP2610.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_278974;
+			FuturebaseHEX3Aobjecttype243017* next_266974;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_279023).nameitervar278972);
+			LOC4 = finished_255237((*HEX3Aenvp_267023).nameitervar266972);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_278974 = (*HEX3Aenvp_279023).nameitervar278972.ClPrc((*HEX3Aenvp_279023).nameitervar278972.ClEnv);
+			next_266974 = (*HEX3Aenvp_267023).nameitervar266972.ClPrc((*HEX3Aenvp_267023).nameitervar266972.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_278974 == NIM_NIL)) goto LA9;
+				if (!(next_266974 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_279023).retfuture278835).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2690));
+					if (!!((*(*HEX3Aenvp_267023).retfuture266835).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2612));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_278975; LOC16.ClEnv = HEX3Aenvp_279023;
-				callbackHEX3D_255832(next_278974, LOC16);
+				LOC16.ClPrc = cb_266975; LOC16.ClEnv = HEX3Aenvp_267023;
+				callbackHEX3D_243832(next_266974, LOC16);
 			}
 			LA7: ;
 		}
@@ -3369,10 +3369,10 @@ N_CLOSURE(void, cb_278975)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2688.status = 0;
+			TMP2610.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_279023).retfuture278835).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_267023).retfuture266835).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -3383,70 +3383,70 @@ N_CLOSURE(void, cb_278975)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_261034((*HEX3Aenvp_279023).retfuture278835, LOC24);
+				fail_249034((*HEX3Aenvp_267023).retfuture266835, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2688.status != 0) reraiseException();
+	if (TMP2610.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, parsechunks_278841)(AsynchttpclientHEX3Aobjecttype278373* client) {
-	FutureHEX3Aobjecttype259769* result;
-	TY279010* HEX3Aenv_279026;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, parsechunks_266841)(AsynchttpclientHEX3Aobjecttype266373* client) {
+	FutureHEX3Aobjecttype247769* result;
+	TY267010* HEX3Aenv_267026;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("parseChunks", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_279026 = 0;
+	HEX3Aenv_267026 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_279026 = (TY279010*) newObj((&NTI279017), sizeof(TY279010));
+	HEX3Aenv_267026 = (TY267010*) newObj((&NTI267017), sizeof(TY267010));
 	nimln(637, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_279026).client278843), client);
+	asgnRef((void**) (&(*HEX3Aenv_267026).client266843), client);
 	nimln(636, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_279026).retfuture278835), newfuture_259802(((NimStringDesc*) &TMP2681)));
+	asgnRef((void**) (&(*HEX3Aenv_267026).retfuture266835), newfuture_247802(((NimStringDesc*) &TMP2603)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = parsechunksiter_278836; LOC1.ClEnv = HEX3Aenv_279026;
-	asgnRef((void**) (&(*HEX3Aenv_279026).nameitervar278972.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_279026).nameitervar278972.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = parsechunksiter_266836; LOC1.ClEnv = HEX3Aenv_267026;
+	asgnRef((void**) (&(*HEX3Aenv_267026).nameitervar266972.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_267026).nameitervar266972.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_278975; LOC2.ClEnv = HEX3Aenv_279026;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2691)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_266975; LOC2.ClEnv = HEX3Aenv_267026;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2613)(LOC2.ClPrc))();
 	nimln(665, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_279026).retfuture278835;
+	result = (*HEX3Aenv_267026).retfuture266835;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2693)(void* p, NI op) {
-	TY279210* a;
-	a = (TY279210*)p;
-	nimGCvisit((void*)(*a).headers279047, op);
-	nimGCvisit((void*)(*a).client279046, op);
-	nimGCvisit((void*)(*a).retfuture279039, op);
-	nimGCvisit((void*)(*a).nameitervar279106.ClEnv, op);
-	nimGCvisit((void*)(*a).result279061, op);
-	nimGCvisit((void*)(*a).future279041, op);
-	nimGCvisit((void*)(*a).contentlengthheader279070, op);
-	nimGCvisit((void*)(*a).future279042, op);
-	nimGCvisit((void*)(*a).buf279082, op);
-	nimGCvisit((void*)(*a).future279043, op);
+N_NIMCALL(void, TMP2615)(void* p, NI op) {
+	TY267210* a;
+	a = (TY267210*)p;
+	nimGCvisit((void*)(*a).headers267047, op);
+	nimGCvisit((void*)(*a).client267046, op);
+	nimGCvisit((void*)(*a).retfuture267039, op);
+	nimGCvisit((void*)(*a).nameitervar267106.ClEnv, op);
+	nimGCvisit((void*)(*a).result267061, op);
+	nimGCvisit((void*)(*a).future267041, op);
+	nimGCvisit((void*)(*a).contentlengthheader267070, op);
+	nimGCvisit((void*)(*a).future267042, op);
+	nimGCvisit((void*)(*a).buf267082, op);
+	nimGCvisit((void*)(*a).future267043, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsebodyiter_279040)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_279060;
-	TY279210* HEX3Aenvp_279216;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parsebodyiter_267040)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_267060;
+	TY267210* HEX3Aenvp_267216;
 	NimStringDesc* LOC1;
 	nimfr("parseBodyIter", "asyncdispatch.nim")
-{	result_279060 = 0;
-	HEX3Aenvp_279216 = (TY279210*) ClEnv;
-	switch ((*HEX3Aenvp_279216).HEX3Astate) {
+{	result_267060 = 0;
+	HEX3Aenvp_267216 = (TY267210*) ClEnv;
+	switch ((*HEX3Aenvp_267216).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -3456,51 +3456,51 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsebodyiter_279040)(void* ClEnv) {
 	STATE0: ;
 	nimln(671, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_279216).result279061; (*HEX3Aenvp_279216).result279061 = copyStringRC1(((NimStringDesc*) &TMP2523));
+	LOC1 = (*HEX3Aenvp_267216).result267061; (*HEX3Aenvp_267216).result267061 = copyStringRC1(((NimStringDesc*) &TMP2445));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(672, "httpclient.nim");
 	{
 		NimStringDesc* LOC4;
 		LOC4 = 0;
-		LOC4 = nstGet((*HEX3Aenvp_279216).headers279047, ((NimStringDesc*) &TMP2565));
-		if (!eqStrings(LOC4, ((NimStringDesc*) &TMP2566))) goto LA5;
+		LOC4 = nstGet((*HEX3Aenvp_267216).headers267047, ((NimStringDesc*) &TMP2487));
+		if (!eqStrings(LOC4, ((NimStringDesc*) &TMP2488))) goto LA5;
 		nimln(673, "httpclient.nim");
-		asgnRef((void**) (&(*HEX3Aenvp_279216).future279041), parsechunks_278841((*HEX3Aenvp_279216).client279046));
-		(*HEX3Aenvp_279216).HEX3Astate = ((NI) 1);
+		asgnRef((void**) (&(*HEX3Aenvp_267216).future267041), parsechunks_266841((*HEX3Aenvp_267216).client267046));
+		(*HEX3Aenvp_267216).HEX3Astate = ((NI) 1);
 		nimln(1266, "asyncdispatch.nim");
-		result_279060 = &(*HEX3Aenvp_279216).future279041->Sup;
+		result_267060 = &(*HEX3Aenvp_267216).future267041->Sup;
 		goto BeforeRet;
 		STATE1: ;
 		nimln(673, "httpclient.nim");
-		asgnRefNoCycle((void**) (&(*HEX3Aenvp_279216).result279061), read_266623((*HEX3Aenvp_279216).future279041));
+		asgnRefNoCycle((void**) (&(*HEX3Aenvp_267216).result267061), read_254623((*HEX3Aenvp_267216).future267041));
 	}
 	goto LA2;
 	LA5: ;
 	{
 		nimln(677, "httpclient.nim");
-		asgnRefNoCycle((void**) (&(*HEX3Aenvp_279216).contentlengthheader279070), nstGet((*HEX3Aenvp_279216).headers279047, ((NimStringDesc*) &TMP2567)));
+		asgnRefNoCycle((void**) (&(*HEX3Aenvp_267216).contentlengthheader267070), nstGet((*HEX3Aenvp_267216).headers267047, ((NimStringDesc*) &TMP2489)));
 		nimln(678, "httpclient.nim");
 		{
-			if (!!((((*HEX3Aenvp_279216).contentlengthheader279070) && ((*HEX3Aenvp_279216).contentlengthheader279070)->Sup.len == 0))) goto LA10;
+			if (!!((((*HEX3Aenvp_267216).contentlengthheader267070) && ((*HEX3Aenvp_267216).contentlengthheader267070)->Sup.len == 0))) goto LA10;
 			nimln(679, "httpclient.nim");
-			(*HEX3Aenvp_279216).length279071 = nsuParseInt((*HEX3Aenvp_279216).contentlengthheader279070);
+			(*HEX3Aenvp_267216).length267071 = nsuParseInt((*HEX3Aenvp_267216).contentlengthheader267070);
 			nimln(680, "httpclient.nim");
 			{
-				if (!(((NI) 0) < (*HEX3Aenvp_279216).length279071)) goto LA14;
+				if (!(((NI) 0) < (*HEX3Aenvp_267216).length267071)) goto LA14;
 				nimln(681, "httpclient.nim");
-				asgnRef((void**) (&(*HEX3Aenvp_279216).future279042), recvfull_278621((*(*HEX3Aenvp_279216).client279046).socket, (*HEX3Aenvp_279216).length279071));
-				(*HEX3Aenvp_279216).HEX3Astate = ((NI) 2);
+				asgnRef((void**) (&(*HEX3Aenvp_267216).future267042), recvfull_266621((*(*HEX3Aenvp_267216).client267046).socket, (*HEX3Aenvp_267216).length267071));
+				(*HEX3Aenvp_267216).HEX3Astate = ((NI) 2);
 				nimln(1266, "asyncdispatch.nim");
-				result_279060 = &(*HEX3Aenvp_279216).future279042->Sup;
+				result_267060 = &(*HEX3Aenvp_267216).future267042->Sup;
 				goto BeforeRet;
 				STATE2: ;
 				nimln(681, "httpclient.nim");
-				asgnRefNoCycle((void**) (&(*HEX3Aenvp_279216).result279061), read_266623((*HEX3Aenvp_279216).future279042));
+				asgnRefNoCycle((void**) (&(*HEX3Aenvp_267216).result267061), read_254623((*HEX3Aenvp_267216).future267042));
 				nimln(682, "httpclient.nim");
 				{
-					if (!(((*HEX3Aenvp_279216).result279061) && ((*HEX3Aenvp_279216).result279061)->Sup.len == 0)) goto LA18;
+					if (!(((*HEX3Aenvp_267216).result267061) && ((*HEX3Aenvp_267216).result267061)->Sup.len == 0)) goto LA18;
 					nimln(683, "httpclient.nim");
-					httperror_277048(((NimStringDesc*) &TMP2695));
+					httperror_265048(((NimStringDesc*) &TMP2617));
 				}
 				LA18: ;
 				nimln(684, "httpclient.nim");
@@ -3508,20 +3508,20 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parsebodyiter_279040)(void* ClEnv) {
 					NimStringDesc* LOC24;
 					NimStringDesc* LOC25;
 					NimStringDesc* LOC26;
-					if (!!((((*HEX3Aenvp_279216).result279061 ? (*HEX3Aenvp_279216).result279061->Sup.len : 0) == (*HEX3Aenvp_279216).length279071))) goto LA22;
+					if (!!((((*HEX3Aenvp_267216).result267061 ? (*HEX3Aenvp_267216).result267061->Sup.len : 0) == (*HEX3Aenvp_267216).length267071))) goto LA22;
 					nimln(685, "httpclient.nim");
 					nimln(686, "httpclient.nim");
 					LOC24 = 0;
 					LOC25 = 0;
-					LOC25 = nimIntToStr((*HEX3Aenvp_279216).length279071);
+					LOC25 = nimIntToStr((*HEX3Aenvp_267216).length267071);
 					LOC26 = 0;
-					LOC26 = nimIntToStr(((*HEX3Aenvp_279216).result279061 ? (*HEX3Aenvp_279216).result279061->Sup.len : 0));
+					LOC26 = nimIntToStr(((*HEX3Aenvp_267216).result267061 ? (*HEX3Aenvp_267216).result267061->Sup.len : 0));
 					LOC24 = rawNewString(LOC25->Sup.len + LOC26->Sup.len + 59);
-appendString(LOC24, ((NimStringDesc*) &TMP2696));
+appendString(LOC24, ((NimStringDesc*) &TMP2618));
 appendString(LOC24, LOC25);
-appendString(LOC24, ((NimStringDesc*) &TMP2697));
+appendString(LOC24, ((NimStringDesc*) &TMP2619));
 appendString(LOC24, LOC26);
-					httperror_277048(LOC24);
+					httperror_265048(LOC24);
 				}
 				LA22: ;
 			}
@@ -3535,33 +3535,33 @@ appendString(LOC24, LOC26);
 				NimStringDesc* LOC30;
 				NimStringDesc* LOC33;
 				LOC30 = 0;
-				LOC30 = nstGet((*HEX3Aenvp_279216).headers279047, ((NimStringDesc*) &TMP2572));
-				if (!eqStrings(LOC30, ((NimStringDesc*) &TMP2573))) goto LA31;
+				LOC30 = nstGet((*HEX3Aenvp_267216).headers267047, ((NimStringDesc*) &TMP2494));
+				if (!eqStrings(LOC30, ((NimStringDesc*) &TMP2495))) goto LA31;
 				nimln(693, "httpclient.nim");
 				LOC33 = 0;
-				LOC33 = (*HEX3Aenvp_279216).buf279082; (*HEX3Aenvp_279216).buf279082 = copyStringRC1(((NimStringDesc*) &TMP2523));
+				LOC33 = (*HEX3Aenvp_267216).buf267082; (*HEX3Aenvp_267216).buf267082 = copyStringRC1(((NimStringDesc*) &TMP2445));
 				if (LOC33) nimGCunrefNoCycle(LOC33);
 				{
 					nimln(694, "httpclient.nim");
 					while (1) {
 						nimln(695, "httpclient.nim");
-						asgnRef((void**) (&(*HEX3Aenvp_279216).future279043), recvfull_278621((*(*HEX3Aenvp_279216).client279046).socket, ((NI) 4000)));
-						(*HEX3Aenvp_279216).HEX3Astate = ((NI) 3);
+						asgnRef((void**) (&(*HEX3Aenvp_267216).future267043), recvfull_266621((*(*HEX3Aenvp_267216).client267046).socket, ((NI) 4000)));
+						(*HEX3Aenvp_267216).HEX3Astate = ((NI) 3);
 						nimln(1266, "asyncdispatch.nim");
-						result_279060 = &(*HEX3Aenvp_279216).future279043->Sup;
+						result_267060 = &(*HEX3Aenvp_267216).future267043->Sup;
 						goto BeforeRet;
 						STATE3: ;
 						nimln(695, "httpclient.nim");
-						asgnRefNoCycle((void**) (&(*HEX3Aenvp_279216).buf279082), read_266623((*HEX3Aenvp_279216).future279043));
+						asgnRefNoCycle((void**) (&(*HEX3Aenvp_267216).buf267082), read_254623((*HEX3Aenvp_267216).future267043));
 						nimln(696, "httpclient.nim");
 						{
-							if (!(((*HEX3Aenvp_279216).buf279082) && ((*HEX3Aenvp_279216).buf279082)->Sup.len == 0)) goto LA38;
+							if (!(((*HEX3Aenvp_267216).buf267082) && ((*HEX3Aenvp_267216).buf267082)->Sup.len == 0)) goto LA38;
 							goto LA34;
 						}
 						LA38: ;
 						nimln(697, "httpclient.nim");
-						(*HEX3Aenvp_279216).result279061 = resizeString((*HEX3Aenvp_279216).result279061, (*HEX3Aenvp_279216).buf279082->Sup.len + 0);
-appendString((*HEX3Aenvp_279216).result279061, (*HEX3Aenvp_279216).buf279082);
+						(*HEX3Aenvp_267216).result267061 = resizeString((*HEX3Aenvp_267216).result267061, (*HEX3Aenvp_267216).buf267082->Sup.len + 0);
+appendString((*HEX3Aenvp_267216).result267061, (*HEX3Aenvp_267216).buf267082);
 					}
 				} LA34: ;
 			}
@@ -3570,50 +3570,50 @@ appendString((*HEX3Aenvp_279216).result279061, (*HEX3Aenvp_279216).buf279082);
 		LA8: ;
 	}
 	LA2: ;
-	complete_260031((*HEX3Aenvp_279216).retfuture279039, (*HEX3Aenvp_279216).result279061);
+	complete_248031((*HEX3Aenvp_267216).retfuture267039, (*HEX3Aenvp_267216).result267061);
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_279216).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_267216).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_279060;
+	return result_267060;
 }
 
-N_CLOSURE(void, cb_279109)(void* ClEnv) {
-	TY279210* HEX3Aenvp_279224;
-	TSafePoint TMP2698;
+N_CLOSURE(void, cb_267109)(void* ClEnv) {
+	TY267210* HEX3Aenvp_267224;
+	TSafePoint TMP2620;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_279224 = (TY279210*) ClEnv;
+	HEX3Aenvp_267224 = (TY267210*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2698);
-	TMP2698.status = setjmp(TMP2698.context);
-	if (TMP2698.status == 0) {
+	pushSafePoint(&TMP2620);
+	TMP2620.status = setjmp(TMP2620.context);
+	if (TMP2620.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_279108;
+			FuturebaseHEX3Aobjecttype243017* next_267108;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_279224).nameitervar279106);
+			LOC4 = finished_255237((*HEX3Aenvp_267224).nameitervar267106);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_279108 = (*HEX3Aenvp_279224).nameitervar279106.ClPrc((*HEX3Aenvp_279224).nameitervar279106.ClEnv);
+			next_267108 = (*HEX3Aenvp_267224).nameitervar267106.ClPrc((*HEX3Aenvp_267224).nameitervar267106.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_279108 == NIM_NIL)) goto LA9;
+				if (!(next_267108 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_279224).retfuture279039).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2700));
+					if (!!((*(*HEX3Aenvp_267224).retfuture267039).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2622));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_279109; LOC16.ClEnv = HEX3Aenvp_279224;
-				callbackHEX3D_255832(next_279108, LOC16);
+				LOC16.ClPrc = cb_267109; LOC16.ClEnv = HEX3Aenvp_267224;
+				callbackHEX3D_243832(next_267108, LOC16);
 			}
 			LA7: ;
 		}
@@ -3624,10 +3624,10 @@ N_CLOSURE(void, cb_279109)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2698.status = 0;
+			TMP2620.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_279224).retfuture279039).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_267224).retfuture267039).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -3638,72 +3638,72 @@ N_CLOSURE(void, cb_279109)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_261034((*HEX3Aenvp_279224).retfuture279039, LOC24);
+				fail_249034((*HEX3Aenvp_267224).retfuture267039, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2698.status != 0) reraiseException();
+	if (TMP2620.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, parsebody_279044)(AsynchttpclientHEX3Aobjecttype278373* client, Stringtableobj176012* headers) {
-	FutureHEX3Aobjecttype259769* result;
-	TY279210* HEX3Aenv_279227;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, parsebody_267044)(AsynchttpclientHEX3Aobjecttype266373* client, Stringtableobj153012* headers) {
+	FutureHEX3Aobjecttype247769* result;
+	TY267210* HEX3Aenv_267227;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("parseBody", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_279227 = 0;
+	HEX3Aenv_267227 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_279227 = (TY279210*) newObj((&NTI279217), sizeof(TY279210));
+	HEX3Aenv_267227 = (TY267210*) newObj((&NTI267217), sizeof(TY267210));
 	nimln(671, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_279227).headers279047), headers);
-	asgnRef((void**) (&(*HEX3Aenv_279227).client279046), client);
+	asgnRef((void**) (&(*HEX3Aenv_267227).headers267047), headers);
+	asgnRef((void**) (&(*HEX3Aenv_267227).client267046), client);
 	nimln(669, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_279227).retfuture279039), newfuture_259802(((NimStringDesc*) &TMP2694)));
+	asgnRef((void**) (&(*HEX3Aenv_267227).retfuture267039), newfuture_247802(((NimStringDesc*) &TMP2616)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = parsebodyiter_279040; LOC1.ClEnv = HEX3Aenv_279227;
-	asgnRef((void**) (&(*HEX3Aenv_279227).nameitervar279106.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_279227).nameitervar279106.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = parsebodyiter_267040; LOC1.ClEnv = HEX3Aenv_267227;
+	asgnRef((void**) (&(*HEX3Aenv_267227).nameitervar267106.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_267227).nameitervar267106.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_279109; LOC2.ClEnv = HEX3Aenv_279227;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2701)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_267109; LOC2.ClEnv = HEX3Aenv_267227;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2623)(LOC2.ClPrc))();
 	nimln(697, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_279227).retfuture279039;
+	result = (*HEX3Aenv_267227).retfuture267039;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2707)(void* p, NI op) {
-	TY280429* a;
-	a = (TY280429*)p;
-	nimGCvisit((void*)(*a).client279245, op);
-	nimGCvisit((void*)(*a).retfuture279239, op);
-	nimGCvisit((void*)(*a).nameitervar280216.ClEnv, op);
-	nimGCvisit((void*)(*a).result279415.Field0, op);
-	nimGCvisit((void*)(*a).result279415.Field1, op);
-	nimGCvisit((void*)(*a).result279415.Field2, op);
-	nimGCvisit((void*)(*a).result279415.Field3, op);
-	nimGCvisit((void*)(*a).line279419, op);
-	nimGCvisit((void*)(*a).future279241, op);
-	nimGCvisit((void*)(*a).name279476, op);
-	nimGCvisit((void*)(*a).future279242, op);
+N_NIMCALL(void, TMP2629)(void* p, NI op) {
+	TY268429* a;
+	a = (TY268429*)p;
+	nimGCvisit((void*)(*a).client267245, op);
+	nimGCvisit((void*)(*a).retfuture267239, op);
+	nimGCvisit((void*)(*a).nameitervar268216.ClEnv, op);
+	nimGCvisit((void*)(*a).result267415.Field0, op);
+	nimGCvisit((void*)(*a).result267415.Field1, op);
+	nimGCvisit((void*)(*a).result267415.Field2, op);
+	nimGCvisit((void*)(*a).result267415.Field3, op);
+	nimGCvisit((void*)(*a).line267419, op);
+	nimGCvisit((void*)(*a).future267241, op);
+	nimGCvisit((void*)(*a).name267476, op);
+	nimGCvisit((void*)(*a).future267242, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parseresponseiter_279240)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_279414;
-	TY280429* HEX3Aenvp_280435;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, parseresponseiter_267240)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_267414;
+	TY268429* HEX3Aenvp_268435;
 	NimStringDesc* LOC1;
 	nimfr("parseResponseIter", "asyncdispatch.nim")
-{	result_279414 = 0;
-	HEX3Aenvp_280435 = (TY280429*) ClEnv;
-	switch ((*HEX3Aenvp_280435).HEX3Astate) {
+{	result_267414 = 0;
+	HEX3Aenvp_268435 = (TY268429*) ClEnv;
+	switch ((*HEX3Aenvp_268435).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -3711,80 +3711,80 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, parseresponseiter_279240)(void* ClEn
 	}
 	STATE0: ;
 	nimln(701, "httpclient.nim");
-	(*HEX3Aenvp_280435).parsedstatus279416 = NIM_FALSE;
+	(*HEX3Aenvp_268435).parsedstatus267416 = NIM_FALSE;
 	nimln(702, "httpclient.nim");
-	(*HEX3Aenvp_280435).linei279417 = ((NI) 0);
+	(*HEX3Aenvp_268435).linei267417 = ((NI) 0);
 	nimln(703, "httpclient.nim");
-	(*HEX3Aenvp_280435).fullyread279418 = NIM_FALSE;
+	(*HEX3Aenvp_268435).fullyread267418 = NIM_FALSE;
 	nimln(704, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_280435).line279419; (*HEX3Aenvp_280435).line279419 = copyStringRC1(((NimStringDesc*) &TMP2523));
+	LOC1 = (*HEX3Aenvp_268435).line267419; (*HEX3Aenvp_268435).line267419 = copyStringRC1(((NimStringDesc*) &TMP2445));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(705, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenvp_280435).result279415.Field2), nstnewStringTable(((NU8) 1)));
+	asgnRef((void**) (&(*HEX3Aenvp_268435).result267415.Field2), nstnewStringTable(((NU8) 1)));
 	{
 		nimln(706, "httpclient.nim");
 		while (1) {
 			nimln(707, "httpclient.nim");
-			(*HEX3Aenvp_280435).linei279417 = ((NI) 0);
+			(*HEX3Aenvp_268435).linei267417 = ((NI) 0);
 			nimln(708, "httpclient.nim");
-			asgnRef((void**) (&(*HEX3Aenvp_280435).future279241), recvline_275048((*(*HEX3Aenvp_280435).client279245).socket, 2));
-			(*HEX3Aenvp_280435).HEX3Astate = ((NI) 1);
+			asgnRef((void**) (&(*HEX3Aenvp_268435).future267241), recvline_263048((*(*HEX3Aenvp_268435).client267245).socket, 2));
+			(*HEX3Aenvp_268435).HEX3Astate = ((NI) 1);
 			nimln(1266, "asyncdispatch.nim");
-			result_279414 = &(*HEX3Aenvp_280435).future279241->Sup;
+			result_267414 = &(*HEX3Aenvp_268435).future267241->Sup;
 			goto BeforeRet;
 			STATE1: ;
 			nimln(708, "httpclient.nim");
-			asgnRefNoCycle((void**) (&(*HEX3Aenvp_280435).line279419), read_266623((*HEX3Aenvp_280435).future279241));
+			asgnRefNoCycle((void**) (&(*HEX3Aenvp_268435).line267419), read_254623((*HEX3Aenvp_268435).future267241));
 			nimln(709, "httpclient.nim");
 			{
-				if (!(((*HEX3Aenvp_280435).line279419) && ((*HEX3Aenvp_280435).line279419)->Sup.len == 0)) goto LA6;
+				if (!(((*HEX3Aenvp_268435).line267419) && ((*HEX3Aenvp_268435).line267419)->Sup.len == 0)) goto LA6;
 				goto LA2;
 			}
 			LA6: ;
 			nimln(710, "httpclient.nim");
 			{
-				if (!eqStrings((*HEX3Aenvp_280435).line279419, ((NimStringDesc*) &TMP2574))) goto LA10;
+				if (!eqStrings((*HEX3Aenvp_268435).line267419, ((NimStringDesc*) &TMP2496))) goto LA10;
 				nimln(711, "httpclient.nim");
-				(*HEX3Aenvp_280435).fullyread279418 = NIM_TRUE;
+				(*HEX3Aenvp_268435).fullyread267418 = NIM_TRUE;
 				nimln(712, "httpclient.nim");
 				goto LA2;
 			}
 			LA10: ;
 			nimln(713, "httpclient.nim");
 			{
-				NI TMP2710;
-				NI TMP2711;
+				NI TMP2632;
+				NI TMP2633;
 				NI LOC32;
-				NI TMP2712;
-				NI TMP2713;
+				NI TMP2634;
+				NI TMP2635;
 				Slice88061 LOC33;
-				if (!!((*HEX3Aenvp_280435).parsedstatus279416)) goto LA14;
+				if (!!((*HEX3Aenvp_268435).parsedstatus267416)) goto LA14;
 				nimln(715, "httpclient.nim");
-				(*HEX3Aenvp_280435).le279430 = skipignorecase_93447((*HEX3Aenvp_280435).line279419, ((NimStringDesc*) &TMP2579), (*HEX3Aenvp_280435).linei279417);
+				(*HEX3Aenvp_268435).le267430 = skipignorecase_95447((*HEX3Aenvp_268435).line267419, ((NimStringDesc*) &TMP2501), (*HEX3Aenvp_268435).linei267417);
 				nimln(716, "httpclient.nim");
 				{
 					NimStringDesc* LOC20;
-					if (!((*HEX3Aenvp_280435).le279430 <= ((NI) 0))) goto LA18;
+					if (!((*HEX3Aenvp_268435).le267430 <= ((NI) 0))) goto LA18;
 					nimln(717, "httpclient.nim");
 					LOC20 = 0;
-					LOC20 = rawNewString(reprStr((*HEX3Aenvp_280435).line279419)->Sup.len + 22);
-appendString(LOC20, ((NimStringDesc*) &TMP2709));
-appendString(LOC20, reprStr((*HEX3Aenvp_280435).line279419));
-					httperror_277048(LOC20);
+					LOC20 = rawNewString(reprStr((*HEX3Aenvp_268435).line267419)->Sup.len + 22);
+appendString(LOC20, ((NimStringDesc*) &TMP2631));
+appendString(LOC20, reprStr((*HEX3Aenvp_268435).line267419));
+					httperror_265048(LOC20);
 				}
 				LA18: ;
 				nimln(718, "httpclient.nim");
-				TMP2710 = addInt((*HEX3Aenvp_280435).linei279417, (*HEX3Aenvp_280435).le279430);
-				(*HEX3Aenvp_280435).linei279417 = (NI)(TMP2710);
+				TMP2632 = addInt((*HEX3Aenvp_268435).linei267417, (*HEX3Aenvp_268435).le267430);
+				(*HEX3Aenvp_268435).linei267417 = (NI)(TMP2632);
 				nimln(719, "httpclient.nim");
-				(*HEX3Aenvp_280435).le279430 = skipignorecase_93447((*HEX3Aenvp_280435).line279419, ((NimStringDesc*) &TMP2582), (*HEX3Aenvp_280435).linei279417);
+				(*HEX3Aenvp_268435).le267430 = skipignorecase_95447((*HEX3Aenvp_268435).line267419, ((NimStringDesc*) &TMP2504), (*HEX3Aenvp_268435).linei267417);
 				nimln(720, "httpclient.nim");
 				{
 					NimStringDesc* LOC25;
-					if (!(((NI) 0) < (*HEX3Aenvp_280435).le279430)) goto LA23;
+					if (!(((NI) 0) < (*HEX3Aenvp_268435).le267430)) goto LA23;
 					LOC25 = 0;
-					LOC25 = (*HEX3Aenvp_280435).result279415.Field0; (*HEX3Aenvp_280435).result279415.Field0 = copyStringRC1(((NimStringDesc*) &TMP2582));
+					LOC25 = (*HEX3Aenvp_268435).result267415.Field0; (*HEX3Aenvp_268435).result267415.Field0 = copyStringRC1(((NimStringDesc*) &TMP2504));
 					if (LOC25) nimGCunrefNoCycle(LOC25);
 				}
 				goto LA21;
@@ -3792,100 +3792,100 @@ appendString(LOC20, reprStr((*HEX3Aenvp_280435).line279419));
 				{
 					NimStringDesc* LOC31;
 					nimln(722, "httpclient.nim");
-					(*HEX3Aenvp_280435).le279430 = skipignorecase_93447((*HEX3Aenvp_280435).line279419, ((NimStringDesc*) &TMP2583), (*HEX3Aenvp_280435).linei279417);
+					(*HEX3Aenvp_268435).le267430 = skipignorecase_95447((*HEX3Aenvp_268435).line267419, ((NimStringDesc*) &TMP2505), (*HEX3Aenvp_268435).linei267417);
 					nimln(723, "httpclient.nim");
 					{
-						if (!((*HEX3Aenvp_280435).le279430 <= ((NI) 0))) goto LA29;
-						httperror_277048(((NimStringDesc*) &TMP2584));
+						if (!((*HEX3Aenvp_268435).le267430 <= ((NI) 0))) goto LA29;
+						httperror_265048(((NimStringDesc*) &TMP2506));
 					}
 					LA29: ;
 					nimln(724, "httpclient.nim");
 					LOC31 = 0;
-					LOC31 = (*HEX3Aenvp_280435).result279415.Field0; (*HEX3Aenvp_280435).result279415.Field0 = copyStringRC1(((NimStringDesc*) &TMP2583));
+					LOC31 = (*HEX3Aenvp_268435).result267415.Field0; (*HEX3Aenvp_268435).result267415.Field0 = copyStringRC1(((NimStringDesc*) &TMP2505));
 					if (LOC31) nimGCunrefNoCycle(LOC31);
 				}
 				LA21: ;
 				nimln(725, "httpclient.nim");
-				TMP2711 = addInt((*HEX3Aenvp_280435).linei279417, (*HEX3Aenvp_280435).le279430);
-				(*HEX3Aenvp_280435).linei279417 = (NI)(TMP2711);
+				TMP2633 = addInt((*HEX3Aenvp_268435).linei267417, (*HEX3Aenvp_268435).le267430);
+				(*HEX3Aenvp_268435).linei267417 = (NI)(TMP2633);
 				nimln(727, "httpclient.nim");
 				LOC32 = 0;
-				LOC32 = skipwhitespace_93382((*HEX3Aenvp_280435).line279419, (*HEX3Aenvp_280435).linei279417);
-				TMP2712 = addInt((*HEX3Aenvp_280435).linei279417, LOC32);
-				(*HEX3Aenvp_280435).linei279417 = (NI)(TMP2712);
+				LOC32 = skipwhitespace_95382((*HEX3Aenvp_268435).line267419, (*HEX3Aenvp_268435).linei267417);
+				TMP2634 = addInt((*HEX3Aenvp_268435).linei267417, LOC32);
+				(*HEX3Aenvp_268435).linei267417 = (NI)(TMP2634);
 				nimln(728, "httpclient.nim");
-				TMP2713 = subInt(((*HEX3Aenvp_280435).line279419 ? (*HEX3Aenvp_280435).line279419->Sup.len : 0), ((NI) 1));
-				LOC33 = HEX2EHEX2E_108273((*HEX3Aenvp_280435).linei279417, (NI)(TMP2713));
-				asgnRefNoCycle((void**) (&(*HEX3Aenvp_280435).result279415.Field1), HEX5BHEX5D_88054((*HEX3Aenvp_280435).line279419, LOC33));
+				TMP2635 = subInt(((*HEX3Aenvp_268435).line267419 ? (*HEX3Aenvp_268435).line267419->Sup.len : 0), ((NI) 1));
+				LOC33 = HEX2EHEX2E_110273((*HEX3Aenvp_268435).linei267417, (NI)(TMP2635));
+				asgnRefNoCycle((void**) (&(*HEX3Aenvp_268435).result267415.Field1), HEX5BHEX5D_88054((*HEX3Aenvp_268435).line267419, LOC33));
 				nimln(729, "httpclient.nim");
-				(*HEX3Aenvp_280435).parsedstatus279416 = NIM_TRUE;
+				(*HEX3Aenvp_268435).parsedstatus267416 = NIM_TRUE;
 			}
 			goto LA12;
 			LA14: ;
 			{
 				NimStringDesc* LOC35;
-				NI TMP2714;
-				NI TMP2715;
-				NI TMP2716;
+				NI TMP2636;
+				NI TMP2637;
+				NI TMP2638;
 				Slice88061 LOC44;
 				NimStringDesc* LOC45;
 				NimStringDesc* LOC46;
 				nimln(732, "httpclient.nim");
 				LOC35 = 0;
-				LOC35 = (*HEX3Aenvp_280435).name279476; (*HEX3Aenvp_280435).name279476 = copyStringRC1(((NimStringDesc*) &TMP2523));
+				LOC35 = (*HEX3Aenvp_268435).name267476; (*HEX3Aenvp_268435).name267476 = copyStringRC1(((NimStringDesc*) &TMP2445));
 				if (LOC35) nimGCunrefNoCycle(LOC35);
 				nimln(733, "httpclient.nim");
-				(*HEX3Aenvp_280435).le279478 = parseuntil_93623((*HEX3Aenvp_280435).line279419, (&(*HEX3Aenvp_280435).name279476), 58, (*HEX3Aenvp_280435).linei279417);
+				(*HEX3Aenvp_268435).le267478 = parseuntil_95623((*HEX3Aenvp_268435).line267419, (&(*HEX3Aenvp_268435).name267476), 58, (*HEX3Aenvp_268435).linei267417);
 				nimln(734, "httpclient.nim");
 				{
-					if (!((*HEX3Aenvp_280435).le279478 <= ((NI) 0))) goto LA38;
-					httperror_277048(((NimStringDesc*) &TMP2593));
+					if (!((*HEX3Aenvp_268435).le267478 <= ((NI) 0))) goto LA38;
+					httperror_265048(((NimStringDesc*) &TMP2515));
 				}
 				LA38: ;
 				nimln(735, "httpclient.nim");
-				TMP2714 = addInt((*HEX3Aenvp_280435).linei279417, (*HEX3Aenvp_280435).le279478);
-				(*HEX3Aenvp_280435).linei279417 = (NI)(TMP2714);
+				TMP2636 = addInt((*HEX3Aenvp_268435).linei267417, (*HEX3Aenvp_268435).le267478);
+				(*HEX3Aenvp_268435).linei267417 = (NI)(TMP2636);
 				nimln(736, "httpclient.nim");
 				{
-					if ((NU)((*HEX3Aenvp_280435).linei279417) > (NU)((*HEX3Aenvp_280435).line279419->Sup.len)) raiseIndexError();
-					if (!!(((NU8)((*HEX3Aenvp_280435).line279419->data[(*HEX3Aenvp_280435).linei279417]) == (NU8)(58)))) goto LA42;
-					httperror_277048(((NimStringDesc*) &TMP2593));
+					if ((NU)((*HEX3Aenvp_268435).linei267417) > (NU)((*HEX3Aenvp_268435).line267419->Sup.len)) raiseIndexError();
+					if (!!(((NU8)((*HEX3Aenvp_268435).line267419->data[(*HEX3Aenvp_268435).linei267417]) == (NU8)(58)))) goto LA42;
+					httperror_265048(((NimStringDesc*) &TMP2515));
 				}
 				LA42: ;
 				nimln(737, "httpclient.nim");
-				TMP2715 = addInt((*HEX3Aenvp_280435).linei279417, ((NI) 1));
-				(*HEX3Aenvp_280435).linei279417 = (NI)(TMP2715);
+				TMP2637 = addInt((*HEX3Aenvp_268435).linei267417, ((NI) 1));
+				(*HEX3Aenvp_268435).linei267417 = (NI)(TMP2637);
 				nimln(739, "httpclient.nim");
-				TMP2716 = subInt(((*HEX3Aenvp_280435).line279419 ? (*HEX3Aenvp_280435).line279419->Sup.len : 0), ((NI) 1));
-				LOC44 = HEX2EHEX2E_108273((*HEX3Aenvp_280435).linei279417, (NI)(TMP2716));
+				TMP2638 = subInt(((*HEX3Aenvp_268435).line267419 ? (*HEX3Aenvp_268435).line267419->Sup.len : 0), ((NI) 1));
+				LOC44 = HEX2EHEX2E_110273((*HEX3Aenvp_268435).linei267417, (NI)(TMP2638));
 				LOC45 = 0;
-				LOC45 = HEX5BHEX5D_88054((*HEX3Aenvp_280435).line279419, LOC44);
+				LOC45 = HEX5BHEX5D_88054((*HEX3Aenvp_268435).line267419, LOC44);
 				LOC46 = 0;
 				LOC46 = nsuStrip(LOC45, NIM_TRUE, NIM_TRUE);
-				nstPut((*HEX3Aenvp_280435).result279415.Field2, (*HEX3Aenvp_280435).name279476, LOC46);
+				nstPut((*HEX3Aenvp_268435).result267415.Field2, (*HEX3Aenvp_268435).name267476, LOC46);
 			}
 			LA12: ;
 		}
 	} LA2: ;
 	nimln(740, "httpclient.nim");
 	{
-		if (!!((*HEX3Aenvp_280435).fullyread279418)) goto LA49;
+		if (!!((*HEX3Aenvp_268435).fullyread267418)) goto LA49;
 		nimln(741, "httpclient.nim");
-		httperror_277048(((NimStringDesc*) &TMP2600));
+		httperror_265048(((NimStringDesc*) &TMP2522));
 	}
 	LA49: ;
 	nimln(742, "httpclient.nim");
 	{
-		if (!(*HEX3Aenvp_280435).getbody279246) goto LA53;
+		if (!(*HEX3Aenvp_268435).getbody267246) goto LA53;
 		nimln(743, "httpclient.nim");
-		asgnRef((void**) (&(*HEX3Aenvp_280435).future279242), parsebody_279044((*HEX3Aenvp_280435).client279245, (*HEX3Aenvp_280435).result279415.Field2));
-		(*HEX3Aenvp_280435).HEX3Astate = ((NI) 2);
+		asgnRef((void**) (&(*HEX3Aenvp_268435).future267242), parsebody_267044((*HEX3Aenvp_268435).client267245, (*HEX3Aenvp_268435).result267415.Field2));
+		(*HEX3Aenvp_268435).HEX3Astate = ((NI) 2);
 		nimln(1266, "asyncdispatch.nim");
-		result_279414 = &(*HEX3Aenvp_280435).future279242->Sup;
+		result_267414 = &(*HEX3Aenvp_268435).future267242->Sup;
 		goto BeforeRet;
 		STATE2: ;
 		nimln(743, "httpclient.nim");
-		asgnRefNoCycle((void**) (&(*HEX3Aenvp_280435).result279415.Field3), read_266623((*HEX3Aenvp_280435).future279242));
+		asgnRefNoCycle((void**) (&(*HEX3Aenvp_268435).result267415.Field3), read_254623((*HEX3Aenvp_268435).future267242));
 	}
 	goto LA51;
 	LA53: ;
@@ -3893,54 +3893,54 @@ appendString(LOC20, reprStr((*HEX3Aenvp_280435).line279419));
 		NimStringDesc* LOC56;
 		nimln(745, "httpclient.nim");
 		LOC56 = 0;
-		LOC56 = (*HEX3Aenvp_280435).result279415.Field3; (*HEX3Aenvp_280435).result279415.Field3 = copyStringRC1(((NimStringDesc*) &TMP2523));
+		LOC56 = (*HEX3Aenvp_268435).result267415.Field3; (*HEX3Aenvp_268435).result267415.Field3 = copyStringRC1(((NimStringDesc*) &TMP2445));
 		if (LOC56) nimGCunrefNoCycle(LOC56);
 	}
 	LA51: ;
-	complete_279517((*HEX3Aenvp_280435).retfuture279239, (&(*HEX3Aenvp_280435).result279415));
+	complete_267517((*HEX3Aenvp_268435).retfuture267239, (&(*HEX3Aenvp_268435).result267415));
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_280435).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_268435).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_279414;
+	return result_267414;
 }
 
-N_CLOSURE(void, cb_280219)(void* ClEnv) {
-	TY280429* HEX3Aenvp_280443;
-	TSafePoint TMP2717;
+N_CLOSURE(void, cb_268219)(void* ClEnv) {
+	TY268429* HEX3Aenvp_268443;
+	TSafePoint TMP2639;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_280443 = (TY280429*) ClEnv;
+	HEX3Aenvp_268443 = (TY268429*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2717);
-	TMP2717.status = setjmp(TMP2717.context);
-	if (TMP2717.status == 0) {
+	pushSafePoint(&TMP2639);
+	TMP2639.status = setjmp(TMP2639.context);
+	if (TMP2639.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_280218;
+			FuturebaseHEX3Aobjecttype243017* next_268218;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_280443).nameitervar280216);
+			LOC4 = finished_255237((*HEX3Aenvp_268443).nameitervar268216);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_280218 = (*HEX3Aenvp_280443).nameitervar280216.ClPrc((*HEX3Aenvp_280443).nameitervar280216.ClEnv);
+			next_268218 = (*HEX3Aenvp_268443).nameitervar268216.ClPrc((*HEX3Aenvp_268443).nameitervar268216.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_280218 == NIM_NIL)) goto LA9;
+				if (!(next_268218 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_280443).retfuture279239).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2719));
+					if (!!((*(*HEX3Aenvp_268443).retfuture267239).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2641));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_280219; LOC16.ClEnv = HEX3Aenvp_280443;
-				callbackHEX3D_255832(next_280218, LOC16);
+				LOC16.ClPrc = cb_268219; LOC16.ClEnv = HEX3Aenvp_268443;
+				callbackHEX3D_243832(next_268218, LOC16);
 			}
 			LA7: ;
 		}
@@ -3951,10 +3951,10 @@ N_CLOSURE(void, cb_280219)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2717.status = 0;
+			TMP2639.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_280443).retfuture279239).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_268443).retfuture267239).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -3965,64 +3965,64 @@ N_CLOSURE(void, cb_280219)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_280402((*HEX3Aenvp_280443).retfuture279239, LOC24);
+				fail_268402((*HEX3Aenvp_268443).retfuture267239, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2717.status != 0) reraiseException();
+	if (TMP2639.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype279252*, parseresponse_279243)(AsynchttpclientHEX3Aobjecttype278373* client, NIM_BOOL getbody) {
-	FutureHEX3Aobjecttype279252* result;
-	TY280429* HEX3Aenv_280446;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype267252*, parseresponse_267243)(AsynchttpclientHEX3Aobjecttype266373* client, NIM_BOOL getbody) {
+	FutureHEX3Aobjecttype267252* result;
+	TY268429* HEX3Aenv_268446;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("parseResponse", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_280446 = 0;
+	HEX3Aenv_268446 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_280446 = (TY280429*) newObj((&NTI280436), sizeof(TY280429));
+	HEX3Aenv_268446 = (TY268429*) newObj((&NTI268436), sizeof(TY268429));
 	nimln(701, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_280446).client279245), client);
-	(*HEX3Aenv_280446).getbody279246 = getbody;
+	asgnRef((void**) (&(*HEX3Aenv_268446).client267245), client);
+	(*HEX3Aenv_268446).getbody267246 = getbody;
 	nimln(699, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_280446).retfuture279239), newfuture_279257(((NimStringDesc*) &TMP2708)));
+	asgnRef((void**) (&(*HEX3Aenv_268446).retfuture267239), newfuture_267257(((NimStringDesc*) &TMP2630)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = parseresponseiter_279240; LOC1.ClEnv = HEX3Aenv_280446;
-	asgnRef((void**) (&(*HEX3Aenv_280446).nameitervar280216.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_280446).nameitervar280216.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = parseresponseiter_267240; LOC1.ClEnv = HEX3Aenv_268446;
+	asgnRef((void**) (&(*HEX3Aenv_268446).nameitervar268216.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_268446).nameitervar268216.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_280219; LOC2.ClEnv = HEX3Aenv_280446;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2720)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_268219; LOC2.ClEnv = HEX3Aenv_268446;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2642)(LOC2.ClPrc))();
 	nimln(745, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_280446).retfuture279239;
+	result = (*HEX3Aenv_268446).retfuture267239;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2722)(void* p, NI op) {
-	TY280810* a;
-	a = (TY280810*)p;
-	nimGCvisit((void*)(*a).client280466, op);
-	nimGCvisit((void*)(*a).url280467.scheme, op);
-	nimGCvisit((void*)(*a).url280467.username, op);
-	nimGCvisit((void*)(*a).url280467.password, op);
-	nimGCvisit((void*)(*a).url280467.hostname, op);
-	nimGCvisit((void*)(*a).url280467.port, op);
-	nimGCvisit((void*)(*a).url280467.path, op);
-	nimGCvisit((void*)(*a).url280467.query, op);
-	nimGCvisit((void*)(*a).url280467.anchor, op);
-	nimGCvisit((void*)(*a).retfuture280461, op);
-	nimGCvisit((void*)(*a).nameitervar280624.ClEnv, op);
-	nimGCvisit((void*)(*a).e280603, op);
-	nimGCvisit((void*)(*a).future280463, op);
+N_NIMCALL(void, TMP2644)(void* p, NI op) {
+	TY268810* a;
+	a = (TY268810*)p;
+	nimGCvisit((void*)(*a).client268466, op);
+	nimGCvisit((void*)(*a).url268467.scheme, op);
+	nimGCvisit((void*)(*a).url268467.username, op);
+	nimGCvisit((void*)(*a).url268467.password, op);
+	nimGCvisit((void*)(*a).url268467.hostname, op);
+	nimGCvisit((void*)(*a).url268467.port, op);
+	nimGCvisit((void*)(*a).url268467.path, op);
+	nimGCvisit((void*)(*a).url268467.query, op);
+	nimGCvisit((void*)(*a).url268467.anchor, op);
+	nimGCvisit((void*)(*a).retfuture268461, op);
+	nimGCvisit((void*)(*a).nameitervar268624.ClEnv, op);
+	nimGCvisit((void*)(*a).e268603, op);
+	nimGCvisit((void*)(*a).future268463, op);
 }
 
 static N_INLINE(void, nimGCunref)(void* p) {
@@ -4035,13 +4035,13 @@ static N_INLINE(void, nimGCunref)(void* p) {
 	popFrame();
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, newconnectioniter_280462)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result;
-	TY280810* HEX3Aenvp_280816;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, newconnectioniter_268462)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result;
+	TY268810* HEX3Aenvp_268816;
 	nimfr("newConnectionIter", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenvp_280816 = (TY280810*) ClEnv;
-	switch ((*HEX3Aenvp_280816).HEX3Astate) {
+	HEX3Aenvp_268816 = (TY268810*) ClEnv;
+	switch ((*HEX3Aenvp_268816).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -4051,36 +4051,36 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, newconnectioniter_280462)(void* ClEn
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = !(eqStrings((*(*HEX3Aenvp_280816).client280466).currenturl.hostname, (*HEX3Aenvp_280816).url280467.hostname));
+		LOC3 = !(eqStrings((*(*HEX3Aenvp_268816).client268466).currenturl.hostname, (*HEX3Aenvp_268816).url268467.hostname));
 		if (LOC3) goto LA4;
 		nimln(749, "httpclient.nim");
-		LOC3 = !(eqStrings((*(*HEX3Aenvp_280816).client280466).currenturl.scheme, (*HEX3Aenvp_280816).url280467.scheme));
+		LOC3 = !(eqStrings((*(*HEX3Aenvp_268816).client268466).currenturl.scheme, (*HEX3Aenvp_268816).url268467.scheme));
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(750, "httpclient.nim");
 		{
-			if (!(*(*HEX3Aenvp_280816).client280466).connected) goto LA9;
-			close_278607((*HEX3Aenvp_280816).client280466);
+			if (!(*(*HEX3Aenvp_268816).client268466).connected) goto LA9;
+			close_266607((*HEX3Aenvp_268816).client268466);
 		}
 		LA9: ;
 		nimln(751, "httpclient.nim");
-		asgnRefNoCycle((void**) (&(*(*HEX3Aenvp_280816).client280466).socket), newasyncsocket_268418(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE));
+		asgnRefNoCycle((void**) (&(*(*HEX3Aenvp_268816).client268466).socket), newasyncsocket_256418(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE));
 		nimln(754, "httpclient.nim");
 		nimln(755, "httpclient.nim");
 		{
-			if (!(((*HEX3Aenvp_280816).url280467.port) && ((*HEX3Aenvp_280816).url280467.port)->Sup.len == 0)) goto LA13;
+			if (!(((*HEX3Aenvp_268816).url268467.port) && ((*HEX3Aenvp_268816).url268467.port)->Sup.len == 0)) goto LA13;
 			nimln(756, "httpclient.nim");
 			{
 				NimStringDesc* LOC17;
 				LOC17 = 0;
-				LOC17 = nsuToLowerStr((*HEX3Aenvp_280816).url280467.scheme);
-				if (!eqStrings(LOC17, ((NimStringDesc*) &TMP2638))) goto LA18;
-				(*HEX3Aenvp_280816).port280486 = ((NU16) 443);
+				LOC17 = nsuToLowerStr((*HEX3Aenvp_268816).url268467.scheme);
+				if (!eqStrings(LOC17, ((NimStringDesc*) &TMP2560))) goto LA18;
+				(*HEX3Aenvp_268816).port268486 = ((NU16) 443);
 			}
 			goto LA15;
 			LA18: ;
 			{
-				(*HEX3Aenvp_280816).port280486 = ((NU16) 80);
+				(*HEX3Aenvp_268816).port268486 = ((NU16) 80);
 			}
 			LA15: ;
 		}
@@ -4090,8 +4090,8 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, newconnectioniter_280462)(void* ClEn
 			NI LOC22;
 			nimln(760, "httpclient.nim");
 			LOC22 = 0;
-			LOC22 = nsuParseInt((*HEX3Aenvp_280816).url280467.port);
-			(*HEX3Aenvp_280816).port280486 = ((NU16) (LOC22));
+			LOC22 = nsuParseInt((*HEX3Aenvp_268816).url268467.port);
+			(*HEX3Aenvp_268816).port268486 = ((NU16) (LOC22));
 		}
 		LA11: ;
 		nimln(762, "httpclient.nim");
@@ -4099,79 +4099,79 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, newconnectioniter_280462)(void* ClEn
 			NimStringDesc* LOC25;
 			NimStringDesc* LOC28;
 			LOC25 = 0;
-			LOC25 = nsuToLowerStr((*HEX3Aenvp_280816).url280467.scheme);
-			if (!eqStrings(LOC25, ((NimStringDesc*) &TMP2638))) goto LA26;
+			LOC25 = nsuToLowerStr((*HEX3Aenvp_268816).url268467.scheme);
+			if (!eqStrings(LOC25, ((NimStringDesc*) &TMP2560))) goto LA26;
 			nimln(2265, "system.nim");
-			if ((*HEX3Aenvp_280816).e280603) nimGCunref((*HEX3Aenvp_280816).e280603);
-			(*HEX3Aenvp_280816).e280603 = (Httprequesterror277018*) newObjRC1((&NTI278004), sizeof(Httprequesterror277018));
-			(*(*HEX3Aenvp_280816).e280603).Sup.Sup.Sup.Sup.m_type = (&NTI277018);
+			if ((*HEX3Aenvp_268816).e268603) nimGCunref((*HEX3Aenvp_268816).e268603);
+			(*HEX3Aenvp_268816).e268603 = (Httprequesterror265018*) newObjRC1((&NTI266004), sizeof(Httprequesterror265018));
+			(*(*HEX3Aenvp_268816).e268603).Sup.Sup.Sup.Sup.m_type = (&NTI265018);
 			nimln(2266, "system.nim");
 			LOC28 = 0;
-			LOC28 = (*(*HEX3Aenvp_280816).e280603).Sup.Sup.Sup.message; (*(*HEX3Aenvp_280816).e280603).Sup.Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2640));
+			LOC28 = (*(*HEX3Aenvp_268816).e268603).Sup.Sup.Sup.message; (*(*HEX3Aenvp_268816).e268603).Sup.Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP2562));
 			if (LOC28) nimGCunrefNoCycle(LOC28);
 			nimln(766, "httpclient.nim");
-			raiseException((Exception*)(*HEX3Aenvp_280816).e280603, "HttpRequestError");
+			raiseException((Exception*)(*HEX3Aenvp_268816).e268603, "HttpRequestError");
 		}
 		LA26: ;
 		nimln(769, "httpclient.nim");
-		asgnRef((void**) (&(*HEX3Aenvp_280816).future280463), connect_268604((*(*HEX3Aenvp_280816).client280466).socket, (*HEX3Aenvp_280816).url280467.hostname, (*HEX3Aenvp_280816).port280486, ((NU8) 2)));
-		(*HEX3Aenvp_280816).HEX3Astate = ((NI) 1);
+		asgnRef((void**) (&(*HEX3Aenvp_268816).future268463), connect_256604((*(*HEX3Aenvp_268816).client268466).socket, (*HEX3Aenvp_268816).url268467.hostname, (*HEX3Aenvp_268816).port268486, ((NU8) 2)));
+		(*HEX3Aenvp_268816).HEX3Astate = ((NI) 1);
 		nimln(1266, "asyncdispatch.nim");
-		result = &(*HEX3Aenvp_280816).future280463->Sup;
+		result = &(*HEX3Aenvp_268816).future268463->Sup;
 		goto BeforeRet;
 		STATE1: ;
 		nimln(769, "httpclient.nim");
-		read_268624((*HEX3Aenvp_280816).future280463);
+		read_256624((*HEX3Aenvp_268816).future268463);
 		nimln(770, "httpclient.nim");
-		genericAssign((void*)(&(*(*HEX3Aenvp_280816).client280466).currenturl), (void*)(&(*HEX3Aenvp_280816).url280467), (&NTI247012));
+		genericAssign((void*)(&(*(*HEX3Aenvp_268816).client268466).currenturl), (void*)(&(*HEX3Aenvp_268816).url268467), (&NTI235012));
 		nimln(771, "httpclient.nim");
-		(*(*HEX3Aenvp_280816).client280466).connected = NIM_TRUE;
+		(*(*HEX3Aenvp_268816).client268466).connected = NIM_TRUE;
 	}
 	LA5: ;
-	complete_255090((*HEX3Aenvp_280816).retfuture280461);
+	complete_243090((*HEX3Aenvp_268816).retfuture268461);
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_280816).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_268816).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_CLOSURE(void, cb_280627)(void* ClEnv) {
-	TY280810* HEX3Aenvp_280824;
-	TSafePoint TMP2724;
+N_CLOSURE(void, cb_268627)(void* ClEnv) {
+	TY268810* HEX3Aenvp_268824;
+	TSafePoint TMP2646;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_280824 = (TY280810*) ClEnv;
+	HEX3Aenvp_268824 = (TY268810*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2724);
-	TMP2724.status = setjmp(TMP2724.context);
-	if (TMP2724.status == 0) {
+	pushSafePoint(&TMP2646);
+	TMP2646.status = setjmp(TMP2646.context);
+	if (TMP2646.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_280626;
+			FuturebaseHEX3Aobjecttype243017* next_268626;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_280824).nameitervar280624);
+			LOC4 = finished_255237((*HEX3Aenvp_268824).nameitervar268624);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_280626 = (*HEX3Aenvp_280824).nameitervar280624.ClPrc((*HEX3Aenvp_280824).nameitervar280624.ClEnv);
+			next_268626 = (*HEX3Aenvp_268824).nameitervar268624.ClPrc((*HEX3Aenvp_268824).nameitervar268624.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_280626 == NIM_NIL)) goto LA9;
+				if (!(next_268626 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_280824).retfuture280461).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2726));
+					if (!!((*(*HEX3Aenvp_268824).retfuture268461).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2648));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_280627; LOC16.ClEnv = HEX3Aenvp_280824;
-				callbackHEX3D_255832(next_280626, LOC16);
+				LOC16.ClPrc = cb_268627; LOC16.ClEnv = HEX3Aenvp_268824;
+				callbackHEX3D_243832(next_268626, LOC16);
 			}
 			LA7: ;
 		}
@@ -4182,10 +4182,10 @@ N_CLOSURE(void, cb_280627)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2724.status = 0;
+			TMP2646.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_280824).retfuture280461).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_268824).retfuture268461).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -4196,83 +4196,83 @@ N_CLOSURE(void, cb_280627)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_259659((*HEX3Aenvp_280824).retfuture280461, LOC24);
+				fail_247659((*HEX3Aenvp_268824).retfuture268461, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2724.status != 0) reraiseException();
+	if (TMP2646.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype255097*, newconnection_280464)(AsynchttpclientHEX3Aobjecttype278373* client, Uri247012* url) {
-	FutureHEX3Aobjecttype255097* result;
-	TY280810* HEX3Aenv_280827;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype243097*, newconnection_268464)(AsynchttpclientHEX3Aobjecttype266373* client, Uri235012* url) {
+	FutureHEX3Aobjecttype243097* result;
+	TY268810* HEX3Aenv_268827;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("newConnection", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_280827 = 0;
+	HEX3Aenv_268827 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_280827 = (TY280810*) newObj((&NTI280817), sizeof(TY280810));
+	HEX3Aenv_268827 = (TY268810*) newObj((&NTI268817), sizeof(TY268810));
 	nimln(748, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_280827).client280466), client);
-	genericAssign((void*)(&(*HEX3Aenv_280827).url280467), (void*)url, (&NTI247012));
+	asgnRef((void**) (&(*HEX3Aenv_268827).client268466), client);
+	genericAssign((void*)(&(*HEX3Aenv_268827).url268467), (void*)url, (&NTI235012));
 	nimln(747, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_280827).retfuture280461), newfuture_259407(((NimStringDesc*) &TMP2723)));
+	asgnRef((void**) (&(*HEX3Aenv_268827).retfuture268461), newfuture_247407(((NimStringDesc*) &TMP2645)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = newconnectioniter_280462; LOC1.ClEnv = HEX3Aenv_280827;
-	asgnRef((void**) (&(*HEX3Aenv_280827).nameitervar280624.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_280827).nameitervar280624.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = newconnectioniter_268462; LOC1.ClEnv = HEX3Aenv_268827;
+	asgnRef((void**) (&(*HEX3Aenv_268827).nameitervar268624.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_268827).nameitervar268624.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_280627; LOC2.ClEnv = HEX3Aenv_280827;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2727)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_268627; LOC2.ClEnv = HEX3Aenv_268827;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2649)(LOC2.ClPrc))();
 	nimln(771, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_280827).retfuture280461;
+	result = (*HEX3Aenv_268827).retfuture268461;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2729)(void* p, NI op) {
-	TY281410* a;
-	a = (TY281410*)p;
-	nimGCvisit((void*)(*a).url280844, op);
-	nimGCvisit((void*)(*a).client280843, op);
-	nimGCvisit((void*)(*a).httpmethod280845, op);
-	nimGCvisit((void*)(*a).body280846, op);
-	nimGCvisit((void*)(*a).retfuture280835, op);
-	nimGCvisit((void*)(*a).nameitervar281227.ClEnv, op);
-	nimGCvisit((void*)(*a).result280860.Field0, op);
-	nimGCvisit((void*)(*a).result280860.Field1, op);
-	nimGCvisit((void*)(*a).result280860.Field2, op);
-	nimGCvisit((void*)(*a).result280860.Field3, op);
-	nimGCvisit((void*)(*a).r280861.scheme, op);
-	nimGCvisit((void*)(*a).r280861.username, op);
-	nimGCvisit((void*)(*a).r280861.password, op);
-	nimGCvisit((void*)(*a).r280861.hostname, op);
-	nimGCvisit((void*)(*a).r280861.port, op);
-	nimGCvisit((void*)(*a).r280861.path, op);
-	nimGCvisit((void*)(*a).r280861.query, op);
-	nimGCvisit((void*)(*a).r280861.anchor, op);
-	nimGCvisit((void*)(*a).future280837, op);
-	nimGCvisit((void*)(*a).headers280869, op);
-	nimGCvisit((void*)(*a).future280838, op);
-	nimGCvisit((void*)(*a).future280839, op);
-	nimGCvisit((void*)(*a).future280840, op);
+N_NIMCALL(void, TMP2651)(void* p, NI op) {
+	TY269410* a;
+	a = (TY269410*)p;
+	nimGCvisit((void*)(*a).url268844, op);
+	nimGCvisit((void*)(*a).client268843, op);
+	nimGCvisit((void*)(*a).httpmethod268845, op);
+	nimGCvisit((void*)(*a).body268846, op);
+	nimGCvisit((void*)(*a).retfuture268835, op);
+	nimGCvisit((void*)(*a).nameitervar269227.ClEnv, op);
+	nimGCvisit((void*)(*a).result268860.Field0, op);
+	nimGCvisit((void*)(*a).result268860.Field1, op);
+	nimGCvisit((void*)(*a).result268860.Field2, op);
+	nimGCvisit((void*)(*a).result268860.Field3, op);
+	nimGCvisit((void*)(*a).r268861.scheme, op);
+	nimGCvisit((void*)(*a).r268861.username, op);
+	nimGCvisit((void*)(*a).r268861.password, op);
+	nimGCvisit((void*)(*a).r268861.hostname, op);
+	nimGCvisit((void*)(*a).r268861.port, op);
+	nimGCvisit((void*)(*a).r268861.path, op);
+	nimGCvisit((void*)(*a).r268861.query, op);
+	nimGCvisit((void*)(*a).r268861.anchor, op);
+	nimGCvisit((void*)(*a).future268837, op);
+	nimGCvisit((void*)(*a).headers268869, op);
+	nimGCvisit((void*)(*a).future268838, op);
+	nimGCvisit((void*)(*a).future268839, op);
+	nimGCvisit((void*)(*a).future268840, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, requestiter_280836)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_280859;
-	TY281410* HEX3Aenvp_281416;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, requestiter_268836)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_268859;
+	TY269410* HEX3Aenvp_269416;
 	nimfr("requestIter", "asyncdispatch.nim")
-{	result_280859 = 0;
-	HEX3Aenvp_281416 = (TY281410*) ClEnv;
-	switch ((*HEX3Aenvp_281416).HEX3Astate) {
+{	result_268859 = 0;
+	HEX3Aenvp_269416 = (TY269410*) ClEnv;
+	switch ((*HEX3Aenvp_269416).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -4282,110 +4282,110 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, requestiter_280836)(void* ClEnv) {
 	}
 	STATE0: ;
 	nimln(783, "httpclient.nim");
-	parseuri_249100((*HEX3Aenvp_281416).url280844, (&(*HEX3Aenvp_281416).r280861));
+	parseuri_237100((*HEX3Aenvp_269416).url268844, (&(*HEX3Aenvp_269416).r268861));
 	nimln(784, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenvp_281416).future280837), newconnection_280464((*HEX3Aenvp_281416).client280843, (&(*HEX3Aenvp_281416).r280861)));
-	(*HEX3Aenvp_281416).HEX3Astate = ((NI) 1);
+	asgnRef((void**) (&(*HEX3Aenvp_269416).future268837), newconnection_268464((*HEX3Aenvp_269416).client268843, (&(*HEX3Aenvp_269416).r268861)));
+	(*HEX3Aenvp_269416).HEX3Astate = ((NI) 1);
 	nimln(1266, "asyncdispatch.nim");
-	result_280859 = &(*HEX3Aenvp_281416).future280837->Sup;
+	result_268859 = &(*HEX3Aenvp_269416).future268837->Sup;
 	goto BeforeRet;
 	STATE1: ;
 	nimln(784, "httpclient.nim");
-	read_268624((*HEX3Aenvp_281416).future280837);
+	read_256624((*HEX3Aenvp_269416).future268837);
 	nimln(786, "httpclient.nim");
 	{
 		NIM_BOOL LOC3;
 		NIM_BOOL LOC4;
 		LOC3 = 0;
 		LOC4 = 0;
-		LOC4 = nsthasKey((*(*HEX3Aenvp_281416).client280843).headers, ((NimStringDesc*) &TMP2731));
+		LOC4 = nsthasKey((*(*HEX3Aenvp_269416).client268843).headers, ((NimStringDesc*) &TMP2653));
 		LOC3 = !(LOC4);
 		if (!(LOC3)) goto LA5;
-		LOC3 = !((((*(*HEX3Aenvp_281416).client280843).useragent) && ((*(*HEX3Aenvp_281416).client280843).useragent)->Sup.len == 0));
+		LOC3 = !((((*(*HEX3Aenvp_269416).client268843).useragent) && ((*(*HEX3Aenvp_269416).client268843).useragent)->Sup.len == 0));
 		LA5: ;
 		if (!LOC3) goto LA6;
 		nimln(787, "httpclient.nim");
-		nstPut((*(*HEX3Aenvp_281416).client280843).headers, ((NimStringDesc*) &TMP2732), (*(*HEX3Aenvp_281416).client280843).useragent);
+		nstPut((*(*HEX3Aenvp_269416).client268843).headers, ((NimStringDesc*) &TMP2654), (*(*HEX3Aenvp_269416).client268843).useragent);
 	}
 	LA6: ;
 	nimln(789, "httpclient.nim");
-	asgnRefNoCycle((void**) (&(*HEX3Aenvp_281416).headers280869), generateheaders_278334((&(*HEX3Aenvp_281416).r280861), (*HEX3Aenvp_281416).httpmethod280845, (*(*HEX3Aenvp_281416).client280843).headers));
+	asgnRefNoCycle((void**) (&(*HEX3Aenvp_269416).headers268869), generateheaders_266334((&(*HEX3Aenvp_269416).r268861), (*HEX3Aenvp_269416).httpmethod268845, (*(*HEX3Aenvp_269416).client268843).headers));
 	nimln(791, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenvp_281416).future280838), send_270652((*(*HEX3Aenvp_281416).client280843).socket, (*HEX3Aenvp_281416).headers280869, 2));
-	(*HEX3Aenvp_281416).HEX3Astate = ((NI) 2);
+	asgnRef((void**) (&(*HEX3Aenvp_269416).future268838), send_258652((*(*HEX3Aenvp_269416).client268843).socket, (*HEX3Aenvp_269416).headers268869, 2));
+	(*HEX3Aenvp_269416).HEX3Astate = ((NI) 2);
 	nimln(1266, "asyncdispatch.nim");
-	result_280859 = &(*HEX3Aenvp_281416).future280838->Sup;
+	result_268859 = &(*HEX3Aenvp_269416).future268838->Sup;
 	goto BeforeRet;
 	STATE2: ;
 	nimln(791, "httpclient.nim");
-	read_268624((*HEX3Aenvp_281416).future280838);
+	read_256624((*HEX3Aenvp_269416).future268838);
 	nimln(792, "httpclient.nim");
 	{
-		if (!!((((*HEX3Aenvp_281416).body280846) && ((*HEX3Aenvp_281416).body280846)->Sup.len == 0))) goto LA10;
+		if (!!((((*HEX3Aenvp_269416).body268846) && ((*HEX3Aenvp_269416).body268846)->Sup.len == 0))) goto LA10;
 		nimln(793, "httpclient.nim");
-		asgnRef((void**) (&(*HEX3Aenvp_281416).future280839), send_270652((*(*HEX3Aenvp_281416).client280843).socket, (*HEX3Aenvp_281416).body280846, 2));
-		(*HEX3Aenvp_281416).HEX3Astate = ((NI) 3);
+		asgnRef((void**) (&(*HEX3Aenvp_269416).future268839), send_258652((*(*HEX3Aenvp_269416).client268843).socket, (*HEX3Aenvp_269416).body268846, 2));
+		(*HEX3Aenvp_269416).HEX3Astate = ((NI) 3);
 		nimln(1266, "asyncdispatch.nim");
-		result_280859 = &(*HEX3Aenvp_281416).future280839->Sup;
+		result_268859 = &(*HEX3Aenvp_269416).future268839->Sup;
 		goto BeforeRet;
 		STATE3: ;
 		nimln(793, "httpclient.nim");
-		read_268624((*HEX3Aenvp_281416).future280839);
+		read_256624((*HEX3Aenvp_269416).future268839);
 	}
 	LA10: ;
 	nimln(795, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenvp_281416).future280840), parseresponse_279243((*HEX3Aenvp_281416).client280843, !(eqStrings((*HEX3Aenvp_281416).httpmethod280845, ((NimStringDesc*) &TMP2643)))));
-	(*HEX3Aenvp_281416).HEX3Astate = ((NI) 4);
+	asgnRef((void**) (&(*HEX3Aenvp_269416).future268840), parseresponse_267243((*HEX3Aenvp_269416).client268843, !(eqStrings((*HEX3Aenvp_269416).httpmethod268845, ((NimStringDesc*) &TMP2565)))));
+	(*HEX3Aenvp_269416).HEX3Astate = ((NI) 4);
 	nimln(1266, "asyncdispatch.nim");
-	result_280859 = &(*HEX3Aenvp_281416).future280840->Sup;
+	result_268859 = &(*HEX3Aenvp_269416).future268840->Sup;
 	goto BeforeRet;
 	STATE4: ;
 	nimln(795, "httpclient.nim");
-	read_280889((*HEX3Aenvp_281416).future280840, (&(*HEX3Aenvp_281416).result280860));
-	complete_279517((*HEX3Aenvp_281416).retfuture280835, (&(*HEX3Aenvp_281416).result280860));
+	read_268889((*HEX3Aenvp_269416).future268840, (&(*HEX3Aenvp_269416).result268860));
+	complete_267517((*HEX3Aenvp_269416).retfuture268835, (&(*HEX3Aenvp_269416).result268860));
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_281416).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_269416).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_280859;
+	return result_268859;
 }
 
-N_CLOSURE(void, cb_281230)(void* ClEnv) {
-	TY281410* HEX3Aenvp_281426;
-	TSafePoint TMP2733;
+N_CLOSURE(void, cb_269230)(void* ClEnv) {
+	TY269410* HEX3Aenvp_269426;
+	TSafePoint TMP2655;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_281426 = (TY281410*) ClEnv;
+	HEX3Aenvp_269426 = (TY269410*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2733);
-	TMP2733.status = setjmp(TMP2733.context);
-	if (TMP2733.status == 0) {
+	pushSafePoint(&TMP2655);
+	TMP2655.status = setjmp(TMP2655.context);
+	if (TMP2655.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_281229;
+			FuturebaseHEX3Aobjecttype243017* next_269229;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_281426).nameitervar281227);
+			LOC4 = finished_255237((*HEX3Aenvp_269426).nameitervar269227);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_281229 = (*HEX3Aenvp_281426).nameitervar281227.ClPrc((*HEX3Aenvp_281426).nameitervar281227.ClEnv);
+			next_269229 = (*HEX3Aenvp_269426).nameitervar269227.ClPrc((*HEX3Aenvp_269426).nameitervar269227.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_281229 == NIM_NIL)) goto LA9;
+				if (!(next_269229 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_281426).retfuture280835).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2735));
+					if (!!((*(*HEX3Aenvp_269426).retfuture268835).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2657));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_281230; LOC16.ClEnv = HEX3Aenvp_281426;
-				callbackHEX3D_255832(next_281229, LOC16);
+				LOC16.ClPrc = cb_269230; LOC16.ClEnv = HEX3Aenvp_269426;
+				callbackHEX3D_243832(next_269229, LOC16);
 			}
 			LA7: ;
 		}
@@ -4396,10 +4396,10 @@ N_CLOSURE(void, cb_281230)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2733.status = 0;
+			TMP2655.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_281426).retfuture280835).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_269426).retfuture268835).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -4410,94 +4410,94 @@ N_CLOSURE(void, cb_281230)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_280402((*HEX3Aenvp_281426).retfuture280835, LOC24);
+				fail_268402((*HEX3Aenvp_269426).retfuture268835, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2733.status != 0) reraiseException();
+	if (TMP2655.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype279252*, request_280841)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* body) {
-	FutureHEX3Aobjecttype279252* result;
-	TY281410* HEX3Aenv_281429;
+N_NIMCALL(FutureHEX3Aobjecttype267252*, request_268841)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url, NimStringDesc* httpmethod, NimStringDesc* body) {
+	FutureHEX3Aobjecttype267252* result;
+	TY269410* HEX3Aenv_269429;
 	NimStringDesc* LOC1;
 	NimStringDesc* LOC2;
 	NimStringDesc* LOC3;
-	TY266613 LOC4;
-	TY255018 LOC5;
+	TY254613 LOC4;
+	TY243018 LOC5;
 	nimfr("request", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_281429 = 0;
+	HEX3Aenv_269429 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_281429 = (TY281410*) newObj((&NTI281417), sizeof(TY281410));
+	HEX3Aenv_269429 = (TY269410*) newObj((&NTI269417), sizeof(TY269410));
 	nimln(775, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenv_281429).url280844; (*HEX3Aenv_281429).url280844 = copyStringRC1(url);
+	LOC1 = (*HEX3Aenv_269429).url268844; (*HEX3Aenv_269429).url268844 = copyStringRC1(url);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
-	asgnRef((void**) (&(*HEX3Aenv_281429).client280843), client);
+	asgnRef((void**) (&(*HEX3Aenv_269429).client268843), client);
 	LOC2 = 0;
-	LOC2 = (*HEX3Aenv_281429).httpmethod280845; (*HEX3Aenv_281429).httpmethod280845 = copyStringRC1(httpmethod);
+	LOC2 = (*HEX3Aenv_269429).httpmethod268845; (*HEX3Aenv_269429).httpmethod268845 = copyStringRC1(httpmethod);
 	if (LOC2) nimGCunrefNoCycle(LOC2);
 	LOC3 = 0;
-	LOC3 = (*HEX3Aenv_281429).body280846; (*HEX3Aenv_281429).body280846 = copyStringRC1(body);
+	LOC3 = (*HEX3Aenv_269429).body268846; (*HEX3Aenv_269429).body268846 = copyStringRC1(body);
 	if (LOC3) nimGCunrefNoCycle(LOC3);
 	nimln(773, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_281429).retfuture280835), newfuture_279257(((NimStringDesc*) &TMP2730)));
+	asgnRef((void**) (&(*HEX3Aenv_269429).retfuture268835), newfuture_267257(((NimStringDesc*) &TMP2652)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC4), 0, sizeof(LOC4));
-	LOC4.ClPrc = requestiter_280836; LOC4.ClEnv = HEX3Aenv_281429;
-	asgnRef((void**) (&(*HEX3Aenv_281429).nameitervar281227.ClEnv), LOC4.ClEnv);
-	(*HEX3Aenv_281429).nameitervar281227.ClPrc = LOC4.ClPrc;
+	LOC4.ClPrc = requestiter_268836; LOC4.ClEnv = HEX3Aenv_269429;
+	asgnRef((void**) (&(*HEX3Aenv_269429).nameitervar269227.ClEnv), LOC4.ClEnv);
+	(*HEX3Aenv_269429).nameitervar269227.ClPrc = LOC4.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC5), 0, sizeof(LOC5));
-	LOC5.ClPrc = cb_281230; LOC5.ClEnv = HEX3Aenv_281429;
-	LOC5.ClEnv? LOC5.ClPrc(LOC5.ClEnv):((TMP2736)(LOC5.ClPrc))();
+	LOC5.ClPrc = cb_269230; LOC5.ClEnv = HEX3Aenv_269429;
+	LOC5.ClEnv? LOC5.ClPrc(LOC5.ClEnv):((TMP2658)(LOC5.ClPrc))();
 	nimln(795, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_281429).retfuture280835;
+	result = (*HEX3Aenv_269429).retfuture268835;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype279252*, request_281441)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url, NU8 httpmethod, NimStringDesc* body) {
-	FutureHEX3Aobjecttype279252* result;
+N_NIMCALL(FutureHEX3Aobjecttype267252*, request_269441)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url, NU8 httpmethod, NimStringDesc* body) {
+	FutureHEX3Aobjecttype267252* result;
 	nimfr("request", "httpclient.nim")
 	result = 0;
 	nimln(807, "httpclient.nim");
-	result = request_280841(client, url, reprEnum(httpmethod, (&NTI277357)), body);
+	result = request_268841(client, url, reprEnum(httpmethod, (&NTI265357)), body);
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2738)(void* p, NI op) {
-	TY281610* a;
-	a = (TY281610*)p;
-	nimGCvisit((void*)(*a).client281469, op);
-	nimGCvisit((void*)(*a).url281470, op);
-	nimGCvisit((void*)(*a).retfuture281463, op);
-	nimGCvisit((void*)(*a).nameitervar281533.ClEnv, op);
-	nimGCvisit((void*)(*a).result281484.Field0, op);
-	nimGCvisit((void*)(*a).result281484.Field1, op);
-	nimGCvisit((void*)(*a).result281484.Field2, op);
-	nimGCvisit((void*)(*a).result281484.Field3, op);
-	nimGCvisit((void*)(*a).future281465, op);
-	nimGCvisit((void*)(*a).lasturl281493, op);
-	nimGCvisit((void*)(*a).redirectto281505, op);
-	nimGCvisit((void*)(*a).future281466, op);
+N_NIMCALL(void, TMP2660)(void* p, NI op) {
+	TY269610* a;
+	a = (TY269610*)p;
+	nimGCvisit((void*)(*a).client269469, op);
+	nimGCvisit((void*)(*a).url269470, op);
+	nimGCvisit((void*)(*a).retfuture269463, op);
+	nimGCvisit((void*)(*a).nameitervar269533.ClEnv, op);
+	nimGCvisit((void*)(*a).result269484.Field0, op);
+	nimGCvisit((void*)(*a).result269484.Field1, op);
+	nimGCvisit((void*)(*a).result269484.Field2, op);
+	nimGCvisit((void*)(*a).result269484.Field3, op);
+	nimGCvisit((void*)(*a).future269465, op);
+	nimGCvisit((void*)(*a).lasturl269493, op);
+	nimGCvisit((void*)(*a).redirectto269505, op);
+	nimGCvisit((void*)(*a).future269466, op);
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, getiter_281464)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_281483;
-	TY281610* HEX3Aenvp_281616;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, getiter_269464)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_269483;
+	TY269610* HEX3Aenvp_269616;
 	NimStringDesc* LOC1;
 	nimfr("getIter", "asyncdispatch.nim")
-{	result_281483 = 0;
-	HEX3Aenvp_281616 = (TY281610*) ClEnv;
-	switch ((*HEX3Aenvp_281616).HEX3Astate) {
+{	result_269483 = 0;
+	HEX3Aenvp_269616 = (TY269610*) ClEnv;
+	switch ((*HEX3Aenvp_269616).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -4505,105 +4505,105 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, getiter_281464)(void* ClEnv) {
 	}
 	STATE0: ;
 	nimln(814, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenvp_281616).future281465), request_281441((*HEX3Aenvp_281616).client281469, (*HEX3Aenvp_281616).url281470, ((NU8) 1), ((NimStringDesc*) &TMP2523)));
-	(*HEX3Aenvp_281616).HEX3Astate = ((NI) 1);
+	asgnRef((void**) (&(*HEX3Aenvp_269616).future269465), request_269441((*HEX3Aenvp_269616).client269469, (*HEX3Aenvp_269616).url269470, ((NU8) 1), ((NimStringDesc*) &TMP2445)));
+	(*HEX3Aenvp_269616).HEX3Astate = ((NI) 1);
 	nimln(1266, "asyncdispatch.nim");
-	result_281483 = &(*HEX3Aenvp_281616).future281465->Sup;
+	result_269483 = &(*HEX3Aenvp_269616).future269465->Sup;
 	goto BeforeRet;
 	STATE1: ;
 	nimln(814, "httpclient.nim");
-	read_280889((*HEX3Aenvp_281616).future281465, (&(*HEX3Aenvp_281616).result281484));
+	read_268889((*HEX3Aenvp_269616).future269465, (&(*HEX3Aenvp_269616).result269484));
 	nimln(815, "httpclient.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_281616).lasturl281493; (*HEX3Aenvp_281616).lasturl281493 = copyStringRC1((*HEX3Aenvp_281616).url281470);
+	LOC1 = (*HEX3Aenvp_269616).lasturl269493; (*HEX3Aenvp_269616).lasturl269493 = copyStringRC1((*HEX3Aenvp_269616).url269470);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	{
 		nimln(816, "httpclient.nim");
-		(*HEX3Aenvp_281616).HEX3Atmp281525 = (*(*HEX3Aenvp_281616).client281469).maxredirects;
+		(*HEX3Aenvp_269616).HEX3Atmp269525 = (*(*HEX3Aenvp_269616).client269469).maxredirects;
 		nimln(1598, "system.nim");
-		(*HEX3Aenvp_281616).res281528 = ((NI) 1);
+		(*HEX3Aenvp_269616).res269528 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2740;
-				if (!((*HEX3Aenvp_281616).res281528 <= (*HEX3Aenvp_281616).HEX3Atmp281525)) goto LA4;
+				NI TMP2662;
+				if (!((*HEX3Aenvp_269616).res269528 <= (*HEX3Aenvp_269616).HEX3Atmp269525)) goto LA4;
 				nimln(1600, "system.nim");
-				(*HEX3Aenvp_281616).i281504 = (*HEX3Aenvp_281616).res281528;
+				(*HEX3Aenvp_269616).i269504 = (*HEX3Aenvp_269616).res269528;
 				nimln(817, "httpclient.nim");
 				{
 					NIM_BOOL LOC7;
 					NimStringDesc* LOC10;
 					LOC7 = 0;
-					LOC7 = redirection_278050((*HEX3Aenvp_281616).result281484.Field1);
+					LOC7 = redirection_266050((*HEX3Aenvp_269616).result269484.Field1);
 					if (!LOC7) goto LA8;
 					nimln(818, "httpclient.nim");
-					asgnRefNoCycle((void**) (&(*HEX3Aenvp_281616).redirectto281505), getnewlocation_278113((*HEX3Aenvp_281616).lasturl281493, (*HEX3Aenvp_281616).result281484.Field2));
+					asgnRefNoCycle((void**) (&(*HEX3Aenvp_269616).redirectto269505), getnewlocation_266113((*HEX3Aenvp_269616).lasturl269493, (*HEX3Aenvp_269616).result269484.Field2));
 					nimln(819, "httpclient.nim");
-					asgnRef((void**) (&(*HEX3Aenvp_281616).future281466), request_281441((*HEX3Aenvp_281616).client281469, (*HEX3Aenvp_281616).redirectto281505, ((NU8) 1), ((NimStringDesc*) &TMP2523)));
-					(*HEX3Aenvp_281616).HEX3Astate = ((NI) 2);
+					asgnRef((void**) (&(*HEX3Aenvp_269616).future269466), request_269441((*HEX3Aenvp_269616).client269469, (*HEX3Aenvp_269616).redirectto269505, ((NU8) 1), ((NimStringDesc*) &TMP2445)));
+					(*HEX3Aenvp_269616).HEX3Astate = ((NI) 2);
 					nimln(1266, "asyncdispatch.nim");
-					result_281483 = &(*HEX3Aenvp_281616).future281466->Sup;
+					result_269483 = &(*HEX3Aenvp_269616).future269466->Sup;
 					goto BeforeRet;
 					STATE2: ;
 					nimln(819, "httpclient.nim");
-					read_280889((*HEX3Aenvp_281616).future281466, (&(*HEX3Aenvp_281616).result281484));
+					read_268889((*HEX3Aenvp_269616).future269466, (&(*HEX3Aenvp_269616).result269484));
 					nimln(820, "httpclient.nim");
 					LOC10 = 0;
-					LOC10 = (*HEX3Aenvp_281616).lasturl281493; (*HEX3Aenvp_281616).lasturl281493 = copyStringRC1((*HEX3Aenvp_281616).redirectto281505);
+					LOC10 = (*HEX3Aenvp_269616).lasturl269493; (*HEX3Aenvp_269616).lasturl269493 = copyStringRC1((*HEX3Aenvp_269616).redirectto269505);
 					if (LOC10) nimGCunrefNoCycle(LOC10);
 				}
 				LA8: ;
 				nimln(1619, "system.nim");
-				TMP2740 = addInt((*HEX3Aenvp_281616).res281528, ((NI) 1));
-				(*HEX3Aenvp_281616).res281528 = (NI)(TMP2740);
+				TMP2662 = addInt((*HEX3Aenvp_269616).res269528, ((NI) 1));
+				(*HEX3Aenvp_269616).res269528 = (NI)(TMP2662);
 			} LA4: ;
 		}
 	}
 	nimln(820, "httpclient.nim");
-	complete_279517((*HEX3Aenvp_281616).retfuture281463, (&(*HEX3Aenvp_281616).result281484));
+	complete_267517((*HEX3Aenvp_269616).retfuture269463, (&(*HEX3Aenvp_269616).result269484));
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_281616).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_269616).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_281483;
+	return result_269483;
 }
 
-N_CLOSURE(void, cb_281536)(void* ClEnv) {
-	TY281610* HEX3Aenvp_281624;
-	TSafePoint TMP2741;
+N_CLOSURE(void, cb_269536)(void* ClEnv) {
+	TY269610* HEX3Aenvp_269624;
+	TSafePoint TMP2663;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_281624 = (TY281610*) ClEnv;
+	HEX3Aenvp_269624 = (TY269610*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2741);
-	TMP2741.status = setjmp(TMP2741.context);
-	if (TMP2741.status == 0) {
+	pushSafePoint(&TMP2663);
+	TMP2663.status = setjmp(TMP2663.context);
+	if (TMP2663.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_281535;
+			FuturebaseHEX3Aobjecttype243017* next_269535;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_281624).nameitervar281533);
+			LOC4 = finished_255237((*HEX3Aenvp_269624).nameitervar269533);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_281535 = (*HEX3Aenvp_281624).nameitervar281533.ClPrc((*HEX3Aenvp_281624).nameitervar281533.ClEnv);
+			next_269535 = (*HEX3Aenvp_269624).nameitervar269533.ClPrc((*HEX3Aenvp_269624).nameitervar269533.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_281535 == NIM_NIL)) goto LA9;
+				if (!(next_269535 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_281624).retfuture281463).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2743));
+					if (!!((*(*HEX3Aenvp_269624).retfuture269463).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2665));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_281536; LOC16.ClEnv = HEX3Aenvp_281624;
-				callbackHEX3D_255832(next_281535, LOC16);
+				LOC16.ClPrc = cb_269536; LOC16.ClEnv = HEX3Aenvp_269624;
+				callbackHEX3D_243832(next_269535, LOC16);
 			}
 			LA7: ;
 		}
@@ -4614,10 +4614,10 @@ N_CLOSURE(void, cb_281536)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2741.status = 0;
+			TMP2663.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_281624).retfuture281463).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_269624).retfuture269463).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -4628,46 +4628,46 @@ N_CLOSURE(void, cb_281536)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_280402((*HEX3Aenvp_281624).retfuture281463, LOC24);
+				fail_268402((*HEX3Aenvp_269624).retfuture269463, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2741.status != 0) reraiseException();
+	if (TMP2663.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype279252*, get_281467)(AsynchttpclientHEX3Aobjecttype278373* client, NimStringDesc* url) {
-	FutureHEX3Aobjecttype279252* result;
-	TY281610* HEX3Aenv_281627;
+N_NIMCALL(FutureHEX3Aobjecttype267252*, get_269467)(AsynchttpclientHEX3Aobjecttype266373* client, NimStringDesc* url) {
+	FutureHEX3Aobjecttype267252* result;
+	TY269610* HEX3Aenv_269627;
 	NimStringDesc* LOC1;
-	TY266613 LOC2;
-	TY255018 LOC3;
+	TY254613 LOC2;
+	TY243018 LOC3;
 	nimfr("get", "httpclient.nim")
 {	result = 0;
-	HEX3Aenv_281627 = 0;
+	HEX3Aenv_269627 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_281627 = (TY281610*) newObj((&NTI281617), sizeof(TY281610));
+	HEX3Aenv_269627 = (TY269610*) newObj((&NTI269617), sizeof(TY269610));
 	nimln(810, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_281627).client281469), client);
+	asgnRef((void**) (&(*HEX3Aenv_269627).client269469), client);
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenv_281627).url281470; (*HEX3Aenv_281627).url281470 = copyStringRC1(url);
+	LOC1 = (*HEX3Aenv_269627).url269470; (*HEX3Aenv_269627).url269470 = copyStringRC1(url);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(809, "httpclient.nim");
-	asgnRef((void**) (&(*HEX3Aenv_281627).retfuture281463), newfuture_279257(((NimStringDesc*) &TMP2739)));
+	asgnRef((void**) (&(*HEX3Aenv_269627).retfuture269463), newfuture_267257(((NimStringDesc*) &TMP2661)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = getiter_281464; LOC2.ClEnv = HEX3Aenv_281627;
-	asgnRef((void**) (&(*HEX3Aenv_281627).nameitervar281533.ClEnv), LOC2.ClEnv);
-	(*HEX3Aenv_281627).nameitervar281533.ClPrc = LOC2.ClPrc;
+	LOC2.ClPrc = getiter_269464; LOC2.ClEnv = HEX3Aenv_269627;
+	asgnRef((void**) (&(*HEX3Aenv_269627).nameitervar269533.ClEnv), LOC2.ClEnv);
+	(*HEX3Aenv_269627).nameitervar269533.ClPrc = LOC2.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC3), 0, sizeof(LOC3));
-	LOC3.ClPrc = cb_281536; LOC3.ClEnv = HEX3Aenv_281627;
-	LOC3.ClEnv? LOC3.ClPrc(LOC3.ClEnv):((TMP2744)(LOC3.ClPrc))();
+	LOC3.ClPrc = cb_269536; LOC3.ClEnv = HEX3Aenv_269627;
+	LOC3.ClEnv? LOC3.ClPrc(LOC3.ClEnv):((TMP2666)(LOC3.ClPrc))();
 	nimln(820, "httpclient.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_281627).retfuture281463;
+	result = (*HEX3Aenv_269627).retfuture269463;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -4676,16 +4676,16 @@ N_NIMCALL(FutureHEX3Aobjecttype279252*, get_281467)(AsynchttpclientHEX3Aobjectty
 NIM_EXTERNC N_NOINLINE(void, stdlib_httpclientInit)(void) {
 	nimfr("httpclient", "httpclient.nim")
 	nimln(272, "httpclient.nim");
-	asgnRefNoCycle((void**) (&defaultsslcontext_277377), NIM_NIL);
+	asgnRefNoCycle((void**) (&defaultsslcontext_265377), NIM_NIL);
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_httpclientDatInit)(void) {
-static TNimNode* TMP2601[2];
-static TNimNode* TMP2644[4];
-static TNimNode* TMP2646[8];
-NI TMP2648;
-static char* NIM_CONST TMP2647[8] = {
+static TNimNode* TMP2523[2];
+static TNimNode* TMP2566[4];
+static TNimNode* TMP2568[8];
+NI TMP2570;
+static char* NIM_CONST TMP2569[8] = {
 "httpHEAD", 
 "httpGET", 
 "httpPOST", 
@@ -4694,620 +4694,620 @@ static char* NIM_CONST TMP2647[8] = {
 "httpTRACE", 
 "httpOPTIONS", 
 "httpCONNECT"};
-static TNimNode* TMP2668[6];
-static TNimNode* TMP2671[8];
-static TNimNode* TMP2679[12];
-static TNimNode* TMP2692[12];
-static TNimNode* TMP2706[15];
-static TNimNode* TMP2721[8];
-static TNimNode* TMP2728[14];
-static TNimNode* TMP2737[13];
-static TNimNode TMP1344[116];
-NTI277016.size = sizeof(Protocolerror277016);
-NTI277016.kind = 17;
-NTI277016.base = (&NTI3431);
-TMP1344[0].len = 0; TMP1344[0].kind = 2;
-NTI277016.node = &TMP1344[0];
-NTI277051.size = sizeof(Protocolerror277016*);
-NTI277051.kind = 22;
-NTI277051.base = (&NTI277016);
-NTI277051.marker = TMP2522;
-NTI277023.size = sizeof(ProxyHEX3Aobjecttype277023);
-NTI277023.kind = 18;
-NTI277023.base = 0;
-NTI277023.flags = 2;
-TMP2601[0] = &TMP1344[2];
-TMP1344[2].kind = 1;
-TMP1344[2].offset = offsetof(ProxyHEX3Aobjecttype277023, url);
-TMP1344[2].typ = (&NTI247012);
-TMP1344[2].name = "url";
-TMP2601[1] = &TMP1344[3];
-TMP1344[3].kind = 1;
-TMP1344[3].offset = offsetof(ProxyHEX3Aobjecttype277023, auth);
-TMP1344[3].typ = (&NTI149);
-TMP1344[3].name = "auth";
-TMP1344[1].len = 2; TMP1344[1].kind = 2; TMP1344[1].sons = &TMP2601[0];
-NTI277023.node = &TMP1344[1];
-NTI277010.size = sizeof(ProxyHEX3Aobjecttype277023*);
-NTI277010.kind = 22;
-NTI277010.base = (&NTI277023);
-NTI277010.flags = 2;
-NTI277010.marker = TMP2602;
-NTI277030.size = sizeof(MultipartdataHEX3Aobjecttype277030);
-NTI277030.kind = 18;
-NTI277030.base = 0;
-NTI277030.flags = 2;
-TMP1344[4].kind = 1;
-TMP1344[4].offset = offsetof(MultipartdataHEX3Aobjecttype277030, content);
-TMP1344[4].typ = (&NTI13606);
-TMP1344[4].name = "content";
-NTI277030.node = &TMP1344[4];
-NTI277014.size = sizeof(MultipartdataHEX3Aobjecttype277030*);
-NTI277014.kind = 22;
-NTI277014.base = (&NTI277030);
-NTI277014.flags = 2;
-NTI277014.marker = TMP2603;
-NTI277018.size = sizeof(Httprequesterror277018);
-NTI277018.kind = 17;
-NTI277018.base = (&NTI3431);
-TMP1344[5].len = 0; TMP1344[5].kind = 2;
-NTI277018.node = &TMP1344[5];
-NTI278004.size = sizeof(Httprequesterror277018*);
-NTI278004.kind = 22;
-NTI278004.base = (&NTI277018);
-NTI278004.marker = TMP2639;
-NTI277008.size = sizeof(Response277008);
-NTI277008.kind = 18;
-NTI277008.base = 0;
-TMP2644[0] = &TMP1344[7];
-TMP1344[7].kind = 1;
-TMP1344[7].offset = offsetof(Response277008, Field0);
-TMP1344[7].typ = (&NTI149);
-TMP1344[7].name = "Field0";
-TMP2644[1] = &TMP1344[8];
-TMP1344[8].kind = 1;
-TMP1344[8].offset = offsetof(Response277008, Field1);
-TMP1344[8].typ = (&NTI149);
-TMP1344[8].name = "Field1";
-TMP2644[2] = &TMP1344[9];
-TMP1344[9].kind = 1;
-TMP1344[9].offset = offsetof(Response277008, Field2);
-TMP1344[9].typ = (&NTI176014);
-TMP1344[9].name = "Field2";
-TMP2644[3] = &TMP1344[10];
-TMP1344[10].kind = 1;
-TMP1344[10].offset = offsetof(Response277008, Field3);
-TMP1344[10].typ = (&NTI149);
-TMP1344[10].name = "Field3";
-TMP1344[6].len = 4; TMP1344[6].kind = 2; TMP1344[6].sons = &TMP2644[0];
-NTI277008.node = &TMP1344[6];
-NTI277357.size = sizeof(NU8);
-NTI277357.kind = 14;
-NTI277357.base = 0;
-NTI277357.flags = 3;
-for (TMP2648 = 0; TMP2648 < 8; TMP2648++) {
-TMP1344[TMP2648+11].kind = 1;
-TMP1344[TMP2648+11].offset = TMP2648;
-TMP1344[TMP2648+11].name = TMP2647[TMP2648];
-TMP2646[TMP2648] = &TMP1344[TMP2648+11];
+static TNimNode* TMP2590[6];
+static TNimNode* TMP2593[8];
+static TNimNode* TMP2601[12];
+static TNimNode* TMP2614[12];
+static TNimNode* TMP2628[15];
+static TNimNode* TMP2643[8];
+static TNimNode* TMP2650[14];
+static TNimNode* TMP2659[13];
+static TNimNode TMP1266[116];
+NTI265016.size = sizeof(Protocolerror265016);
+NTI265016.kind = 17;
+NTI265016.base = (&NTI3431);
+TMP1266[0].len = 0; TMP1266[0].kind = 2;
+NTI265016.node = &TMP1266[0];
+NTI265051.size = sizeof(Protocolerror265016*);
+NTI265051.kind = 22;
+NTI265051.base = (&NTI265016);
+NTI265051.marker = TMP2444;
+NTI265023.size = sizeof(ProxyHEX3Aobjecttype265023);
+NTI265023.kind = 18;
+NTI265023.base = 0;
+NTI265023.flags = 2;
+TMP2523[0] = &TMP1266[2];
+TMP1266[2].kind = 1;
+TMP1266[2].offset = offsetof(ProxyHEX3Aobjecttype265023, url);
+TMP1266[2].typ = (&NTI235012);
+TMP1266[2].name = "url";
+TMP2523[1] = &TMP1266[3];
+TMP1266[3].kind = 1;
+TMP1266[3].offset = offsetof(ProxyHEX3Aobjecttype265023, auth);
+TMP1266[3].typ = (&NTI149);
+TMP1266[3].name = "auth";
+TMP1266[1].len = 2; TMP1266[1].kind = 2; TMP1266[1].sons = &TMP2523[0];
+NTI265023.node = &TMP1266[1];
+NTI265010.size = sizeof(ProxyHEX3Aobjecttype265023*);
+NTI265010.kind = 22;
+NTI265010.base = (&NTI265023);
+NTI265010.flags = 2;
+NTI265010.marker = TMP2524;
+NTI265030.size = sizeof(MultipartdataHEX3Aobjecttype265030);
+NTI265030.kind = 18;
+NTI265030.base = 0;
+NTI265030.flags = 2;
+TMP1266[4].kind = 1;
+TMP1266[4].offset = offsetof(MultipartdataHEX3Aobjecttype265030, content);
+TMP1266[4].typ = (&NTI13606);
+TMP1266[4].name = "content";
+NTI265030.node = &TMP1266[4];
+NTI265014.size = sizeof(MultipartdataHEX3Aobjecttype265030*);
+NTI265014.kind = 22;
+NTI265014.base = (&NTI265030);
+NTI265014.flags = 2;
+NTI265014.marker = TMP2525;
+NTI265018.size = sizeof(Httprequesterror265018);
+NTI265018.kind = 17;
+NTI265018.base = (&NTI3431);
+TMP1266[5].len = 0; TMP1266[5].kind = 2;
+NTI265018.node = &TMP1266[5];
+NTI266004.size = sizeof(Httprequesterror265018*);
+NTI266004.kind = 22;
+NTI266004.base = (&NTI265018);
+NTI266004.marker = TMP2561;
+NTI265008.size = sizeof(Response265008);
+NTI265008.kind = 18;
+NTI265008.base = 0;
+TMP2566[0] = &TMP1266[7];
+TMP1266[7].kind = 1;
+TMP1266[7].offset = offsetof(Response265008, Field0);
+TMP1266[7].typ = (&NTI149);
+TMP1266[7].name = "Field0";
+TMP2566[1] = &TMP1266[8];
+TMP1266[8].kind = 1;
+TMP1266[8].offset = offsetof(Response265008, Field1);
+TMP1266[8].typ = (&NTI149);
+TMP1266[8].name = "Field1";
+TMP2566[2] = &TMP1266[9];
+TMP1266[9].kind = 1;
+TMP1266[9].offset = offsetof(Response265008, Field2);
+TMP1266[9].typ = (&NTI153014);
+TMP1266[9].name = "Field2";
+TMP2566[3] = &TMP1266[10];
+TMP1266[10].kind = 1;
+TMP1266[10].offset = offsetof(Response265008, Field3);
+TMP1266[10].typ = (&NTI149);
+TMP1266[10].name = "Field3";
+TMP1266[6].len = 4; TMP1266[6].kind = 2; TMP1266[6].sons = &TMP2566[0];
+NTI265008.node = &TMP1266[6];
+NTI265357.size = sizeof(NU8);
+NTI265357.kind = 14;
+NTI265357.base = 0;
+NTI265357.flags = 3;
+for (TMP2570 = 0; TMP2570 < 8; TMP2570++) {
+TMP1266[TMP2570+11].kind = 1;
+TMP1266[TMP2570+11].offset = TMP2570;
+TMP1266[TMP2570+11].name = TMP2569[TMP2570];
+TMP2568[TMP2570] = &TMP1266[TMP2570+11];
 }
-TMP1344[19].len = 8; TMP1344[19].kind = 2; TMP1344[19].sons = &TMP2646[0];
-NTI277357.node = &TMP1344[19];
-NTI278373.size = sizeof(AsynchttpclientHEX3Aobjecttype278373);
-NTI278373.kind = 18;
-NTI278373.base = 0;
-TMP2668[0] = &TMP1344[21];
-TMP1344[21].kind = 1;
-TMP1344[21].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, socket);
-TMP1344[21].typ = (&NTI268204);
-TMP1344[21].name = "socket";
-TMP2668[1] = &TMP1344[22];
-TMP1344[22].kind = 1;
-TMP1344[22].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, connected);
-TMP1344[22].typ = (&NTI138);
-TMP1344[22].name = "connected";
-TMP2668[2] = &TMP1344[23];
-TMP1344[23].kind = 1;
-TMP1344[23].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, currenturl);
-TMP1344[23].typ = (&NTI247012);
-TMP1344[23].name = "currentURL";
-TMP2668[3] = &TMP1344[24];
-TMP1344[24].kind = 1;
-TMP1344[24].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, headers);
-TMP1344[24].typ = (&NTI176014);
-TMP1344[24].name = "headers";
-TMP2668[4] = &TMP1344[25];
-TMP1344[25].kind = 1;
-TMP1344[25].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, maxredirects);
-TMP1344[25].typ = (&NTI108);
-TMP1344[25].name = "maxRedirects";
-TMP2668[5] = &TMP1344[26];
-TMP1344[26].kind = 1;
-TMP1344[26].offset = offsetof(AsynchttpclientHEX3Aobjecttype278373, useragent);
-TMP1344[26].typ = (&NTI149);
-TMP1344[26].name = "userAgent";
-TMP1344[20].len = 6; TMP1344[20].kind = 2; TMP1344[20].sons = &TMP2668[0];
-NTI278373.node = &TMP1344[20];
-NTI278372.size = sizeof(AsynchttpclientHEX3Aobjecttype278373*);
-NTI278372.kind = 22;
-NTI278372.base = (&NTI278373);
-NTI278372.marker = TMP2669;
-NTI278810.size = sizeof(TY278810);
-NTI278810.kind = 18;
-NTI278810.base = 0;
-TMP2671[0] = &TMP1344[28];
-TMP1344[28].kind = 1;
-TMP1344[28].offset = offsetof(TY278810, HEX3Astate);
-TMP1344[28].typ = (&NTI130825);
-TMP1344[28].name = ":state";
-TMP2671[1] = &TMP1344[29];
-TMP1344[29].kind = 1;
-TMP1344[29].offset = offsetof(TY278810, size278624);
-TMP1344[29].typ = (&NTI108);
-TMP1344[29].name = "size278624";
-TMP2671[2] = &TMP1344[30];
-TMP1344[30].kind = 1;
-TMP1344[30].offset = offsetof(TY278810, socket278623);
-TMP1344[30].typ = (&NTI268204);
-TMP1344[30].name = "socket278623";
-TMP2671[3] = &TMP1344[31];
-TMP1344[31].kind = 1;
-TMP1344[31].offset = offsetof(TY278810, retfuture278618);
-TMP1344[31].typ = (&NTI259768);
-TMP1344[31].name = "retFuture278618";
-TMP2671[4] = &TMP1344[32];
-TMP1344[32].kind = 1;
-TMP1344[32].offset = offsetof(TY278810, nameitervar278662);
-TMP1344[32].typ = (&NTI266613);
-TMP1344[32].name = "nameIterVar278662";
-TMP2671[5] = &TMP1344[33];
-TMP1344[33].kind = 1;
-TMP1344[33].offset = offsetof(TY278810, result278638);
-TMP1344[33].typ = (&NTI149);
-TMP1344[33].name = "result278638";
-TMP2671[6] = &TMP1344[34];
-TMP1344[34].kind = 1;
-TMP1344[34].offset = offsetof(TY278810, future278620);
-TMP1344[34].typ = (&NTI259768);
-TMP1344[34].name = "future278620";
-TMP2671[7] = &TMP1344[35];
-TMP1344[35].kind = 1;
-TMP1344[35].offset = offsetof(TY278810, data278649);
-TMP1344[35].typ = (&NTI149);
-TMP1344[35].name = "data278649";
-TMP1344[27].len = 8; TMP1344[27].kind = 2; TMP1344[27].sons = &TMP2671[0];
-NTI278810.node = &TMP1344[27];
-NTI278817.size = sizeof(TY278810*);
-NTI278817.kind = 22;
-NTI278817.base = (&NTI278810);
-NTI278817.marker = TMP2672;
-NTI279010.size = sizeof(TY279010);
-NTI279010.kind = 18;
-NTI279010.base = 0;
-TMP2679[0] = &TMP1344[37];
-NTI279012.size = sizeof(NI);
-NTI279012.kind = 20;
-NTI279012.base = (&NTI108);
-NTI279012.flags = 3;
-TMP1344[37].kind = 1;
-TMP1344[37].offset = offsetof(TY279010, HEX3Astate);
-TMP1344[37].typ = (&NTI279012);
-TMP1344[37].name = ":state";
-TMP2679[1] = &TMP1344[38];
-TMP1344[38].kind = 1;
-TMP1344[38].offset = offsetof(TY279010, client278843);
-TMP1344[38].typ = (&NTI278372);
-TMP1344[38].name = "client278843";
-TMP2679[2] = &TMP1344[39];
-TMP1344[39].kind = 1;
-TMP1344[39].offset = offsetof(TY279010, retfuture278835);
-TMP1344[39].typ = (&NTI259768);
-TMP1344[39].name = "retFuture278835";
-TMP2679[3] = &TMP1344[40];
-TMP1344[40].kind = 1;
-TMP1344[40].offset = offsetof(TY279010, nameitervar278972);
-TMP1344[40].typ = (&NTI266613);
-TMP1344[40].name = "nameIterVar278972";
-TMP2679[4] = &TMP1344[41];
-TMP1344[41].kind = 1;
-TMP1344[41].offset = offsetof(TY279010, result278857);
-TMP1344[41].typ = (&NTI149);
-TMP1344[41].name = "result278857";
-TMP2679[5] = &TMP1344[42];
-TMP1344[42].kind = 1;
-TMP1344[42].offset = offsetof(TY279010, chunksize278858);
-TMP1344[42].typ = (&NTI108);
-TMP1344[42].name = "chunkSize278858";
-TMP2679[6] = &TMP1344[43];
-TMP1344[43].kind = 1;
-TMP1344[43].offset = offsetof(TY279010, future278837);
-TMP1344[43].typ = (&NTI259768);
-TMP1344[43].name = "future278837";
-TMP2679[7] = &TMP1344[44];
-TMP1344[44].kind = 1;
-TMP1344[44].offset = offsetof(TY279010, chunksizestr278869);
-TMP1344[44].typ = (&NTI149);
-TMP1344[44].name = "chunkSizeStr278869";
-TMP2679[8] = &TMP1344[45];
-TMP1344[45].kind = 1;
-TMP1344[45].offset = offsetof(TY279010, i278870);
-TMP1344[45].typ = (&NTI108);
-TMP1344[45].name = "i278870";
-TMP2679[9] = &TMP1344[46];
-TMP1344[46].kind = 1;
-TMP1344[46].offset = offsetof(TY279010, future278838);
-TMP1344[46].typ = (&NTI259768);
-TMP1344[46].name = "future278838";
-TMP2679[10] = &TMP1344[47];
-TMP1344[47].kind = 1;
-TMP1344[47].offset = offsetof(TY279010, future278839);
-TMP1344[47].typ = (&NTI259768);
-TMP1344[47].name = "future278839";
-TMP2679[11] = &TMP1344[48];
-TMP1344[48].kind = 1;
-TMP1344[48].offset = offsetof(TY279010, future278840);
-TMP1344[48].typ = (&NTI259768);
-TMP1344[48].name = "future278840";
-TMP1344[36].len = 12; TMP1344[36].kind = 2; TMP1344[36].sons = &TMP2679[0];
-NTI279010.node = &TMP1344[36];
-NTI279017.size = sizeof(TY279010*);
-NTI279017.kind = 22;
-NTI279017.base = (&NTI279010);
-NTI279017.marker = TMP2680;
-NTI279210.size = sizeof(TY279210);
-NTI279210.kind = 18;
-NTI279210.base = 0;
-TMP2692[0] = &TMP1344[50];
-TMP1344[50].kind = 1;
-TMP1344[50].offset = offsetof(TY279210, HEX3Astate);
-TMP1344[50].typ = (&NTI270612);
-TMP1344[50].name = ":state";
-TMP2692[1] = &TMP1344[51];
-TMP1344[51].kind = 1;
-TMP1344[51].offset = offsetof(TY279210, headers279047);
-TMP1344[51].typ = (&NTI176014);
-TMP1344[51].name = "headers279047";
-TMP2692[2] = &TMP1344[52];
-TMP1344[52].kind = 1;
-TMP1344[52].offset = offsetof(TY279210, client279046);
-TMP1344[52].typ = (&NTI278372);
-TMP1344[52].name = "client279046";
-TMP2692[3] = &TMP1344[53];
-TMP1344[53].kind = 1;
-TMP1344[53].offset = offsetof(TY279210, retfuture279039);
-TMP1344[53].typ = (&NTI259768);
-TMP1344[53].name = "retFuture279039";
-TMP2692[4] = &TMP1344[54];
-TMP1344[54].kind = 1;
-TMP1344[54].offset = offsetof(TY279210, nameitervar279106);
-TMP1344[54].typ = (&NTI266613);
-TMP1344[54].name = "nameIterVar279106";
-TMP2692[5] = &TMP1344[55];
-TMP1344[55].kind = 1;
-TMP1344[55].offset = offsetof(TY279210, result279061);
-TMP1344[55].typ = (&NTI149);
-TMP1344[55].name = "result279061";
-TMP2692[6] = &TMP1344[56];
-TMP1344[56].kind = 1;
-TMP1344[56].offset = offsetof(TY279210, future279041);
-TMP1344[56].typ = (&NTI259768);
-TMP1344[56].name = "future279041";
-TMP2692[7] = &TMP1344[57];
-TMP1344[57].kind = 1;
-TMP1344[57].offset = offsetof(TY279210, contentlengthheader279070);
-TMP1344[57].typ = (&NTI149);
-TMP1344[57].name = "contentLengthHeader279070";
-TMP2692[8] = &TMP1344[58];
-TMP1344[58].kind = 1;
-TMP1344[58].offset = offsetof(TY279210, length279071);
-TMP1344[58].typ = (&NTI108);
-TMP1344[58].name = "length279071";
-TMP2692[9] = &TMP1344[59];
-TMP1344[59].kind = 1;
-TMP1344[59].offset = offsetof(TY279210, future279042);
-TMP1344[59].typ = (&NTI259768);
-TMP1344[59].name = "future279042";
-TMP2692[10] = &TMP1344[60];
-TMP1344[60].kind = 1;
-TMP1344[60].offset = offsetof(TY279210, buf279082);
-TMP1344[60].typ = (&NTI149);
-TMP1344[60].name = "buf279082";
-TMP2692[11] = &TMP1344[61];
-TMP1344[61].kind = 1;
-TMP1344[61].offset = offsetof(TY279210, future279043);
-TMP1344[61].typ = (&NTI259768);
-TMP1344[61].name = "future279043";
-TMP1344[49].len = 12; TMP1344[49].kind = 2; TMP1344[49].sons = &TMP2692[0];
-NTI279210.node = &TMP1344[49];
-NTI279217.size = sizeof(TY279210*);
-NTI279217.kind = 22;
-NTI279217.base = (&NTI279210);
-NTI279217.marker = TMP2693;
-NTI280429.size = sizeof(TY280429);
-NTI280429.kind = 18;
-NTI280429.base = 0;
-TMP2706[0] = &TMP1344[63];
-TMP1344[63].kind = 1;
-TMP1344[63].offset = offsetof(TY280429, HEX3Astate);
-TMP1344[63].typ = (&NTI267412);
-TMP1344[63].name = ":state";
-TMP2706[1] = &TMP1344[64];
-TMP1344[64].kind = 1;
-TMP1344[64].offset = offsetof(TY280429, client279245);
-TMP1344[64].typ = (&NTI278372);
-TMP1344[64].name = "client279245";
-TMP2706[2] = &TMP1344[65];
-TMP1344[65].kind = 1;
-TMP1344[65].offset = offsetof(TY280429, getbody279246);
-TMP1344[65].typ = (&NTI138);
-TMP1344[65].name = "getBody279246";
-TMP2706[3] = &TMP1344[66];
-TMP1344[66].kind = 1;
-TMP1344[66].offset = offsetof(TY280429, retfuture279239);
-TMP1344[66].typ = (&NTI279251);
-TMP1344[66].name = "retFuture279239";
-TMP2706[4] = &TMP1344[67];
-TMP1344[67].kind = 1;
-TMP1344[67].offset = offsetof(TY280429, nameitervar280216);
-TMP1344[67].typ = (&NTI266613);
-TMP1344[67].name = "nameIterVar280216";
-TMP2706[5] = &TMP1344[68];
-TMP1344[68].kind = 1;
-TMP1344[68].offset = offsetof(TY280429, result279415);
-TMP1344[68].typ = (&NTI277008);
-TMP1344[68].name = "result279415";
-TMP2706[6] = &TMP1344[69];
-TMP1344[69].kind = 1;
-TMP1344[69].offset = offsetof(TY280429, parsedstatus279416);
-TMP1344[69].typ = (&NTI138);
-TMP1344[69].name = "parsedStatus279416";
-TMP2706[7] = &TMP1344[70];
-TMP1344[70].kind = 1;
-TMP1344[70].offset = offsetof(TY280429, linei279417);
-TMP1344[70].typ = (&NTI108);
-TMP1344[70].name = "linei279417";
-TMP2706[8] = &TMP1344[71];
-TMP1344[71].kind = 1;
-TMP1344[71].offset = offsetof(TY280429, fullyread279418);
-TMP1344[71].typ = (&NTI138);
-TMP1344[71].name = "fullyRead279418";
-TMP2706[9] = &TMP1344[72];
-TMP1344[72].kind = 1;
-TMP1344[72].offset = offsetof(TY280429, line279419);
-TMP1344[72].typ = (&NTI149);
-TMP1344[72].name = "line279419";
-TMP2706[10] = &TMP1344[73];
-TMP1344[73].kind = 1;
-TMP1344[73].offset = offsetof(TY280429, future279241);
-TMP1344[73].typ = (&NTI259768);
-TMP1344[73].name = "future279241";
-TMP2706[11] = &TMP1344[74];
-TMP1344[74].kind = 1;
-TMP1344[74].offset = offsetof(TY280429, le279430);
-TMP1344[74].typ = (&NTI108);
-TMP1344[74].name = "le279430";
-TMP2706[12] = &TMP1344[75];
-TMP1344[75].kind = 1;
-TMP1344[75].offset = offsetof(TY280429, name279476);
-TMP1344[75].typ = (&NTI149);
-TMP1344[75].name = "name279476";
-TMP2706[13] = &TMP1344[76];
-TMP1344[76].kind = 1;
-TMP1344[76].offset = offsetof(TY280429, le279478);
-TMP1344[76].typ = (&NTI108);
-TMP1344[76].name = "le279478";
-TMP2706[14] = &TMP1344[77];
-TMP1344[77].kind = 1;
-TMP1344[77].offset = offsetof(TY280429, future279242);
-TMP1344[77].typ = (&NTI259768);
-TMP1344[77].name = "future279242";
-TMP1344[62].len = 15; TMP1344[62].kind = 2; TMP1344[62].sons = &TMP2706[0];
-NTI280429.node = &TMP1344[62];
-NTI280436.size = sizeof(TY280429*);
-NTI280436.kind = 22;
-NTI280436.base = (&NTI280429);
-NTI280436.marker = TMP2707;
-NTI280810.size = sizeof(TY280810);
-NTI280810.kind = 18;
-NTI280810.base = 0;
-TMP2721[0] = &TMP1344[79];
-TMP1344[79].kind = 1;
-TMP1344[79].offset = offsetof(TY280810, HEX3Astate);
-TMP1344[79].typ = (&NTI130825);
-TMP1344[79].name = ":state";
-TMP2721[1] = &TMP1344[80];
-TMP1344[80].kind = 1;
-TMP1344[80].offset = offsetof(TY280810, client280466);
-TMP1344[80].typ = (&NTI278372);
-TMP1344[80].name = "client280466";
-TMP2721[2] = &TMP1344[81];
-TMP1344[81].kind = 1;
-TMP1344[81].offset = offsetof(TY280810, url280467);
-TMP1344[81].typ = (&NTI247012);
-TMP1344[81].name = "url280467";
-TMP2721[3] = &TMP1344[82];
-TMP1344[82].kind = 1;
-TMP1344[82].offset = offsetof(TY280810, retfuture280461);
-TMP1344[82].typ = (&NTI255096);
-TMP1344[82].name = "retFuture280461";
-TMP2721[4] = &TMP1344[83];
-TMP1344[83].kind = 1;
-TMP1344[83].offset = offsetof(TY280810, nameitervar280624);
-TMP1344[83].typ = (&NTI266613);
-TMP1344[83].name = "nameIterVar280624";
-TMP2721[5] = &TMP1344[84];
-TMP1344[84].kind = 1;
-TMP1344[84].offset = offsetof(TY280810, port280486);
-TMP1344[84].typ = (&NTI122);
-TMP1344[84].name = "port280486";
-TMP2721[6] = &TMP1344[85];
-TMP1344[85].kind = 1;
-TMP1344[85].offset = offsetof(TY280810, e280603);
-TMP1344[85].typ = (&NTI278004);
-TMP1344[85].name = "e280603";
-TMP2721[7] = &TMP1344[86];
-TMP1344[86].kind = 1;
-TMP1344[86].offset = offsetof(TY280810, future280463);
-TMP1344[86].typ = (&NTI255096);
-TMP1344[86].name = "future280463";
-TMP1344[78].len = 8; TMP1344[78].kind = 2; TMP1344[78].sons = &TMP2721[0];
-NTI280810.node = &TMP1344[78];
-NTI280817.size = sizeof(TY280810*);
-NTI280817.kind = 22;
-NTI280817.base = (&NTI280810);
-NTI280817.marker = TMP2722;
-NTI281410.size = sizeof(TY281410);
-NTI281410.kind = 18;
-NTI281410.base = 0;
-TMP2728[0] = &TMP1344[88];
-TMP1344[88].kind = 1;
-TMP1344[88].offset = offsetof(TY281410, HEX3Astate);
-TMP1344[88].typ = (&NTI279012);
-TMP1344[88].name = ":state";
-TMP2728[1] = &TMP1344[89];
-TMP1344[89].kind = 1;
-TMP1344[89].offset = offsetof(TY281410, url280844);
-TMP1344[89].typ = (&NTI149);
-TMP1344[89].name = "url280844";
-TMP2728[2] = &TMP1344[90];
-TMP1344[90].kind = 1;
-TMP1344[90].offset = offsetof(TY281410, client280843);
-TMP1344[90].typ = (&NTI278372);
-TMP1344[90].name = "client280843";
-TMP2728[3] = &TMP1344[91];
-TMP1344[91].kind = 1;
-TMP1344[91].offset = offsetof(TY281410, httpmethod280845);
-TMP1344[91].typ = (&NTI149);
-TMP1344[91].name = "httpMethod280845";
-TMP2728[4] = &TMP1344[92];
-TMP1344[92].kind = 1;
-TMP1344[92].offset = offsetof(TY281410, body280846);
-TMP1344[92].typ = (&NTI149);
-TMP1344[92].name = "body280846";
-TMP2728[5] = &TMP1344[93];
-TMP1344[93].kind = 1;
-TMP1344[93].offset = offsetof(TY281410, retfuture280835);
-TMP1344[93].typ = (&NTI279251);
-TMP1344[93].name = "retFuture280835";
-TMP2728[6] = &TMP1344[94];
-TMP1344[94].kind = 1;
-TMP1344[94].offset = offsetof(TY281410, nameitervar281227);
-TMP1344[94].typ = (&NTI266613);
-TMP1344[94].name = "nameIterVar281227";
-TMP2728[7] = &TMP1344[95];
-TMP1344[95].kind = 1;
-TMP1344[95].offset = offsetof(TY281410, result280860);
-TMP1344[95].typ = (&NTI277008);
-TMP1344[95].name = "result280860";
-TMP2728[8] = &TMP1344[96];
-TMP1344[96].kind = 1;
-TMP1344[96].offset = offsetof(TY281410, r280861);
-TMP1344[96].typ = (&NTI247012);
-TMP1344[96].name = "r280861";
-TMP2728[9] = &TMP1344[97];
-TMP1344[97].kind = 1;
-TMP1344[97].offset = offsetof(TY281410, future280837);
-TMP1344[97].typ = (&NTI255096);
-TMP1344[97].name = "future280837";
-TMP2728[10] = &TMP1344[98];
-TMP1344[98].kind = 1;
-TMP1344[98].offset = offsetof(TY281410, headers280869);
-TMP1344[98].typ = (&NTI149);
-TMP1344[98].name = "headers280869";
-TMP2728[11] = &TMP1344[99];
-TMP1344[99].kind = 1;
-TMP1344[99].offset = offsetof(TY281410, future280838);
-TMP1344[99].typ = (&NTI255096);
-TMP1344[99].name = "future280838";
-TMP2728[12] = &TMP1344[100];
-TMP1344[100].kind = 1;
-TMP1344[100].offset = offsetof(TY281410, future280839);
-TMP1344[100].typ = (&NTI255096);
-TMP1344[100].name = "future280839";
-TMP2728[13] = &TMP1344[101];
-TMP1344[101].kind = 1;
-TMP1344[101].offset = offsetof(TY281410, future280840);
-TMP1344[101].typ = (&NTI279251);
-TMP1344[101].name = "future280840";
-TMP1344[87].len = 14; TMP1344[87].kind = 2; TMP1344[87].sons = &TMP2728[0];
-NTI281410.node = &TMP1344[87];
-NTI281417.size = sizeof(TY281410*);
-NTI281417.kind = 22;
-NTI281417.base = (&NTI281410);
-NTI281417.marker = TMP2729;
-NTI281610.size = sizeof(TY281610);
-NTI281610.kind = 18;
-NTI281610.base = 0;
-TMP2737[0] = &TMP1344[103];
-TMP1344[103].kind = 1;
-TMP1344[103].offset = offsetof(TY281610, HEX3Astate);
-TMP1344[103].typ = (&NTI267412);
-TMP1344[103].name = ":state";
-TMP2737[1] = &TMP1344[104];
-TMP1344[104].kind = 1;
-TMP1344[104].offset = offsetof(TY281610, client281469);
-TMP1344[104].typ = (&NTI278372);
-TMP1344[104].name = "client281469";
-TMP2737[2] = &TMP1344[105];
-TMP1344[105].kind = 1;
-TMP1344[105].offset = offsetof(TY281610, url281470);
-TMP1344[105].typ = (&NTI149);
-TMP1344[105].name = "url281470";
-TMP2737[3] = &TMP1344[106];
-TMP1344[106].kind = 1;
-TMP1344[106].offset = offsetof(TY281610, retfuture281463);
-TMP1344[106].typ = (&NTI279251);
-TMP1344[106].name = "retFuture281463";
-TMP2737[4] = &TMP1344[107];
-TMP1344[107].kind = 1;
-TMP1344[107].offset = offsetof(TY281610, nameitervar281533);
-TMP1344[107].typ = (&NTI266613);
-TMP1344[107].name = "nameIterVar281533";
-TMP2737[5] = &TMP1344[108];
-TMP1344[108].kind = 1;
-TMP1344[108].offset = offsetof(TY281610, result281484);
-TMP1344[108].typ = (&NTI277008);
-TMP1344[108].name = "result281484";
-TMP2737[6] = &TMP1344[109];
-TMP1344[109].kind = 1;
-TMP1344[109].offset = offsetof(TY281610, future281465);
-TMP1344[109].typ = (&NTI279251);
-TMP1344[109].name = "future281465";
-TMP2737[7] = &TMP1344[110];
-TMP1344[110].kind = 1;
-TMP1344[110].offset = offsetof(TY281610, lasturl281493);
-TMP1344[110].typ = (&NTI149);
-TMP1344[110].name = "lastURL281493";
-TMP2737[8] = &TMP1344[111];
-TMP1344[111].kind = 1;
-TMP1344[111].offset = offsetof(TY281610, i281504);
-TMP1344[111].typ = (&NTI108);
-TMP1344[111].name = "i281504";
-TMP2737[9] = &TMP1344[112];
-TMP1344[112].kind = 1;
-TMP1344[112].offset = offsetof(TY281610, HEX3Atmp281525);
-TMP1344[112].typ = (&NTI108);
-TMP1344[112].name = ":tmp281525";
-TMP2737[10] = &TMP1344[113];
-TMP1344[113].kind = 1;
-TMP1344[113].offset = offsetof(TY281610, res281528);
-TMP1344[113].typ = (&NTI108);
-TMP1344[113].name = "res281528";
-TMP2737[11] = &TMP1344[114];
-TMP1344[114].kind = 1;
-TMP1344[114].offset = offsetof(TY281610, redirectto281505);
-TMP1344[114].typ = (&NTI149);
-TMP1344[114].name = "redirectTo281505";
-TMP2737[12] = &TMP1344[115];
-TMP1344[115].kind = 1;
-TMP1344[115].offset = offsetof(TY281610, future281466);
-TMP1344[115].typ = (&NTI279251);
-TMP1344[115].name = "future281466";
-TMP1344[102].len = 13; TMP1344[102].kind = 2; TMP1344[102].sons = &TMP2737[0];
-NTI281610.node = &TMP1344[102];
-NTI281617.size = sizeof(TY281610*);
-NTI281617.kind = 22;
-NTI281617.base = (&NTI281610);
-NTI281617.marker = TMP2738;
+TMP1266[19].len = 8; TMP1266[19].kind = 2; TMP1266[19].sons = &TMP2568[0];
+NTI265357.node = &TMP1266[19];
+NTI266373.size = sizeof(AsynchttpclientHEX3Aobjecttype266373);
+NTI266373.kind = 18;
+NTI266373.base = 0;
+TMP2590[0] = &TMP1266[21];
+TMP1266[21].kind = 1;
+TMP1266[21].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, socket);
+TMP1266[21].typ = (&NTI256204);
+TMP1266[21].name = "socket";
+TMP2590[1] = &TMP1266[22];
+TMP1266[22].kind = 1;
+TMP1266[22].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, connected);
+TMP1266[22].typ = (&NTI138);
+TMP1266[22].name = "connected";
+TMP2590[2] = &TMP1266[23];
+TMP1266[23].kind = 1;
+TMP1266[23].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, currenturl);
+TMP1266[23].typ = (&NTI235012);
+TMP1266[23].name = "currentURL";
+TMP2590[3] = &TMP1266[24];
+TMP1266[24].kind = 1;
+TMP1266[24].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, headers);
+TMP1266[24].typ = (&NTI153014);
+TMP1266[24].name = "headers";
+TMP2590[4] = &TMP1266[25];
+TMP1266[25].kind = 1;
+TMP1266[25].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, maxredirects);
+TMP1266[25].typ = (&NTI108);
+TMP1266[25].name = "maxRedirects";
+TMP2590[5] = &TMP1266[26];
+TMP1266[26].kind = 1;
+TMP1266[26].offset = offsetof(AsynchttpclientHEX3Aobjecttype266373, useragent);
+TMP1266[26].typ = (&NTI149);
+TMP1266[26].name = "userAgent";
+TMP1266[20].len = 6; TMP1266[20].kind = 2; TMP1266[20].sons = &TMP2590[0];
+NTI266373.node = &TMP1266[20];
+NTI266372.size = sizeof(AsynchttpclientHEX3Aobjecttype266373*);
+NTI266372.kind = 22;
+NTI266372.base = (&NTI266373);
+NTI266372.marker = TMP2591;
+NTI266810.size = sizeof(TY266810);
+NTI266810.kind = 18;
+NTI266810.base = 0;
+TMP2593[0] = &TMP1266[28];
+TMP1266[28].kind = 1;
+TMP1266[28].offset = offsetof(TY266810, HEX3Astate);
+TMP1266[28].typ = (&NTI257412);
+TMP1266[28].name = ":state";
+TMP2593[1] = &TMP1266[29];
+TMP1266[29].kind = 1;
+TMP1266[29].offset = offsetof(TY266810, size266624);
+TMP1266[29].typ = (&NTI108);
+TMP1266[29].name = "size266624";
+TMP2593[2] = &TMP1266[30];
+TMP1266[30].kind = 1;
+TMP1266[30].offset = offsetof(TY266810, socket266623);
+TMP1266[30].typ = (&NTI256204);
+TMP1266[30].name = "socket266623";
+TMP2593[3] = &TMP1266[31];
+TMP1266[31].kind = 1;
+TMP1266[31].offset = offsetof(TY266810, retfuture266618);
+TMP1266[31].typ = (&NTI247768);
+TMP1266[31].name = "retFuture266618";
+TMP2593[4] = &TMP1266[32];
+TMP1266[32].kind = 1;
+TMP1266[32].offset = offsetof(TY266810, nameitervar266662);
+TMP1266[32].typ = (&NTI254613);
+TMP1266[32].name = "nameIterVar266662";
+TMP2593[5] = &TMP1266[33];
+TMP1266[33].kind = 1;
+TMP1266[33].offset = offsetof(TY266810, result266638);
+TMP1266[33].typ = (&NTI149);
+TMP1266[33].name = "result266638";
+TMP2593[6] = &TMP1266[34];
+TMP1266[34].kind = 1;
+TMP1266[34].offset = offsetof(TY266810, future266620);
+TMP1266[34].typ = (&NTI247768);
+TMP1266[34].name = "future266620";
+TMP2593[7] = &TMP1266[35];
+TMP1266[35].kind = 1;
+TMP1266[35].offset = offsetof(TY266810, data266649);
+TMP1266[35].typ = (&NTI149);
+TMP1266[35].name = "data266649";
+TMP1266[27].len = 8; TMP1266[27].kind = 2; TMP1266[27].sons = &TMP2593[0];
+NTI266810.node = &TMP1266[27];
+NTI266817.size = sizeof(TY266810*);
+NTI266817.kind = 22;
+NTI266817.base = (&NTI266810);
+NTI266817.marker = TMP2594;
+NTI267010.size = sizeof(TY267010);
+NTI267010.kind = 18;
+NTI267010.base = 0;
+TMP2601[0] = &TMP1266[37];
+NTI267012.size = sizeof(NI);
+NTI267012.kind = 20;
+NTI267012.base = (&NTI108);
+NTI267012.flags = 3;
+TMP1266[37].kind = 1;
+TMP1266[37].offset = offsetof(TY267010, HEX3Astate);
+TMP1266[37].typ = (&NTI267012);
+TMP1266[37].name = ":state";
+TMP2601[1] = &TMP1266[38];
+TMP1266[38].kind = 1;
+TMP1266[38].offset = offsetof(TY267010, client266843);
+TMP1266[38].typ = (&NTI266372);
+TMP1266[38].name = "client266843";
+TMP2601[2] = &TMP1266[39];
+TMP1266[39].kind = 1;
+TMP1266[39].offset = offsetof(TY267010, retfuture266835);
+TMP1266[39].typ = (&NTI247768);
+TMP1266[39].name = "retFuture266835";
+TMP2601[3] = &TMP1266[40];
+TMP1266[40].kind = 1;
+TMP1266[40].offset = offsetof(TY267010, nameitervar266972);
+TMP1266[40].typ = (&NTI254613);
+TMP1266[40].name = "nameIterVar266972";
+TMP2601[4] = &TMP1266[41];
+TMP1266[41].kind = 1;
+TMP1266[41].offset = offsetof(TY267010, result266857);
+TMP1266[41].typ = (&NTI149);
+TMP1266[41].name = "result266857";
+TMP2601[5] = &TMP1266[42];
+TMP1266[42].kind = 1;
+TMP1266[42].offset = offsetof(TY267010, chunksize266858);
+TMP1266[42].typ = (&NTI108);
+TMP1266[42].name = "chunkSize266858";
+TMP2601[6] = &TMP1266[43];
+TMP1266[43].kind = 1;
+TMP1266[43].offset = offsetof(TY267010, future266837);
+TMP1266[43].typ = (&NTI247768);
+TMP1266[43].name = "future266837";
+TMP2601[7] = &TMP1266[44];
+TMP1266[44].kind = 1;
+TMP1266[44].offset = offsetof(TY267010, chunksizestr266869);
+TMP1266[44].typ = (&NTI149);
+TMP1266[44].name = "chunkSizeStr266869";
+TMP2601[8] = &TMP1266[45];
+TMP1266[45].kind = 1;
+TMP1266[45].offset = offsetof(TY267010, i266870);
+TMP1266[45].typ = (&NTI108);
+TMP1266[45].name = "i266870";
+TMP2601[9] = &TMP1266[46];
+TMP1266[46].kind = 1;
+TMP1266[46].offset = offsetof(TY267010, future266838);
+TMP1266[46].typ = (&NTI247768);
+TMP1266[46].name = "future266838";
+TMP2601[10] = &TMP1266[47];
+TMP1266[47].kind = 1;
+TMP1266[47].offset = offsetof(TY267010, future266839);
+TMP1266[47].typ = (&NTI247768);
+TMP1266[47].name = "future266839";
+TMP2601[11] = &TMP1266[48];
+TMP1266[48].kind = 1;
+TMP1266[48].offset = offsetof(TY267010, future266840);
+TMP1266[48].typ = (&NTI247768);
+TMP1266[48].name = "future266840";
+TMP1266[36].len = 12; TMP1266[36].kind = 2; TMP1266[36].sons = &TMP2601[0];
+NTI267010.node = &TMP1266[36];
+NTI267017.size = sizeof(TY267010*);
+NTI267017.kind = 22;
+NTI267017.base = (&NTI267010);
+NTI267017.marker = TMP2602;
+NTI267210.size = sizeof(TY267210);
+NTI267210.kind = 18;
+NTI267210.base = 0;
+TMP2614[0] = &TMP1266[50];
+TMP1266[50].kind = 1;
+TMP1266[50].offset = offsetof(TY267210, HEX3Astate);
+TMP1266[50].typ = (&NTI258612);
+TMP1266[50].name = ":state";
+TMP2614[1] = &TMP1266[51];
+TMP1266[51].kind = 1;
+TMP1266[51].offset = offsetof(TY267210, headers267047);
+TMP1266[51].typ = (&NTI153014);
+TMP1266[51].name = "headers267047";
+TMP2614[2] = &TMP1266[52];
+TMP1266[52].kind = 1;
+TMP1266[52].offset = offsetof(TY267210, client267046);
+TMP1266[52].typ = (&NTI266372);
+TMP1266[52].name = "client267046";
+TMP2614[3] = &TMP1266[53];
+TMP1266[53].kind = 1;
+TMP1266[53].offset = offsetof(TY267210, retfuture267039);
+TMP1266[53].typ = (&NTI247768);
+TMP1266[53].name = "retFuture267039";
+TMP2614[4] = &TMP1266[54];
+TMP1266[54].kind = 1;
+TMP1266[54].offset = offsetof(TY267210, nameitervar267106);
+TMP1266[54].typ = (&NTI254613);
+TMP1266[54].name = "nameIterVar267106";
+TMP2614[5] = &TMP1266[55];
+TMP1266[55].kind = 1;
+TMP1266[55].offset = offsetof(TY267210, result267061);
+TMP1266[55].typ = (&NTI149);
+TMP1266[55].name = "result267061";
+TMP2614[6] = &TMP1266[56];
+TMP1266[56].kind = 1;
+TMP1266[56].offset = offsetof(TY267210, future267041);
+TMP1266[56].typ = (&NTI247768);
+TMP1266[56].name = "future267041";
+TMP2614[7] = &TMP1266[57];
+TMP1266[57].kind = 1;
+TMP1266[57].offset = offsetof(TY267210, contentlengthheader267070);
+TMP1266[57].typ = (&NTI149);
+TMP1266[57].name = "contentLengthHeader267070";
+TMP2614[8] = &TMP1266[58];
+TMP1266[58].kind = 1;
+TMP1266[58].offset = offsetof(TY267210, length267071);
+TMP1266[58].typ = (&NTI108);
+TMP1266[58].name = "length267071";
+TMP2614[9] = &TMP1266[59];
+TMP1266[59].kind = 1;
+TMP1266[59].offset = offsetof(TY267210, future267042);
+TMP1266[59].typ = (&NTI247768);
+TMP1266[59].name = "future267042";
+TMP2614[10] = &TMP1266[60];
+TMP1266[60].kind = 1;
+TMP1266[60].offset = offsetof(TY267210, buf267082);
+TMP1266[60].typ = (&NTI149);
+TMP1266[60].name = "buf267082";
+TMP2614[11] = &TMP1266[61];
+TMP1266[61].kind = 1;
+TMP1266[61].offset = offsetof(TY267210, future267043);
+TMP1266[61].typ = (&NTI247768);
+TMP1266[61].name = "future267043";
+TMP1266[49].len = 12; TMP1266[49].kind = 2; TMP1266[49].sons = &TMP2614[0];
+NTI267210.node = &TMP1266[49];
+NTI267217.size = sizeof(TY267210*);
+NTI267217.kind = 22;
+NTI267217.base = (&NTI267210);
+NTI267217.marker = TMP2615;
+NTI268429.size = sizeof(TY268429);
+NTI268429.kind = 18;
+NTI268429.base = 0;
+TMP2628[0] = &TMP1266[63];
+TMP1266[63].kind = 1;
+TMP1266[63].offset = offsetof(TY268429, HEX3Astate);
+TMP1266[63].typ = (&NTI255412);
+TMP1266[63].name = ":state";
+TMP2628[1] = &TMP1266[64];
+TMP1266[64].kind = 1;
+TMP1266[64].offset = offsetof(TY268429, client267245);
+TMP1266[64].typ = (&NTI266372);
+TMP1266[64].name = "client267245";
+TMP2628[2] = &TMP1266[65];
+TMP1266[65].kind = 1;
+TMP1266[65].offset = offsetof(TY268429, getbody267246);
+TMP1266[65].typ = (&NTI138);
+TMP1266[65].name = "getBody267246";
+TMP2628[3] = &TMP1266[66];
+TMP1266[66].kind = 1;
+TMP1266[66].offset = offsetof(TY268429, retfuture267239);
+TMP1266[66].typ = (&NTI267251);
+TMP1266[66].name = "retFuture267239";
+TMP2628[4] = &TMP1266[67];
+TMP1266[67].kind = 1;
+TMP1266[67].offset = offsetof(TY268429, nameitervar268216);
+TMP1266[67].typ = (&NTI254613);
+TMP1266[67].name = "nameIterVar268216";
+TMP2628[5] = &TMP1266[68];
+TMP1266[68].kind = 1;
+TMP1266[68].offset = offsetof(TY268429, result267415);
+TMP1266[68].typ = (&NTI265008);
+TMP1266[68].name = "result267415";
+TMP2628[6] = &TMP1266[69];
+TMP1266[69].kind = 1;
+TMP1266[69].offset = offsetof(TY268429, parsedstatus267416);
+TMP1266[69].typ = (&NTI138);
+TMP1266[69].name = "parsedStatus267416";
+TMP2628[7] = &TMP1266[70];
+TMP1266[70].kind = 1;
+TMP1266[70].offset = offsetof(TY268429, linei267417);
+TMP1266[70].typ = (&NTI108);
+TMP1266[70].name = "linei267417";
+TMP2628[8] = &TMP1266[71];
+TMP1266[71].kind = 1;
+TMP1266[71].offset = offsetof(TY268429, fullyread267418);
+TMP1266[71].typ = (&NTI138);
+TMP1266[71].name = "fullyRead267418";
+TMP2628[9] = &TMP1266[72];
+TMP1266[72].kind = 1;
+TMP1266[72].offset = offsetof(TY268429, line267419);
+TMP1266[72].typ = (&NTI149);
+TMP1266[72].name = "line267419";
+TMP2628[10] = &TMP1266[73];
+TMP1266[73].kind = 1;
+TMP1266[73].offset = offsetof(TY268429, future267241);
+TMP1266[73].typ = (&NTI247768);
+TMP1266[73].name = "future267241";
+TMP2628[11] = &TMP1266[74];
+TMP1266[74].kind = 1;
+TMP1266[74].offset = offsetof(TY268429, le267430);
+TMP1266[74].typ = (&NTI108);
+TMP1266[74].name = "le267430";
+TMP2628[12] = &TMP1266[75];
+TMP1266[75].kind = 1;
+TMP1266[75].offset = offsetof(TY268429, name267476);
+TMP1266[75].typ = (&NTI149);
+TMP1266[75].name = "name267476";
+TMP2628[13] = &TMP1266[76];
+TMP1266[76].kind = 1;
+TMP1266[76].offset = offsetof(TY268429, le267478);
+TMP1266[76].typ = (&NTI108);
+TMP1266[76].name = "le267478";
+TMP2628[14] = &TMP1266[77];
+TMP1266[77].kind = 1;
+TMP1266[77].offset = offsetof(TY268429, future267242);
+TMP1266[77].typ = (&NTI247768);
+TMP1266[77].name = "future267242";
+TMP1266[62].len = 15; TMP1266[62].kind = 2; TMP1266[62].sons = &TMP2628[0];
+NTI268429.node = &TMP1266[62];
+NTI268436.size = sizeof(TY268429*);
+NTI268436.kind = 22;
+NTI268436.base = (&NTI268429);
+NTI268436.marker = TMP2629;
+NTI268810.size = sizeof(TY268810);
+NTI268810.kind = 18;
+NTI268810.base = 0;
+TMP2643[0] = &TMP1266[79];
+TMP1266[79].kind = 1;
+TMP1266[79].offset = offsetof(TY268810, HEX3Astate);
+TMP1266[79].typ = (&NTI257412);
+TMP1266[79].name = ":state";
+TMP2643[1] = &TMP1266[80];
+TMP1266[80].kind = 1;
+TMP1266[80].offset = offsetof(TY268810, client268466);
+TMP1266[80].typ = (&NTI266372);
+TMP1266[80].name = "client268466";
+TMP2643[2] = &TMP1266[81];
+TMP1266[81].kind = 1;
+TMP1266[81].offset = offsetof(TY268810, url268467);
+TMP1266[81].typ = (&NTI235012);
+TMP1266[81].name = "url268467";
+TMP2643[3] = &TMP1266[82];
+TMP1266[82].kind = 1;
+TMP1266[82].offset = offsetof(TY268810, retfuture268461);
+TMP1266[82].typ = (&NTI243096);
+TMP1266[82].name = "retFuture268461";
+TMP2643[4] = &TMP1266[83];
+TMP1266[83].kind = 1;
+TMP1266[83].offset = offsetof(TY268810, nameitervar268624);
+TMP1266[83].typ = (&NTI254613);
+TMP1266[83].name = "nameIterVar268624";
+TMP2643[5] = &TMP1266[84];
+TMP1266[84].kind = 1;
+TMP1266[84].offset = offsetof(TY268810, port268486);
+TMP1266[84].typ = (&NTI122);
+TMP1266[84].name = "port268486";
+TMP2643[6] = &TMP1266[85];
+TMP1266[85].kind = 1;
+TMP1266[85].offset = offsetof(TY268810, e268603);
+TMP1266[85].typ = (&NTI266004);
+TMP1266[85].name = "e268603";
+TMP2643[7] = &TMP1266[86];
+TMP1266[86].kind = 1;
+TMP1266[86].offset = offsetof(TY268810, future268463);
+TMP1266[86].typ = (&NTI243096);
+TMP1266[86].name = "future268463";
+TMP1266[78].len = 8; TMP1266[78].kind = 2; TMP1266[78].sons = &TMP2643[0];
+NTI268810.node = &TMP1266[78];
+NTI268817.size = sizeof(TY268810*);
+NTI268817.kind = 22;
+NTI268817.base = (&NTI268810);
+NTI268817.marker = TMP2644;
+NTI269410.size = sizeof(TY269410);
+NTI269410.kind = 18;
+NTI269410.base = 0;
+TMP2650[0] = &TMP1266[88];
+TMP1266[88].kind = 1;
+TMP1266[88].offset = offsetof(TY269410, HEX3Astate);
+TMP1266[88].typ = (&NTI267012);
+TMP1266[88].name = ":state";
+TMP2650[1] = &TMP1266[89];
+TMP1266[89].kind = 1;
+TMP1266[89].offset = offsetof(TY269410, url268844);
+TMP1266[89].typ = (&NTI149);
+TMP1266[89].name = "url268844";
+TMP2650[2] = &TMP1266[90];
+TMP1266[90].kind = 1;
+TMP1266[90].offset = offsetof(TY269410, client268843);
+TMP1266[90].typ = (&NTI266372);
+TMP1266[90].name = "client268843";
+TMP2650[3] = &TMP1266[91];
+TMP1266[91].kind = 1;
+TMP1266[91].offset = offsetof(TY269410, httpmethod268845);
+TMP1266[91].typ = (&NTI149);
+TMP1266[91].name = "httpMethod268845";
+TMP2650[4] = &TMP1266[92];
+TMP1266[92].kind = 1;
+TMP1266[92].offset = offsetof(TY269410, body268846);
+TMP1266[92].typ = (&NTI149);
+TMP1266[92].name = "body268846";
+TMP2650[5] = &TMP1266[93];
+TMP1266[93].kind = 1;
+TMP1266[93].offset = offsetof(TY269410, retfuture268835);
+TMP1266[93].typ = (&NTI267251);
+TMP1266[93].name = "retFuture268835";
+TMP2650[6] = &TMP1266[94];
+TMP1266[94].kind = 1;
+TMP1266[94].offset = offsetof(TY269410, nameitervar269227);
+TMP1266[94].typ = (&NTI254613);
+TMP1266[94].name = "nameIterVar269227";
+TMP2650[7] = &TMP1266[95];
+TMP1266[95].kind = 1;
+TMP1266[95].offset = offsetof(TY269410, result268860);
+TMP1266[95].typ = (&NTI265008);
+TMP1266[95].name = "result268860";
+TMP2650[8] = &TMP1266[96];
+TMP1266[96].kind = 1;
+TMP1266[96].offset = offsetof(TY269410, r268861);
+TMP1266[96].typ = (&NTI235012);
+TMP1266[96].name = "r268861";
+TMP2650[9] = &TMP1266[97];
+TMP1266[97].kind = 1;
+TMP1266[97].offset = offsetof(TY269410, future268837);
+TMP1266[97].typ = (&NTI243096);
+TMP1266[97].name = "future268837";
+TMP2650[10] = &TMP1266[98];
+TMP1266[98].kind = 1;
+TMP1266[98].offset = offsetof(TY269410, headers268869);
+TMP1266[98].typ = (&NTI149);
+TMP1266[98].name = "headers268869";
+TMP2650[11] = &TMP1266[99];
+TMP1266[99].kind = 1;
+TMP1266[99].offset = offsetof(TY269410, future268838);
+TMP1266[99].typ = (&NTI243096);
+TMP1266[99].name = "future268838";
+TMP2650[12] = &TMP1266[100];
+TMP1266[100].kind = 1;
+TMP1266[100].offset = offsetof(TY269410, future268839);
+TMP1266[100].typ = (&NTI243096);
+TMP1266[100].name = "future268839";
+TMP2650[13] = &TMP1266[101];
+TMP1266[101].kind = 1;
+TMP1266[101].offset = offsetof(TY269410, future268840);
+TMP1266[101].typ = (&NTI267251);
+TMP1266[101].name = "future268840";
+TMP1266[87].len = 14; TMP1266[87].kind = 2; TMP1266[87].sons = &TMP2650[0];
+NTI269410.node = &TMP1266[87];
+NTI269417.size = sizeof(TY269410*);
+NTI269417.kind = 22;
+NTI269417.base = (&NTI269410);
+NTI269417.marker = TMP2651;
+NTI269610.size = sizeof(TY269610);
+NTI269610.kind = 18;
+NTI269610.base = 0;
+TMP2659[0] = &TMP1266[103];
+TMP1266[103].kind = 1;
+TMP1266[103].offset = offsetof(TY269610, HEX3Astate);
+TMP1266[103].typ = (&NTI255412);
+TMP1266[103].name = ":state";
+TMP2659[1] = &TMP1266[104];
+TMP1266[104].kind = 1;
+TMP1266[104].offset = offsetof(TY269610, client269469);
+TMP1266[104].typ = (&NTI266372);
+TMP1266[104].name = "client269469";
+TMP2659[2] = &TMP1266[105];
+TMP1266[105].kind = 1;
+TMP1266[105].offset = offsetof(TY269610, url269470);
+TMP1266[105].typ = (&NTI149);
+TMP1266[105].name = "url269470";
+TMP2659[3] = &TMP1266[106];
+TMP1266[106].kind = 1;
+TMP1266[106].offset = offsetof(TY269610, retfuture269463);
+TMP1266[106].typ = (&NTI267251);
+TMP1266[106].name = "retFuture269463";
+TMP2659[4] = &TMP1266[107];
+TMP1266[107].kind = 1;
+TMP1266[107].offset = offsetof(TY269610, nameitervar269533);
+TMP1266[107].typ = (&NTI254613);
+TMP1266[107].name = "nameIterVar269533";
+TMP2659[5] = &TMP1266[108];
+TMP1266[108].kind = 1;
+TMP1266[108].offset = offsetof(TY269610, result269484);
+TMP1266[108].typ = (&NTI265008);
+TMP1266[108].name = "result269484";
+TMP2659[6] = &TMP1266[109];
+TMP1266[109].kind = 1;
+TMP1266[109].offset = offsetof(TY269610, future269465);
+TMP1266[109].typ = (&NTI267251);
+TMP1266[109].name = "future269465";
+TMP2659[7] = &TMP1266[110];
+TMP1266[110].kind = 1;
+TMP1266[110].offset = offsetof(TY269610, lasturl269493);
+TMP1266[110].typ = (&NTI149);
+TMP1266[110].name = "lastURL269493";
+TMP2659[8] = &TMP1266[111];
+TMP1266[111].kind = 1;
+TMP1266[111].offset = offsetof(TY269610, i269504);
+TMP1266[111].typ = (&NTI108);
+TMP1266[111].name = "i269504";
+TMP2659[9] = &TMP1266[112];
+TMP1266[112].kind = 1;
+TMP1266[112].offset = offsetof(TY269610, HEX3Atmp269525);
+TMP1266[112].typ = (&NTI108);
+TMP1266[112].name = ":tmp269525";
+TMP2659[10] = &TMP1266[113];
+TMP1266[113].kind = 1;
+TMP1266[113].offset = offsetof(TY269610, res269528);
+TMP1266[113].typ = (&NTI108);
+TMP1266[113].name = "res269528";
+TMP2659[11] = &TMP1266[114];
+TMP1266[114].kind = 1;
+TMP1266[114].offset = offsetof(TY269610, redirectto269505);
+TMP1266[114].typ = (&NTI149);
+TMP1266[114].name = "redirectTo269505";
+TMP2659[12] = &TMP1266[115];
+TMP1266[115].kind = 1;
+TMP1266[115].offset = offsetof(TY269610, future269466);
+TMP1266[115].typ = (&NTI267251);
+TMP1266[115].name = "future269466";
+TMP1266[102].len = 13; TMP1266[102].kind = 2; TMP1266[102].sons = &TMP2659[0];
+NTI269610.node = &TMP1266[102];
+NTI269617.size = sizeof(TY269610*);
+NTI269617.kind = 22;
+NTI269617.base = (&NTI269610);
+NTI269617.marker = TMP2660;
 }
 

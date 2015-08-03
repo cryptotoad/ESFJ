@@ -322,7 +322,7 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, delete_282270)(TY13606** s, NI first, NI last) {
+N_NIMCALL(void, delete_282273)(TY13606** s, NI first, NI last) {
 	NI i;
 	NI j;
 	NI TMP2745;

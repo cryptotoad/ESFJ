@@ -12,10 +12,10 @@
 #include <time.h>
 
 #include <stdlib.h>
-typedef struct Oid254005 Oid254005;
+typedef struct Oid242005 Oid242005;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct NimStringDesc NimStringDesc;
-struct  Oid254005  {
+struct  Oid242005  {
 NI32 time;
 NI32 fuzz;
 NI32 count;
@@ -28,31 +28,31 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NI, hexbyte_254016)(NIM_CHAR hex);
+N_NIMCALL(NI, hexbyte_242016)(NIM_CHAR hex);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(Oid254005, parseoid_254081)(NCSTRING str);
+N_NIMCALL(Oid242005, parseoid_242081)(NCSTRING str);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(void, oidtostring_254111)(Oid254005 oid, NCSTRING str_254114);
+N_NIMCALL(void, oidtostring_242111)(Oid242005 oid, NCSTRING str_242114);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(NimStringDesc*, HEX24_254155)(Oid254005 oid);
+N_NIMCALL(NimStringDesc*, HEX24_242155)(Oid242005 oid);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
-N_NIMCALL(Oid254005, genoid_254172)(void);
+N_NIMCALL(Oid242005, genoid_242172)(void);
 static N_INLINE(NI, atomicinc_14401)(NI* memloc, NI x);
-static N_INLINE(void, bigendian32_253094)(void* outp, void* inp);
-N_NIMCALL(void, swapendian32_253029)(void* outp, void* inp);
-N_NIMCALL(time_t, generatedtime_254206)(Oid254005 oid);
-STRING_LITERAL(TMP2299, "0123456789abcdef", 16);
+static N_INLINE(void, bigendian32_241094)(void* outp, void* inp);
+N_NIMCALL(void, swapendian32_241029)(void* outp, void* inp);
+N_NIMCALL(time_t, generatedtime_242206)(Oid242005 oid);
+STRING_LITERAL(TMP2221, "0123456789abcdef", 16);
 extern TFrame* frameptr_17042;
-NI incr_254165;
-NI32 fuzz_254166;
+NI incr_242165;
+NI32 fuzz_242166;
 
 static N_INLINE(NI, subInt)(NI a, NI b) {
 	NI result;
@@ -121,7 +121,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI, hexbyte_254016)(NIM_CHAR hex) {
+N_NIMCALL(NI, hexbyte_242016)(NIM_CHAR hex) {
 	NI result;
 	nimfr("hexbyte", "oids.nim")
 	result = 0;
@@ -129,30 +129,30 @@ N_NIMCALL(NI, hexbyte_254016)(NIM_CHAR hex) {
 	switch (((NU8)(hex))) {
 	case 48 ... 57:
 	{
-		NI TMP2289;
+		NI TMP2211;
 		nimln(30, "oids.nim");
-		TMP2289 = subInt(((NI) (((NU8)(hex)))), ((NI) 48));
-		result = ((NI) ((NI)(TMP2289)));
+		TMP2211 = subInt(((NI) (((NU8)(hex)))), ((NI) 48));
+		result = ((NI) ((NI)(TMP2211)));
 	}
 	break;
 	case 97 ... 102:
 	{
-		NI TMP2290;
-		NI TMP2291;
+		NI TMP2212;
+		NI TMP2213;
 		nimln(31, "oids.nim");
-		TMP2290 = subInt(((NI) (((NU8)(hex)))), ((NI) 97));
-		TMP2291 = addInt(((NI) ((NI)(TMP2290))), ((NI) 10));
-		result = ((NI) ((NI)(TMP2291)));
+		TMP2212 = subInt(((NI) (((NU8)(hex)))), ((NI) 97));
+		TMP2213 = addInt(((NI) ((NI)(TMP2212))), ((NI) 10));
+		result = ((NI) ((NI)(TMP2213)));
 	}
 	break;
 	case 65 ... 70:
 	{
-		NI TMP2292;
-		NI TMP2293;
+		NI TMP2214;
+		NI TMP2215;
 		nimln(32, "oids.nim");
-		TMP2292 = subInt(((NI) (((NU8)(hex)))), ((NI) 65));
-		TMP2293 = addInt(((NI) ((NI)(TMP2292))), ((NI) 10));
-		result = ((NI) ((NI)(TMP2293)));
+		TMP2214 = subInt(((NI) (((NU8)(hex)))), ((NI) 65));
+		TMP2215 = addInt(((NI) ((NI)(TMP2214))), ((NI) 10));
+		result = ((NI) ((NI)(TMP2215)));
 	}
 	break;
 	default:
@@ -188,8 +188,8 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(Oid254005, parseoid_254081)(NCSTRING str) {
-	Oid254005 result;
+N_NIMCALL(Oid242005, parseoid_242081)(NCSTRING str) {
+	Oid242005 result;
 	NCSTRING bytes;
 	NI i;
 	nimfr("parseOid", "oids.nim")
@@ -201,39 +201,39 @@ N_NIMCALL(Oid254005, parseoid_254081)(NCSTRING str) {
 	{
 		nimln(39, "oids.nim");
 		while (1) {
-			NI TMP2294;
+			NI TMP2216;
 			NI LOC3;
-			NI TMP2295;
-			NI TMP2296;
+			NI TMP2217;
+			NI TMP2218;
 			NI LOC4;
-			NI TMP2297;
+			NI TMP2219;
 			if (!(i < ((NI) 12))) goto LA2;
 			nimln(40, "oids.nim");
-			TMP2294 = mulInt(((NI) 2), i);
+			TMP2216 = mulInt(((NI) 2), i);
 			LOC3 = 0;
-			LOC3 = hexbyte_254016(str[(NI)(TMP2294)]);
-			TMP2295 = mulInt(((NI) 2), i);
-			TMP2296 = addInt((NI)(TMP2295), ((NI) 1));
+			LOC3 = hexbyte_242016(str[(NI)(TMP2216)]);
+			TMP2217 = mulInt(((NI) 2), i);
+			TMP2218 = addInt((NI)(TMP2217), ((NI) 1));
 			LOC4 = 0;
-			LOC4 = hexbyte_254016(str[(NI)(TMP2296)]);
+			LOC4 = hexbyte_242016(str[(NI)(TMP2218)]);
 			bytes[i] = ((NIM_CHAR) (((NI)chckRange((NI)((NI)((NU64)(LOC3) << (NU64)(((NI) 4))) | LOC4), ((NI) 0), ((NI) 255)))));
 			nimln(41, "oids.nim");
-			TMP2297 = addInt(i, ((NI) 1));
-			i = (NI)(TMP2297);
+			TMP2219 = addInt(i, ((NI) 1));
+			i = (NI)(TMP2219);
 		} LA2: ;
 	}
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, oidtostring_254111)(Oid254005 oid, NCSTRING str_254114) {
+N_NIMCALL(void, oidtostring_242111)(Oid242005 oid, NCSTRING str_242114) {
 	NCSTRING str;
-	Oid254005 o;
+	Oid242005 o;
 	NCSTRING bytes;
 	NI i;
 	nimfr("oidToString", "oids.nim")
 	nimln(46, "oids.nim");
-	str = str_254114;
+	str = str_242114;
 	nimln(47, "oids.nim");
 	o = oid;
 	nimln(48, "oids.nim");
@@ -244,25 +244,25 @@ N_NIMCALL(void, oidtostring_254111)(Oid254005 oid, NCSTRING str_254114) {
 		nimln(50, "oids.nim");
 		while (1) {
 			NI b;
-			NI TMP2298;
-			NI TMP2300;
-			NI TMP2301;
-			NI TMP2302;
+			NI TMP2220;
+			NI TMP2222;
+			NI TMP2223;
+			NI TMP2224;
 			if (!(i < ((NI) 12))) goto LA2;
 			nimln(51, "oids.nim");
 			b = ((NU8)(bytes[i]));
 			nimln(52, "oids.nim");
-			TMP2298 = mulInt(((NI) 2), i);
-			if ((NU)((NI)((NU64)((NI)(((NI) (b)) & ((NI) 240))) >> (NU64)(((NI) 4)))) > (NU)(((NimStringDesc*) &TMP2299)->Sup.len)) raiseIndexError();
-			str[(NI)(TMP2298)] = ((NimStringDesc*) &TMP2299)->data[(NI)((NU64)((NI)(((NI) (b)) & ((NI) 240))) >> (NU64)(((NI) 4)))];
+			TMP2220 = mulInt(((NI) 2), i);
+			if ((NU)((NI)((NU64)((NI)(((NI) (b)) & ((NI) 240))) >> (NU64)(((NI) 4)))) > (NU)(((NimStringDesc*) &TMP2221)->Sup.len)) raiseIndexError();
+			str[(NI)(TMP2220)] = ((NimStringDesc*) &TMP2221)->data[(NI)((NU64)((NI)(((NI) (b)) & ((NI) 240))) >> (NU64)(((NI) 4)))];
 			nimln(53, "oids.nim");
-			TMP2300 = mulInt(((NI) 2), i);
-			TMP2301 = addInt((NI)(TMP2300), ((NI) 1));
-			if ((NU)((NI)(((NI) (b)) & ((NI) 15))) > (NU)(((NimStringDesc*) &TMP2299)->Sup.len)) raiseIndexError();
-			str[(NI)(TMP2301)] = ((NimStringDesc*) &TMP2299)->data[(NI)(((NI) (b)) & ((NI) 15))];
+			TMP2222 = mulInt(((NI) 2), i);
+			TMP2223 = addInt((NI)(TMP2222), ((NI) 1));
+			if ((NU)((NI)(((NI) (b)) & ((NI) 15))) > (NU)(((NimStringDesc*) &TMP2221)->Sup.len)) raiseIndexError();
+			str[(NI)(TMP2223)] = ((NimStringDesc*) &TMP2221)->data[(NI)(((NI) (b)) & ((NI) 15))];
 			nimln(54, "oids.nim");
-			TMP2302 = addInt(i, ((NI) 1));
-			i = (NI)(TMP2302);
+			TMP2224 = addInt(i, ((NI) 1));
+			i = (NI)(TMP2224);
 		} LA2: ;
 	}
 	nimln(55, "oids.nim");
@@ -270,14 +270,14 @@ N_NIMCALL(void, oidtostring_254111)(Oid254005 oid, NCSTRING str_254114) {
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_254155)(Oid254005 oid) {
+N_NIMCALL(NimStringDesc*, HEX24_242155)(Oid242005 oid) {
 	NimStringDesc* result;
 	nimfr("$", "oids.nim")
 	result = 0;
 	nimln(58, "oids.nim");
 	result = mnewString(((NI) 24));
 	nimln(59, "oids.nim");
-	oidtostring_254111(oid, result->data);
+	oidtostring_242111(oid, result->data);
 	popFrame();
 	return result;
 }
@@ -290,15 +290,15 @@ static N_INLINE(NI, atomicinc_14401)(NI* memloc, NI x) {
 	return result;
 }
 
-static N_INLINE(void, bigendian32_253094)(void* outp, void* inp) {
+static N_INLINE(void, bigendian32_241094)(void* outp, void* inp) {
 	nimfr("bigEndian32", "endians.nim")
 	nimln(58, "endians.nim");
-	swapendian32_253029(outp, inp);
+	swapendian32_241029(outp, inp);
 	popFrame();
 }
 
-N_NIMCALL(Oid254005, genoid_254172)(void) {
-	Oid254005 result;
+N_NIMCALL(Oid242005, genoid_242172)(void) {
+	Oid242005 result;
 	int t;
 	NI32 i;
 	NI LOC1;
@@ -307,30 +307,30 @@ N_NIMCALL(Oid254005, genoid_254172)(void) {
 	nimln(71, "oids.nim");
 	t = time(NIM_NIL);
 	nimln(73, "oids.nim");
-	i = ((NI32)chckRange(incr_254165, ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
+	i = ((NI32)chckRange(incr_242165, ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
 	nimln(74, "oids.nim");
 	LOC1 = 0;
-	LOC1 = atomicinc_14401((&incr_254165), ((NI) 1));
+	LOC1 = atomicinc_14401((&incr_242165), ((NI) 1));
 	nimln(76, "oids.nim");
 	{
-		if (!(fuzz_254166 == ((NI32) 0))) goto LA4;
+		if (!(fuzz_242166 == ((NI32) 0))) goto LA4;
 		nimln(78, "oids.nim");
 		srand(t);
 		nimln(79, "oids.nim");
-		fuzz_254166 = rand();
+		fuzz_242166 = rand();
 	}
 	LA4: ;
 	nimln(80, "oids.nim");
-	bigendian32_253094(((void*) ((&result.time))), ((void*) ((&t))));
+	bigendian32_241094(((void*) ((&result.time))), ((void*) ((&t))));
 	nimln(81, "oids.nim");
-	result.fuzz = fuzz_254166;
+	result.fuzz = fuzz_242166;
 	nimln(82, "oids.nim");
-	bigendian32_253094(((void*) ((&result.count))), ((void*) ((&i))));
+	bigendian32_241094(((void*) ((&result.count))), ((void*) ((&i))));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(time_t, generatedtime_254206)(Oid254005 oid) {
+N_NIMCALL(time_t, generatedtime_242206)(Oid242005 oid) {
 	time_t result;
 	NI32 tmp;
 	NI32 dummy;
@@ -340,7 +340,7 @@ N_NIMCALL(time_t, generatedtime_254206)(Oid254005 oid) {
 	nimln(87, "oids.nim");
 	dummy = oid.time;
 	nimln(88, "oids.nim");
-	bigendian32_253094(((void*) ((&tmp))), ((void*) ((&dummy))));
+	bigendian32_241094(((void*) ((&tmp))), ((void*) ((&dummy))));
 	nimln(89, "oids.nim");
 	result = tmp;
 	popFrame();

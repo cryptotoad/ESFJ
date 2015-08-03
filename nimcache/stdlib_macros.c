@@ -10,7 +10,7 @@ typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef NU8 TY111282[20];
+typedef NU8 TY183282[20];
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -39,45 +39,45 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(NimStringDesc*, HEX24_112507)(TY111282 x);
-N_NIMCALL(NimStringDesc*, collectiontostring_112515)(TY111282 x, NimStringDesc* b, NimStringDesc* e);
-N_NIMCALL(NI, cmpignorestyle_114418)(NCSTRING a, NCSTRING b);
+N_NIMCALL(NimStringDesc*, HEX24_184507)(TY183282 x);
+N_NIMCALL(NimStringDesc*, collectiontostring_184515)(TY183282 x, NimStringDesc* b, NimStringDesc* e);
+N_NIMCALL(NI, cmpignorestyle_186418)(NCSTRING a, NCSTRING b);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NIM_CHAR, tolower_114423)(NIM_CHAR c);
+static N_INLINE(NIM_CHAR, tolower_186423)(NIM_CHAR c);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(NIM_BOOL, eqident_114551)(NimStringDesc* a, NimStringDesc* b);
-NIM_CONST TY111282 nnkliterals_111281 = {
+N_NIMCALL(NIM_BOOL, eqident_186551)(NimStringDesc* a, NimStringDesc* b);
+NIM_CONST TY183282 nnkliterals_183281 = {
 0xE0, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY111282 nnkcallkinds_111283 = {
+NIM_CONST TY183282 nnkcallkinds_183283 = {
 0x00, 0x00, 0x00, 0xFC, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY111282 Routinenodes_112482 = {
+NIM_CONST TY183282 Routinenodes_184482 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x00,
 0x00, 0x80, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY111282 Atomicnodes_112484 = {
+NIM_CONST TY183282 Atomicnodes_184484 = {
 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY111282 Callnodes_112486 = {
+NIM_CONST TY183282 Callnodes_184486 = {
 0x00, 0x00, 0x00, 0xFC, 0x01, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-TNimType NTI111012; /* NimNodeKind */
+TNimType NTI183012; /* NimNodeKind */
 extern TFrame* frameptr_17042;
 
 static N_INLINE(NI, addInt)(NI a, NI b) {
@@ -151,16 +151,16 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NIM_CHAR, tolower_114423)(NIM_CHAR c) {
+static N_INLINE(NIM_CHAR, tolower_186423)(NIM_CHAR c) {
 	NIM_CHAR result;
 	nimfr("toLower", "macros.nim")
 	result = 0;
 	nimln(791, "macros.nim");
 	{
-		NI TMP471;
+		NI TMP757;
 		if (!(((NU8)(c)) >= ((NU8)(65)) && ((NU8)(c)) <= ((NU8)(90)))) goto LA3;
-		TMP471 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
-		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP471), ((NI) 0), ((NI) 255)))));
+		TMP757 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
+		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP757), ((NI) 0), ((NI) 255)))));
 	}
 	goto LA1;
 	LA3: ;
@@ -193,7 +193,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, cmpignorestyle_114418)(NCSTRING a, NCSTRING b) {
+N_NIMCALL(NI, cmpignorestyle_186418)(NCSTRING a, NCSTRING b) {
 	NI result;
 	NI i;
 	NI j;
@@ -208,34 +208,34 @@ N_NIMCALL(NI, cmpignorestyle_114418)(NCSTRING a, NCSTRING b) {
 		while (1) {
 			NIM_CHAR aa;
 			NIM_CHAR bb;
-			NI TMP472;
-			NI TMP473;
-			NI TMP474;
+			NI TMP758;
+			NI TMP759;
+			NI TMP760;
 			{
 				nimln(796, "macros.nim");
 				while (1) {
-					NI TMP469;
+					NI TMP755;
 					if (!((NU8)(a[i]) == (NU8)(95))) goto LA4;
-					TMP469 = addInt(i, ((NI) 1));
-					i = (NI)(TMP469);
+					TMP755 = addInt(i, ((NI) 1));
+					i = (NI)(TMP755);
 				} LA4: ;
 			}
 			{
 				nimln(797, "macros.nim");
 				while (1) {
-					NI TMP470;
+					NI TMP756;
 					if (!((NU8)(b[j]) == (NU8)(95))) goto LA6;
-					TMP470 = addInt(j, ((NI) 1));
-					j = (NI)(TMP470);
+					TMP756 = addInt(j, ((NI) 1));
+					j = (NI)(TMP756);
 				} LA6: ;
 			}
 			nimln(798, "macros.nim");
-			aa = tolower_114423(a[i]);
+			aa = tolower_186423(a[i]);
 			nimln(799, "macros.nim");
-			bb = tolower_114423(b[j]);
+			bb = tolower_186423(b[j]);
 			nimln(800, "macros.nim");
-			TMP472 = subInt(((NI) (((NU8)(aa)))), ((NI) (((NU8)(bb)))));
-			result = (NI)(TMP472);
+			TMP758 = subInt(((NI) (((NU8)(aa)))), ((NI) (((NU8)(bb)))));
+			result = (NI)(TMP758);
 			nimln(801, "macros.nim");
 			{
 				NIM_BOOL LOC9;
@@ -249,25 +249,25 @@ N_NIMCALL(NI, cmpignorestyle_114418)(NCSTRING a, NCSTRING b) {
 			}
 			LA11: ;
 			nimln(802, "macros.nim");
-			TMP473 = addInt(i, ((NI) 1));
-			i = (NI)(TMP473);
+			TMP759 = addInt(i, ((NI) 1));
+			i = (NI)(TMP759);
 			nimln(803, "macros.nim");
-			TMP474 = addInt(j, ((NI) 1));
-			j = (NI)(TMP474);
+			TMP760 = addInt(j, ((NI) 1));
+			j = (NI)(TMP760);
 		}
 	} LA1: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, eqident_114551)(NimStringDesc* a, NimStringDesc* b) {
+N_NIMCALL(NIM_BOOL, eqident_186551)(NimStringDesc* a, NimStringDesc* b) {
 	NIM_BOOL result;
 	NI LOC1;
 	nimfr("eqIdent", "macros.nim")
 	result = 0;
 	nimln(805, "macros.nim");
 	LOC1 = 0;
-	LOC1 = cmpignorestyle_114418(a->data, b->data);
+	LOC1 = cmpignorestyle_186418(a->data, b->data);
 	result = (LOC1 == ((NI) 0));
 	popFrame();
 	return result;
@@ -278,9 +278,9 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_macrosInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_macrosDatInit)(void) {
-static TNimNode* TMP465[155];
-NI TMP467;
-static char* NIM_CONST TMP466[155] = {
+static TNimNode* TMP751[155];
+NI TMP753;
+static char* NIM_CONST TMP752[155] = {
 "nnkNone", 
 "nnkEmpty", 
 "nnkIdent", 
@@ -436,18 +436,18 @@ static char* NIM_CONST TMP466[155] = {
 "nnkArglist", 
 "nnkPattern", 
 "nnkReturnToken"};
-static TNimNode TMP463[156];
-NTI111012.size = sizeof(NU8);
-NTI111012.kind = 14;
-NTI111012.base = 0;
-NTI111012.flags = 3;
-for (TMP467 = 0; TMP467 < 155; TMP467++) {
-TMP463[TMP467+0].kind = 1;
-TMP463[TMP467+0].offset = TMP467;
-TMP463[TMP467+0].name = TMP466[TMP467];
-TMP465[TMP467] = &TMP463[TMP467+0];
+static TNimNode TMP749[156];
+NTI183012.size = sizeof(NU8);
+NTI183012.kind = 14;
+NTI183012.base = 0;
+NTI183012.flags = 3;
+for (TMP753 = 0; TMP753 < 155; TMP753++) {
+TMP749[TMP753+0].kind = 1;
+TMP749[TMP753+0].offset = TMP753;
+TMP749[TMP753+0].name = TMP752[TMP753];
+TMP751[TMP753] = &TMP749[TMP753+0];
 }
-TMP463[155].len = 155; TMP463[155].kind = 2; TMP463[155].sons = &TMP465[0];
-NTI111012.node = &TMP463[155];
+TMP749[155].len = 155; TMP749[155].kind = 2; TMP749[155].sons = &TMP751[0];
+NTI183012.node = &TMP749[155];
 }
 

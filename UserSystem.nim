@@ -9,15 +9,7 @@ import marshal
 import parsexml
 import httpclient
 import random
-#Begin user system code
-
-type
-  Profile = object
-    name: string
-    upvotes: int
-    downvotes: int
-    rank: string
-    
+#Begin user system code    
 
 
 proc version(): string =
@@ -46,7 +38,6 @@ var channels: seq[string] = @["#reddit-intp"]
 var log: File
 var islogging: bool = false
 var outputting: bool = true
-var profiles: seq[Profile]
 
 var sock: Socket = socket()
 var buffer: string = ""
@@ -113,6 +104,18 @@ proc checkUser(name: string): bool =
         result = false
   except:
     result = false
+
+proc checkBlacklist(name: string): bool =
+  try:
+    let res = db.getValue(sql"select id from blacklist where upper(name) = ?", toUpper(name))
+    if res != "":
+      let row = parseInt(res)
+      if row > 0:
+        result = true
+      else:
+        result = false
+  except:
+    result = false
     
 proc getQuote(id: int): string =
   let row = db.getRow(sql"select id, content from quotes where id = ?", id)
@@ -135,10 +138,13 @@ proc getQuoteCount(): int =
 
 
 proc loginUser(name: string, pass: string): bool =
-  let row = parseInt(db.getValue(sql"select id from users where upper(name) = ? and pass = ?", toUpper(name), pass))
-  if row > 0:
-    result = true
-  else:
+  try:
+    let row = parseInt(db.getValue(sql"select id from users where upper(name) = ? and pass = ?", toUpper(name), pass))
+    if row > 0:
+      result = true
+    else:
+      result = false
+  except:
     result = false
 
 
@@ -176,6 +182,12 @@ proc downvote(name: string): int =
 proc karma(name: string): int =
   try:
     result = parseInt(db.getValue(sql"select upvotes - downvotes from users where upper(name) = ?",  toUpper(name)))
+  except:
+    result = -1
+    
+proc userID(name: string): int =
+  try:
+    result = parseInt(db.getValue(sql"select id from users where upper(name) = ?",  toUpper(name)))
   except:
     result = -1
 #End user system code

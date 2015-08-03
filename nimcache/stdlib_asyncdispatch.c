@@ -14,8 +14,8 @@
 #include "winsock2.h"
 
 #include <setjmp.h>
-typedef struct FutureHEX3Aobjecttype255097 FutureHEX3Aobjecttype255097;
-typedef struct FuturebaseHEX3Aobjecttype255017 FuturebaseHEX3Aobjecttype255017;
+typedef struct FutureHEX3Aobjecttype243097 FutureHEX3Aobjecttype243097;
+typedef struct FuturebaseHEX3Aobjecttype243017 FuturebaseHEX3Aobjecttype243017;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -35,52 +35,52 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct PdispatcherbaseHEX3Aobjecttype255993 PdispatcherbaseHEX3Aobjecttype255993;
-typedef struct TY255994 TY255994;
-typedef struct TY255995 TY255995;
-typedef struct TY256243 TY256243;
-typedef struct TY256246 TY256246;
-typedef struct Hashset258026 Hashset258026;
-typedef struct Keyvaluepairseq258029 Keyvaluepairseq258029;
-typedef struct Keyvaluepair258032 Keyvaluepair258032;
-typedef struct FutureHEX3Aobjecttype259769 FutureHEX3Aobjecttype259769;
-typedef struct FutureHEX3Aobjecttype261249 FutureHEX3Aobjecttype261249;
-typedef struct FutureHEX3Aobjecttype262756 FutureHEX3Aobjecttype262756;
-typedef struct TY262749 TY262749;
+typedef struct PdispatcherbaseHEX3Aobjecttype243993 PdispatcherbaseHEX3Aobjecttype243993;
+typedef struct TY243994 TY243994;
+typedef struct TY243995 TY243995;
+typedef struct TY244243 TY244243;
+typedef struct TY244246 TY244246;
+typedef struct Hashset246026 Hashset246026;
+typedef struct Keyvaluepairseq246029 Keyvaluepairseq246029;
+typedef struct Keyvaluepair246032 Keyvaluepair246032;
+typedef struct FutureHEX3Aobjecttype247769 FutureHEX3Aobjecttype247769;
+typedef struct FutureHEX3Aobjecttype249249 FutureHEX3Aobjecttype249249;
+typedef struct FutureHEX3Aobjecttype250756 FutureHEX3Aobjecttype250756;
+typedef struct TY250749 TY250749;
 typedef struct Valueerror3449 Valueerror3449;
-typedef struct PdispatcherHEX3Aobjecttype258020 PdispatcherHEX3Aobjecttype258020;
-typedef struct Tcustomoverlapped258008 Tcustomoverlapped258008;
-typedef struct Toverlapped105608 Toverlapped105608;
-typedef struct Tcompletiondata258004 Tcompletiondata258004;
-typedef struct Tguid105614 Tguid105614;
-typedef struct TY259730 TY259730;
-typedef struct Addrinfo104868 Addrinfo104868;
-typedef struct TY259733 TY259733;
-typedef struct TY259736 TY259736;
+typedef struct PdispatcherHEX3Aobjecttype246020 PdispatcherHEX3Aobjecttype246020;
+typedef struct Tcustomoverlapped246008 Tcustomoverlapped246008;
+typedef struct Toverlapped107608 Toverlapped107608;
+typedef struct Tcompletiondata246004 Tcompletiondata246004;
+typedef struct Tguid107614 Tguid107614;
+typedef struct TY247730 TY247730;
+typedef struct Addrinfo106868 Addrinfo106868;
+typedef struct TY247733 TY247733;
+typedef struct TY247736 TY247736;
 typedef struct Oserror3433 Oserror3433;
 typedef struct Systemerror3429 Systemerror3429;
-typedef struct TY261222 TY261222;
-typedef struct TY262619 TY262619;
-typedef struct TY262730 TY262730;
-typedef struct TY264164 TY264164;
-typedef struct TY264167 TY264167;
-typedef struct FutureHEX3Aobjecttype264663 FutureHEX3Aobjecttype264663;
-typedef struct TY265830 TY265830;
-typedef struct TY265842 TY265842;
-typedef struct TY267410 TY267410;
+typedef struct TY249222 TY249222;
+typedef struct TY250619 TY250619;
+typedef struct TY250730 TY250730;
+typedef struct TY252164 TY252164;
+typedef struct TY252167 TY252167;
+typedef struct FutureHEX3Aobjecttype252663 FutureHEX3Aobjecttype252663;
+typedef struct TY253830 TY253830;
+typedef struct TY253842 TY253842;
+typedef struct TY255410 TY255410;
 typedef struct TSafePoint TSafePoint;
-typedef struct FutureHEX3Aobjecttype271248 FutureHEX3Aobjecttype271248;
-typedef struct TY271241 TY271241;
-typedef struct Asyncsocketdesc268202 Asyncsocketdesc268202;
-typedef struct FutureHEX3Aobjecttype272455 FutureHEX3Aobjecttype272455;
-typedef struct TY274030 TY274030;
-typedef struct FutureHEX3Aobjecttype279252 FutureHEX3Aobjecttype279252;
-typedef struct Response277008 Response277008;
-typedef struct Stringtableobj176012 Stringtableobj176012;
+typedef struct FutureHEX3Aobjecttype259248 FutureHEX3Aobjecttype259248;
+typedef struct TY259241 TY259241;
+typedef struct Asyncsocketdesc256202 Asyncsocketdesc256202;
+typedef struct FutureHEX3Aobjecttype260455 FutureHEX3Aobjecttype260455;
+typedef struct TY262030 TY262030;
+typedef struct FutureHEX3Aobjecttype267252 FutureHEX3Aobjecttype267252;
+typedef struct Response265008 Response265008;
+typedef struct Stringtableobj153012 Stringtableobj153012;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
-typedef struct Keyvaluepairseq176010 Keyvaluepairseq176010;
-typedef struct TY106548 TY106548;
+typedef struct Keyvaluepairseq153010 Keyvaluepairseq153010;
+typedef struct TY108548 TY108548;
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -99,7 +99,7 @@ TNimType* m_type;
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (void* ClEnv);
 void* ClEnv;
-} TY255018;
+} TY243018;
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -108,9 +108,9 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  FuturebaseHEX3Aobjecttype255017  {
+struct  FuturebaseHEX3Aobjecttype243017  {
   TNimObject Sup;
-TY255018 cb;
+TY243018 cb;
 NIM_BOOL finished;
 Exception* error;
 NimStringDesc* errorstacktrace;
@@ -118,10 +118,10 @@ NimStringDesc* stacktrace;
 NI id;
 NimStringDesc* fromproc;
 };
-struct  FutureHEX3Aobjecttype255097  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+struct  FutureHEX3Aobjecttype243097  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 };
-typedef N_CLOSURE_PTR(void, TMP2311) (void);
+typedef N_CLOSURE_PTR(void, TMP2233) (void);
 struct  Tcell46746  {
 NI refcount;
 TNimType* typ;
@@ -178,14 +178,14 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-typedef N_CLOSURE_PTR(void, TMP2312) (void);
-struct TY255995 {
+typedef N_CLOSURE_PTR(void, TMP2234) (void);
+struct TY243995 {
 NF Field0;
-FutureHEX3Aobjecttype255097* Field1;
+FutureHEX3Aobjecttype243097* Field1;
 };
-struct  PdispatcherbaseHEX3Aobjecttype255993  {
+struct  PdispatcherbaseHEX3Aobjecttype243993  {
   TNimObject Sup;
-TY255994* timers;
+TY243994* timers;
 };
 struct  TNimNode  {
 NU8 kind;
@@ -195,43 +195,43 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct TY256243 {
+struct TY244243 {
 void* Field0;
-TY256246* Field1;
+TY244246* Field1;
 };
-struct TY256246 {
+struct TY244246 {
 char dummy;
 };
-struct  Hashset258026  {
-Keyvaluepairseq258029* data;
+struct  Hashset246026  {
+Keyvaluepairseq246029* data;
 NI counter;
 };
-struct Keyvaluepair258032 {
+struct Keyvaluepair246032 {
 NI Field0;
 NI Field1;
 };
-typedef N_CLOSURE_PTR(void, TMP2346) (void);
-struct  FutureHEX3Aobjecttype259769  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+typedef N_CLOSURE_PTR(void, TMP2268) (void);
+struct  FutureHEX3Aobjecttype247769  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 NimStringDesc* value;
 };
-typedef N_CLOSURE_PTR(void, TMP2350) (void);
-typedef N_CLOSURE_PTR(void, TMP2351) (void);
-struct  FutureHEX3Aobjecttype261249  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+typedef N_CLOSURE_PTR(void, TMP2272) (void);
+typedef N_CLOSURE_PTR(void, TMP2273) (void);
+struct  FutureHEX3Aobjecttype249249  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 NI value;
 };
-typedef N_CLOSURE_PTR(void, TMP2354) (void);
-typedef N_CLOSURE_PTR(void, TMP2355) (void);
-struct TY262749 {
+typedef N_CLOSURE_PTR(void, TMP2276) (void);
+typedef N_CLOSURE_PTR(void, TMP2277) (void);
+struct TY250749 {
 NimStringDesc* Field0;
 NI Field1;
 };
-struct  FutureHEX3Aobjecttype262756  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
-TY262749 value;
+struct  FutureHEX3Aobjecttype250756  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
+TY250749 value;
 };
-typedef N_CLOSURE_PTR(void, TMP2359) (void);
+typedef N_CLOSURE_PTR(void, TMP2281) (void);
 struct  Exception  {
   TNimObject Sup;
 Exception* parent;
@@ -242,15 +242,15 @@ NimStringDesc* trace;
 struct  Valueerror3449  {
   Exception Sup;
 };
-typedef N_CLOSURE_PTR(void, TMP2361) (void);
-struct  PdispatcherHEX3Aobjecttype258020  {
-  PdispatcherbaseHEX3Aobjecttype255993 Sup;
+typedef N_CLOSURE_PTR(void, TMP2283) (void);
+struct  PdispatcherHEX3Aobjecttype246020  {
+  PdispatcherbaseHEX3Aobjecttype243993 Sup;
 NI ioport;
-Hashset258026 handles;
+Hashset246026 handles;
 };
-typedef N_STDCALL_PTR(NI, TY105652) (NI Filehandle, NI Existingcompletionport, NI32 Completionkey, NI32 Numberofconcurrentthreads);
-typedef N_STDCALL_PTR(NI32, TY105661) (NI Completionport, NI32* lpnumberofbytestransferred, NI* lpcompletionkey, Toverlapped105608** lpoverlapped, NI32 dwmilliseconds);
-struct  Toverlapped105608  {
+typedef N_STDCALL_PTR(NI, TY107652) (NI Filehandle, NI Existingcompletionport, NI32 Completionkey, NI32 Numberofconcurrentthreads);
+typedef N_STDCALL_PTR(NI32, TY107661) (NI Completionport, NI32* lpnumberofbytestransferred, NI* lpcompletionkey, Toverlapped107608** lpoverlapped, NI32 dwmilliseconds);
+struct  Toverlapped107608  {
 NI* internal;
 NI* internalhigh;
 NI32 offset;
@@ -260,41 +260,41 @@ NI hevent;
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NI fd, NI32 bytestransferred, NI32 errcode, void* ClEnv);
 void* ClEnv;
-} TY258014;
-struct  Tcompletiondata258004  {
+} TY246014;
+struct  Tcompletiondata246004  {
 NI fd;
-TY258014 cb;
+TY246014 cb;
 };
-struct  Tcustomoverlapped258008  {
-  Toverlapped105608 Sup;
-Tcompletiondata258004 data;
+struct  Tcustomoverlapped246008  {
+  Toverlapped107608 Sup;
+Tcompletiondata246004 data;
 };
-typedef N_CLOSURE_PTR(void, TMP2375) (NI fd, NI32 bytestransferred, NI32 errcode);
-typedef N_CLOSURE_PTR(void, TMP2376) (NI fd, NI32 bytestransferred, NI32 errcode);
-typedef N_STDCALL_PTR(void, Poverlappedcompletionroutine105612) (NI32 para1, NI32 para2, Toverlapped105608* para3);
-typedef N_STDCALL_PTR(int, TY105733) (NI s, NI32 dwiocontrolcode, void* lpvinbuffer, NI32 cbinbuffer, void* lpvoutbuffer, NI32 cboutbuffer, NI32* lpcbbytesreturned, Toverlapped105608* lpoverlapped, Poverlappedcompletionroutine105612 lpcompletionroutine);
-typedef NI8 TY105627[8];
-struct  Tguid105614  {
+typedef N_CLOSURE_PTR(void, TMP2297) (NI fd, NI32 bytestransferred, NI32 errcode);
+typedef N_CLOSURE_PTR(void, TMP2298) (NI fd, NI32 bytestransferred, NI32 errcode);
+typedef N_STDCALL_PTR(void, Poverlappedcompletionroutine107612) (NI32 para1, NI32 para2, Toverlapped107608* para3);
+typedef N_STDCALL_PTR(int, TY107733) (NI s, NI32 dwiocontrolcode, void* lpvinbuffer, NI32 cbinbuffer, void* lpvoutbuffer, NI32 cboutbuffer, NI32* lpcbbytesreturned, Toverlapped107608* lpoverlapped, Poverlappedcompletionroutine107612 lpcompletionroutine);
+typedef NI8 TY107627[8];
+struct  Tguid107614  {
 NI32 D1;
 NI16 D2;
 NI16 D3;
-TY105627 D4;
+TY107627 D4;
 };
-typedef N_STDCALL_PTR(NIM_BOOL, TY259279) (NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped105608* lpoverlapped);
-typedef N_STDCALL_PTR(NIM_BOOL, TY259325) (NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped105608* lpoverlapped);
-typedef N_STDCALL_PTR(void, TY259372) (void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength);
-struct  TY259730  {
+typedef N_STDCALL_PTR(NIM_BOOL, TY247279) (NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped107608* lpoverlapped);
+typedef N_STDCALL_PTR(NIM_BOOL, TY247325) (NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped107608* lpoverlapped);
+typedef N_STDCALL_PTR(void, TY247372) (void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength);
+struct  TY247730  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype255097* retfuture259613;
+FutureHEX3Aobjecttype243097* retfuture247613;
 };
-typedef NIM_CHAR TY104890[8];
-struct  TY259733  {
+typedef NIM_CHAR TY106890[8];
+struct  TY247733  {
 NI HEX3Astate;
-TY259730* HEX3Aup259747;
+TY247730* HEX3Aup247747;
 };
-struct  TY259736  {
+struct  TY247736  {
 NI HEX3Astate;
-TY259733* HEX3Aup259744;
+TY247733* HEX3Aup247744;
 };
 struct  Systemerror3429  {
   Exception Sup;
@@ -303,7 +303,7 @@ struct  Oserror3433  {
   Systemerror3429 Sup;
 NI32 errorcode;
 };
-struct  Addrinfo104868  {
+struct  Addrinfo106868  {
 int aiflags;
 int aifamily;
 int aisocktype;
@@ -311,80 +311,80 @@ int aiprotocol;
 NI aiaddrlen;
 NCSTRING aicanonname;
 SOCKADDR* aiaddr;
-Addrinfo104868* ainext;
+Addrinfo106868* ainext;
 };
-struct  TY261222  {
+struct  TY249222  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype259769* retfuture260013;
-WSABUF databuf260014;
-NI size259760;
-NU8 flags259763;
+FutureHEX3Aobjecttype247769* retfuture248013;
+WSABUF databuf248014;
+NI size247760;
+NU8 flags247763;
 };
-typedef N_STDCALL_PTR(int, TY105754) (NI s, WSABUF* buf, NI32 bufcount, NI32* bytesreceived, NI32* flags, Toverlapped105608* lpoverlapped, Poverlappedcompletionroutine105612 completionproc);
-struct  TY262619  {
+typedef N_STDCALL_PTR(int, TY107754) (NI s, WSABUF* buf, NI32 bufcount, NI32* bytesreceived, NI32* flags, Toverlapped107608* lpoverlapped, Poverlappedcompletionroutine107612 completionproc);
+struct  TY250619  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype261249* retfuture261613;
-WSABUF databuf261614;
-NU8 flags261243;
+FutureHEX3Aobjecttype249249* retfuture249613;
+WSABUF databuf249614;
+NU8 flags249243;
 };
-struct  TY262730  {
+struct  TY250730  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype255097* retfuture262650;
-NU8 flags262638;
+FutureHEX3Aobjecttype243097* retfuture250650;
+NU8 flags250638;
 };
-typedef N_STDCALL_PTR(int, TY105767) (NI s, WSABUF* buf, NI32 bufcount, NI32* bytessent, NI32 flags, Toverlapped105608* lpoverlapped, Poverlappedcompletionroutine105612 completionproc);
-struct  TY264164  {
+typedef N_STDCALL_PTR(int, TY107767) (NI s, WSABUF* buf, NI32 bufcount, NI32* bytessent, NI32 flags, Toverlapped107608* lpoverlapped, Poverlappedcompletionroutine107612 completionproc);
+struct  TY252164  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype262756* retfuture262813;
-NI socket262744;
-NI clientsock262814;
-NimStringDesc* lpoutputbuf262817;
-NI32 dwreceivedatalength262819;
-NI32 dwlocaladdresslength262821;
-NI32 dwremoteaddresslength262823;
-NU8 flags262747;
-FutureHEX3Aobjecttype262756* newacceptfut264058;
+FutureHEX3Aobjecttype250756* retfuture250813;
+NI socket250744;
+NI clientsock250814;
+NimStringDesc* lpoutputbuf250817;
+NI32 dwreceivedatalength250819;
+NI32 dwlocaladdresslength250821;
+NI32 dwremoteaddresslength250823;
+NU8 flags250747;
+FutureHEX3Aobjecttype250756* newacceptfut252058;
 };
-struct  TY264167  {
+struct  TY252167  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype262756* newacceptfut263614;
-TY264164* HEX3Aup264176;
+FutureHEX3Aobjecttype250756* newacceptfut251614;
+TY252164* HEX3Aup252176;
 };
-typedef N_STDCALL_PTR(int, TY105087) (NI s, int level, int optname, void* optval, unsigned int optlen);
-typedef N_STDCALL_PTR(NCSTRING, TY105263) (IN_ADDR i);
-struct  FutureHEX3Aobjecttype264663  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
+typedef N_STDCALL_PTR(int, TY107087) (NI s, int level, int optname, void* optval, unsigned int optlen);
+typedef N_STDCALL_PTR(NCSTRING, TY107263) (IN_ADDR i);
+struct  FutureHEX3Aobjecttype252663  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
 NI value;
 };
-typedef N_CLOSURE_PTR(void, TMP2419) (void);
-typedef N_CLOSURE_PTR(void, TMP2420) (void);
+typedef N_CLOSURE_PTR(void, TMP2341) (void);
+typedef N_CLOSURE_PTR(void, TMP2342) (void);
 typedef struct {
-N_NIMCALL_PTR(void, ClPrc) (FutureHEX3Aobjecttype262756* future_265824, void* ClEnv);
+N_NIMCALL_PTR(void, ClPrc) (FutureHEX3Aobjecttype250756* future_253824, void* ClEnv);
 void* ClEnv;
-} TY265820;
-struct  TY265830  {
+} TY253820;
+struct  TY253830  {
 NI HEX3Astate;
-TY265820 cb265827;
-FutureHEX3Aobjecttype262756* future265819;
+TY253820 cb253827;
+FutureHEX3Aobjecttype250756* future253819;
 };
-typedef N_CLOSURE_PTR(void, TMP2424) (FutureHEX3Aobjecttype262756* future_265824);
-struct  TY265842  {
+typedef N_CLOSURE_PTR(void, TMP2346) (FutureHEX3Aobjecttype250756* future_253824);
+struct  TY253842  {
 NI HEX3Astate;
-FutureHEX3Aobjecttype264663* retfut264813;
+FutureHEX3Aobjecttype252663* retfut252813;
 };
 typedef struct {
-N_NIMCALL_PTR(FuturebaseHEX3Aobjecttype255017*, ClPrc) (void* ClEnv);
+N_NIMCALL_PTR(FuturebaseHEX3Aobjecttype243017*, ClPrc) (void* ClEnv);
 void* ClEnv;
-} TY266613;
-struct  TY267410  {
+} TY254613;
+struct  TY255410  {
 NI HEX3Astate;
-NI socket266601;
-FutureHEX3Aobjecttype259769* retfuture266595;
-TY266613 nameitervar267231;
-NimStringDesc* result266615;
-NimStringDesc* c266621;
-FutureHEX3Aobjecttype259769* future266597;
-FutureHEX3Aobjecttype259769* future266598;
+NI socket254601;
+FutureHEX3Aobjecttype247769* retfuture254595;
+TY254613 nameitervar255231;
+NimStringDesc* result254615;
+NimStringDesc* c254621;
+FutureHEX3Aobjecttype247769* future254597;
+FutureHEX3Aobjecttype247769* future254598;
 };
 typedef struct {
 N_NIMCALL_PTR(NIM_BOOL, ClPrc) (Exception* e, void* ClEnv);
@@ -397,46 +397,46 @@ jmp_buf context;
 NIM_BOOL hasRaiseAction;
 TY15609 raiseAction;
 };
-typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype255017*, TMP2438) (void);
-typedef N_CLOSURE_PTR(void, TMP2440) (void);
-struct TY271241 {
+typedef N_CLOSURE_PTR(FuturebaseHEX3Aobjecttype243017*, TMP2360) (void);
+typedef N_CLOSURE_PTR(void, TMP2362) (void);
+struct TY259241 {
 NimStringDesc* Field0;
-Asyncsocketdesc268202* Field1;
+Asyncsocketdesc256202* Field1;
 };
-struct  FutureHEX3Aobjecttype271248  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
-TY271241 value;
+struct  FutureHEX3Aobjecttype259248  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
+TY259241 value;
 };
-typedef N_CLOSURE_PTR(void, TMP2480) (void);
-typedef N_CLOSURE_PTR(void, TMP2481) (void);
-struct  FutureHEX3Aobjecttype272455  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
-Asyncsocketdesc268202* value;
+typedef N_CLOSURE_PTR(void, TMP2402) (void);
+typedef N_CLOSURE_PTR(void, TMP2403) (void);
+struct  FutureHEX3Aobjecttype260455  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
+Asyncsocketdesc256202* value;
 };
-typedef N_CLOSURE_PTR(void, TMP2488) (void);
-typedef N_CLOSURE_PTR(void, TMP2489) (void);
+typedef N_CLOSURE_PTR(void, TMP2410) (void);
+typedef N_CLOSURE_PTR(void, TMP2411) (void);
 typedef struct {
-N_NIMCALL_PTR(void, ClPrc) (FutureHEX3Aobjecttype271248* future_274024, void* ClEnv);
+N_NIMCALL_PTR(void, ClPrc) (FutureHEX3Aobjecttype259248* future_262024, void* ClEnv);
 void* ClEnv;
-} TY274020;
-struct  TY274030  {
+} TY262020;
+struct  TY262030  {
 NI HEX3Astate;
-TY274020 cb274027;
-FutureHEX3Aobjecttype271248* future274019;
+TY262020 cb262027;
+FutureHEX3Aobjecttype259248* future262019;
 };
-typedef N_CLOSURE_PTR(void, TMP2493) (FutureHEX3Aobjecttype271248* future_274024);
-struct Response277008 {
+typedef N_CLOSURE_PTR(void, TMP2415) (FutureHEX3Aobjecttype259248* future_262024);
+struct Response265008 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
-Stringtableobj176012* Field2;
+Stringtableobj153012* Field2;
 NimStringDesc* Field3;
 };
-struct  FutureHEX3Aobjecttype279252  {
-  FuturebaseHEX3Aobjecttype255017 Sup;
-Response277008 value;
+struct  FutureHEX3Aobjecttype267252  {
+  FuturebaseHEX3Aobjecttype243017 Sup;
+Response265008 value;
 };
-typedef N_CLOSURE_PTR(void, TMP2704) (void);
-typedef N_CLOSURE_PTR(void, TMP2705) (void);
+typedef N_CLOSURE_PTR(void, TMP2626) (void);
+typedef N_CLOSURE_PTR(void, TMP2627) (void);
 typedef NI TY27820[8];
 struct  Tpagedesc46754  {
 Tpagedesc46754* next;
@@ -481,55 +481,55 @@ NI key;
 NI upperbound;
 NI level;
 };
-typedef NIM_CHAR TY104883[14];
-typedef NIM_CHAR TY268208[4001];
-struct  Asyncsocketdesc268202  {
+typedef NIM_CHAR TY106883[14];
+typedef NIM_CHAR TY256208[4001];
+struct  Asyncsocketdesc256202  {
 NI fd;
 NIM_BOOL closed;
 NIM_BOOL isbuffered;
 union{
-struct {TY268208 buffer;
+struct {TY256208 buffer;
 NI currpos;
 NI buflen;
 } S1;
 } isbufferedU;
 NIM_BOOL isssl;
 };
-struct  Stringtableobj176012  {
+struct  Stringtableobj153012  {
   TNimObject Sup;
 NI counter;
-Keyvaluepairseq176010* data;
+Keyvaluepairseq153010* data;
 NU8 mode;
 };
 struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct TY106548 {
+struct TY108548 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 };
-struct TY255994 {
+struct TY243994 {
   TGenericSeq Sup;
-  TY255995 data[SEQ_DECL_SIZE];
+  TY243995 data[SEQ_DECL_SIZE];
 };
-struct Keyvaluepairseq258029 {
+struct Keyvaluepairseq246029 {
   TGenericSeq Sup;
-  Keyvaluepair258032 data[SEQ_DECL_SIZE];
+  Keyvaluepair246032 data[SEQ_DECL_SIZE];
 };
-struct Keyvaluepairseq176010 {
+struct Keyvaluepairseq153010 {
   TGenericSeq Sup;
-  TY106548 data[SEQ_DECL_SIZE];
+  TY108548 data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(void, checkfinished_255102)(FutureHEX3Aobjecttype255097* future);
+N_NIMCALL(void, checkfinished_243102)(FutureHEX3Aobjecttype243097* future);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
 N_NIMCALL(NimStringDesc*, getstacktrace_16601)(void);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, complete_255090)(FutureHEX3Aobjecttype255097* future);
-N_NIMCALL(void, callbackHEX3D_255832)(FuturebaseHEX3Aobjecttype255017* future, TY255018 cb);
+N_NIMCALL(void, complete_243090)(FutureHEX3Aobjecttype243097* future);
+N_NIMCALL(void, callbackHEX3D_243832)(FuturebaseHEX3Aobjecttype243017* future, TY243018 cb);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
 static N_INLINE(void, incref_52622)(Tcell46746* c);
 static N_INLINE(NIM_BOOL, canbecycleroot_50267)(Tcell46746* c);
@@ -539,12 +539,12 @@ static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, decref_52204)(Tcell46746* c);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(NIM_BOOL, failed_255914)(FuturebaseHEX3Aobjecttype255017* future);
-N_NIMCALL(void, processtimers_256005)(PdispatcherbaseHEX3Aobjecttype255993* p);
-N_NIMCALL(void, TMP2316)(void* p, NI op);
+N_NIMCALL(NIM_BOOL, failed_243914)(FuturebaseHEX3Aobjecttype243017* future);
+N_NIMCALL(void, processtimers_244005)(PdispatcherbaseHEX3Aobjecttype243993* p);
+N_NIMCALL(void, TMP2238)(void* p, NI op);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP2317)(void* p, NI op);
-N_NIMCALL(void, TMP2318)(void* p, NI op);
+N_NIMCALL(void, TMP2239)(void* p, NI op);
+N_NIMCALL(void, TMP2240)(void* p, NI op);
 N_NIMCALL(void, genericSeqAssign)(void* dest, void* src_83404, TNimType* mt);
 static N_INLINE(void, nimGCunref)(void* p);
 N_NIMCALL(void*, newSeqRC1)(TNimType* typ, NI len);
@@ -553,291 +553,291 @@ N_NIMCALL(NF, ntepochTime)(void);
 N_NIMCALL(TGenericSeq*, incrSeq)(TGenericSeq* seq, NI elemsize);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-N_NIMCALL(void, initset_258067)(NI initialsize, Hashset258026* Result);
-N_NIMCALL(void, init_258075)(Hashset258026* s, NI initialsize);
-N_NIMCALL(void, incl_258257)(Hashset258026* s, NI key);
-N_NIMCALL(NIM_BOOL, isvalid_258267)(Hashset258026 s);
-static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc);
-static N_INLINE(NI, hash_116804)(NI x);
-static N_INLINE(NIM_BOOL, isfilled_256444)(NI hcode);
-static N_INLINE(NI, nexttry_256620)(NI h, NI maxhash);
+N_NIMCALL(void, initset_246067)(NI initialsize, Hashset246026* Result);
+N_NIMCALL(void, init_246075)(Hashset246026* s, NI initialsize);
+N_NIMCALL(void, incl_246257)(Hashset246026* s, NI key);
+N_NIMCALL(NIM_BOOL, isvalid_246267)(Hashset246026 s);
+static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc);
+static N_INLINE(NI, hash_150804)(NI x);
+static N_INLINE(NIM_BOOL, isfilled_244444)(NI hcode);
+static N_INLINE(NI, nexttry_244620)(NI h, NI maxhash);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(void, enlarge_258438)(Hashset258026* s);
-static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc);
-N_NIMCALL(void, rawinsert_258515)(Hashset258026* s, Keyvaluepairseq258029** data, NI key, NI hc, NI h);
-N_NIMCALL(NIM_BOOL, contains_258612)(Hashset258026 s, NI key);
-N_NIMCALL(NI, len_258842)(Hashset258026 s);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, newfuture_259407)(NimStringDesc* fromproc);
+N_NIMCALL(void, enlarge_246438)(Hashset246026* s);
+static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc);
+N_NIMCALL(void, rawinsert_246515)(Hashset246026* s, Keyvaluepairseq246029** data, NI key, NI hc, NI h);
+N_NIMCALL(NIM_BOOL, contains_246612)(Hashset246026 s, NI key);
+N_NIMCALL(NI, len_246842)(Hashset246026 s);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, newfuture_247407)(NimStringDesc* fromproc);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
-N_NIMCALL(void, fail_259659)(FutureHEX3Aobjecttype255097* future, Exception* error);
+N_NIMCALL(void, fail_247659)(FutureHEX3Aobjecttype243097* future, Exception* error);
 N_NIMCALL(NimStringDesc*, getstacktrace_16603)(Exception* e);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, newfuture_259802)(NimStringDesc* fromproc);
-N_NIMCALL(void, TMP2347)(void* p, NI op);
-N_NIMCALL(void, complete_260031)(FutureHEX3Aobjecttype259769* future, NimStringDesc* val);
-N_NIMCALL(void, checkfinished_260040)(FutureHEX3Aobjecttype259769* future);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, newfuture_247802)(NimStringDesc* fromproc);
+N_NIMCALL(void, TMP2269)(void* p, NI op);
+N_NIMCALL(void, complete_248031)(FutureHEX3Aobjecttype247769* future, NimStringDesc* val);
+N_NIMCALL(void, checkfinished_248040)(FutureHEX3Aobjecttype247769* future);
 N_NIMCALL(NimStringDesc*, reprStr)(NimStringDesc* s);
-N_NIMCALL(void, fail_261034)(FutureHEX3Aobjecttype259769* future, Exception* error);
-N_NIMCALL(FutureHEX3Aobjecttype261249*, newfuture_261402)(NimStringDesc* fromproc);
-N_NIMCALL(void, TMP2352)(void* p, NI op);
-N_NIMCALL(void, complete_261631)(FutureHEX3Aobjecttype261249* future, NI val);
-N_NIMCALL(void, checkfinished_261640)(FutureHEX3Aobjecttype261249* future);
-N_NIMCALL(void, fail_262444)(FutureHEX3Aobjecttype261249* future, Exception* error);
-N_NIMCALL(FutureHEX3Aobjecttype262756*, newfuture_262764)(NimStringDesc* fromproc);
-N_NIMCALL(void, TMP2357)(void* p, NI op);
-N_NIMCALL(void, complete_262866)(FutureHEX3Aobjecttype262756* future, TY262749 val);
-N_NIMCALL(void, checkfinished_262875)(FutureHEX3Aobjecttype262756* future);
-N_NIMCALL(Exception*, readerror_263618)(FutureHEX3Aobjecttype262756* future);
+N_NIMCALL(void, fail_249034)(FutureHEX3Aobjecttype247769* future, Exception* error);
+N_NIMCALL(FutureHEX3Aobjecttype249249*, newfuture_249402)(NimStringDesc* fromproc);
+N_NIMCALL(void, TMP2274)(void* p, NI op);
+N_NIMCALL(void, complete_249631)(FutureHEX3Aobjecttype249249* future, NI val);
+N_NIMCALL(void, checkfinished_249640)(FutureHEX3Aobjecttype249249* future);
+N_NIMCALL(void, fail_250444)(FutureHEX3Aobjecttype249249* future, Exception* error);
+N_NIMCALL(FutureHEX3Aobjecttype250756*, newfuture_250764)(NimStringDesc* fromproc);
+N_NIMCALL(void, TMP2279)(void* p, NI op);
+N_NIMCALL(void, complete_250866)(FutureHEX3Aobjecttype250756* future, TY250749 val);
+N_NIMCALL(void, checkfinished_250875)(FutureHEX3Aobjecttype250756* future);
+N_NIMCALL(Exception*, readerror_251618)(FutureHEX3Aobjecttype250756* future);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(void, fail_263653)(FutureHEX3Aobjecttype262756* future, Exception* error);
-N_NIMCALL(void, read_263681)(FutureHEX3Aobjecttype262756* future, TY262749* Result);
-N_NIMCALL(void, echooriginalstacktrace_263701)(FutureHEX3Aobjecttype262756* future);
+N_NIMCALL(void, fail_251653)(FutureHEX3Aobjecttype250756* future, Exception* error);
+N_NIMCALL(void, read_251681)(FutureHEX3Aobjecttype250756* future, TY250749* Result);
+N_NIMCALL(void, echooriginalstacktrace_251701)(FutureHEX3Aobjecttype250756* future);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
-N_NIMCALL(void, excl_264225)(Hashset258026* s, NI key);
-N_NIMCALL(PdispatcherHEX3Aobjecttype258020*, newdispatcher_258055)(void);
-N_NIMCALL(void, TMP2371)(void* p, NI op);
-N_NIMCALL(PdispatcherHEX3Aobjecttype258020*, getglobaldispatcher_258238)(void);
-N_NIMCALL(void, register_258252)(NI fd);
-N_NIMCALL(void, raiseoserror_140430)(NI32 errorcode);
-N_NIMCALL(NI32, oslasterror_140454)(void);
-N_NIMCALL(void, verifypresence_258607)(NI fd);
-N_NIMCALL(void, poll_258836)(NI timeout);
+N_NIMCALL(void, excl_252225)(Hashset246026* s, NI key);
+N_NIMCALL(PdispatcherHEX3Aobjecttype246020*, newdispatcher_246055)(void);
+N_NIMCALL(void, TMP2293)(void* p, NI op);
+N_NIMCALL(PdispatcherHEX3Aobjecttype246020*, getglobaldispatcher_246238)(void);
+N_NIMCALL(void, register_246252)(NI fd);
+N_NIMCALL(void, raiseoserror_115430)(NI32 errorcode);
+N_NIMCALL(NI32, oslasterror_115454)(void);
+N_NIMCALL(void, verifypresence_246607)(NI fd);
+N_NIMCALL(void, poll_246836)(NI timeout);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(NIM_BOOL, initpointer_259222)(NI s, void** fun, Tguid105614* guid);
-N_NIMCALL(void, initall_259244)(void);
-N_NIMCALL(NI, newrawsocket_235004)(NU8 domain, NU8 typ, NU8 protocol);
-N_NIMCALL(NIM_BOOL, connectex_259256)(NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped105608* lpoverlapped);
-N_NIMCALL(NIM_BOOL, acceptex_259302)(NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped105608* lpoverlapped);
-N_NIMCALL(void, getacceptexsockaddrs_259346)(void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc* address, NU16 port, NU8 af);
-N_NIMCALL(void, TMP2381)(void* p, NI op);
-N_NIMCALL(int, toint_234829)(NU8 domain);
-N_NIMCALL(int, bindaddr_235207)(NI socket, SOCKADDR* name, unsigned int namelen);
-N_NIMCALL(Addrinfo104868*, getaddrinfo_235408)(NimStringDesc* address, NU16 port, NU8 af, NU8 typ, NU8 prot);
-N_NIMCALL(void, TMP2384)(void* p, NI op);
-N_NIMCALL(void, TMP2386)(void* p, NI op);
-N_NIMCALL(void, TMP2390)(void* p, NI op);
+N_NIMCALL(NIM_BOOL, initpointer_247222)(NI s, void** fun, Tguid107614* guid);
+N_NIMCALL(void, initall_247244)(void);
+N_NIMCALL(NI, newrawsocket_223004)(NU8 domain, NU8 typ, NU8 protocol);
+N_NIMCALL(NIM_BOOL, connectex_247256)(NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped107608* lpoverlapped);
+N_NIMCALL(NIM_BOOL, acceptex_247302)(NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped107608* lpoverlapped);
+N_NIMCALL(void, getacceptexsockaddrs_247346)(void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, connect_247397)(NI socket, NimStringDesc* address, NU16 port, NU8 af);
+N_NIMCALL(void, TMP2303)(void* p, NI op);
+N_NIMCALL(int, toint_222829)(NU8 domain);
+N_NIMCALL(int, bindaddr_223207)(NI socket, SOCKADDR* name, unsigned int namelen);
+N_NIMCALL(Addrinfo106868*, getaddrinfo_223408)(NimStringDesc* address, NU16 port, NU8 af, NU8 typ, NU8 prot);
+N_NIMCALL(void, TMP2306)(void* p, NI op);
+N_NIMCALL(void, TMP2308)(void* p, NI op);
+N_NIMCALL(void, TMP2312)(void* p, NI op);
 static N_INLINE(void, nimGCref)(void* p);
-N_CLOSURE(void, HEX3Aanonymous_259641)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
-N_NIMCALL(NimStringDesc*, oserrormsg_140020)(NI32 errorcode);
-N_NIMCALL(void, dealloc_235608)(Addrinfo104868* ai);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 flags);
-N_NIMCALL(void, TMP2396)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_247641)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
+N_NIMCALL(NimStringDesc*, oserrormsg_115020)(NI32 errorcode);
+N_NIMCALL(void, dealloc_223608)(Addrinfo106868* ai);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recv_247757)(NI socket, NI size, NU8 flags);
+N_NIMCALL(void, TMP2318)(void* p, NI op);
 N_NOCONV(void*, alloc0_6017)(NI size);
-N_NIMCALL(int, toosflags_239631)(NU8 socketflags);
-N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
+N_NIMCALL(int, toosflags_227631)(NU8 socketflags);
+N_CLOSURE(void, HEX3Aanonymous_248025)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
-N_NIMCALL(NIM_BOOL, isdisconnectionerror_239481)(NU8 flags, NI32 lasterror);
+N_NIMCALL(NIM_BOOL, isdisconnectionerror_227481)(NU8 flags, NI32 lasterror);
 N_NOCONV(void, dealloc_6048)(void* p);
-N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf, NI size, NU8 flags);
-N_NIMCALL(void, TMP2404)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_261625)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* data, NU8 flags);
-N_NIMCALL(void, TMP2407)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_262662)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype262756*, acceptaddr_262742)(NI socket, NU8 flags);
-N_NIMCALL(void, TMP2410)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
-N_NIMCALL(void, TMP2415)(void* p, NI op);
+N_NIMCALL(FutureHEX3Aobjecttype249249*, recvinto_249236)(NI socket, NCSTRING buf, NI size, NU8 flags);
+N_NIMCALL(void, TMP2326)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_249625)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, send_250632)(NI socket, NimStringDesc* data, NU8 flags);
+N_NIMCALL(void, TMP2329)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_250662)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype250756*, acceptaddr_250742)(NI socket, NU8 flags);
+N_NIMCALL(void, TMP2332)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_250843)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv);
+N_NIMCALL(void, TMP2337)(void* p, NI op);
 N_NIMCALL(NimStringDesc*, cstrToNimstr)(NCSTRING str);
-N_CLOSURE(void, HEX3Aanonymous_263615)(void* ClEnv);
-N_CLOSURE(void, HEX3Aanonymous_264059)(void* ClEnv);
-N_NIMCALL(NI, newasyncrawsocket_264199)(int domain, int typ, int protocol);
-N_NIMCALL(NI, newrawsocket_235016)(int domain, int typ, int protocol);
-N_NIMCALL(void, setblocking_237453)(NI s, NIM_BOOL blocking);
-N_NIMCALL(NI, newasyncrawsocket_264210)(NU8 domain, NU8 typ, NU8 protocol);
-N_NIMCALL(void, closesocket_264221)(NI socket);
-N_NIMCALL(void, close_235028)(NI socket);
-N_NIMCALL(void, unregister_264451)(NI fd);
-N_NIMCALL(FutureHEX3Aobjecttype255097*, sleepasync_264618)(NI ms);
+N_CLOSURE(void, HEX3Aanonymous_251615)(void* ClEnv);
+N_CLOSURE(void, HEX3Aanonymous_252059)(void* ClEnv);
+N_NIMCALL(NI, newasyncrawsocket_252199)(int domain, int typ, int protocol);
+N_NIMCALL(NI, newrawsocket_223016)(int domain, int typ, int protocol);
+N_NIMCALL(void, setblocking_225453)(NI s, NIM_BOOL blocking);
+N_NIMCALL(NI, newasyncrawsocket_252210)(NU8 domain, NU8 typ, NU8 protocol);
+N_NIMCALL(void, closesocket_252221)(NI socket);
+N_NIMCALL(void, close_223028)(NI socket);
+N_NIMCALL(void, unregister_252451)(NI fd);
+N_NIMCALL(FutureHEX3Aobjecttype243097*, sleepasync_252618)(NI ms);
 static N_INLINE(NF, HEX2F_87999)(NI x, NI y);
-N_NIMCALL(FutureHEX3Aobjecttype264663*, newfuture_264668)(NimStringDesc* fromproc);
-N_NIMCALL(void, TMP2417)(void* p, NI op);
-N_NIMCALL(void, fail_265002)(FutureHEX3Aobjecttype264663* future, Exception* error);
-N_NIMCALL(void, checkfinished_265011)(FutureHEX3Aobjecttype264663* future);
-N_NIMCALL(void, complete_265625)(FutureHEX3Aobjecttype264663* future, NI val);
-N_NIMCALL(void, callbackHEX3D_265814)(FutureHEX3Aobjecttype262756* future, TY265820 cb);
-N_NIMCALL(void, TMP2423)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_265828)(void* ClEnv);
-N_NIMCALL(FutureHEX3Aobjecttype264663*, accept_264652)(NI socket, NU8 flags);
-N_NIMCALL(void, TMP2426)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_264815)(FutureHEX3Aobjecttype262756* future, void* ClEnv);
-N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future);
-N_NIMCALL(void, echooriginalstacktrace_266643)(FutureHEX3Aobjecttype259769* future);
-static N_INLINE(NIM_BOOL, finished_267237)(TY266613 x);
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recvline_266599)(NI socket);
-N_NIMCALL(void, TMP2431)(void* p, NI op);
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvlineiter_266596)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype252663*, newfuture_252668)(NimStringDesc* fromproc);
+N_NIMCALL(void, TMP2339)(void* p, NI op);
+N_NIMCALL(void, fail_253002)(FutureHEX3Aobjecttype252663* future, Exception* error);
+N_NIMCALL(void, checkfinished_253011)(FutureHEX3Aobjecttype252663* future);
+N_NIMCALL(void, complete_253625)(FutureHEX3Aobjecttype252663* future, NI val);
+N_NIMCALL(void, callbackHEX3D_253814)(FutureHEX3Aobjecttype250756* future, TY253820 cb);
+N_NIMCALL(void, TMP2345)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_253828)(void* ClEnv);
+N_NIMCALL(FutureHEX3Aobjecttype252663*, accept_252652)(NI socket, NU8 flags);
+N_NIMCALL(void, TMP2348)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_252815)(FutureHEX3Aobjecttype250756* future, void* ClEnv);
+N_NIMCALL(NimStringDesc*, read_254623)(FutureHEX3Aobjecttype247769* future);
+N_NIMCALL(void, echooriginalstacktrace_254643)(FutureHEX3Aobjecttype247769* future);
+static N_INLINE(NIM_BOOL, finished_255237)(TY254613 x);
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recvline_254599)(NI socket);
+N_NIMCALL(void, TMP2353)(void* p, NI op);
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, recvlineiter_254596)(void* ClEnv);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_CLOSURE(void, cb_267234)(void* ClEnv);
+N_CLOSURE(void, cb_255234)(void* ClEnv);
 static N_INLINE(void, pushSafePoint)(TSafePoint* s);
 static N_INLINE(void, popSafePoint)(void);
 static N_INLINE(void, setFrame)(TFrame* s);
 N_NIMCALL(void, reraiseException)(void);
 static N_INLINE(Exception*, getCurrentException)(void);
 static N_INLINE(void, popCurrentException)(void);
-N_NIMCALL(void, runforever_267439)(void);
-N_NIMCALL(void, echooriginalstacktrace_268643)(FutureHEX3Aobjecttype255097* future);
-N_NIMCALL(void, echooriginalstacktrace_269622)(FutureHEX3Aobjecttype261249* future);
-N_NIMCALL(void, TMP2478)(void* p, NI op);
-N_NIMCALL(void, checkfinished_271619)(FutureHEX3Aobjecttype271248* future);
-N_NIMCALL(void, TMP2486)(void* p, NI op);
-N_NIMCALL(void, checkfinished_272846)(FutureHEX3Aobjecttype272455* future);
-N_NIMCALL(void, echooriginalstacktrace_273437)(FutureHEX3Aobjecttype271248* future);
-N_NIMCALL(void, TMP2492)(void* p, NI op);
-N_CLOSURE(void, HEX3Aanonymous_274028)(void* ClEnv);
-N_NIMCALL(void, TMP2702)(void* p, NI op);
-N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future);
-N_NIMCALL(void, echooriginalstacktrace_280909)(FutureHEX3Aobjecttype279252* future);
-STRING_LITERAL(TMP2303, "<-----> ", 8);
-STRING_LITERAL(TMP2304, " ", 1);
-STRING_LITERAL(TMP2305, "-----", 5);
-STRING_LITERAL(TMP2306, "<----->", 7);
-STRING_LITERAL(TMP2307, "Future already finished, cannot finish twice.", 45);
-STRING_LITERAL(TMP2308, "false ", 6);
-STRING_LITERAL(TMP2309, "future.error == nil ", 20);
-static NIM_CONST TY255018 TMP2310 = {NIM_NIL,NIM_NIL};
-STRING_LITERAL(TMP2320, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP2349, "Contents: ", 10);
-STRING_LITERAL(TMP2360, "No error in future.", 19);
-STRING_LITERAL(TMP2362, "Original stack trace in ", 24);
-STRING_LITERAL(TMP2363, ":", 1);
-STRING_LITERAL(TMP2364, "Empty or nil stack trace.", 25);
-STRING_LITERAL(TMP2365, "Continuing...", 13);
-STRING_LITERAL(TMP2366, "Future still in progress.", 25);
-STRING_LITERAL(TMP2372, "Operation performed on a socket which has not been registered w"
+N_NIMCALL(void, runforever_255439)(void);
+N_NIMCALL(void, echooriginalstacktrace_256643)(FutureHEX3Aobjecttype243097* future);
+N_NIMCALL(void, echooriginalstacktrace_257622)(FutureHEX3Aobjecttype249249* future);
+N_NIMCALL(void, TMP2400)(void* p, NI op);
+N_NIMCALL(void, checkfinished_259619)(FutureHEX3Aobjecttype259248* future);
+N_NIMCALL(void, TMP2408)(void* p, NI op);
+N_NIMCALL(void, checkfinished_260846)(FutureHEX3Aobjecttype260455* future);
+N_NIMCALL(void, echooriginalstacktrace_261437)(FutureHEX3Aobjecttype259248* future);
+N_NIMCALL(void, TMP2414)(void* p, NI op);
+N_CLOSURE(void, HEX3Aanonymous_262028)(void* ClEnv);
+N_NIMCALL(void, TMP2624)(void* p, NI op);
+N_NIMCALL(void, checkfinished_267526)(FutureHEX3Aobjecttype267252* future);
+N_NIMCALL(void, echooriginalstacktrace_268909)(FutureHEX3Aobjecttype267252* future);
+STRING_LITERAL(TMP2225, "<-----> ", 8);
+STRING_LITERAL(TMP2226, " ", 1);
+STRING_LITERAL(TMP2227, "-----", 5);
+STRING_LITERAL(TMP2228, "<----->", 7);
+STRING_LITERAL(TMP2229, "Future already finished, cannot finish twice.", 45);
+STRING_LITERAL(TMP2230, "false ", 6);
+STRING_LITERAL(TMP2231, "future.error == nil ", 20);
+static NIM_CONST TY243018 TMP2232 = {NIM_NIL,NIM_NIL};
+STRING_LITERAL(TMP2242, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP2271, "Contents: ", 10);
+STRING_LITERAL(TMP2282, "No error in future.", 19);
+STRING_LITERAL(TMP2284, "Original stack trace in ", 24);
+STRING_LITERAL(TMP2285, ":", 1);
+STRING_LITERAL(TMP2286, "Empty or nil stack trace.", 25);
+STRING_LITERAL(TMP2287, "Continuing...", 13);
+STRING_LITERAL(TMP2288, "Future still in progress.", 25);
+STRING_LITERAL(TMP2294, "Operation performed on a socket which has not been registered w"
 "ith the dispatcher yet.", 86);
-STRING_LITERAL(TMP2373, "No handles or timers registered in dispatcher.", 46);
-STRING_LITERAL(TMP2374, "customOverlapped.data.fd == TAsyncFD(lpCompletionKey) ", 54);
-STRING_LITERAL(TMP2377, "Need to initialise ConnectEx().", 31);
-STRING_LITERAL(TMP2378, "Need to initialise AcceptEx().", 30);
-STRING_LITERAL(TMP2379, "Need to initialise getAcceptExSockAddrs().", 42);
-STRING_LITERAL(TMP2382, "connect", 7);
-STRING_LITERAL(TMP2397, "not contains(flags, Peek) Peek not supported on Windows.", 56);
-STRING_LITERAL(TMP2398, "recv", 4);
-STRING_LITERAL(TMP2400, "", 0);
-STRING_LITERAL(TMP2401, "bytesCount <= size ", 19);
-STRING_LITERAL(TMP2402, "realSize <= size ", 17);
-STRING_LITERAL(TMP2405, "recvInto", 8);
-STRING_LITERAL(TMP2408, "send", 4);
-STRING_LITERAL(TMP2411, "acceptAddr", 10);
-STRING_LITERAL(TMP2416, "sleepAsync", 10);
-STRING_LITERAL(TMP2427, "accept", 6);
-STRING_LITERAL(TMP2428, "future.finished ", 16);
-STRING_LITERAL(TMP2432, "recvLine", 8);
-STRING_LITERAL(TMP2433, "\015", 1);
-STRING_LITERAL(TMP2434, "\012", 1);
-STRING_LITERAL(TMP2435, "c == \"\\x0A\" ", 12);
-STRING_LITERAL(TMP2436, "\015\012", 2);
-STRING_LITERAL(TMP2439, "retFuture.finished Async procedure\'s (recvLine) return Future w"
+STRING_LITERAL(TMP2295, "No handles or timers registered in dispatcher.", 46);
+STRING_LITERAL(TMP2296, "customOverlapped.data.fd == TAsyncFD(lpCompletionKey) ", 54);
+STRING_LITERAL(TMP2299, "Need to initialise ConnectEx().", 31);
+STRING_LITERAL(TMP2300, "Need to initialise AcceptEx().", 30);
+STRING_LITERAL(TMP2301, "Need to initialise getAcceptExSockAddrs().", 42);
+STRING_LITERAL(TMP2304, "connect", 7);
+STRING_LITERAL(TMP2319, "not contains(flags, Peek) Peek not supported on Windows.", 56);
+STRING_LITERAL(TMP2320, "recv", 4);
+STRING_LITERAL(TMP2322, "", 0);
+STRING_LITERAL(TMP2323, "bytesCount <= size ", 19);
+STRING_LITERAL(TMP2324, "realSize <= size ", 17);
+STRING_LITERAL(TMP2327, "recvInto", 8);
+STRING_LITERAL(TMP2330, "send", 4);
+STRING_LITERAL(TMP2333, "acceptAddr", 10);
+STRING_LITERAL(TMP2338, "sleepAsync", 10);
+STRING_LITERAL(TMP2349, "accept", 6);
+STRING_LITERAL(TMP2350, "future.finished ", 16);
+STRING_LITERAL(TMP2354, "recvLine", 8);
+STRING_LITERAL(TMP2355, "\015", 1);
+STRING_LITERAL(TMP2356, "\012", 1);
+STRING_LITERAL(TMP2357, "c == \"\\x0A\" ", 12);
+STRING_LITERAL(TMP2358, "\015\012", 2);
+STRING_LITERAL(TMP2361, "retFuture.finished Async procedure\'s (recvLine) return Future w"
 "as not finished.", 79);
-NI currentid_255044;
+NI currentid_243044;
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
-TNimType NTI255995; /* tuple[finishAt: float, fut: Future[system.void]] */
+TNimType NTI243995; /* tuple[finishAt: float, fut: Future[system.void]] */
 extern TNimType NTI128; /* float */
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI255017; /* FutureBase:ObjectType */
-TNimType NTI255018; /* (pointer, ref tuple[]) */
+TNimType NTI243017; /* FutureBase:ObjectType */
+TNimType NTI243018; /* (pointer, ref tuple[]) */
 extern TNimType NTI153; /* pointer */
-TNimType NTI256246; /* tuple[] */
-TNimType NTI256245; /* ref tuple[] */
+TNimType NTI244246; /* tuple[] */
+TNimType NTI244245; /* ref tuple[] */
 extern TNimType NTI138; /* bool */
 extern TNimType NTI9022; /* ref Exception */
 extern TNimType NTI149; /* string */
 extern TNimType NTI108; /* int */
-TNimType NTI255097; /* Future:ObjectType */
-TNimType NTI255096; /* Future */
-TNimType NTI255994; /* seq[tuple[finishAt: float, fut: Future[system.void]]] */
-TNimType NTI259769; /* Future:ObjectType */
-TNimType NTI259768; /* Future */
-TNimType NTI261249; /* Future:ObjectType */
-TNimType NTI261248; /* Future */
-TNimType NTI262756; /* Future:ObjectType */
-TNimType NTI262749; /* tuple[address: string, client: TAsyncFD] */
-TNimType NTI262755; /* Future */
+TNimType NTI243097; /* Future:ObjectType */
+TNimType NTI243096; /* Future */
+TNimType NTI243994; /* seq[tuple[finishAt: float, fut: Future[system.void]]] */
+TNimType NTI247769; /* Future:ObjectType */
+TNimType NTI247768; /* Future */
+TNimType NTI249249; /* Future:ObjectType */
+TNimType NTI249248; /* Future */
+TNimType NTI250756; /* Future:ObjectType */
+TNimType NTI250749; /* tuple[address: string, client: TAsyncFD] */
+TNimType NTI250755; /* Future */
 extern TNimType NTI22801; /* ref ValueError */
 extern TNimType NTI3449; /* ValueError */
-TNimType NTI255993; /* PDispatcherBase:ObjectType */
-TNimType NTI258020; /* PDispatcher:ObjectType */
-extern TNimType NTI103219; /* THandle */
-extern TNimType NTI258026; /* HashSet */
-TNimType NTI258006; /* PDispatcher */
-extern TY105652 Dl_105651;
-PdispatcherHEX3Aobjecttype258020* gdisp_258237;
-extern TY105661 Dl_105660;
-void* connectexptr_259219;
-void* acceptexptr_259220;
-void* getacceptexsockaddrsptr_259221;
-extern TY105733 Dl_105732;
-extern Tguid105614 Wsaidconnectex_105714;
-extern Tguid105614 Wsaidacceptex_105718;
-extern Tguid105614 Wsaidgetacceptexsockaddrs_105722;
-TNimType NTI259730; /* object */
-TNimType NTI259732; /* range -1..0(int) */
-TNimType NTI259756; /* ref object */
-TNimType NTI259733; /* object */
-TNimType NTI259754; /* ref object */
-TNimType NTI259736; /* object */
-TNimType NTI259752; /* ref object */
-extern TNimType NTI105608; /* TOVERLAPPED */
-TNimType NTI258008; /* TCustomOverlapped */
-TNimType NTI258004; /* TCompletionData */
-TNimType NTI258014; /* (pointer, ref tuple[]) */
-TNimType NTI258010; /* PCustomOverlapped */
-extern TNimType NTI130222; /* ref OSError */
+TNimType NTI243993; /* PDispatcherBase:ObjectType */
+TNimType NTI246020; /* PDispatcher:ObjectType */
+extern TNimType NTI105219; /* THandle */
+extern TNimType NTI246026; /* HashSet */
+TNimType NTI246006; /* PDispatcher */
+extern TY107652 Dl_107651;
+PdispatcherHEX3Aobjecttype246020* gdisp_246237;
+extern TY107661 Dl_107660;
+void* connectexptr_247219;
+void* acceptexptr_247220;
+void* getacceptexsockaddrsptr_247221;
+extern TY107733 Dl_107732;
+extern Tguid107614 Wsaidconnectex_107714;
+extern Tguid107614 Wsaidacceptex_107718;
+extern Tguid107614 Wsaidgetacceptexsockaddrs_107722;
+TNimType NTI247730; /* object */
+TNimType NTI247732; /* range -1..0(int) */
+TNimType NTI247756; /* ref object */
+TNimType NTI247733; /* object */
+TNimType NTI247754; /* ref object */
+TNimType NTI247736; /* object */
+TNimType NTI247752; /* ref object */
+extern TNimType NTI107608; /* TOVERLAPPED */
+TNimType NTI246008; /* TCustomOverlapped */
+TNimType NTI246004; /* TCompletionData */
+TNimType NTI246014; /* (pointer, ref tuple[]) */
+TNimType NTI246010; /* PCustomOverlapped */
+extern TNimType NTI115433; /* ref OSError */
 extern TNimType NTI3433; /* OSError */
-TNimType NTI261222; /* object */
-extern TNimType NTI105747; /* TWSABuf */
-extern TNimType NTI239417; /* SocketFlag */
-TNimType NTI259761; /* set[SocketFlag] */
-TNimType NTI261235; /* ref object */
-extern TY105754 Dl_105753;
-TNimType NTI262619; /* object */
-TNimType NTI262631; /* ref object */
-TNimType NTI262730; /* object */
-TNimType NTI262741; /* ref object */
-extern TY105767 Dl_105766;
-TNimType NTI264164; /* object */
-extern TNimType NTI103229; /* DWORD */
-TNimType NTI264198; /* ref object */
-extern NI osinvalidsocket_234650;
-TNimType NTI264167; /* object */
-TNimType NTI264196; /* ref object */
-extern TY105087 Dl_105086;
-extern TY105263 Dl_105262;
-TNimType NTI264663; /* Future:ObjectType */
-TNimType NTI264662; /* Future */
-TNimType NTI265830; /* object */
-TNimType NTI265820; /* (pointer, ref tuple[]) */
-TNimType NTI265841; /* ref object */
-TNimType NTI265842; /* object */
-TNimType NTI265852; /* ref object */
-TNimType NTI267410; /* object */
-TNimType NTI267412; /* range -1..2(int) */
-TNimType NTI266613; /* (pointer, ref tuple[]) */
-TNimType NTI267417; /* ref object */
+TNimType NTI249222; /* object */
+extern TNimType NTI107747; /* TWSABuf */
+extern TNimType NTI227417; /* SocketFlag */
+TNimType NTI247761; /* set[SocketFlag] */
+TNimType NTI249235; /* ref object */
+extern TY107754 Dl_107753;
+TNimType NTI250619; /* object */
+TNimType NTI250631; /* ref object */
+TNimType NTI250730; /* object */
+TNimType NTI250741; /* ref object */
+extern TY107767 Dl_107766;
+TNimType NTI252164; /* object */
+extern TNimType NTI105229; /* DWORD */
+TNimType NTI252198; /* ref object */
+extern NI osinvalidsocket_222650;
+TNimType NTI252167; /* object */
+TNimType NTI252196; /* ref object */
+extern TY107087 Dl_107086;
+extern TY107263 Dl_107262;
+TNimType NTI252663; /* Future:ObjectType */
+TNimType NTI252662; /* Future */
+TNimType NTI253830; /* object */
+TNimType NTI253820; /* (pointer, ref tuple[]) */
+TNimType NTI253841; /* ref object */
+TNimType NTI253842; /* object */
+TNimType NTI253852; /* ref object */
+TNimType NTI255410; /* object */
+TNimType NTI255412; /* range -1..2(int) */
+TNimType NTI254613; /* (pointer, ref tuple[]) */
+TNimType NTI255417; /* ref object */
 extern TSafePoint* exchandler_17043;
 extern Exception* currexception_17045;
-TNimType NTI271248; /* Future:ObjectType */
-extern TNimType NTI271241; /* tuple[address: string, client: AsyncSocket] */
-TNimType NTI271247; /* Future */
-TNimType NTI272455; /* Future:ObjectType */
-extern TNimType NTI268204; /* AsyncSocket */
-TNimType NTI272454; /* Future */
-TNimType NTI274030; /* object */
-TNimType NTI274020; /* (pointer, ref tuple[]) */
-TNimType NTI274041; /* ref object */
-TNimType NTI279252; /* Future:ObjectType */
-extern TNimType NTI277008; /* Response */
-TNimType NTI279251; /* Future */
+TNimType NTI259248; /* Future:ObjectType */
+extern TNimType NTI259241; /* tuple[address: string, client: AsyncSocket] */
+TNimType NTI259247; /* Future */
+TNimType NTI260455; /* Future:ObjectType */
+extern TNimType NTI256204; /* AsyncSocket */
+TNimType NTI260454; /* Future */
+TNimType NTI262030; /* object */
+TNimType NTI262020; /* (pointer, ref tuple[]) */
+TNimType NTI262041; /* ref object */
+TNimType NTI267252; /* Future:ObjectType */
+extern TNimType NTI265008; /* Response */
+TNimType NTI267251; /* Future */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -866,7 +866,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void, checkfinished_255102)(FutureHEX3Aobjecttype255097* future) {
+N_NIMCALL(void, checkfinished_243102)(FutureHEX3Aobjecttype243097* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -876,15 +876,15 @@ N_NIMCALL(void, checkfinished_255102)(FutureHEX3Aobjecttype255097* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -892,7 +892,7 @@ N_NIMCALL(void, checkfinished_255102)(FutureHEX3Aobjecttype255097* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -900,23 +900,23 @@ N_NIMCALL(void, checkfinished_255102)(FutureHEX3Aobjecttype255097* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, complete_255090)(FutureHEX3Aobjecttype255097* future) {
+N_NIMCALL(void, complete_243090)(FutureHEX3Aobjecttype243097* future) {
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(191, "asyncdispatch.nim");
-	checkfinished_255102(future);
+	checkfinished_243102(future);
 	nimln(192, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(193, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(194, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA7;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA7;
 		nimln(195, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2311)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2233)((*future).Sup.cb.ClPrc))();
 	}
 	LA7: ;
 	popFrame();
@@ -1033,7 +1033,7 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, callbackHEX3D_255832)(FuturebaseHEX3Aobjecttype255017* future, TY255018 cb) {
+N_NIMCALL(void, callbackHEX3D_243832)(FuturebaseHEX3Aobjecttype243017* future, TY243018 cb) {
 	nimfr("callback=", "asyncdispatch.nim")
 	nimln(222, "asyncdispatch.nim");
 	asgnRef((void**) (&(*future).cb.ClEnv), cb.ClEnv);
@@ -1042,13 +1042,13 @@ N_NIMCALL(void, callbackHEX3D_255832)(FuturebaseHEX3Aobjecttype255017* future, T
 	{
 		if (!(*future).finished) goto LA3;
 		nimln(224, "asyncdispatch.nim");
-		(*future).cb.ClEnv? (*future).cb.ClPrc((*future).cb.ClEnv):((TMP2312)((*future).cb.ClPrc))();
+		(*future).cb.ClEnv? (*future).cb.ClPrc((*future).cb.ClEnv):((TMP2234)((*future).cb.ClPrc))();
 	}
 	LA3: ;
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, failed_255914)(FuturebaseHEX3Aobjecttype255017* future) {
+N_NIMCALL(NIM_BOOL, failed_243914)(FuturebaseHEX3Aobjecttype243017* future) {
 	NIM_BOOL result;
 	nimfr("failed", "asyncdispatch.nim")
 {	result = 0;
@@ -1059,23 +1059,23 @@ N_NIMCALL(NIM_BOOL, failed_255914)(FuturebaseHEX3Aobjecttype255017* future) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2316)(void* p, NI op) {
-	TY256246* a;
-	a = (TY256246*)p;
+N_NIMCALL(void, TMP2238)(void* p, NI op) {
+	TY244246* a;
+	a = (TY244246*)p;
 }
-N_NIMCALL(void, TMP2317)(void* p, NI op) {
-	FutureHEX3Aobjecttype255097* a;
-	a = (FutureHEX3Aobjecttype255097*)p;
+N_NIMCALL(void, TMP2239)(void* p, NI op) {
+	FutureHEX3Aobjecttype243097* a;
+	a = (FutureHEX3Aobjecttype243097*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
 	nimGCvisit((void*)(*a).Sup.stacktrace, op);
 	nimGCvisit((void*)(*a).Sup.fromproc, op);
 }
-N_NIMCALL(void, TMP2318)(void* p, NI op) {
-	TY255994* a;
+N_NIMCALL(void, TMP2240)(void* p, NI op) {
+	TY243994* a;
 	NI LOC1;
-	a = (TY255994*)p;
+	a = (TY243994*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	nimGCvisit((void*)a->data[LOC1].Field1, op);
@@ -1112,57 +1112,57 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, processtimers_256005)(PdispatcherbaseHEX3Aobjecttype255993* p) {
-	TY255994* oldtimers;
+N_NIMCALL(void, processtimers_244005)(PdispatcherbaseHEX3Aobjecttype243993* p) {
+	TY243994* oldtimers;
 	nimfr("processTimers", "asyncdispatch.nim")
 	nimln(315, "asyncdispatch.nim");
-	genericSeqAssign((&oldtimers), (*p).timers, (&NTI255994));
+	genericSeqAssign((&oldtimers), (*p).timers, (&NTI243994));
 	nimln(316, "asyncdispatch.nim");
 	if ((*p).timers) nimGCunref((*p).timers);
-	(*p).timers = (TY255994*) newSeqRC1((&NTI255994), 0);
+	(*p).timers = (TY243994*) newSeqRC1((&NTI243994), 0);
 	{
-		TY255995 t_256211;
-		NI i_256225;
-		NI L_256227;
-		memset((void*)(&t_256211), 0, sizeof(t_256211));
+		TY243995 t_244211;
+		NI i_244225;
+		NI L_244227;
+		memset((void*)(&t_244211), 0, sizeof(t_244211));
 		nimln(3084, "system.nim");
-		i_256225 = ((NI) 0);
+		i_244225 = ((NI) 0);
 		nimln(3085, "system.nim");
-		L_256227 = (oldtimers ? oldtimers->Sup.len : 0);
+		L_244227 = (oldtimers ? oldtimers->Sup.len : 0);
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP2319;
-				if (!(i_256225 < L_256227)) goto LA3;
+				NI TMP2241;
+				if (!(i_244225 < L_244227)) goto LA3;
 				nimln(3087, "system.nim");
-				if ((NU)(i_256225) >= (NU)(oldtimers->Sup.len)) raiseIndexError();
-				t_256211.Field0 = oldtimers->data[i_256225].Field0;
-				t_256211.Field1 = oldtimers->data[i_256225].Field1;
+				if ((NU)(i_244225) >= (NU)(oldtimers->Sup.len)) raiseIndexError();
+				t_244211.Field0 = oldtimers->data[i_244225].Field0;
+				t_244211.Field1 = oldtimers->data[i_244225].Field1;
 				nimln(318, "asyncdispatch.nim");
 				{
 					NF LOC6;
 					LOC6 = 0;
 					LOC6 = ntepochTime();
-					if (!(t_256211.Field0 <= LOC6)) goto LA7;
+					if (!(t_244211.Field0 <= LOC6)) goto LA7;
 					nimln(319, "asyncdispatch.nim");
-					complete_255090(t_256211.Field1);
+					complete_243090(t_244211.Field1);
 				}
 				goto LA4;
 				LA7: ;
 				{
 					nimln(321, "asyncdispatch.nim");
-					(*p).timers = (TY255994*) incrSeq(&((*p).timers)->Sup, sizeof(TY255995));
-					(*p).timers->data[(*p).timers->Sup.len-1].Field0 = t_256211.Field0;
-					asgnRef((void**) (&(*p).timers->data[(*p).timers->Sup.len-1].Field1), t_256211.Field1);
+					(*p).timers = (TY243994*) incrSeq(&((*p).timers)->Sup, sizeof(TY243995));
+					(*p).timers->data[(*p).timers->Sup.len-1].Field0 = t_244211.Field0;
+					asgnRef((void**) (&(*p).timers->data[(*p).timers->Sup.len-1].Field1), t_244211.Field1);
 				}
 				LA4: ;
 				nimln(3088, "system.nim");
-				TMP2319 = addInt(i_256225, ((NI) 1));
-				i_256225 = (NI)(TMP2319);
+				TMP2241 = addInt(i_244225, ((NI) 1));
+				i_244225 = (NI)(TMP2241);
 				nimln(3089, "system.nim");
 				{
-					if (!!(((oldtimers ? oldtimers->Sup.len : 0) == L_256227))) goto LA12;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2320));
+					if (!!(((oldtimers ? oldtimers->Sup.len : 0) == L_244227))) goto LA12;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2242));
 				}
 				LA12: ;
 			} LA3: ;
@@ -1171,7 +1171,7 @@ N_NIMCALL(void, processtimers_256005)(PdispatcherbaseHEX3Aobjecttype255993* p) {
 	popFrame();
 }
 
-static N_INLINE(NI, hash_116804)(NI x) {
+static N_INLINE(NI, hash_150804)(NI x) {
 	NI result;
 	nimfr("hash", "hashes.nim")
 	result = 0;
@@ -1181,7 +1181,7 @@ static N_INLINE(NI, hash_116804)(NI x) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, isfilled_256444)(NI hcode) {
+static N_INLINE(NIM_BOOL, isfilled_244444)(NI hcode) {
 	NIM_BOOL result;
 	nimfr("isFilled", "sets.nim")
 	result = 0;
@@ -1191,14 +1191,14 @@ static N_INLINE(NIM_BOOL, isfilled_256444)(NI hcode) {
 	return result;
 }
 
-static N_INLINE(NI, nexttry_256620)(NI h, NI maxhash) {
+static N_INLINE(NI, nexttry_244620)(NI h, NI maxhash) {
 	NI result;
-	NI TMP2342;
+	NI TMP2264;
 	nimfr("nextTry", "sets.nim")
 	result = 0;
 	nimln(127, "sets.nim");
-	TMP2342 = addInt(h, ((NI) 1));
-	result = (NI)((NI)(TMP2342) & maxhash);
+	TMP2264 = addInt(h, ((NI) 1));
+	result = (NI)((NI)(TMP2264) & maxhash);
 	popFrame();
 	return result;
 }
@@ -1223,14 +1223,14 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc) {
+static N_INLINE(NI, rawget_246403)(Hashset246026 s, NI key, NI* hc) {
 	NI result;
 	NI h;
-	NI TMP2343;
+	NI TMP2265;
 	nimfr("rawGet", "sets.nim")
 {	result = 0;
 	nimln(142, "sets.nim");
-	(*hc) = hash_116804(key);
+	(*hc) = hash_150804(key);
 	nimln(143, "sets.nim");
 	{
 		if (!((*hc) == ((NI) 0))) goto LA3;
@@ -1246,7 +1246,7 @@ static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc) {
 			NIM_BOOL LOC7;
 			if ((NU)(h) >= (NU)(s.data->Sup.len)) raiseIndexError();
 			LOC7 = 0;
-			LOC7 = isfilled_256444(s.data->data[h].Field0);
+			LOC7 = isfilled_244444(s.data->data[h].Field0);
 			if (!LOC7) goto LA6;
 			nimln(136, "sets.nim");
 			{
@@ -1265,21 +1265,21 @@ static N_INLINE(NI, rawget_258403)(Hashset258026 s, NI key, NI* hc) {
 			}
 			LA12: ;
 			nimln(138, "sets.nim");
-			h = nexttry_256620(h, (s.data ? (s.data->Sup.len-1) : -1));
+			h = nexttry_244620(h, (s.data ? (s.data->Sup.len-1) : -1));
 		} LA6: ;
 	}
 	nimln(139, "sets.nim");
-	TMP2343 = subInt(((NI) -1), h);
-	result = (NI)(TMP2343);
+	TMP2265 = subInt(((NI) -1), h);
+	result = (NI)(TMP2265);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc) {
+static N_INLINE(NI, rawgetknownhc_246490)(Hashset246026 s, NI key, NI hc) {
 	NI result;
 	NI h;
-	NI TMP2344;
+	NI TMP2266;
 	nimfr("rawGetKnownHC", "sets.nim")
 {	result = 0;
 	nimln(130, "sets.nim");
@@ -1290,7 +1290,7 @@ static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc) {
 			NIM_BOOL LOC3;
 			if ((NU)(h) >= (NU)(s.data->Sup.len)) raiseIndexError();
 			LOC3 = 0;
-			LOC3 = isfilled_256444(s.data->data[h].Field0);
+			LOC3 = isfilled_244444(s.data->data[h].Field0);
 			if (!LOC3) goto LA2;
 			nimln(136, "sets.nim");
 			{
@@ -1309,12 +1309,12 @@ static N_INLINE(NI, rawgetknownhc_258490)(Hashset258026 s, NI key, NI hc) {
 			}
 			LA8: ;
 			nimln(138, "sets.nim");
-			h = nexttry_256620(h, (s.data ? (s.data->Sup.len-1) : -1));
+			h = nexttry_244620(h, (s.data ? (s.data->Sup.len-1) : -1));
 		} LA2: ;
 	}
 	nimln(139, "sets.nim");
-	TMP2344 = subInt(((NI) -1), h);
-	result = (NI)(TMP2344);
+	TMP2266 = subInt(((NI) -1), h);
+	result = (NI)(TMP2266);
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1373,36 +1373,36 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype255097*, newfuture_259407)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype255097* result;
+N_NIMCALL(FutureHEX3Aobjecttype243097*, newfuture_247407)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype243097* result;
 	NimStringDesc* LOC1;
-	NI TMP2345;
+	NI TMP2267;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype255097*) newObj((&NTI255096), sizeof(FutureHEX3Aobjecttype255097));
-	(*result).Sup.Sup.m_type = (&NTI255097);
+	result = (FutureHEX3Aobjecttype243097*) newObj((&NTI243096), sizeof(FutureHEX3Aobjecttype243097));
+	(*result).Sup.Sup.m_type = (&NTI243097);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2345 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2345);
+	TMP2267 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2267);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, fail_259659)(FutureHEX3Aobjecttype255097* future, Exception* error) {
+N_NIMCALL(void, fail_247659)(FutureHEX3Aobjecttype243097* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_255102(future);
+	checkfinished_243102(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -1424,9 +1424,9 @@ N_NIMCALL(void, fail_259659)(FutureHEX3Aobjecttype255097* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2346)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2268)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -1435,9 +1435,9 @@ N_NIMCALL(void, fail_259659)(FutureHEX3Aobjecttype255097* future, Exception* err
 	LA7: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2347)(void* p, NI op) {
-	FutureHEX3Aobjecttype259769* a;
-	a = (FutureHEX3Aobjecttype259769*)p;
+N_NIMCALL(void, TMP2269)(void* p, NI op) {
+	FutureHEX3Aobjecttype247769* a;
+	a = (FutureHEX3Aobjecttype247769*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -1446,33 +1446,33 @@ N_NIMCALL(void, TMP2347)(void* p, NI op) {
 	nimGCvisit((void*)(*a).value, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, newfuture_259802)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype259769* result;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, newfuture_247802)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype247769* result;
 	NimStringDesc* LOC1;
-	NI TMP2348;
+	NI TMP2270;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype259769*) newObj((&NTI259768), sizeof(FutureHEX3Aobjecttype259769));
-	(*result).Sup.Sup.m_type = (&NTI259769);
+	result = (FutureHEX3Aobjecttype247769*) newObj((&NTI247768), sizeof(FutureHEX3Aobjecttype247769));
+	(*result).Sup.Sup.m_type = (&NTI247769);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2348 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2348);
+	TMP2270 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2270);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_260040)(FutureHEX3Aobjecttype259769* future) {
+N_NIMCALL(void, checkfinished_248040)(FutureHEX3Aobjecttype247769* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -1482,17 +1482,17 @@ N_NIMCALL(void, checkfinished_260040)(FutureHEX3Aobjecttype259769* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(172, "asyncdispatch.nim");
-		printf("%s%s\015\012", ((NimStringDesc*) &TMP2349)? (((NimStringDesc*) &TMP2349))->data:"nil", reprStr((*future).value)? (reprStr((*future).value))->data:"nil");
+		printf("%s%s\015\012", ((NimStringDesc*) &TMP2271)? (((NimStringDesc*) &TMP2271))->data:"nil", reprStr((*future).value)? (reprStr((*future).value))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -1500,7 +1500,7 @@ N_NIMCALL(void, checkfinished_260040)(FutureHEX3Aobjecttype259769* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -1508,15 +1508,15 @@ N_NIMCALL(void, checkfinished_260040)(FutureHEX3Aobjecttype259769* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, complete_260031)(FutureHEX3Aobjecttype259769* future, NimStringDesc* val) {
+N_NIMCALL(void, complete_248031)(FutureHEX3Aobjecttype247769* future, NimStringDesc* val) {
 	NimStringDesc* LOC5;
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_260040(future);
+	checkfinished_248040(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -1527,18 +1527,18 @@ N_NIMCALL(void, complete_260031)(FutureHEX3Aobjecttype259769* future, NimStringD
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA8;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA8;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2350)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2272)((*future).Sup.cb.ClPrc))();
 	}
 	LA8: ;
 	popFrame();
 }
 
-N_NIMCALL(void, fail_261034)(FutureHEX3Aobjecttype259769* future, Exception* error) {
+N_NIMCALL(void, fail_249034)(FutureHEX3Aobjecttype247769* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_260040(future);
+	checkfinished_248040(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -1560,9 +1560,9 @@ N_NIMCALL(void, fail_261034)(FutureHEX3Aobjecttype259769* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2351)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2273)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -1571,9 +1571,9 @@ N_NIMCALL(void, fail_261034)(FutureHEX3Aobjecttype259769* future, Exception* err
 	LA7: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2352)(void* p, NI op) {
-	FutureHEX3Aobjecttype261249* a;
-	a = (FutureHEX3Aobjecttype261249*)p;
+N_NIMCALL(void, TMP2274)(void* p, NI op) {
+	FutureHEX3Aobjecttype249249* a;
+	a = (FutureHEX3Aobjecttype249249*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -1581,33 +1581,33 @@ N_NIMCALL(void, TMP2352)(void* p, NI op) {
 	nimGCvisit((void*)(*a).Sup.fromproc, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype261249*, newfuture_261402)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype261249* result;
+N_NIMCALL(FutureHEX3Aobjecttype249249*, newfuture_249402)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype249249* result;
 	NimStringDesc* LOC1;
-	NI TMP2353;
+	NI TMP2275;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype261249*) newObj((&NTI261248), sizeof(FutureHEX3Aobjecttype261249));
-	(*result).Sup.Sup.m_type = (&NTI261249);
+	result = (FutureHEX3Aobjecttype249249*) newObj((&NTI249248), sizeof(FutureHEX3Aobjecttype249249));
+	(*result).Sup.Sup.m_type = (&NTI249249);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2353 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2353);
+	TMP2275 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2275);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_261640)(FutureHEX3Aobjecttype261249* future) {
+N_NIMCALL(void, checkfinished_249640)(FutureHEX3Aobjecttype249249* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -1617,15 +1617,15 @@ N_NIMCALL(void, checkfinished_261640)(FutureHEX3Aobjecttype261249* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -1633,7 +1633,7 @@ N_NIMCALL(void, checkfinished_261640)(FutureHEX3Aobjecttype261249* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -1641,14 +1641,14 @@ N_NIMCALL(void, checkfinished_261640)(FutureHEX3Aobjecttype261249* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, complete_261631)(FutureHEX3Aobjecttype261249* future, NI val) {
+N_NIMCALL(void, complete_249631)(FutureHEX3Aobjecttype249249* future, NI val) {
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_261640(future);
+	checkfinished_249640(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -1657,18 +1657,18 @@ N_NIMCALL(void, complete_261631)(FutureHEX3Aobjecttype261249* future, NI val) {
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA7;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA7;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2354)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2276)((*future).Sup.cb.ClPrc))();
 	}
 	LA7: ;
 	popFrame();
 }
 
-N_NIMCALL(void, fail_262444)(FutureHEX3Aobjecttype261249* future, Exception* error) {
+N_NIMCALL(void, fail_250444)(FutureHEX3Aobjecttype249249* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_261640(future);
+	checkfinished_249640(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -1690,9 +1690,9 @@ N_NIMCALL(void, fail_262444)(FutureHEX3Aobjecttype261249* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2355)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2277)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -1701,9 +1701,9 @@ N_NIMCALL(void, fail_262444)(FutureHEX3Aobjecttype261249* future, Exception* err
 	LA7: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2357)(void* p, NI op) {
-	FutureHEX3Aobjecttype262756* a;
-	a = (FutureHEX3Aobjecttype262756*)p;
+N_NIMCALL(void, TMP2279)(void* p, NI op) {
+	FutureHEX3Aobjecttype250756* a;
+	a = (FutureHEX3Aobjecttype250756*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -1712,33 +1712,33 @@ N_NIMCALL(void, TMP2357)(void* p, NI op) {
 	nimGCvisit((void*)(*a).value.Field0, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype262756*, newfuture_262764)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype262756* result;
+N_NIMCALL(FutureHEX3Aobjecttype250756*, newfuture_250764)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype250756* result;
 	NimStringDesc* LOC1;
-	NI TMP2358;
+	NI TMP2280;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype262756*) newObj((&NTI262755), sizeof(FutureHEX3Aobjecttype262756));
-	(*result).Sup.Sup.m_type = (&NTI262756);
+	result = (FutureHEX3Aobjecttype250756*) newObj((&NTI250755), sizeof(FutureHEX3Aobjecttype250756));
+	(*result).Sup.Sup.m_type = (&NTI250756);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2358 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2358);
+	TMP2280 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2280);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_262875)(FutureHEX3Aobjecttype262756* future) {
+N_NIMCALL(void, checkfinished_250875)(FutureHEX3Aobjecttype250756* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -1748,15 +1748,15 @@ N_NIMCALL(void, checkfinished_262875)(FutureHEX3Aobjecttype262756* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -1764,7 +1764,7 @@ N_NIMCALL(void, checkfinished_262875)(FutureHEX3Aobjecttype262756* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -1772,15 +1772,15 @@ N_NIMCALL(void, checkfinished_262875)(FutureHEX3Aobjecttype262756* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, complete_262866)(FutureHEX3Aobjecttype262756* future, TY262749 val) {
+N_NIMCALL(void, complete_250866)(FutureHEX3Aobjecttype250756* future, TY250749 val) {
 	NimStringDesc* LOC5;
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_262875(future);
+	checkfinished_250875(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -1792,15 +1792,15 @@ N_NIMCALL(void, complete_262866)(FutureHEX3Aobjecttype262756* future, TY262749 v
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA8;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA8;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2359)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2281)((*future).Sup.cb.ClPrc))();
 	}
 	LA8: ;
 	popFrame();
 }
 
-N_NIMCALL(Exception*, readerror_263618)(FutureHEX3Aobjecttype262756* future) {
+N_NIMCALL(Exception*, readerror_251618)(FutureHEX3Aobjecttype250756* future) {
 	Exception* result;
 	nimfr("readError", "asyncdispatch.nim")
 {	result = 0;
@@ -1813,18 +1813,18 @@ N_NIMCALL(Exception*, readerror_263618)(FutureHEX3Aobjecttype262756* future) {
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_263638;
+		Valueerror3449* e_251638;
 		NimStringDesc* LOC6;
-		e_263638 = 0;
+		e_251638 = 0;
 		nimln(2265, "system.nim");
-		e_263638 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_263638).Sup.Sup.m_type = (&NTI3449);
+		e_251638 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_251638).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC6 = 0;
-		LOC6 = (*e_263638).Sup.message; (*e_263638).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2360));
+		LOC6 = (*e_251638).Sup.message; (*e_251638).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2282));
 		if (LOC6) nimGCunrefNoCycle(LOC6);
 		nimln(265, "asyncdispatch.nim");
-		raiseException((Exception*)e_263638, "ValueError");
+		raiseException((Exception*)e_251638, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
@@ -1832,10 +1832,10 @@ N_NIMCALL(Exception*, readerror_263618)(FutureHEX3Aobjecttype262756* future) {
 	return result;
 }
 
-N_NIMCALL(void, fail_263653)(FutureHEX3Aobjecttype262756* future, Exception* error) {
+N_NIMCALL(void, fail_251653)(FutureHEX3Aobjecttype250756* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_262875(future);
+	checkfinished_250875(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -1857,9 +1857,9 @@ N_NIMCALL(void, fail_263653)(FutureHEX3Aobjecttype262756* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2361)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2283)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -1869,10 +1869,10 @@ N_NIMCALL(void, fail_263653)(FutureHEX3Aobjecttype262756* future, Exception* err
 	popFrame();
 }
 
-N_NIMCALL(void, echooriginalstacktrace_263701)(FutureHEX3Aobjecttype262756* future) {
+N_NIMCALL(void, echooriginalstacktrace_251701)(FutureHEX3Aobjecttype250756* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -1889,15 +1889,15 @@ N_NIMCALL(void, echooriginalstacktrace_263701)(FutureHEX3Aobjecttype262756* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(void, read_263681)(FutureHEX3Aobjecttype262756* future, TY262749* Result) {
+N_NIMCALL(void, read_251681)(FutureHEX3Aobjecttype250756* future, TY250749* Result) {
 	nimfr("read", "asyncdispatch.nim")
 {	nimln(248, "asyncdispatch.nim");
 	{
@@ -1906,7 +1906,7 @@ N_NIMCALL(void, read_263681)(FutureHEX3Aobjecttype262756* future, TY262749* Resu
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_263701(future);
+			echooriginalstacktrace_251701(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -1919,69 +1919,69 @@ N_NIMCALL(void, read_263681)(FutureHEX3Aobjecttype262756* future, TY262749* Resu
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_264002;
+		Valueerror3449* e_252002;
 		NimStringDesc* LOC10;
-		e_264002 = 0;
+		e_252002 = 0;
 		nimln(2265, "system.nim");
-		e_264002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_264002).Sup.Sup.m_type = (&NTI3449);
+		e_252002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_252002).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_264002).Sup.message; (*e_264002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_252002).Sup.message; (*e_252002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_264002, "ValueError");
+		raiseException((Exception*)e_252002, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2371)(void* p, NI op) {
-	PdispatcherHEX3Aobjecttype258020* a;
-	a = (PdispatcherHEX3Aobjecttype258020*)p;
+N_NIMCALL(void, TMP2293)(void* p, NI op) {
+	PdispatcherHEX3Aobjecttype246020* a;
+	a = (PdispatcherHEX3Aobjecttype246020*)p;
 	nimGCvisit((void*)(*a).Sup.timers, op);
 	nimGCvisit((void*)(*a).handles.data, op);
 }
 
-N_NIMCALL(PdispatcherHEX3Aobjecttype258020*, newdispatcher_258055)(void) {
-	PdispatcherHEX3Aobjecttype258020* result;
+N_NIMCALL(PdispatcherHEX3Aobjecttype246020*, newdispatcher_246055)(void) {
+	PdispatcherHEX3Aobjecttype246020* result;
 	nimfr("newDispatcher", "asyncdispatch.nim")
 	result = 0;
 	nimln(349, "asyncdispatch.nim");
-	result = (PdispatcherHEX3Aobjecttype258020*) newObj((&NTI258006), sizeof(PdispatcherHEX3Aobjecttype258020));
-	(*result).Sup.Sup.m_type = (&NTI258020);
+	result = (PdispatcherHEX3Aobjecttype246020*) newObj((&NTI246006), sizeof(PdispatcherHEX3Aobjecttype246020));
+	(*result).Sup.Sup.m_type = (&NTI246020);
 	nimln(350, "asyncdispatch.nim");
-	(*result).ioport = Dl_105651(((NI) -1), ((NI) 0), ((NI32) 0), ((NI32) 1));
+	(*result).ioport = Dl_107651(((NI) -1), ((NI) 0), ((NI32) 0), ((NI32) 1));
 	nimln(351, "asyncdispatch.nim");
-	initset_258067(((NI) 64), (&(*result).handles));
+	initset_246067(((NI) 64), (&(*result).handles));
 	nimln(352, "asyncdispatch.nim");
 	if ((*result).Sup.timers) nimGCunref((*result).Sup.timers);
-	(*result).Sup.timers = (TY255994*) newSeqRC1((&NTI255994), 0);
+	(*result).Sup.timers = (TY243994*) newSeqRC1((&NTI243994), 0);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(PdispatcherHEX3Aobjecttype258020*, getglobaldispatcher_258238)(void) {
-	PdispatcherHEX3Aobjecttype258020* result;
+N_NIMCALL(PdispatcherHEX3Aobjecttype246020*, getglobaldispatcher_246238)(void) {
+	PdispatcherHEX3Aobjecttype246020* result;
 	nimfr("getGlobalDispatcher", "asyncdispatch.nim")
 	result = 0;
 	nimln(357, "asyncdispatch.nim");
 	{
-		if (!gdisp_258237 == 0) goto LA3;
-		asgnRef((void**) (&gdisp_258237), newdispatcher_258055());
+		if (!gdisp_246237 == 0) goto LA3;
+		asgnRef((void**) (&gdisp_246237), newdispatcher_246055());
 	}
 	LA3: ;
 	nimln(358, "asyncdispatch.nim");
-	result = gdisp_258237;
+	result = gdisp_246237;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, register_258252)(NI fd) {
-	PdispatcherHEX3Aobjecttype258020* p;
+N_NIMCALL(void, register_246252)(NI fd) {
+	PdispatcherHEX3Aobjecttype246020* p;
 	nimfr("register", "asyncdispatch.nim")
 	nimln(362, "asyncdispatch.nim");
-	p = getglobaldispatcher_258238();
+	p = getglobaldispatcher_246238();
 	nimln(363, "asyncdispatch.nim");
 	{
 		NI LOC3;
@@ -1989,42 +1989,42 @@ N_NIMCALL(void, register_258252)(NI fd) {
 		nimln(364, "asyncdispatch.nim");
 		nimln(363, "asyncdispatch.nim");
 		LOC3 = 0;
-		LOC3 = Dl_105651(fd, (*p).ioport, ((NI32) (fd)), ((NI32) 1));
+		LOC3 = Dl_107651(fd, (*p).ioport, ((NI32) (fd)), ((NI32) 1));
 		if (!(LOC3 == ((NI) 0))) goto LA4;
 		nimln(365, "asyncdispatch.nim");
 		LOC6 = 0;
-		LOC6 = oslasterror_140454();
-		raiseoserror_140430(LOC6);
+		LOC6 = oslasterror_115454();
+		raiseoserror_115430(LOC6);
 	}
 	LA4: ;
 	nimln(366, "asyncdispatch.nim");
-	incl_258257((&(*p).handles), fd);
+	incl_246257((&(*p).handles), fd);
 	popFrame();
 }
 
-N_NIMCALL(void, verifypresence_258607)(NI fd) {
-	PdispatcherHEX3Aobjecttype258020* p;
+N_NIMCALL(void, verifypresence_246607)(NI fd) {
+	PdispatcherHEX3Aobjecttype246020* p;
 	nimfr("verifyPresence", "asyncdispatch.nim")
 	nimln(370, "asyncdispatch.nim");
-	p = getglobaldispatcher_258238();
+	p = getglobaldispatcher_246238();
 	nimln(371, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
-		Valueerror3449* e_258822;
+		Valueerror3449* e_246822;
 		NimStringDesc* LOC6;
 		LOC3 = 0;
-		LOC3 = contains_258612((*p).handles, fd);
+		LOC3 = contains_246612((*p).handles, fd);
 		if (!!(LOC3)) goto LA4;
-		e_258822 = 0;
+		e_246822 = 0;
 		nimln(2265, "system.nim");
-		e_258822 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_258822).Sup.Sup.m_type = (&NTI3449);
+		e_246822 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_246822).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC6 = 0;
-		LOC6 = (*e_258822).Sup.message; (*e_258822).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2372));
+		LOC6 = (*e_246822).Sup.message; (*e_246822).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2294));
 		if (LOC6) nimGCunrefNoCycle(LOC6);
 		nimln(372, "asyncdispatch.nim");
-		raiseException((Exception*)e_258822, "ValueError");
+		raiseException((Exception*)e_246822, "ValueError");
 	}
 	LA4: ;
 	popFrame();
@@ -2054,42 +2054,42 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, poll_258836)(NI timeout) {
-	PdispatcherHEX3Aobjecttype258020* p;
+N_NIMCALL(void, poll_246836)(NI timeout) {
+	PdispatcherHEX3Aobjecttype246020* p;
 	NI32 lltimeout;
 	NI32 lpnumberofbytestransferred;
 	NI lpcompletionkey;
-	Tcustomoverlapped258008* customoverlapped;
+	Tcustomoverlapped246008* customoverlapped;
 	NIM_BOOL res;
 	NI32 LOC14;
-	PdispatcherbaseHEX3Aobjecttype255993* LOC38;
+	PdispatcherbaseHEX3Aobjecttype243993* LOC38;
 	nimfr("poll", "asyncdispatch.nim")
 	nimln(378, "asyncdispatch.nim");
-	p = getglobaldispatcher_258238();
+	p = getglobaldispatcher_246238();
 	nimln(379, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
 		NI LOC4;
-		Valueerror3449* e_258862;
+		Valueerror3449* e_246862;
 		NimStringDesc* LOC8;
 		LOC3 = 0;
 		LOC4 = 0;
-		LOC4 = len_258842((*p).handles);
+		LOC4 = len_246842((*p).handles);
 		LOC3 = (LOC4 == ((NI) 0));
 		if (!(LOC3)) goto LA5;
 		LOC3 = (((*p).Sup.timers ? (*p).Sup.timers->Sup.len : 0) == ((NI) 0));
 		LA5: ;
 		if (!LOC3) goto LA6;
-		e_258862 = 0;
+		e_246862 = 0;
 		nimln(2265, "system.nim");
-		e_258862 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_258862).Sup.Sup.m_type = (&NTI3449);
+		e_246862 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_246862).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC8 = 0;
-		LOC8 = (*e_258862).Sup.message; (*e_258862).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2373));
+		LOC8 = (*e_246862).Sup.message; (*e_246862).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2295));
 		if (LOC8) nimGCunrefNoCycle(LOC8);
 		nimln(380, "asyncdispatch.nim");
-		raiseException((Exception*)e_258862, "ValueError");
+		raiseException((Exception*)e_246862, "ValueError");
 	}
 	LA6: ;
 	nimln(383, "asyncdispatch.nim");
@@ -2109,7 +2109,7 @@ N_NIMCALL(void, poll_258836)(NI timeout) {
 	customoverlapped = 0;
 	nimln(389, "asyncdispatch.nim");
 	LOC14 = 0;
-	LOC14 = Dl_105660((*p).ioport, (&lpnumberofbytestransferred), (&lpcompletionkey), ((Toverlapped105608**) (&customoverlapped)), lltimeout);
+	LOC14 = Dl_107660((*p).ioport, (&lpnumberofbytestransferred), (&lpcompletionkey), ((Toverlapped107608**) (&customoverlapped)), lltimeout);
 	res = ((NIM_BOOL)chckRange(LOC14, NIM_FALSE, NIM_TRUE));
 	nimln(395, "asyncdispatch.nim");
 	{
@@ -2117,11 +2117,11 @@ N_NIMCALL(void, poll_258836)(NI timeout) {
 		nimln(397, "asyncdispatch.nim");
 		{
 			if (!!(((*customoverlapped).data.fd == lpcompletionkey))) goto LA21;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2374));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2296));
 		}
 		LA21: ;
 		nimln(399, "asyncdispatch.nim");
-		(*customoverlapped).data.cb.ClEnv? (*customoverlapped).data.cb.ClPrc((*customoverlapped).data.fd, lpnumberofbytestransferred, ((NI32) -1), (*customoverlapped).data.cb.ClEnv):((TMP2375)((*customoverlapped).data.cb.ClPrc))((*customoverlapped).data.fd, lpnumberofbytestransferred, ((NI32) -1));
+		(*customoverlapped).data.cb.ClEnv? (*customoverlapped).data.cb.ClPrc((*customoverlapped).data.fd, lpnumberofbytestransferred, ((NI32) -1), (*customoverlapped).data.cb.ClEnv):((TMP2297)((*customoverlapped).data.cb.ClPrc))((*customoverlapped).data.fd, lpnumberofbytestransferred, ((NI32) -1));
 		nimln(401, "asyncdispatch.nim");
 		nimGCunref(customoverlapped);
 	}
@@ -2130,18 +2130,18 @@ N_NIMCALL(void, poll_258836)(NI timeout) {
 	{
 		NI32 errcode;
 		nimln(403, "asyncdispatch.nim");
-		errcode = oslasterror_140454();
+		errcode = oslasterror_115454();
 		nimln(404, "asyncdispatch.nim");
 		{
 			if (!!((customoverlapped == NIM_NIL))) goto LA26;
 			nimln(405, "asyncdispatch.nim");
 			{
 				if (!!(((*customoverlapped).data.fd == lpcompletionkey))) goto LA30;
-				failedassertimpl_88817(((NimStringDesc*) &TMP2374));
+				failedassertimpl_88817(((NimStringDesc*) &TMP2296));
 			}
 			LA30: ;
 			nimln(406, "asyncdispatch.nim");
-			(*customoverlapped).data.cb.ClEnv? (*customoverlapped).data.cb.ClPrc((*customoverlapped).data.fd, lpnumberofbytestransferred, errcode, (*customoverlapped).data.cb.ClEnv):((TMP2376)((*customoverlapped).data.cb.ClPrc))((*customoverlapped).data.fd, lpnumberofbytestransferred, errcode);
+			(*customoverlapped).data.cb.ClEnv? (*customoverlapped).data.cb.ClPrc((*customoverlapped).data.fd, lpnumberofbytestransferred, errcode, (*customoverlapped).data.cb.ClEnv):((TMP2298)((*customoverlapped).data.cb.ClPrc))((*customoverlapped).data.fd, lpnumberofbytestransferred, errcode);
 			nimln(408, "asyncdispatch.nim");
 			nimGCunref(customoverlapped);
 		}
@@ -2156,7 +2156,7 @@ N_NIMCALL(void, poll_258836)(NI timeout) {
 			LA35: ;
 			{
 				nimln(413, "asyncdispatch.nim");
-				raiseoserror_140430(errcode);
+				raiseoserror_115430(errcode);
 			}
 			LA33: ;
 		}
@@ -2166,11 +2166,11 @@ N_NIMCALL(void, poll_258836)(NI timeout) {
 	nimln(416, "asyncdispatch.nim");
 	LOC38 = 0;
 	LOC38 = &p->Sup;
-	processtimers_256005(LOC38);
+	processtimers_244005(LOC38);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, initpointer_259222)(NI s, void** fun, Tguid105614* guid) {
+N_NIMCALL(NIM_BOOL, initpointer_247222)(NI s, void** fun, Tguid107614* guid) {
 	NIM_BOOL result;
 	NI32 bytesret;
 	int LOC1;
@@ -2184,28 +2184,28 @@ N_NIMCALL(NIM_BOOL, initpointer_259222)(NI s, void** fun, Tguid105614* guid) {
 	nimln(426, "asyncdispatch.nim");
 	nimln(427, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = Dl_105732(s, ((NI32) IL64(3355443206)), ((void*) (guid)), ((NI32)chckRange(((NI)sizeof(Tguid105614)), ((NI32) (-2147483647 -1)), ((NI32) 2147483647))), ((void*) (fun)), ((NI32) 8), (&bytesret), NIM_NIL, NIM_NIL);
+	LOC1 = Dl_107732(s, ((NI32) IL64(3355443206)), ((void*) (guid)), ((NI32)chckRange(((NI)sizeof(Tguid107614)), ((NI32) (-2147483647 -1)), ((NI32) 2147483647))), ((void*) (fun)), ((NI32) 8), (&bytesret), NIM_NIL, NIM_NIL);
 	result = (LOC1 == ((NI32) 0));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, initall_259244)(void) {
+N_NIMCALL(void, initall_247244)(void) {
 	NI dummysock;
 	nimfr("initAll", "asyncdispatch.nim")
 	nimln(431, "asyncdispatch.nim");
-	dummysock = newrawsocket_235004(((NU8) 2), ((NU8) 1), ((NU8) 6));
+	dummysock = newrawsocket_223004(((NU8) 2), ((NU8) 1), ((NU8) 6));
 	nimln(432, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
 		NI32 LOC6;
 		LOC3 = 0;
-		LOC3 = initpointer_259222(dummysock, (&connectexptr_259219), (&Wsaidconnectex_105714));
+		LOC3 = initpointer_247222(dummysock, (&connectexptr_247219), (&Wsaidconnectex_107714));
 		if (!!(LOC3)) goto LA4;
 		nimln(433, "asyncdispatch.nim");
 		LOC6 = 0;
-		LOC6 = oslasterror_140454();
-		raiseoserror_140430(LOC6);
+		LOC6 = oslasterror_115454();
+		raiseoserror_115430(LOC6);
 	}
 	LA4: ;
 	nimln(434, "asyncdispatch.nim");
@@ -2213,12 +2213,12 @@ N_NIMCALL(void, initall_259244)(void) {
 		NIM_BOOL LOC9;
 		NI32 LOC12;
 		LOC9 = 0;
-		LOC9 = initpointer_259222(dummysock, (&acceptexptr_259220), (&Wsaidacceptex_105718));
+		LOC9 = initpointer_247222(dummysock, (&acceptexptr_247220), (&Wsaidacceptex_107718));
 		if (!!(LOC9)) goto LA10;
 		nimln(435, "asyncdispatch.nim");
 		LOC12 = 0;
-		LOC12 = oslasterror_140454();
-		raiseoserror_140430(LOC12);
+		LOC12 = oslasterror_115454();
+		raiseoserror_115430(LOC12);
 	}
 	LA10: ;
 	nimln(436, "asyncdispatch.nim");
@@ -2226,121 +2226,121 @@ N_NIMCALL(void, initall_259244)(void) {
 		NIM_BOOL LOC15;
 		NI32 LOC18;
 		LOC15 = 0;
-		LOC15 = initpointer_259222(dummysock, (&getacceptexsockaddrsptr_259221), (&Wsaidgetacceptexsockaddrs_105722));
+		LOC15 = initpointer_247222(dummysock, (&getacceptexsockaddrsptr_247221), (&Wsaidgetacceptexsockaddrs_107722));
 		if (!!(LOC15)) goto LA16;
 		nimln(437, "asyncdispatch.nim");
 		LOC18 = 0;
-		LOC18 = oslasterror_140454();
-		raiseoserror_140430(LOC18);
+		LOC18 = oslasterror_115454();
+		raiseoserror_115430(LOC18);
 	}
 	LA16: ;
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, connectex_259256)(NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped105608* lpoverlapped) {
+N_NIMCALL(NIM_BOOL, connectex_247256)(NI s, SOCKADDR* name, int namelen, void* lpsendbuffer, NI32 dwsenddatalength, NI32* lpdwbytessent, Toverlapped107608* lpoverlapped) {
 	NIM_BOOL result;
-	TY259279 fun;
+	TY247279 fun;
 	nimfr("connectEx", "asyncdispatch.nim")
 	result = 0;
 	nimln(442, "asyncdispatch.nim");
 	{
-		Valueerror3449* e_259269;
+		Valueerror3449* e_247269;
 		NimStringDesc* LOC5;
-		if (!connectexptr_259219 == 0) goto LA3;
-		e_259269 = 0;
+		if (!connectexptr_247219 == 0) goto LA3;
+		e_247269 = 0;
 		nimln(2265, "system.nim");
-		e_259269 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_259269).Sup.Sup.m_type = (&NTI3449);
+		e_247269 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_247269).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_259269).Sup.message; (*e_259269).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2377));
+		LOC5 = (*e_247269).Sup.message; (*e_247269).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2299));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(442, "asyncdispatch.nim");
-		raiseException((Exception*)e_259269, "ValueError");
+		raiseException((Exception*)e_247269, "ValueError");
 	}
 	LA3: ;
 	nimln(443, "asyncdispatch.nim");
-	fun = ((TY259279) (connectexptr_259219));
+	fun = ((TY247279) (connectexptr_247219));
 	nimln(448, "asyncdispatch.nim");
 	result = fun(s, name, namelen, lpsendbuffer, dwsenddatalength, lpdwbytessent, lpoverlapped);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, acceptex_259302)(NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped105608* lpoverlapped) {
+N_NIMCALL(NIM_BOOL, acceptex_247302)(NI listensock, NI acceptsock, void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, NI32* lpdwbytesreceived, Toverlapped107608* lpoverlapped) {
 	NIM_BOOL result;
-	TY259325 fun;
+	TY247325 fun;
 	nimfr("acceptEx", "asyncdispatch.nim")
 	result = 0;
 	nimln(455, "asyncdispatch.nim");
 	{
-		Valueerror3449* e_259315;
+		Valueerror3449* e_247315;
 		NimStringDesc* LOC5;
-		if (!acceptexptr_259220 == 0) goto LA3;
-		e_259315 = 0;
+		if (!acceptexptr_247220 == 0) goto LA3;
+		e_247315 = 0;
 		nimln(2265, "system.nim");
-		e_259315 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_259315).Sup.Sup.m_type = (&NTI3449);
+		e_247315 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_247315).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_259315).Sup.message; (*e_259315).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2378));
+		LOC5 = (*e_247315).Sup.message; (*e_247315).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2300));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(455, "asyncdispatch.nim");
-		raiseException((Exception*)e_259315, "ValueError");
+		raiseException((Exception*)e_247315, "ValueError");
 	}
 	LA3: ;
 	nimln(456, "asyncdispatch.nim");
-	fun = ((TY259325) (acceptexptr_259220));
+	fun = ((TY247325) (acceptexptr_247220));
 	nimln(461, "asyncdispatch.nim");
 	result = fun(listensock, acceptsock, lpoutputbuffer, dwreceivedatalength, dwlocaladdresslength, dwremoteaddresslength, lpdwbytesreceived, lpoverlapped);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, getacceptexsockaddrs_259346)(void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength) {
-	TY259372 fun;
+N_NIMCALL(void, getacceptexsockaddrs_247346)(void* lpoutputbuffer, NI32 dwreceivedatalength, NI32 dwlocaladdresslength, NI32 dwremoteaddresslength, SOCKADDR** Localsockaddr, NI32* Localsockaddrlength, SOCKADDR** Remotesockaddr, NI32* Remotesockaddrlength) {
+	TY247372 fun;
 	nimfr("getAcceptExSockaddrs", "asyncdispatch.nim")
 	nimln(469, "asyncdispatch.nim");
 	{
-		Valueerror3449* e_259362;
+		Valueerror3449* e_247362;
 		NimStringDesc* LOC5;
-		if (!getacceptexsockaddrsptr_259221 == 0) goto LA3;
-		e_259362 = 0;
+		if (!getacceptexsockaddrsptr_247221 == 0) goto LA3;
+		e_247362 = 0;
 		nimln(2265, "system.nim");
-		e_259362 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_259362).Sup.Sup.m_type = (&NTI3449);
+		e_247362 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_247362).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_259362).Sup.message; (*e_259362).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2379));
+		LOC5 = (*e_247362).Sup.message; (*e_247362).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2301));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(470, "asyncdispatch.nim");
-		raiseException((Exception*)e_259362, "ValueError");
+		raiseException((Exception*)e_247362, "ValueError");
 	}
 	LA3: ;
 	nimln(472, "asyncdispatch.nim");
-	fun = ((TY259372) (getacceptexsockaddrsptr_259221));
+	fun = ((TY247372) (getacceptexsockaddrsptr_247221));
 	nimln(479, "asyncdispatch.nim");
 	fun(lpoutputbuffer, dwreceivedatalength, dwlocaladdresslength, dwremoteaddresslength, Localsockaddr, Localsockaddrlength, Remotesockaddr, Remotesockaddrlength);
 	popFrame();
 }
-N_NIMCALL(void, TMP2381)(void* p, NI op) {
-	TY259730* a;
-	a = (TY259730*)p;
-	nimGCvisit((void*)(*a).retfuture259613, op);
+N_NIMCALL(void, TMP2303)(void* p, NI op) {
+	TY247730* a;
+	a = (TY247730*)p;
+	nimGCvisit((void*)(*a).retfuture247613, op);
 }
-N_NIMCALL(void, TMP2384)(void* p, NI op) {
-	TY259733* a;
-	a = (TY259733*)p;
-	nimGCvisit((void*)(*a).HEX3Aup259747, op);
+N_NIMCALL(void, TMP2306)(void* p, NI op) {
+	TY247733* a;
+	a = (TY247733*)p;
+	nimGCvisit((void*)(*a).HEX3Aup247747, op);
 }
-N_NIMCALL(void, TMP2386)(void* p, NI op) {
-	TY259736* a;
-	a = (TY259736*)p;
-	nimGCvisit((void*)(*a).HEX3Aup259744, op);
+N_NIMCALL(void, TMP2308)(void* p, NI op) {
+	TY247736* a;
+	a = (TY247736*)p;
+	nimGCvisit((void*)(*a).HEX3Aup247744, op);
 }
-N_NIMCALL(void, TMP2390)(void* p, NI op) {
-	Tcustomoverlapped258008* a;
-	a = (Tcustomoverlapped258008*)p;
+N_NIMCALL(void, TMP2312)(void* p, NI op) {
+	Tcustomoverlapped246008* a;
+	a = (Tcustomoverlapped246008*)p;
 	nimGCvisit((void*)(*a).data.cb.ClEnv, op);
 }
 
@@ -2354,34 +2354,34 @@ static N_INLINE(void, nimGCref)(void* p) {
 	popFrame();
 }
 
-N_CLOSURE(void, HEX3Aanonymous_259641)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
-	TY259736* HEX3Aenvp_259742;
+N_CLOSURE(void, HEX3Aanonymous_247641)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
+	TY247736* HEX3Aenvp_247742;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_259742 = (TY259736*) ClEnv;
+	HEX3Aenvp_247742 = (TY247736*) ClEnv;
 	nimln(511, "asyncdispatch.nim");
 	{
-		if (!!((*(*(*(*HEX3Aenvp_259742).HEX3Aup259744).HEX3Aup259747).retfuture259613).Sup.finished)) goto LA3;
+		if (!!((*(*(*(*HEX3Aenvp_247742).HEX3Aup247744).HEX3Aup247747).retfuture247613).Sup.finished)) goto LA3;
 		nimln(512, "asyncdispatch.nim");
 		{
 			if (!(errcode == ((NI32) -1))) goto LA7;
 			nimln(513, "asyncdispatch.nim");
-			complete_255090((*(*(*HEX3Aenvp_259742).HEX3Aup259744).HEX3Aup259747).retfuture259613);
+			complete_243090((*(*(*HEX3Aenvp_247742).HEX3Aup247744).HEX3Aup247747).retfuture247613);
 		}
 		goto LA5;
 		LA7: ;
 		{
-			Oserror3433* e_259648;
+			Oserror3433* e_247648;
 			Exception* LOC10;
 			nimln(515, "asyncdispatch.nim");
-			e_259648 = 0;
+			e_247648 = 0;
 			nimln(2265, "system.nim");
-			e_259648 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-			(*e_259648).Sup.Sup.Sup.m_type = (&NTI3433);
+			e_247648 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+			(*e_247648).Sup.Sup.Sup.m_type = (&NTI3433);
 			nimln(2266, "system.nim");
-			asgnRefNoCycle((void**) (&(*e_259648).Sup.Sup.message), oserrormsg_140020(errcode));
+			asgnRefNoCycle((void**) (&(*e_247648).Sup.Sup.message), oserrormsg_115020(errcode));
 			LOC10 = 0;
-			LOC10 = &e_259648->Sup.Sup;
-			fail_259659((*(*(*HEX3Aenvp_259742).HEX3Aup259744).HEX3Aup259747).retfuture259613, LOC10);
+			LOC10 = &e_247648->Sup.Sup;
+			fail_247659((*(*(*HEX3Aenvp_247742).HEX3Aup247744).HEX3Aup247747).retfuture247613, LOC10);
 		}
 		LA5: ;
 	}
@@ -2389,28 +2389,28 @@ N_CLOSURE(void, HEX3Aanonymous_259641)(NI fd, NI32 bytescount, NI32 errcode, voi
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc* address, NU16 port, NU8 af) {
-	FutureHEX3Aobjecttype255097* result;
-	TY259730* HEX3Aenv_259755;
+N_NIMCALL(FutureHEX3Aobjecttype243097*, connect_247397)(NI socket, NimStringDesc* address, NU16 port, NU8 af) {
+	FutureHEX3Aobjecttype243097* result;
+	TY247730* HEX3Aenv_247755;
 	SOCKADDR_IN saddr;
 	int LOC1;
-	Addrinfo104868* ailist;
+	Addrinfo106868* ailist;
 	NIM_BOOL success;
 	NI32 lasterror;
-	Addrinfo104868* it;
+	Addrinfo106868* it;
 	nimfr("connect", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_259755 = 0;
+	HEX3Aenv_247755 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_259755 = (TY259730*) newObj((&NTI259756), sizeof(TY259730));
+	HEX3Aenv_247755 = (TY247730*) newObj((&NTI247756), sizeof(TY247730));
 	nimln(489, "asyncdispatch.nim");
-	verifypresence_258607(socket);
+	verifypresence_246607(socket);
 	nimln(490, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_259755).retfuture259613), newfuture_259407(((NimStringDesc*) &TMP2382)));
+	asgnRef((void**) (&(*HEX3Aenv_247755).retfuture247613), newfuture_247407(((NimStringDesc*) &TMP2304)));
 	memset((void*)(&saddr), 0, sizeof(saddr));
 	nimln(493, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = toint_234829(af);
+	LOC1 = toint_222829(af);
 	saddr.sin_family = ((NI16)chckRange(LOC1, ((NI16) -32768), ((NI16) 32767)));
 	nimln(494, "asyncdispatch.nim");
 	saddr.sin_port = ((NI16) 0);
@@ -2424,43 +2424,43 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc
 		nimln(496, "asyncdispatch.nim");
 		nimln(497, "asyncdispatch.nim");
 		LOC4 = 0;
-		LOC4 = bindaddr_235207(socket, ((SOCKADDR*) ((&saddr))), ((unsigned int) (((NI)sizeof(SOCKADDR_IN)))));
+		LOC4 = bindaddr_223207(socket, ((SOCKADDR*) ((&saddr))), ((unsigned int) (((NI)sizeof(SOCKADDR_IN)))));
 		if (!(LOC4 < ((NI32) 0))) goto LA5;
 		nimln(498, "asyncdispatch.nim");
 		LOC7 = 0;
-		LOC7 = oslasterror_140454();
-		raiseoserror_140430(LOC7);
+		LOC7 = oslasterror_115454();
+		raiseoserror_115430(LOC7);
 	}
 	LA5: ;
 	nimln(500, "asyncdispatch.nim");
-	ailist = getaddrinfo_235408(address, port, af, ((NU8) 1), ((NU8) 6));
+	ailist = getaddrinfo_223408(address, port, af, ((NU8) 1), ((NU8) 6));
 	nimln(501, "asyncdispatch.nim");
 	success = NIM_FALSE;
 	lasterror = 0;
 	nimln(503, "asyncdispatch.nim");
 	it = ailist;
 	{
-		TY259733* HEX3Aenv_259753;
-		HEX3Aenv_259753 = 0;
+		TY247733* HEX3Aenv_247753;
+		HEX3Aenv_247753 = 0;
 		nimln(180, "system.nim");
-		HEX3Aenv_259753 = (TY259733*) newObj((&NTI259754), sizeof(TY259733));
+		HEX3Aenv_247753 = (TY247733*) newObj((&NTI247754), sizeof(TY247733));
 		nimln(504, "asyncdispatch.nim");
-		asgnRef((void**) (&(*HEX3Aenv_259753).HEX3Aup259747), HEX3Aenv_259755);
+		asgnRef((void**) (&(*HEX3Aenv_247753).HEX3Aup247747), HEX3Aenv_247755);
 		while (1) {
-			TY259736* HEX3Aenv_259751;
-			Tcustomoverlapped258008* ol;
-			Tcustomoverlapped258008* LOC10;
-			Tcompletiondata258004 LOC11;
-			TY258014 LOC12;
+			TY247736* HEX3Aenv_247751;
+			Tcustomoverlapped246008* ol;
+			Tcustomoverlapped246008* LOC10;
+			Tcompletiondata246004 LOC11;
+			TY246014 LOC12;
 			NIM_BOOL ret;
 			if (!!((it == NIM_NIL))) goto LA9;
-			HEX3Aenv_259751 = 0;
+			HEX3Aenv_247751 = 0;
 			nimln(180, "system.nim");
-			HEX3Aenv_259751 = (TY259736*) newObj((&NTI259752), sizeof(TY259736));
+			HEX3Aenv_247751 = (TY247736*) newObj((&NTI247752), sizeof(TY247736));
 			nimln(507, "asyncdispatch.nim");
-			asgnRef((void**) (&(*HEX3Aenv_259751).HEX3Aup259744), HEX3Aenv_259753);
+			asgnRef((void**) (&(*HEX3Aenv_247751).HEX3Aup247744), HEX3Aenv_247753);
 			LOC10 = 0;
-			LOC10 = (Tcustomoverlapped258008*) newObj((&NTI258010), sizeof(Tcustomoverlapped258008));
+			LOC10 = (Tcustomoverlapped246008*) newObj((&NTI246010), sizeof(Tcustomoverlapped246008));
 			ol = LOC10;
 			nimln(508, "asyncdispatch.nim");
 			nimGCref(ol);
@@ -2469,7 +2469,7 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc
 			memset((void*)(&LOC11), 0, sizeof(LOC11));
 			LOC11.fd = socket;
 			memset((void*)(&LOC12), 0, sizeof(LOC12));
-			LOC12.ClPrc = HEX3Aanonymous_259641; LOC12.ClEnv = HEX3Aenv_259751;
+			LOC12.ClPrc = HEX3Aanonymous_247641; LOC12.ClEnv = HEX3Aenv_247751;
 			LOC11.cb.ClEnv = LOC12.ClEnv;
 			LOC11.cb.ClPrc = LOC12.ClPrc;
 			(*ol).data.fd = LOC11.fd;
@@ -2477,14 +2477,14 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc
 			(*ol).data.cb.ClPrc = LOC11.cb.ClPrc;
 			nimln(518, "asyncdispatch.nim");
 			nimln(519, "asyncdispatch.nim");
-			ret = connectex_259256(socket, (*it).aiaddr, ((int)chckRange(((NI)sizeof(SOCKADDR_IN)), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, ((NI32) 0), NIM_NIL, ((Toverlapped105608*) (ol)));
+			ret = connectex_247256(socket, (*it).aiaddr, ((int)chckRange(((NI)sizeof(SOCKADDR_IN)), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, ((NI32) 0), NIM_NIL, ((Toverlapped107608*) (ol)));
 			nimln(521, "asyncdispatch.nim");
 			{
 				if (!ret) goto LA15;
 				nimln(523, "asyncdispatch.nim");
 				success = NIM_TRUE;
 				nimln(524, "asyncdispatch.nim");
-				complete_255090((*HEX3Aenv_259755).retfuture259613);
+				complete_243090((*HEX3Aenv_247755).retfuture247613);
 				nimln(528, "asyncdispatch.nim");
 				goto LA8;
 			}
@@ -2492,7 +2492,7 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc
 			LA15: ;
 			{
 				nimln(530, "asyncdispatch.nim");
-				lasterror = oslasterror_140454();
+				lasterror = oslasterror_115454();
 				nimln(531, "asyncdispatch.nim");
 				{
 					if (!(lasterror == ((NI32) 997))) goto LA20;
@@ -2517,44 +2517,44 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, connect_259397)(NI socket, NimStringDesc
 		} LA9: ;
 	} LA8: ;
 	nimln(540, "asyncdispatch.nim");
-	dealloc_235608(ailist);
+	dealloc_223608(ailist);
 	nimln(541, "asyncdispatch.nim");
 	{
-		Oserror3433* e_259699;
+		Oserror3433* e_247699;
 		Exception* LOC27;
 		if (!!(success)) goto LA25;
 		nimln(542, "asyncdispatch.nim");
-		e_259699 = 0;
+		e_247699 = 0;
 		nimln(2265, "system.nim");
-		e_259699 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-		(*e_259699).Sup.Sup.Sup.m_type = (&NTI3433);
+		e_247699 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+		(*e_247699).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
-		asgnRefNoCycle((void**) (&(*e_259699).Sup.Sup.message), oserrormsg_140020(lasterror));
+		asgnRefNoCycle((void**) (&(*e_247699).Sup.Sup.message), oserrormsg_115020(lasterror));
 		LOC27 = 0;
-		LOC27 = &e_259699->Sup.Sup;
-		fail_259659((*HEX3Aenv_259755).retfuture259613, LOC27);
+		LOC27 = &e_247699->Sup.Sup;
+		fail_247659((*HEX3Aenv_247755).retfuture247613, LOC27);
 	}
 	LA25: ;
 	nimln(543, "asyncdispatch.nim");
-	result = (*HEX3Aenv_259755).retfuture259613;
+	result = (*HEX3Aenv_247755).retfuture247613;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2396)(void* p, NI op) {
-	TY261222* a;
-	a = (TY261222*)p;
-	nimGCvisit((void*)(*a).retfuture260013, op);
+N_NIMCALL(void, TMP2318)(void* p, NI op) {
+	TY249222* a;
+	a = (TY249222*)p;
+	nimGCvisit((void*)(*a).retfuture248013, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
-	TY261222* HEX3Aenvp_261228;
+N_CLOSURE(void, HEX3Aanonymous_248025)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
+	TY249222* HEX3Aenvp_249228;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_261228 = (TY261222*) ClEnv;
+	HEX3Aenvp_249228 = (TY249222*) ClEnv;
 	nimln(575, "asyncdispatch.nim");
 	{
-		if (!!((*(*HEX3Aenvp_261228).retfuture260013).Sup.finished)) goto LA3;
+		if (!!((*(*HEX3Aenvp_249228).retfuture248013).Sup.finished)) goto LA3;
 		nimln(576, "asyncdispatch.nim");
 		{
 			if (!(errcode == ((NI32) -1))) goto LA7;
@@ -2564,11 +2564,11 @@ N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, voi
 				LOC11 = 0;
 				LOC11 = (bytescount == ((NI32) 0));
 				if (!(LOC11)) goto LA12;
-				LOC11 = ((NU8)((*HEX3Aenvp_261228).databuf260014.buf[((NI) 0)]) == (NU8)(0));
+				LOC11 = ((NU8)((*HEX3Aenvp_249228).databuf248014.buf[((NI) 0)]) == (NU8)(0));
 				LA12: ;
 				if (!LOC11) goto LA13;
 				nimln(578, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_261228).retfuture260013, ((NimStringDesc*) &TMP2400));
+				complete_248031((*HEX3Aenvp_249228).retfuture248013, ((NimStringDesc*) &TMP2322));
 			}
 			goto LA9;
 			LA13: ;
@@ -2578,15 +2578,15 @@ N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, voi
 				data = mnewString(((NI)chckRange(bytescount, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 				nimln(581, "asyncdispatch.nim");
 				{
-					if (!!((((NI) (bytescount)) <= (*HEX3Aenvp_261228).size259760))) goto LA18;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2401));
+					if (!!((((NI) (bytescount)) <= (*HEX3Aenvp_249228).size247760))) goto LA18;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2323));
 				}
 				LA18: ;
 				nimln(582, "asyncdispatch.nim");
 				if ((NU)(((NI) 0)) > (NU)(data->Sup.len)) raiseIndexError();
-				memcpy(((void*) ((&data->data[((NI) 0)]))), ((void*) ((&(*HEX3Aenvp_261228).databuf260014.buf[((NI) 0)]))), ((NI)chckRange(bytescount, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+				memcpy(((void*) ((&data->data[((NI) 0)]))), ((void*) ((&(*HEX3Aenvp_249228).databuf248014.buf[((NI) 0)]))), ((NI)chckRange(bytescount, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 				nimln(583, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_261228).retfuture260013, data);
+				complete_248031((*HEX3Aenvp_249228).retfuture248013, data);
 			}
 			LA9: ;
 		}
@@ -2597,26 +2597,26 @@ N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, voi
 			{
 				NIM_BOOL LOC23;
 				LOC23 = 0;
-				LOC23 = isdisconnectionerror_239481((*HEX3Aenvp_261228).flags259763, errcode);
+				LOC23 = isdisconnectionerror_227481((*HEX3Aenvp_249228).flags247763, errcode);
 				if (!LOC23) goto LA24;
 				nimln(586, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_261228).retfuture260013, ((NimStringDesc*) &TMP2400));
+				complete_248031((*HEX3Aenvp_249228).retfuture248013, ((NimStringDesc*) &TMP2322));
 			}
 			goto LA21;
 			LA24: ;
 			{
-				Oserror3433* e_261023;
+				Oserror3433* e_249023;
 				Exception* LOC27;
 				nimln(588, "asyncdispatch.nim");
-				e_261023 = 0;
+				e_249023 = 0;
 				nimln(2265, "system.nim");
-				e_261023 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_261023).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_249023 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_249023).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_261023).Sup.Sup.message), oserrormsg_140020(errcode));
+				asgnRefNoCycle((void**) (&(*e_249023).Sup.Sup.message), oserrormsg_115020(errcode));
 				LOC27 = 0;
-				LOC27 = &e_261023->Sup.Sup;
-				fail_261034((*HEX3Aenvp_261228).retfuture260013, LOC27);
+				LOC27 = &e_249023->Sup.Sup;
+				fail_249034((*HEX3Aenvp_249228).retfuture248013, LOC27);
 			}
 			LA21: ;
 		}
@@ -2625,57 +2625,57 @@ N_CLOSURE(void, HEX3Aanonymous_260025)(NI fd, NI32 bytescount, NI32 errcode, voi
 	LA3: ;
 	nimln(589, "asyncdispatch.nim");
 	{
-		if (!!(((*HEX3Aenvp_261228).databuf260014.buf == NIM_NIL))) goto LA30;
+		if (!!(((*HEX3Aenvp_249228).databuf248014.buf == NIM_NIL))) goto LA30;
 		nimln(590, "asyncdispatch.nim");
-		dealloc_6048(((void*) ((*HEX3Aenvp_261228).databuf260014.buf)));
+		dealloc_6048(((void*) ((*HEX3Aenvp_249228).databuf248014.buf)));
 		nimln(591, "asyncdispatch.nim");
-		(*HEX3Aenvp_261228).databuf260014.buf = NIM_NIL;
+		(*HEX3Aenvp_249228).databuf248014.buf = NIM_NIL;
 	}
 	LA30: ;
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 flags) {
-	FutureHEX3Aobjecttype259769* result;
-	TY261222* HEX3Aenv_261234;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recv_247757)(NI socket, NI size, NU8 flags) {
+	FutureHEX3Aobjecttype247769* result;
+	TY249222* HEX3Aenv_249234;
 	void* LOC5;
 	NI32 bytesreceived;
 	NI32 flagsio;
-	Tcustomoverlapped258008* ol;
-	Tcustomoverlapped258008* LOC6;
-	Tcompletiondata258004 LOC7;
-	TY258014 LOC8;
+	Tcustomoverlapped246008* ol;
+	Tcustomoverlapped246008* LOC6;
+	Tcompletiondata246004 LOC7;
+	TY246014 LOC8;
 	int ret;
 	nimfr("recv", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_261234 = 0;
+	HEX3Aenv_249234 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_261234 = (TY261222*) newObj((&NTI261235), sizeof(TY261222));
+	HEX3Aenv_249234 = (TY249222*) newObj((&NTI249235), sizeof(TY249222));
 	nimln(547, "asyncdispatch.nim");
-	(*HEX3Aenv_261234).size259760 = size;
-	(*HEX3Aenv_261234).flags259763 = flags;
+	(*HEX3Aenv_249234).size247760 = size;
+	(*HEX3Aenv_249234).flags247763 = flags;
 	nimln(561, "asyncdispatch.nim");
-	verifypresence_258607(socket);
+	verifypresence_246607(socket);
 	nimln(562, "asyncdispatch.nim");
 	{
-		if (!!(!((((*HEX3Aenv_261234).flags259763 &(1<<((((NU8) 0))&7)))!=0)))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2397));
+		if (!!(!((((*HEX3Aenv_249234).flags247763 &(1<<((((NU8) 0))&7)))!=0)))) goto LA3;
+		failedassertimpl_88817(((NimStringDesc*) &TMP2319));
 	}
 	LA3: ;
 	nimln(564, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_261234).retfuture260013), newfuture_259802(((NimStringDesc*) &TMP2398)));
+	asgnRef((void**) (&(*HEX3Aenv_249234).retfuture248013), newfuture_247802(((NimStringDesc*) &TMP2320)));
 	nimln(566, "asyncdispatch.nim");
 	LOC5 = 0;
-	LOC5 = alloc0_6017(((NI)chckRange((*HEX3Aenv_261234).size259760, ((NI) 0), ((NI) IL64(9223372036854775807)))));
-	(*HEX3Aenv_261234).databuf260014.buf = ((NCSTRING) (LOC5));
+	LOC5 = alloc0_6017(((NI)chckRange((*HEX3Aenv_249234).size247760, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	(*HEX3Aenv_249234).databuf248014.buf = ((NCSTRING) (LOC5));
 	nimln(567, "asyncdispatch.nim");
-	(*HEX3Aenv_261234).databuf260014.len = (*HEX3Aenv_261234).size259760;
+	(*HEX3Aenv_249234).databuf248014.len = (*HEX3Aenv_249234).size247760;
 	bytesreceived = 0;
 	nimln(570, "asyncdispatch.nim");
-	flagsio = toosflags_239631((*HEX3Aenv_261234).flags259763);
+	flagsio = toosflags_227631((*HEX3Aenv_249234).flags247763);
 	nimln(571, "asyncdispatch.nim");
 	LOC6 = 0;
-	LOC6 = (Tcustomoverlapped258008*) newObj((&NTI258010), sizeof(Tcustomoverlapped258008));
+	LOC6 = (Tcustomoverlapped246008*) newObj((&NTI246010), sizeof(Tcustomoverlapped246008));
 	ol = LOC6;
 	nimln(572, "asyncdispatch.nim");
 	nimGCref(ol);
@@ -2684,30 +2684,30 @@ N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 fla
 	memset((void*)(&LOC7), 0, sizeof(LOC7));
 	LOC7.fd = socket;
 	memset((void*)(&LOC8), 0, sizeof(LOC8));
-	LOC8.ClPrc = HEX3Aanonymous_260025; LOC8.ClEnv = HEX3Aenv_261234;
+	LOC8.ClPrc = HEX3Aanonymous_248025; LOC8.ClEnv = HEX3Aenv_249234;
 	LOC7.cb.ClEnv = LOC8.ClEnv;
 	LOC7.cb.ClPrc = LOC8.ClPrc;
 	(*ol).data.fd = LOC7.fd;
 	asgnRef((void**) (&(*ol).data.cb.ClEnv), LOC7.cb.ClEnv);
 	(*ol).data.cb.ClPrc = LOC7.cb.ClPrc;
 	nimln(594, "asyncdispatch.nim");
-	ret = Dl_105753(socket, (&(*HEX3Aenv_261234).databuf260014), ((NI32) 1), (&bytesreceived), (&flagsio), ((Toverlapped105608*) (ol)), NIM_NIL);
+	ret = Dl_107753(socket, (&(*HEX3Aenv_249234).databuf248014), ((NI32) 1), (&bytesreceived), (&flagsio), ((Toverlapped107608*) (ol)), NIM_NIL);
 	nimln(596, "asyncdispatch.nim");
 	{
 		NI32 err;
 		if (!(ret == ((NI32) -1))) goto LA11;
 		nimln(597, "asyncdispatch.nim");
-		err = oslasterror_140454();
+		err = oslasterror_115454();
 		nimln(598, "asyncdispatch.nim");
 		{
 			if (!!((err == ((NI32) 997)))) goto LA15;
 			nimln(599, "asyncdispatch.nim");
 			{
-				if (!!(((*HEX3Aenv_261234).databuf260014.buf == NIM_NIL))) goto LA19;
+				if (!!(((*HEX3Aenv_249234).databuf248014.buf == NIM_NIL))) goto LA19;
 				nimln(600, "asyncdispatch.nim");
-				dealloc_6048(((void*) ((*HEX3Aenv_261234).databuf260014.buf)));
+				dealloc_6048(((void*) ((*HEX3Aenv_249234).databuf248014.buf)));
 				nimln(601, "asyncdispatch.nim");
-				(*HEX3Aenv_261234).databuf260014.buf = NIM_NIL;
+				(*HEX3Aenv_249234).databuf248014.buf = NIM_NIL;
 			}
 			LA19: ;
 			nimln(602, "asyncdispatch.nim");
@@ -2716,26 +2716,26 @@ N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 fla
 			{
 				NIM_BOOL LOC23;
 				LOC23 = 0;
-				LOC23 = isdisconnectionerror_239481((*HEX3Aenv_261234).flags259763, err);
+				LOC23 = isdisconnectionerror_227481((*HEX3Aenv_249234).flags247763, err);
 				if (!LOC23) goto LA24;
 				nimln(604, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenv_261234).retfuture260013, ((NimStringDesc*) &TMP2400));
+				complete_248031((*HEX3Aenv_249234).retfuture248013, ((NimStringDesc*) &TMP2322));
 			}
 			goto LA21;
 			LA24: ;
 			{
-				Oserror3433* e_261085;
+				Oserror3433* e_249085;
 				Exception* LOC27;
 				nimln(606, "asyncdispatch.nim");
-				e_261085 = 0;
+				e_249085 = 0;
 				nimln(2265, "system.nim");
-				e_261085 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_261085).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_249085 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_249085).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_261085).Sup.Sup.message), oserrormsg_140020(err));
+				asgnRefNoCycle((void**) (&(*e_249085).Sup.Sup.message), oserrormsg_115020(err));
 				LOC27 = 0;
-				LOC27 = &e_261085->Sup.Sup;
-				fail_261034((*HEX3Aenv_261234).retfuture260013, LOC27);
+				LOC27 = &e_249085->Sup.Sup;
+				fail_249034((*HEX3Aenv_249234).retfuture248013, LOC27);
 			}
 			LA21: ;
 		}
@@ -2755,11 +2755,11 @@ N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 fla
 		LA31: ;
 		LOC29 = LOC30;
 		if (!(LOC29)) goto LA32;
-		LOC29 = ((NU8)((*HEX3Aenv_261234).databuf260014.buf[((NI) 0)]) == (NU8)(0));
+		LOC29 = ((NU8)((*HEX3Aenv_249234).databuf248014.buf[((NI) 0)]) == (NU8)(0));
 		LA32: ;
 		if (!LOC29) goto LA33;
 		nimln(614, "asyncdispatch.nim");
-		complete_260031((*HEX3Aenv_261234).retfuture260013, ((NimStringDesc*) &TMP2400));
+		complete_248031((*HEX3Aenv_249234).retfuture248013, ((NimStringDesc*) &TMP2322));
 	}
 	goto LA9;
 	LA33: ;
@@ -2770,7 +2770,7 @@ N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 fla
 		nimln(623, "asyncdispatch.nim");
 		{
 			if (!(bytesreceived == ((NI32) 0))) goto LA38;
-			realsize = (*HEX3Aenv_261234).size259760;
+			realsize = (*HEX3Aenv_249234).size247760;
 		}
 		goto LA36;
 		LA38: ;
@@ -2782,37 +2782,37 @@ N_NIMCALL(FutureHEX3Aobjecttype259769*, recv_259757)(NI socket, NI size, NU8 fla
 		data = mnewString(((NI)chckRange(realsize, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		nimln(628, "asyncdispatch.nim");
 		{
-			if (!!((realsize <= (*HEX3Aenv_261234).size259760))) goto LA43;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2402));
+			if (!!((realsize <= (*HEX3Aenv_249234).size247760))) goto LA43;
+			failedassertimpl_88817(((NimStringDesc*) &TMP2324));
 		}
 		LA43: ;
 		nimln(629, "asyncdispatch.nim");
 		if ((NU)(((NI) 0)) > (NU)(data->Sup.len)) raiseIndexError();
-		memcpy(((void*) ((&data->data[((NI) 0)]))), ((void*) ((&(*HEX3Aenv_261234).databuf260014.buf[((NI) 0)]))), ((NI)chckRange(realsize, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		memcpy(((void*) ((&data->data[((NI) 0)]))), ((void*) ((&(*HEX3Aenv_249234).databuf248014.buf[((NI) 0)]))), ((NI)chckRange(realsize, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		nimln(631, "asyncdispatch.nim");
-		complete_260031((*HEX3Aenv_261234).retfuture260013, data);
+		complete_248031((*HEX3Aenv_249234).retfuture248013, data);
 	}
 	LA9: ;
 	nimln(635, "asyncdispatch.nim");
-	result = (*HEX3Aenv_261234).retfuture260013;
+	result = (*HEX3Aenv_249234).retfuture248013;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2404)(void* p, NI op) {
-	TY262619* a;
-	a = (TY262619*)p;
-	nimGCvisit((void*)(*a).retfuture261613, op);
+N_NIMCALL(void, TMP2326)(void* p, NI op) {
+	TY250619* a;
+	a = (TY250619*)p;
+	nimGCvisit((void*)(*a).retfuture249613, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_261625)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
-	TY262619* HEX3Aenvp_262625;
+N_CLOSURE(void, HEX3Aanonymous_249625)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
+	TY250619* HEX3Aenvp_250625;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_262625 = (TY262619*) ClEnv;
+	HEX3Aenvp_250625 = (TY250619*) ClEnv;
 	nimln(670, "asyncdispatch.nim");
 	{
-		if (!!((*(*HEX3Aenvp_262625).retfuture261613).Sup.finished)) goto LA3;
+		if (!!((*(*HEX3Aenvp_250625).retfuture249613).Sup.finished)) goto LA3;
 		nimln(671, "asyncdispatch.nim");
 		{
 			if (!(errcode == ((NI32) -1))) goto LA7;
@@ -2822,17 +2822,17 @@ N_CLOSURE(void, HEX3Aanonymous_261625)(NI fd, NI32 bytescount, NI32 errcode, voi
 				LOC11 = 0;
 				LOC11 = (bytescount == ((NI32) 0));
 				if (!(LOC11)) goto LA12;
-				LOC11 = ((NU8)((*HEX3Aenvp_262625).databuf261614.buf[((NI) 0)]) == (NU8)(0));
+				LOC11 = ((NU8)((*HEX3Aenvp_250625).databuf249614.buf[((NI) 0)]) == (NU8)(0));
 				LA12: ;
 				if (!LOC11) goto LA13;
 				nimln(673, "asyncdispatch.nim");
-				complete_261631((*HEX3Aenvp_262625).retfuture261613, ((NI) 0));
+				complete_249631((*HEX3Aenvp_250625).retfuture249613, ((NI) 0));
 			}
 			goto LA9;
 			LA13: ;
 			{
 				nimln(675, "asyncdispatch.nim");
-				complete_261631((*HEX3Aenvp_262625).retfuture261613, ((NI) (bytescount)));
+				complete_249631((*HEX3Aenvp_250625).retfuture249613, ((NI) (bytescount)));
 			}
 			LA9: ;
 		}
@@ -2843,26 +2843,26 @@ N_CLOSURE(void, HEX3Aanonymous_261625)(NI fd, NI32 bytescount, NI32 errcode, voi
 			{
 				NIM_BOOL LOC19;
 				LOC19 = 0;
-				LOC19 = isdisconnectionerror_239481((*HEX3Aenvp_262625).flags261243, errcode);
+				LOC19 = isdisconnectionerror_227481((*HEX3Aenvp_250625).flags249243, errcode);
 				if (!LOC19) goto LA20;
 				nimln(678, "asyncdispatch.nim");
-				complete_261631((*HEX3Aenvp_262625).retfuture261613, ((NI) 0));
+				complete_249631((*HEX3Aenvp_250625).retfuture249613, ((NI) 0));
 			}
 			goto LA17;
 			LA20: ;
 			{
-				Oserror3433* e_262433;
+				Oserror3433* e_250433;
 				Exception* LOC23;
 				nimln(680, "asyncdispatch.nim");
-				e_262433 = 0;
+				e_250433 = 0;
 				nimln(2265, "system.nim");
-				e_262433 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_262433).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_250433 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_250433).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_262433).Sup.Sup.message), oserrormsg_140020(errcode));
+				asgnRefNoCycle((void**) (&(*e_250433).Sup.Sup.message), oserrormsg_115020(errcode));
 				LOC23 = 0;
-				LOC23 = &e_262433->Sup.Sup;
-				fail_262444((*HEX3Aenvp_262625).retfuture261613, LOC23);
+				LOC23 = &e_250433->Sup.Sup;
+				fail_250444((*HEX3Aenvp_250625).retfuture249613, LOC23);
 			}
 			LA17: ;
 		}
@@ -2871,51 +2871,51 @@ N_CLOSURE(void, HEX3Aanonymous_261625)(NI fd, NI32 bytescount, NI32 errcode, voi
 	LA3: ;
 	nimln(681, "asyncdispatch.nim");
 	{
-		if (!!(((*HEX3Aenvp_262625).databuf261614.buf == NIM_NIL))) goto LA26;
+		if (!!(((*HEX3Aenvp_250625).databuf249614.buf == NIM_NIL))) goto LA26;
 		nimln(682, "asyncdispatch.nim");
-		(*HEX3Aenvp_262625).databuf261614.buf = NIM_NIL;
+		(*HEX3Aenvp_250625).databuf249614.buf = NIM_NIL;
 	}
 	LA26: ;
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf, NI size, NU8 flags) {
-	FutureHEX3Aobjecttype261249* result;
-	TY262619* HEX3Aenv_262630;
+N_NIMCALL(FutureHEX3Aobjecttype249249*, recvinto_249236)(NI socket, NCSTRING buf, NI size, NU8 flags) {
+	FutureHEX3Aobjecttype249249* result;
+	TY250619* HEX3Aenv_250630;
 	NI32 bytesreceived;
 	NI32 flagsio;
-	Tcustomoverlapped258008* ol;
-	Tcustomoverlapped258008* LOC5;
-	Tcompletiondata258004 LOC6;
-	TY258014 LOC7;
+	Tcustomoverlapped246008* ol;
+	Tcustomoverlapped246008* LOC5;
+	Tcompletiondata246004 LOC6;
+	TY246014 LOC7;
 	int ret;
 	nimfr("recvInto", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_262630 = 0;
+	HEX3Aenv_250630 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_262630 = (TY262619*) newObj((&NTI262631), sizeof(TY262619));
+	HEX3Aenv_250630 = (TY250619*) newObj((&NTI250631), sizeof(TY250619));
 	nimln(639, "asyncdispatch.nim");
-	(*HEX3Aenv_262630).flags261243 = flags;
+	(*HEX3Aenv_250630).flags249243 = flags;
 	nimln(654, "asyncdispatch.nim");
-	verifypresence_258607(socket);
+	verifypresence_246607(socket);
 	nimln(655, "asyncdispatch.nim");
 	{
-		if (!!(!((((*HEX3Aenv_262630).flags261243 &(1<<((((NU8) 0))&7)))!=0)))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2397));
+		if (!!(!((((*HEX3Aenv_250630).flags249243 &(1<<((((NU8) 0))&7)))!=0)))) goto LA3;
+		failedassertimpl_88817(((NimStringDesc*) &TMP2319));
 	}
 	LA3: ;
 	nimln(657, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_262630).retfuture261613), newfuture_261402(((NimStringDesc*) &TMP2405)));
+	asgnRef((void**) (&(*HEX3Aenv_250630).retfuture249613), newfuture_249402(((NimStringDesc*) &TMP2327)));
 	nimln(661, "asyncdispatch.nim");
-	(*HEX3Aenv_262630).databuf261614.buf = buf;
+	(*HEX3Aenv_250630).databuf249614.buf = buf;
 	nimln(662, "asyncdispatch.nim");
-	(*HEX3Aenv_262630).databuf261614.len = size;
+	(*HEX3Aenv_250630).databuf249614.len = size;
 	bytesreceived = 0;
 	nimln(665, "asyncdispatch.nim");
-	flagsio = toosflags_239631((*HEX3Aenv_262630).flags261243);
+	flagsio = toosflags_227631((*HEX3Aenv_250630).flags249243);
 	nimln(666, "asyncdispatch.nim");
 	LOC5 = 0;
-	LOC5 = (Tcustomoverlapped258008*) newObj((&NTI258010), sizeof(Tcustomoverlapped258008));
+	LOC5 = (Tcustomoverlapped246008*) newObj((&NTI246010), sizeof(Tcustomoverlapped246008));
 	ol = LOC5;
 	nimln(667, "asyncdispatch.nim");
 	nimGCref(ol);
@@ -2924,28 +2924,28 @@ N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf
 	memset((void*)(&LOC6), 0, sizeof(LOC6));
 	LOC6.fd = socket;
 	memset((void*)(&LOC7), 0, sizeof(LOC7));
-	LOC7.ClPrc = HEX3Aanonymous_261625; LOC7.ClEnv = HEX3Aenv_262630;
+	LOC7.ClPrc = HEX3Aanonymous_249625; LOC7.ClEnv = HEX3Aenv_250630;
 	LOC6.cb.ClEnv = LOC7.ClEnv;
 	LOC6.cb.ClPrc = LOC7.ClPrc;
 	(*ol).data.fd = LOC6.fd;
 	asgnRef((void**) (&(*ol).data.cb.ClEnv), LOC6.cb.ClEnv);
 	(*ol).data.cb.ClPrc = LOC6.cb.ClPrc;
 	nimln(685, "asyncdispatch.nim");
-	ret = Dl_105753(socket, (&(*HEX3Aenv_262630).databuf261614), ((NI32) 1), (&bytesreceived), (&flagsio), ((Toverlapped105608*) (ol)), NIM_NIL);
+	ret = Dl_107753(socket, (&(*HEX3Aenv_250630).databuf249614), ((NI32) 1), (&bytesreceived), (&flagsio), ((Toverlapped107608*) (ol)), NIM_NIL);
 	nimln(687, "asyncdispatch.nim");
 	{
 		NI32 err;
 		if (!(ret == ((NI32) -1))) goto LA10;
 		nimln(688, "asyncdispatch.nim");
-		err = oslasterror_140454();
+		err = oslasterror_115454();
 		nimln(689, "asyncdispatch.nim");
 		{
 			if (!!((err == ((NI32) 997)))) goto LA14;
 			nimln(690, "asyncdispatch.nim");
 			{
-				if (!!(((*HEX3Aenv_262630).databuf261614.buf == NIM_NIL))) goto LA18;
+				if (!!(((*HEX3Aenv_250630).databuf249614.buf == NIM_NIL))) goto LA18;
 				nimln(691, "asyncdispatch.nim");
-				(*HEX3Aenv_262630).databuf261614.buf = NIM_NIL;
+				(*HEX3Aenv_250630).databuf249614.buf = NIM_NIL;
 			}
 			LA18: ;
 			nimln(692, "asyncdispatch.nim");
@@ -2954,26 +2954,26 @@ N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf
 			{
 				NIM_BOOL LOC22;
 				LOC22 = 0;
-				LOC22 = isdisconnectionerror_239481((*HEX3Aenv_262630).flags261243, err);
+				LOC22 = isdisconnectionerror_227481((*HEX3Aenv_250630).flags249243, err);
 				if (!LOC22) goto LA23;
 				nimln(694, "asyncdispatch.nim");
-				complete_261631((*HEX3Aenv_262630).retfuture261613, ((NI) 0));
+				complete_249631((*HEX3Aenv_250630).retfuture249613, ((NI) 0));
 			}
 			goto LA20;
 			LA23: ;
 			{
-				Oserror3433* e_262495;
+				Oserror3433* e_250495;
 				Exception* LOC26;
 				nimln(696, "asyncdispatch.nim");
-				e_262495 = 0;
+				e_250495 = 0;
 				nimln(2265, "system.nim");
-				e_262495 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_262495).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_250495 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_250495).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_262495).Sup.Sup.message), oserrormsg_140020(err));
+				asgnRefNoCycle((void**) (&(*e_250495).Sup.Sup.message), oserrormsg_115020(err));
 				LOC26 = 0;
-				LOC26 = &e_262495->Sup.Sup;
-				fail_262444((*HEX3Aenv_262630).retfuture261613, LOC26);
+				LOC26 = &e_250495->Sup.Sup;
+				fail_250444((*HEX3Aenv_250630).retfuture249613, LOC26);
 			}
 			LA20: ;
 		}
@@ -2993,11 +2993,11 @@ N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf
 		LA30: ;
 		LOC28 = LOC29;
 		if (!(LOC28)) goto LA31;
-		LOC28 = ((NU8)((*HEX3Aenv_262630).databuf261614.buf[((NI) 0)]) == (NU8)(0));
+		LOC28 = ((NU8)((*HEX3Aenv_250630).databuf249614.buf[((NI) 0)]) == (NU8)(0));
 		LA31: ;
 		if (!LOC28) goto LA32;
 		nimln(704, "asyncdispatch.nim");
-		complete_261631((*HEX3Aenv_262630).retfuture261613, ((NI) 0));
+		complete_249631((*HEX3Aenv_250630).retfuture249613, ((NI) 0));
 	}
 	goto LA8;
 	LA32: ;
@@ -3018,38 +3018,38 @@ N_NIMCALL(FutureHEX3Aobjecttype261249*, recvinto_261236)(NI socket, NCSTRING buf
 		nimln(717, "asyncdispatch.nim");
 		{
 			if (!!((realsize <= size))) goto LA42;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2402));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2324));
 		}
 		LA42: ;
 		nimln(718, "asyncdispatch.nim");
-		complete_261631((*HEX3Aenv_262630).retfuture261613, realsize);
+		complete_249631((*HEX3Aenv_250630).retfuture249613, realsize);
 	}
 	LA8: ;
 	nimln(722, "asyncdispatch.nim");
-	result = (*HEX3Aenv_262630).retfuture261613;
+	result = (*HEX3Aenv_250630).retfuture249613;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2407)(void* p, NI op) {
-	TY262730* a;
-	a = (TY262730*)p;
-	nimGCvisit((void*)(*a).retfuture262650, op);
+N_NIMCALL(void, TMP2329)(void* p, NI op) {
+	TY250730* a;
+	a = (TY250730*)p;
+	nimGCvisit((void*)(*a).retfuture250650, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_262662)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
-	TY262730* HEX3Aenvp_262736;
+N_CLOSURE(void, HEX3Aanonymous_250662)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
+	TY250730* HEX3Aenvp_250736;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_262736 = (TY262730*) ClEnv;
+	HEX3Aenvp_250736 = (TY250730*) ClEnv;
 	nimln(740, "asyncdispatch.nim");
 	{
-		if (!!((*(*HEX3Aenvp_262736).retfuture262650).Sup.finished)) goto LA3;
+		if (!!((*(*HEX3Aenvp_250736).retfuture250650).Sup.finished)) goto LA3;
 		nimln(741, "asyncdispatch.nim");
 		{
 			if (!(errcode == ((NI32) -1))) goto LA7;
 			nimln(742, "asyncdispatch.nim");
-			complete_255090((*HEX3Aenvp_262736).retfuture262650);
+			complete_243090((*HEX3Aenvp_250736).retfuture250650);
 		}
 		goto LA5;
 		LA7: ;
@@ -3058,26 +3058,26 @@ N_CLOSURE(void, HEX3Aanonymous_262662)(NI fd, NI32 bytescount, NI32 errcode, voi
 			{
 				NIM_BOOL LOC12;
 				LOC12 = 0;
-				LOC12 = isdisconnectionerror_239481((*HEX3Aenvp_262736).flags262638, errcode);
+				LOC12 = isdisconnectionerror_227481((*HEX3Aenvp_250736).flags250638, errcode);
 				if (!LOC12) goto LA13;
 				nimln(745, "asyncdispatch.nim");
-				complete_255090((*HEX3Aenvp_262736).retfuture262650);
+				complete_243090((*HEX3Aenvp_250736).retfuture250650);
 			}
 			goto LA10;
 			LA13: ;
 			{
-				Oserror3433* e_262669;
+				Oserror3433* e_250669;
 				Exception* LOC16;
 				nimln(747, "asyncdispatch.nim");
-				e_262669 = 0;
+				e_250669 = 0;
 				nimln(2265, "system.nim");
-				e_262669 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_262669).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_250669 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_250669).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_262669).Sup.Sup.message), oserrormsg_140020(errcode));
+				asgnRefNoCycle((void**) (&(*e_250669).Sup.Sup.message), oserrormsg_115020(errcode));
 				LOC16 = 0;
-				LOC16 = &e_262669->Sup.Sup;
-				fail_259659((*HEX3Aenvp_262736).retfuture262650, LOC16);
+				LOC16 = &e_250669->Sup.Sup;
+				fail_247659((*HEX3Aenvp_250736).retfuture250650, LOC16);
 			}
 			LA10: ;
 		}
@@ -3087,28 +3087,28 @@ N_CLOSURE(void, HEX3Aanonymous_262662)(NI fd, NI32 bytescount, NI32 errcode, voi
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* data, NU8 flags) {
-	FutureHEX3Aobjecttype255097* result;
-	TY262730* HEX3Aenv_262740;
+N_NIMCALL(FutureHEX3Aobjecttype243097*, send_250632)(NI socket, NimStringDesc* data, NU8 flags) {
+	FutureHEX3Aobjecttype243097* result;
+	TY250730* HEX3Aenv_250740;
 	WSABUF databuf;
 	NI32 bytesreceived;
 	NI32 lowflags;
-	Tcustomoverlapped258008* ol;
-	Tcustomoverlapped258008* LOC1;
-	Tcompletiondata258004 LOC2;
-	TY258014 LOC3;
+	Tcustomoverlapped246008* ol;
+	Tcustomoverlapped246008* LOC1;
+	Tcompletiondata246004 LOC2;
+	TY246014 LOC3;
 	int ret;
 	nimfr("send", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_262740 = 0;
+	HEX3Aenv_250740 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_262740 = (TY262730*) newObj((&NTI262741), sizeof(TY262730));
+	HEX3Aenv_250740 = (TY250730*) newObj((&NTI250741), sizeof(TY250730));
 	nimln(726, "asyncdispatch.nim");
-	(*HEX3Aenv_262740).flags262638 = flags;
+	(*HEX3Aenv_250740).flags250638 = flags;
 	nimln(728, "asyncdispatch.nim");
-	verifypresence_258607(socket);
+	verifypresence_246607(socket);
 	nimln(729, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_262740).retfuture262650), newfuture_259407(((NimStringDesc*) &TMP2408)));
+	asgnRef((void**) (&(*HEX3Aenv_250740).retfuture250650), newfuture_247407(((NimStringDesc*) &TMP2330)));
 	memset((void*)(&databuf), 0, sizeof(databuf));
 	nimln(732, "asyncdispatch.nim");
 	databuf.buf = data->data;
@@ -3118,7 +3118,7 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* d
 	lowflags = 0;
 	nimln(736, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = (Tcustomoverlapped258008*) newObj((&NTI258010), sizeof(Tcustomoverlapped258008));
+	LOC1 = (Tcustomoverlapped246008*) newObj((&NTI246010), sizeof(Tcustomoverlapped246008));
 	ol = LOC1;
 	nimln(737, "asyncdispatch.nim");
 	nimGCref(ol);
@@ -3127,20 +3127,20 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* d
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
 	LOC2.fd = socket;
 	memset((void*)(&LOC3), 0, sizeof(LOC3));
-	LOC3.ClPrc = HEX3Aanonymous_262662; LOC3.ClEnv = HEX3Aenv_262740;
+	LOC3.ClPrc = HEX3Aanonymous_250662; LOC3.ClEnv = HEX3Aenv_250740;
 	LOC2.cb.ClEnv = LOC3.ClEnv;
 	LOC2.cb.ClPrc = LOC3.ClPrc;
 	(*ol).data.fd = LOC2.fd;
 	asgnRef((void**) (&(*ol).data.cb.ClEnv), LOC2.cb.ClEnv);
 	(*ol).data.cb.ClPrc = LOC2.cb.ClPrc;
 	nimln(750, "asyncdispatch.nim");
-	ret = Dl_105766(socket, (&databuf), ((NI32) 1), (&bytesreceived), lowflags, ((Toverlapped105608*) (ol)), NIM_NIL);
+	ret = Dl_107766(socket, (&databuf), ((NI32) 1), (&bytesreceived), lowflags, ((Toverlapped107608*) (ol)), NIM_NIL);
 	nimln(752, "asyncdispatch.nim");
 	{
 		NI32 err;
 		if (!(ret == ((NI32) -1))) goto LA6;
 		nimln(753, "asyncdispatch.nim");
-		err = oslasterror_140454();
+		err = oslasterror_115454();
 		nimln(754, "asyncdispatch.nim");
 		{
 			if (!!((err == ((NI32) 997)))) goto LA10;
@@ -3150,26 +3150,26 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* d
 			{
 				NIM_BOOL LOC14;
 				LOC14 = 0;
-				LOC14 = isdisconnectionerror_239481((*HEX3Aenv_262740).flags262638, err);
+				LOC14 = isdisconnectionerror_227481((*HEX3Aenv_250740).flags250638, err);
 				if (!LOC14) goto LA15;
 				nimln(757, "asyncdispatch.nim");
-				complete_255090((*HEX3Aenv_262740).retfuture262650);
+				complete_243090((*HEX3Aenv_250740).retfuture250650);
 			}
 			goto LA12;
 			LA15: ;
 			{
-				Oserror3433* e_262702;
+				Oserror3433* e_250702;
 				Exception* LOC18;
 				nimln(759, "asyncdispatch.nim");
-				e_262702 = 0;
+				e_250702 = 0;
 				nimln(2265, "system.nim");
-				e_262702 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_262702).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_250702 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_250702).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_262702).Sup.Sup.message), oserrormsg_140020(err));
+				asgnRefNoCycle((void**) (&(*e_250702).Sup.Sup.message), oserrormsg_115020(err));
 				LOC18 = 0;
-				LOC18 = &e_262702->Sup.Sup;
-				fail_259659((*HEX3Aenv_262740).retfuture262650, LOC18);
+				LOC18 = &e_250702->Sup.Sup;
+				fail_247659((*HEX3Aenv_250740).retfuture250650, LOC18);
 			}
 			LA12: ;
 		}
@@ -3179,74 +3179,74 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, send_262632)(NI socket, NimStringDesc* d
 	LA6: ;
 	{
 		nimln(761, "asyncdispatch.nim");
-		complete_255090((*HEX3Aenv_262740).retfuture262650);
+		complete_243090((*HEX3Aenv_250740).retfuture250650);
 	}
 	LA4: ;
 	nimln(765, "asyncdispatch.nim");
-	result = (*HEX3Aenv_262740).retfuture262650;
+	result = (*HEX3Aenv_250740).retfuture250650;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2410)(void* p, NI op) {
-	TY264164* a;
-	a = (TY264164*)p;
-	nimGCvisit((void*)(*a).retfuture262813, op);
-	nimGCvisit((void*)(*a).lpoutputbuf262817, op);
-	nimGCvisit((void*)(*a).newacceptfut264058, op);
+N_NIMCALL(void, TMP2332)(void* p, NI op) {
+	TY252164* a;
+	a = (TY252164*)p;
+	nimGCvisit((void*)(*a).retfuture250813, op);
+	nimGCvisit((void*)(*a).lpoutputbuf250817, op);
+	nimGCvisit((void*)(*a).newacceptfut252058, op);
 }
-N_NIMCALL(void, TMP2415)(void* p, NI op) {
-	TY264167* a;
-	a = (TY264167*)p;
-	nimGCvisit((void*)(*a).newacceptfut263614, op);
-	nimGCvisit((void*)(*a).HEX3Aup264176, op);
+N_NIMCALL(void, TMP2337)(void* p, NI op) {
+	TY252167* a;
+	a = (TY252167*)p;
+	nimGCvisit((void*)(*a).newacceptfut251614, op);
+	nimGCvisit((void*)(*a).HEX3Aup252176, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_263615)(void* ClEnv) {
-	TY264167* HEX3Aenvp_264173;
+N_CLOSURE(void, HEX3Aanonymous_251615)(void* ClEnv) {
+	TY252167* HEX3Aenvp_252173;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_264173 = (TY264167*) ClEnv;
+	HEX3Aenvp_252173 = (TY252167*) ClEnv;
 	nimln(818, "asyncdispatch.nim");
 	{
-		FuturebaseHEX3Aobjecttype255017* LOC3;
+		FuturebaseHEX3Aobjecttype243017* LOC3;
 		NIM_BOOL LOC4;
 		Exception* LOC7;
 		LOC3 = 0;
-		LOC3 = &(*HEX3Aenvp_264173).newacceptfut263614->Sup;
+		LOC3 = &(*HEX3Aenvp_252173).newacceptfut251614->Sup;
 		LOC4 = 0;
-		LOC4 = failed_255914(LOC3);
+		LOC4 = failed_243914(LOC3);
 		if (!LOC4) goto LA5;
 		nimln(819, "asyncdispatch.nim");
 		LOC7 = 0;
-		LOC7 = readerror_263618((*HEX3Aenvp_264173).newacceptfut263614);
-		fail_263653((*(*HEX3Aenvp_264173).HEX3Aup264176).retfuture262813, LOC7);
+		LOC7 = readerror_251618((*HEX3Aenvp_252173).newacceptfut251614);
+		fail_251653((*(*HEX3Aenvp_252173).HEX3Aup252176).retfuture250813, LOC7);
 	}
 	goto LA1;
 	LA5: ;
 	{
-		TY262749 LOC9;
+		TY250749 LOC9;
 		nimln(821, "asyncdispatch.nim");
 		memset((void*)(&LOC9), 0, sizeof(LOC9));
-		read_263681((*HEX3Aenvp_264173).newacceptfut263614, (&LOC9));
-		complete_262866((*(*HEX3Aenvp_264173).HEX3Aup264176).retfuture262813, LOC9);
+		read_251681((*HEX3Aenvp_252173).newacceptfut251614, (&LOC9));
+		complete_250866((*(*HEX3Aenvp_252173).HEX3Aup252176).retfuture250813, LOC9);
 	}
 	LA1: ;
 	popFrame();
 }
 
-N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
-	TY264164* HEX3Aenvp_264179;
-	TY264167* HEX3Aenv_264195;
+N_CLOSURE(void, HEX3Aanonymous_250843)(NI fd, NI32 bytescount, NI32 errcode, void* ClEnv) {
+	TY252164* HEX3Aenvp_252179;
+	TY252167* HEX3Aenv_252195;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_264179 = (TY264164*) ClEnv;
-	HEX3Aenv_264195 = 0;
+	HEX3Aenvp_252179 = (TY252164*) ClEnv;
+	HEX3Aenv_252195 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_264195 = (TY264167*) newObj((&NTI264196), sizeof(TY264167));
+	HEX3Aenv_252195 = (TY252167*) newObj((&NTI252196), sizeof(TY252167));
 	nimln(829, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_264195).HEX3Aup264176), HEX3Aenvp_264179);
+	asgnRef((void**) (&(*HEX3Aenv_252195).HEX3Aup252176), HEX3Aenvp_252179);
 	{
-		if (!!((*(*HEX3Aenvp_264179).retfuture262813).Sup.finished)) goto LA3;
+		if (!!((*(*HEX3Aenvp_252179).retfuture250813).Sup.finished)) goto LA3;
 		nimln(830, "asyncdispatch.nim");
 		{
 			NI listensock;
@@ -3255,20 +3255,20 @@ N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, voi
 			SOCKADDR* remotesockaddr;
 			NI32 locallen;
 			NI32 remotelen;
-			TY262749 LOC14;
+			TY250749 LOC14;
 			NCSTRING LOC15;
 			if (!(errcode == ((NI32) -1))) goto LA7;
 			nimln(794, "asyncdispatch.nim");
-			listensock = (*HEX3Aenvp_264179).socket262744;
+			listensock = (*HEX3Aenvp_252179).socket250744;
 			nimln(795, "asyncdispatch.nim");
-			setoptret = Dl_105086((*HEX3Aenvp_264179).clientsock262814, SOL_SOCKET, ((int) 28683), ((void*) ((&listensock))), ((unsigned int) 8));
+			setoptret = Dl_107086((*HEX3Aenvp_252179).clientsock250814, SOL_SOCKET, ((int) 28683), ((void*) ((&listensock))), ((unsigned int) 8));
 			nimln(798, "asyncdispatch.nim");
 			{
 				NI32 LOC13;
 				if (!!((setoptret == ((NI32) 0)))) goto LA11;
 				LOC13 = 0;
-				LOC13 = oslasterror_140454();
-				raiseoserror_140430(LOC13);
+				LOC13 = oslasterror_115454();
+				raiseoserror_115430(LOC13);
 			}
 			LA11: ;
 			localsockaddr = 0;
@@ -3276,18 +3276,18 @@ N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, voi
 			locallen = 0;
 			remotelen = 0;
 			nimln(802, "asyncdispatch.nim");
-			if ((NU)(((NI) 0)) > (NU)((*HEX3Aenvp_264179).lpoutputbuf262817->Sup.len)) raiseIndexError();
-			getacceptexsockaddrs_259346(((void*) ((&(*HEX3Aenvp_264179).lpoutputbuf262817->data[((NI) 0)]))), (*HEX3Aenvp_264179).dwreceivedatalength262819, (*HEX3Aenvp_264179).dwlocaladdresslength262821, (*HEX3Aenvp_264179).dwremoteaddresslength262823, &localsockaddr, (&locallen), &remotesockaddr, (&remotelen));
+			if ((NU)(((NI) 0)) > (NU)((*HEX3Aenvp_252179).lpoutputbuf250817->Sup.len)) raiseIndexError();
+			getacceptexsockaddrs_247346(((void*) ((&(*HEX3Aenvp_252179).lpoutputbuf250817->data[((NI) 0)]))), (*HEX3Aenvp_252179).dwreceivedatalength250819, (*HEX3Aenvp_252179).dwlocaladdresslength250821, (*HEX3Aenvp_252179).dwremoteaddresslength250823, &localsockaddr, (&locallen), &remotesockaddr, (&remotelen));
 			nimln(806, "asyncdispatch.nim");
-			register_258252((*HEX3Aenvp_264179).clientsock262814);
+			register_246252((*HEX3Aenvp_252179).clientsock250814);
 			nimln(808, "asyncdispatch.nim");
 			memset((void*)(&LOC14), 0, sizeof(LOC14));
 			nimln(809, "asyncdispatch.nim");
 			LOC15 = 0;
-			LOC15 = Dl_105262((*((SOCKADDR_IN*) (remotesockaddr))).sin_addr);
+			LOC15 = Dl_107262((*((SOCKADDR_IN*) (remotesockaddr))).sin_addr);
 			LOC14.Field0 = cstrToNimstr(LOC15);
-			LOC14.Field1 = (*HEX3Aenvp_264179).clientsock262814;
-			complete_262866((*HEX3Aenvp_264179).retfuture262813, LOC14);
+			LOC14.Field1 = (*HEX3Aenvp_252179).clientsock250814;
+			complete_250866((*HEX3Aenvp_252179).retfuture250813, LOC14);
 		}
 		goto LA5;
 		LA7: ;
@@ -3295,35 +3295,35 @@ N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, voi
 			nimln(814, "asyncdispatch.nim");
 			{
 				NIM_BOOL LOC19;
-				FuturebaseHEX3Aobjecttype255017* LOC22;
-				TY255018 LOC23;
+				FuturebaseHEX3Aobjecttype243017* LOC22;
+				TY243018 LOC23;
 				LOC19 = 0;
-				LOC19 = isdisconnectionerror_239481((*HEX3Aenvp_264179).flags262747, errcode);
+				LOC19 = isdisconnectionerror_227481((*HEX3Aenvp_252179).flags250747, errcode);
 				if (!LOC19) goto LA20;
 				nimln(815, "asyncdispatch.nim");
-				asgnRef((void**) (&(*HEX3Aenv_264195).newacceptfut263614), acceptaddr_262742((*HEX3Aenvp_264179).socket262744, (*HEX3Aenvp_264179).flags262747));
+				asgnRef((void**) (&(*HEX3Aenv_252195).newacceptfut251614), acceptaddr_250742((*HEX3Aenvp_252179).socket250744, (*HEX3Aenvp_252179).flags250747));
 				nimln(816, "asyncdispatch.nim");
 				LOC22 = 0;
-				LOC22 = &(*HEX3Aenv_264195).newacceptfut263614->Sup;
+				LOC22 = &(*HEX3Aenv_252195).newacceptfut251614->Sup;
 				memset((void*)(&LOC23), 0, sizeof(LOC23));
-				LOC23.ClPrc = HEX3Aanonymous_263615; LOC23.ClEnv = HEX3Aenv_264195;
-				callbackHEX3D_255832(LOC22, LOC23);
+				LOC23.ClPrc = HEX3Aanonymous_251615; LOC23.ClEnv = HEX3Aenv_252195;
+				callbackHEX3D_243832(LOC22, LOC23);
 			}
 			goto LA17;
 			LA20: ;
 			{
-				Oserror3433* e_264026;
+				Oserror3433* e_252026;
 				Exception* LOC25;
 				nimln(823, "asyncdispatch.nim");
-				e_264026 = 0;
+				e_252026 = 0;
 				nimln(2265, "system.nim");
-				e_264026 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_264026).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_252026 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_252026).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_264026).Sup.Sup.message), oserrormsg_140020(errcode));
+				asgnRefNoCycle((void**) (&(*e_252026).Sup.Sup.message), oserrormsg_115020(errcode));
 				LOC25 = 0;
-				LOC25 = &e_264026->Sup.Sup;
-				fail_263653((*HEX3Aenvp_264179).retfuture262813, LOC25);
+				LOC25 = &e_252026->Sup.Sup;
+				fail_251653((*HEX3Aenvp_252179).retfuture250813, LOC25);
 			}
 			LA17: ;
 		}
@@ -3333,144 +3333,144 @@ N_CLOSURE(void, HEX3Aanonymous_262843)(NI fd, NI32 bytescount, NI32 errcode, voi
 	popFrame();
 }
 
-N_CLOSURE(void, HEX3Aanonymous_264059)(void* ClEnv) {
-	TY264164* HEX3Aenvp_264192;
+N_CLOSURE(void, HEX3Aanonymous_252059)(void* ClEnv) {
+	TY252164* HEX3Aenvp_252192;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_264192 = (TY264164*) ClEnv;
+	HEX3Aenvp_252192 = (TY252164*) ClEnv;
 	nimln(818, "asyncdispatch.nim");
 	{
-		FuturebaseHEX3Aobjecttype255017* LOC3;
+		FuturebaseHEX3Aobjecttype243017* LOC3;
 		NIM_BOOL LOC4;
 		Exception* LOC7;
 		LOC3 = 0;
-		LOC3 = &(*HEX3Aenvp_264192).newacceptfut264058->Sup;
+		LOC3 = &(*HEX3Aenvp_252192).newacceptfut252058->Sup;
 		LOC4 = 0;
-		LOC4 = failed_255914(LOC3);
+		LOC4 = failed_243914(LOC3);
 		if (!LOC4) goto LA5;
 		nimln(819, "asyncdispatch.nim");
 		LOC7 = 0;
-		LOC7 = readerror_263618((*HEX3Aenvp_264192).newacceptfut264058);
-		fail_263653((*HEX3Aenvp_264192).retfuture262813, LOC7);
+		LOC7 = readerror_251618((*HEX3Aenvp_252192).newacceptfut252058);
+		fail_251653((*HEX3Aenvp_252192).retfuture250813, LOC7);
 	}
 	goto LA1;
 	LA5: ;
 	{
-		TY262749 LOC9;
+		TY250749 LOC9;
 		nimln(821, "asyncdispatch.nim");
 		memset((void*)(&LOC9), 0, sizeof(LOC9));
-		read_263681((*HEX3Aenvp_264192).newacceptfut264058, (&LOC9));
-		complete_262866((*HEX3Aenvp_264192).retfuture262813, LOC9);
+		read_251681((*HEX3Aenvp_252192).newacceptfut252058, (&LOC9));
+		complete_250866((*HEX3Aenvp_252192).retfuture250813, LOC9);
 	}
 	LA1: ;
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype262756*, acceptaddr_262742)(NI socket, NU8 flags) {
-	FutureHEX3Aobjecttype262756* result;
-	TY264164* HEX3Aenv_264197;
+N_NIMCALL(FutureHEX3Aobjecttype250756*, acceptaddr_250742)(NI socket, NU8 flags) {
+	FutureHEX3Aobjecttype250756* result;
+	TY252164* HEX3Aenv_252197;
 	NI32 dwbytesreceived;
-	NI TMP2412;
-	NI TMP2413;
-	Tcustomoverlapped258008* ol;
-	Tcustomoverlapped258008* LOC6;
-	Tcompletiondata258004 LOC7;
-	TY258014 LOC8;
+	NI TMP2334;
+	NI TMP2335;
+	Tcustomoverlapped246008* ol;
+	Tcustomoverlapped246008* LOC6;
+	Tcompletiondata246004 LOC7;
+	TY246014 LOC8;
 	NIM_BOOL ret;
 	nimfr("acceptAddr", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_264197 = 0;
+	HEX3Aenv_252197 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_264197 = (TY264164*) newObj((&NTI264198), sizeof(TY264164));
+	HEX3Aenv_252197 = (TY252164*) newObj((&NTI252198), sizeof(TY252164));
 	nimln(769, "asyncdispatch.nim");
-	(*HEX3Aenv_264197).socket262744 = socket;
-	(*HEX3Aenv_264197).flags262747 = flags;
+	(*HEX3Aenv_252197).socket250744 = socket;
+	(*HEX3Aenv_252197).flags250747 = flags;
 	nimln(780, "asyncdispatch.nim");
-	verifypresence_258607((*HEX3Aenv_264197).socket262744);
+	verifypresence_246607((*HEX3Aenv_252197).socket250744);
 	nimln(781, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_264197).retfuture262813), newfuture_262764(((NimStringDesc*) &TMP2411)));
+	asgnRef((void**) (&(*HEX3Aenv_252197).retfuture250813), newfuture_250764(((NimStringDesc*) &TMP2333)));
 	nimln(783, "asyncdispatch.nim");
-	(*HEX3Aenv_264197).clientsock262814 = newrawsocket_235004(((NU8) 2), ((NU8) 1), ((NU8) 6));
+	(*HEX3Aenv_252197).clientsock250814 = newrawsocket_223004(((NU8) 2), ((NU8) 1), ((NU8) 6));
 	nimln(784, "asyncdispatch.nim");
 	{
 		NI32 LOC5;
-		if (!((*HEX3Aenv_264197).clientsock262814 == osinvalidsocket_234650)) goto LA3;
+		if (!((*HEX3Aenv_252197).clientsock250814 == osinvalidsocket_222650)) goto LA3;
 		LOC5 = 0;
-		LOC5 = oslasterror_140454();
-		raiseoserror_140430(LOC5);
+		LOC5 = oslasterror_115454();
+		raiseoserror_115430(LOC5);
 	}
 	LA3: ;
 	nimln(787, "asyncdispatch.nim");
-	asgnRefNoCycle((void**) (&(*HEX3Aenv_264197).lpoutputbuf262817), mnewString(((NI) 1024)));
+	asgnRefNoCycle((void**) (&(*HEX3Aenv_252197).lpoutputbuf250817), mnewString(((NI) 1024)));
 	dwbytesreceived = 0;
 	nimln(789, "asyncdispatch.nim");
-	(*HEX3Aenv_264197).dwreceivedatalength262819 = ((NI32) 0);
+	(*HEX3Aenv_252197).dwreceivedatalength250819 = ((NI32) 0);
 	nimln(790, "asyncdispatch.nim");
-	TMP2412 = addInt(((NI)sizeof(SOCKADDR_IN)), ((NI) 16));
-	(*HEX3Aenv_264197).dwlocaladdresslength262821 = ((NI32)chckRange((NI)(TMP2412), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
+	TMP2334 = addInt(((NI)sizeof(SOCKADDR_IN)), ((NI) 16));
+	(*HEX3Aenv_252197).dwlocaladdresslength250821 = ((NI32)chckRange((NI)(TMP2334), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
 	nimln(791, "asyncdispatch.nim");
-	TMP2413 = addInt(((NI)sizeof(SOCKADDR_IN)), ((NI) 16));
-	(*HEX3Aenv_264197).dwremoteaddresslength262823 = ((NI32)chckRange((NI)(TMP2413), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
+	TMP2335 = addInt(((NI)sizeof(SOCKADDR_IN)), ((NI) 16));
+	(*HEX3Aenv_252197).dwremoteaddresslength250823 = ((NI32)chckRange((NI)(TMP2335), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
 	nimln(825, "asyncdispatch.nim");
 	LOC6 = 0;
-	LOC6 = (Tcustomoverlapped258008*) newObj((&NTI258010), sizeof(Tcustomoverlapped258008));
+	LOC6 = (Tcustomoverlapped246008*) newObj((&NTI246010), sizeof(Tcustomoverlapped246008));
 	ol = LOC6;
 	nimln(826, "asyncdispatch.nim");
 	nimGCref(ol);
 	nimln(827, "asyncdispatch.nim");
 	memset((void*)(&LOC7), 0, sizeof(LOC7));
 	memset((void*)(&LOC7), 0, sizeof(LOC7));
-	LOC7.fd = (*HEX3Aenv_264197).socket262744;
+	LOC7.fd = (*HEX3Aenv_252197).socket250744;
 	memset((void*)(&LOC8), 0, sizeof(LOC8));
-	LOC8.ClPrc = HEX3Aanonymous_262843; LOC8.ClEnv = HEX3Aenv_264197;
+	LOC8.ClPrc = HEX3Aanonymous_250843; LOC8.ClEnv = HEX3Aenv_252197;
 	LOC7.cb.ClEnv = LOC8.ClEnv;
 	LOC7.cb.ClPrc = LOC8.ClPrc;
 	(*ol).data.fd = LOC7.fd;
 	asgnRef((void**) (&(*ol).data.cb.ClEnv), LOC7.cb.ClEnv);
 	(*ol).data.cb.ClPrc = LOC7.cb.ClPrc;
 	nimln(837, "asyncdispatch.nim");
-	if ((NU)(((NI) 0)) > (NU)((*HEX3Aenv_264197).lpoutputbuf262817->Sup.len)) raiseIndexError();
-	ret = acceptex_259302((*HEX3Aenv_264197).socket262744, (*HEX3Aenv_264197).clientsock262814, ((void*) ((&(*HEX3Aenv_264197).lpoutputbuf262817->data[((NI) 0)]))), (*HEX3Aenv_264197).dwreceivedatalength262819, (*HEX3Aenv_264197).dwlocaladdresslength262821, (*HEX3Aenv_264197).dwremoteaddresslength262823, (&dwbytesreceived), ((Toverlapped105608*) (ol)));
+	if ((NU)(((NI) 0)) > (NU)((*HEX3Aenv_252197).lpoutputbuf250817->Sup.len)) raiseIndexError();
+	ret = acceptex_247302((*HEX3Aenv_252197).socket250744, (*HEX3Aenv_252197).clientsock250814, ((void*) ((&(*HEX3Aenv_252197).lpoutputbuf250817->data[((NI) 0)]))), (*HEX3Aenv_252197).dwreceivedatalength250819, (*HEX3Aenv_252197).dwlocaladdresslength250821, (*HEX3Aenv_252197).dwremoteaddresslength250823, (&dwbytesreceived), ((Toverlapped107608*) (ol)));
 	nimln(843, "asyncdispatch.nim");
 	{
 		NI32 err;
 		if (!!(ret)) goto LA11;
 		nimln(844, "asyncdispatch.nim");
-		err = oslasterror_140454();
+		err = oslasterror_115454();
 		nimln(845, "asyncdispatch.nim");
 		{
 			if (!!((err == ((NI32) 997)))) goto LA15;
 			nimln(814, "asyncdispatch.nim");
 			{
 				NIM_BOOL LOC19;
-				FuturebaseHEX3Aobjecttype255017* LOC22;
-				TY255018 LOC23;
+				FuturebaseHEX3Aobjecttype243017* LOC22;
+				TY243018 LOC23;
 				LOC19 = 0;
-				LOC19 = isdisconnectionerror_239481((*HEX3Aenv_264197).flags262747, err);
+				LOC19 = isdisconnectionerror_227481((*HEX3Aenv_252197).flags250747, err);
 				if (!LOC19) goto LA20;
 				nimln(815, "asyncdispatch.nim");
-				asgnRef((void**) (&(*HEX3Aenv_264197).newacceptfut264058), acceptaddr_262742((*HEX3Aenv_264197).socket262744, (*HEX3Aenv_264197).flags262747));
+				asgnRef((void**) (&(*HEX3Aenv_252197).newacceptfut252058), acceptaddr_250742((*HEX3Aenv_252197).socket250744, (*HEX3Aenv_252197).flags250747));
 				nimln(816, "asyncdispatch.nim");
 				LOC22 = 0;
-				LOC22 = &(*HEX3Aenv_264197).newacceptfut264058->Sup;
+				LOC22 = &(*HEX3Aenv_252197).newacceptfut252058->Sup;
 				memset((void*)(&LOC23), 0, sizeof(LOC23));
-				LOC23.ClPrc = HEX3Aanonymous_264059; LOC23.ClEnv = HEX3Aenv_264197;
-				callbackHEX3D_255832(LOC22, LOC23);
+				LOC23.ClPrc = HEX3Aanonymous_252059; LOC23.ClEnv = HEX3Aenv_252197;
+				callbackHEX3D_243832(LOC22, LOC23);
 			}
 			goto LA17;
 			LA20: ;
 			{
-				Oserror3433* e_264096;
+				Oserror3433* e_252096;
 				Exception* LOC25;
 				nimln(823, "asyncdispatch.nim");
-				e_264096 = 0;
+				e_252096 = 0;
 				nimln(2265, "system.nim");
-				e_264096 = (Oserror3433*) newObj((&NTI130222), sizeof(Oserror3433));
-				(*e_264096).Sup.Sup.Sup.m_type = (&NTI3433);
+				e_252096 = (Oserror3433*) newObj((&NTI115433), sizeof(Oserror3433));
+				(*e_252096).Sup.Sup.Sup.m_type = (&NTI3433);
 				nimln(2266, "system.nim");
-				asgnRefNoCycle((void**) (&(*e_264096).Sup.Sup.message), oserrormsg_140020(err));
+				asgnRefNoCycle((void**) (&(*e_252096).Sup.Sup.message), oserrormsg_115020(err));
 				LOC25 = 0;
-				LOC25 = &e_264096->Sup.Sup;
-				fail_263653((*HEX3Aenv_264197).retfuture262813, LOC25);
+				LOC25 = &e_252096->Sup.Sup;
+				fail_251653((*HEX3Aenv_252197).retfuture250813, LOC25);
 			}
 			LA17: ;
 			nimln(847, "asyncdispatch.nim");
@@ -3487,19 +3487,19 @@ N_NIMCALL(FutureHEX3Aobjecttype262756*, acceptaddr_262742)(NI socket, NU8 flags)
 		SOCKADDR* remotesockaddr;
 		NI32 locallen;
 		NI32 remotelen;
-		TY262749 LOC32;
+		TY250749 LOC32;
 		NCSTRING LOC33;
 		nimln(794, "asyncdispatch.nim");
-		listensock = (*HEX3Aenv_264197).socket262744;
+		listensock = (*HEX3Aenv_252197).socket250744;
 		nimln(795, "asyncdispatch.nim");
-		setoptret = Dl_105086((*HEX3Aenv_264197).clientsock262814, SOL_SOCKET, ((int) 28683), ((void*) ((&listensock))), ((unsigned int) 8));
+		setoptret = Dl_107086((*HEX3Aenv_252197).clientsock250814, SOL_SOCKET, ((int) 28683), ((void*) ((&listensock))), ((unsigned int) 8));
 		nimln(798, "asyncdispatch.nim");
 		{
 			NI32 LOC31;
 			if (!!((setoptret == ((NI32) 0)))) goto LA29;
 			LOC31 = 0;
-			LOC31 = oslasterror_140454();
-			raiseoserror_140430(LOC31);
+			LOC31 = oslasterror_115454();
+			raiseoserror_115430(LOC31);
 		}
 		LA29: ;
 		localsockaddr = 0;
@@ -3507,75 +3507,75 @@ N_NIMCALL(FutureHEX3Aobjecttype262756*, acceptaddr_262742)(NI socket, NU8 flags)
 		locallen = 0;
 		remotelen = 0;
 		nimln(802, "asyncdispatch.nim");
-		if ((NU)(((NI) 0)) > (NU)((*HEX3Aenv_264197).lpoutputbuf262817->Sup.len)) raiseIndexError();
-		getacceptexsockaddrs_259346(((void*) ((&(*HEX3Aenv_264197).lpoutputbuf262817->data[((NI) 0)]))), (*HEX3Aenv_264197).dwreceivedatalength262819, (*HEX3Aenv_264197).dwlocaladdresslength262821, (*HEX3Aenv_264197).dwremoteaddresslength262823, &localsockaddr, (&locallen), &remotesockaddr, (&remotelen));
+		if ((NU)(((NI) 0)) > (NU)((*HEX3Aenv_252197).lpoutputbuf250817->Sup.len)) raiseIndexError();
+		getacceptexsockaddrs_247346(((void*) ((&(*HEX3Aenv_252197).lpoutputbuf250817->data[((NI) 0)]))), (*HEX3Aenv_252197).dwreceivedatalength250819, (*HEX3Aenv_252197).dwlocaladdresslength250821, (*HEX3Aenv_252197).dwremoteaddresslength250823, &localsockaddr, (&locallen), &remotesockaddr, (&remotelen));
 		nimln(806, "asyncdispatch.nim");
-		register_258252((*HEX3Aenv_264197).clientsock262814);
+		register_246252((*HEX3Aenv_252197).clientsock250814);
 		nimln(808, "asyncdispatch.nim");
 		memset((void*)(&LOC32), 0, sizeof(LOC32));
 		nimln(809, "asyncdispatch.nim");
 		LOC33 = 0;
-		LOC33 = Dl_105262((*((SOCKADDR_IN*) (remotesockaddr))).sin_addr);
+		LOC33 = Dl_107262((*((SOCKADDR_IN*) (remotesockaddr))).sin_addr);
 		LOC32.Field0 = cstrToNimstr(LOC33);
-		LOC32.Field1 = (*HEX3Aenv_264197).clientsock262814;
-		complete_262866((*HEX3Aenv_264197).retfuture262813, LOC32);
+		LOC32.Field1 = (*HEX3Aenv_252197).clientsock250814;
+		complete_250866((*HEX3Aenv_252197).retfuture250813, LOC32);
 	}
 	LA9: ;
 	nimln(854, "asyncdispatch.nim");
-	result = (*HEX3Aenv_264197).retfuture262813;
+	result = (*HEX3Aenv_252197).retfuture250813;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, newasyncrawsocket_264199)(int domain, int typ, int protocol) {
+N_NIMCALL(NI, newasyncrawsocket_252199)(int domain, int typ, int protocol) {
 	NI result;
 	nimfr("newAsyncRawSocket", "asyncdispatch.nim")
 	result = 0;
 	nimln(858, "asyncdispatch.nim");
-	result = newrawsocket_235016(domain, typ, protocol);
+	result = newrawsocket_223016(domain, typ, protocol);
 	nimln(859, "asyncdispatch.nim");
-	setblocking_237453(result, NIM_FALSE);
+	setblocking_225453(result, NIM_FALSE);
 	nimln(860, "asyncdispatch.nim");
-	register_258252(result);
+	register_246252(result);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, newasyncrawsocket_264210)(NU8 domain, NU8 typ, NU8 protocol) {
+N_NIMCALL(NI, newasyncrawsocket_252210)(NU8 domain, NU8 typ, NU8 protocol) {
 	NI result;
 	nimfr("newAsyncRawSocket", "asyncdispatch.nim")
 	result = 0;
 	nimln(866, "asyncdispatch.nim");
-	result = newrawsocket_235004(domain, typ, protocol);
+	result = newrawsocket_223004(domain, typ, protocol);
 	nimln(867, "asyncdispatch.nim");
-	setblocking_237453(result, NIM_FALSE);
+	setblocking_225453(result, NIM_FALSE);
 	nimln(868, "asyncdispatch.nim");
-	register_258252(result);
+	register_246252(result);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, closesocket_264221)(NI socket) {
-	PdispatcherHEX3Aobjecttype258020* LOC1;
+N_NIMCALL(void, closesocket_252221)(NI socket) {
+	PdispatcherHEX3Aobjecttype246020* LOC1;
 	nimfr("closeSocket", "asyncdispatch.nim")
 	nimln(872, "asyncdispatch.nim");
-	close_235028(socket);
+	close_223028(socket);
 	nimln(873, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = getglobaldispatcher_258238();
-	excl_264225((&(*LOC1).handles), socket);
+	LOC1 = getglobaldispatcher_246238();
+	excl_252225((&(*LOC1).handles), socket);
 	popFrame();
 }
 
-N_NIMCALL(void, unregister_264451)(NI fd) {
-	PdispatcherHEX3Aobjecttype258020* LOC1;
+N_NIMCALL(void, unregister_252451)(NI fd) {
+	PdispatcherHEX3Aobjecttype246020* LOC1;
 	nimfr("unregister", "asyncdispatch.nim")
 	nimln(877, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = getglobaldispatcher_258238();
-	excl_264225((&(*LOC1).handles), fd);
+	LOC1 = getglobaldispatcher_246238();
+	excl_252225((&(*LOC1).handles), fd);
 	popFrame();
 }
 
@@ -3589,19 +3589,19 @@ static N_INLINE(NF, HEX2F_87999)(NI x, NI y) {
 	return result;
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype255097*, sleepasync_264618)(NI ms) {
-	FutureHEX3Aobjecttype255097* result;
-	FutureHEX3Aobjecttype255097* retfuture;
-	PdispatcherHEX3Aobjecttype258020* p;
-	TY255995 LOC1;
+N_NIMCALL(FutureHEX3Aobjecttype243097*, sleepasync_252618)(NI ms) {
+	FutureHEX3Aobjecttype243097* result;
+	FutureHEX3Aobjecttype243097* retfuture;
+	PdispatcherHEX3Aobjecttype246020* p;
+	TY243995 LOC1;
 	NF LOC2;
 	NF LOC3;
 	nimfr("sleepAsync", "asyncdispatch.nim")
 {	result = 0;
 	nimln(1158, "asyncdispatch.nim");
-	retfuture = newfuture_259407(((NimStringDesc*) &TMP2416));
+	retfuture = newfuture_247407(((NimStringDesc*) &TMP2338));
 	nimln(1159, "asyncdispatch.nim");
-	p = getglobaldispatcher_258238();
+	p = getglobaldispatcher_246238();
 	nimln(1160, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
 	LOC2 = 0;
@@ -3610,7 +3610,7 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, sleepasync_264618)(NI ms) {
 	LOC3 = HEX2F_87999(ms, ((NI) 1000));
 	LOC1.Field0 = ((NF)(LOC2) + (NF)(LOC3));
 	LOC1.Field1 = retfuture;
-	(*p).Sup.timers = (TY255994*) incrSeq(&((*p).Sup.timers)->Sup, sizeof(TY255995));
+	(*p).Sup.timers = (TY243994*) incrSeq(&((*p).Sup.timers)->Sup, sizeof(TY243995));
 	(*p).Sup.timers->data[(*p).Sup.timers->Sup.len-1].Field0 = LOC1.Field0;
 	asgnRef((void**) (&(*p).Sup.timers->data[(*p).Sup.timers->Sup.len-1].Field1), LOC1.Field1);
 	nimln(1161, "asyncdispatch.nim");
@@ -3620,9 +3620,9 @@ N_NIMCALL(FutureHEX3Aobjecttype255097*, sleepasync_264618)(NI ms) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2417)(void* p, NI op) {
-	FutureHEX3Aobjecttype264663* a;
-	a = (FutureHEX3Aobjecttype264663*)p;
+N_NIMCALL(void, TMP2339)(void* p, NI op) {
+	FutureHEX3Aobjecttype252663* a;
+	a = (FutureHEX3Aobjecttype252663*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -3630,33 +3630,33 @@ N_NIMCALL(void, TMP2417)(void* p, NI op) {
 	nimGCvisit((void*)(*a).Sup.fromproc, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype264663*, newfuture_264668)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype264663* result;
+N_NIMCALL(FutureHEX3Aobjecttype252663*, newfuture_252668)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype252663* result;
 	NimStringDesc* LOC1;
-	NI TMP2418;
+	NI TMP2340;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype264663*) newObj((&NTI264662), sizeof(FutureHEX3Aobjecttype264663));
-	(*result).Sup.Sup.m_type = (&NTI264663);
+	result = (FutureHEX3Aobjecttype252663*) newObj((&NTI252662), sizeof(FutureHEX3Aobjecttype252663));
+	(*result).Sup.Sup.m_type = (&NTI252663);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2418 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2418);
+	TMP2340 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2340);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_265011)(FutureHEX3Aobjecttype264663* future) {
+N_NIMCALL(void, checkfinished_253011)(FutureHEX3Aobjecttype252663* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -3666,15 +3666,15 @@ N_NIMCALL(void, checkfinished_265011)(FutureHEX3Aobjecttype264663* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -3682,7 +3682,7 @@ N_NIMCALL(void, checkfinished_265011)(FutureHEX3Aobjecttype264663* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -3690,10 +3690,10 @@ N_NIMCALL(void, checkfinished_265011)(FutureHEX3Aobjecttype264663* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, fail_265002)(FutureHEX3Aobjecttype264663* future, Exception* error) {
+N_NIMCALL(void, fail_253002)(FutureHEX3Aobjecttype252663* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_265011(future);
+	checkfinished_253011(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -3715,9 +3715,9 @@ N_NIMCALL(void, fail_265002)(FutureHEX3Aobjecttype264663* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2419)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2341)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -3727,14 +3727,14 @@ N_NIMCALL(void, fail_265002)(FutureHEX3Aobjecttype264663* future, Exception* err
 	popFrame();
 }
 
-N_NIMCALL(void, complete_265625)(FutureHEX3Aobjecttype264663* future, NI val) {
+N_NIMCALL(void, complete_253625)(FutureHEX3Aobjecttype252663* future, NI val) {
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_265011(future);
+	checkfinished_253011(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -3743,120 +3743,120 @@ N_NIMCALL(void, complete_265625)(FutureHEX3Aobjecttype264663* future, NI val) {
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA7;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA7;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2420)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2342)((*future).Sup.cb.ClPrc))();
 	}
 	LA7: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2423)(void* p, NI op) {
-	TY265830* a;
-	a = (TY265830*)p;
-	nimGCvisit((void*)(*a).cb265827.ClEnv, op);
-	nimGCvisit((void*)(*a).future265819, op);
+N_NIMCALL(void, TMP2345)(void* p, NI op) {
+	TY253830* a;
+	a = (TY253830*)p;
+	nimGCvisit((void*)(*a).cb253827.ClEnv, op);
+	nimGCvisit((void*)(*a).future253819, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_265828)(void* ClEnv) {
-	TY265830* HEX3Aenvp_265836;
+N_CLOSURE(void, HEX3Aanonymous_253828)(void* ClEnv) {
+	TY253830* HEX3Aenvp_253836;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_265836 = (TY265830*) ClEnv;
+	HEX3Aenvp_253836 = (TY253830*) ClEnv;
 	nimln(231, "asyncdispatch.nim");
-	(*HEX3Aenvp_265836).cb265827.ClEnv? (*HEX3Aenvp_265836).cb265827.ClPrc((*HEX3Aenvp_265836).future265819, (*HEX3Aenvp_265836).cb265827.ClEnv):((TMP2424)((*HEX3Aenvp_265836).cb265827.ClPrc))((*HEX3Aenvp_265836).future265819);
+	(*HEX3Aenvp_253836).cb253827.ClEnv? (*HEX3Aenvp_253836).cb253827.ClPrc((*HEX3Aenvp_253836).future253819, (*HEX3Aenvp_253836).cb253827.ClEnv):((TMP2346)((*HEX3Aenvp_253836).cb253827.ClPrc))((*HEX3Aenvp_253836).future253819);
 	popFrame();
 }
 
-N_NIMCALL(void, callbackHEX3D_265814)(FutureHEX3Aobjecttype262756* future, TY265820 cb) {
-	TY265830* HEX3Aenv_265840;
-	FuturebaseHEX3Aobjecttype255017* LOC1;
-	TY255018 LOC2;
+N_NIMCALL(void, callbackHEX3D_253814)(FutureHEX3Aobjecttype250756* future, TY253820 cb) {
+	TY253830* HEX3Aenv_253840;
+	FuturebaseHEX3Aobjecttype243017* LOC1;
+	TY243018 LOC2;
 	nimfr("callback=", "asyncdispatch.nim")
-	HEX3Aenv_265840 = 0;
+	HEX3Aenv_253840 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_265840 = (TY265830*) newObj((&NTI265841), sizeof(TY265830));
+	HEX3Aenv_253840 = (TY253830*) newObj((&NTI253841), sizeof(TY253830));
 	nimln(228, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_265840).cb265827.ClEnv), cb.ClEnv);
-	(*HEX3Aenv_265840).cb265827.ClPrc = cb.ClPrc;
-	asgnRef((void**) (&(*HEX3Aenv_265840).future265819), future);
+	asgnRef((void**) (&(*HEX3Aenv_253840).cb253827.ClEnv), cb.ClEnv);
+	(*HEX3Aenv_253840).cb253827.ClPrc = cb.ClPrc;
+	asgnRef((void**) (&(*HEX3Aenv_253840).future253819), future);
 	nimln(231, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = &(*HEX3Aenv_265840).future265819->Sup;
+	LOC1 = &(*HEX3Aenv_253840).future253819->Sup;
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = HEX3Aanonymous_265828; LOC2.ClEnv = HEX3Aenv_265840;
-	callbackHEX3D_255832(LOC1, LOC2);
+	LOC2.ClPrc = HEX3Aanonymous_253828; LOC2.ClEnv = HEX3Aenv_253840;
+	callbackHEX3D_243832(LOC1, LOC2);
 	popFrame();
 }
-N_NIMCALL(void, TMP2426)(void* p, NI op) {
-	TY265842* a;
-	a = (TY265842*)p;
-	nimGCvisit((void*)(*a).retfut264813, op);
+N_NIMCALL(void, TMP2348)(void* p, NI op) {
+	TY253842* a;
+	a = (TY253842*)p;
+	nimGCvisit((void*)(*a).retfut252813, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_264815)(FutureHEX3Aobjecttype262756* future, void* ClEnv) {
-	TY265842* HEX3Aenvp_265848;
+N_CLOSURE(void, HEX3Aanonymous_252815)(FutureHEX3Aobjecttype250756* future, void* ClEnv) {
+	TY253842* HEX3Aenvp_253848;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_265848 = (TY265842*) ClEnv;
+	HEX3Aenvp_253848 = (TY253842*) ClEnv;
 	nimln(1172, "asyncdispatch.nim");
 	{
 		if (!!((*future).Sup.finished)) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2428));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2350));
 	}
 	LA3: ;
 	nimln(1173, "asyncdispatch.nim");
 	{
-		FuturebaseHEX3Aobjecttype255017* LOC7;
+		FuturebaseHEX3Aobjecttype243017* LOC7;
 		NIM_BOOL LOC8;
 		LOC7 = 0;
 		LOC7 = &future->Sup;
 		LOC8 = 0;
-		LOC8 = failed_255914(LOC7);
+		LOC8 = failed_243914(LOC7);
 		if (!LOC8) goto LA9;
 		nimln(1174, "asyncdispatch.nim");
-		fail_265002((*HEX3Aenvp_265848).retfut264813, (*future).Sup.error);
+		fail_253002((*HEX3Aenvp_253848).retfut252813, (*future).Sup.error);
 	}
 	goto LA5;
 	LA9: ;
 	{
-		TY262749 LOC12;
+		TY250749 LOC12;
 		nimln(1176, "asyncdispatch.nim");
 		memset((void*)(&LOC12), 0, sizeof(LOC12));
-		read_263681(future, (&LOC12));
-		complete_265625((*HEX3Aenvp_265848).retfut264813, LOC12.Field1);
+		read_251681(future, (&LOC12));
+		complete_253625((*HEX3Aenvp_253848).retfut252813, LOC12.Field1);
 	}
 	LA5: ;
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype264663*, accept_264652)(NI socket, NU8 flags) {
-	FutureHEX3Aobjecttype264663* result;
-	TY265842* HEX3Aenv_265851;
-	FutureHEX3Aobjecttype262756* fut;
-	TY265820 LOC1;
+N_NIMCALL(FutureHEX3Aobjecttype252663*, accept_252652)(NI socket, NU8 flags) {
+	FutureHEX3Aobjecttype252663* result;
+	TY253842* HEX3Aenv_253851;
+	FutureHEX3Aobjecttype250756* fut;
+	TY253820 LOC1;
 	nimfr("accept", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_265851 = 0;
+	HEX3Aenv_253851 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_265851 = (TY265842*) newObj((&NTI265852), sizeof(TY265842));
+	HEX3Aenv_253851 = (TY253842*) newObj((&NTI253852), sizeof(TY253842));
 	nimln(1168, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_265851).retfut264813), newfuture_264668(((NimStringDesc*) &TMP2427)));
+	asgnRef((void**) (&(*HEX3Aenv_253851).retfut252813), newfuture_252668(((NimStringDesc*) &TMP2349)));
 	nimln(1169, "asyncdispatch.nim");
-	fut = acceptaddr_262742(socket, flags);
+	fut = acceptaddr_250742(socket, flags);
 	nimln(1170, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = HEX3Aanonymous_264815; LOC1.ClEnv = HEX3Aenv_265851;
-	callbackHEX3D_265814(fut, LOC1);
+	LOC1.ClPrc = HEX3Aanonymous_252815; LOC1.ClEnv = HEX3Aenv_253851;
+	callbackHEX3D_253814(fut, LOC1);
 	nimln(1177, "asyncdispatch.nim");
-	result = (*HEX3Aenv_265851).retfut264813;
+	result = (*HEX3Aenv_253851).retfut252813;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, echooriginalstacktrace_266643)(FutureHEX3Aobjecttype259769* future) {
+N_NIMCALL(void, echooriginalstacktrace_254643)(FutureHEX3Aobjecttype247769* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -3873,15 +3873,15 @@ N_NIMCALL(void, echooriginalstacktrace_266643)(FutureHEX3Aobjecttype259769* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future) {
+N_NIMCALL(NimStringDesc*, read_254623)(FutureHEX3Aobjecttype247769* future) {
 	NimStringDesc* result;
 	nimfr("read", "asyncdispatch.nim")
 {	result = 0;
@@ -3892,7 +3892,7 @@ N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future) {
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_266643(future);
+			echooriginalstacktrace_254643(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -3904,18 +3904,18 @@ N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future) {
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_267002;
+		Valueerror3449* e_255002;
 		NimStringDesc* LOC10;
-		e_267002 = 0;
+		e_255002 = 0;
 		nimln(2265, "system.nim");
-		e_267002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_267002).Sup.Sup.m_type = (&NTI3449);
+		e_255002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_255002).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_267002).Sup.message; (*e_267002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_255002).Sup.message; (*e_255002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_267002, "ValueError");
+		raiseException((Exception*)e_255002, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
@@ -3923,7 +3923,7 @@ N_NIMCALL(NimStringDesc*, read_266623)(FutureHEX3Aobjecttype259769* future) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, finished_267237)(TY266613 x) {
+static N_INLINE(NIM_BOOL, finished_255237)(TY254613 x) {
 	NIM_BOOL result;
 	nimfr("finished", "system.nim")
 	result = 0;
@@ -3933,15 +3933,15 @@ static N_INLINE(NIM_BOOL, finished_267237)(TY266613 x) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2431)(void* p, NI op) {
-	TY267410* a;
-	a = (TY267410*)p;
-	nimGCvisit((void*)(*a).retfuture266595, op);
-	nimGCvisit((void*)(*a).nameitervar267231.ClEnv, op);
-	nimGCvisit((void*)(*a).result266615, op);
-	nimGCvisit((void*)(*a).c266621, op);
-	nimGCvisit((void*)(*a).future266597, op);
-	nimGCvisit((void*)(*a).future266598, op);
+N_NIMCALL(void, TMP2353)(void* p, NI op) {
+	TY255410* a;
+	a = (TY255410*)p;
+	nimGCvisit((void*)(*a).retfuture254595, op);
+	nimGCvisit((void*)(*a).nameitervar255231.ClEnv, op);
+	nimGCvisit((void*)(*a).result254615, op);
+	nimGCvisit((void*)(*a).c254621, op);
+	nimGCvisit((void*)(*a).future254597, op);
+	nimGCvisit((void*)(*a).future254598, op);
 }
 
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
@@ -3985,15 +3985,15 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvlineiter_266596)(void* ClEnv) {
-	FuturebaseHEX3Aobjecttype255017* result_266614;
-	TY267410* HEX3Aenvp_267416;
+N_CLOSURE(FuturebaseHEX3Aobjecttype243017*, recvlineiter_254596)(void* ClEnv) {
+	FuturebaseHEX3Aobjecttype243017* result_254614;
+	TY255410* HEX3Aenvp_255416;
 	NimStringDesc* LOC1;
 	NimStringDesc* LOC2;
 	nimfr("recvLineIter", "asyncdispatch.nim")
-{	result_266614 = 0;
-	HEX3Aenvp_267416 = (TY267410*) ClEnv;
-	switch ((*HEX3Aenvp_267416).HEX3Astate) {
+{	result_254614 = 0;
+	HEX3Aenvp_255416 = (TY255410*) ClEnv;
+	switch ((*HEX3Aenvp_255416).HEX3Astate) {
 	case -1: goto BeforeRet;
 	case 0: goto STATE0;
 	case 1: goto STATE1;
@@ -4002,103 +4002,103 @@ N_CLOSURE(FuturebaseHEX3Aobjecttype255017*, recvlineiter_266596)(void* ClEnv) {
 	STATE0: ;
 	nimln(1521, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = (*HEX3Aenvp_267416).result266615; (*HEX3Aenvp_267416).result266615 = copyStringRC1(((NimStringDesc*) &TMP2400));
+	LOC1 = (*HEX3Aenvp_255416).result254615; (*HEX3Aenvp_255416).result254615 = copyStringRC1(((NimStringDesc*) &TMP2322));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(1522, "asyncdispatch.nim");
 	LOC2 = 0;
-	LOC2 = (*HEX3Aenvp_267416).c266621; (*HEX3Aenvp_267416).c266621 = copyStringRC1(((NimStringDesc*) &TMP2400));
+	LOC2 = (*HEX3Aenvp_255416).c254621; (*HEX3Aenvp_255416).c254621 = copyStringRC1(((NimStringDesc*) &TMP2322));
 	if (LOC2) nimGCunrefNoCycle(LOC2);
 	{
 		nimln(1523, "asyncdispatch.nim");
 		while (1) {
 			nimln(1524, "asyncdispatch.nim");
-			asgnRef((void**) (&(*HEX3Aenvp_267416).future266597), recv_259757((*HEX3Aenvp_267416).socket266601, ((NI) 1), 2));
-			(*HEX3Aenvp_267416).HEX3Astate = ((NI) 1);
+			asgnRef((void**) (&(*HEX3Aenvp_255416).future254597), recv_247757((*HEX3Aenvp_255416).socket254601, ((NI) 1), 2));
+			(*HEX3Aenvp_255416).HEX3Astate = ((NI) 1);
 			nimln(1266, "asyncdispatch.nim");
-			result_266614 = &(*HEX3Aenvp_267416).future266597->Sup;
+			result_254614 = &(*HEX3Aenvp_255416).future254597->Sup;
 			goto BeforeRet;
 			STATE1: ;
 			nimln(1524, "asyncdispatch.nim");
-			asgnRefNoCycle((void**) (&(*HEX3Aenvp_267416).c266621), read_266623((*HEX3Aenvp_267416).future266597));
+			asgnRefNoCycle((void**) (&(*HEX3Aenvp_255416).c254621), read_254623((*HEX3Aenvp_255416).future254597));
 			nimln(1525, "asyncdispatch.nim");
 			{
-				if (!(((*HEX3Aenvp_267416).c266621 ? (*HEX3Aenvp_267416).c266621->Sup.len : 0) == ((NI) 0))) goto LA7;
+				if (!(((*HEX3Aenvp_255416).c254621 ? (*HEX3Aenvp_255416).c254621->Sup.len : 0) == ((NI) 0))) goto LA7;
 				nimln(1526, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_267416).retfuture266595, ((NimStringDesc*) &TMP2400));
-				(*HEX3Aenvp_267416).HEX3Astate = ((NI) -1);
-				result_266614 = NIM_NIL;
+				complete_248031((*HEX3Aenvp_255416).retfuture254595, ((NimStringDesc*) &TMP2322));
+				(*HEX3Aenvp_255416).HEX3Astate = ((NI) -1);
+				result_254614 = NIM_NIL;
 				goto BeforeRet;
 			}
 			LA7: ;
 			nimln(1527, "asyncdispatch.nim");
 			{
-				if (!eqStrings((*HEX3Aenvp_267416).c266621, ((NimStringDesc*) &TMP2433))) goto LA11;
+				if (!eqStrings((*HEX3Aenvp_255416).c254621, ((NimStringDesc*) &TMP2355))) goto LA11;
 				nimln(1528, "asyncdispatch.nim");
-				asgnRef((void**) (&(*HEX3Aenvp_267416).future266598), recv_259757((*HEX3Aenvp_267416).socket266601, ((NI) 1), 2));
-				(*HEX3Aenvp_267416).HEX3Astate = ((NI) 2);
+				asgnRef((void**) (&(*HEX3Aenvp_255416).future254598), recv_247757((*HEX3Aenvp_255416).socket254601, ((NI) 1), 2));
+				(*HEX3Aenvp_255416).HEX3Astate = ((NI) 2);
 				nimln(1266, "asyncdispatch.nim");
-				result_266614 = &(*HEX3Aenvp_267416).future266598->Sup;
+				result_254614 = &(*HEX3Aenvp_255416).future254598->Sup;
 				goto BeforeRet;
 				STATE2: ;
 				nimln(1528, "asyncdispatch.nim");
-				asgnRefNoCycle((void**) (&(*HEX3Aenvp_267416).c266621), read_266623((*HEX3Aenvp_267416).future266598));
+				asgnRefNoCycle((void**) (&(*HEX3Aenvp_255416).c254621), read_254623((*HEX3Aenvp_255416).future254598));
 				nimln(1529, "asyncdispatch.nim");
 				{
-					if (!!(eqStrings((*HEX3Aenvp_267416).c266621, ((NimStringDesc*) &TMP2434)))) goto LA15;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2435));
+					if (!!(eqStrings((*HEX3Aenvp_255416).c254621, ((NimStringDesc*) &TMP2356)))) goto LA15;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2357));
 				}
 				LA15: ;
 				nimln(1518, "asyncdispatch.nim");
 				{
-					if (!(((*HEX3Aenvp_267416).result266615 ? (*HEX3Aenvp_267416).result266615->Sup.len : 0) == ((NI) 0))) goto LA19;
+					if (!(((*HEX3Aenvp_255416).result254615 ? (*HEX3Aenvp_255416).result254615->Sup.len : 0) == ((NI) 0))) goto LA19;
 					nimln(1519, "asyncdispatch.nim");
-					(*HEX3Aenvp_267416).result266615 = resizeString((*HEX3Aenvp_267416).result266615, 2);
-appendString((*HEX3Aenvp_267416).result266615, ((NimStringDesc*) &TMP2436));
+					(*HEX3Aenvp_255416).result254615 = resizeString((*HEX3Aenvp_255416).result254615, 2);
+appendString((*HEX3Aenvp_255416).result254615, ((NimStringDesc*) &TMP2358));
 				}
 				LA19: ;
 				nimln(1498, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_267416).retfuture266595, (*HEX3Aenvp_267416).result266615);
+				complete_248031((*HEX3Aenvp_255416).retfuture254595, (*HEX3Aenvp_255416).result254615);
 				nimln(1531, "asyncdispatch.nim");
-				(*HEX3Aenvp_267416).HEX3Astate = ((NI) -1);
+				(*HEX3Aenvp_255416).HEX3Astate = ((NI) -1);
 				nimln(1498, "asyncdispatch.nim");
-				result_266614 = NIM_NIL;
+				result_254614 = NIM_NIL;
 				goto BeforeRet;
 			}
 			goto LA9;
 			LA11: ;
 			{
 				nimln(1532, "asyncdispatch.nim");
-				if (!eqStrings((*HEX3Aenvp_267416).c266621, ((NimStringDesc*) &TMP2434))) goto LA22;
+				if (!eqStrings((*HEX3Aenvp_255416).c254621, ((NimStringDesc*) &TMP2356))) goto LA22;
 				nimln(1518, "asyncdispatch.nim");
 				{
-					if (!(((*HEX3Aenvp_267416).result266615 ? (*HEX3Aenvp_267416).result266615->Sup.len : 0) == ((NI) 0))) goto LA26;
+					if (!(((*HEX3Aenvp_255416).result254615 ? (*HEX3Aenvp_255416).result254615->Sup.len : 0) == ((NI) 0))) goto LA26;
 					nimln(1519, "asyncdispatch.nim");
-					(*HEX3Aenvp_267416).result266615 = resizeString((*HEX3Aenvp_267416).result266615, 2);
-appendString((*HEX3Aenvp_267416).result266615, ((NimStringDesc*) &TMP2436));
+					(*HEX3Aenvp_255416).result254615 = resizeString((*HEX3Aenvp_255416).result254615, 2);
+appendString((*HEX3Aenvp_255416).result254615, ((NimStringDesc*) &TMP2358));
 				}
 				LA26: ;
 				nimln(1498, "asyncdispatch.nim");
-				complete_260031((*HEX3Aenvp_267416).retfuture266595, (*HEX3Aenvp_267416).result266615);
+				complete_248031((*HEX3Aenvp_255416).retfuture254595, (*HEX3Aenvp_255416).result254615);
 				nimln(1534, "asyncdispatch.nim");
-				(*HEX3Aenvp_267416).HEX3Astate = ((NI) -1);
+				(*HEX3Aenvp_255416).HEX3Astate = ((NI) -1);
 				nimln(1498, "asyncdispatch.nim");
-				result_266614 = NIM_NIL;
+				result_254614 = NIM_NIL;
 				goto BeforeRet;
 			}
 			goto LA9;
 			LA22: ;
 			LA9: ;
 			nimln(1535, "asyncdispatch.nim");
-			(*HEX3Aenvp_267416).result266615 = resizeString((*HEX3Aenvp_267416).result266615, (*HEX3Aenvp_267416).c266621->Sup.len + 0);
-appendString((*HEX3Aenvp_267416).result266615, (*HEX3Aenvp_267416).c266621);
+			(*HEX3Aenvp_255416).result254615 = resizeString((*HEX3Aenvp_255416).result254615, (*HEX3Aenvp_255416).c254621->Sup.len + 0);
+appendString((*HEX3Aenvp_255416).result254615, (*HEX3Aenvp_255416).c254621);
 		}
 	}
-	complete_260031((*HEX3Aenvp_267416).retfuture266595, (*HEX3Aenvp_267416).result266615);
+	complete_248031((*HEX3Aenvp_255416).retfuture254595, (*HEX3Aenvp_255416).result254615);
 	nimln(1445, "asyncdispatch.nim");
-	(*HEX3Aenvp_267416).HEX3Astate = ((NI) -1);
+	(*HEX3Aenvp_255416).HEX3Astate = ((NI) -1);
 	}BeforeRet: ;
 	popFrame();
-	return result_266614;
+	return result_254614;
 }
 
 static N_INLINE(void, pushSafePoint)(TSafePoint* s) {
@@ -4129,42 +4129,42 @@ static N_INLINE(void, popCurrentException)(void) {
 	asgnRef((void**) (&currexception_17045), (*currexception_17045).parent);
 }
 
-N_CLOSURE(void, cb_267234)(void* ClEnv) {
-	TY267410* HEX3Aenvp_267423;
-	TSafePoint TMP2437;
+N_CLOSURE(void, cb_255234)(void* ClEnv) {
+	TY255410* HEX3Aenvp_255423;
+	TSafePoint TMP2359;
 	nimfr("cb", "asyncdispatch.nim")
-	HEX3Aenvp_267423 = (TY267410*) ClEnv;
+	HEX3Aenvp_255423 = (TY255410*) ClEnv;
 	nimln(1197, "asyncdispatch.nim");
-	pushSafePoint(&TMP2437);
-	TMP2437.status = setjmp(TMP2437.context);
-	if (TMP2437.status == 0) {
+	pushSafePoint(&TMP2359);
+	TMP2359.status = setjmp(TMP2359.context);
+	if (TMP2359.status == 0) {
 		nimln(1198, "asyncdispatch.nim");
 		{
 			NIM_BOOL LOC4;
-			FuturebaseHEX3Aobjecttype255017* next_267233;
+			FuturebaseHEX3Aobjecttype243017* next_255233;
 			LOC4 = 0;
-			LOC4 = finished_267237((*HEX3Aenvp_267423).nameitervar267231);
+			LOC4 = finished_255237((*HEX3Aenvp_255423).nameitervar255231);
 			if (!!(LOC4)) goto LA5;
 			nimln(1199, "asyncdispatch.nim");
-			next_267233 = (*HEX3Aenvp_267423).nameitervar267231.ClPrc((*HEX3Aenvp_267423).nameitervar267231.ClEnv);
+			next_255233 = (*HEX3Aenvp_255423).nameitervar255231.ClPrc((*HEX3Aenvp_255423).nameitervar255231.ClEnv);
 			nimln(1200, "asyncdispatch.nim");
 			{
-				if (!(next_267233 == NIM_NIL)) goto LA9;
+				if (!(next_255233 == NIM_NIL)) goto LA9;
 				nimln(1201, "asyncdispatch.nim");
 				{
-					if (!!((*(*HEX3Aenvp_267423).retfuture266595).Sup.finished)) goto LA13;
-					failedassertimpl_88817(((NimStringDesc*) &TMP2439));
+					if (!!((*(*HEX3Aenvp_255423).retfuture254595).Sup.finished)) goto LA13;
+					failedassertimpl_88817(((NimStringDesc*) &TMP2361));
 				}
 				LA13: ;
 			}
 			goto LA7;
 			LA9: ;
 			{
-				TY255018 LOC16;
+				TY243018 LOC16;
 				nimln(1204, "asyncdispatch.nim");
 				memset((void*)(&LOC16), 0, sizeof(LOC16));
-				LOC16.ClPrc = cb_267234; LOC16.ClEnv = HEX3Aenvp_267423;
-				callbackHEX3D_255832(next_267233, LOC16);
+				LOC16.ClPrc = cb_255234; LOC16.ClEnv = HEX3Aenvp_255423;
+				callbackHEX3D_243832(next_255233, LOC16);
 			}
 			LA7: ;
 		}
@@ -4175,10 +4175,10 @@ N_CLOSURE(void, cb_267234)(void* ClEnv) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP2437.status = 0;
+			TMP2359.status = 0;
 			nimln(1206, "asyncdispatch.nim");
 			{
-				if (!(*(*HEX3Aenvp_267423).retfuture266595).Sup.finished) goto LA21;
+				if (!(*(*HEX3Aenvp_255423).retfuture254595).Sup.finished) goto LA21;
 				nimln(1209, "asyncdispatch.nim");
 				reraiseException();
 			}
@@ -4189,64 +4189,64 @@ N_CLOSURE(void, cb_267234)(void* ClEnv) {
 				nimln(1211, "asyncdispatch.nim");
 				LOC24 = 0;
 				LOC24 = getCurrentException();
-				fail_261034((*HEX3Aenvp_267423).retfuture266595, LOC24);
+				fail_249034((*HEX3Aenvp_255423).retfuture254595, LOC24);
 			}
 			LA19: ;
 			popCurrentException();
 		}
 	}
-	if (TMP2437.status != 0) reraiseException();
+	if (TMP2359.status != 0) reraiseException();
 	popFrame();
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype259769*, recvline_266599)(NI socket) {
-	FutureHEX3Aobjecttype259769* result;
-	TY267410* HEX3Aenv_267426;
-	TY266613 LOC1;
-	TY255018 LOC2;
+N_NIMCALL(FutureHEX3Aobjecttype247769*, recvline_254599)(NI socket) {
+	FutureHEX3Aobjecttype247769* result;
+	TY255410* HEX3Aenv_255426;
+	TY254613 LOC1;
+	TY243018 LOC2;
 	nimfr("recvLine", "asyncdispatch.nim")
 {	result = 0;
-	HEX3Aenv_267426 = 0;
+	HEX3Aenv_255426 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_267426 = (TY267410*) newObj((&NTI267417), sizeof(TY267410));
+	HEX3Aenv_255426 = (TY255410*) newObj((&NTI255417), sizeof(TY255410));
 	nimln(1499, "asyncdispatch.nim");
-	(*HEX3Aenv_267426).socket266601 = socket;
+	(*HEX3Aenv_255426).socket254601 = socket;
 	nimln(1498, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_267426).retfuture266595), newfuture_259802(((NimStringDesc*) &TMP2432)));
+	asgnRef((void**) (&(*HEX3Aenv_255426).retfuture254595), newfuture_247802(((NimStringDesc*) &TMP2354)));
 	nimln(1194, "asyncdispatch.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	LOC1.ClPrc = recvlineiter_266596; LOC1.ClEnv = HEX3Aenv_267426;
-	asgnRef((void**) (&(*HEX3Aenv_267426).nameitervar267231.ClEnv), LOC1.ClEnv);
-	(*HEX3Aenv_267426).nameitervar267231.ClPrc = LOC1.ClPrc;
+	LOC1.ClPrc = recvlineiter_254596; LOC1.ClEnv = HEX3Aenv_255426;
+	asgnRef((void**) (&(*HEX3Aenv_255426).nameitervar255231.ClEnv), LOC1.ClEnv);
+	(*HEX3Aenv_255426).nameitervar255231.ClPrc = LOC1.ClPrc;
 	nimln(1212, "asyncdispatch.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = cb_267234; LOC2.ClEnv = HEX3Aenv_267426;
-	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2440)(LOC2.ClPrc))();
+	LOC2.ClPrc = cb_255234; LOC2.ClEnv = HEX3Aenv_255426;
+	LOC2.ClEnv? LOC2.ClPrc(LOC2.ClEnv):((TMP2362)(LOC2.ClPrc))();
 	nimln(1535, "asyncdispatch.nim");
 	nimln(1427, "asyncdispatch.nim");
-	result = (*HEX3Aenv_267426).retfuture266595;
+	result = (*HEX3Aenv_255426).retfuture254595;
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, runforever_267439)(void) {
+N_NIMCALL(void, runforever_255439)(void) {
 	nimfr("runForever", "asyncdispatch.nim")
 	{
 		nimln(1539, "asyncdispatch.nim");
 		while (1) {
 			nimln(1540, "asyncdispatch.nim");
-			poll_258836(((NI) 500));
+			poll_246836(((NI) 500));
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(void, echooriginalstacktrace_268643)(FutureHEX3Aobjecttype255097* future) {
+N_NIMCALL(void, echooriginalstacktrace_256643)(FutureHEX3Aobjecttype243097* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -4263,15 +4263,15 @@ N_NIMCALL(void, echooriginalstacktrace_268643)(FutureHEX3Aobjecttype255097* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(void, read_268624)(FutureHEX3Aobjecttype255097* future) {
+N_NIMCALL(void, read_256624)(FutureHEX3Aobjecttype243097* future) {
 	nimfr("read", "asyncdispatch.nim")
 	nimln(248, "asyncdispatch.nim");
 	{
@@ -4280,7 +4280,7 @@ N_NIMCALL(void, read_268624)(FutureHEX3Aobjecttype255097* future) {
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_268643(future);
+			echooriginalstacktrace_256643(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -4289,27 +4289,27 @@ N_NIMCALL(void, read_268624)(FutureHEX3Aobjecttype255097* future) {
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_269002;
+		Valueerror3449* e_257002;
 		NimStringDesc* LOC10;
-		e_269002 = 0;
+		e_257002 = 0;
 		nimln(2265, "system.nim");
-		e_269002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_269002).Sup.Sup.m_type = (&NTI3449);
+		e_257002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_257002).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_269002).Sup.message; (*e_269002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_257002).Sup.message; (*e_257002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_269002, "ValueError");
+		raiseException((Exception*)e_257002, "ValueError");
 	}
 	LA1: ;
 	popFrame();
 }
 
-N_NIMCALL(void, echooriginalstacktrace_269622)(FutureHEX3Aobjecttype261249* future) {
+N_NIMCALL(void, echooriginalstacktrace_257622)(FutureHEX3Aobjecttype249249* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -4326,15 +4326,15 @@ N_NIMCALL(void, echooriginalstacktrace_269622)(FutureHEX3Aobjecttype261249* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(NI, read_269602)(FutureHEX3Aobjecttype261249* future) {
+N_NIMCALL(NI, read_257602)(FutureHEX3Aobjecttype249249* future) {
 	NI result;
 	nimfr("read", "asyncdispatch.nim")
 {	result = 0;
@@ -4345,7 +4345,7 @@ N_NIMCALL(NI, read_269602)(FutureHEX3Aobjecttype261249* future) {
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_269622(future);
+			echooriginalstacktrace_257622(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -4357,27 +4357,27 @@ N_NIMCALL(NI, read_269602)(FutureHEX3Aobjecttype261249* future) {
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_270002;
+		Valueerror3449* e_258002;
 		NimStringDesc* LOC10;
-		e_270002 = 0;
+		e_258002 = 0;
 		nimln(2265, "system.nim");
-		e_270002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_270002).Sup.Sup.m_type = (&NTI3449);
+		e_258002 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_258002).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_270002).Sup.message; (*e_270002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_258002).Sup.message; (*e_258002).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_270002, "ValueError");
+		raiseException((Exception*)e_258002, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2478)(void* p, NI op) {
-	FutureHEX3Aobjecttype271248* a;
-	a = (FutureHEX3Aobjecttype271248*)p;
+N_NIMCALL(void, TMP2400)(void* p, NI op) {
+	FutureHEX3Aobjecttype259248* a;
+	a = (FutureHEX3Aobjecttype259248*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -4387,33 +4387,33 @@ N_NIMCALL(void, TMP2478)(void* p, NI op) {
 	nimGCvisit((void*)(*a).value.Field1, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype271248*, newfuture_271256)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype271248* result;
+N_NIMCALL(FutureHEX3Aobjecttype259248*, newfuture_259256)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype259248* result;
 	NimStringDesc* LOC1;
-	NI TMP2479;
+	NI TMP2401;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype271248*) newObj((&NTI271247), sizeof(FutureHEX3Aobjecttype271248));
-	(*result).Sup.Sup.m_type = (&NTI271248);
+	result = (FutureHEX3Aobjecttype259248*) newObj((&NTI259247), sizeof(FutureHEX3Aobjecttype259248));
+	(*result).Sup.Sup.m_type = (&NTI259248);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2479 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2479);
+	TMP2401 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2401);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, finished_271424)(FutureHEX3Aobjecttype262756* future) {
+N_NIMCALL(NIM_BOOL, finished_259424)(FutureHEX3Aobjecttype250756* future) {
 	NIM_BOOL result;
 	nimfr("finished", "asyncdispatch.nim")
 	result = 0;
@@ -4423,7 +4423,7 @@ N_NIMCALL(NIM_BOOL, finished_271424)(FutureHEX3Aobjecttype262756* future) {
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_271619)(FutureHEX3Aobjecttype271248* future) {
+N_NIMCALL(void, checkfinished_259619)(FutureHEX3Aobjecttype259248* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -4433,15 +4433,15 @@ N_NIMCALL(void, checkfinished_271619)(FutureHEX3Aobjecttype271248* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -4449,7 +4449,7 @@ N_NIMCALL(void, checkfinished_271619)(FutureHEX3Aobjecttype271248* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -4457,10 +4457,10 @@ N_NIMCALL(void, checkfinished_271619)(FutureHEX3Aobjecttype271248* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, fail_271610)(FutureHEX3Aobjecttype271248* future, Exception* error) {
+N_NIMCALL(void, fail_259610)(FutureHEX3Aobjecttype259248* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_271619(future);
+	checkfinished_259619(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -4482,9 +4482,9 @@ N_NIMCALL(void, fail_271610)(FutureHEX3Aobjecttype271248* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2480)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2402)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -4494,15 +4494,15 @@ N_NIMCALL(void, fail_271610)(FutureHEX3Aobjecttype271248* future, Exception* err
 	popFrame();
 }
 
-N_NIMCALL(void, complete_272235)(FutureHEX3Aobjecttype271248* future, TY271241 val) {
+N_NIMCALL(void, complete_260235)(FutureHEX3Aobjecttype259248* future, TY259241 val) {
 	NimStringDesc* LOC5;
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_271619(future);
+	checkfinished_259619(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -4514,16 +4514,16 @@ N_NIMCALL(void, complete_272235)(FutureHEX3Aobjecttype271248* future, TY271241 v
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA8;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA8;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2481)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2403)((*future).Sup.cb.ClPrc))();
 	}
 	LA8: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2486)(void* p, NI op) {
-	FutureHEX3Aobjecttype272455* a;
-	a = (FutureHEX3Aobjecttype272455*)p;
+N_NIMCALL(void, TMP2408)(void* p, NI op) {
+	FutureHEX3Aobjecttype260455* a;
+	a = (FutureHEX3Aobjecttype260455*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -4532,33 +4532,33 @@ N_NIMCALL(void, TMP2486)(void* p, NI op) {
 	nimGCvisit((void*)(*a).value, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype272455*, newfuture_272460)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype272455* result;
+N_NIMCALL(FutureHEX3Aobjecttype260455*, newfuture_260460)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype260455* result;
 	NimStringDesc* LOC1;
-	NI TMP2487;
+	NI TMP2409;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype272455*) newObj((&NTI272454), sizeof(FutureHEX3Aobjecttype272455));
-	(*result).Sup.Sup.m_type = (&NTI272455);
+	result = (FutureHEX3Aobjecttype260455*) newObj((&NTI260454), sizeof(FutureHEX3Aobjecttype260455));
+	(*result).Sup.Sup.m_type = (&NTI260455);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2487 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2487);
+	TMP2409 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2409);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, finished_272624)(FutureHEX3Aobjecttype271248* future) {
+N_NIMCALL(NIM_BOOL, finished_260624)(FutureHEX3Aobjecttype259248* future) {
 	NIM_BOOL result;
 	nimfr("finished", "asyncdispatch.nim")
 	result = 0;
@@ -4568,7 +4568,7 @@ N_NIMCALL(NIM_BOOL, finished_272624)(FutureHEX3Aobjecttype271248* future) {
 	return result;
 }
 
-N_NIMCALL(Exception*, readerror_272802)(FutureHEX3Aobjecttype271248* future) {
+N_NIMCALL(Exception*, readerror_260802)(FutureHEX3Aobjecttype259248* future) {
 	Exception* result;
 	nimfr("readError", "asyncdispatch.nim")
 {	result = 0;
@@ -4581,18 +4581,18 @@ N_NIMCALL(Exception*, readerror_272802)(FutureHEX3Aobjecttype271248* future) {
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_272822;
+		Valueerror3449* e_260822;
 		NimStringDesc* LOC6;
-		e_272822 = 0;
+		e_260822 = 0;
 		nimln(2265, "system.nim");
-		e_272822 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_272822).Sup.Sup.m_type = (&NTI3449);
+		e_260822 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_260822).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC6 = 0;
-		LOC6 = (*e_272822).Sup.message; (*e_272822).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2360));
+		LOC6 = (*e_260822).Sup.message; (*e_260822).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2282));
 		if (LOC6) nimGCunrefNoCycle(LOC6);
 		nimln(265, "asyncdispatch.nim");
-		raiseException((Exception*)e_272822, "ValueError");
+		raiseException((Exception*)e_260822, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
@@ -4600,7 +4600,7 @@ N_NIMCALL(Exception*, readerror_272802)(FutureHEX3Aobjecttype271248* future) {
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_272846)(FutureHEX3Aobjecttype272455* future) {
+N_NIMCALL(void, checkfinished_260846)(FutureHEX3Aobjecttype260455* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -4610,15 +4610,15 @@ N_NIMCALL(void, checkfinished_272846)(FutureHEX3Aobjecttype272455* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -4626,7 +4626,7 @@ N_NIMCALL(void, checkfinished_272846)(FutureHEX3Aobjecttype272455* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -4634,10 +4634,10 @@ N_NIMCALL(void, checkfinished_272846)(FutureHEX3Aobjecttype272455* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, fail_272837)(FutureHEX3Aobjecttype272455* future, Exception* error) {
+N_NIMCALL(void, fail_260837)(FutureHEX3Aobjecttype260455* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_272846(future);
+	checkfinished_260846(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -4659,9 +4659,9 @@ N_NIMCALL(void, fail_272837)(FutureHEX3Aobjecttype272455* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2488)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2410)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -4671,10 +4671,10 @@ N_NIMCALL(void, fail_272837)(FutureHEX3Aobjecttype272455* future, Exception* err
 	popFrame();
 }
 
-N_NIMCALL(void, echooriginalstacktrace_273437)(FutureHEX3Aobjecttype271248* future) {
+N_NIMCALL(void, echooriginalstacktrace_261437)(FutureHEX3Aobjecttype259248* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -4691,15 +4691,15 @@ N_NIMCALL(void, echooriginalstacktrace_273437)(FutureHEX3Aobjecttype271248* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(void, read_273417)(FutureHEX3Aobjecttype271248* future, TY271241* Result) {
+N_NIMCALL(void, read_261417)(FutureHEX3Aobjecttype259248* future, TY259241* Result) {
 	nimfr("read", "asyncdispatch.nim")
 {	nimln(248, "asyncdispatch.nim");
 	{
@@ -4708,7 +4708,7 @@ N_NIMCALL(void, read_273417)(FutureHEX3Aobjecttype271248* future, TY271241* Resu
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_273437(future);
+			echooriginalstacktrace_261437(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -4721,32 +4721,32 @@ N_NIMCALL(void, read_273417)(FutureHEX3Aobjecttype271248* future, TY271241* Resu
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_273802;
+		Valueerror3449* e_261802;
 		NimStringDesc* LOC10;
-		e_273802 = 0;
+		e_261802 = 0;
 		nimln(2265, "system.nim");
-		e_273802 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_273802).Sup.Sup.m_type = (&NTI3449);
+		e_261802 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_261802).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_273802).Sup.message; (*e_273802).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_261802).Sup.message; (*e_261802).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_273802, "ValueError");
+		raiseException((Exception*)e_261802, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
 	popFrame();
 }
 
-N_NIMCALL(void, complete_273817)(FutureHEX3Aobjecttype272455* future, Asyncsocketdesc268202* val) {
+N_NIMCALL(void, complete_261817)(FutureHEX3Aobjecttype260455* future, Asyncsocketdesc256202* val) {
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_272846(future);
+	checkfinished_260846(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -4755,52 +4755,52 @@ N_NIMCALL(void, complete_273817)(FutureHEX3Aobjecttype272455* future, Asyncsocke
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA7;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA7;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2489)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2411)((*future).Sup.cb.ClPrc))();
 	}
 	LA7: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2492)(void* p, NI op) {
-	TY274030* a;
-	a = (TY274030*)p;
-	nimGCvisit((void*)(*a).cb274027.ClEnv, op);
-	nimGCvisit((void*)(*a).future274019, op);
+N_NIMCALL(void, TMP2414)(void* p, NI op) {
+	TY262030* a;
+	a = (TY262030*)p;
+	nimGCvisit((void*)(*a).cb262027.ClEnv, op);
+	nimGCvisit((void*)(*a).future262019, op);
 }
 
-N_CLOSURE(void, HEX3Aanonymous_274028)(void* ClEnv) {
-	TY274030* HEX3Aenvp_274036;
+N_CLOSURE(void, HEX3Aanonymous_262028)(void* ClEnv) {
+	TY262030* HEX3Aenvp_262036;
 	nimfr(":anonymous", "asyncdispatch.nim")
-	HEX3Aenvp_274036 = (TY274030*) ClEnv;
+	HEX3Aenvp_262036 = (TY262030*) ClEnv;
 	nimln(231, "asyncdispatch.nim");
-	(*HEX3Aenvp_274036).cb274027.ClEnv? (*HEX3Aenvp_274036).cb274027.ClPrc((*HEX3Aenvp_274036).future274019, (*HEX3Aenvp_274036).cb274027.ClEnv):((TMP2493)((*HEX3Aenvp_274036).cb274027.ClPrc))((*HEX3Aenvp_274036).future274019);
+	(*HEX3Aenvp_262036).cb262027.ClEnv? (*HEX3Aenvp_262036).cb262027.ClPrc((*HEX3Aenvp_262036).future262019, (*HEX3Aenvp_262036).cb262027.ClEnv):((TMP2415)((*HEX3Aenvp_262036).cb262027.ClPrc))((*HEX3Aenvp_262036).future262019);
 	popFrame();
 }
 
-N_NIMCALL(void, callbackHEX3D_274014)(FutureHEX3Aobjecttype271248* future, TY274020 cb) {
-	TY274030* HEX3Aenv_274040;
-	FuturebaseHEX3Aobjecttype255017* LOC1;
-	TY255018 LOC2;
+N_NIMCALL(void, callbackHEX3D_262014)(FutureHEX3Aobjecttype259248* future, TY262020 cb) {
+	TY262030* HEX3Aenv_262040;
+	FuturebaseHEX3Aobjecttype243017* LOC1;
+	TY243018 LOC2;
 	nimfr("callback=", "asyncdispatch.nim")
-	HEX3Aenv_274040 = 0;
+	HEX3Aenv_262040 = 0;
 	nimln(180, "system.nim");
-	HEX3Aenv_274040 = (TY274030*) newObj((&NTI274041), sizeof(TY274030));
+	HEX3Aenv_262040 = (TY262030*) newObj((&NTI262041), sizeof(TY262030));
 	nimln(228, "asyncdispatch.nim");
-	asgnRef((void**) (&(*HEX3Aenv_274040).cb274027.ClEnv), cb.ClEnv);
-	(*HEX3Aenv_274040).cb274027.ClPrc = cb.ClPrc;
-	asgnRef((void**) (&(*HEX3Aenv_274040).future274019), future);
+	asgnRef((void**) (&(*HEX3Aenv_262040).cb262027.ClEnv), cb.ClEnv);
+	(*HEX3Aenv_262040).cb262027.ClPrc = cb.ClPrc;
+	asgnRef((void**) (&(*HEX3Aenv_262040).future262019), future);
 	nimln(231, "asyncdispatch.nim");
 	LOC1 = 0;
-	LOC1 = &(*HEX3Aenv_274040).future274019->Sup;
+	LOC1 = &(*HEX3Aenv_262040).future262019->Sup;
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	LOC2.ClPrc = HEX3Aanonymous_274028; LOC2.ClEnv = HEX3Aenv_274040;
-	callbackHEX3D_255832(LOC1, LOC2);
+	LOC2.ClPrc = HEX3Aanonymous_262028; LOC2.ClEnv = HEX3Aenv_262040;
+	callbackHEX3D_243832(LOC1, LOC2);
 	popFrame();
 }
-N_NIMCALL(void, TMP2702)(void* p, NI op) {
-	FutureHEX3Aobjecttype279252* a;
-	a = (FutureHEX3Aobjecttype279252*)p;
+N_NIMCALL(void, TMP2624)(void* p, NI op) {
+	FutureHEX3Aobjecttype267252* a;
+	a = (FutureHEX3Aobjecttype267252*)p;
 	nimGCvisit((void*)(*a).Sup.cb.ClEnv, op);
 	nimGCvisit((void*)(*a).Sup.error, op);
 	nimGCvisit((void*)(*a).Sup.errorstacktrace, op);
@@ -4812,33 +4812,33 @@ N_NIMCALL(void, TMP2702)(void* p, NI op) {
 	nimGCvisit((void*)(*a).value.Field3, op);
 }
 
-N_NIMCALL(FutureHEX3Aobjecttype279252*, newfuture_279257)(NimStringDesc* fromproc) {
-	FutureHEX3Aobjecttype279252* result;
+N_NIMCALL(FutureHEX3Aobjecttype267252*, newfuture_267257)(NimStringDesc* fromproc) {
+	FutureHEX3Aobjecttype267252* result;
 	NimStringDesc* LOC1;
-	NI TMP2703;
+	NI TMP2625;
 	nimfr("newFuture", "asyncdispatch.nim")
 	result = 0;
 	nimln(157, "asyncdispatch.nim");
-	result = (FutureHEX3Aobjecttype279252*) newObj((&NTI279251), sizeof(FutureHEX3Aobjecttype279252));
-	(*result).Sup.Sup.m_type = (&NTI279252);
+	result = (FutureHEX3Aobjecttype267252*) newObj((&NTI267251), sizeof(FutureHEX3Aobjecttype267252));
+	(*result).Sup.Sup.m_type = (&NTI267252);
 	nimln(158, "asyncdispatch.nim");
 	(*result).Sup.finished = NIM_FALSE;
 	nimln(160, "asyncdispatch.nim");
 	asgnRefNoCycle((void**) (&(*result).Sup.stacktrace), getstacktrace_16601());
 	nimln(161, "asyncdispatch.nim");
-	(*result).Sup.id = currentid_255044;
+	(*result).Sup.id = currentid_243044;
 	nimln(162, "asyncdispatch.nim");
 	LOC1 = 0;
 	LOC1 = (*result).Sup.fromproc; (*result).Sup.fromproc = copyStringRC1(fromproc);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(163, "asyncdispatch.nim");
-	TMP2703 = addInt(currentid_255044, ((NI) 1));
-	currentid_255044 = (NI)(TMP2703);
+	TMP2625 = addInt(currentid_243044, ((NI) 1));
+	currentid_243044 = (NI)(TMP2625);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future) {
+N_NIMCALL(void, checkfinished_267526)(FutureHEX3Aobjecttype267252* future) {
 	nimfr("checkFinished", "asyncdispatch.nim")
 	nimln(167, "asyncdispatch.nim");
 	{
@@ -4848,15 +4848,15 @@ N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future) {
 		nimln(168, "asyncdispatch.nim");
 		LOC5 = 0;
 		LOC5 = nimIntToStr((*future).Sup.id);
-		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2303)? (((NimStringDesc*) &TMP2303))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2304)? (((NimStringDesc*) &TMP2304))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
+		printf("%s%s%s%s\015\012", ((NimStringDesc*) &TMP2225)? (((NimStringDesc*) &TMP2225))->data:"nil", LOC5? (LOC5)->data:"nil", ((NimStringDesc*) &TMP2226)? (((NimStringDesc*) &TMP2226))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil");
 		nimln(169, "asyncdispatch.nim");
 		printf("%s\015\012", (*future).Sup.stacktrace? ((*future).Sup.stacktrace)->data:"nil");
 		nimln(170, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2305)? (((NimStringDesc*) &TMP2305))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2227)? (((NimStringDesc*) &TMP2227))->data:"nil");
 		nimln(173, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2306)? (((NimStringDesc*) &TMP2306))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2228)? (((NimStringDesc*) &TMP2228))->data:"nil");
 		nimln(174, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2307)? (((NimStringDesc*) &TMP2307))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2229)? (((NimStringDesc*) &TMP2229))->data:"nil");
 		nimln(175, "asyncdispatch.nim");
 		LOC6 = 0;
 		LOC6 = getstacktrace_16601();
@@ -4864,7 +4864,7 @@ N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future) {
 		nimln(176, "asyncdispatch.nim");
 		{
 			if (!NIM_TRUE) goto LA9;
-			failedassertimpl_88817(((NimStringDesc*) &TMP2308));
+			failedassertimpl_88817(((NimStringDesc*) &TMP2230));
 		}
 		LA9: ;
 	}
@@ -4872,17 +4872,17 @@ N_NIMCALL(void, checkfinished_279526)(FutureHEX3Aobjecttype279252* future) {
 	popFrame();
 }
 
-N_NIMCALL(void, complete_279517)(FutureHEX3Aobjecttype279252* future, Response277008* val) {
+N_NIMCALL(void, complete_267517)(FutureHEX3Aobjecttype267252* future, Response265008* val) {
 	NimStringDesc* LOC5;
 	NimStringDesc* LOC6;
 	NimStringDesc* LOC7;
 	nimfr("complete", "asyncdispatch.nim")
 	nimln(181, "asyncdispatch.nim");
-	checkfinished_279526(future);
+	checkfinished_267526(future);
 	nimln(182, "asyncdispatch.nim");
 	{
 		if (!!(((*future).Sup.error == NIM_NIL))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2309));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2231));
 	}
 	LA3: ;
 	nimln(183, "asyncdispatch.nim");
@@ -4900,18 +4900,18 @@ N_NIMCALL(void, complete_279517)(FutureHEX3Aobjecttype279252* future, Response27
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(185, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA10;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA10;
 		nimln(186, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2704)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2626)((*future).Sup.cb.ClPrc))();
 	}
 	LA10: ;
 	popFrame();
 }
 
-N_NIMCALL(void, fail_280402)(FutureHEX3Aobjecttype279252* future, Exception* error) {
+N_NIMCALL(void, fail_268402)(FutureHEX3Aobjecttype267252* future, Exception* error) {
 	nimfr("fail", "asyncdispatch.nim")
 	nimln(200, "asyncdispatch.nim");
-	checkfinished_279526(future);
+	checkfinished_267526(future);
 	nimln(201, "asyncdispatch.nim");
 	(*future).Sup.finished = NIM_TRUE;
 	nimln(202, "asyncdispatch.nim");
@@ -4933,9 +4933,9 @@ N_NIMCALL(void, fail_280402)(FutureHEX3Aobjecttype279252* future, Exception* err
 	LA1: ;
 	nimln(205, "asyncdispatch.nim");
 	{
-		if (!!(((*future).Sup.cb.ClPrc == TMP2310.ClPrc && (*future).Sup.cb.ClEnv == TMP2310.ClEnv))) goto LA9;
+		if (!!(((*future).Sup.cb.ClPrc == TMP2232.ClPrc && (*future).Sup.cb.ClEnv == TMP2232.ClEnv))) goto LA9;
 		nimln(206, "asyncdispatch.nim");
-		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2705)((*future).Sup.cb.ClPrc))();
+		(*future).Sup.cb.ClEnv? (*future).Sup.cb.ClPrc((*future).Sup.cb.ClEnv):((TMP2627)((*future).Sup.cb.ClPrc))();
 	}
 	goto LA7;
 	LA9: ;
@@ -4945,10 +4945,10 @@ N_NIMCALL(void, fail_280402)(FutureHEX3Aobjecttype279252* future, Exception* err
 	popFrame();
 }
 
-N_NIMCALL(void, echooriginalstacktrace_280909)(FutureHEX3Aobjecttype279252* future) {
+N_NIMCALL(void, echooriginalstacktrace_268909)(FutureHEX3Aobjecttype267252* future) {
 	nimfr("echoOriginalStackTrace", "asyncdispatch.nim")
 	nimln(236, "asyncdispatch.nim");
-	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2362)? (((NimStringDesc*) &TMP2362))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2363)? (((NimStringDesc*) &TMP2363))->data:"nil");
+	printf("%s%s%s\015\012", ((NimStringDesc*) &TMP2284)? (((NimStringDesc*) &TMP2284))->data:"nil", (*future).Sup.fromproc? ((*future).Sup.fromproc)->data:"nil", ((NimStringDesc*) &TMP2285)? (((NimStringDesc*) &TMP2285))->data:"nil");
 	nimln(237, "asyncdispatch.nim");
 	{
 		NIM_BOOL LOC3;
@@ -4965,15 +4965,15 @@ N_NIMCALL(void, echooriginalstacktrace_280909)(FutureHEX3Aobjecttype279252* futu
 	LA5: ;
 	{
 		nimln(240, "asyncdispatch.nim");
-		printf("%s\015\012", ((NimStringDesc*) &TMP2364)? (((NimStringDesc*) &TMP2364))->data:"nil");
+		printf("%s\015\012", ((NimStringDesc*) &TMP2286)? (((NimStringDesc*) &TMP2286))->data:"nil");
 	}
 	LA1: ;
 	nimln(241, "asyncdispatch.nim");
-	printf("%s\015\012", ((NimStringDesc*) &TMP2365)? (((NimStringDesc*) &TMP2365))->data:"nil");
+	printf("%s\015\012", ((NimStringDesc*) &TMP2287)? (((NimStringDesc*) &TMP2287))->data:"nil");
 	popFrame();
 }
 
-N_NIMCALL(void, read_280889)(FutureHEX3Aobjecttype279252* future, Response277008* Result) {
+N_NIMCALL(void, read_268889)(FutureHEX3Aobjecttype267252* future, Response265008* Result) {
 	nimfr("read", "asyncdispatch.nim")
 {	nimln(248, "asyncdispatch.nim");
 	{
@@ -4982,7 +4982,7 @@ N_NIMCALL(void, read_280889)(FutureHEX3Aobjecttype279252* future, Response277008
 		{
 			if (!!(((*future).Sup.error == NIM_NIL))) goto LA7;
 			nimln(250, "asyncdispatch.nim");
-			echooriginalstacktrace_280909(future);
+			echooriginalstacktrace_268909(future);
 			nimln(251, "asyncdispatch.nim");
 			raiseException((Exception*)(*future).Sup.error, "Exception");
 		}
@@ -4997,18 +4997,18 @@ N_NIMCALL(void, read_280889)(FutureHEX3Aobjecttype279252* future, Response277008
 	goto LA1;
 	LA3: ;
 	{
-		Valueerror3449* e_281202;
+		Valueerror3449* e_269202;
 		NimStringDesc* LOC10;
-		e_281202 = 0;
+		e_269202 = 0;
 		nimln(2265, "system.nim");
-		e_281202 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
-		(*e_281202).Sup.Sup.m_type = (&NTI3449);
+		e_269202 = (Valueerror3449*) newObj((&NTI22801), sizeof(Valueerror3449));
+		(*e_269202).Sup.Sup.m_type = (&NTI3449);
 		nimln(2266, "system.nim");
 		LOC10 = 0;
-		LOC10 = (*e_281202).Sup.message; (*e_281202).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2366));
+		LOC10 = (*e_269202).Sup.message; (*e_269202).Sup.message = copyStringRC1(((NimStringDesc*) &TMP2288));
 		if (LOC10) nimGCunrefNoCycle(LOC10);
 		nimln(256, "asyncdispatch.nim");
-		raiseException((Exception*)e_281202, "ValueError");
+		raiseException((Exception*)e_269202, "ValueError");
 	}
 	LA1: ;
 	}BeforeRet: ;
@@ -5017,711 +5017,711 @@ N_NIMCALL(void, read_280889)(FutureHEX3Aobjecttype279252* future, Response277008
 NIM_EXTERNC N_NOINLINE(void, stdlib_asyncdispatchInit)(void) {
 	nimfr("asyncdispatch", "asyncdispatch.nim")
 	nimln(151, "asyncdispatch.nim");
-	currentid_255044 = ((NI) 0);
+	currentid_243044 = ((NI) 0);
 	nimln(418, "asyncdispatch.nim");
-	connectexptr_259219 = NIM_NIL;
+	connectexptr_247219 = NIM_NIL;
 	nimln(419, "asyncdispatch.nim");
-	acceptexptr_259220 = NIM_NIL;
+	acceptexptr_247220 = NIM_NIL;
 	nimln(420, "asyncdispatch.nim");
-	getacceptexsockaddrsptr_259221 = NIM_NIL;
+	getacceptexsockaddrsptr_247221 = NIM_NIL;
 	nimln(879, "asyncdispatch.nim");
-	initall_259244();
+	initall_247244();
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_asyncdispatchDatInit)(void) {
-static TNimNode* TMP2313[2];
-static TNimNode* TMP2314[7];
-static TNimNode* TMP2315[2];
-static TNimNode* TMP2356[2];
-static TNimNode* TMP2369[2];
-static TNimNode* TMP2380[2];
-static TNimNode* TMP2383[2];
-static TNimNode* TMP2385[2];
-static TNimNode* TMP2388[2];
-static TNimNode* TMP2389[2];
-static TNimNode* TMP2391[5];
-static TNimNode* TMP2403[4];
-static TNimNode* TMP2406[3];
-static TNimNode* TMP2409[10];
-static TNimNode* TMP2414[3];
-static TNimNode* TMP2421[3];
-static TNimNode* TMP2422[2];
-static TNimNode* TMP2425[2];
-static TNimNode* TMP2429[8];
-static TNimNode* TMP2430[2];
-static TNimNode* TMP2490[3];
-static TNimNode* TMP2491[2];
-static TNimNode TMP2283[106];
-NTI255995.size = sizeof(TY255995);
-NTI255995.kind = 18;
-NTI255995.base = 0;
-TMP2313[0] = &TMP2283[1];
-TMP2283[1].kind = 1;
-TMP2283[1].offset = offsetof(TY255995, Field0);
-TMP2283[1].typ = (&NTI128);
-TMP2283[1].name = "Field0";
-TMP2313[1] = &TMP2283[2];
-NTI255017.size = sizeof(FuturebaseHEX3Aobjecttype255017);
-NTI255017.kind = 17;
-NTI255017.base = (&NTI3411);
-TMP2314[0] = &TMP2283[4];
-NTI255018.size = sizeof(TY256243);
-NTI255018.kind = 18;
-NTI255018.base = 0;
-NTI255018.flags = 2;
-TMP2315[0] = &TMP2283[6];
-TMP2283[6].kind = 1;
-TMP2283[6].offset = offsetof(TY256243, Field0);
-TMP2283[6].typ = (&NTI153);
-TMP2283[6].name = "Field0";
-TMP2315[1] = &TMP2283[7];
-NTI256246.size = sizeof(TY256246);
-NTI256246.kind = 18;
-NTI256246.base = 0;
-NTI256246.flags = 3;
-TMP2283[8].len = 0; TMP2283[8].kind = 2;
-NTI256246.node = &TMP2283[8];
-NTI256245.size = sizeof(TY256246*);
-NTI256245.kind = 22;
-NTI256245.base = (&NTI256246);
-NTI256245.flags = 2;
-NTI256245.marker = TMP2316;
-TMP2283[7].kind = 1;
-TMP2283[7].offset = offsetof(TY256243, Field1);
-TMP2283[7].typ = (&NTI256245);
-TMP2283[7].name = "Field1";
-TMP2283[5].len = 2; TMP2283[5].kind = 2; TMP2283[5].sons = &TMP2315[0];
-NTI255018.node = &TMP2283[5];
-TMP2283[4].kind = 1;
-TMP2283[4].offset = offsetof(FuturebaseHEX3Aobjecttype255017, cb);
-TMP2283[4].typ = (&NTI255018);
-TMP2283[4].name = "cb";
-TMP2314[1] = &TMP2283[9];
-TMP2283[9].kind = 1;
-TMP2283[9].offset = offsetof(FuturebaseHEX3Aobjecttype255017, finished);
-TMP2283[9].typ = (&NTI138);
-TMP2283[9].name = "finished";
-TMP2314[2] = &TMP2283[10];
-TMP2283[10].kind = 1;
-TMP2283[10].offset = offsetof(FuturebaseHEX3Aobjecttype255017, error);
-TMP2283[10].typ = (&NTI9022);
-TMP2283[10].name = "error";
-TMP2314[3] = &TMP2283[11];
-TMP2283[11].kind = 1;
-TMP2283[11].offset = offsetof(FuturebaseHEX3Aobjecttype255017, errorstacktrace);
-TMP2283[11].typ = (&NTI149);
-TMP2283[11].name = "errorStackTrace";
-TMP2314[4] = &TMP2283[12];
-TMP2283[12].kind = 1;
-TMP2283[12].offset = offsetof(FuturebaseHEX3Aobjecttype255017, stacktrace);
-TMP2283[12].typ = (&NTI149);
-TMP2283[12].name = "stackTrace";
-TMP2314[5] = &TMP2283[13];
-TMP2283[13].kind = 1;
-TMP2283[13].offset = offsetof(FuturebaseHEX3Aobjecttype255017, id);
-TMP2283[13].typ = (&NTI108);
-TMP2283[13].name = "id";
-TMP2314[6] = &TMP2283[14];
-TMP2283[14].kind = 1;
-TMP2283[14].offset = offsetof(FuturebaseHEX3Aobjecttype255017, fromproc);
-TMP2283[14].typ = (&NTI149);
-TMP2283[14].name = "fromProc";
-TMP2283[3].len = 7; TMP2283[3].kind = 2; TMP2283[3].sons = &TMP2314[0];
-NTI255017.node = &TMP2283[3];
-NTI255097.size = sizeof(FutureHEX3Aobjecttype255097);
-NTI255097.kind = 17;
-NTI255097.base = (&NTI255017);
-TMP2283[15].len = 0; TMP2283[15].kind = 2;
-NTI255097.node = &TMP2283[15];
-NTI255096.size = sizeof(FutureHEX3Aobjecttype255097*);
-NTI255096.kind = 22;
-NTI255096.base = (&NTI255097);
-NTI255096.marker = TMP2317;
-TMP2283[2].kind = 1;
-TMP2283[2].offset = offsetof(TY255995, Field1);
-TMP2283[2].typ = (&NTI255096);
-TMP2283[2].name = "Field1";
-TMP2283[0].len = 2; TMP2283[0].kind = 2; TMP2283[0].sons = &TMP2313[0];
-NTI255995.node = &TMP2283[0];
-NTI255994.size = sizeof(TY255994*);
-NTI255994.kind = 24;
-NTI255994.base = (&NTI255995);
-NTI255994.marker = TMP2318;
-NTI259769.size = sizeof(FutureHEX3Aobjecttype259769);
-NTI259769.kind = 17;
-NTI259769.base = (&NTI255017);
-TMP2283[16].kind = 1;
-TMP2283[16].offset = offsetof(FutureHEX3Aobjecttype259769, value);
-TMP2283[16].typ = (&NTI149);
-TMP2283[16].name = "value";
-NTI259769.node = &TMP2283[16];
-NTI259768.size = sizeof(FutureHEX3Aobjecttype259769*);
-NTI259768.kind = 22;
-NTI259768.base = (&NTI259769);
-NTI259768.marker = TMP2347;
-NTI261249.size = sizeof(FutureHEX3Aobjecttype261249);
-NTI261249.kind = 17;
-NTI261249.base = (&NTI255017);
-TMP2283[17].kind = 1;
-TMP2283[17].offset = offsetof(FutureHEX3Aobjecttype261249, value);
-TMP2283[17].typ = (&NTI108);
-TMP2283[17].name = "value";
-NTI261249.node = &TMP2283[17];
-NTI261248.size = sizeof(FutureHEX3Aobjecttype261249*);
-NTI261248.kind = 22;
-NTI261248.base = (&NTI261249);
-NTI261248.marker = TMP2352;
-NTI262756.size = sizeof(FutureHEX3Aobjecttype262756);
-NTI262756.kind = 17;
-NTI262756.base = (&NTI255017);
-NTI262749.size = sizeof(TY262749);
-NTI262749.kind = 18;
-NTI262749.base = 0;
-NTI262749.flags = 2;
-TMP2356[0] = &TMP2283[20];
-TMP2283[20].kind = 1;
-TMP2283[20].offset = offsetof(TY262749, Field0);
-TMP2283[20].typ = (&NTI149);
-TMP2283[20].name = "Field0";
-TMP2356[1] = &TMP2283[21];
-TMP2283[21].kind = 1;
-TMP2283[21].offset = offsetof(TY262749, Field1);
-TMP2283[21].typ = (&NTI108);
-TMP2283[21].name = "Field1";
-TMP2283[19].len = 2; TMP2283[19].kind = 2; TMP2283[19].sons = &TMP2356[0];
-NTI262749.node = &TMP2283[19];
-TMP2283[18].kind = 1;
-TMP2283[18].offset = offsetof(FutureHEX3Aobjecttype262756, value);
-TMP2283[18].typ = (&NTI262749);
-TMP2283[18].name = "value";
-NTI262756.node = &TMP2283[18];
-NTI262755.size = sizeof(FutureHEX3Aobjecttype262756*);
-NTI262755.kind = 22;
-NTI262755.base = (&NTI262756);
-NTI262755.marker = TMP2357;
-NTI255993.size = sizeof(PdispatcherbaseHEX3Aobjecttype255993);
-NTI255993.kind = 17;
-NTI255993.base = (&NTI3411);
-TMP2283[22].kind = 1;
-TMP2283[22].offset = offsetof(PdispatcherbaseHEX3Aobjecttype255993, timers);
-TMP2283[22].typ = (&NTI255994);
-TMP2283[22].name = "timers";
-NTI255993.node = &TMP2283[22];
-NTI258020.size = sizeof(PdispatcherHEX3Aobjecttype258020);
-NTI258020.kind = 17;
-NTI258020.base = (&NTI255993);
-TMP2369[0] = &TMP2283[24];
-TMP2283[24].kind = 1;
-TMP2283[24].offset = offsetof(PdispatcherHEX3Aobjecttype258020, ioport);
-TMP2283[24].typ = (&NTI103219);
-TMP2283[24].name = "ioPort";
-TMP2369[1] = &TMP2283[25];
-TMP2283[25].kind = 1;
-TMP2283[25].offset = offsetof(PdispatcherHEX3Aobjecttype258020, handles);
-TMP2283[25].typ = (&NTI258026);
-TMP2283[25].name = "handles";
-TMP2283[23].len = 2; TMP2283[23].kind = 2; TMP2283[23].sons = &TMP2369[0];
-NTI258020.node = &TMP2283[23];
-NTI258006.size = sizeof(PdispatcherHEX3Aobjecttype258020*);
-NTI258006.kind = 22;
-NTI258006.base = (&NTI258020);
-NTI258006.marker = TMP2371;
-NTI259730.size = sizeof(TY259730);
-NTI259730.kind = 18;
-NTI259730.base = 0;
-TMP2380[0] = &TMP2283[27];
-NTI259732.size = sizeof(NI);
-NTI259732.kind = 20;
-NTI259732.base = (&NTI108);
-NTI259732.flags = 3;
-TMP2283[27].kind = 1;
-TMP2283[27].offset = offsetof(TY259730, HEX3Astate);
-TMP2283[27].typ = (&NTI259732);
-TMP2283[27].name = ":state";
-TMP2380[1] = &TMP2283[28];
-TMP2283[28].kind = 1;
-TMP2283[28].offset = offsetof(TY259730, retfuture259613);
-TMP2283[28].typ = (&NTI255096);
-TMP2283[28].name = "retFuture259613";
-TMP2283[26].len = 2; TMP2283[26].kind = 2; TMP2283[26].sons = &TMP2380[0];
-NTI259730.node = &TMP2283[26];
-NTI259756.size = sizeof(TY259730*);
-NTI259756.kind = 22;
-NTI259756.base = (&NTI259730);
-NTI259756.marker = TMP2381;
-NTI259733.size = sizeof(TY259733);
-NTI259733.kind = 18;
-NTI259733.base = 0;
-TMP2383[0] = &TMP2283[30];
-TMP2283[30].kind = 1;
-TMP2283[30].offset = offsetof(TY259733, HEX3Astate);
-TMP2283[30].typ = (&NTI259732);
-TMP2283[30].name = ":state";
-TMP2383[1] = &TMP2283[31];
-TMP2283[31].kind = 1;
-TMP2283[31].offset = offsetof(TY259733, HEX3Aup259747);
-TMP2283[31].typ = (&NTI259756);
-TMP2283[31].name = ":up259747";
-TMP2283[29].len = 2; TMP2283[29].kind = 2; TMP2283[29].sons = &TMP2383[0];
-NTI259733.node = &TMP2283[29];
-NTI259754.size = sizeof(TY259733*);
-NTI259754.kind = 22;
-NTI259754.base = (&NTI259733);
-NTI259754.marker = TMP2384;
-NTI259736.size = sizeof(TY259736);
-NTI259736.kind = 18;
-NTI259736.base = 0;
-TMP2385[0] = &TMP2283[33];
-TMP2283[33].kind = 1;
-TMP2283[33].offset = offsetof(TY259736, HEX3Astate);
-TMP2283[33].typ = (&NTI259732);
-TMP2283[33].name = ":state";
-TMP2385[1] = &TMP2283[34];
-TMP2283[34].kind = 1;
-TMP2283[34].offset = offsetof(TY259736, HEX3Aup259744);
-TMP2283[34].typ = (&NTI259754);
-TMP2283[34].name = ":up259744";
-TMP2283[32].len = 2; TMP2283[32].kind = 2; TMP2283[32].sons = &TMP2385[0];
-NTI259736.node = &TMP2283[32];
-NTI259752.size = sizeof(TY259736*);
-NTI259752.kind = 22;
-NTI259752.base = (&NTI259736);
-NTI259752.marker = TMP2386;
-NTI258008.size = sizeof(Tcustomoverlapped258008);
-NTI258008.kind = 18;
-NTI258008.base = (&NTI105608);
-NTI258004.size = sizeof(Tcompletiondata258004);
-NTI258004.kind = 18;
-NTI258004.base = 0;
-TMP2388[0] = &TMP2283[37];
-TMP2283[37].kind = 1;
-TMP2283[37].offset = offsetof(Tcompletiondata258004, fd);
-TMP2283[37].typ = (&NTI108);
-TMP2283[37].name = "fd";
-TMP2388[1] = &TMP2283[38];
-NTI258014.size = sizeof(TY256243);
-NTI258014.kind = 18;
-NTI258014.base = 0;
-NTI258014.flags = 2;
-TMP2389[0] = &TMP2283[40];
-TMP2283[40].kind = 1;
-TMP2283[40].offset = offsetof(TY256243, Field0);
-TMP2283[40].typ = (&NTI153);
-TMP2283[40].name = "Field0";
-TMP2389[1] = &TMP2283[41];
-TMP2283[41].kind = 1;
-TMP2283[41].offset = offsetof(TY256243, Field1);
-TMP2283[41].typ = (&NTI256245);
-TMP2283[41].name = "Field1";
-TMP2283[39].len = 2; TMP2283[39].kind = 2; TMP2283[39].sons = &TMP2389[0];
-NTI258014.node = &TMP2283[39];
-TMP2283[38].kind = 1;
-TMP2283[38].offset = offsetof(Tcompletiondata258004, cb);
-TMP2283[38].typ = (&NTI258014);
-TMP2283[38].name = "cb";
-TMP2283[36].len = 2; TMP2283[36].kind = 2; TMP2283[36].sons = &TMP2388[0];
-NTI258004.node = &TMP2283[36];
-TMP2283[35].kind = 1;
-TMP2283[35].offset = offsetof(Tcustomoverlapped258008, data);
-TMP2283[35].typ = (&NTI258004);
-TMP2283[35].name = "data";
-NTI258008.node = &TMP2283[35];
-NTI258010.size = sizeof(Tcustomoverlapped258008*);
-NTI258010.kind = 22;
-NTI258010.base = (&NTI258008);
-NTI258010.marker = TMP2390;
-NTI261222.size = sizeof(TY261222);
-NTI261222.kind = 18;
-NTI261222.base = 0;
-TMP2391[0] = &TMP2283[43];
-TMP2283[43].kind = 1;
-TMP2283[43].offset = offsetof(TY261222, HEX3Astate);
-TMP2283[43].typ = (&NTI259732);
-TMP2283[43].name = ":state";
-TMP2391[1] = &TMP2283[44];
-TMP2283[44].kind = 1;
-TMP2283[44].offset = offsetof(TY261222, retfuture260013);
-TMP2283[44].typ = (&NTI259768);
-TMP2283[44].name = "retFuture260013";
-TMP2391[2] = &TMP2283[45];
-TMP2283[45].kind = 1;
-TMP2283[45].offset = offsetof(TY261222, databuf260014);
-TMP2283[45].typ = (&NTI105747);
-TMP2283[45].name = "dataBuf260014";
-TMP2391[3] = &TMP2283[46];
-TMP2283[46].kind = 1;
-TMP2283[46].offset = offsetof(TY261222, size259760);
-TMP2283[46].typ = (&NTI108);
-TMP2283[46].name = "size259760";
-TMP2391[4] = &TMP2283[47];
-NTI259761.size = sizeof(NU8);
-NTI259761.kind = 19;
-NTI259761.base = (&NTI239417);
-NTI259761.flags = 3;
-TMP2283[48].len = 0; TMP2283[48].kind = 0;
-NTI259761.node = &TMP2283[48];
-TMP2283[47].kind = 1;
-TMP2283[47].offset = offsetof(TY261222, flags259763);
-TMP2283[47].typ = (&NTI259761);
-TMP2283[47].name = "flags259763";
-TMP2283[42].len = 5; TMP2283[42].kind = 2; TMP2283[42].sons = &TMP2391[0];
-NTI261222.node = &TMP2283[42];
-NTI261235.size = sizeof(TY261222*);
-NTI261235.kind = 22;
-NTI261235.base = (&NTI261222);
-NTI261235.marker = TMP2396;
-NTI262619.size = sizeof(TY262619);
-NTI262619.kind = 18;
-NTI262619.base = 0;
-TMP2403[0] = &TMP2283[50];
-TMP2283[50].kind = 1;
-TMP2283[50].offset = offsetof(TY262619, HEX3Astate);
-TMP2283[50].typ = (&NTI259732);
-TMP2283[50].name = ":state";
-TMP2403[1] = &TMP2283[51];
-TMP2283[51].kind = 1;
-TMP2283[51].offset = offsetof(TY262619, retfuture261613);
-TMP2283[51].typ = (&NTI261248);
-TMP2283[51].name = "retFuture261613";
-TMP2403[2] = &TMP2283[52];
-TMP2283[52].kind = 1;
-TMP2283[52].offset = offsetof(TY262619, databuf261614);
-TMP2283[52].typ = (&NTI105747);
-TMP2283[52].name = "dataBuf261614";
-TMP2403[3] = &TMP2283[53];
-TMP2283[53].kind = 1;
-TMP2283[53].offset = offsetof(TY262619, flags261243);
-TMP2283[53].typ = (&NTI259761);
-TMP2283[53].name = "flags261243";
-TMP2283[49].len = 4; TMP2283[49].kind = 2; TMP2283[49].sons = &TMP2403[0];
-NTI262619.node = &TMP2283[49];
-NTI262631.size = sizeof(TY262619*);
-NTI262631.kind = 22;
-NTI262631.base = (&NTI262619);
-NTI262631.marker = TMP2404;
-NTI262730.size = sizeof(TY262730);
-NTI262730.kind = 18;
-NTI262730.base = 0;
-TMP2406[0] = &TMP2283[55];
-TMP2283[55].kind = 1;
-TMP2283[55].offset = offsetof(TY262730, HEX3Astate);
-TMP2283[55].typ = (&NTI259732);
-TMP2283[55].name = ":state";
-TMP2406[1] = &TMP2283[56];
-TMP2283[56].kind = 1;
-TMP2283[56].offset = offsetof(TY262730, retfuture262650);
-TMP2283[56].typ = (&NTI255096);
-TMP2283[56].name = "retFuture262650";
-TMP2406[2] = &TMP2283[57];
-TMP2283[57].kind = 1;
-TMP2283[57].offset = offsetof(TY262730, flags262638);
-TMP2283[57].typ = (&NTI259761);
-TMP2283[57].name = "flags262638";
-TMP2283[54].len = 3; TMP2283[54].kind = 2; TMP2283[54].sons = &TMP2406[0];
-NTI262730.node = &TMP2283[54];
-NTI262741.size = sizeof(TY262730*);
-NTI262741.kind = 22;
-NTI262741.base = (&NTI262730);
-NTI262741.marker = TMP2407;
-NTI264164.size = sizeof(TY264164);
-NTI264164.kind = 18;
-NTI264164.base = 0;
-TMP2409[0] = &TMP2283[59];
-TMP2283[59].kind = 1;
-TMP2283[59].offset = offsetof(TY264164, HEX3Astate);
-TMP2283[59].typ = (&NTI259732);
-TMP2283[59].name = ":state";
-TMP2409[1] = &TMP2283[60];
-TMP2283[60].kind = 1;
-TMP2283[60].offset = offsetof(TY264164, retfuture262813);
-TMP2283[60].typ = (&NTI262755);
-TMP2283[60].name = "retFuture262813";
-TMP2409[2] = &TMP2283[61];
-TMP2283[61].kind = 1;
-TMP2283[61].offset = offsetof(TY264164, socket262744);
-TMP2283[61].typ = (&NTI108);
-TMP2283[61].name = "socket262744";
-TMP2409[3] = &TMP2283[62];
-TMP2283[62].kind = 1;
-TMP2283[62].offset = offsetof(TY264164, clientsock262814);
-TMP2283[62].typ = (&NTI108);
-TMP2283[62].name = "clientSock262814";
-TMP2409[4] = &TMP2283[63];
-TMP2283[63].kind = 1;
-TMP2283[63].offset = offsetof(TY264164, lpoutputbuf262817);
-TMP2283[63].typ = (&NTI149);
-TMP2283[63].name = "lpOutputBuf262817";
-TMP2409[5] = &TMP2283[64];
-TMP2283[64].kind = 1;
-TMP2283[64].offset = offsetof(TY264164, dwreceivedatalength262819);
-TMP2283[64].typ = (&NTI103229);
-TMP2283[64].name = "dwReceiveDataLength262819";
-TMP2409[6] = &TMP2283[65];
-TMP2283[65].kind = 1;
-TMP2283[65].offset = offsetof(TY264164, dwlocaladdresslength262821);
-TMP2283[65].typ = (&NTI103229);
-TMP2283[65].name = "dwLocalAddressLength262821";
-TMP2409[7] = &TMP2283[66];
-TMP2283[66].kind = 1;
-TMP2283[66].offset = offsetof(TY264164, dwremoteaddresslength262823);
-TMP2283[66].typ = (&NTI103229);
-TMP2283[66].name = "dwRemoteAddressLength262823";
-TMP2409[8] = &TMP2283[67];
-TMP2283[67].kind = 1;
-TMP2283[67].offset = offsetof(TY264164, flags262747);
-TMP2283[67].typ = (&NTI259761);
-TMP2283[67].name = "flags262747";
-TMP2409[9] = &TMP2283[68];
-TMP2283[68].kind = 1;
-TMP2283[68].offset = offsetof(TY264164, newacceptfut264058);
-TMP2283[68].typ = (&NTI262755);
-TMP2283[68].name = "newAcceptFut264058";
-TMP2283[58].len = 10; TMP2283[58].kind = 2; TMP2283[58].sons = &TMP2409[0];
-NTI264164.node = &TMP2283[58];
-NTI264198.size = sizeof(TY264164*);
-NTI264198.kind = 22;
-NTI264198.base = (&NTI264164);
-NTI264198.marker = TMP2410;
-NTI264167.size = sizeof(TY264167);
-NTI264167.kind = 18;
-NTI264167.base = 0;
-TMP2414[0] = &TMP2283[70];
-TMP2283[70].kind = 1;
-TMP2283[70].offset = offsetof(TY264167, HEX3Astate);
-TMP2283[70].typ = (&NTI259732);
-TMP2283[70].name = ":state";
-TMP2414[1] = &TMP2283[71];
-TMP2283[71].kind = 1;
-TMP2283[71].offset = offsetof(TY264167, newacceptfut263614);
-TMP2283[71].typ = (&NTI262755);
-TMP2283[71].name = "newAcceptFut263614";
-TMP2414[2] = &TMP2283[72];
-TMP2283[72].kind = 1;
-TMP2283[72].offset = offsetof(TY264167, HEX3Aup264176);
-TMP2283[72].typ = (&NTI264198);
-TMP2283[72].name = ":up264176";
-TMP2283[69].len = 3; TMP2283[69].kind = 2; TMP2283[69].sons = &TMP2414[0];
-NTI264167.node = &TMP2283[69];
-NTI264196.size = sizeof(TY264167*);
-NTI264196.kind = 22;
-NTI264196.base = (&NTI264167);
-NTI264196.marker = TMP2415;
-NTI264663.size = sizeof(FutureHEX3Aobjecttype264663);
-NTI264663.kind = 17;
-NTI264663.base = (&NTI255017);
-TMP2283[73].kind = 1;
-TMP2283[73].offset = offsetof(FutureHEX3Aobjecttype264663, value);
-TMP2283[73].typ = (&NTI108);
-TMP2283[73].name = "value";
-NTI264663.node = &TMP2283[73];
-NTI264662.size = sizeof(FutureHEX3Aobjecttype264663*);
-NTI264662.kind = 22;
-NTI264662.base = (&NTI264663);
-NTI264662.marker = TMP2417;
-NTI265830.size = sizeof(TY265830);
-NTI265830.kind = 18;
-NTI265830.base = 0;
-TMP2421[0] = &TMP2283[75];
-TMP2283[75].kind = 1;
-TMP2283[75].offset = offsetof(TY265830, HEX3Astate);
-TMP2283[75].typ = (&NTI259732);
-TMP2283[75].name = ":state";
-TMP2421[1] = &TMP2283[76];
-NTI265820.size = sizeof(TY256243);
-NTI265820.kind = 18;
-NTI265820.base = 0;
-NTI265820.flags = 2;
-TMP2422[0] = &TMP2283[78];
-TMP2283[78].kind = 1;
-TMP2283[78].offset = offsetof(TY256243, Field0);
-TMP2283[78].typ = (&NTI153);
-TMP2283[78].name = "Field0";
-TMP2422[1] = &TMP2283[79];
-TMP2283[79].kind = 1;
-TMP2283[79].offset = offsetof(TY256243, Field1);
-TMP2283[79].typ = (&NTI256245);
-TMP2283[79].name = "Field1";
-TMP2283[77].len = 2; TMP2283[77].kind = 2; TMP2283[77].sons = &TMP2422[0];
-NTI265820.node = &TMP2283[77];
-TMP2283[76].kind = 1;
-TMP2283[76].offset = offsetof(TY265830, cb265827);
-TMP2283[76].typ = (&NTI265820);
-TMP2283[76].name = "cb265827";
-TMP2421[2] = &TMP2283[80];
-TMP2283[80].kind = 1;
-TMP2283[80].offset = offsetof(TY265830, future265819);
-TMP2283[80].typ = (&NTI262755);
-TMP2283[80].name = "future265819";
-TMP2283[74].len = 3; TMP2283[74].kind = 2; TMP2283[74].sons = &TMP2421[0];
-NTI265830.node = &TMP2283[74];
-NTI265841.size = sizeof(TY265830*);
-NTI265841.kind = 22;
-NTI265841.base = (&NTI265830);
-NTI265841.marker = TMP2423;
-NTI265842.size = sizeof(TY265842);
-NTI265842.kind = 18;
-NTI265842.base = 0;
-TMP2425[0] = &TMP2283[82];
-TMP2283[82].kind = 1;
-TMP2283[82].offset = offsetof(TY265842, HEX3Astate);
-TMP2283[82].typ = (&NTI259732);
-TMP2283[82].name = ":state";
-TMP2425[1] = &TMP2283[83];
-TMP2283[83].kind = 1;
-TMP2283[83].offset = offsetof(TY265842, retfut264813);
-TMP2283[83].typ = (&NTI264662);
-TMP2283[83].name = "retFut264813";
-TMP2283[81].len = 2; TMP2283[81].kind = 2; TMP2283[81].sons = &TMP2425[0];
-NTI265842.node = &TMP2283[81];
-NTI265852.size = sizeof(TY265842*);
-NTI265852.kind = 22;
-NTI265852.base = (&NTI265842);
-NTI265852.marker = TMP2426;
-NTI267410.size = sizeof(TY267410);
-NTI267410.kind = 18;
-NTI267410.base = 0;
-TMP2429[0] = &TMP2283[85];
-NTI267412.size = sizeof(NI);
-NTI267412.kind = 20;
-NTI267412.base = (&NTI108);
-NTI267412.flags = 3;
-TMP2283[85].kind = 1;
-TMP2283[85].offset = offsetof(TY267410, HEX3Astate);
-TMP2283[85].typ = (&NTI267412);
-TMP2283[85].name = ":state";
-TMP2429[1] = &TMP2283[86];
-TMP2283[86].kind = 1;
-TMP2283[86].offset = offsetof(TY267410, socket266601);
-TMP2283[86].typ = (&NTI108);
-TMP2283[86].name = "socket266601";
-TMP2429[2] = &TMP2283[87];
-TMP2283[87].kind = 1;
-TMP2283[87].offset = offsetof(TY267410, retfuture266595);
-TMP2283[87].typ = (&NTI259768);
-TMP2283[87].name = "retFuture266595";
-TMP2429[3] = &TMP2283[88];
-NTI266613.size = sizeof(TY256243);
-NTI266613.kind = 18;
-NTI266613.base = 0;
-NTI266613.flags = 2;
-TMP2430[0] = &TMP2283[90];
-TMP2283[90].kind = 1;
-TMP2283[90].offset = offsetof(TY256243, Field0);
-TMP2283[90].typ = (&NTI153);
-TMP2283[90].name = "Field0";
-TMP2430[1] = &TMP2283[91];
-TMP2283[91].kind = 1;
-TMP2283[91].offset = offsetof(TY256243, Field1);
-TMP2283[91].typ = (&NTI256245);
-TMP2283[91].name = "Field1";
-TMP2283[89].len = 2; TMP2283[89].kind = 2; TMP2283[89].sons = &TMP2430[0];
-NTI266613.node = &TMP2283[89];
-TMP2283[88].kind = 1;
-TMP2283[88].offset = offsetof(TY267410, nameitervar267231);
-TMP2283[88].typ = (&NTI266613);
-TMP2283[88].name = "nameIterVar267231";
-TMP2429[4] = &TMP2283[92];
-TMP2283[92].kind = 1;
-TMP2283[92].offset = offsetof(TY267410, result266615);
-TMP2283[92].typ = (&NTI149);
-TMP2283[92].name = "result266615";
-TMP2429[5] = &TMP2283[93];
-TMP2283[93].kind = 1;
-TMP2283[93].offset = offsetof(TY267410, c266621);
-TMP2283[93].typ = (&NTI149);
-TMP2283[93].name = "c266621";
-TMP2429[6] = &TMP2283[94];
-TMP2283[94].kind = 1;
-TMP2283[94].offset = offsetof(TY267410, future266597);
-TMP2283[94].typ = (&NTI259768);
-TMP2283[94].name = "future266597";
-TMP2429[7] = &TMP2283[95];
-TMP2283[95].kind = 1;
-TMP2283[95].offset = offsetof(TY267410, future266598);
-TMP2283[95].typ = (&NTI259768);
-TMP2283[95].name = "future266598";
-TMP2283[84].len = 8; TMP2283[84].kind = 2; TMP2283[84].sons = &TMP2429[0];
-NTI267410.node = &TMP2283[84];
-NTI267417.size = sizeof(TY267410*);
-NTI267417.kind = 22;
-NTI267417.base = (&NTI267410);
-NTI267417.marker = TMP2431;
-NTI271248.size = sizeof(FutureHEX3Aobjecttype271248);
-NTI271248.kind = 17;
-NTI271248.base = (&NTI255017);
-TMP2283[96].kind = 1;
-TMP2283[96].offset = offsetof(FutureHEX3Aobjecttype271248, value);
-TMP2283[96].typ = (&NTI271241);
-TMP2283[96].name = "value";
-NTI271248.node = &TMP2283[96];
-NTI271247.size = sizeof(FutureHEX3Aobjecttype271248*);
-NTI271247.kind = 22;
-NTI271247.base = (&NTI271248);
-NTI271247.marker = TMP2478;
-NTI272455.size = sizeof(FutureHEX3Aobjecttype272455);
-NTI272455.kind = 17;
-NTI272455.base = (&NTI255017);
-TMP2283[97].kind = 1;
-TMP2283[97].offset = offsetof(FutureHEX3Aobjecttype272455, value);
-TMP2283[97].typ = (&NTI268204);
-TMP2283[97].name = "value";
-NTI272455.node = &TMP2283[97];
-NTI272454.size = sizeof(FutureHEX3Aobjecttype272455*);
-NTI272454.kind = 22;
-NTI272454.base = (&NTI272455);
-NTI272454.marker = TMP2486;
-NTI274030.size = sizeof(TY274030);
-NTI274030.kind = 18;
-NTI274030.base = 0;
-TMP2490[0] = &TMP2283[99];
-TMP2283[99].kind = 1;
-TMP2283[99].offset = offsetof(TY274030, HEX3Astate);
-TMP2283[99].typ = (&NTI259732);
-TMP2283[99].name = ":state";
-TMP2490[1] = &TMP2283[100];
-NTI274020.size = sizeof(TY256243);
-NTI274020.kind = 18;
-NTI274020.base = 0;
-NTI274020.flags = 2;
-TMP2491[0] = &TMP2283[102];
-TMP2283[102].kind = 1;
-TMP2283[102].offset = offsetof(TY256243, Field0);
-TMP2283[102].typ = (&NTI153);
-TMP2283[102].name = "Field0";
-TMP2491[1] = &TMP2283[103];
-TMP2283[103].kind = 1;
-TMP2283[103].offset = offsetof(TY256243, Field1);
-TMP2283[103].typ = (&NTI256245);
-TMP2283[103].name = "Field1";
-TMP2283[101].len = 2; TMP2283[101].kind = 2; TMP2283[101].sons = &TMP2491[0];
-NTI274020.node = &TMP2283[101];
-TMP2283[100].kind = 1;
-TMP2283[100].offset = offsetof(TY274030, cb274027);
-TMP2283[100].typ = (&NTI274020);
-TMP2283[100].name = "cb274027";
-TMP2490[2] = &TMP2283[104];
-TMP2283[104].kind = 1;
-TMP2283[104].offset = offsetof(TY274030, future274019);
-TMP2283[104].typ = (&NTI271247);
-TMP2283[104].name = "future274019";
-TMP2283[98].len = 3; TMP2283[98].kind = 2; TMP2283[98].sons = &TMP2490[0];
-NTI274030.node = &TMP2283[98];
-NTI274041.size = sizeof(TY274030*);
-NTI274041.kind = 22;
-NTI274041.base = (&NTI274030);
-NTI274041.marker = TMP2492;
-NTI279252.size = sizeof(FutureHEX3Aobjecttype279252);
-NTI279252.kind = 17;
-NTI279252.base = (&NTI255017);
-TMP2283[105].kind = 1;
-TMP2283[105].offset = offsetof(FutureHEX3Aobjecttype279252, value);
-TMP2283[105].typ = (&NTI277008);
-TMP2283[105].name = "value";
-NTI279252.node = &TMP2283[105];
-NTI279251.size = sizeof(FutureHEX3Aobjecttype279252*);
-NTI279251.kind = 22;
-NTI279251.base = (&NTI279252);
-NTI279251.marker = TMP2702;
+static TNimNode* TMP2235[2];
+static TNimNode* TMP2236[7];
+static TNimNode* TMP2237[2];
+static TNimNode* TMP2278[2];
+static TNimNode* TMP2291[2];
+static TNimNode* TMP2302[2];
+static TNimNode* TMP2305[2];
+static TNimNode* TMP2307[2];
+static TNimNode* TMP2310[2];
+static TNimNode* TMP2311[2];
+static TNimNode* TMP2313[5];
+static TNimNode* TMP2325[4];
+static TNimNode* TMP2328[3];
+static TNimNode* TMP2331[10];
+static TNimNode* TMP2336[3];
+static TNimNode* TMP2343[3];
+static TNimNode* TMP2344[2];
+static TNimNode* TMP2347[2];
+static TNimNode* TMP2351[8];
+static TNimNode* TMP2352[2];
+static TNimNode* TMP2412[3];
+static TNimNode* TMP2413[2];
+static TNimNode TMP2205[106];
+NTI243995.size = sizeof(TY243995);
+NTI243995.kind = 18;
+NTI243995.base = 0;
+TMP2235[0] = &TMP2205[1];
+TMP2205[1].kind = 1;
+TMP2205[1].offset = offsetof(TY243995, Field0);
+TMP2205[1].typ = (&NTI128);
+TMP2205[1].name = "Field0";
+TMP2235[1] = &TMP2205[2];
+NTI243017.size = sizeof(FuturebaseHEX3Aobjecttype243017);
+NTI243017.kind = 17;
+NTI243017.base = (&NTI3411);
+TMP2236[0] = &TMP2205[4];
+NTI243018.size = sizeof(TY244243);
+NTI243018.kind = 18;
+NTI243018.base = 0;
+NTI243018.flags = 2;
+TMP2237[0] = &TMP2205[6];
+TMP2205[6].kind = 1;
+TMP2205[6].offset = offsetof(TY244243, Field0);
+TMP2205[6].typ = (&NTI153);
+TMP2205[6].name = "Field0";
+TMP2237[1] = &TMP2205[7];
+NTI244246.size = sizeof(TY244246);
+NTI244246.kind = 18;
+NTI244246.base = 0;
+NTI244246.flags = 3;
+TMP2205[8].len = 0; TMP2205[8].kind = 2;
+NTI244246.node = &TMP2205[8];
+NTI244245.size = sizeof(TY244246*);
+NTI244245.kind = 22;
+NTI244245.base = (&NTI244246);
+NTI244245.flags = 2;
+NTI244245.marker = TMP2238;
+TMP2205[7].kind = 1;
+TMP2205[7].offset = offsetof(TY244243, Field1);
+TMP2205[7].typ = (&NTI244245);
+TMP2205[7].name = "Field1";
+TMP2205[5].len = 2; TMP2205[5].kind = 2; TMP2205[5].sons = &TMP2237[0];
+NTI243018.node = &TMP2205[5];
+TMP2205[4].kind = 1;
+TMP2205[4].offset = offsetof(FuturebaseHEX3Aobjecttype243017, cb);
+TMP2205[4].typ = (&NTI243018);
+TMP2205[4].name = "cb";
+TMP2236[1] = &TMP2205[9];
+TMP2205[9].kind = 1;
+TMP2205[9].offset = offsetof(FuturebaseHEX3Aobjecttype243017, finished);
+TMP2205[9].typ = (&NTI138);
+TMP2205[9].name = "finished";
+TMP2236[2] = &TMP2205[10];
+TMP2205[10].kind = 1;
+TMP2205[10].offset = offsetof(FuturebaseHEX3Aobjecttype243017, error);
+TMP2205[10].typ = (&NTI9022);
+TMP2205[10].name = "error";
+TMP2236[3] = &TMP2205[11];
+TMP2205[11].kind = 1;
+TMP2205[11].offset = offsetof(FuturebaseHEX3Aobjecttype243017, errorstacktrace);
+TMP2205[11].typ = (&NTI149);
+TMP2205[11].name = "errorStackTrace";
+TMP2236[4] = &TMP2205[12];
+TMP2205[12].kind = 1;
+TMP2205[12].offset = offsetof(FuturebaseHEX3Aobjecttype243017, stacktrace);
+TMP2205[12].typ = (&NTI149);
+TMP2205[12].name = "stackTrace";
+TMP2236[5] = &TMP2205[13];
+TMP2205[13].kind = 1;
+TMP2205[13].offset = offsetof(FuturebaseHEX3Aobjecttype243017, id);
+TMP2205[13].typ = (&NTI108);
+TMP2205[13].name = "id";
+TMP2236[6] = &TMP2205[14];
+TMP2205[14].kind = 1;
+TMP2205[14].offset = offsetof(FuturebaseHEX3Aobjecttype243017, fromproc);
+TMP2205[14].typ = (&NTI149);
+TMP2205[14].name = "fromProc";
+TMP2205[3].len = 7; TMP2205[3].kind = 2; TMP2205[3].sons = &TMP2236[0];
+NTI243017.node = &TMP2205[3];
+NTI243097.size = sizeof(FutureHEX3Aobjecttype243097);
+NTI243097.kind = 17;
+NTI243097.base = (&NTI243017);
+TMP2205[15].len = 0; TMP2205[15].kind = 2;
+NTI243097.node = &TMP2205[15];
+NTI243096.size = sizeof(FutureHEX3Aobjecttype243097*);
+NTI243096.kind = 22;
+NTI243096.base = (&NTI243097);
+NTI243096.marker = TMP2239;
+TMP2205[2].kind = 1;
+TMP2205[2].offset = offsetof(TY243995, Field1);
+TMP2205[2].typ = (&NTI243096);
+TMP2205[2].name = "Field1";
+TMP2205[0].len = 2; TMP2205[0].kind = 2; TMP2205[0].sons = &TMP2235[0];
+NTI243995.node = &TMP2205[0];
+NTI243994.size = sizeof(TY243994*);
+NTI243994.kind = 24;
+NTI243994.base = (&NTI243995);
+NTI243994.marker = TMP2240;
+NTI247769.size = sizeof(FutureHEX3Aobjecttype247769);
+NTI247769.kind = 17;
+NTI247769.base = (&NTI243017);
+TMP2205[16].kind = 1;
+TMP2205[16].offset = offsetof(FutureHEX3Aobjecttype247769, value);
+TMP2205[16].typ = (&NTI149);
+TMP2205[16].name = "value";
+NTI247769.node = &TMP2205[16];
+NTI247768.size = sizeof(FutureHEX3Aobjecttype247769*);
+NTI247768.kind = 22;
+NTI247768.base = (&NTI247769);
+NTI247768.marker = TMP2269;
+NTI249249.size = sizeof(FutureHEX3Aobjecttype249249);
+NTI249249.kind = 17;
+NTI249249.base = (&NTI243017);
+TMP2205[17].kind = 1;
+TMP2205[17].offset = offsetof(FutureHEX3Aobjecttype249249, value);
+TMP2205[17].typ = (&NTI108);
+TMP2205[17].name = "value";
+NTI249249.node = &TMP2205[17];
+NTI249248.size = sizeof(FutureHEX3Aobjecttype249249*);
+NTI249248.kind = 22;
+NTI249248.base = (&NTI249249);
+NTI249248.marker = TMP2274;
+NTI250756.size = sizeof(FutureHEX3Aobjecttype250756);
+NTI250756.kind = 17;
+NTI250756.base = (&NTI243017);
+NTI250749.size = sizeof(TY250749);
+NTI250749.kind = 18;
+NTI250749.base = 0;
+NTI250749.flags = 2;
+TMP2278[0] = &TMP2205[20];
+TMP2205[20].kind = 1;
+TMP2205[20].offset = offsetof(TY250749, Field0);
+TMP2205[20].typ = (&NTI149);
+TMP2205[20].name = "Field0";
+TMP2278[1] = &TMP2205[21];
+TMP2205[21].kind = 1;
+TMP2205[21].offset = offsetof(TY250749, Field1);
+TMP2205[21].typ = (&NTI108);
+TMP2205[21].name = "Field1";
+TMP2205[19].len = 2; TMP2205[19].kind = 2; TMP2205[19].sons = &TMP2278[0];
+NTI250749.node = &TMP2205[19];
+TMP2205[18].kind = 1;
+TMP2205[18].offset = offsetof(FutureHEX3Aobjecttype250756, value);
+TMP2205[18].typ = (&NTI250749);
+TMP2205[18].name = "value";
+NTI250756.node = &TMP2205[18];
+NTI250755.size = sizeof(FutureHEX3Aobjecttype250756*);
+NTI250755.kind = 22;
+NTI250755.base = (&NTI250756);
+NTI250755.marker = TMP2279;
+NTI243993.size = sizeof(PdispatcherbaseHEX3Aobjecttype243993);
+NTI243993.kind = 17;
+NTI243993.base = (&NTI3411);
+TMP2205[22].kind = 1;
+TMP2205[22].offset = offsetof(PdispatcherbaseHEX3Aobjecttype243993, timers);
+TMP2205[22].typ = (&NTI243994);
+TMP2205[22].name = "timers";
+NTI243993.node = &TMP2205[22];
+NTI246020.size = sizeof(PdispatcherHEX3Aobjecttype246020);
+NTI246020.kind = 17;
+NTI246020.base = (&NTI243993);
+TMP2291[0] = &TMP2205[24];
+TMP2205[24].kind = 1;
+TMP2205[24].offset = offsetof(PdispatcherHEX3Aobjecttype246020, ioport);
+TMP2205[24].typ = (&NTI105219);
+TMP2205[24].name = "ioPort";
+TMP2291[1] = &TMP2205[25];
+TMP2205[25].kind = 1;
+TMP2205[25].offset = offsetof(PdispatcherHEX3Aobjecttype246020, handles);
+TMP2205[25].typ = (&NTI246026);
+TMP2205[25].name = "handles";
+TMP2205[23].len = 2; TMP2205[23].kind = 2; TMP2205[23].sons = &TMP2291[0];
+NTI246020.node = &TMP2205[23];
+NTI246006.size = sizeof(PdispatcherHEX3Aobjecttype246020*);
+NTI246006.kind = 22;
+NTI246006.base = (&NTI246020);
+NTI246006.marker = TMP2293;
+NTI247730.size = sizeof(TY247730);
+NTI247730.kind = 18;
+NTI247730.base = 0;
+TMP2302[0] = &TMP2205[27];
+NTI247732.size = sizeof(NI);
+NTI247732.kind = 20;
+NTI247732.base = (&NTI108);
+NTI247732.flags = 3;
+TMP2205[27].kind = 1;
+TMP2205[27].offset = offsetof(TY247730, HEX3Astate);
+TMP2205[27].typ = (&NTI247732);
+TMP2205[27].name = ":state";
+TMP2302[1] = &TMP2205[28];
+TMP2205[28].kind = 1;
+TMP2205[28].offset = offsetof(TY247730, retfuture247613);
+TMP2205[28].typ = (&NTI243096);
+TMP2205[28].name = "retFuture247613";
+TMP2205[26].len = 2; TMP2205[26].kind = 2; TMP2205[26].sons = &TMP2302[0];
+NTI247730.node = &TMP2205[26];
+NTI247756.size = sizeof(TY247730*);
+NTI247756.kind = 22;
+NTI247756.base = (&NTI247730);
+NTI247756.marker = TMP2303;
+NTI247733.size = sizeof(TY247733);
+NTI247733.kind = 18;
+NTI247733.base = 0;
+TMP2305[0] = &TMP2205[30];
+TMP2205[30].kind = 1;
+TMP2205[30].offset = offsetof(TY247733, HEX3Astate);
+TMP2205[30].typ = (&NTI247732);
+TMP2205[30].name = ":state";
+TMP2305[1] = &TMP2205[31];
+TMP2205[31].kind = 1;
+TMP2205[31].offset = offsetof(TY247733, HEX3Aup247747);
+TMP2205[31].typ = (&NTI247756);
+TMP2205[31].name = ":up247747";
+TMP2205[29].len = 2; TMP2205[29].kind = 2; TMP2205[29].sons = &TMP2305[0];
+NTI247733.node = &TMP2205[29];
+NTI247754.size = sizeof(TY247733*);
+NTI247754.kind = 22;
+NTI247754.base = (&NTI247733);
+NTI247754.marker = TMP2306;
+NTI247736.size = sizeof(TY247736);
+NTI247736.kind = 18;
+NTI247736.base = 0;
+TMP2307[0] = &TMP2205[33];
+TMP2205[33].kind = 1;
+TMP2205[33].offset = offsetof(TY247736, HEX3Astate);
+TMP2205[33].typ = (&NTI247732);
+TMP2205[33].name = ":state";
+TMP2307[1] = &TMP2205[34];
+TMP2205[34].kind = 1;
+TMP2205[34].offset = offsetof(TY247736, HEX3Aup247744);
+TMP2205[34].typ = (&NTI247754);
+TMP2205[34].name = ":up247744";
+TMP2205[32].len = 2; TMP2205[32].kind = 2; TMP2205[32].sons = &TMP2307[0];
+NTI247736.node = &TMP2205[32];
+NTI247752.size = sizeof(TY247736*);
+NTI247752.kind = 22;
+NTI247752.base = (&NTI247736);
+NTI247752.marker = TMP2308;
+NTI246008.size = sizeof(Tcustomoverlapped246008);
+NTI246008.kind = 18;
+NTI246008.base = (&NTI107608);
+NTI246004.size = sizeof(Tcompletiondata246004);
+NTI246004.kind = 18;
+NTI246004.base = 0;
+TMP2310[0] = &TMP2205[37];
+TMP2205[37].kind = 1;
+TMP2205[37].offset = offsetof(Tcompletiondata246004, fd);
+TMP2205[37].typ = (&NTI108);
+TMP2205[37].name = "fd";
+TMP2310[1] = &TMP2205[38];
+NTI246014.size = sizeof(TY244243);
+NTI246014.kind = 18;
+NTI246014.base = 0;
+NTI246014.flags = 2;
+TMP2311[0] = &TMP2205[40];
+TMP2205[40].kind = 1;
+TMP2205[40].offset = offsetof(TY244243, Field0);
+TMP2205[40].typ = (&NTI153);
+TMP2205[40].name = "Field0";
+TMP2311[1] = &TMP2205[41];
+TMP2205[41].kind = 1;
+TMP2205[41].offset = offsetof(TY244243, Field1);
+TMP2205[41].typ = (&NTI244245);
+TMP2205[41].name = "Field1";
+TMP2205[39].len = 2; TMP2205[39].kind = 2; TMP2205[39].sons = &TMP2311[0];
+NTI246014.node = &TMP2205[39];
+TMP2205[38].kind = 1;
+TMP2205[38].offset = offsetof(Tcompletiondata246004, cb);
+TMP2205[38].typ = (&NTI246014);
+TMP2205[38].name = "cb";
+TMP2205[36].len = 2; TMP2205[36].kind = 2; TMP2205[36].sons = &TMP2310[0];
+NTI246004.node = &TMP2205[36];
+TMP2205[35].kind = 1;
+TMP2205[35].offset = offsetof(Tcustomoverlapped246008, data);
+TMP2205[35].typ = (&NTI246004);
+TMP2205[35].name = "data";
+NTI246008.node = &TMP2205[35];
+NTI246010.size = sizeof(Tcustomoverlapped246008*);
+NTI246010.kind = 22;
+NTI246010.base = (&NTI246008);
+NTI246010.marker = TMP2312;
+NTI249222.size = sizeof(TY249222);
+NTI249222.kind = 18;
+NTI249222.base = 0;
+TMP2313[0] = &TMP2205[43];
+TMP2205[43].kind = 1;
+TMP2205[43].offset = offsetof(TY249222, HEX3Astate);
+TMP2205[43].typ = (&NTI247732);
+TMP2205[43].name = ":state";
+TMP2313[1] = &TMP2205[44];
+TMP2205[44].kind = 1;
+TMP2205[44].offset = offsetof(TY249222, retfuture248013);
+TMP2205[44].typ = (&NTI247768);
+TMP2205[44].name = "retFuture248013";
+TMP2313[2] = &TMP2205[45];
+TMP2205[45].kind = 1;
+TMP2205[45].offset = offsetof(TY249222, databuf248014);
+TMP2205[45].typ = (&NTI107747);
+TMP2205[45].name = "dataBuf248014";
+TMP2313[3] = &TMP2205[46];
+TMP2205[46].kind = 1;
+TMP2205[46].offset = offsetof(TY249222, size247760);
+TMP2205[46].typ = (&NTI108);
+TMP2205[46].name = "size247760";
+TMP2313[4] = &TMP2205[47];
+NTI247761.size = sizeof(NU8);
+NTI247761.kind = 19;
+NTI247761.base = (&NTI227417);
+NTI247761.flags = 3;
+TMP2205[48].len = 0; TMP2205[48].kind = 0;
+NTI247761.node = &TMP2205[48];
+TMP2205[47].kind = 1;
+TMP2205[47].offset = offsetof(TY249222, flags247763);
+TMP2205[47].typ = (&NTI247761);
+TMP2205[47].name = "flags247763";
+TMP2205[42].len = 5; TMP2205[42].kind = 2; TMP2205[42].sons = &TMP2313[0];
+NTI249222.node = &TMP2205[42];
+NTI249235.size = sizeof(TY249222*);
+NTI249235.kind = 22;
+NTI249235.base = (&NTI249222);
+NTI249235.marker = TMP2318;
+NTI250619.size = sizeof(TY250619);
+NTI250619.kind = 18;
+NTI250619.base = 0;
+TMP2325[0] = &TMP2205[50];
+TMP2205[50].kind = 1;
+TMP2205[50].offset = offsetof(TY250619, HEX3Astate);
+TMP2205[50].typ = (&NTI247732);
+TMP2205[50].name = ":state";
+TMP2325[1] = &TMP2205[51];
+TMP2205[51].kind = 1;
+TMP2205[51].offset = offsetof(TY250619, retfuture249613);
+TMP2205[51].typ = (&NTI249248);
+TMP2205[51].name = "retFuture249613";
+TMP2325[2] = &TMP2205[52];
+TMP2205[52].kind = 1;
+TMP2205[52].offset = offsetof(TY250619, databuf249614);
+TMP2205[52].typ = (&NTI107747);
+TMP2205[52].name = "dataBuf249614";
+TMP2325[3] = &TMP2205[53];
+TMP2205[53].kind = 1;
+TMP2205[53].offset = offsetof(TY250619, flags249243);
+TMP2205[53].typ = (&NTI247761);
+TMP2205[53].name = "flags249243";
+TMP2205[49].len = 4; TMP2205[49].kind = 2; TMP2205[49].sons = &TMP2325[0];
+NTI250619.node = &TMP2205[49];
+NTI250631.size = sizeof(TY250619*);
+NTI250631.kind = 22;
+NTI250631.base = (&NTI250619);
+NTI250631.marker = TMP2326;
+NTI250730.size = sizeof(TY250730);
+NTI250730.kind = 18;
+NTI250730.base = 0;
+TMP2328[0] = &TMP2205[55];
+TMP2205[55].kind = 1;
+TMP2205[55].offset = offsetof(TY250730, HEX3Astate);
+TMP2205[55].typ = (&NTI247732);
+TMP2205[55].name = ":state";
+TMP2328[1] = &TMP2205[56];
+TMP2205[56].kind = 1;
+TMP2205[56].offset = offsetof(TY250730, retfuture250650);
+TMP2205[56].typ = (&NTI243096);
+TMP2205[56].name = "retFuture250650";
+TMP2328[2] = &TMP2205[57];
+TMP2205[57].kind = 1;
+TMP2205[57].offset = offsetof(TY250730, flags250638);
+TMP2205[57].typ = (&NTI247761);
+TMP2205[57].name = "flags250638";
+TMP2205[54].len = 3; TMP2205[54].kind = 2; TMP2205[54].sons = &TMP2328[0];
+NTI250730.node = &TMP2205[54];
+NTI250741.size = sizeof(TY250730*);
+NTI250741.kind = 22;
+NTI250741.base = (&NTI250730);
+NTI250741.marker = TMP2329;
+NTI252164.size = sizeof(TY252164);
+NTI252164.kind = 18;
+NTI252164.base = 0;
+TMP2331[0] = &TMP2205[59];
+TMP2205[59].kind = 1;
+TMP2205[59].offset = offsetof(TY252164, HEX3Astate);
+TMP2205[59].typ = (&NTI247732);
+TMP2205[59].name = ":state";
+TMP2331[1] = &TMP2205[60];
+TMP2205[60].kind = 1;
+TMP2205[60].offset = offsetof(TY252164, retfuture250813);
+TMP2205[60].typ = (&NTI250755);
+TMP2205[60].name = "retFuture250813";
+TMP2331[2] = &TMP2205[61];
+TMP2205[61].kind = 1;
+TMP2205[61].offset = offsetof(TY252164, socket250744);
+TMP2205[61].typ = (&NTI108);
+TMP2205[61].name = "socket250744";
+TMP2331[3] = &TMP2205[62];
+TMP2205[62].kind = 1;
+TMP2205[62].offset = offsetof(TY252164, clientsock250814);
+TMP2205[62].typ = (&NTI108);
+TMP2205[62].name = "clientSock250814";
+TMP2331[4] = &TMP2205[63];
+TMP2205[63].kind = 1;
+TMP2205[63].offset = offsetof(TY252164, lpoutputbuf250817);
+TMP2205[63].typ = (&NTI149);
+TMP2205[63].name = "lpOutputBuf250817";
+TMP2331[5] = &TMP2205[64];
+TMP2205[64].kind = 1;
+TMP2205[64].offset = offsetof(TY252164, dwreceivedatalength250819);
+TMP2205[64].typ = (&NTI105229);
+TMP2205[64].name = "dwReceiveDataLength250819";
+TMP2331[6] = &TMP2205[65];
+TMP2205[65].kind = 1;
+TMP2205[65].offset = offsetof(TY252164, dwlocaladdresslength250821);
+TMP2205[65].typ = (&NTI105229);
+TMP2205[65].name = "dwLocalAddressLength250821";
+TMP2331[7] = &TMP2205[66];
+TMP2205[66].kind = 1;
+TMP2205[66].offset = offsetof(TY252164, dwremoteaddresslength250823);
+TMP2205[66].typ = (&NTI105229);
+TMP2205[66].name = "dwRemoteAddressLength250823";
+TMP2331[8] = &TMP2205[67];
+TMP2205[67].kind = 1;
+TMP2205[67].offset = offsetof(TY252164, flags250747);
+TMP2205[67].typ = (&NTI247761);
+TMP2205[67].name = "flags250747";
+TMP2331[9] = &TMP2205[68];
+TMP2205[68].kind = 1;
+TMP2205[68].offset = offsetof(TY252164, newacceptfut252058);
+TMP2205[68].typ = (&NTI250755);
+TMP2205[68].name = "newAcceptFut252058";
+TMP2205[58].len = 10; TMP2205[58].kind = 2; TMP2205[58].sons = &TMP2331[0];
+NTI252164.node = &TMP2205[58];
+NTI252198.size = sizeof(TY252164*);
+NTI252198.kind = 22;
+NTI252198.base = (&NTI252164);
+NTI252198.marker = TMP2332;
+NTI252167.size = sizeof(TY252167);
+NTI252167.kind = 18;
+NTI252167.base = 0;
+TMP2336[0] = &TMP2205[70];
+TMP2205[70].kind = 1;
+TMP2205[70].offset = offsetof(TY252167, HEX3Astate);
+TMP2205[70].typ = (&NTI247732);
+TMP2205[70].name = ":state";
+TMP2336[1] = &TMP2205[71];
+TMP2205[71].kind = 1;
+TMP2205[71].offset = offsetof(TY252167, newacceptfut251614);
+TMP2205[71].typ = (&NTI250755);
+TMP2205[71].name = "newAcceptFut251614";
+TMP2336[2] = &TMP2205[72];
+TMP2205[72].kind = 1;
+TMP2205[72].offset = offsetof(TY252167, HEX3Aup252176);
+TMP2205[72].typ = (&NTI252198);
+TMP2205[72].name = ":up252176";
+TMP2205[69].len = 3; TMP2205[69].kind = 2; TMP2205[69].sons = &TMP2336[0];
+NTI252167.node = &TMP2205[69];
+NTI252196.size = sizeof(TY252167*);
+NTI252196.kind = 22;
+NTI252196.base = (&NTI252167);
+NTI252196.marker = TMP2337;
+NTI252663.size = sizeof(FutureHEX3Aobjecttype252663);
+NTI252663.kind = 17;
+NTI252663.base = (&NTI243017);
+TMP2205[73].kind = 1;
+TMP2205[73].offset = offsetof(FutureHEX3Aobjecttype252663, value);
+TMP2205[73].typ = (&NTI108);
+TMP2205[73].name = "value";
+NTI252663.node = &TMP2205[73];
+NTI252662.size = sizeof(FutureHEX3Aobjecttype252663*);
+NTI252662.kind = 22;
+NTI252662.base = (&NTI252663);
+NTI252662.marker = TMP2339;
+NTI253830.size = sizeof(TY253830);
+NTI253830.kind = 18;
+NTI253830.base = 0;
+TMP2343[0] = &TMP2205[75];
+TMP2205[75].kind = 1;
+TMP2205[75].offset = offsetof(TY253830, HEX3Astate);
+TMP2205[75].typ = (&NTI247732);
+TMP2205[75].name = ":state";
+TMP2343[1] = &TMP2205[76];
+NTI253820.size = sizeof(TY244243);
+NTI253820.kind = 18;
+NTI253820.base = 0;
+NTI253820.flags = 2;
+TMP2344[0] = &TMP2205[78];
+TMP2205[78].kind = 1;
+TMP2205[78].offset = offsetof(TY244243, Field0);
+TMP2205[78].typ = (&NTI153);
+TMP2205[78].name = "Field0";
+TMP2344[1] = &TMP2205[79];
+TMP2205[79].kind = 1;
+TMP2205[79].offset = offsetof(TY244243, Field1);
+TMP2205[79].typ = (&NTI244245);
+TMP2205[79].name = "Field1";
+TMP2205[77].len = 2; TMP2205[77].kind = 2; TMP2205[77].sons = &TMP2344[0];
+NTI253820.node = &TMP2205[77];
+TMP2205[76].kind = 1;
+TMP2205[76].offset = offsetof(TY253830, cb253827);
+TMP2205[76].typ = (&NTI253820);
+TMP2205[76].name = "cb253827";
+TMP2343[2] = &TMP2205[80];
+TMP2205[80].kind = 1;
+TMP2205[80].offset = offsetof(TY253830, future253819);
+TMP2205[80].typ = (&NTI250755);
+TMP2205[80].name = "future253819";
+TMP2205[74].len = 3; TMP2205[74].kind = 2; TMP2205[74].sons = &TMP2343[0];
+NTI253830.node = &TMP2205[74];
+NTI253841.size = sizeof(TY253830*);
+NTI253841.kind = 22;
+NTI253841.base = (&NTI253830);
+NTI253841.marker = TMP2345;
+NTI253842.size = sizeof(TY253842);
+NTI253842.kind = 18;
+NTI253842.base = 0;
+TMP2347[0] = &TMP2205[82];
+TMP2205[82].kind = 1;
+TMP2205[82].offset = offsetof(TY253842, HEX3Astate);
+TMP2205[82].typ = (&NTI247732);
+TMP2205[82].name = ":state";
+TMP2347[1] = &TMP2205[83];
+TMP2205[83].kind = 1;
+TMP2205[83].offset = offsetof(TY253842, retfut252813);
+TMP2205[83].typ = (&NTI252662);
+TMP2205[83].name = "retFut252813";
+TMP2205[81].len = 2; TMP2205[81].kind = 2; TMP2205[81].sons = &TMP2347[0];
+NTI253842.node = &TMP2205[81];
+NTI253852.size = sizeof(TY253842*);
+NTI253852.kind = 22;
+NTI253852.base = (&NTI253842);
+NTI253852.marker = TMP2348;
+NTI255410.size = sizeof(TY255410);
+NTI255410.kind = 18;
+NTI255410.base = 0;
+TMP2351[0] = &TMP2205[85];
+NTI255412.size = sizeof(NI);
+NTI255412.kind = 20;
+NTI255412.base = (&NTI108);
+NTI255412.flags = 3;
+TMP2205[85].kind = 1;
+TMP2205[85].offset = offsetof(TY255410, HEX3Astate);
+TMP2205[85].typ = (&NTI255412);
+TMP2205[85].name = ":state";
+TMP2351[1] = &TMP2205[86];
+TMP2205[86].kind = 1;
+TMP2205[86].offset = offsetof(TY255410, socket254601);
+TMP2205[86].typ = (&NTI108);
+TMP2205[86].name = "socket254601";
+TMP2351[2] = &TMP2205[87];
+TMP2205[87].kind = 1;
+TMP2205[87].offset = offsetof(TY255410, retfuture254595);
+TMP2205[87].typ = (&NTI247768);
+TMP2205[87].name = "retFuture254595";
+TMP2351[3] = &TMP2205[88];
+NTI254613.size = sizeof(TY244243);
+NTI254613.kind = 18;
+NTI254613.base = 0;
+NTI254613.flags = 2;
+TMP2352[0] = &TMP2205[90];
+TMP2205[90].kind = 1;
+TMP2205[90].offset = offsetof(TY244243, Field0);
+TMP2205[90].typ = (&NTI153);
+TMP2205[90].name = "Field0";
+TMP2352[1] = &TMP2205[91];
+TMP2205[91].kind = 1;
+TMP2205[91].offset = offsetof(TY244243, Field1);
+TMP2205[91].typ = (&NTI244245);
+TMP2205[91].name = "Field1";
+TMP2205[89].len = 2; TMP2205[89].kind = 2; TMP2205[89].sons = &TMP2352[0];
+NTI254613.node = &TMP2205[89];
+TMP2205[88].kind = 1;
+TMP2205[88].offset = offsetof(TY255410, nameitervar255231);
+TMP2205[88].typ = (&NTI254613);
+TMP2205[88].name = "nameIterVar255231";
+TMP2351[4] = &TMP2205[92];
+TMP2205[92].kind = 1;
+TMP2205[92].offset = offsetof(TY255410, result254615);
+TMP2205[92].typ = (&NTI149);
+TMP2205[92].name = "result254615";
+TMP2351[5] = &TMP2205[93];
+TMP2205[93].kind = 1;
+TMP2205[93].offset = offsetof(TY255410, c254621);
+TMP2205[93].typ = (&NTI149);
+TMP2205[93].name = "c254621";
+TMP2351[6] = &TMP2205[94];
+TMP2205[94].kind = 1;
+TMP2205[94].offset = offsetof(TY255410, future254597);
+TMP2205[94].typ = (&NTI247768);
+TMP2205[94].name = "future254597";
+TMP2351[7] = &TMP2205[95];
+TMP2205[95].kind = 1;
+TMP2205[95].offset = offsetof(TY255410, future254598);
+TMP2205[95].typ = (&NTI247768);
+TMP2205[95].name = "future254598";
+TMP2205[84].len = 8; TMP2205[84].kind = 2; TMP2205[84].sons = &TMP2351[0];
+NTI255410.node = &TMP2205[84];
+NTI255417.size = sizeof(TY255410*);
+NTI255417.kind = 22;
+NTI255417.base = (&NTI255410);
+NTI255417.marker = TMP2353;
+NTI259248.size = sizeof(FutureHEX3Aobjecttype259248);
+NTI259248.kind = 17;
+NTI259248.base = (&NTI243017);
+TMP2205[96].kind = 1;
+TMP2205[96].offset = offsetof(FutureHEX3Aobjecttype259248, value);
+TMP2205[96].typ = (&NTI259241);
+TMP2205[96].name = "value";
+NTI259248.node = &TMP2205[96];
+NTI259247.size = sizeof(FutureHEX3Aobjecttype259248*);
+NTI259247.kind = 22;
+NTI259247.base = (&NTI259248);
+NTI259247.marker = TMP2400;
+NTI260455.size = sizeof(FutureHEX3Aobjecttype260455);
+NTI260455.kind = 17;
+NTI260455.base = (&NTI243017);
+TMP2205[97].kind = 1;
+TMP2205[97].offset = offsetof(FutureHEX3Aobjecttype260455, value);
+TMP2205[97].typ = (&NTI256204);
+TMP2205[97].name = "value";
+NTI260455.node = &TMP2205[97];
+NTI260454.size = sizeof(FutureHEX3Aobjecttype260455*);
+NTI260454.kind = 22;
+NTI260454.base = (&NTI260455);
+NTI260454.marker = TMP2408;
+NTI262030.size = sizeof(TY262030);
+NTI262030.kind = 18;
+NTI262030.base = 0;
+TMP2412[0] = &TMP2205[99];
+TMP2205[99].kind = 1;
+TMP2205[99].offset = offsetof(TY262030, HEX3Astate);
+TMP2205[99].typ = (&NTI247732);
+TMP2205[99].name = ":state";
+TMP2412[1] = &TMP2205[100];
+NTI262020.size = sizeof(TY244243);
+NTI262020.kind = 18;
+NTI262020.base = 0;
+NTI262020.flags = 2;
+TMP2413[0] = &TMP2205[102];
+TMP2205[102].kind = 1;
+TMP2205[102].offset = offsetof(TY244243, Field0);
+TMP2205[102].typ = (&NTI153);
+TMP2205[102].name = "Field0";
+TMP2413[1] = &TMP2205[103];
+TMP2205[103].kind = 1;
+TMP2205[103].offset = offsetof(TY244243, Field1);
+TMP2205[103].typ = (&NTI244245);
+TMP2205[103].name = "Field1";
+TMP2205[101].len = 2; TMP2205[101].kind = 2; TMP2205[101].sons = &TMP2413[0];
+NTI262020.node = &TMP2205[101];
+TMP2205[100].kind = 1;
+TMP2205[100].offset = offsetof(TY262030, cb262027);
+TMP2205[100].typ = (&NTI262020);
+TMP2205[100].name = "cb262027";
+TMP2412[2] = &TMP2205[104];
+TMP2205[104].kind = 1;
+TMP2205[104].offset = offsetof(TY262030, future262019);
+TMP2205[104].typ = (&NTI259247);
+TMP2205[104].name = "future262019";
+TMP2205[98].len = 3; TMP2205[98].kind = 2; TMP2205[98].sons = &TMP2412[0];
+NTI262030.node = &TMP2205[98];
+NTI262041.size = sizeof(TY262030*);
+NTI262041.kind = 22;
+NTI262041.base = (&NTI262030);
+NTI262041.marker = TMP2414;
+NTI267252.size = sizeof(FutureHEX3Aobjecttype267252);
+NTI267252.kind = 17;
+NTI267252.base = (&NTI243017);
+TMP2205[105].kind = 1;
+TMP2205[105].offset = offsetof(FutureHEX3Aobjecttype267252, value);
+TMP2205[105].typ = (&NTI265008);
+TMP2205[105].name = "value";
+NTI267252.node = &TMP2205[105];
+NTI267251.size = sizeof(FutureHEX3Aobjecttype267252*);
+NTI267251.kind = 22;
+NTI267251.base = (&NTI267252);
+NTI267251.marker = TMP2624;
 }
 

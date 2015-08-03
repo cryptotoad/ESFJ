@@ -10,8 +10,8 @@
 #include <string.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tsqlite3188286 Tsqlite3188286;
-typedef struct Edb190009 Edb190009;
+typedef struct Tsqlite3165291 Tsqlite3165291;
+typedef struct Edb167009 Edb167009;
 typedef struct Ioerror3431 Ioerror3431;
 typedef struct Systemerror3429 Systemerror3429;
 typedef struct Exception Exception;
@@ -31,9 +31,9 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct Tstmt188296 Tstmt188296;
+typedef struct Tstmt165301 Tstmt165301;
 typedef struct TY13606 TY13606;
-typedef struct TY190494 TY190494;
+typedef struct TY167494 TY167494;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
 struct  TGenericSeq  {
@@ -72,7 +72,7 @@ struct  Systemerror3429  {
 struct  Ioerror3431  {
   Systemerror3429 Sup;
 };
-struct  Edb190009  {
+struct  Edb167009  {
   Ioerror3431 Sup;
 };
 struct  TNimNode  {
@@ -83,7 +83,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-typedef N_CDECL_PTR(NCSTRING, TY188542) (Tsqlite3188286* para1);
+typedef N_CDECL_PTR(NCSTRING, TY165547) (Tsqlite3165291* para1);
 struct  Tcell46746  {
 NI refcount;
 TNimType* typ;
@@ -140,19 +140,19 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-typedef N_CDECL_PTR(int, TY188566) (Tsqlite3188286* db, NCSTRING zsql, int nbyte, Tstmt188296** ppstmt, NCSTRING* pztail);
-typedef N_CDECL_PTR(NI32, TY188735) (Tstmt188296* para1);
-typedef N_CDECL_PTR(NI32, TY188810) (Tstmt188296* pstmt);
-typedef N_CDECL_PTR(NI32, TY188754) (Tstmt188296* para1, NI32 icol);
-typedef N_CDECL_PTR(NCSTRING, TY188789) (Tstmt188296* para1, NI32 icol);
-typedef N_CDECL_PTR(NI32, TY188701) (Tstmt188296* pstmt);
-typedef N_CDECL_PTR(NI64, TY188374) (Tsqlite3188286* para1);
-typedef N_CDECL_PTR(NI32, TY188380) (Tsqlite3188286* para1);
-typedef N_CDECL_PTR(NI32, TY188357) (Tsqlite3188286* para1);
-typedef N_CDECL_PTR(NI32, TY188520) (NCSTRING filename, Tsqlite3188286** ppdb);
-typedef NimStringDesc* TY190666[1];
-typedef NimStringDesc* TY184637[1];
-struct  Tsqlite3188286  {
+typedef N_CDECL_PTR(int, TY165571) (Tsqlite3165291* db, NCSTRING zsql, int nbyte, Tstmt165301** ppstmt, NCSTRING* pztail);
+typedef N_CDECL_PTR(NI32, TY165740) (Tstmt165301* para1);
+typedef N_CDECL_PTR(NI32, TY165815) (Tstmt165301* pstmt);
+typedef N_CDECL_PTR(NI32, TY165759) (Tstmt165301* para1, NI32 icol);
+typedef N_CDECL_PTR(NCSTRING, TY165794) (Tstmt165301* para1, NI32 icol);
+typedef N_CDECL_PTR(NI32, TY165706) (Tstmt165301* pstmt);
+typedef N_CDECL_PTR(NI64, TY165379) (Tsqlite3165291* para1);
+typedef N_CDECL_PTR(NI32, TY165385) (Tsqlite3165291* para1);
+typedef N_CDECL_PTR(NI32, TY165362) (Tsqlite3165291* para1);
+typedef N_CDECL_PTR(NI32, TY165525) (NCSTRING filename, Tsqlite3165291** ppdb);
+typedef NimStringDesc* TY167666[1];
+typedef NimStringDesc* TY161637[1];
+struct  Tsqlite3165291  {
 char dummy;
 };
 typedef NI TY27820[8];
@@ -199,7 +199,7 @@ NI key;
 NI upperbound;
 NI level;
 };
-struct  Tstmt188296  {
+struct  Tstmt165301  {
 char dummy;
 };
 struct  Tfreecell27830  {
@@ -210,18 +210,18 @@ struct TY13606 {
   TGenericSeq Sup;
   NimStringDesc* data[SEQ_DECL_SIZE];
 };
-struct TY190494 {
+struct TY167494 {
   TGenericSeq Sup;
   TY13606* data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NimStringDesc*, sql_190021)(NimStringDesc* query);
+static N_INLINE(NimStringDesc*, sql_167021)(NimStringDesc* query);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, dberror_190032)(Tsqlite3188286* db);
+N_NIMCALL(void, dberror_167032)(Tsqlite3165291* db);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP803)(void* p, NI op);
+N_NIMCALL(void, TMP684)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, cstrToNimstr)(NCSTRING str);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
@@ -229,10 +229,10 @@ static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(void, dberror_190052)(NimStringDesc* msg);
+N_NIMCALL(void, dberror_167052)(NimStringDesc* msg);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
-N_NIMCALL(NimStringDesc*, dbquote_190072)(NimStringDesc* s);
+N_NIMCALL(NimStringDesc*, dbquote_167072)(NimStringDesc* s);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
@@ -240,58 +240,58 @@ N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NIMCALL(void, failedassertimpl_88817)(NimStringDesc* msg);
-N_NIMCALL(NimStringDesc*, dbformat_190098)(NimStringDesc* formatstr, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(NIM_BOOL, tryexec_190138)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NimStringDesc*, dbformat_167098)(NimStringDesc* formatstr, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NIM_BOOL, tryexec_167138)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(void, exec_190155)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(TY13606*, newrow_190167)(NI L);
+N_NIMCALL(void, exec_167155)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(TY13606*, newrow_167167)(NI L);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(Tstmt188296*, setupquery_190215)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(void, setrow_190230)(Tstmt188296* stmt, TY13606** r, int cols);
+N_NIMCALL(Tstmt165301*, setupquery_167215)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(void, setrow_167230)(Tstmt165301* stmt, TY13606** r, int cols);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
 N_NIMCALL(void, add_9054)(NimStringDesc** x, NCSTRING y);
-N_NIMCALL(TY13606*, getrow_190472)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(TY190494*, getallrows_190488)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(void, TMP819)(void* p, NI op);
+N_NIMCALL(TY13606*, getrow_167472)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(TY167494*, getallrows_167488)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(void, TMP700)(void* p, NI op);
 N_NIMCALL(TGenericSeq*, incrSeq)(TGenericSeq* seq, NI elemsize);
 N_NIMCALL(void, genericSeqAssign)(void* dest, void* src_83404, TNimType* mt);
-N_NIMCALL(NimStringDesc*, getvalue_190577)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NimStringDesc*, getvalue_167577)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI cap);
-N_NIMCALL(NI64, tryinsertid_190593)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(NI64, insertid_190610)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(NI64, execaffectedrows_190623)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(void, close_190636)(Tsqlite3188286* db);
-N_NIMCALL(Tsqlite3188286*, open_190645)(NimStringDesc* connection, NimStringDesc* user, NimStringDesc* password, NimStringDesc* database);
-N_NIMCALL(NIM_BOOL, setencoding_190661)(Tsqlite3188286* connection, NimStringDesc* encoding);
+N_NIMCALL(NI64, tryinsertid_167593)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NI64, insertid_167610)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(NI64, execaffectedrows_167623)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0);
+N_NIMCALL(void, close_167636)(Tsqlite3165291* db);
+N_NIMCALL(Tsqlite3165291*, open_167645)(NimStringDesc* connection, NimStringDesc* user, NimStringDesc* password, NimStringDesc* database);
+N_NIMCALL(NIM_BOOL, setencoding_167661)(Tsqlite3165291* connection, NimStringDesc* encoding);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
-STRING_LITERAL(TMP807, "NULL", 4);
-STRING_LITERAL(TMP808, "\'", 1);
-STRING_LITERAL(TMP809, "\'\'", 2);
-STRING_LITERAL(TMP811, "len(a) == L string modified while iterating over it", 51);
-STRING_LITERAL(TMP812, "", 0);
-STRING_LITERAL(TMP820, "PRAGMA encoding = ?", 19);
-STRING_LITERAL(TMP821, "PRAGMA encoding", 15);
+STRING_LITERAL(TMP688, "NULL", 4);
+STRING_LITERAL(TMP689, "\'", 1);
+STRING_LITERAL(TMP690, "\'\'", 2);
+STRING_LITERAL(TMP692, "len(a) == L string modified while iterating over it", 51);
+STRING_LITERAL(TMP693, "", 0);
+STRING_LITERAL(TMP701, "PRAGMA encoding = ?", 19);
+STRING_LITERAL(TMP702, "PRAGMA encoding", 15);
 extern TFrame* frameptr_17042;
 extern TNimType NTI3431; /* IOError */
-TNimType NTI190009; /* EDb */
-TNimType NTI190035; /* ref EDb */
-extern TY188542 Dl_188541;
+TNimType NTI167009; /* EDb */
+TNimType NTI167035; /* ref EDb */
+extern TY165547 Dl_165546;
 extern Tgcheap48616 gch_48644;
-extern TY188566 Dl_188565;
-extern TY188735 Dl_188734;
-extern TY188810 Dl_188809;
+extern TY165571 Dl_165570;
+extern TY165740 Dl_165739;
+extern TY165815 Dl_165814;
 extern TNimType NTI13606; /* seq[string] */
-extern TY188754 Dl_188753;
-extern TY188789 Dl_188788;
-extern TY188701 Dl_188700;
-TNimType NTI190494; /* seq[TRow] */
-extern TY188374 Dl_188373;
-extern TY188380 Dl_188379;
-extern TY188357 Dl_188356;
-extern TY188520 Dl_188519;
+extern TY165759 Dl_165758;
+extern TY165794 Dl_165793;
+extern TY165706 Dl_165705;
+TNimType NTI167494; /* seq[TRow] */
+extern TY165379 Dl_165378;
+extern TY165385 Dl_165384;
+extern TY165362 Dl_165361;
+extern TY165525 Dl_165524;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -320,7 +320,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NimStringDesc*, sql_190021)(NimStringDesc* query) {
+static N_INLINE(NimStringDesc*, sql_167021)(NimStringDesc* query) {
 	NimStringDesc* result;
 	nimfr("sql", "db_sqlite.nim")
 	result = 0;
@@ -329,9 +329,9 @@ static N_INLINE(NimStringDesc*, sql_190021)(NimStringDesc* query) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP803)(void* p, NI op) {
-	Edb190009* a;
-	a = (Edb190009*)p;
+N_NIMCALL(void, TMP684)(void* p, NI op) {
+	Edb167009* a;
+	a = (Edb167009*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.parent, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.message, op);
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.trace, op);
@@ -389,17 +389,17 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, dberror_190032)(Tsqlite3188286* db) {
-	Edb190009* e;
+N_NIMCALL(void, dberror_167032)(Tsqlite3165291* db) {
+	Edb167009* e;
 	NCSTRING LOC1;
 	nimfr("dbError", "db_sqlite.nim")
 	e = 0;
 	nimln(39, "db_sqlite.nim");
-	e = (Edb190009*) newObj((&NTI190035), sizeof(Edb190009));
-	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI190009);
+	e = (Edb167009*) newObj((&NTI167035), sizeof(Edb167009));
+	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI167009);
 	nimln(40, "db_sqlite.nim");
 	LOC1 = 0;
-	LOC1 = Dl_188541(db);
+	LOC1 = Dl_165546(db);
 	asgnRefNoCycle((void**) (&(*e).Sup.Sup.Sup.message), cstrToNimstr(LOC1));
 	nimln(41, "db_sqlite.nim");
 	raiseException((Exception*)e, "EDb");
@@ -424,14 +424,14 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, dberror_190052)(NimStringDesc* msg) {
-	Edb190009* e;
+N_NIMCALL(void, dberror_167052)(NimStringDesc* msg) {
+	Edb167009* e;
 	NimStringDesc* LOC1;
 	nimfr("dbError", "db_sqlite.nim")
 	e = 0;
 	nimln(46, "db_sqlite.nim");
-	e = (Edb190009*) newObj((&NTI190035), sizeof(Edb190009));
-	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI190009);
+	e = (Edb167009*) newObj((&NTI167035), sizeof(Edb167009));
+	(*e).Sup.Sup.Sup.Sup.m_type = (&NTI167009);
 	nimln(47, "db_sqlite.nim");
 	LOC1 = 0;
 	LOC1 = (*e).Sup.Sup.Sup.message; (*e).Sup.Sup.Sup.message = copyStringRC1(msg);
@@ -466,56 +466,56 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, dbquote_190072)(NimStringDesc* s) {
+N_NIMCALL(NimStringDesc*, dbquote_167072)(NimStringDesc* s) {
 	NimStringDesc* result;
 	nimfr("dbQuote", "db_sqlite.nim")
 {	result = 0;
 	nimln(51, "db_sqlite.nim");
 	{
 		if (!s == 0) goto LA3;
-		result = copyString(((NimStringDesc*) &TMP807));
+		result = copyString(((NimStringDesc*) &TMP688));
 		goto BeforeRet;
 	}
 	LA3: ;
 	nimln(52, "db_sqlite.nim");
-	result = copyString(((NimStringDesc*) &TMP808));
+	result = copyString(((NimStringDesc*) &TMP689));
 	{
-		NIM_CHAR c_190076;
-		NI i_190080;
-		NI L_190082;
-		c_190076 = 0;
+		NIM_CHAR c_167076;
+		NI i_167080;
+		NI L_167082;
+		c_167076 = 0;
 		nimln(3102, "system.nim");
-		i_190080 = ((NI) 0);
+		i_167080 = ((NI) 0);
 		nimln(3103, "system.nim");
-		L_190082 = (s ? s->Sup.len : 0);
+		L_167082 = (s ? s->Sup.len : 0);
 		{
 			nimln(3104, "system.nim");
 			while (1) {
-				NI TMP810;
-				if (!(i_190080 < L_190082)) goto LA7;
+				NI TMP691;
+				if (!(i_167080 < L_167082)) goto LA7;
 				nimln(3105, "system.nim");
-				if ((NU)(i_190080) > (NU)(s->Sup.len)) raiseIndexError();
-				c_190076 = s->data[i_190080];
+				if ((NU)(i_167080) > (NU)(s->Sup.len)) raiseIndexError();
+				c_167076 = s->data[i_167080];
 				nimln(54, "db_sqlite.nim");
 				{
-					if (!((NU8)(c_190076) == (NU8)(39))) goto LA10;
+					if (!((NU8)(c_167076) == (NU8)(39))) goto LA10;
 					result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP809));
+appendString(result, ((NimStringDesc*) &TMP690));
 				}
 				goto LA8;
 				LA10: ;
 				{
 					nimln(55, "db_sqlite.nim");
-					result = addChar(result, c_190076);
+					result = addChar(result, c_167076);
 				}
 				LA8: ;
 				nimln(3106, "system.nim");
-				TMP810 = addInt(i_190080, ((NI) 1));
-				i_190080 = (NI)(TMP810);
+				TMP691 = addInt(i_167080, ((NI) 1));
+				i_167080 = (NI)(TMP691);
 				nimln(3107, "system.nim");
 				{
-					if (!!(((s ? s->Sup.len : 0) == L_190082))) goto LA15;
-					failedassertimpl_88817(((NimStringDesc*) &TMP811));
+					if (!!(((s ? s->Sup.len : 0) == L_167082))) goto LA15;
+					failedassertimpl_88817(((NimStringDesc*) &TMP692));
 				}
 				LA15: ;
 			} LA7: ;
@@ -528,65 +528,65 @@ appendString(result, ((NimStringDesc*) &TMP809));
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, dbformat_190098)(NimStringDesc* formatstr, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NimStringDesc*, dbformat_167098)(NimStringDesc* formatstr, NimStringDesc** args, NI argsLen0) {
 	NimStringDesc* result;
 	NI a;
 	nimfr("dbFormat", "db_sqlite.nim")
 	result = 0;
 	nimln(59, "db_sqlite.nim");
-	result = copyString(((NimStringDesc*) &TMP812));
+	result = copyString(((NimStringDesc*) &TMP693));
 	nimln(60, "db_sqlite.nim");
 	a = ((NI) 0);
 	{
-		NIM_CHAR c_190105;
-		NimStringDesc* HEX3Atmp_190117;
-		NI i_190120;
-		NI L_190122;
-		c_190105 = 0;
-		HEX3Atmp_190117 = 0;
+		NIM_CHAR c_167105;
+		NimStringDesc* HEX3Atmp_167117;
+		NI i_167120;
+		NI L_167122;
+		c_167105 = 0;
+		HEX3Atmp_167117 = 0;
 		nimln(61, "db_sqlite.nim");
-		HEX3Atmp_190117 = formatstr;
+		HEX3Atmp_167117 = formatstr;
 		nimln(3102, "system.nim");
-		i_190120 = ((NI) 0);
+		i_167120 = ((NI) 0);
 		nimln(3103, "system.nim");
-		L_190122 = (HEX3Atmp_190117 ? HEX3Atmp_190117->Sup.len : 0);
+		L_167122 = (HEX3Atmp_167117 ? HEX3Atmp_167117->Sup.len : 0);
 		{
 			nimln(3104, "system.nim");
 			while (1) {
-				NI TMP814;
-				if (!(i_190120 < L_190122)) goto LA3;
+				NI TMP695;
+				if (!(i_167120 < L_167122)) goto LA3;
 				nimln(3105, "system.nim");
-				if ((NU)(i_190120) > (NU)(HEX3Atmp_190117->Sup.len)) raiseIndexError();
-				c_190105 = HEX3Atmp_190117->data[i_190120];
+				if ((NU)(i_167120) > (NU)(HEX3Atmp_167117->Sup.len)) raiseIndexError();
+				c_167105 = HEX3Atmp_167117->data[i_167120];
 				nimln(62, "db_sqlite.nim");
 				{
 					NimStringDesc* LOC8;
-					NI TMP813;
-					if (!((NU8)(c_190105) == (NU8)(63))) goto LA6;
+					NI TMP694;
+					if (!((NU8)(c_167105) == (NU8)(63))) goto LA6;
 					nimln(63, "db_sqlite.nim");
 					if ((NU)(a) >= (NU)(argsLen0)) raiseIndexError();
 					LOC8 = 0;
-					LOC8 = dbquote_190072(args[a]);
+					LOC8 = dbquote_167072(args[a]);
 					result = resizeString(result, LOC8->Sup.len + 0);
 appendString(result, LOC8);
 					nimln(64, "db_sqlite.nim");
-					TMP813 = addInt(a, ((NI) 1));
-					a = (NI)(TMP813);
+					TMP694 = addInt(a, ((NI) 1));
+					a = (NI)(TMP694);
 				}
 				goto LA4;
 				LA6: ;
 				{
 					nimln(66, "db_sqlite.nim");
-					result = addChar(result, c_190105);
+					result = addChar(result, c_167105);
 				}
 				LA4: ;
 				nimln(3106, "system.nim");
-				TMP814 = addInt(i_190120, ((NI) 1));
-				i_190120 = (NI)(TMP814);
+				TMP695 = addInt(i_167120, ((NI) 1));
+				i_167120 = (NI)(TMP695);
 				nimln(3107, "system.nim");
 				{
-					if (!!(((HEX3Atmp_190117 ? HEX3Atmp_190117->Sup.len : 0) == L_190122))) goto LA12;
-					failedassertimpl_88817(((NimStringDesc*) &TMP811));
+					if (!!(((HEX3Atmp_167117 ? HEX3Atmp_167117->Sup.len : 0) == L_167122))) goto LA12;
+					failedassertimpl_88817(((NimStringDesc*) &TMP692));
 				}
 				LA12: ;
 			} LA3: ;
@@ -620,31 +620,31 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, tryexec_190138)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NIM_BOOL, tryexec_167138)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	NIM_BOOL result;
 	NimStringDesc* q;
-	Tstmt188296* stmt;
+	Tstmt165301* stmt;
 	nimfr("tryExec", "db_sqlite.nim")
 	result = 0;
 	nimln(71, "db_sqlite.nim");
-	q = dbformat_190098(query, args, argsLen0);
+	q = dbformat_167098(query, args, argsLen0);
 	stmt = 0;
 	nimln(73, "db_sqlite.nim");
 	{
 		int LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188565(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &stmt, NIM_NIL);
+		LOC3 = Dl_165570(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &stmt, NIM_NIL);
 		if (!(LOC3 == ((NI32) 0))) goto LA4;
 		nimln(74, "db_sqlite.nim");
 		{
 			NI32 LOC8;
 			NI32 LOC11;
 			LOC8 = 0;
-			LOC8 = Dl_188734(stmt);
+			LOC8 = Dl_165739(stmt);
 			if (!(LOC8 == ((NI32) 101))) goto LA9;
 			nimln(75, "db_sqlite.nim");
 			LOC11 = 0;
-			LOC11 = Dl_188809(stmt);
+			LOC11 = Dl_165814(stmt);
 			result = (LOC11 == ((NI32) 0));
 		}
 		LA9: ;
@@ -654,15 +654,15 @@ N_NIMCALL(NIM_BOOL, tryexec_190138)(Tsqlite3188286* db, NimStringDesc* query, Ni
 	return result;
 }
 
-N_NIMCALL(void, exec_190155)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(void, exec_167155)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	nimfr("exec", "db_sqlite.nim")
 	nimln(80, "db_sqlite.nim");
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = tryexec_190138(db, query, args, argsLen0);
+		LOC3 = tryexec_167138(db, query, args, argsLen0);
 		if (!!(LOC3)) goto LA4;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA4: ;
 	popFrame();
@@ -688,40 +688,40 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(TY13606*, newrow_190167)(NI L) {
+N_NIMCALL(TY13606*, newrow_167167)(NI L) {
 	TY13606* result;
 	nimfr("newRow", "db_sqlite.nim")
 	result = 0;
 	nimln(83, "db_sqlite.nim");
 	result = (TY13606*) newSeq((&NTI13606), ((NI)chckRange(L, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	{
-		NI i_190191;
-		NI HEX3Atmp_190193;
-		NI TMP815;
-		NI res_190196;
-		i_190191 = 0;
-		HEX3Atmp_190193 = 0;
+		NI i_167191;
+		NI HEX3Atmp_167193;
+		NI TMP696;
+		NI res_167196;
+		i_167191 = 0;
+		HEX3Atmp_167193 = 0;
 		nimln(84, "db_sqlite.nim");
-		TMP815 = subInt(L, ((NI) 1));
-		HEX3Atmp_190193 = (NI)(TMP815);
+		TMP696 = subInt(L, ((NI) 1));
+		HEX3Atmp_167193 = (NI)(TMP696);
 		nimln(1598, "system.nim");
-		res_190196 = ((NI) 0);
+		res_167196 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NimStringDesc* LOC4;
-				NI TMP816;
-				if (!(res_190196 <= HEX3Atmp_190193)) goto LA3;
+				NI TMP697;
+				if (!(res_167196 <= HEX3Atmp_167193)) goto LA3;
 				nimln(1600, "system.nim");
-				i_190191 = res_190196;
+				i_167191 = res_167196;
 				nimln(84, "db_sqlite.nim");
-				if ((NU)(i_190191) >= (NU)(result->Sup.len)) raiseIndexError();
+				if ((NU)(i_167191) >= (NU)(result->Sup.len)) raiseIndexError();
 				LOC4 = 0;
-				LOC4 = result->data[i_190191]; result->data[i_190191] = copyStringRC1(((NimStringDesc*) &TMP812));
+				LOC4 = result->data[i_167191]; result->data[i_167191] = copyStringRC1(((NimStringDesc*) &TMP693));
 				if (LOC4) nimGCunrefNoCycle(LOC4);
 				nimln(1619, "system.nim");
-				TMP816 = addInt(res_190196, ((NI) 1));
-				res_190196 = (NI)(TMP816);
+				TMP697 = addInt(res_167196, ((NI) 1));
+				res_167196 = (NI)(TMP697);
 			} LA3: ;
 		}
 	}
@@ -729,161 +729,161 @@ N_NIMCALL(TY13606*, newrow_190167)(NI L) {
 	return result;
 }
 
-N_NIMCALL(Tstmt188296*, setupquery_190215)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
-	Tstmt188296* result;
+N_NIMCALL(Tstmt165301*, setupquery_167215)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+	Tstmt165301* result;
 	NimStringDesc* q;
 	nimfr("setupQuery", "db_sqlite.nim")
 	result = 0;
 	nimln(88, "db_sqlite.nim");
-	q = dbformat_190098(query, args, argsLen0);
+	q = dbformat_167098(query, args, argsLen0);
 	nimln(89, "db_sqlite.nim");
 	{
 		int LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188565(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &result, NIM_NIL);
+		LOC3 = Dl_165570(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &result, NIM_NIL);
 		if (!!((LOC3 == ((NI32) 0)))) goto LA4;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA4: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, setrow_190230)(Tstmt188296* stmt, TY13606** r, int cols) {
+N_NIMCALL(void, setrow_167230)(Tstmt165301* stmt, TY13606** r, int cols) {
 	nimfr("setRow", "db_sqlite.nim")
 	{
-		NI32 col_190423;
-		NI32 HEX3Atmp_190427;
-		NI TMP817;
-		NI res_190430;
-		col_190423 = 0;
-		HEX3Atmp_190427 = 0;
+		NI32 col_167423;
+		NI32 HEX3Atmp_167427;
+		NI TMP698;
+		NI res_167430;
+		col_167423 = 0;
+		HEX3Atmp_167427 = 0;
 		nimln(92, "db_sqlite.nim");
-		TMP817 = subInt(cols, ((NI32) 1));
-		if (TMP817 < (-2147483647 -1) || TMP817 > 2147483647) raiseOverflow();
-		HEX3Atmp_190427 = (NI32)(TMP817);
+		TMP698 = subInt(cols, ((NI32) 1));
+		if (TMP698 < (-2147483647 -1) || TMP698 > 2147483647) raiseOverflow();
+		HEX3Atmp_167427 = (NI32)(TMP698);
 		nimln(1598, "system.nim");
-		res_190430 = ((NI) 0);
+		res_167430 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI32 LOC4;
 				NCSTRING x;
-				NI TMP818;
-				if (!(res_190430 <= ((NI) (HEX3Atmp_190427)))) goto LA3;
+				NI TMP699;
+				if (!(res_167430 <= ((NI) (HEX3Atmp_167427)))) goto LA3;
 				nimln(1600, "system.nim");
-				col_190423 = ((NI32)chckRange(res_190430, ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
+				col_167423 = ((NI32)chckRange(res_167430, ((NI32) (-2147483647 -1)), ((NI32) 2147483647)));
 				nimln(93, "db_sqlite.nim");
-				if ((NU)(col_190423) >= (NU)((*r)->Sup.len)) raiseIndexError();
+				if ((NU)(col_167423) >= (NU)((*r)->Sup.len)) raiseIndexError();
 				LOC4 = 0;
-				LOC4 = Dl_188753(stmt, col_190423);
-				(*r)->data[col_190423] = setLengthStr((*r)->data[col_190423], ((NI)chckRange(LOC4, ((NI) 0), ((NI) IL64(9223372036854775807)))));
+				LOC4 = Dl_165758(stmt, col_167423);
+				(*r)->data[col_167423] = setLengthStr((*r)->data[col_167423], ((NI)chckRange(LOC4, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 				nimln(94, "db_sqlite.nim");
-				if ((NU)(col_190423) >= (NU)((*r)->Sup.len)) raiseIndexError();
-				(*r)->data[col_190423] = setLengthStr((*r)->data[col_190423], ((NI) 0));
+				if ((NU)(col_167423) >= (NU)((*r)->Sup.len)) raiseIndexError();
+				(*r)->data[col_167423] = setLengthStr((*r)->data[col_167423], ((NI) 0));
 				nimln(95, "db_sqlite.nim");
-				x = Dl_188788(stmt, col_190423);
+				x = Dl_165793(stmt, col_167423);
 				nimln(96, "db_sqlite.nim");
 				{
 					if (!!(x == 0)) goto LA7;
-					if ((NU)(col_190423) >= (NU)((*r)->Sup.len)) raiseIndexError();
-					add_9054((&(*r)->data[col_190423]), x);
+					if ((NU)(col_167423) >= (NU)((*r)->Sup.len)) raiseIndexError();
+					add_9054((&(*r)->data[col_167423]), x);
 				}
 				LA7: ;
 				nimln(1619, "system.nim");
-				TMP818 = addInt(res_190430, ((NI) 1));
-				res_190430 = (NI)(TMP818);
+				TMP699 = addInt(res_167430, ((NI) 1));
+				res_167430 = (NI)(TMP699);
 			} LA3: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(TY13606*, getrow_190472)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(TY13606*, getrow_167472)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	TY13606* result;
-	Tstmt188296* stmt;
+	Tstmt165301* stmt;
 	NI32 L;
 	nimfr("getRow", "db_sqlite.nim")
 	result = 0;
 	nimln(115, "db_sqlite.nim");
-	stmt = setupquery_190215(db, query, args, argsLen0);
+	stmt = setupquery_167215(db, query, args, argsLen0);
 	nimln(116, "db_sqlite.nim");
-	L = Dl_188700(stmt);
+	L = Dl_165705(stmt);
 	nimln(117, "db_sqlite.nim");
-	result = newrow_190167(((NI) (L)));
+	result = newrow_167167(((NI) (L)));
 	nimln(118, "db_sqlite.nim");
 	{
 		NI32 LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188734(stmt);
+		LOC3 = Dl_165739(stmt);
 		if (!(LOC3 == ((NI32) 100))) goto LA4;
 		nimln(119, "db_sqlite.nim");
-		setrow_190230(stmt, (&result), L);
+		setrow_167230(stmt, (&result), L);
 	}
 	LA4: ;
 	nimln(120, "db_sqlite.nim");
 	{
 		NI32 LOC8;
 		LOC8 = 0;
-		LOC8 = Dl_188809(stmt);
+		LOC8 = Dl_165814(stmt);
 		if (!!((LOC8 == ((NI32) 0)))) goto LA9;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA9: ;
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP819)(void* p, NI op) {
-	TY190494* a;
+N_NIMCALL(void, TMP700)(void* p, NI op) {
+	TY167494* a;
 	NI LOC1;
-	a = (TY190494*)p;
+	a = (TY167494*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	nimGCvisit((void*)a->data[LOC1], op);
 	}
 }
 
-N_NIMCALL(TY190494*, getallrows_190488)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
-	TY190494* result;
+N_NIMCALL(TY167494*, getallrows_167488)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+	TY167494* result;
 	nimfr("getAllRows", "db_sqlite.nim")
 	result = 0;
 	nimln(125, "db_sqlite.nim");
-	result = (TY190494*) newSeq((&NTI190494), 0);
+	result = (TY167494*) newSeq((&NTI167494), 0);
 	{
-		TY13606* r_190512;
-		Tstmt188296* stmt_190526;
-		NI32 L_190528;
-		TY13606* result_190530;
-		r_190512 = 0;
+		TY13606* r_167512;
+		Tstmt165301* stmt_167526;
+		NI32 L_167528;
+		TY13606* result_167530;
+		r_167512 = 0;
 		nimln(103, "db_sqlite.nim");
-		stmt_190526 = setupquery_190215(db, query, args, argsLen0);
+		stmt_167526 = setupquery_167215(db, query, args, argsLen0);
 		nimln(104, "db_sqlite.nim");
-		L_190528 = Dl_188700(stmt_190526);
+		L_167528 = Dl_165705(stmt_167526);
 		nimln(105, "db_sqlite.nim");
-		result_190530 = newrow_190167(((NI) (L_190528)));
+		result_167530 = newrow_167167(((NI) (L_167528)));
 		{
 			nimln(106, "db_sqlite.nim");
 			while (1) {
 				NI32 LOC4;
 				LOC4 = 0;
-				LOC4 = Dl_188734(stmt_190526);
+				LOC4 = Dl_165739(stmt_167526);
 				if (!(LOC4 == ((NI32) 100))) goto LA3;
 				nimln(107, "db_sqlite.nim");
-				setrow_190230(stmt_190526, (&result_190530), L_190528);
+				setrow_167230(stmt_167526, (&result_167530), L_167528);
 				nimln(105, "db_sqlite.nim");
-				r_190512 = result_190530;
+				r_167512 = result_167530;
 				nimln(127, "db_sqlite.nim");
-				result = (TY190494*) incrSeq(&(result)->Sup, sizeof(TY13606*));
-				genericSeqAssign((&result->data[result->Sup.len-1]), r_190512, (&NTI13606));
+				result = (TY167494*) incrSeq(&(result)->Sup, sizeof(TY13606*));
+				genericSeqAssign((&result->data[result->Sup.len-1]), r_167512, (&NTI13606));
 			} LA3: ;
 		}
 		nimln(109, "db_sqlite.nim");
 		{
 			NI32 LOC7;
 			LOC7 = 0;
-			LOC7 = Dl_188809(stmt_190526);
+			LOC7 = Dl_165814(stmt_167526);
 			if (!!((LOC7 == ((NI32) 0)))) goto LA8;
-			dberror_190032(db);
+			dberror_167032(db);
 		}
 		LA8: ;
 	}
@@ -891,27 +891,27 @@ N_NIMCALL(TY190494*, getallrows_190488)(Tsqlite3188286* db, NimStringDesc* query
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, getvalue_190577)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NimStringDesc*, getvalue_167577)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	NimStringDesc* result;
-	Tstmt188296* stmt;
+	Tstmt165301* stmt;
 	nimfr("getValue", "db_sqlite.nim")
 	result = 0;
 	nimln(139, "db_sqlite.nim");
-	stmt = setupquery_190215(db, query, args, argsLen0);
+	stmt = setupquery_167215(db, query, args, argsLen0);
 	nimln(140, "db_sqlite.nim");
 	{
 		NI32 LOC3;
 		NI32 cb;
 		LOC3 = 0;
-		LOC3 = Dl_188734(stmt);
+		LOC3 = Dl_165739(stmt);
 		if (!(LOC3 == ((NI32) 100))) goto LA4;
 		nimln(141, "db_sqlite.nim");
-		cb = Dl_188753(stmt, ((NI32) 0));
+		cb = Dl_165758(stmt, ((NI32) 0));
 		nimln(142, "db_sqlite.nim");
 		{
 			if (!(cb == ((NI32) 0))) goto LA8;
 			nimln(143, "db_sqlite.nim");
-			result = copyString(((NimStringDesc*) &TMP812));
+			result = copyString(((NimStringDesc*) &TMP693));
 		}
 		goto LA6;
 		LA8: ;
@@ -921,7 +921,7 @@ N_NIMCALL(NimStringDesc*, getvalue_190577)(Tsqlite3188286* db, NimStringDesc* qu
 			result = rawNewString(((NI)chckRange(cb, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 			nimln(146, "db_sqlite.nim");
 			LOC11 = 0;
-			LOC11 = Dl_188788(stmt, ((NI32) 0));
+			LOC11 = Dl_165793(stmt, ((NI32) 0));
 			add_9054((&result), LOC11);
 		}
 		LA6: ;
@@ -930,30 +930,30 @@ N_NIMCALL(NimStringDesc*, getvalue_190577)(Tsqlite3188286* db, NimStringDesc* qu
 	LA4: ;
 	{
 		nimln(148, "db_sqlite.nim");
-		result = copyString(((NimStringDesc*) &TMP812));
+		result = copyString(((NimStringDesc*) &TMP693));
 	}
 	LA1: ;
 	nimln(149, "db_sqlite.nim");
 	{
 		NI32 LOC15;
 		LOC15 = 0;
-		LOC15 = Dl_188809(stmt);
+		LOC15 = Dl_165814(stmt);
 		if (!!((LOC15 == ((NI32) 0)))) goto LA16;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA16: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI64, tryinsertid_190593)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NI64, tryinsertid_167593)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	NI64 result;
 	NimStringDesc* q;
-	Tstmt188296* stmt;
+	Tstmt165301* stmt;
 	nimfr("tryInsertID", "db_sqlite.nim")
 	result = 0;
 	nimln(156, "db_sqlite.nim");
-	q = dbformat_190098(query, args, argsLen0);
+	q = dbformat_167098(query, args, argsLen0);
 	stmt = 0;
 	nimln(158, "db_sqlite.nim");
 	result = IL64(-1);
@@ -961,23 +961,23 @@ N_NIMCALL(NI64, tryinsertid_190593)(Tsqlite3188286* db, NimStringDesc* query, Ni
 	{
 		int LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188565(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &stmt, NIM_NIL);
+		LOC3 = Dl_165570(db, q->data, ((int)chckRange((q ? q->Sup.len : 0), ((int) (-2147483647 -1)), ((int) 2147483647))), &stmt, NIM_NIL);
 		if (!(LOC3 == ((NI32) 0))) goto LA4;
 		nimln(160, "db_sqlite.nim");
 		{
 			NI32 LOC8;
 			LOC8 = 0;
-			LOC8 = Dl_188734(stmt);
+			LOC8 = Dl_165739(stmt);
 			if (!(LOC8 == ((NI32) 101))) goto LA9;
 			nimln(161, "db_sqlite.nim");
-			result = Dl_188373(db);
+			result = Dl_165378(db);
 		}
 		LA9: ;
 		nimln(162, "db_sqlite.nim");
 		{
 			NI32 LOC13;
 			LOC13 = 0;
-			LOC13 = Dl_188809(stmt);
+			LOC13 = Dl_165814(stmt);
 			if (!!((LOC13 == ((NI32) 0)))) goto LA14;
 			nimln(163, "db_sqlite.nim");
 			result = IL64(-1);
@@ -989,54 +989,54 @@ N_NIMCALL(NI64, tryinsertid_190593)(Tsqlite3188286* db, NimStringDesc* query, Ni
 	return result;
 }
 
-N_NIMCALL(NI64, insertid_190610)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NI64, insertid_167610)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	NI64 result;
 	nimfr("insertID", "db_sqlite.nim")
 	result = 0;
 	nimln(171, "db_sqlite.nim");
-	result = tryinsertid_190593(db, query, args, argsLen0);
+	result = tryinsertid_167593(db, query, args, argsLen0);
 	nimln(172, "db_sqlite.nim");
 	{
 		if (!(result < IL64(0))) goto LA3;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA3: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI64, execaffectedrows_190623)(Tsqlite3188286* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
+N_NIMCALL(NI64, execaffectedrows_167623)(Tsqlite3165291* db, NimStringDesc* query, NimStringDesc** args, NI argsLen0) {
 	NI64 result;
 	NI32 LOC1;
 	nimfr("execAffectedRows", "db_sqlite.nim")
 	result = 0;
 	nimln(179, "db_sqlite.nim");
-	exec_190155(db, query, args, argsLen0);
+	exec_167155(db, query, args, argsLen0);
 	nimln(180, "db_sqlite.nim");
 	LOC1 = 0;
-	LOC1 = Dl_188379(db);
+	LOC1 = Dl_165384(db);
 	result = ((NI64) (LOC1));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, close_190636)(Tsqlite3188286* db) {
+N_NIMCALL(void, close_167636)(Tsqlite3165291* db) {
 	nimfr("close", "db_sqlite.nim")
 	nimln(184, "db_sqlite.nim");
 	{
 		NI32 LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188356(db);
+		LOC3 = Dl_165361(db);
 		if (!!((LOC3 == ((NI32) 0)))) goto LA4;
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA4: ;
 	popFrame();
 }
 
-N_NIMCALL(Tsqlite3188286*, open_190645)(NimStringDesc* connection, NimStringDesc* user, NimStringDesc* password, NimStringDesc* database) {
-	Tsqlite3188286* result;
-	Tsqlite3188286* db;
+N_NIMCALL(Tsqlite3165291*, open_167645)(NimStringDesc* connection, NimStringDesc* user, NimStringDesc* password, NimStringDesc* database) {
+	Tsqlite3165291* result;
+	Tsqlite3165291* db;
 	nimfr("open", "db_sqlite.nim")
 	result = 0;
 	db = 0;
@@ -1044,7 +1044,7 @@ N_NIMCALL(Tsqlite3188286*, open_190645)(NimStringDesc* connection, NimStringDesc
 	{
 		NI32 LOC3;
 		LOC3 = 0;
-		LOC3 = Dl_188519(connection->data, &db);
+		LOC3 = Dl_165524(connection->data, &db);
 		if (!(LOC3 == ((NI32) 0))) goto LA4;
 		nimln(192, "db_sqlite.nim");
 		result = db;
@@ -1053,7 +1053,7 @@ N_NIMCALL(Tsqlite3188286*, open_190645)(NimStringDesc* connection, NimStringDesc
 	LA4: ;
 	{
 		nimln(194, "db_sqlite.nim");
-		dberror_190032(db);
+		dberror_167032(db);
 	}
 	LA1: ;
 	popFrame();
@@ -1096,27 +1096,27 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, setencoding_190661)(Tsqlite3188286* connection, NimStringDesc* encoding) {
+N_NIMCALL(NIM_BOOL, setencoding_167661)(Tsqlite3165291* connection, NimStringDesc* encoding) {
 	NIM_BOOL result;
 	NimStringDesc* LOC1;
-	TY190666 LOC2;
+	TY167666 LOC2;
 	NimStringDesc* LOC3;
-	TY184637 LOC4;
+	TY161637 LOC4;
 	NimStringDesc* LOC5;
 	nimfr("setEncoding", "db_sqlite.nim")
 	result = 0;
 	nimln(205, "db_sqlite.nim");
 	LOC1 = 0;
-	LOC1 = sql_190021(((NimStringDesc*) &TMP820));
+	LOC1 = sql_167021(((NimStringDesc*) &TMP701));
 	memset((void*)LOC2, 0, sizeof(LOC2));
 	LOC2[0] = copyString(encoding);
-	exec_190155(connection, LOC1, LOC2, 1);
+	exec_167155(connection, LOC1, LOC2, 1);
 	nimln(206, "db_sqlite.nim");
 	LOC3 = 0;
-	LOC3 = sql_190021(((NimStringDesc*) &TMP821));
+	LOC3 = sql_167021(((NimStringDesc*) &TMP702));
 	memset((void*)LOC4, 0, sizeof(LOC4));
 	LOC5 = 0;
-	LOC5 = getvalue_190577(connection, LOC3, LOC4, 0);
+	LOC5 = getvalue_167577(connection, LOC3, LOC4, 0);
 	result = eqStrings(LOC5, encoding);
 	popFrame();
 	return result;
@@ -1127,20 +1127,20 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_db_sqliteInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_db_sqliteDatInit)(void) {
-static TNimNode TMP799[1];
-NTI190009.size = sizeof(Edb190009);
-NTI190009.kind = 17;
-NTI190009.base = (&NTI3431);
-TMP799[0].len = 0; TMP799[0].kind = 2;
-NTI190009.node = &TMP799[0];
-NTI190035.size = sizeof(Edb190009*);
-NTI190035.kind = 22;
-NTI190035.base = (&NTI190009);
-NTI190035.marker = TMP803;
-NTI190494.size = sizeof(TY190494*);
-NTI190494.kind = 24;
-NTI190494.base = (&NTI13606);
-NTI190494.flags = 2;
-NTI190494.marker = TMP819;
+static TNimNode TMP680[1];
+NTI167009.size = sizeof(Edb167009);
+NTI167009.kind = 17;
+NTI167009.base = (&NTI3431);
+TMP680[0].len = 0; TMP680[0].kind = 2;
+NTI167009.node = &TMP680[0];
+NTI167035.size = sizeof(Edb167009*);
+NTI167035.kind = 22;
+NTI167035.base = (&NTI167009);
+NTI167035.marker = TMP684;
+NTI167494.size = sizeof(TY167494*);
+NTI167494.kind = 24;
+NTI167494.base = (&NTI13606);
+NTI167494.flags = 2;
+NTI167494.marker = TMP700;
 }
 
